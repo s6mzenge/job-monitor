@@ -7,10 +7,24 @@
       "id": 1,
       "name": "Palladium Group",
       "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "html",
-      "selector": "div#job_listing, table.job-list",
-      "link_selector": "table.job-list a[href*='csod']",
-      "base_url": "https://palladium.csod.com"
+      "method": "palladium_api",
+      "base_url": "https://palladium.csod.com",
+      "api": {
+        "url": "https://thepalladiumgroup.com/ajaxjoblist",
+        "http_method": "GET",
+        "headers": {
+          "Accept": "*/*",
+          "Referer": "https://thepalladiumgroup.com/joblist?search=&country=GBR"
+        },
+        "response_key": "jobs",
+        "country_filter": "GBR",
+        "job_fields": {
+          "id": "job_id",
+          "title": "Title",
+          "country": "Country"
+        },
+        "job_url_template": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/{job_id}?c=palladium"
+      }
     },
     {
       "id": 2,
