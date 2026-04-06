@@ -15,6 +15,16 @@ with open("config.json", "r", encoding="utf-8") as f:
 QUALIFICATIONS = config["qualifications"]
 SITES = config["sites"]
 
+# ─── Load CV ───
+CV_FILE = "cv.txt"
+if os.path.exists(CV_FILE):
+    with open(CV_FILE, "r", encoding="utf-8") as f:
+        CANDIDATE_CV = f.read().strip()
+    print(f"Loaded CV from {CV_FILE} ({len(CANDIDATE_CV)} chars)")
+else:
+    CANDIDATE_CV = QUALIFICATIONS
+    print(f"⚠️ {CV_FILE} not found — falling back to qualifications summary")
+
 # ─── Secrets from environment ───
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
@@ -535,60 +545,75 @@ def evaluate_with_gemini(site_name, job_title, job_url, detail_text, is_page_lev
     )
 
     if is_page_level:
-        prompt = f"""You are a job matching assistant. Below is the FULL CONTENT of the "{site_name}" careers page. It may contain multiple job listings, or general information about working at the organization.
+        prompt = f"""You are a job matching assistant. You will be given the full content of a careers page and a candidate's complete CV. Your task is to identify job listings on the page and assess each one against the candidate's profile.
 
-Your task:
+INSTRUCTIONS:
 1. Identify any individual job listings or vacancies mentioned on the page.
-2. For each job found, assess how well it matches the candidate's qualifications: High, Medium, or Low.
-3. Only include jobs rated High or Medium.
-4. If no jobs are found or none match, respond with exactly: NO_MATCH
+2. For each job found, assess alignment with the candidate's CV using these criteria:
+   - Field alignment: Does the role relate to the candidate's areas of study and interest (international relations, international law, genocide/transitional justice, European foreign policy, security studies, higher education policy, policy research)?
+   - Skills match: Does the candidate have the required or comparable skills (research, data analysis, policy writing, SPSS, Python, multilingual)?
+   - Experience level: Is the role appropriate for someone with an MSc in progress, a strong BA, and research/admin assistant experience — but no full-time professional experience yet?
+   - Location: Is the role in London, remote, or in a location the candidate could reasonably work from?
+3. Rate each job: High, Medium, or Low.
+4. Only include jobs rated High or Medium.
+5. If no jobs are found or none match, respond with exactly: NO_MATCH
 
-Format each match as:
+FORMAT (for each matching job):
 JOB: [Job title]
 MATCH: [High/Medium]
-REASON: [2-3 sentence explanation]
+REASON: [2-3 sentences explaining the match and any notable gaps]
 URL: {job_url}
 
-The page content may be in German or another language — assess it regardless.
+IMPORTANT:
+- The page content may be in German or another language — assess it regardless.
+- Err on the side of inclusion: if a role is plausibly relevant, rate it Medium rather than Low.
+- Pay close attention to seniority requirements — roles requiring 5+ years of experience should be rated Low.
 
 ---
 
 CAREERS PAGE CONTENT:
-{detail_text[:4000]}
+{detail_text[:5000]}
 
 ---
 
-CANDIDATE QUALIFICATIONS:
-{QUALIFICATIONS}
+CANDIDATE CV:
+{CANDIDATE_CV}
 """
     else:
-        prompt = f"""You are a job matching assistant. Below is the FULL DESCRIPTION of a job posting titled "{job_title}" found on "{site_name}", followed by a candidate's qualifications.
+        prompt = f"""You are a job matching assistant. You will be given a full job description and a candidate's complete CV. Assess how well this specific role matches the candidate.
 
-Your task:
-1. Assess how well this job matches the candidate's qualifications: High, Medium, or Low.
-2. If the match is High or Medium, respond in this exact format:
+ASSESSMENT CRITERIA:
+1. Field alignment: Does the role relate to the candidate's areas of study and interest (international relations, international law, genocide/transitional justice, European foreign policy, security studies, higher education policy, policy research)?
+2. Skills match: Does the candidate have the required or comparable skills (research, data analysis, policy writing, SPSS, Python, multilingual)?
+3. Experience level: Is the role appropriate for someone with an MSc in progress, a strong BA, and research/admin assistant experience — but no full-time professional experience yet? Roles requiring 5+ years of professional experience should be rated Low.
+4. Location: Is the role compatible with someone based in London?
 
+RATING SCALE:
+- High: Strong alignment in field, skills, and seniority. The candidate is a competitive applicant.
+- Medium: Plausible fit — the candidate could apply with some stretch, or the role is adjacent to their expertise.
+- Low: Poor fit due to field mismatch, excessive seniority requirements, or incompatible location.
+
+If the match is High or Medium, respond in this exact format:
 JOB: {job_title}
 MATCH: [High/Medium]
-REASON: [2-3 sentence explanation of why this matches and any gaps]
+REASON: [2-3 sentences explaining the match and any notable gaps]
 URL: {job_url}
 
-3. If the match is Low, respond with exactly: NO_MATCH
+If the match is Low, respond with exactly: NO_MATCH
 
-Important:
+IMPORTANT:
 - The job description may be in German or another language — assess it regardless.
-- Focus on skills, experience level, and field alignment.
-- "Medium" means the candidate could plausibly apply with some stretch. "High" means strong alignment.
+- Err on the side of inclusion for genuinely relevant roles.
 
 ---
 
-FULL JOB DESCRIPTION:
-{detail_text[:4000]}
+JOB DESCRIPTION:
+{detail_text[:5000]}
 
 ---
 
-CANDIDATE QUALIFICATIONS:
-{QUALIFICATIONS}
+CANDIDATE CV:
+{CANDIDATE_CV}
 """
 
     payload = {
