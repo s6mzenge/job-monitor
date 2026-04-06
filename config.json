@@ -221,7 +221,7 @@
       "name": "Laudes Foundation",
       "url": "https://www.laudesfoundation.org/who-we-are/people-and-careers/",
       "method": "html",
-      "selector": "main",
+      "selector": "div.standard-block-component--subtitle",
       "link_selector": "",
       "base_url": "https://www.laudesfoundation.org"
     },
