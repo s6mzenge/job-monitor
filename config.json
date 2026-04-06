@@ -2,14 +2,15 @@
   "qualifications": "MSc International Relations Research student at the London School of Economics, with a focus on International Law and Genocide. BA in Politics and Society (Minor: Economics) from the University of Bonn, final grade 1.3. Experience in policy research, data analysis, and higher education administration, including supporting the allocation of 1.7 million euros in federal funding at the German Rectors Conference. Published researcher on German higher education policy and Green Party defence policy. Fluent in German (native) and English (C2), with working French (B1). Skills in SPSS, Python, Excel, literature review, and policy writing. Interested in roles related to European foreign policy, security studies, international law, genocide prevention and transitional justice, think tank research, and higher education policy.",
 
   "sites": [
+    
     {
       "id": 1,
       "name": "Palladium Group",
       "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
       "method": "html",
-      "selector": "div.job-list-container",
-      "link_selector": "a[href*='csod'], a[href*='job']",
-      "base_url": "https://thepalladiumgroup.com"
+      "selector": "div#job_listing, table.job-list",
+      "link_selector": "table.job-list a[href*='csod']",
+      "base_url": "https://palladium.csod.com"
     },
     {
       "id": 2,
