@@ -110,6 +110,7 @@ def check_html(site, seen_urls):
     link_selector = site.get("link_selector", "")
     base_url = site.get("base_url", "")
     selector = site.get("selector", "")
+    location_filter = site.get("location_filter", "")
 
     soup = fetch_page(listing_url)
     if not soup:
@@ -123,8 +124,21 @@ def check_html(site, seen_urls):
         text_hash = hashlib.sha256(text.encode()).hexdigest()
         return {"type": "hash_check", "text": text, "hash": text_hash}
 
-    # Extract job links
-    anchors = soup.select(link_selector)
+    # Extract job links — optionally filter by location section
+    if location_filter:
+        # Find only links inside sections whose header contains the filter text
+        # Works with SmartRecruiters-style grouped listings:
+        #   <section> <header> <h3>London, United Kingdom</h3> </header>
+        #             <ul> <li><a href="...">Job Title</a></li> </ul>
+        #   </section>
+        anchors = []
+        for section in soup.select("section.openings-section"):
+            header = section.select_one("header, .opening-header")
+            if header and location_filter.lower() in header.get_text().lower():
+                anchors.extend(section.select(link_selector))
+        print(f"    Filtered to {len(anchors)} links in '{location_filter}' sections")
+    else:
+        anchors = soup.select(link_selector)
     if not anchors and len(extract_text(soup, selector)) < 100:
         print(f"    ⚠️ No job links found and page content is minimal — likely JS-rendered")
     
