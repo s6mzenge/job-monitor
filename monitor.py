@@ -74,7 +74,6 @@ def extract_text(soup, selector=""):
     for tag in soup(["script", "style", "nav", "footer", "header", "noscript"]):
         tag.decompose()
     if selector:
-        # Support comma-separated selectors (try each, use first match)
         for sel in selector.split(","):
             target = soup.select_one(sel.strip())
             if target:
@@ -99,8 +98,10 @@ def get_nested(obj, dotted_key, default=""):
 
 
 # ═══════════════════════════════════════════════════════════════
-#  METHOD HANDLERS — each returns a list of new jobs:
-#  [{"title": str, "url": str, "detail_text": str}, ...]
+#  METHOD HANDLERS — each returns:
+#    None                              → error / could not fetch
+#    {"type": "hash_check", ...}       → content-hash sites
+#    {"total": int, "new": list}       → normal job list
 # ═══════════════════════════════════════════════════════════════
 
 # ─── 1. HTML SCRAPING ───
@@ -114,23 +115,16 @@ def check_html(site, seen_urls):
 
     soup = fetch_page(listing_url)
     if not soup:
-        return None  # Signal error
+        return None
 
     if not link_selector:
-        # No link selector: do a simple content-change check
         text = extract_text(soup, selector)
         if len(text) < 50:
             print(f"    ⚠️ Very little content extracted ({len(text)} chars) — site may require JavaScript rendering")
         text_hash = hashlib.sha256(text.encode()).hexdigest()
         return {"type": "hash_check", "text": text, "hash": text_hash}
 
-    # Extract job links — optionally filter by location section
     if location_filter:
-        # Find only links inside sections whose header contains the filter text
-        # Works with SmartRecruiters-style grouped listings:
-        #   <section> <header> <h3>London, United Kingdom</h3> </header>
-        #             <ul> <li><a href="...">Job Title</a></li> </ul>
-        #   </section>
         anchors = []
         for section in soup.select("section.openings-section"):
             header = section.select_one("header, .opening-header")
@@ -141,7 +135,8 @@ def check_html(site, seen_urls):
         anchors = soup.select(link_selector)
     if not anchors and len(extract_text(soup, selector)) < 100:
         print(f"    ⚠️ No job links found and page content is minimal — likely JS-rendered")
-    
+
+    all_urls = set()
     jobs = []
     seen_in_batch = set()
     for a in anchors:
@@ -149,20 +144,20 @@ def check_html(site, seen_urls):
         if not href or href == "#" or href == listing_url:
             continue
 
-        # Skip generic link text first, before any URL processing
         title = a.get_text(strip=True) or "Untitled"
         if title.lower() in ("view job", "apply", "apply now", "learn more",
                               "read more", "click here", "view"):
             continue
 
         full_url = urljoin(base_url + "/", href) if base_url else urljoin(listing_url, href)
-        full_url = full_url.rstrip("/")  # normalize trailing slashes
+        full_url = full_url.rstrip("/")
+
+        all_urls.add(full_url)
 
         if full_url not in seen_urls and full_url not in seen_in_batch:
             jobs.append({"title": title, "url": full_url})
             seen_in_batch.add(full_url)
-    
-    # Fetch detail pages for new jobs
+
     new_jobs = []
     for job in jobs:
         time.sleep(1)
@@ -173,7 +168,8 @@ def check_html(site, seen_urls):
             "url": job["url"],
             "detail_text": detail_text or f"Title: {job['title']} (detail page could not be loaded)"
         })
-    return new_jobs
+
+    return {"total": len(all_urls), "new": new_jobs}
 
 
 # ─── 2. WORKDAY API ───
@@ -184,7 +180,6 @@ def check_workday(site, seen_urls):
     base_url = site["base_url"]
     detail_api_template = site.get("job_detail_api", "")
 
-    # Paginate through all results
     all_postings = []
     offset = 0
     limit = api["body"].get("limit", 20)
@@ -192,17 +187,12 @@ def check_workday(site, seen_urls):
     while True:
         body = {**api["body"], "offset": offset, "limit": limit}
         try:
-            resp = requests.post(
-                api["url"],
-                headers=api["headers"],
-                json=body,
-                timeout=30
-            )
+            resp = requests.post(api["url"], headers=api["headers"], json=body, timeout=30)
             resp.raise_for_status()
             data = resp.json()
         except Exception as e:
             print(f"    Workday API error: {e}")
-            return None if not all_postings else all_postings
+            return None if not all_postings else {"total": len(all_postings), "new": []}
 
         postings = data.get(api["response_key"], [])
         total = data.get(api.get("total_key", "total"), 0)
@@ -215,10 +205,8 @@ def check_workday(site, seen_urls):
         offset += limit
         time.sleep(1)
 
-    postings = all_postings
-
     new_jobs = []
-    for posting in postings:
+    for posting in all_postings:
         title = posting.get(fields["title"], "Untitled")
         path = posting.get(fields["path"], "")
         location = posting.get(fields.get("location", ""), "")
@@ -227,7 +215,6 @@ def check_workday(site, seen_urls):
         if job_url in seen_urls:
             continue
 
-        # Fetch detail page via API
         detail_text = f"Title: {title}\nLocation: {location}"
         if detail_api_template and path:
             detail_url = detail_api_template.replace("{externalPath}", path.lstrip("/"))
@@ -245,7 +232,8 @@ def check_workday(site, seen_urls):
                 print(f"    Could not fetch detail for {title}: {e}")
 
         new_jobs.append({"title": title, "url": job_url, "detail_text": detail_text})
-    return new_jobs
+
+    return {"total": len(all_postings), "new": new_jobs}
 
 
 # ─── 3. GREENHOUSE API ───
@@ -287,7 +275,8 @@ def check_greenhouse(site, seen_urls):
             "detail_text": detail_text,
             "_also_track": [u for u in [job_url, job_id] if u]
         })
-    return new_jobs
+
+    return {"total": len(postings), "new": new_jobs}
 
 
 # ─── 4. WORKABLE API ───
@@ -307,6 +296,7 @@ def check_workable(site, seen_urls):
     postings = data.get(api["response_key"], [])
     print(f"    API returned {len(postings)} jobs")
 
+    total_after_filter = 0
     new_jobs = []
     for posting in postings:
         title = posting.get(fields["title"], "Untitled")
@@ -315,18 +305,17 @@ def check_workable(site, seen_urls):
         country = get_nested(posting, fields.get("location_country", ""))
         department = posting.get(fields.get("department", ""), "")
 
-        # ── NEW: location filter ──
         location_filter = site.get("location_filter", "")
         if location_filter:
             location_str = f"{city} {country}".lower()
             if location_filter.lower() not in location_str:
                 continue
-        # ── END NEW ──
-        
+
+        total_after_filter += 1
+
         if job_url in seen_urls:
             continue
 
-        # Fetch the full detail page
         detail_text = f"Title: {title}\nLocation: {city}, {country}\nDepartment: {department}"
         if job_url:
             time.sleep(1)
@@ -336,7 +325,8 @@ def check_workable(site, seen_urls):
                 detail_text = f"Title: {title}\nLocation: {city}, {country}\n\n{page_text}"
 
         new_jobs.append({"title": title, "url": job_url, "detail_text": detail_text})
-    return new_jobs
+
+    return {"total": total_after_filter, "new": new_jobs}
 
 
 # ─── 5. PERSONIO XML ───
@@ -375,7 +365,6 @@ def check_personio(site, seen_urls):
             f"Employment Type: {emp_type}\nSchedule: {schedule}"
         )
 
-        # Try fetching the detail page for more info
         if job_url:
             time.sleep(1)
             detail_soup = fetch_page(job_url)
@@ -385,7 +374,8 @@ def check_personio(site, seen_urls):
                     detail_text += f"\n\n{page_text}"
 
         new_jobs.append({"title": title, "url": job_url or job_id, "detail_text": detail_text})
-    return new_jobs
+
+    return {"total": len(positions), "new": new_jobs}
 
 
 # ─── 6. TALEO RSS ───
@@ -407,7 +397,6 @@ def check_taleo(site, seen_urls):
         print("    (This site may need a headless browser — see notes in config)")
         return None
 
-    # RSS 2.0: items are at channel/item
     items = root.findall(".//item")
     print(f"    RSS feed returned {len(items)} items")
 
@@ -422,7 +411,6 @@ def check_taleo(site, seen_urls):
 
         detail_text = f"Title: {title}\n\n{description}"
 
-        # Try fetching detail page for full info
         if link:
             time.sleep(1)
             detail_soup = fetch_page(link)
@@ -432,7 +420,8 @@ def check_taleo(site, seen_urls):
                     detail_text = f"Title: {title}\n\n{page_text}"
 
         new_jobs.append({"title": title, "url": link, "detail_text": detail_text})
-    return new_jobs
+
+    return {"total": len(items), "new": new_jobs}
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -552,7 +541,6 @@ def send_telegram(message):
         }
         try:
             resp = requests.post(url, json=payload, timeout=15)
-            # If HTML parsing fails, retry without formatting
             if resp.status_code == 400:
                 payload["parse_mode"] = ""
                 requests.post(url, json=payload, timeout=15)
@@ -574,6 +562,7 @@ def main():
     state = load_state()
     all_matches = []
     errors = []
+    empty_sites = []
 
     for site in SITES:
         name = site["name"]
@@ -582,7 +571,6 @@ def main():
 
         print(f"\n[{site.get('id', '?')}] {name} ({method})")
 
-        # Initialize state for this site
         if site_key not in state:
             state[site_key] = {"seen_urls": [], "last_checked": "", "listing_hash": ""}
 
@@ -593,7 +581,6 @@ def main():
             print(f"    Unknown method: {method}. Skipping.")
             continue
 
-        # Run the appropriate handler
         result = handler(site, seen_urls)
 
         if result is None:
@@ -618,14 +605,22 @@ def main():
             state[site_key]["last_checked"] = now.isoformat()
             continue
 
-        # Normal case: list of new jobs
-        new_jobs = result
-        if not new_jobs:
-            print(f"    No new jobs.")
+        # Normal case: unpack total/new dict
+        total_found = result["total"]
+        new_jobs = result["new"]
+
+        if total_found == 0:
+            print(f"    ℹ️ No vacancies listed.")
+            empty_sites.append(name)
             state[site_key]["last_checked"] = now.isoformat()
             continue
 
-        print(f"    {len(new_jobs)} new job(s)! {'Saving to state (dry run)' if DRY_RUN else 'Evaluating...'}")
+        if not new_jobs:
+            print(f"    No new jobs (of {total_found} listed).")
+            state[site_key]["last_checked"] = now.isoformat()
+            continue
+
+        print(f"    {len(new_jobs)} new job(s) of {total_found} listed! {'Saving to state (dry run)' if DRY_RUN else 'Evaluating...'}")
 
         for job in new_jobs:
             print(f"      → {job['title']}")
@@ -642,13 +637,12 @@ def main():
             seen_urls.add(job["url"])
             for extra in job.get("_also_track", []):
                 seen_urls.add(extra)
-            time.sleep(1)  # Respect Gemini rate limits
+            time.sleep(1)
 
         state[site_key]["seen_urls"] = list(seen_urls)
         state[site_key]["last_checked"] = now.isoformat()
 
     # ─── Prune seen_urls to prevent state.json bloat ───
-    # Cap each site's list at 200 entries, keeping the most recent
     for site_key, site_state in state.items():
         seen = site_state.get("seen_urls", [])
         if len(seen) > 200:
@@ -661,6 +655,8 @@ def main():
     # ─── Send results ───
     if DRY_RUN:
         print(f"\n🏃 Dry run complete. State populated for {len(SITES)} sites.")
+        if empty_sites:
+            print(f"   Sites with no vacancies: {', '.join(empty_sites)}")
         print(f"   Next run will only flag genuinely new jobs.")
     elif all_matches:
         header = f"🔍 <b>Job Monitor Report</b>\n<i>{now.strftime('%Y-%m-%d %H:%M')} UTC</i>\n\n"
@@ -673,7 +669,15 @@ def main():
     if errors and not DRY_RUN:
         error_msg = f"⚠️ <b>Job Monitor Errors</b>\nFailed to scrape: {escape_html(', '.join(errors))}"
         send_telegram(error_msg)
+
+    if empty_sites and not DRY_RUN:
+        empty_msg = f"ℹ️ <b>No vacancies listed</b>\n{escape_html(', '.join(empty_sites))}"
+        send_telegram(empty_msg)
+
+    if errors:
         print(f"Errors: {', '.join(errors)}")
+    if empty_sites:
+        print(f"Empty: {', '.join(empty_sites)}")
 
 
 if __name__ == "__main__":
