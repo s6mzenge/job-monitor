@@ -42,7 +42,7 @@
           "posted": "postedOn"
         }
       },
-      "job_detail_api": "https://osfglobal.wd5.myworkdayjobs.com/wday/cxs/osfglobal/OSF/job/{externalPath}"
+      "job_detail_api": "https://osfglobal.wd5.myworkdayjobs.com/wday/cxs/osfglobal/OSF/{externalPath}"
     },
     {
       "id": 3,
@@ -76,7 +76,7 @@
           "posted": "postedOn"
         }
       },
-      "job_detail_api": "https://pewtrusts.wd5.myworkdayjobs.com/wday/cxs/pewtrusts/CenterExternal/job/{externalPath}"
+      "job_detail_api": "https://pewtrusts.wd5.myworkdayjobs.com/wday/cxs/pewtrusts/CenterExternal/{externalPath}"
     },
     
     {
