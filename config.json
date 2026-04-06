@@ -99,10 +99,10 @@
     {
       "id": 6,
       "name": "jobs.ac.uk",
-      "url": "https://www.jobs.ac.uk/search/?academicDisciplineFacet%5B%5D=politics-and-government&location=London%2C+UK&distance=0",
+      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
       "method": "html",
-      "selector": "div.search-results",
-      "link_selector": "a[href*='/job/']",
+      "selector": "div#job-listings",
+      "link_selector": "div.j-search-result__text a[href*='/job/']",
       "base_url": "https://www.jobs.ac.uk"
     },
     {
