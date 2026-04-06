@@ -252,6 +252,8 @@ def check_greenhouse(site, seen_urls):
     """Query Greenhouse's public JSON API. With ?content=true, descriptions are included."""
     api = site["api"]
     fields = api["job_fields"]
+    location_filter = site.get("location_filter", "")
+    department_filter = site.get("department_filter", "")
 
     try:
         resp = requests.get(api["url"], headers=HEADERS, timeout=30)
@@ -264,6 +266,7 @@ def check_greenhouse(site, seen_urls):
     postings = data.get(api["response_key"], [])
     print(f"    API returned {len(postings)} jobs")
 
+    total_after_filter = 0
     new_jobs = []
     for posting in postings:
         title = posting.get(fields["title"], "Untitled")
@@ -271,6 +274,20 @@ def check_greenhouse(site, seen_urls):
         location = get_nested(posting, fields.get("location", ""))
         desc_html = posting.get(fields.get("description_html", ""), "")
         job_id = str(posting.get(fields.get("id", ""), ""))
+
+        # Department filter: Greenhouse returns departments as a list of objects
+        if department_filter:
+            departments = posting.get("departments", [])
+            dept_names = " ".join(d.get("name", "") for d in departments).lower()
+            if department_filter.lower() not in dept_names:
+                continue
+
+        # Location filter
+        if location_filter:
+            if location_filter.lower() not in (location or "").lower():
+                continue
+
+        total_after_filter += 1
 
         if job_url in seen_urls or job_id in seen_urls:
             continue
@@ -287,7 +304,14 @@ def check_greenhouse(site, seen_urls):
             "_also_track": [u for u in [job_url, job_id] if u]
         })
 
-    return {"total": len(postings), "new": new_jobs}
+    if location_filter or department_filter:
+        print(f"    After filtering: {total_after_filter} jobs")
+
+    return {
+        "total": total_after_filter if (location_filter or department_filter) else len(postings),
+        "new": new_jobs
+    }
+
 
 
 # ─── 4. WORKABLE API ───
