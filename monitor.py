@@ -558,8 +558,13 @@ INSTRUCTIONS:
 4. Only include jobs rated High or Medium.
 5. If no jobs are found or none match, respond with exactly: NO_MATCH
 
-FORMAT (for each matching job):
+FORMAT (for each matching job — use this exact format with these exact labels):
 JOB: [Job title]
+ORGANISATION: {site_name}
+LOCATION: [City/country, or "Remote" if applicable — extract from page if possible, otherwise write "Not specified"]
+TYPE: [Full-time/Part-time/Internship/Contract — extract from page if possible, otherwise write "Not specified"]
+DEADLINE: [Application deadline if mentioned, or "Not specified"]
+SALARY: [Salary or pay range if mentioned, or "Not specified"]
 MATCH: [High/Medium]
 REASON: [2-3 sentences explaining the match and any notable gaps]
 URL: {job_url}
@@ -593,8 +598,13 @@ RATING SCALE:
 - Medium: Plausible fit — the candidate could apply with some stretch, or the role is adjacent to their expertise.
 - Low: Poor fit due to field mismatch, excessive seniority requirements, or incompatible location.
 
-If the match is High or Medium, respond in this exact format:
+If the match is High or Medium, respond in this exact format (use these exact labels):
 JOB: {job_title}
+ORGANISATION: {site_name}
+LOCATION: [City/country as stated in the description, or "Not specified"]
+TYPE: [Full-time/Part-time/Internship/Contract as stated, or "Not specified"]
+DEADLINE: [Application deadline if mentioned, or "Not specified"]
+SALARY: [Salary or pay range if mentioned, or "Not specified"]
 MATCH: [High/Medium]
 REASON: [2-3 sentences explaining the match and any notable gaps]
 URL: {job_url}
@@ -638,6 +648,70 @@ CANDIDATE CV:
 def escape_html(text):
     """Escape characters that break Telegram's HTML parser."""
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+def parse_gemini_matches(raw_text):
+    """Parse Gemini's structured output into a list of match dicts."""
+    matches = []
+    if not raw_text or "NO_MATCH" in raw_text:
+        return matches
+
+    # Split on "JOB:" to get individual match blocks
+    blocks = raw_text.split("JOB:")
+    for block in blocks[1:]:  # skip everything before the first JOB:
+        match = {}
+        lines = block.strip().splitlines()
+        # First line is the job title (remainder after "JOB:" split)
+        match["job"] = lines[0].strip()
+        for line in lines[1:]:
+            line = line.strip()
+            for key in ("ORGANISATION:", "LOCATION:", "TYPE:", "DEADLINE:", "SALARY:", "MATCH:", "REASON:", "URL:"):
+                if line.upper().startswith(key):
+                    match[key.rstrip(":").lower()] = line[len(key):].strip()
+                    break
+        if match.get("job"):
+            matches.append(match)
+    return matches
+
+def format_match_for_telegram(match):
+    """Format a single parsed match into a Telegram HTML message block."""
+    title = escape_html(match.get("job", "Untitled"))
+    org = escape_html(match.get("organisation", ""))
+    location = match.get("location", "")
+    job_type = match.get("type", "")
+    deadline = match.get("deadline", "")
+    salary = match.get("salary", "")
+    level = match.get("match", "")
+    reason = escape_html(match.get("reason", ""))
+    url = match.get("url", "")
+
+    # Match level emoji
+    level_emoji = "🟢" if level.lower() == "high" else "🟡"
+
+    parts = []
+    parts.append(f"{level_emoji} <b>{title}</b>")
+    if org:
+        parts.append(f"🏢 {org}")
+
+    # Info line: location, type, deadline — only include if specified
+    info_bits = []
+    if location and location.lower() != "not specified":
+        info_bits.append(f"📍 {escape_html(location)}")
+    if job_type and job_type.lower() != "not specified":
+        info_bits.append(f"📋 {escape_html(job_type)}")
+    if deadline and deadline.lower() != "not specified":
+        info_bits.append(f"⏰ {escape_html(deadline)}")
+    if salary and salary.lower() != "not specified":
+        info_bits.append(f"💰 {escape_html(salary)}")
+    if info_bits:
+        parts.append(" · ".join(info_bits))
+
+    if reason:
+        parts.append(f"\n{reason}")
+
+    if url:
+        parts.append(f'\n🔗 <a href="{url}">View posting</a>')
+
+    return "\n".join(parts)
 
 def send_telegram(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
@@ -708,7 +782,9 @@ def main():
                     print(f"    Page content changed! Sending full text to Gemini...")
                     gemini_result = evaluate_with_gemini(name, f"Page update on {name}", site["url"], result["text"], is_page_level=True)
                     if gemini_result and "NO_MATCH" not in gemini_result:
-                        all_matches.append(f"📌 <b>{escape_html(name)}</b>\n\n{escape_html(gemini_result)}")
+                        parsed = parse_gemini_matches(gemini_result)
+                        for m in parsed:
+                            all_matches.append(format_match_for_telegram(m))
                 state[site_key]["listing_hash"] = result["hash"]
             else:
                 print(f"    No changes detected.")
@@ -739,7 +815,9 @@ def main():
                 gemini_result = evaluate_with_gemini(name, job["title"], job["url"], job["detail_text"])
 
                 if gemini_result and "NO_MATCH" not in gemini_result:
-                    all_matches.append(f"📌 <b>{escape_html(name)}</b>\n\n{escape_html(gemini_result)}")
+                    parsed = parse_gemini_matches(gemini_result)
+                    for m in parsed:
+                        all_matches.append(format_match_for_telegram(m))
                     print(f"        ✅ Match!")
                 else:
                     print(f"        No match.")
@@ -770,7 +848,7 @@ def main():
         print(f"   Next run will only flag genuinely new jobs.")
     elif all_matches:
         header = f"🔍 <b>Job Monitor Report</b>\n<i>{now.strftime('%Y-%m-%d %H:%M')} UTC</i>\n\n"
-        message = header + "\n\n---\n\n".join(all_matches)
+        message = header + "\n\n━━━━━━━━━━━━━━━\n\n".join(all_matches)
         send_telegram(message)
         print(f"\n✅ Sent {len(all_matches)} match(es) to Telegram.")
     else:
