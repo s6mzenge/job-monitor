@@ -234,12 +234,13 @@
       "link_selector": "",
       "base_url": "https://www.humanmovement.cam.ac.uk"
     },
+
     {
       "id": 17,
       "name": "Runnymede Trust",
       "url": "https://www.runnymedetrust.org/about/careers",
       "method": "html",
-      "selector": "div.w-dyn-list",
+      "selector": "section.careers-openings__section",
       "link_selector": "",
       "base_url": "https://www.runnymedetrust.org"
     },
