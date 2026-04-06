@@ -1,0 +1,647 @@
+import json
+import os
+import hashlib
+import requests
+import time
+import xml.etree.ElementTree as ET
+from bs4 import BeautifulSoup
+from datetime import datetime, timezone, timedelta
+from urllib.parse import urljoin
+
+# ─── Load configuration ───
+with open("config.json", "r", encoding="utf-8") as f:
+    config = json.load(f)
+
+QUALIFICATIONS = config["qualifications"]
+SITES = config["sites"]
+
+# ─── Secrets from environment ───
+TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
+GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
+DRY_RUN = os.environ.get("DRY_RUN", "false").lower() == "true"
+
+# ─── Gemini rate limiter (15 RPM on free tier) ───
+_gemini_calls = []
+
+def gemini_rate_limit():
+    """Enforce max 14 calls per 60 seconds (staying under 15 RPM limit)."""
+    global _gemini_calls
+    now_ts = time.time()
+    _gemini_calls = [t for t in _gemini_calls if now_ts - t < 60]
+    if len(_gemini_calls) >= 14:
+        wait = 60 - (now_ts - _gemini_calls[0]) + 1
+        print(f"    ⏳ Gemini rate limit — waiting {wait:.0f}s")
+        time.sleep(wait)
+    _gemini_calls.append(time.time())
+
+# ─── State management ───
+STATE_FILE = "state.json"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                   "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+}
+
+def load_state():
+    if os.path.exists(STATE_FILE):
+        with open(STATE_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+def save_state(state):
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2, ensure_ascii=False)
+
+
+# ═══════════════════════════════════════════════════════════════
+#  UTILITY FUNCTIONS
+# ═══════════════════════════════════════════════════════════════
+
+def fetch_page(url, extra_headers=None):
+    """Fetch a URL and return a BeautifulSoup object, or None on error."""
+    hdrs = {**HEADERS, **(extra_headers or {})}
+    try:
+        resp = requests.get(url, headers=hdrs, timeout=30)
+        resp.raise_for_status()
+        return BeautifulSoup(resp.text, "html.parser")
+    except Exception as e:
+        print(f"    Error fetching {url}: {e}")
+        return None
+
+def extract_text(soup, selector=""):
+    """Extract cleaned text from a BeautifulSoup object, optionally within a CSS selector."""
+    for tag in soup(["script", "style", "nav", "footer", "header", "noscript"]):
+        tag.decompose()
+    if selector:
+        # Support comma-separated selectors (try each, use first match)
+        for sel in selector.split(","):
+            target = soup.select_one(sel.strip())
+            if target:
+                text = target.get_text(separator="\n", strip=True)
+                break
+        else:
+            text = soup.get_text(separator="\n", strip=True)
+    else:
+        text = soup.get_text(separator="\n", strip=True)
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+    return "\n".join(lines)
+
+def get_nested(obj, dotted_key, default=""):
+    """Safely get a nested value from a dict using dot notation, e.g. 'location.city'."""
+    keys = dotted_key.split(".")
+    for k in keys:
+        if isinstance(obj, dict):
+            obj = obj.get(k, default)
+        else:
+            return default
+    return obj
+
+
+# ═══════════════════════════════════════════════════════════════
+#  METHOD HANDLERS — each returns a list of new jobs:
+#  [{"title": str, "url": str, "detail_text": str}, ...]
+# ═══════════════════════════════════════════════════════════════
+
+# ─── 1. HTML SCRAPING ───
+def check_html(site, seen_urls):
+    """Scrape a standard HTML careers page for job links, then fetch detail pages."""
+    listing_url = site["url"]
+    link_selector = site.get("link_selector", "")
+    base_url = site.get("base_url", "")
+    selector = site.get("selector", "")
+
+    soup = fetch_page(listing_url)
+    if not soup:
+        return None  # Signal error
+
+    if not link_selector:
+        # No link selector: do a simple content-change check
+        text = extract_text(soup, selector)
+        if len(text) < 50:
+            print(f"    ⚠️ Very little content extracted ({len(text)} chars) — site may require JavaScript rendering")
+        text_hash = hashlib.sha256(text.encode()).hexdigest()
+        return {"type": "hash_check", "text": text, "hash": text_hash}
+
+    # Extract job links
+    anchors = soup.select(link_selector)
+    if not anchors and len(extract_text(soup, selector)) < 100:
+        print(f"    ⚠️ No job links found and page content is minimal — likely JS-rendered")
+    jobs = []
+    for a in anchors:
+        href = a.get("href", "")
+        if not href or href == "#" or href == listing_url:
+            continue
+        full_url = urljoin(base_url + "/", href) if base_url else urljoin(listing_url, href)
+        title = a.get_text(strip=True) or "Untitled"
+        if full_url not in seen_urls:
+            jobs.append({"title": title, "url": full_url})
+
+    # Fetch detail pages for new jobs
+    new_jobs = []
+    for job in jobs:
+        time.sleep(1)
+        detail_soup = fetch_page(job["url"])
+        detail_text = extract_text(detail_soup) if detail_soup else ""
+        new_jobs.append({
+            "title": job["title"],
+            "url": job["url"],
+            "detail_text": detail_text or f"Title: {job['title']} (detail page could not be loaded)"
+        })
+    return new_jobs
+
+
+# ─── 2. WORKDAY API ───
+def check_workday(site, seen_urls):
+    """Query Workday's public JSON API for job listings, with pagination."""
+    api = site["api"]
+    fields = api["job_fields"]
+    base_url = site["base_url"]
+    detail_api_template = site.get("job_detail_api", "")
+
+    # Paginate through all results
+    all_postings = []
+    offset = 0
+    limit = api["body"].get("limit", 20)
+
+    while True:
+        body = {**api["body"], "offset": offset, "limit": limit}
+        try:
+            resp = requests.post(
+                api["url"],
+                headers=api["headers"],
+                json=body,
+                timeout=30
+            )
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            print(f"    Workday API error: {e}")
+            return None if not all_postings else all_postings
+
+        postings = data.get(api["response_key"], [])
+        total = data.get(api.get("total_key", "total"), 0)
+        all_postings.extend(postings)
+
+        print(f"    Fetched {len(all_postings)}/{total} jobs (offset {offset})")
+
+        if len(all_postings) >= total or not postings:
+            break
+        offset += limit
+        time.sleep(1)
+
+    postings = all_postings
+
+    new_jobs = []
+    for posting in postings:
+        title = posting.get(fields["title"], "Untitled")
+        path = posting.get(fields["path"], "")
+        location = posting.get(fields.get("location", ""), "")
+        job_url = f"{base_url}{path}" if path else ""
+
+        if job_url in seen_urls:
+            continue
+
+        # Fetch detail page via API
+        detail_text = f"Title: {title}\nLocation: {location}"
+        if detail_api_template and path:
+            detail_url = detail_api_template.replace("{externalPath}", path.lstrip("/"))
+            try:
+                time.sleep(1)
+                dr = requests.get(detail_url, headers=api["headers"], timeout=30)
+                dr.raise_for_status()
+                dd = dr.json()
+                info = dd.get("jobPostingInfo", {})
+                desc_html = info.get("jobDescription", "")
+                if desc_html:
+                    desc_soup = BeautifulSoup(desc_html, "html.parser")
+                    detail_text = f"Title: {title}\nLocation: {location}\n\n{desc_soup.get_text(separator=chr(10), strip=True)}"
+            except Exception as e:
+                print(f"    Could not fetch detail for {title}: {e}")
+
+        new_jobs.append({"title": title, "url": job_url, "detail_text": detail_text})
+    return new_jobs
+
+
+# ─── 3. GREENHOUSE API ───
+def check_greenhouse(site, seen_urls):
+    """Query Greenhouse's public JSON API. With ?content=true, descriptions are included."""
+    api = site["api"]
+    fields = api["job_fields"]
+
+    try:
+        resp = requests.get(api["url"], headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"    Greenhouse API error: {e}")
+        return None
+
+    postings = data.get(api["response_key"], [])
+    print(f"    API returned {len(postings)} jobs")
+
+    new_jobs = []
+    for posting in postings:
+        title = posting.get(fields["title"], "Untitled")
+        job_url = posting.get(fields["url"], "")
+        location = get_nested(posting, fields.get("location", ""))
+        desc_html = posting.get(fields.get("description_html", ""), "")
+        job_id = str(posting.get(fields.get("id", ""), ""))
+
+        if job_url in seen_urls or job_id in seen_urls:
+            continue
+
+        detail_text = f"Title: {title}\nLocation: {location}"
+        if desc_html:
+            desc_soup = BeautifulSoup(desc_html, "html.parser")
+            detail_text += f"\n\n{desc_soup.get_text(separator=chr(10), strip=True)}"
+
+        new_jobs.append({
+            "title": title,
+            "url": job_url or job_id,
+            "detail_text": detail_text,
+            "_also_track": [u for u in [job_url, job_id] if u]
+        })
+    return new_jobs
+
+
+# ─── 4. WORKABLE API ───
+def check_workable(site, seen_urls):
+    """Query Workable's public widget API."""
+    api = site["api"]
+    fields = api["job_fields"]
+
+    try:
+        resp = requests.get(api["url"], headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"    Workable API error: {e}")
+        return None
+
+    postings = data.get(api["response_key"], [])
+    print(f"    API returned {len(postings)} jobs")
+
+    new_jobs = []
+    for posting in postings:
+        title = posting.get(fields["title"], "Untitled")
+        job_url = posting.get(fields["url"], "")
+        city = get_nested(posting, fields.get("location_city", ""))
+        country = get_nested(posting, fields.get("location_country", ""))
+        department = posting.get(fields.get("department", ""), "")
+
+        if job_url in seen_urls:
+            continue
+
+        # Fetch the full detail page
+        detail_text = f"Title: {title}\nLocation: {city}, {country}\nDepartment: {department}"
+        if job_url:
+            time.sleep(1)
+            detail_soup = fetch_page(job_url)
+            if detail_soup:
+                page_text = extract_text(detail_soup)
+                detail_text = f"Title: {title}\nLocation: {city}, {country}\n\n{page_text}"
+
+        new_jobs.append({"title": title, "url": job_url, "detail_text": detail_text})
+    return new_jobs
+
+
+# ─── 5. PERSONIO XML ───
+def check_personio(site, seen_urls):
+    """Parse Personio's XML job feed."""
+    api = site["api"]
+    detail_template = site.get("job_detail_url_template", "")
+
+    try:
+        resp = requests.get(api["url"], headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        root = ET.fromstring(resp.content)
+    except Exception as e:
+        print(f"    Personio XML error: {e}")
+        return None
+
+    positions = root.findall(f".//{api['position_element']}")
+    print(f"    XML feed returned {len(positions)} positions")
+
+    new_jobs = []
+    for pos in positions:
+        job_id = pos.findtext("id", "")
+        title = pos.findtext("name", "Untitled")
+        office = pos.findtext("office", "")
+        department = pos.findtext("department", "")
+        emp_type = pos.findtext("employmentType", "")
+        schedule = pos.findtext("schedule", "")
+
+        job_url = detail_template.replace("{id}", job_id) if detail_template and job_id else ""
+
+        if job_url in seen_urls or job_id in seen_urls:
+            continue
+
+        detail_text = (
+            f"Title: {title}\nOffice: {office}\nDepartment: {department}\n"
+            f"Employment Type: {emp_type}\nSchedule: {schedule}"
+        )
+
+        # Try fetching the detail page for more info
+        if job_url:
+            time.sleep(1)
+            detail_soup = fetch_page(job_url)
+            if detail_soup:
+                page_text = extract_text(detail_soup)
+                if len(page_text) > len(detail_text):
+                    detail_text += f"\n\n{page_text}"
+
+        new_jobs.append({"title": title, "url": job_url or job_id, "detail_text": detail_text})
+    return new_jobs
+
+
+# ─── 6. TALEO RSS ───
+def check_taleo(site, seen_urls):
+    """Parse Taleo's RSS feed for job listings."""
+    primary = site.get("primary_approach", {})
+    rss_url = primary.get("url", "")
+
+    if not rss_url:
+        print("    No RSS URL configured for Taleo site.")
+        return None
+
+    try:
+        resp = requests.get(rss_url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        root = ET.fromstring(resp.content)
+    except Exception as e:
+        print(f"    Taleo RSS error: {e}")
+        print("    (This site may need a headless browser — see notes in config)")
+        return None
+
+    # RSS 2.0: items are at channel/item
+    items = root.findall(".//item")
+    print(f"    RSS feed returned {len(items)} items")
+
+    new_jobs = []
+    for item in items:
+        title = item.findtext("title", "Untitled")
+        link = item.findtext("link", "")
+        description = item.findtext("description", "")
+
+        if link in seen_urls:
+            continue
+
+        detail_text = f"Title: {title}\n\n{description}"
+
+        # Try fetching detail page for full info
+        if link:
+            time.sleep(1)
+            detail_soup = fetch_page(link)
+            if detail_soup:
+                page_text = extract_text(detail_soup)
+                if len(page_text) > len(detail_text):
+                    detail_text = f"Title: {title}\n\n{page_text}"
+
+        new_jobs.append({"title": title, "url": link, "detail_text": detail_text})
+    return new_jobs
+
+
+# ═══════════════════════════════════════════════════════════════
+#  DISPATCHER — routes each site to the correct handler
+# ═══════════════════════════════════════════════════════════════
+
+METHOD_HANDLERS = {
+    "html": check_html,
+    "workday_api": check_workday,
+    "greenhouse_api": check_greenhouse,
+    "workable_api": check_workable,
+    "personio_xml": check_personio,
+    "taleo_rss": check_taleo,
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+#  AI MATCHING — send job details to Gemini
+# ═══════════════════════════════════════════════════════════════
+
+def evaluate_with_gemini(site_name, job_title, job_url, detail_text, is_page_level=False):
+    gemini_rate_limit()
+    url = (
+        f"https://generativelanguage.googleapis.com/v1beta/"
+        f"models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+    )
+
+    if is_page_level:
+        prompt = f"""You are a job matching assistant. Below is the FULL CONTENT of the "{site_name}" careers page. It may contain multiple job listings, or general information about working at the organization.
+
+Your task:
+1. Identify any individual job listings or vacancies mentioned on the page.
+2. For each job found, assess how well it matches the candidate's qualifications: High, Medium, or Low.
+3. Only include jobs rated High or Medium.
+4. If no jobs are found or none match, respond with exactly: NO_MATCH
+
+Format each match as:
+JOB: [Job title]
+MATCH: [High/Medium]
+REASON: [2-3 sentence explanation]
+URL: {job_url}
+
+The page content may be in German or another language — assess it regardless.
+
+---
+
+CAREERS PAGE CONTENT:
+{detail_text[:4000]}
+
+---
+
+CANDIDATE QUALIFICATIONS:
+{QUALIFICATIONS}
+"""
+    else:
+        prompt = f"""You are a job matching assistant. Below is the FULL DESCRIPTION of a job posting titled "{job_title}" found on "{site_name}", followed by a candidate's qualifications.
+
+Your task:
+1. Assess how well this job matches the candidate's qualifications: High, Medium, or Low.
+2. If the match is High or Medium, respond in this exact format:
+
+JOB: {job_title}
+MATCH: [High/Medium]
+REASON: [2-3 sentence explanation of why this matches and any gaps]
+URL: {job_url}
+
+3. If the match is Low, respond with exactly: NO_MATCH
+
+Important:
+- The job description may be in German or another language — assess it regardless.
+- Focus on skills, experience level, and field alignment.
+- "Medium" means the candidate could plausibly apply with some stretch. "High" means strong alignment.
+
+---
+
+FULL JOB DESCRIPTION:
+{detail_text[:4000]}
+
+---
+
+CANDIDATE QUALIFICATIONS:
+{QUALIFICATIONS}
+"""
+
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 512}
+    }
+
+    try:
+        resp = requests.post(url, json=payload, timeout=60)
+        resp.raise_for_status()
+        data = resp.json()
+        return data["candidates"][0]["content"]["parts"][0]["text"]
+    except Exception as e:
+        print(f"    Gemini error: {e}")
+        return None
+
+
+# ═══════════════════════════════════════════════════════════════
+#  TELEGRAM NOTIFICATIONS
+# ═══════════════════════════════════════════════════════════════
+
+def escape_html(text):
+    """Escape characters that break Telegram's HTML parser."""
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+def send_telegram(message):
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    chunks = [message[i:i + 4000] for i in range(0, len(message), 4000)]
+    for chunk in chunks:
+        payload = {
+            "chat_id": TELEGRAM_CHAT_ID,
+            "text": chunk,
+            "parse_mode": "HTML",
+            "disable_web_page_preview": True
+        }
+        try:
+            resp = requests.post(url, json=payload, timeout=15)
+            # If HTML parsing fails, retry without formatting
+            if resp.status_code == 400:
+                payload["parse_mode"] = ""
+                requests.post(url, json=payload, timeout=15)
+        except Exception as e:
+            print(f"    Telegram error: {e}")
+
+
+# ═══════════════════════════════════════════════════════════════
+#  MAIN PIPELINE
+# ═══════════════════════════════════════════════════════════════
+
+def main():
+    now = datetime.now(timezone.utc)
+    print(f"=== Job Monitor Run: {now.isoformat()} ===")
+    if DRY_RUN:
+        print("🏃 DRY RUN — populating state only, no Gemini calls or notifications\n")
+    print()
+
+    state = load_state()
+    all_matches = []
+    errors = []
+
+    for site in SITES:
+        name = site["name"]
+        method = site["method"]
+        site_key = site["url"]
+
+        print(f"\n[{site.get('id', '?')}] {name} ({method})")
+
+        # Initialize state for this site
+        if site_key not in state:
+            state[site_key] = {"seen_urls": [], "last_checked": "", "listing_hash": ""}
+
+        seen_urls = set(state[site_key].get("seen_urls", []))
+        handler = METHOD_HANDLERS.get(method)
+
+        if not handler:
+            print(f"    Unknown method: {method}. Skipping.")
+            continue
+
+        # Run the appropriate handler
+        result = handler(site, seen_urls)
+
+        if result is None:
+            errors.append(name)
+            state[site_key]["last_checked"] = now.isoformat()
+            continue
+
+        # Handle the hash-check case (HTML sites without link_selector)
+        if isinstance(result, dict) and result.get("type") == "hash_check":
+            old_hash = state[site_key].get("listing_hash", "")
+            if result["hash"] != old_hash:
+                if DRY_RUN:
+                    print(f"    Page content changed (dry run — skipping Gemini)")
+                else:
+                    print(f"    Page content changed! Sending full text to Gemini...")
+                    gemini_result = evaluate_with_gemini(name, f"Page update on {name}", site["url"], result["text"], is_page_level=True)
+                    if gemini_result and "NO_MATCH" not in gemini_result:
+                        all_matches.append(f"📌 <b>{escape_html(name)}</b>\n\n{escape_html(gemini_result)}")
+                state[site_key]["listing_hash"] = result["hash"]
+            else:
+                print(f"    No changes detected.")
+            state[site_key]["last_checked"] = now.isoformat()
+            continue
+
+        # Normal case: list of new jobs
+        new_jobs = result
+        if not new_jobs:
+            print(f"    No new jobs.")
+            state[site_key]["last_checked"] = now.isoformat()
+            continue
+
+        print(f"    {len(new_jobs)} new job(s)! {'Saving to state (dry run)' if DRY_RUN else 'Evaluating...'}")
+
+        for job in new_jobs:
+            print(f"      → {job['title']}")
+
+            if not DRY_RUN:
+                gemini_result = evaluate_with_gemini(name, job["title"], job["url"], job["detail_text"])
+
+                if gemini_result and "NO_MATCH" not in gemini_result:
+                    all_matches.append(f"📌 <b>{escape_html(name)}</b>\n\n{escape_html(gemini_result)}")
+                    print(f"        ✅ Match!")
+                else:
+                    print(f"        No match.")
+
+            seen_urls.add(job["url"])
+            for extra in job.get("_also_track", []):
+                seen_urls.add(extra)
+            time.sleep(1)  # Respect Gemini rate limits
+
+        state[site_key]["seen_urls"] = list(seen_urls)
+        state[site_key]["last_checked"] = now.isoformat()
+
+    # ─── Prune seen_urls to prevent state.json bloat ───
+    # Cap each site's list at 200 entries, keeping the most recent
+    for site_key, site_state in state.items():
+        seen = site_state.get("seen_urls", [])
+        if len(seen) > 200:
+            site_state["seen_urls"] = seen[-200:]
+            print(f"  Pruned seen_urls for {site_key} to last 200 entries")
+
+    # ─── Save state ───
+    save_state(state)
+
+    # ─── Send results ───
+    if DRY_RUN:
+        print(f"\n🏃 Dry run complete. State populated for {len(SITES)} sites.")
+        print(f"   Next run will only flag genuinely new jobs.")
+    elif all_matches:
+        header = f"🔍 <b>Job Monitor Report</b>\n<i>{now.strftime('%Y-%m-%d %H:%M')} UTC</i>\n\n"
+        message = header + "\n\n---\n\n".join(all_matches)
+        send_telegram(message)
+        print(f"\n✅ Sent {len(all_matches)} match(es) to Telegram.")
+    else:
+        print("\nNo matching jobs found this run.")
+
+    if errors and not DRY_RUN:
+        error_msg = f"⚠️ <b>Job Monitor Errors</b>\nFailed to scrape: {escape_html(', '.join(errors))}"
+        send_telegram(error_msg)
+        print(f"Errors: {', '.join(errors)}")
+
+
+if __name__ == "__main__":
+    main()
