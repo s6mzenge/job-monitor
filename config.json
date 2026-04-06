@@ -83,9 +83,10 @@
       "name": "Wiener Holocaust Library",
       "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
       "method": "html",
-      "selector": "div.entry-content, article.page",
-      "link_selector": "div.entry-content a",
-      "base_url": "https://wienerholocaustlibrary.org"
+      "selector": "div.block-content, div.entry-content, article.page",
+      "link_selector": "div.block-content a",
+      "base_url": "https://wienerholocaustlibrary.org",
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 5,
