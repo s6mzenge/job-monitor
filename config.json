@@ -78,13 +78,14 @@
       },
       "job_detail_api": "https://pewtrusts.wd5.myworkdayjobs.com/wday/cxs/pewtrusts/CenterExternal/job/{externalPath}"
     },
+    
     {
       "id": 4,
       "name": "Wiener Holocaust Library",
       "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
       "method": "html",
       "selector": "div.block-content, div.entry-content, article.page",
-      "link_selector": "div.block-content a",
+      "link_selector": "",
       "base_url": "https://wienerholocaustlibrary.org",
       "proxy": "cloudflare_worker"
     },
