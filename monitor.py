@@ -315,6 +315,14 @@ def check_workable(site, seen_urls):
         country = get_nested(posting, fields.get("location_country", ""))
         department = posting.get(fields.get("department", ""), "")
 
+        # ── NEW: location filter ──
+        location_filter = site.get("location_filter", "")
+        if location_filter:
+            location_str = f"{city} {country}".lower()
+            if location_filter.lower() not in location_str:
+                continue
+        # ── END NEW ──
+        
         if job_url in seen_urls:
             continue
 
