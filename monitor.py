@@ -434,6 +434,55 @@ def check_taleo(site, seen_urls):
 
     return {"total": len(items), "new": new_jobs}
 
+# ─── 7. PALLADIUM AJAX API ───
+def check_palladium(site, seen_urls):
+    """Query Palladium's internal AJAX endpoint and filter by country."""
+    api = site["api"]
+    fields = api["job_fields"]
+    country_filter = api.get("country_filter", "")
+    url_template = api.get("job_url_template", "")
+
+    hdrs = {**HEADERS, **api.get("headers", {})}
+
+    try:
+        resp = requests.get(api["url"], headers=hdrs, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"    Palladium API error: {e}")
+        return None
+
+    all_jobs = data.get(api["response_key"], [])
+
+    if country_filter:
+        filtered = [j for j in all_jobs if j.get(fields["country"], "") == country_filter]
+        print(f"    API returned {len(all_jobs)} jobs, {len(filtered)} in '{country_filter}'")
+    else:
+        filtered = all_jobs
+        print(f"    API returned {len(all_jobs)} jobs")
+
+    new_jobs = []
+    for job in filtered:
+        job_id = str(job.get(fields["id"], ""))
+        title = job.get(fields["title"], "Untitled")
+        country = job.get(fields["country"], "")
+
+        job_url = url_template.replace("{job_id}", job_id) if url_template and job_id else ""
+
+        if job_url in seen_urls or job_id in seen_urls:
+            continue
+
+        detail_text = f"Title: {title}\nLocation: United Kingdom\nOrganisation: Palladium Group"
+
+        new_jobs.append({
+            "title": title,
+            "url": job_url or job_id,
+            "detail_text": detail_text,
+            "_also_track": [u for u in [job_url, job_id] if u]
+        })
+
+    return {"total": len(filtered), "new": new_jobs}
+
 
 # ═══════════════════════════════════════════════════════════════
 #  DISPATCHER — routes each site to the correct handler
@@ -446,6 +495,7 @@ METHOD_HANDLERS = {
     "workable_api": check_workable,
     "personio_xml": check_personio,
     "taleo_rss": check_taleo,
+    "palladium_api": check_palladium,
 }
 
 
