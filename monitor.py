@@ -128,14 +128,20 @@ def check_html(site, seen_urls):
     if not anchors and len(extract_text(soup, selector)) < 100:
         print(f"    ⚠️ No job links found and page content is minimal — likely JS-rendered")
     jobs = []
+    seen_in_batch = set()
     for a in anchors:
         href = a.get("href", "")
         if not href or href == "#" or href == listing_url:
             continue
         full_url = urljoin(base_url + "/", href) if base_url else urljoin(listing_url, href)
         title = a.get_text(strip=True) or "Untitled"
-        if full_url not in seen_urls:
+        if full_url not in seen_urls and full_url not in seen_in_batch:
+            # Skip generic link text that isn't a real job title
+            if title.lower() in ("view job", "apply", "learn more", "read more", "click here"):
+                seen_in_batch.add(full_url)
+                continue
             jobs.append({"title": title, "url": full_url})
+            seen_in_batch.add(full_url)
 
     # Fetch detail pages for new jobs
     new_jobs = []
