@@ -294,14 +294,28 @@
       "link_selector": "a[href*='/karriere/stellenangebot/']",
       "base_url": "https://www.swp-berlin.org"
     },
+    
     {
       "id": 22,
       "name": "RAND Europe",
       "url": "https://www.rand.org/randeurope/employment.html",
-      "method": "html",
-      "selector": "div.body-text, main",
-      "link_selector": "",
-      "base_url": "https://www.rand.org"
+      "method": "workable_api",
+      "base_url": "https://apply.workable.com",
+      "api": {
+        "url": "https://apply.workable.com/api/v1/widget/accounts/rand-europe",
+        "http_method": "GET",
+        "response_key": "jobs",
+        "job_fields": {
+          "title": "title",
+          "shortcode": "shortcode",
+          "url": "url",
+          "department": "department",
+          "location_city": "city",
+          "location_country": "country",
+          "created_at": "created_at"
+        }
+      },
+      "location_filter": "United Kingdom"
     },
     {
       "id": 23,
