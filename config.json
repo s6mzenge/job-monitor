@@ -209,7 +209,7 @@
       "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
       "method": "html",
       "selector": "div.job-search-results, table.job-list, div#jobResults",
-      "link_selector": "a[href*='JobDetail'], a[href*='JobSearch']",
+      "link_selector": "a[href*='JobDetail']",
       "base_url": "https://dalberg.hua.hrsmart.com"
     },
     {
@@ -217,8 +217,8 @@
       "name": "Laudes Foundation",
       "url": "https://www.laudesfoundation.org/who-we-are/people-and-careers/",
       "method": "html",
-      "selector": "main, section",
-      "link_selector": "a[href*='job'], a[href*='career'], a[href*='linkedin']",
+      "selector": "main",
+      "link_selector": "",
       "base_url": "https://www.laudesfoundation.org"
     },
     {
@@ -227,7 +227,7 @@
       "url": "https://www.humanmovement.cam.ac.uk/jobs/aggregator",
       "method": "html",
       "selector": "div.region-content",
-      "link_selector": "a[href*='job'], a[href*='cam.ac.uk']",
+      "link_selector": "",
       "base_url": "https://www.humanmovement.cam.ac.uk"
     },
     {
@@ -235,8 +235,8 @@
       "name": "Runnymede Trust",
       "url": "https://www.runnymedetrust.org/about/careers",
       "method": "html",
-      "selector": "div.w-dyn-list, section",
-      "link_selector": "a.w-dyn-item, a[href*='careers']",
+      "selector": "div.w-dyn-list",
+      "link_selector": "",
       "base_url": "https://www.runnymedetrust.org"
     },
     {
@@ -294,7 +294,7 @@
       "url": "https://www.rand.org/randeurope/employment.html",
       "method": "html",
       "selector": "div.body-text, main",
-      "link_selector": "a[href*='employment'], a[href*='job'], a[href*='rand.org']",
+      "link_selector": "",
       "base_url": "https://www.rand.org"
     },
     {
