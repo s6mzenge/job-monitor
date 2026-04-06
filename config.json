@@ -1,0 +1,319 @@
+{
+  "qualifications": "MSc International Relations Research student at the London School of Economics, with a focus on International Law and Genocide. BA in Politics and Society (Minor: Economics) from the University of Bonn, final grade 1.3. Experience in policy research, data analysis, and higher education administration, including supporting the allocation of €1.7 million in federal funding at the German Rectors Conference. Published researcher on German higher education policy and Green Party defence policy. Fluent in German (native) and English (C2), with working French (B1). Skills in SPSS, Python, Excel, literature review, and policy writing. Interested in roles related to European foreign policy, security studies, international law, genocide prevention and transitional justice, think tank research, and higher education policy."
+
+  "sites": [
+    {
+      "id": 1,
+      "name": "Palladium Group",
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "html",
+      "selector": "div.job-list-container",
+      "link_selector": "a[href*='csod'], a[href*='job']",
+      "base_url": "https://thepalladiumgroup.com"
+    },
+    {
+      "id": 2,
+      "name": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
+      "method": "workday_api",
+      "base_url": "https://osfglobal.wd5.myworkdayjobs.com",
+      "api": {
+        "url": "https://osfglobal.wd5.myworkdayjobs.com/wday/cxs/osfglobal/OSF/jobs",
+        "http_method": "POST",
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "Referer": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF"
+        },
+        "body": {
+          "appliedFacets": {},
+          "limit": 20,
+          "offset": 0,
+          "searchText": ""
+        },
+        "response_key": "jobPostings",
+        "total_key": "total",
+        "job_fields": {
+          "title": "title",
+          "path": "externalPath",
+          "location": "locationsText",
+          "posted": "postedOn"
+        }
+      },
+      "job_detail_api": "https://osfglobal.wd5.myworkdayjobs.com/wday/cxs/osfglobal/OSF/job/{externalPath}"
+    },
+    {
+      "id": 3,
+      "name": "Pew Trusts",
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
+      "method": "workday_api",
+      "base_url": "https://pewtrusts.wd5.myworkdayjobs.com",
+      "api": {
+        "url": "https://pewtrusts.wd5.myworkdayjobs.com/wday/cxs/pewtrusts/CenterExternal/jobs",
+        "http_method": "POST",
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "Referer": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal"
+        },
+        "body": {
+          "appliedFacets": {
+            "timeType": ["2fc7bad2b85410c0e2f24883d51b26e8"]
+          },
+          "limit": 20,
+          "offset": 0,
+          "searchText": ""
+        },
+        "response_key": "jobPostings",
+        "total_key": "total",
+        "job_fields": {
+          "title": "title",
+          "path": "externalPath",
+          "location": "locationsText",
+          "posted": "postedOn"
+        }
+      },
+      "job_detail_api": "https://pewtrusts.wd5.myworkdayjobs.com/wday/cxs/pewtrusts/CenterExternal/job/{externalPath}"
+    },
+    {
+      "id": 4,
+      "name": "Wiener Holocaust Library",
+      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
+      "method": "html",
+      "selector": "div.entry-content, article.page",
+      "link_selector": "div.entry-content a",
+      "base_url": "https://wienerholocaustlibrary.org"
+    },
+    {
+      "id": 5,
+      "name": "Aegis Trust",
+      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
+      "method": "html",
+      "selector": "div.entry-content",
+      "link_selector": "div.entry-content a",
+      "base_url": "https://aegistrust.online"
+    },
+    {
+      "id": 6,
+      "name": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/search/?academicDisciplineFacet%5B%5D=politics-and-government&location=London%2C+UK&distance=0",
+      "method": "html",
+      "selector": "div.search-results",
+      "link_selector": "a[href*='/job/']",
+      "base_url": "https://www.jobs.ac.uk"
+    },
+    {
+      "id": 7,
+      "name": "Eurasia Group",
+      "url": "https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
+      "method": "html",
+      "selector": "main, div[class*='job']",
+      "link_selector": "a[href*='/eurasia-group/jobs/']",
+      "base_url": "https://ats.rippling.com"
+    },
+    {
+      "id": 8,
+      "name": "Sibylline",
+      "url": "https://careers.smartrecruiters.com/SibyllineLtd/",
+      "method": "html",
+      "selector": "section.openings-section",
+      "link_selector": "a[href*='smartrecruiters.com/SibyllineLtd']",
+      "base_url": "https://careers.smartrecruiters.com"
+    },
+    {
+      "id": 9,
+      "name": "Hakluyt",
+      "url": "https://apply.workable.com/hakluyt/",
+      "method": "workable_api",
+      "base_url": "https://apply.workable.com",
+      "api": {
+        "url": "https://apply.workable.com/api/v1/widget/accounts/hakluyt",
+        "http_method": "GET",
+        "response_key": "jobs",
+        "job_fields": {
+          "title": "title",
+          "shortcode": "shortcode",
+          "url": "url",
+          "department": "department",
+          "location_city": "location.city",
+          "location_country": "location.country",
+          "created_at": "created_at"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "Portland Communications",
+      "url": "https://job-boards.greenhouse.io/portland-communications",
+      "method": "greenhouse_api",
+      "base_url": "https://job-boards.greenhouse.io",
+      "api": {
+        "url": "https://boards-api.greenhouse.io/v1/boards/portland-communications/jobs?content=true",
+        "http_method": "GET",
+        "response_key": "jobs",
+        "job_fields": {
+          "id": "id",
+          "title": "title",
+          "url": "absolute_url",
+          "location": "location.name",
+          "updated_at": "updated_at",
+          "description_html": "content"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "FTI Consulting",
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "selector": "div.job-results-container",
+      "link_selector": "a[href*='/ftistudentcareers/jobs/']",
+      "base_url": "https://fticonsult.referrals.selectminds.com"
+    },
+    {
+      "id": 12,
+      "name": "FSG",
+      "url": "https://job-boards.greenhouse.io/fsg",
+      "method": "greenhouse_api",
+      "base_url": "https://job-boards.greenhouse.io",
+      "api": {
+        "url": "https://boards-api.greenhouse.io/v1/boards/fsg/jobs?content=true",
+        "http_method": "GET",
+        "response_key": "jobs",
+        "job_fields": {
+          "id": "id",
+          "title": "title",
+          "url": "absolute_url",
+          "location": "location.name",
+          "updated_at": "updated_at",
+          "description_html": "content"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "name": "Bridgespan Group",
+      "url": "https://phh.tbe.taleo.net/phh01/ats/careers/v2/searchResults?org=THEBRIDG12&cws=40",
+      "method": "taleo_rss",
+      "base_url": "https://phh.tbe.taleo.net",
+      "primary_approach": {
+        "type": "rss_feed",
+        "url": "https://phh.tbe.taleo.net/phh01/ats/servlet/Rss?org=THEBRIDG12&cws=40"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Dalberg",
+      "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+      "method": "html",
+      "selector": "div.job-search-results, table.job-list, div#jobResults",
+      "link_selector": "a[href*='JobDetail'], a[href*='JobSearch']",
+      "base_url": "https://dalberg.hua.hrsmart.com"
+    },
+    {
+      "id": 15,
+      "name": "Laudes Foundation",
+      "url": "https://www.laudesfoundation.org/who-we-are/people-and-careers/",
+      "method": "html",
+      "selector": "main, section",
+      "link_selector": "a[href*='job'], a[href*='career'], a[href*='linkedin']",
+      "base_url": "https://www.laudesfoundation.org"
+    },
+    {
+      "id": 16,
+      "name": "Cambridge Human Movement Centre",
+      "url": "https://www.humanmovement.cam.ac.uk/jobs/aggregator",
+      "method": "html",
+      "selector": "div.region-content",
+      "link_selector": "a[href*='job'], a[href*='cam.ac.uk']",
+      "base_url": "https://www.humanmovement.cam.ac.uk"
+    },
+    {
+      "id": 17,
+      "name": "Runnymede Trust",
+      "url": "https://www.runnymedetrust.org/about/careers",
+      "method": "html",
+      "selector": "div.w-dyn-list, section",
+      "link_selector": "a.w-dyn-item, a[href*='careers']",
+      "base_url": "https://www.runnymedetrust.org"
+    },
+    {
+      "id": 18,
+      "name": "IPPR",
+      "url": "https://www.ippr.org/jobs",
+      "method": "html",
+      "selector": "section, main",
+      "link_selector": "a[href*='/jobs/']",
+      "base_url": "https://www.ippr.org"
+    },
+    {
+      "id": 19,
+      "name": "ECFR",
+      "url": "https://ecfr.eu/jobs/",
+      "method": "personio_xml",
+      "base_url": "https://ecfr.jobs.personio.com",
+      "job_detail_url_template": "https://ecfr.jobs.personio.com/job/{id}",
+      "api": {
+        "url": "https://ecfr.jobs.personio.com/xml",
+        "http_method": "GET",
+        "format": "xml",
+        "position_element": "position",
+        "job_fields": {
+          "id": "id",
+          "title": "name",
+          "location": "office",
+          "department": "department",
+          "employment_type": "employmentType",
+          "schedule": "schedule"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "name": "Carnegie Council",
+      "url": "https://www.carnegiecouncil.org/about/jobs",
+      "method": "html",
+      "selector": "main, section",
+      "link_selector": "a[href*='/about/jobs/']",
+      "base_url": "https://www.carnegiecouncil.org"
+    },
+    {
+      "id": 21,
+      "name": "SWP Berlin",
+      "url": "https://www.swp-berlin.org/karriere",
+      "method": "html",
+      "selector": "section#c3170, div.frame-type-list",
+      "link_selector": "a[href*='/karriere/stellenangebot/']",
+      "base_url": "https://www.swp-berlin.org"
+    },
+    {
+      "id": 22,
+      "name": "RAND Europe",
+      "url": "https://www.rand.org/randeurope/employment.html",
+      "method": "html",
+      "selector": "div.body-text, main",
+      "link_selector": "a[href*='employment'], a[href*='job'], a[href*='rand.org']",
+      "base_url": "https://www.rand.org"
+    },
+    {
+      "id": 23,
+      "name": "Chatham House",
+      "url": "https://careers.chathamhouse.org/jobs",
+      "method": "html",
+      "selector": "main, div.jobs-list, section",
+      "link_selector": "a[href*='/jobs/']",
+      "base_url": "https://careers.chathamhouse.org"
+    },
+    {
+      "id": 24,
+      "name": "Fabian Society",
+      "url": "https://fabians.org.uk/about-us/recruitment/",
+      "method": "html",
+      "selector": "div.entry-content, article",
+      "link_selector": "div.entry-content a",
+      "base_url": "https://fabians.org.uk"
+    }
+  ]
+}
