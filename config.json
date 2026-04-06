@@ -206,13 +206,14 @@
         "url": "https://phh.tbe.taleo.net/phh01/ats/servlet/Rss?org=THEBRIDG12&cws=40"
       }
     },
+    
     {
       "id": 14,
       "name": "Dalberg",
       "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
       "method": "html",
-      "selector": "div.job-search-results, table.job-list, div#jobResults",
-      "link_selector": "a[href*='JobDetail']",
+      "selector": "table#jobSearchResultsGrid_table",
+      "link_selector": "a[href*='/Posting/view/']",
       "base_url": "https://dalberg.hua.hrsmart.com"
     },
     {
