@@ -114,6 +114,7 @@
       "link_selector": "a[href*='/eurasia-group/jobs/']",
       "base_url": "https://ats.rippling.com"
     },
+    
     {
       "id": 8,
       "name": "Sibylline",
@@ -121,7 +122,8 @@
       "method": "html",
       "selector": "section.openings-section",
       "link_selector": "a[href*='smartrecruiters.com/SibyllineLtd']",
-      "base_url": "https://careers.smartrecruiters.com"
+      "base_url": "https://careers.smartrecruiters.com",
+      "location_filter": "London"
     },
     {
       "id": 9,
