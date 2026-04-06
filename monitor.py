@@ -20,6 +20,9 @@ TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 DRY_RUN = os.environ.get("DRY_RUN", "false").lower() == "true"
+CF_WORKER_URL = os.environ.get("CF_WORKER_URL", "")
+CF_WORKER_TOKEN = os.environ.get("CF_WORKER_TOKEN", "")
+
 
 # ─── Gemini rate limiter (15 RPM on free tier) ───
 _gemini_calls = []
@@ -58,11 +61,19 @@ def save_state(state):
 #  UTILITY FUNCTIONS
 # ═══════════════════════════════════════════════════════════════
 
-def fetch_page(url, extra_headers=None):
+def fetch_page(url, extra_headers=None, proxy=None):
     """Fetch a URL and return a BeautifulSoup object, or None on error."""
     hdrs = {**HEADERS, **(extra_headers or {})}
     try:
-        resp = requests.get(url, headers=hdrs, timeout=30)
+        if proxy == "cloudflare_worker" and CF_WORKER_URL:
+            resp = requests.get(
+                CF_WORKER_URL,
+                params={"url": url},
+                headers={"X-Proxy-Token": CF_WORKER_TOKEN},
+                timeout=30,
+            )
+        else:
+            resp = requests.get(url, headers=hdrs, timeout=30)
         resp.raise_for_status()
         return BeautifulSoup(resp.text, "html.parser")
     except Exception as e:
@@ -113,7 +124,7 @@ def check_html(site, seen_urls):
     selector = site.get("selector", "")
     location_filter = site.get("location_filter", "")
 
-    soup = fetch_page(listing_url)
+    soup = fetch_page(listing_url, proxy=site.get("proxy"))
     if not soup:
         return None
 
