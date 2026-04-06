@@ -275,13 +275,14 @@
         }
       }
     },
+
     {
       "id": 20,
       "name": "Carnegie Council",
       "url": "https://www.carnegiecouncil.org/about/jobs",
       "method": "html",
-      "selector": "main, section",
-      "link_selector": "a[href*='/about/jobs/']",
+      "selector": "section.primary-content",
+      "link_selector": "a.card-title[href*='/about/jobs/']",
       "base_url": "https://www.carnegiecouncil.org"
     },
     {
