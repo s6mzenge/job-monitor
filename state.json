@@ -1,41 +1,6 @@
 {
   "https://thepalladiumgroup.com/joblist?search=&country=GBR": {
-    "seen_urls": [
-      "25010",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/24967?c=palladium",
-      "24967",
-      "25031",
-      "25034",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25031?c=palladium",
-      "25008",
-      "24975",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/24111?c=palladium",
-      "24111",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/24994?c=palladium",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/24993?c=palladium",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/24145?c=palladium",
-      "25030",
-      "24145",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/24150?c=palladium",
-      "24993",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/24995?c=palladium",
-      "24994",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25034?c=palladium",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25001?c=palladium",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25032?c=palladium",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/24956?c=palladium",
-      "24956",
-      "25032",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/24454?c=palladium",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25008?c=palladium",
-      "25001",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25030?c=palladium",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/24975?c=palladium",
-      "24150",
-      "24995",
-      "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25010?c=palladium",
-      "24454"
-    ],
+    "seen_urls": [],
     "last_checked": "2026-04-06T23:09:55.532634+00:00",
     "listing_hash": ""
   },
@@ -69,7 +34,6 @@
   },
   "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government": {
     "seen_urls": [
-      "https://www.jobs.ac.uk/job/DQY864/research-associate",
       "https://www.jobs.ac.uk/job/DRB021/research-officer-in-african-health-economics-and-diagnostics-ahead-project",
       "https://www.jobs.ac.uk/job/DRB340/2x-resident-senior-policy-fellows-bloomberg-lse-european-city-leadership-initiative",
       "https://www.jobs.ac.uk/job/DQS483/phd-position-within-the-project-governing-health-family-and-religion-the-biopolitics-of-genetic-counselling-and-religious-family-formations-reli-gene",
@@ -81,7 +45,6 @@
       "https://www.jobs.ac.uk/job/DRA100/research-and-teaching-assistant-in-economics",
       "https://www.jobs.ac.uk/job/DQY420/lecturer-senior-lecturer-in-law-and-international-relations",
       "https://www.jobs.ac.uk/job/DQU972/lecturer-in-public-policy",
-      "https://www.jobs.ac.uk/job/DRB023/postdoctoral-research-associate",
       "https://www.jobs.ac.uk/job/DRB421/phd-studentship-politics-and-mythmaking-disentangling-myth-from-ideology"
     ],
     "last_checked": "2026-04-06T23:09:55.532634+00:00",
