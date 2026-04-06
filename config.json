@@ -350,8 +350,7 @@
       "selector": "div.entry-content, article",
       "link_selector": "div.entry-content a",
       "base_url": "https://fabians.org.uk"
-    }, 
-    ,
+    },
     {
       "id": 25,
       "name": "Anthropic",
