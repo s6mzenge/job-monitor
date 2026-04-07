@@ -377,11 +377,11 @@
       "id": 26,
       "name": "Anti-Slavery International",
       "url": "https://www.antislavery.org/about-us/jobs-and-volunteering/",
-      "method": "html",
+      "method": "playwright",
       "selector": "div.article-body",
       "link_selector": "",
       "base_url": "https://www.antislavery.org",
-      "proxy": "cloudflare_worker"
+      "wait_ms": 5000
     }, 
     {
       "id": 27,
