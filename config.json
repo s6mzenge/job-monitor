@@ -418,6 +418,15 @@
       "selector": "section.career11_wrap",
       "link_selector": "",
       "base_url": "https://justice.org.uk"
+    }, 
+    {
+      "id": 30,
+      "name": "BIICL",
+      "url": "https://www.biicl.org/vacancies",
+      "method": "html",
+      "selector": "article",
+      "link_selector": "",
+      "base_url": "https://www.biicl.org"
     }
   ]
 }
