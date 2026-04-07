@@ -655,6 +655,17 @@ def parse_gemini_matches(raw_text):
     if not raw_text or "NO_MATCH" in raw_text:
         return matches
 
+    FIELDS = ["JOB", "ORGANISATION", "LOCATION", "TYPE", "DEADLINE", "SALARY", "MATCH", "REASON", "URL"]
+
+    def is_field_line(line):
+        """Check if a line starts with a known field label. Returns (field_name, value) or None."""
+        upper = line.upper().strip()
+        for field in FIELDS:
+            if upper.startswith(field + ":"):
+                value = line.strip()[len(field) + 1:].strip()
+                return field.lower(), value
+        return None
+
     # Split on "JOB:" to get individual match blocks
     blocks = raw_text.split("JOB:")
     for block in blocks[1:]:  # skip everything before the first JOB:
@@ -662,12 +673,19 @@ def parse_gemini_matches(raw_text):
         lines = block.strip().splitlines()
         # First line is the job title (remainder after "JOB:" split)
         match["job"] = lines[0].strip()
+
+        current_field = None
         for line in lines[1:]:
-            line = line.strip()
-            for key in ("ORGANISATION:", "LOCATION:", "TYPE:", "DEADLINE:", "SALARY:", "MATCH:", "REASON:", "URL:"):
-                if line.upper().startswith(key):
-                    match[key.rstrip(":").lower()] = line[len(key):].strip()
-                    break
+            parsed = is_field_line(line)
+            if parsed:
+                current_field, value = parsed
+                match[current_field] = value
+            elif current_field == "reason":
+                # Append continuation lines to the reason field
+                continuation = line.strip()
+                if continuation:
+                    match["reason"] = match.get("reason", "") + " " + continuation
+
         if match.get("job"):
             matches.append(match)
     return matches
@@ -814,7 +832,12 @@ def main():
             if not DRY_RUN:
                 gemini_result = evaluate_with_gemini(name, job["title"], job["url"], job["detail_text"])
 
-                if gemini_result and "NO_MATCH" not in gemini_result:
+                if gemini_result is None:
+                    # Gemini call failed — do NOT mark as seen, retry next run
+                    print(f"        ⚠️ Gemini failed — will retry next run.")
+                    continue
+
+                if "NO_MATCH" not in gemini_result:
                     parsed = parse_gemini_matches(gemini_result)
                     for m in parsed:
                         all_matches.append(format_match_for_telegram(m))
