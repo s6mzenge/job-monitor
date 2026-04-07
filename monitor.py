@@ -670,7 +670,7 @@ def check_playwright(site, seen_urls):
                 h_text = h.get_text(strip=True)
                 if h_text and len(h_text) < 100:
                     titles.append(h_text)
-        return {"type": "hash_check", "text": text, "hash": text_hash, "titles": titles}
+        return {"type": "hash_check", "text": text, "hash": text_hash, "titles": titles, "soup": soup}
 
 
     # Link-extraction mode
@@ -1052,6 +1052,16 @@ def main():
                 state[site_key]["last_checked"] = now.isoformat()
                 continue
 
+            title_selector = site.get("job_title_selector", "")
+            if title_selector and result.get("soup"):
+                title_elements = result["soup"].select(title_selector)
+                if title_elements:
+                    titles = [el.get_text(strip=True) for el in title_elements if el.get_text(strip=True)]
+                    for t in titles:
+                        print(f"      → {t}")
+                else:
+                    print(f"    (no titles matched selector '{title_selector}')")
+                    
             old_hash = state[site_key].get("listing_hash", "")
             if result["hash"] != old_hash:
                 for t in result.get("titles", []):
