@@ -453,7 +453,7 @@
       "url": "https://www.rightsforpeace.org/vacancies",
       "method": "html",
       "selector": "#comp-lui70qn0",
-      "link_selector": "",
+      "link_selector": "#comp-l26flm1b a[data-testid='linkElement']",
       "base_url": "https://www.rightsforpeace.org"
     },
     {
