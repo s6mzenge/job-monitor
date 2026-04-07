@@ -541,7 +541,7 @@ def evaluate_with_gemini(site_name, job_title, job_url, detail_text, is_page_lev
     gemini_rate_limit()
     url = (
         f"https://generativelanguage.googleapis.com/v1beta/"
-        f"models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+        f"models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
     )
 
     if is_page_level:
