@@ -427,6 +427,15 @@
       "selector": "article",
       "link_selector": "",
       "base_url": "https://www.biicl.org"
+    }, 
+    {
+      "id": 31,
+      "name": "Protection Approaches",
+      "url": "https://protectionapproaches.org/current-vacancies",
+      "method": "html",
+      "selector": "div.widget-content",
+      "link_selector": "",
+      "base_url": "https://protectionapproaches.org"
     }
   ]
 }
