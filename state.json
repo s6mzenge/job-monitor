@@ -180,8 +180,6 @@
   },
   "https://ecfr.eu/jobs/": {
     "seen_urls": [
-      "https://ecfr.jobs.personio.com/job/2579435",
-      "https://ecfr.jobs.personio.com/job/1993599",
       "https://ecfr.jobs.personio.com/job/2579349"
     ],
     "last_checked": "2026-04-07T00:27:30.381302+00:00",
@@ -196,7 +194,6 @@
   },
   "https://www.swp-berlin.org/karriere": {
     "seen_urls": [
-      "https://www.swp-berlin.org/karriere/stellenangebot/teamleitung-personal",
       "https://www.swp-berlin.org/karriere/stellenangebot/sachbearbeiterin-personal"
     ],
     "last_checked": "2026-04-07T00:27:30.381302+00:00",
@@ -214,9 +211,7 @@
     "listing_hash": ""
   },
   "https://careers.chathamhouse.org/jobs": {
-    "seen_urls": [
-      "https://careers.chathamhouse.org/jobs/7401384-2026-2027-chatham-house-academy-fellowships"
-    ],
+    "seen_urls": [],
     "last_checked": "2026-04-07T00:27:30.381302+00:00",
     "listing_hash": ""
   },
