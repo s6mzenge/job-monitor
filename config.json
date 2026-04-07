@@ -381,6 +381,15 @@
       "selector": "div.article-body",
       "link_selector": "",
       "base_url": "https://www.antislavery.org"
+    }, 
+    {
+      "id": 27,
+      "name": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/en/career",
+      "method": "html",
+      "selector": "div#vacancyList",
+      "link_selector": "div.vacancy__title a",
+      "base_url": "https://cezanneondemand.intervieweb.it"
     }
   ]
 }
