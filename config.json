@@ -382,7 +382,7 @@
       "link_selector": "",
       "base_url": "https://www.antislavery.org",
       "job_title_selector": "div.article-body h3",
-      "proxy": "cloudflare_worker"
+      "use_cloudscraper": true
     }, 
     {
       "id": 27,
