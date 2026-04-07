@@ -390,6 +390,25 @@
       "selector": "div#vacancyList",
       "link_selector": "div.vacancy__title a",
       "base_url": "https://cezanneondemand.intervieweb.it"
+    }, 
+    {
+      "id": 28,
+      "name": "ODI Global",
+      "url": "https://careers.odi.org/#js-careers-jobs-block",
+      "method": "pinpoint_api",
+      "base_url": "https://careers.odi.org",
+      "api": {
+        "url": "https://careers.odi.org/postings.json",
+        "http_method": "GET",
+        "response_key": "data",
+        "job_fields": {
+          "title": "title",
+          "url": "url",
+          "location": "locationName",
+          "department": "departmentName"
+        }
+      },
+      "use_cloudscraper": true
     }
   ]
 }
