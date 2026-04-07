@@ -378,11 +378,10 @@
       "name": "Anti-Slavery International",
       "url": "https://www.antislavery.org/about-us/jobs-and-volunteering/",
       "method": "playwright",
-      "selector": "div.article-body",
+      "selector": "main, article, div.entry-content",
       "link_selector": "",
       "base_url": "https://www.antislavery.org",
-      "job_title_selector": "div.article-body h3",
-      "wait_selector": "div.article-body",
+      "job_title_selector": "h3",
       "wait_until": "load",
       "wait_ms": 5000
     }, 
