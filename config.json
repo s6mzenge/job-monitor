@@ -372,6 +372,15 @@
       },
       "location_filter": "London",
       "department_filter": "Public Policy"
+    }, 
+    {
+      "id": 26,
+      "name": "Anti-Slavery International",
+      "url": "https://www.antislavery.org/about-us/jobs-and-volunteering/",
+      "method": "html",
+      "selector": "div.article-body",
+      "link_selector": "",
+      "base_url": "https://www.antislavery.org"
     }
   ]
 }
