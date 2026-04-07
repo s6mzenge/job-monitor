@@ -441,10 +441,12 @@
       "id": 32,
       "name": "REDRESS",
       "url": "https://redress.org/about-us/work-at-redress/current-vacancies/",
-      "method": "html",
+      "method": "playwright",
       "selector": "div.accordion",
       "link_selector": "",
-      "base_url": "https://redress.org"
+      "base_url": "https://redress.org",
+      "wait_selector": "div.accordion",
+      "wait_ms": 5000
     },
     {
       "id": 33,
