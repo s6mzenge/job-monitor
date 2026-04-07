@@ -164,7 +164,15 @@ def check_html(site, seen_urls):
         if len(text) < 50:
             print(f"    ⚠️ Very little content extracted ({len(text)} chars) — site may require JavaScript rendering")
         text_hash = hashlib.sha256(text.encode()).hexdigest()
-        return {"type": "hash_check", "text": text, "hash": text_hash}
+        titles = []
+        target_el = soup.select_one(selector) if selector else soup
+        if target_el:
+            for h in target_el.select("h3, h4, h5"):
+                h_text = h.get_text(strip=True)
+                if h_text and len(h_text) < 100:
+                    titles.append(h_text)
+        return {"type": "hash_check", "text": text, "hash": text_hash, "titles": titles}
+
 
     if location_filter:
         anchors = []
@@ -655,7 +663,15 @@ def check_playwright(site, seen_urls):
         if len(text) < 50:
             print(f"    ⚠️ Very little content ({len(text)} chars)")
         text_hash = hashlib.sha256(text.encode()).hexdigest()
-        return {"type": "hash_check", "text": text, "hash": text_hash}
+        titles = []
+        target_el = soup.select_one(selector) if selector else soup
+        if target_el:
+            for h in target_el.select("h3, h4, h5"):
+                h_text = h.get_text(strip=True)
+                if h_text and len(h_text) < 100:
+                    titles.append(h_text)
+        return {"type": "hash_check", "text": text, "hash": text_hash, "titles": titles}
+
 
     # Link-extraction mode
     anchors = soup.select(link_selector)
@@ -1038,6 +1054,8 @@ def main():
 
             old_hash = state[site_key].get("listing_hash", "")
             if result["hash"] != old_hash:
+                for t in result.get("titles", []):
+                    print(f"      → {t}")
                 if DRY_RUN:
                     print(f"    Page content changed (dry run — skipping Gemini)")
                 else:
