@@ -445,6 +445,15 @@
       "selector": "div.article-body",
       "link_selector": "",
       "base_url": "https://redress.org"
+    },
+    {
+      "id": 33,
+      "name": "Rights for Peace",
+      "url": "https://www.rightsforpeace.org/vacancies",
+      "method": "html",
+      "selector": "main",
+      "link_selector": "",
+      "base_url": "https://www.rightsforpeace.org"
     }
   ]
 }
