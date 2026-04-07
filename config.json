@@ -465,6 +465,15 @@
       "base_url": "https://vacancies.soas.ac.uk",
       "wait_selector": "div.jobListing",
       "wait_ms": 5000
+    },
+    {
+      "id": 35,
+      "name": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancies.aspx?cat=-1",
+      "method": "html",
+      "selector": "main#maincontent",
+      "link_selector": "div.vacancylistrow a",
+      "base_url": "https://jobs.mdx.ac.uk"
     }
   ]
 }
