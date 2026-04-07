@@ -550,13 +550,14 @@ def evaluate_with_gemini(site_name, job_title, job_url, detail_text, is_page_lev
 INSTRUCTIONS:
 1. Identify any individual job listings or vacancies mentioned on the page.
 2. For each job found, assess alignment with the candidate's CV using these criteria:
-   - Field alignment: Does the role relate to the candidate's areas of study and interest (international relations, international law, genocide/transitional justice, European foreign policy, security studies, higher education policy, policy research)?
+   - Field alignment: Does the role relate to the candidate's areas of study and interest (international relations, international law, genocide/transitional justice, European foreign policy, security studies, higher education policy, policy research, sociology, history)?
    - Skills match: Does the candidate have the required or comparable skills (research, data analysis, policy writing, SPSS, Python, multilingual)?
    - Experience level: Is the role appropriate for someone with an MSc in progress, a strong BA, and research/admin assistant experience — but no full-time professional experience yet?
-   - Location: Is the role in London, remote, or in a location the candidate could reasonably work from?
 3. Rate each job: High, Medium, or Low.
 4. Only include jobs rated High or Medium.
 5. If no jobs are found or none match, respond with exactly: NO_MATCH
+
+Note: Do NOT factor location into the match rating. Location should be reported in the output for the candidate's information, but a role in another city or country should not lower the rating.
 
 FORMAT (for each matching job — use this exact format with these exact labels):
 JOB: [Job title]
@@ -588,15 +589,16 @@ CANDIDATE CV:
         prompt = f"""You are a job matching assistant. You will be given a full job description and a candidate's complete CV. Assess how well this specific role matches the candidate.
 
 ASSESSMENT CRITERIA:
-1. Field alignment: Does the role relate to the candidate's areas of study and interest (international relations, international law, genocide/transitional justice, European foreign policy, security studies, higher education policy, policy research)?
+1. Field alignment: Does the role relate to the candidate's areas of study and interest (international relations, international law, genocide/transitional justice, European foreign policy, security studies, higher education policy, policy research, sociology, history)?
 2. Skills match: Does the candidate have the required or comparable skills (research, data analysis, policy writing, SPSS, Python, multilingual)?
 3. Experience level: Is the role appropriate for someone with an MSc in progress, a strong BA, and research/admin assistant experience — but no full-time professional experience yet? Roles requiring 5+ years of professional experience should be rated Low.
-4. Location: Is the role compatible with someone based in London?
 
 RATING SCALE:
 - High: Strong alignment in field, skills, and seniority. The candidate is a competitive applicant.
 - Medium: Plausible fit — the candidate could apply with some stretch, or the role is adjacent to their expertise.
-- Low: Poor fit due to field mismatch, excessive seniority requirements, or incompatible location.
+- Low: Poor fit due to field mismatch or excessive seniority requirements.
+
+Note: Do NOT factor location into the match rating. Location should be reported in the output for the candidate's information, but a role in another city or country should not lower the rating.
 
 If the match is High or Medium, respond in this exact format (use these exact labels):
 JOB: {job_title}
