@@ -635,7 +635,11 @@ CANDIDATE CV:
         resp = requests.post(url, json=payload, timeout=60)
         resp.raise_for_status()
         data = resp.json()
-        return data["candidates"][0]["content"]["parts"][0]["text"]
+        result = data["candidates"][0]["content"]["parts"][0]["text"]
+        print(f"    --- Gemini raw response ---")
+        print(result)
+        print(f"    --- End Gemini response ---")
+        return result
     except Exception as e:
         print(f"    Gemini error: {e}")
         return None
