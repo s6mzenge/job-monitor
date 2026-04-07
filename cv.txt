@@ -9,7 +9,7 @@ EDUCATION
 London School of Economics and Political Science – MSc International Relations Research
 September 2025 – Present
 - Focus on International Law and Genocide
-- Grades so far: IR471 Critical International Law (76), IR4A3 International Relations: Critical Perspectives (72), MY4IR Research Design for International Relations (75)
+- Grades so far: IR471 Critical International Law (76, Distinction), IR4A3 International Relations: Critical Perspectives (72, , Distinction), MY4IR Research Design for International Relations (75, Distinction)
 
 University of Bonn – BA Politics and Society (Minor: Economics)
 October 2022 – July 2025
@@ -64,7 +64,8 @@ February 2023 – Gained insight into political journalism and media narratives
 ADDITIONAL QUALIFICATIONS
 
 Languages: German (native) – English (C2) – French (B1) – Dutch (A1)
-Software: Excel – Word – PowerPoint – SPSS – Python
+Software: HTML – CSS – JavaScript – React – Regex – Python – DOCX Processing – API Integration – Microsoft Excel – Microsoft Word – Microsoft PowerPoint – Adobe Acrobat – document and citation analysis tools – SPSS
+
 
 KEY INTERESTS
-European foreign policy, security studies, international law, genocide prevention, transitional justice, think tank research, higher education policy, policy research, data analysis
+critical international relations, critical international law, genocide studies, colonial and settler-colonial violence, decolonial theory, TWAIL, feminist international law, international criminal justice, political psychology in IR, enemy image research, discourse analysis, ontological security, German foreign policy discourse, Israel-Germany relations, Franco-German relations, post-atrocity reconciliation, memory and post-atrocity politics, Frankfurt School, social and political theory, history of political thought, international political sociology, qualitative research methods, digital tools for research, academic publishing
