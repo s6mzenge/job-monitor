@@ -635,7 +635,8 @@ def check_playwright(site, seen_urls):
         with sync_playwright() as p:
             browser = p.chromium.launch()
             page = browser.new_page()
-            page.goto(listing_url, timeout=30000, wait_until="networkidle")
+            wait_until = site.get("wait_until", "networkidle")
+            page.goto(listing_url, timeout=30000, wait_until=wait_until)
             if wait_selector:
                 page.wait_for_selector(wait_selector, timeout=15000)
             else:
