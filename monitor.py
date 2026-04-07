@@ -63,6 +63,17 @@ HEADERS = {
                    "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
 
+NO_VACANCY_PHRASES = [
+    "no current vacancies",
+    "no vacancies",
+    "no positions available",
+    "no openings",
+    "check back later",
+    "check back at a later date",
+    "currently no vacancies",
+    "no current opportunities",
+]
+
 def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE, "r", encoding="utf-8") as f:
@@ -958,6 +969,15 @@ def main():
 
         # Handle the hash-check case (HTML sites without link_selector)
         if isinstance(result, dict) and result.get("type") == "hash_check":
+            # Check for "no vacancies" pages
+            page_lower = result["text"].lower()
+            if any(phrase in page_lower for phrase in NO_VACANCY_PHRASES):
+                print(f"    ℹ️ No vacancies listed (page says so).")
+                empty_sites.append(name)
+                state[site_key]["listing_hash"] = result["hash"]
+                state[site_key]["last_checked"] = now.isoformat()
+                continue
+
             old_hash = state[site_key].get("listing_hash", "")
             if result["hash"] != old_hash:
                 if DRY_RUN:
