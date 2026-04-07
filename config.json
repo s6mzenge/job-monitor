@@ -416,7 +416,7 @@
       "url": "https://justice.org.uk/about-us/careers",
       "method": "html",
       "selector": "section.career11_wrap",
-      "link_selector": "",
+      "link_selector": "section.career11_wrap a[href*='/job-opportunity/']",
       "base_url": "https://justice.org.uk"
     }, 
     {
