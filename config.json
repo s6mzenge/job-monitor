@@ -381,7 +381,8 @@
       "selector": "div.article-body",
       "link_selector": "",
       "base_url": "https://www.antislavery.org",
-      "wait_ms": 5000
+      "wait_ms": 5000,
+      "wait_until": "load"
     }, 
     {
       "id": 27,
