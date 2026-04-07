@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
 import cloudscraper
+from playwright.sync_api import sync_playwright
 
 # ─── Load configuration ───
 with open("config.json", "r", encoding="utf-8") as f:
@@ -578,6 +579,80 @@ def check_pinpoint(site, seen_urls):
 
     return {"total": len(postings), "new": new_jobs}
 
+# ─── 9. PLAYWRIGHT (headless browser for JS-rendered sites) ───
+def check_playwright(site, seen_urls):
+    """Use headless Chromium to scrape JS-rendered job listing pages."""
+    listing_url = site["url"]
+    link_selector = site.get("link_selector", "")
+    base_url = site.get("base_url", "")
+    selector = site.get("selector", "")
+    wait_selector = site.get("wait_selector", "")
+    wait_ms = site.get("wait_ms", 5000)
+
+    print(f"    Launching headless Chromium...")
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page()
+            page.goto(listing_url, timeout=30000, wait_until="networkidle")
+            if wait_selector:
+                page.wait_for_selector(wait_selector, timeout=15000)
+            else:
+                page.wait_for_timeout(wait_ms)
+            html = page.content()
+            browser.close()
+    except Exception as e:
+        print(f"    Playwright error: {e}")
+        return None
+
+    soup = BeautifulSoup(html, "html.parser")
+
+    # Hash-check mode (no link_selector)
+    if not link_selector:
+        text = extract_text(soup, selector)
+        if len(text) < 50:
+            print(f"    ⚠️ Very little content ({len(text)} chars)")
+        text_hash = hashlib.sha256(text.encode()).hexdigest()
+        return {"type": "hash_check", "text": text, "hash": text_hash}
+
+    # Link-extraction mode
+    anchors = soup.select(link_selector)
+    print(f"    Found {len(anchors)} job links after JS rendering")
+
+    all_urls = set()
+    jobs = []
+    seen_in_batch = set()
+    for a in anchors:
+        href = a.get("href", "").strip()
+        if not href or href == "#":
+            continue
+
+        title = a.get_text(strip=True) or "Untitled"
+        if title.lower() in ("view job", "apply", "apply now", "learn more",
+                              "read more", "click here", "view", "more info"):
+            continue
+
+        full_url = urljoin(base_url + "/", href) if base_url else urljoin(listing_url, href)
+        full_url = full_url.rstrip("/")
+
+        all_urls.add(full_url)
+        if full_url not in seen_urls and full_url not in seen_in_batch:
+            jobs.append({"title": title, "url": full_url})
+            seen_in_batch.add(full_url)
+
+    new_jobs = []
+    for job in jobs:
+        time.sleep(1)
+        detail_soup = fetch_page(job["url"])
+        detail_text = extract_text(detail_soup) if detail_soup else ""
+        new_jobs.append({
+            "title": job["title"],
+            "url": job["url"],
+            "detail_text": detail_text or f"Title: {job['title']} (detail page could not be loaded)"
+        })
+
+    return {"total": len(all_urls), "new": new_jobs}
+
 
 # ═══════════════════════════════════════════════════════════════
 #  DISPATCHER — routes each site to the correct handler
@@ -592,6 +667,7 @@ METHOD_HANDLERS = {
     "taleo_rss": check_taleo,
     "palladium_api": check_palladium,
     "pinpoint_api": check_pinpoint,
+    "playwright": check_playwright,
 }
 
 
