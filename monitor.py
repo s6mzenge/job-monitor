@@ -567,6 +567,9 @@ TYPE: [Full-time/Part-time/Internship/Contract — extract from page if possible
 DEADLINE: [Application deadline if mentioned, or "Not specified"]
 SALARY: [Salary or pay range if mentioned, or "Not specified"]
 MATCH: [High/Medium]
+FIELD: [1-5 score for field alignment, where 5 = perfect match to candidate's interests]
+SKILLS: [1-5 score for skills match, where 5 = candidate has all required skills]
+SENIORITY: [1-5 score for seniority fit, where 5 = perfect level for the candidate, 1 = far too senior or too junior]
 REASON: [2-3 sentences explaining the match and any notable gaps]
 URL: {job_url}
 
@@ -578,7 +581,7 @@ IMPORTANT:
 ---
 
 CAREERS PAGE CONTENT:
-{detail_text[:5000]}
+{detail_text[:10000]}
 
 ---
 
@@ -608,6 +611,9 @@ TYPE: [Full-time/Part-time/Internship/Contract as stated, or "Not specified"]
 DEADLINE: [Application deadline if mentioned, or "Not specified"]
 SALARY: [Salary or pay range if mentioned, or "Not specified"]
 MATCH: [High/Medium]
+FIELD: [1-5 score for field alignment, where 5 = perfect match to candidate's interests]
+SKILLS: [1-5 score for skills match, where 5 = candidate has all required skills]
+SENIORITY: [1-5 score for seniority fit, where 5 = perfect level for the candidate, 1 = far too senior or too junior]
 REASON: [2-3 sentences explaining the match and any notable gaps]
 URL: {job_url}
 
@@ -620,7 +626,7 @@ IMPORTANT:
 ---
 
 JOB DESCRIPTION:
-{detail_text[:5000]}
+{detail_text[:10000]}
 
 ---
 
@@ -661,7 +667,7 @@ def parse_gemini_matches(raw_text):
     if not raw_text or "NO_MATCH" in raw_text:
         return matches
 
-    FIELDS = ["JOB", "ORGANISATION", "LOCATION", "TYPE", "DEADLINE", "SALARY", "MATCH", "REASON", "URL"]
+    FIELDS = ["JOB", "ORGANISATION", "LOCATION", "TYPE", "DEADLINE", "SALARY", "MATCH", "FIELD", "SKILLS", "SENIORITY", "REASON", "URL"]
 
     def is_field_line(line):
         """Check if a line starts with a known field label. Returns (field_name, value) or None."""
@@ -706,6 +712,9 @@ def format_match_for_telegram(match):
     job_type = match.get("type", "")
     deadline = match.get("deadline", "")
     salary = match.get("salary", "")
+    field_score = match.get("field", "")
+    skills_score = match.get("skills", "")
+    seniority_score = match.get("seniority", "")
     level = match.get("match", "")
     reason = escape_html(match.get("reason", ""))
     url = match.get("url", "")
@@ -730,6 +739,17 @@ def format_match_for_telegram(match):
         info_bits.append(f"💰 {escape_html(salary)}")
     if info_bits:
         parts.append(" · ".join(info_bits))
+
+    # Score breakdown
+    scores = []
+    if field_score:
+        scores.append(f"Field: {field_score}/5")
+    if skills_score:
+        scores.append(f"Skills: {skills_score}/5")
+    if seniority_score:
+        scores.append(f"Seniority: {seniority_score}/5")
+    if scores:
+        parts.append(f"📊 {' · '.join(scores)}")
 
     if reason:
         parts.append(f"\n{reason}")
