@@ -898,9 +898,11 @@ def main():
             print(f"   Sites with no vacancies: {', '.join(empty_sites)}")
         print(f"   Next run will only flag genuinely new jobs.")
     elif all_matches:
-        header = f"🔍 <b>Job Monitor Report</b>\n<i>{now.strftime('%Y-%m-%d %H:%M')} UTC</i>\n\n"
-        message = header + "\n\n━━━━━━━━━━━━━━━\n\n".join(all_matches)
-        send_telegram(message)
+        header = f"🔍 <b>Job Monitor Report</b>\n<i>{now.strftime('%Y-%m-%d %H:%M')} UTC</i>\n<i>{len(all_matches)} match(es) found</i>"
+        send_telegram(header)
+        for match_msg in all_matches:
+            send_telegram(match_msg)
+            time.sleep(0.5)
         print(f"\n✅ Sent {len(all_matches)} match(es) to Telegram.")
     else:
         print("\nNo matching jobs found this run.")
