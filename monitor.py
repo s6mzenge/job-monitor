@@ -974,7 +974,7 @@ def main():
         if isinstance(result, dict) and result.get("type") == "hash_check":
             # Check for "no vacancies" pages
             page_lower = result["text"].lower()
-            if any(phrase in page_lower for phrase in NO_VACANCY_PHRASES):
+            if not site.get("skip_no_vacancy_check", False) and any(phrase in page_lower for phrase in NO_VACANCY_PHRASES):
                 print(f"    ℹ️ No vacancies listed (page says so).")
                 empty_sites.append(name)
                 state[site_key]["listing_hash"] = result["hash"]
