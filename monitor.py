@@ -659,10 +659,12 @@ def parse_gemini_matches(raw_text):
 
     def is_field_line(line):
         """Check if a line starts with a known field label. Returns (field_name, value) or None."""
-        upper = line.upper().strip()
+        # Strip markdown bold/italic markers and whitespace
+        cleaned = line.strip().lstrip("*#- ").rstrip("*")
+        upper = cleaned.upper()
         for field in FIELDS:
             if upper.startswith(field + ":"):
-                value = line.strip()[len(field) + 1:].strip()
+                value = cleaned[len(field) + 1:].strip().lstrip("*").rstrip("*").strip()
                 return field.lower(), value
         return None
 
@@ -672,7 +674,7 @@ def parse_gemini_matches(raw_text):
         match = {}
         lines = block.strip().splitlines()
         # First line is the job title (remainder after "JOB:" split)
-        match["job"] = lines[0].strip()
+        match["job"] = lines[0].strip().strip("* ")
 
         current_field = None
         for line in lines[1:]:
