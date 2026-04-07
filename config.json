@@ -454,6 +454,17 @@
       "selector": "main",
       "link_selector": "",
       "base_url": "https://www.rightsforpeace.org"
+    },
+    {
+      "id": 34,
+      "name": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "selector": "div.jobListingContainer",
+      "link_selector": "div.jobListingContainer h3 a",
+      "base_url": "https://vacancies.soas.ac.uk",
+      "wait_selector": "div.jobListing",
+      "wait_ms": 5000
     }
   ]
 }
