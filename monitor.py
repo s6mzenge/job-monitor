@@ -7,6 +7,7 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
+import cloudscraper
 
 # ─── Load configuration ───
 with open("config.json", "r", encoding="utf-8") as f:
@@ -522,6 +523,61 @@ def check_palladium(site, seen_urls):
 
     return {"total": len(filtered), "new": new_jobs}
 
+# ─── 8. PINPOINT API (with cloudscraper for Cloudflare bypass) ───
+def check_pinpoint(site, seen_urls):
+    """Query a Pinpoint ATS /postings.json endpoint using cloudscraper."""
+    api = site["api"]
+    fields = api["job_fields"]
+    base_url = site.get("base_url", "")
+
+    scraper = cloudscraper.create_scraper()
+
+    try:
+        resp = scraper.get(api["url"], timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"    Pinpoint API error: {e}")
+        return None
+
+    postings = data.get(api.get("response_key", "data"), [])
+    if not isinstance(postings, list):
+        postings = []
+    print(f"    API returned {len(postings)} jobs")
+
+    new_jobs = []
+    for posting in postings:
+        title = posting.get(fields.get("title", "title"), "Untitled")
+        job_url = posting.get(fields.get("url", "url"), "")
+        location = posting.get(fields.get("location", "locationName"), "")
+        department = posting.get(fields.get("department", "departmentName"), "")
+
+        # Make URL absolute if needed
+        if job_url and not job_url.startswith("http"):
+            job_url = base_url.rstrip("/") + "/" + job_url.lstrip("/")
+
+        if job_url in seen_urls:
+            continue
+
+        detail_text = f"Title: {title}\nLocation: {location}\nDepartment: {department}"
+
+        # Fetch detail page
+        if job_url:
+            time.sleep(1)
+            try:
+                detail_resp = scraper.get(job_url, timeout=30)
+                if detail_resp.status_code == 200:
+                    detail_soup = BeautifulSoup(detail_resp.text, "html.parser")
+                    page_text = extract_text(detail_soup)
+                    if len(page_text) > len(detail_text):
+                        detail_text = f"Title: {title}\nLocation: {location}\n\n{page_text}"
+            except Exception as e:
+                print(f"    Could not fetch detail for {title}: {e}")
+
+        new_jobs.append({"title": title, "url": job_url, "detail_text": detail_text})
+
+    return {"total": len(postings), "new": new_jobs}
+
 
 # ═══════════════════════════════════════════════════════════════
 #  DISPATCHER — routes each site to the correct handler
@@ -535,6 +591,7 @@ METHOD_HANDLERS = {
     "personio_xml": check_personio,
     "taleo_rss": check_taleo,
     "palladium_api": check_palladium,
+    "pinpoint_api": check_pinpoint,
 }
 
 
