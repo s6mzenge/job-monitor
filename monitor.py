@@ -628,7 +628,7 @@ CANDIDATE CV:
 
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 512}
+        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 2048}
     }
 
     try:
