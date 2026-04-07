@@ -380,7 +380,8 @@
       "method": "html",
       "selector": "div.article-body",
       "link_selector": "",
-      "base_url": "https://www.antislavery.org"
+      "base_url": "https://www.antislavery.org",
+      "proxy": "cloudflare_worker"
     }, 
     {
       "id": 27,
