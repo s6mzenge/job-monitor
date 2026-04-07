@@ -29,7 +29,12 @@ else:
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
-DRY_RUN = os.environ.get("DRY_RUN", "false").lower() == "true"
+DRY_RUN_FILE = "dry_run.txt"
+if os.path.exists(DRY_RUN_FILE):
+    with open(DRY_RUN_FILE, "r") as f:
+        DRY_RUN = f.read().strip().lower() == "true"
+else:
+    DRY_RUN = False
 CF_WORKER_URL = os.environ.get("CF_WORKER_URL", "")
 CF_WORKER_TOKEN = os.environ.get("CF_WORKER_TOKEN", "")
 
