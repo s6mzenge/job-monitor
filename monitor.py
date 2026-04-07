@@ -911,10 +911,6 @@ def main():
         error_msg = f"⚠️ <b>Job Monitor Errors</b>\nFailed to scrape: {escape_html(', '.join(errors))}"
         send_telegram(error_msg)
 
-    if empty_sites and not DRY_RUN:
-        empty_msg = f"ℹ️ <b>No vacancies listed</b>\n{escape_html(', '.join(empty_sites))}"
-        send_telegram(empty_msg)
-
     if errors:
         print(f"Errors: {', '.join(errors)}")
     if empty_sites:
