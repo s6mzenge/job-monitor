@@ -189,7 +189,30 @@ def check_html(site, seen_urls):
         title = a.get_text(strip=True) or "Untitled"
         if title.lower() in ("view job", "apply", "apply now", "learn more",
                               "read more", "click here", "view"):
-            continue
+            card = None
+            node = a.parent
+            card_keywords = ("item", "card", "career", "listing", "posting", "vacancy")
+            while node and node.name:
+                classes = " ".join(node.get("class", []))
+                role = node.get("role", "")
+                if any(kw in classes.lower() for kw in card_keywords) or role == "listitem":
+                    card = node
+                    break
+                if node.name in ("article", "li"):
+                    card = node
+                    break
+                node = node.parent
+
+            if card:
+                heading = card.select_one(
+                    "[class*='subheadline'], [class*='headline'], [class*='heading'], h2, h3, h4, h5"
+                )
+                if heading:
+                    title = heading.get_text(strip=True)
+                else:
+                    continue
+            else:
+                continue
 
         full_url = urljoin(base_url + "/", href) if base_url else urljoin(listing_url, href)
         full_url = full_url.rstrip("/")
@@ -643,8 +666,31 @@ def check_playwright(site, seen_urls):
 
         title = a.get_text(strip=True) or "Untitled"
         if title.lower() in ("view job", "apply", "apply now", "learn more",
-                              "read more", "click here", "view", "more info"):
-            continue
+                              "read more", "click here", "view"):
+            card = None
+            node = a.parent
+            card_keywords = ("item", "card", "career", "listing", "posting", "vacancy")
+            while node and node.name:
+                classes = " ".join(node.get("class", []))
+                role = node.get("role", "")
+                if any(kw in classes.lower() for kw in card_keywords) or role == "listitem":
+                    card = node
+                    break
+                if node.name in ("article", "li"):
+                    card = node
+                    break
+                node = node.parent
+
+            if card:
+                heading = card.select_one(
+                    "[class*='subheadline'], [class*='headline'], [class*='heading'], h2, h3, h4, h5"
+                )
+                if heading:
+                    title = heading.get_text(strip=True)
+                else:
+                    continue
+            else:
+                continue
 
         full_url = urljoin(base_url + "/", href) if base_url else urljoin(listing_url, href)
         full_url = full_url.rstrip("/")
