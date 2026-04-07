@@ -195,10 +195,7 @@
     "listing_hash": ""
   },
   "https://www.swp-berlin.org/karriere": {
-    "seen_urls": [
-      "https://www.swp-berlin.org/karriere/stellenangebot/sachbearbeiterin-personal",
-      "https://www.swp-berlin.org/karriere/stellenangebot/teamleitung-personal"
-    ],
+    "seen_urls": [],
     "last_checked": "2026-04-07T00:38:22.443027+00:00",
     "listing_hash": ""
   },
@@ -214,9 +211,7 @@
     "listing_hash": ""
   },
   "https://careers.chathamhouse.org/jobs": {
-    "seen_urls": [
-      "https://careers.chathamhouse.org/jobs/7401384-2026-2027-chatham-house-academy-fellowships"
-    ],
+    "seen_urls": [],
     "last_checked": "2026-04-07T00:38:22.443027+00:00",
     "listing_hash": ""
   },
