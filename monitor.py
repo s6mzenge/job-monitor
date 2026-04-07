@@ -73,6 +73,7 @@ NO_VACANCY_PHRASES = [
     "currently no vacancies",
     "no current opportunities",
     "no open positions",
+    "no jobs are available",
 ]
 
 def load_state():
