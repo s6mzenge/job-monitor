@@ -474,6 +474,17 @@
       "selector": "main#maincontent",
       "link_selector": "div.vacancylistrow a",
       "base_url": "https://jobs.mdx.ac.uk"
+    },
+    {
+      "id": 36,
+      "name": "IISS",
+      "url": "https://www.iiss.org/careers/",
+      "method": "playwright",
+      "selector": "div.filter_results",
+      "link_selector": "div.filter_results a[href*='/careers/jobs/']",
+      "base_url": "https://www.iiss.org",
+      "wait_selector": "a.feature",
+      "wait_ms": 5000
     }
   ]
 }
