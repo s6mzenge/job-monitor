@@ -436,6 +436,15 @@
       "selector": "div.widget-content",
       "link_selector": "",
       "base_url": "https://protectionapproaches.org"
+    },
+    {
+      "id": 32,
+      "name": "REDRESS",
+      "url": "https://redress.org/about-us/work-at-redress/current-vacancies/",
+      "method": "html",
+      "selector": "div.article-body",
+      "link_selector": "",
+      "base_url": "https://redress.org"
     }
   ]
 }
