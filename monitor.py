@@ -155,7 +155,17 @@ def check_html(site, seen_urls):
     selector = site.get("selector", "")
     location_filter = site.get("location_filter", "")
 
-    soup = fetch_page(listing_url, proxy=site.get("proxy"))
+    if site.get("use_cloudscraper"):
+        scraper = cloudscraper.create_scraper()
+        try:
+            resp = scraper.get(listing_url, timeout=30)
+            resp.raise_for_status()
+            soup = BeautifulSoup(resp.text, "html.parser")
+        except Exception as e:
+            print(f"    Error fetching {listing_url}: {e}")
+            soup = None
+    else:
+        soup = fetch_page(listing_url, proxy=site.get("proxy"))
     if not soup:
         return None
 
