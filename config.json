@@ -647,18 +647,13 @@
       "id": 51,
       "name": "APCO Worldwide",
       "url": "https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/jobs?location=London%2C+United+Kingdom&locationId=300000049375956&locationLevel=city&mode=location&radius=25&radiusUnit=MI",
-      "method": "playwright",
-      "card_selector": "li[data-qa='searchResultItem']",
-      "title_selector": ".job-tile__title",
-      "link_selector": "a.job-list-item__link[href*='/job/']",
+      "method": "oracle_hcm_api",
       "base_url": "https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com",
-      "wait_until": "domcontentloaded",
-      "wait_selector": "li[data-qa='searchResultItem']",
-      "wait_ms": 5000,
-      "wait_timeout": 30000,
-      "strip_url_params": true,
-      "detail_via_playwright": true,
-      "detail_wait_selector": ".job-detail__description, .job-description"
+      "api": {
+        "listing_url": "https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_2001,facetsList=LOCATIONS%3BCATEGORIES%3BPOSTING_DATES,limit=25,locationId=300000049375956,radius=25,radiusUnit=MI,sortBy=POSTING_DATES_DESC",
+        "detail_url_template": "https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitionDetails?onlyData=true&finder=ById;Id={job_id},siteNumber=CX_2001",
+        "job_page_template": "https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/{job_id}/"
+      }
     }
   ]
 }
