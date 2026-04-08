@@ -505,11 +505,13 @@
       "id": 39,
       "name": "Minority Rights Group",
       "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
-      "method": "html",
+      "method": "playwright",
       "selector": "section.job-opportunities-tabs",
       "link_selector": "a.job-opportunities-tabs__content-item-wrapper",
       "base_url": "https://minorityrights.org",
-      "proxy": "cloudflare_worker"
+      "wait_until": "domcontentloaded",
+      "wait_selector": "a.job-opportunities-tabs__content-item-wrapper",
+      "wait_ms": 5000
     },
     {
       "id": 40,
