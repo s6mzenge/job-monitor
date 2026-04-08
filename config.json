@@ -522,9 +522,9 @@
       "scope_links": true,
       "skip_detail_fetch": true,
       "skip_no_vacancy_check": true,
-      "wait_until": "domcontentloaded",
-      "wait_selector": "a.elf-external",
-      "wait_ms": 5000
+      "wait_until": "networkidle",
+      "wait_selector": "",
+      "wait_ms": 8000
     },
     {
       "id": 41,
