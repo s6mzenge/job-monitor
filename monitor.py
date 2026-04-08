@@ -719,7 +719,7 @@ def check_playwright(site, seen_urls):
 
         title = a.get_text(strip=True) or "Untitled"
         # If the link wraps a card, prefer the heading inside it
-        inner_heading = a.select_one("h2, h3, h4, h5")
+        inner_heading = a.select_one("span[class*='h4'], h2, h3, h4, h5")
         if inner_heading:
             title = inner_heading.get_text(strip=True)
         if title.lower() in ("view job", "apply", "apply now", "learn more",
