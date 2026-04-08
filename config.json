@@ -522,6 +522,17 @@
       "scope_links": true,
       "skip_detail_fetch": true,
       "skip_no_vacancy_check": true
+    },
+    {
+      "id": 41,
+      "name": "ICTJ",
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "selector": "#block-views-block-careers-list-block-1",
+      "link_selector": "h3.resource-title a.title-link",
+      "base_url": "https://www.ictj.org",
+      "scope_links": true,
+      "use_cloudscraper": true
     }
   ]
 }
