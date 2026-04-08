@@ -497,11 +497,11 @@
       "name": "Minority Rights Group",
       "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
       "method": "playwright",
-      "selector": "section.job-opportunities-tabs",
+      "selector": "div.job-opportunities-tabs__wrapper",
       "link_selector": "a.job-opportunities-tabs__content-item-wrapper",
       "base_url": "https://minorityrights.org",
       "wait_until": "domcontentloaded",
-      "wait_selector": "section.job-opportunities-tabs",
+      "wait_selector": "a.job-opportunities-tabs__content-item-wrapper",
       "wait_ms": 5000
     },
     {
