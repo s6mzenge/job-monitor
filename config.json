@@ -569,6 +569,15 @@
       "selector": "section.text-content",
       "link_selector": "",
       "base_url": "https://www.impunitywatch.org"
+    },
+    {
+      "id": 46,
+      "name": "Institute for Government",
+      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "method": "html",
+      "selector": "section.c-page-block",
+      "link_selector": "section.c-page-block a.c-page-block__card[href*='/current-vacancies/']",
+      "base_url": "https://www.instituteforgovernment.org.uk"
     }
   ]
 }
