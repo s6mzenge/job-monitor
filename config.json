@@ -500,6 +500,15 @@
       "selector": "div.wpgb-grid-70",
       "link_selector": "div.wpgb-grid-70 h3.wpgb-block-3 a",
       "base_url": "https://www.integrityglobal.com"
+    },
+    {
+      "id": 39,
+      "name": "NIOD",
+      "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
+      "method": "html",
+      "selector": "div#content",
+      "link_selector": "",
+      "base_url": "https://www.niod.nl"
     }
   ]
 }
