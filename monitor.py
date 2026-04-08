@@ -9,6 +9,7 @@ from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
 import cloudscraper
 from playwright.sync_api import sync_playwright
+from playwright_stealth import Stealth
 
 # ─── Load configuration ───
 with open("config.json", "r", encoding="utf-8") as f:
