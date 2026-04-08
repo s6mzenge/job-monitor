@@ -516,7 +516,7 @@
       "name": "CUNY Graduate Center",
       "url": "https://www.gc.cuny.edu/human-resources/employment-opportunities",
       "method": "playwright",
-      "selector": "section:has(#section-4976)",
+      "selector": "#section-4976 ~ div",
       "link_selector": "a[href*='hrsa.cunyfirst'], a[href*='cuny.jobs']",
       "base_url": "https://www.gc.cuny.edu",
       "scope_links": true,
