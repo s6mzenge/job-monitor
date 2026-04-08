@@ -494,15 +494,6 @@
     },
     {
       "id": 38,
-      "name": "GHIL",
-      "url": "https://www.ghil.ac.uk/opportunities/vacancies",
-      "method": "html",
-      "selector": "section#c2213",
-      "link_selector": "",
-      "base_url": "https://www.ghil.ac.uk"
-    },
-    {
-      "id": 39,
       "name": "Minority Rights Group",
       "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
       "method": "playwright",
@@ -514,7 +505,7 @@
       "wait_ms": 10000
     },
     {
-      "id": 40,
+      "id": 39,
       "name": "Integrity Global",
       "url": "https://www.integrityglobal.com/opportunities/",
       "method": "html",
