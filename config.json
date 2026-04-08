@@ -642,6 +642,15 @@
         "detail_url_template": "https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitionDetails?onlyData=true&finder=ById;Id={job_id},siteNumber=CX_2001",
         "job_page_template": "https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/{job_id}/"
       }
+    },
+    {
+      "id": 52,
+      "name": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/job-search.html",
+      "method": "html",
+      "selector": "div.searchresults",
+      "link_selector": "div.jobpost h2 a",
+      "base_url": "https://jobs.gold.ac.uk"
     }
   ]
 }
