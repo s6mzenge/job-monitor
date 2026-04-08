@@ -517,8 +517,9 @@
       "url": "https://www.gc.cuny.edu/human-resources/employment-opportunities",
       "method": "playwright",
       "selector": "main, article, section",
-      "link_selector": "",
+      "link_selector": "a[href*='cunyfirst'], a[href*='cuny.jobs']",
       "base_url": "https://www.gc.cuny.edu",
+      "skip_detail_fetch": true,
       "skip_no_vacancy_check": true,
       "wait_until": "networkidle",
       "wait_ms": 8000
