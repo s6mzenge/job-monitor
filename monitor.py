@@ -854,6 +854,84 @@ def check_playwright(site, seen_urls):
 
     return {"total": len(all_urls), "new": new_jobs}
 
+# ─── 10. ORACLE HCM REST API ───
+def check_oracle_hcm(site, seen_urls):
+    """Query Oracle HCM Cloud's public REST API for job listings."""
+    api = site["api"]
+    listing_url = api["listing_url"]
+    detail_template = api.get("detail_url_template", "")
+    page_template = api.get("job_page_template", "")
+
+    try:
+        resp = requests.get(listing_url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"    Oracle HCM API error: {e}")
+        return None
+
+    items = data.get("items", [])
+    if not items:
+        print(f"    No items in API response")
+        return {"total": 0, "new": []}
+
+    search_result = items[0]
+    jobs = search_result.get("requisitionList", [])
+    total = search_result.get("TotalJobsCount", len(jobs))
+    print(f"    API returned {len(jobs)} job(s) (total: {total})")
+
+    new_jobs = []
+    for job in jobs:
+        job_id = str(job.get("Id", ""))
+        title = job.get("Title", "Untitled")
+        posted = job.get("PostedDate", "")
+        country = job.get("PrimaryLocationCountry", "")
+        primary_loc = job.get("PrimaryLocation", "")
+        category = job.get("Category", "")
+        short_desc = job.get("ShortDescriptionStr", "")
+
+        # Build the human-facing job page URL
+        job_url = page_template.replace("{job_id}", job_id) if page_template else ""
+
+        if job_url in seen_urls or job_id in seen_urls:
+            continue
+
+        # Build basic detail text from listing data
+        detail_text = f"Title: {title}\nLocation: {primary_loc or country}\nCategory: {category}\nPosted: {posted}"
+
+        # Fetch full description from detail API
+        if detail_template and job_id:
+            detail_api_url = detail_template.replace("{job_id}", job_id)
+            try:
+                time.sleep(1)
+                dr = requests.get(detail_api_url, headers=HEADERS, timeout=30)
+                dr.raise_for_status()
+                dd = dr.json()
+                detail_items = dd.get("items", [])
+                if detail_items:
+                    d = detail_items[0]
+                    # Combine all description fields
+                    desc_parts = []
+                    for key in ["ExternalDescriptionStr", "ExternalQualificationsStr",
+                                "ExternalResponsibilitiesStr"]:
+                        html_val = d.get(key, "")
+                        if html_val:
+                            clean = BeautifulSoup(html_val, "html.parser").get_text(separator="\n", strip=True)
+                            if clean:
+                                desc_parts.append(clean)
+                    if desc_parts:
+                        detail_text = f"Title: {title}\nLocation: {primary_loc or country}\nCategory: {category}\nPosted: {posted}\n\n" + "\n\n".join(desc_parts)
+            except Exception as e:
+                print(f"    Could not fetch detail for {title}: {e}")
+
+        new_jobs.append({
+            "title": title,
+            "url": job_url or job_id,
+            "detail_text": detail_text,
+            "_also_track": [u for u in [job_url, job_id] if u]
+        })
+
+    return {"total": total, "new": new_jobs}
 
 # ═══════════════════════════════════════════════════════════════
 #  DISPATCHER — routes each site to the correct handler
@@ -869,6 +947,7 @@ METHOD_HANDLERS = {
     "palladium_api": check_palladium,
     "pinpoint_api": check_pinpoint,
     "playwright": check_playwright,
+    "oracle_hcm_api": check_oracle_hcm,
 }
 
 
