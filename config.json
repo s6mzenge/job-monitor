@@ -497,7 +497,7 @@
       "name": "GHIL",
       "url": "https://www.ghil.ac.uk/opportunities/vacancies",
       "method": "html",
-      "selector": "main, div.content-main, div#content",
+      "selector": "section#c2213",
       "link_selector": "",
       "base_url": "https://www.ghil.ac.uk"
     },
