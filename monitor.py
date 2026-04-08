@@ -712,7 +712,8 @@ def check_playwright(site, seen_urls):
             wait_until = site.get("wait_until", "networkidle")
             page.goto(listing_url, timeout=30000, wait_until=wait_until)
             if wait_selector:
-                page.wait_for_selector(wait_selector, timeout=15000)
+                wait_timeout = site.get("wait_timeout", 15000)
+                page.wait_for_selector(wait_selector, timeout=wait_timeout)
             else:
                 page.wait_for_timeout(wait_ms)
             html = page.content()
