@@ -383,7 +383,7 @@
       "base_url": "https://www.antislavery.org",
       "job_title_selector": "h3",
       "wait_until": "load",
-      "wait_ms": 5000
+      "wait_ms": 15000
     }, 
     {
       "id": 27,
