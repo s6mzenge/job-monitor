@@ -749,6 +749,27 @@
       "selector": "div#vacancyList",
       "link_selector": "div.vacancy__title a",
       "base_url": "https://cezanneondemand.intervieweb.it"
+    },
+    {
+      "id": 61,
+      "name": "Google DeepMind",
+      "url": "https://job-boards.greenhouse.io/deepmind",
+      "method": "greenhouse_api",
+      "base_url": "https://job-boards.greenhouse.io",
+      "api": {
+        "url": "https://boards-api.greenhouse.io/v1/boards/deepmind/jobs?content=true",
+        "http_method": "GET",
+        "response_key": "jobs",
+        "job_fields": {
+          "id": "id",
+          "title": "title",
+          "url": "absolute_url",
+          "location": "location.name",
+          "updated_at": "updated_at",
+          "description_html": "content"
+        }
+      },
+      "location_filter": "London"
     }
   ]
 }
