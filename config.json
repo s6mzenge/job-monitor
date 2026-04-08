@@ -511,7 +511,7 @@
       "link_selector": "",
       "base_url": "https://www.niod.nl"
     },
-    {
+        {
       "id": 40,
       "name": "CUNY Graduate Center",
       "url": "https://www.gc.cuny.edu/human-resources/employment-opportunities",
@@ -521,7 +521,7 @@
       "base_url": "https://www.gc.cuny.edu",
       "skip_detail_fetch": true,
       "skip_no_vacancy_check": true,
-      "use_cloudscraper": true
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 41,
