@@ -542,6 +542,15 @@
       "selector": "div.pagecontent",
       "link_selector": "",
       "base_url": "https://www.uu.se"
+    },
+    {
+      "id": 43,
+      "name": "HIS Hamburg",
+      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "method": "html",
+      "selector": "div.c-teaser-text__desc",
+      "link_selector": "",
+      "base_url": "https://www.his-online.de"
     }
   ]
 }
