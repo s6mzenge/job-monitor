@@ -613,7 +613,7 @@
     {
       "id": 49,
       "name": "S-RM",
-      "url": "https://www.s-rminform.com/careers/open-positions",
+      "url": "https://www.s-rminform.com/careers/open-positions?locations=London",
       "method": "playwright",
       "selector": "section.open-positions",
       "link_selector": "div.resources__item a[href*='/open-position']",
