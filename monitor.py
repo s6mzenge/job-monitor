@@ -733,6 +733,12 @@ def check_playwright(site, seen_urls):
             else:
                 page.wait_for_timeout(wait_ms)
             html = page.content()
+            # Debug: what did we actually get?
+            if use_stealth:
+                from bs4 import BeautifulSoup as _BS
+                _dbg = _BS(html, "html.parser")
+                _h = [h.get_text(strip=True)[:50] for h in _dbg.select("h1, h2, h3")[:5]]
+                print(f"    [stealth debug] {len(html)} chars, headings: {_h}")
             browser.close()
     except Exception as e:
         print(f"    Playwright error: {e}")
