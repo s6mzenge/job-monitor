@@ -512,20 +512,6 @@
       "base_url": "https://www.niod.nl"
     },
     {
-      "id": 40,
-      "name": "CUNY Graduate Center",
-      "url": "https://www.gc.cuny.edu/human-resources/employment-opportunities",
-      "method": "playwright",
-      "selector": "main",
-      "link_selector": "a[href*='cuny.jobs'], a[href*='hrsa.cunyfirst']",
-      "base_url": "https://www.gc.cuny.edu",
-      "skip_detail_fetch": true,
-      "skip_no_vacancy_check": true,
-      "stealth": true,
-      "wait_until": "networkidle",
-      "wait_ms": 5000
-    },
-    {
       "id": 41,
       "name": "ICTJ",
       "url": "https://www.ictj.org/careers-0",
