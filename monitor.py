@@ -180,7 +180,7 @@ def check_html(site, seen_urls):
         titles = []
         target_el = soup.select_one(selector) if selector else soup
         if target_el:
-            for h in target_el.select("h3, h4, h5"):
+            for h in target_el.select("h2, h3, h4, h5"):
                 h_text = h.get_text(strip=True)
                 if h_text and len(h_text) < 100:
                     titles.append(h_text)
