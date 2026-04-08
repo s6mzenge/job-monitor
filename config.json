@@ -651,6 +651,47 @@
       "selector": "div.searchresults",
       "link_selector": "div.jobpost h2 a",
       "base_url": "https://jobs.gold.ac.uk"
+    },
+    {
+      "id": 52,
+      "name": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/job-search.html",
+      "method": "html",
+      "selector": "div.searchresults",
+      "link_selector": "div.jobpost h2 a",
+      "base_url": "https://jobs.gold.ac.uk"
+    },
+    {
+      "id": 53,
+      "name": "Birkbeck, University of London",
+      "url": "https://cis7.bbk.ac.uk/home.html",
+      "method": "hireserve_api",
+      "base_url": "https://cis7.bbk.ac.uk",
+      "api": {
+        "url": "https://cis7.bbk.ac.uk/utf8/ic_job_feeds.feed_engine",
+        "http_method": "GET",
+        "params": {
+          "p_web_site_id": "6056",
+          "p_published_to": "WWW",
+          "p_language": "DEFAULT",
+          "p_direct": "Y",
+          "p_format": "MOBILE",
+          "p_include_exclude_from_list": "N",
+          "p_search": ""
+        },
+        "category_filters": [
+          "17744-607542",
+          "17744-607543",
+          "17744-706568",
+          "17744-706567"
+        ],
+        "response_key": "jobs",
+        "job_fields": {
+          "id": "id",
+          "title": "title",
+          "url": "weblink"
+        }
+      }
     }
   ]
 }
