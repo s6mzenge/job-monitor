@@ -254,15 +254,18 @@ def check_html(site, seen_urls):
 
     new_jobs = []
     for job in jobs:
-        time.sleep(1)
-        detail_soup = fetch_page(job["url"])
-        detail_text = extract_text(detail_soup) if detail_soup else ""
+        if site.get("skip_detail_fetch"):
+            detail_text = f"Title: {job['title']}"
+        else:
+            time.sleep(1)
+            detail_soup = fetch_page(job["url"])
+            detail_text = extract_text(detail_soup) if detail_soup else ""
         new_jobs.append({
             "title": job["title"],
             "url": job["url"],
             "detail_text": detail_text or f"Title: {job['title']} (detail page could not be loaded)"
         })
-
+    
     return {"total": len(all_urls), "new": new_jobs}
 
 
