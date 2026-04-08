@@ -560,6 +560,15 @@
       "selector": "table#ACADEMIC-vacancies, table#SUPPORT-vacancies",
       "link_selector": "table#ACADEMIC-vacancies a[href*='irec.wits.ac.za'], table#SUPPORT-vacancies a[href*='irec.wits.ac.za']",
       "base_url": "https://irec.wits.ac.za"
+    },
+    {
+      "id": 45,
+      "name": "Impunity Watch",
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "selector": "section.text-content",
+      "link_selector": "",
+      "base_url": "https://www.impunitywatch.org"
     }
   ]
 }
