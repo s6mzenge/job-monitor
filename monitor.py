@@ -9,7 +9,15 @@ from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
 import cloudscraper
 from playwright.sync_api import sync_playwright
-from playwright_stealth import Stealth
+try:
+    from playwright_stealth import stealth_sync as _stealth_sync
+    _STEALTH_MODE = "page"
+except ImportError:
+    try:
+        from playwright_stealth import Stealth
+        _STEALTH_MODE = "context"
+    except ImportError:
+        _STEALTH_MODE = None
 
 # ─── Load configuration ───
 with open("config.json", "r", encoding="utf-8") as f:
@@ -708,12 +716,15 @@ def check_playwright(site, seen_urls):
     use_stealth = site.get("stealth", False)
     print(f"    Launching headless Chromium{'  (stealth)' if use_stealth else ''}...")
     try:
-        pw_cm = sync_playwright()
-        if use_stealth:
-            pw_cm = Stealth().use_sync(pw_cm)
+        if use_stealth and _STEALTH_MODE == "context":
+            pw_cm = Stealth().use_sync(sync_playwright())
+        else:
+            pw_cm = sync_playwright()
         with pw_cm as p:
             browser = p.chromium.launch()
             page = browser.new_page()
+            if use_stealth and _STEALTH_MODE == "page":
+                _stealth_sync(page)
             wait_until = site.get("wait_until", "networkidle")
             page.goto(listing_url, timeout=30000, wait_until=wait_until)
             if wait_selector:
