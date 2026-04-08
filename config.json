@@ -491,6 +491,15 @@
       "wait_until": "domcontentloaded",
       "wait_selector": "ul.vacancies__list li",
       "wait_ms": 5000
+    },
+    {
+      "id": 38,
+      "name": "GHIL",
+      "url": "https://www.ghil.ac.uk/opportunities/vacancies",
+      "method": "html",
+      "selector": "section#c2213",
+      "link_selector": "",
+      "base_url": "https://www.ghil.ac.uk"
     }
   ]
 }
