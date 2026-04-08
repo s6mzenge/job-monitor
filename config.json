@@ -655,6 +655,7 @@
       "wait_until": "domcontentloaded",
       "wait_selector": "li[data-qa='searchResultItem']",
       "wait_ms": 5000,
+      "wait_timeout": 30000,
       "strip_url_params": true,
       "detail_via_playwright": true,
       "detail_wait_selector": ".job-detail__description, .job-description"
