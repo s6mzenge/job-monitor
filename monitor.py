@@ -195,7 +195,11 @@ def check_html(site, seen_urls):
                 anchors.extend(section.select(link_selector))
         print(f"    Filtered to {len(anchors)} links in '{location_filter}' sections")
     else:
-        anchors = soup.select(link_selector)
+        if site.get("scope_links") and selector:
+            scope_el = soup.select_one(selector.split(",")[0].strip())
+            anchors = scope_el.select(link_selector) if scope_el else []
+        else:
+            anchors = soup.select(link_selector)
     if not anchors and len(extract_text(soup, selector)) < 100:
         print(f"    ⚠️ No job links found and page content is minimal — likely JS-rendered")
 
