@@ -790,7 +790,11 @@ def check_playwright(site, seen_urls):
         return {"total": len(all_urls), "new": new_jobs}
 
     # ── Standard anchor-based extraction (existing logic) ──
-    anchors = soup.select(link_selector)
+    if site.get("scope_links") and selector:
+        scope_el = soup.select_one(selector.split(",")[0].strip())
+        anchors = scope_el.select(link_selector) if scope_el else []
+    else:
+        anchors = soup.select(link_selector)
     print(f"    Found {len(anchors)} job links after JS rendering")
 
     all_urls = set()
