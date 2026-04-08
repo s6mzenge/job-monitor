@@ -705,9 +705,13 @@ def check_playwright(site, seen_urls):
     detail_via_pw = site.get("detail_via_playwright", False)
     detail_wait_sel = site.get("detail_wait_selector", "")
 
-    print(f"    Launching headless Chromium...")
+    use_stealth = site.get("stealth", False)
+    print(f"    Launching headless Chromium{'  (stealth)' if use_stealth else ''}...")
     try:
-        with sync_playwright() as p:
+        pw_cm = sync_playwright()
+        if use_stealth:
+            pw_cm = Stealth().use_sync(pw_cm)
+        with pw_cm as p:
             browser = p.chromium.launch()
             page = browser.new_page()
             wait_until = site.get("wait_until", "networkidle")
