@@ -436,7 +436,7 @@
       "selector": "div.article-body",
       "link_selector": "",
       "base_url": "https://redress.org",
-      "skip_no_vacancy_check": true
+      "no_vacancy_boilerplate": "Please scroll down to see all job listings. If there are no positions listed it means we currently have no vacancies, but please do keep checking back as we advertise throughout the year."
     },
     {
       "id": 33,
