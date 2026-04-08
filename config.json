@@ -600,6 +600,18 @@
         }
       },
       "location_filter": "London"
+    },
+    {
+      "id": 48,
+      "name": "Verisk Maplecroft",
+      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs?lastSelectedFacet=AttributeChar12&selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22",
+      "method": "playwright",
+      "selector": "ul.jobs-grid__list",
+      "link_selector": "",
+      "base_url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com",
+      "wait_until": "domcontentloaded",
+      "wait_selector": "li[data-qa='searchResultItem']",
+      "wait_ms": 15000
     }
   ]
 }
