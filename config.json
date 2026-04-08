@@ -692,6 +692,27 @@
       "selector": "div.entry-content",
       "link_selector": "",
       "base_url": "https://www.ceasefire.org"
+    },
+    {
+      "id": 55,
+      "name": "Save the Children UK",
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/",
+      "method": "playwright",
+      "selector": "div#eaContainer",
+      "link_selector": "div.rowLabel a",
+      "base_url": "https://jobs.savethechildren.org.uk",
+      "wait_until": "domcontentloaded",
+      "wait_selector": "div.rowContainer",
+      "wait_ms": 5000
+    },
+    {
+      "id": 56,
+      "name": "INQUEST",
+      "url": "https://inquest.org.uk/about-us/working-at-inquest/",
+      "method": "html",
+      "selector": "div.inqs_main",
+      "link_selector": "",
+      "base_url": "https://inquest.org.uk"
     }
   ]
 }
