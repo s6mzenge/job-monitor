@@ -516,7 +516,7 @@
       "url": "https://www.gc.cuny.edu/human-resources/employment-opportunities",
       "method": "html",
       "selector": "section:has(#section-4976)",
-      "link_selector": "a.elf-external",
+      "link_selector": "a.elf-external[href*='cuny.jobs'], a.elf-external[href*='cunyfirst']",
       "base_url": "https://www.gc.cuny.edu",
       "use_cloudscraper": true,
       "scope_links": true,
