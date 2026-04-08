@@ -578,6 +578,28 @@
       "selector": "section.c-page-block",
       "link_selector": "section.c-page-block a.c-page-block__card[href*='/current-vacancies/']",
       "base_url": "https://www.instituteforgovernment.org.uk"
+    },
+    {
+      "id": 47,
+      "name": "Control Risks",
+      "url": "https://apply.workable.com/control-risks-6/#jobs",
+      "method": "workable_api",
+      "base_url": "https://apply.workable.com",
+      "api": {
+        "url": "https://apply.workable.com/api/v1/widget/accounts/control-risks-6",
+        "http_method": "GET",
+        "response_key": "jobs",
+        "job_fields": {
+          "title": "title",
+          "shortcode": "shortcode",
+          "url": "url",
+          "department": "department",
+          "location_city": "city",
+          "location_country": "country",
+          "created_at": "created_at"
+        }
+      },
+      "location_filter": "London"
     }
   ]
 }
