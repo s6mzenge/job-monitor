@@ -770,6 +770,27 @@
         }
       },
       "location_filter": "London"
+    },
+    {
+      "id": 62,
+      "name": "CIFF",
+      "url": "https://careers.ciff.org/vacancies/",
+      "method": "workable_api",
+      "base_url": "https://apply.workable.com",
+      "api": {
+        "url": "https://apply.workable.com/api/v1/widget/accounts/ciff",
+        "http_method": "GET",
+        "response_key": "jobs",
+        "job_fields": {
+          "title": "title",
+          "shortcode": "shortcode",
+          "url": "url",
+          "department": "department",
+          "location_city": "city",
+          "location_country": "country",
+          "created_at": "created_at"
+        }
+      }
     }
   ]
 }
