@@ -600,6 +600,15 @@
         }
       },
       "location_filter": "London"
+    },
+    {
+      "id": 48,
+      "name": "Institute of Race Relations",
+      "url": "https://irr.org.uk/about/vacancies/",
+      "method": "html",
+      "selector": "div.entry-content",
+      "link_selector": "",
+      "base_url": "https://irr.org.uk"
     }
   ]
 }
