@@ -258,7 +258,16 @@ def check_html(site, seen_urls):
             detail_text = f"Title: {job['title']}"
         else:
             time.sleep(1)
-            detail_soup = fetch_page(job["url"])
+            if site.get("use_cloudscraper"):
+                try:
+                    dr = scraper.get(job["url"], timeout=30)
+                    dr.raise_for_status()
+                    detail_soup = BeautifulSoup(dr.text, "html.parser")
+                except Exception as e:
+                    print(f"    Error fetching detail {job['url']}: {e}")
+                    detail_soup = None
+            else:
+                detail_soup = fetch_page(job["url"])
             detail_text = extract_text(detail_soup) if detail_soup else ""
         new_jobs.append({
             "title": job["title"],
