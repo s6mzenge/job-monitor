@@ -740,6 +740,15 @@
       "selector": "div.c-listing__list-content-wrapper",
       "link_selector": "",
       "base_url": "https://www.adalovelaceinstitute.org"
+    },
+    {
+      "id": 60,
+      "name": "Alan Turing Institute",
+      "url": "https://cezanneondemand.intervieweb.it/turing/en/career#vacancies",
+      "method": "html",
+      "selector": "div#vacancyList",
+      "link_selector": "div.vacancy__title a",
+      "base_url": "https://cezanneondemand.intervieweb.it"
     }
   ]
 }
