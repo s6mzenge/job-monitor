@@ -509,7 +509,7 @@
       "selector": "section.job-opportunities-tabs",
       "link_selector": "a.job-opportunities-tabs__content-item-wrapper",
       "base_url": "https://minorityrights.org",
-      "use_cloudscraper": true
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 40,
