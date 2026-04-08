@@ -115,6 +115,9 @@ def extract_text(soup, selector=""):
     """Extract cleaned text from a BeautifulSoup object, optionally within a CSS selector."""
     for tag in soup(["script", "style", "nav", "footer", "header", "noscript"]):
         tag.decompose()
+    for sel in ["[class*='cookie']", "[id*='cookie']", "[class*='consent']", "[id*='consent']"]:
+        for tag in soup.select(sel):
+            tag.decompose()
     if selector:
         for sel in selector.split(","):
             target = soup.select_one(sel.strip())
