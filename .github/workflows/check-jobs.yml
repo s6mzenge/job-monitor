@@ -25,6 +25,14 @@ jobs:
       - name: Install Playwright browsers
         run: playwright install chromium --with-deps
 
+      - name: Write config files from secrets
+        env:
+          CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+          CV_TEXT: ${{ secrets.CV_TEXT }}
+        run: |
+          printenv CONFIG_JSON > config.json
+          printenv CV_TEXT > cv.txt
+
       - name: Run job monitor
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -33,7 +41,6 @@ jobs:
           CF_WORKER_URL: ${{ secrets.CF_WORKER_URL }}
           CF_WORKER_TOKEN: ${{ secrets.CF_WORKER_TOKEN }}
         run: python monitor.py
-
 
       - name: Commit updated state
         run: |
