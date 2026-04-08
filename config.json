@@ -506,10 +506,19 @@
       "name": "Minority Rights Group",
       "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
       "method": "html",
-      "selector": "div.entry-content, article, main",
-      "link_selector": "",
+      "selector": "section.job-opportunities-tabs",
+      "link_selector": "a.job-opportunities-tabs__content-item-wrapper",
       "base_url": "https://minorityrights.org",
       "use_cloudscraper": true
+    },
+    {
+      "id": 40,
+      "name": "Integrity Global",
+      "url": "https://www.integrityglobal.com/opportunities/",
+      "method": "html",
+      "selector": "div.wpgb-grid-70",
+      "link_selector": "div.wpgb-grid-70 h3.wpgb-block-3 a",
+      "base_url": "https://www.integrityglobal.com"
     }
   ]
 }
