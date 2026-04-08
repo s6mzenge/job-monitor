@@ -515,14 +515,16 @@
       "id": 40,
       "name": "CUNY Graduate Center",
       "url": "https://www.gc.cuny.edu/human-resources/employment-opportunities",
-      "method": "html",
+      "method": "playwright",
       "selector": "section:has(#section-4976)",
       "link_selector": "a.elf-external[href*='cuny.jobs'], a.elf-external[href*='cunyfirst']",
       "base_url": "https://www.gc.cuny.edu",
-      "use_cloudscraper": true,
       "scope_links": true,
       "skip_detail_fetch": true,
-      "skip_no_vacancy_check": true
+      "skip_no_vacancy_check": true,
+      "wait_until": "domcontentloaded",
+      "wait_selector": "a.elf-external",
+      "wait_ms": 5000
     },
     {
       "id": 41,
