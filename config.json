@@ -713,6 +713,45 @@
       "selector": "div.inqs_main",
       "link_selector": "",
       "base_url": "https://inquest.org.uk"
+    },
+    {
+      "id": 57,
+      "name": "Centre for Information Resilience",
+      "url": "https://www.info-res.org/careers/current-openings/",
+      "method": "workable_api",
+      "base_url": "https://apply.workable.com",
+      "api": {
+        "url": "https://apply.workable.com/api/v1/widget/accounts/centre-for-information-resilience",
+        "http_method": "GET",
+        "response_key": "jobs",
+        "job_fields": {
+          "title": "title",
+          "shortcode": "shortcode",
+          "url": "url",
+          "department": "department",
+          "location_city": "location.city",
+          "location_country": "location.country",
+          "created_at": "created_at"
+        }
+      }
+    },
+    {
+      "id": 58,
+      "name": "Reprieve",
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "selector": "div.entry-content",
+      "link_selector": "a.wp-block-button__link[href*='vacancy']",
+      "base_url": "https://reprieve.org"
+    },
+    {
+      "id": 59,
+      "name": "Ada Lovelace Institute",
+      "url": "https://www.adalovelaceinstitute.org/about/jobs/",
+      "method": "html",
+      "selector": "div.c-listing__list-content-wrapper",
+      "link_selector": "",
+      "base_url": "https://www.adalovelaceinstitute.org"
     }
   ]
 }
