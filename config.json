@@ -683,6 +683,15 @@
           "url": "weblink"
         }
       }
+    },
+    {
+      "id": 54,
+      "name": "Ceasefire Centre for Civilian Rights",
+      "url": "https://www.ceasefire.org/work-with-us/",
+      "method": "html",
+      "selector": "div.entry-content",
+      "link_selector": "",
+      "base_url": "https://www.ceasefire.org"
     }
   ]
 }
