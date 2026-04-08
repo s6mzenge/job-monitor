@@ -653,15 +653,6 @@
       "base_url": "https://jobs.gold.ac.uk"
     },
     {
-      "id": 52,
-      "name": "Goldsmiths, University of London",
-      "url": "https://jobs.gold.ac.uk/job-search.html",
-      "method": "html",
-      "selector": "div.searchresults",
-      "link_selector": "div.jobpost h2 a",
-      "base_url": "https://jobs.gold.ac.uk"
-    },
-    {
       "id": 53,
       "name": "Birkbeck, University of London",
       "url": "https://cis7.bbk.ac.uk/home.html",
