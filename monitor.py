@@ -1247,6 +1247,19 @@ def main():
                 state[site_key]["last_checked"] = now.isoformat()
                 continue
 
+            # Check for boilerplate-only pages (e.g. REDRESS)
+            boilerplate = site.get("no_vacancy_boilerplate", "")
+            if boilerplate:
+                stripped = page_lower.replace(boilerplate.lower(), "").strip()
+                for heading in ["current vacancies", "vacancies", "careers", "jobs"]:
+                    stripped = stripped.replace(heading, "").strip()
+                if len(stripped) < 50:
+                    print(f"    ℹ️ No vacancies listed (only boilerplate text found).")
+                    empty_sites.append(name)
+                    state[site_key]["listing_hash"] = result["hash"]
+                    state[site_key]["last_checked"] = now.isoformat()
+                    continue
+
             title_selector = site.get("job_title_selector", "")
             if title_selector and result.get("soup"):
                 title_elements = result["soup"].select(title_selector)
