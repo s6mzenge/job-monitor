@@ -500,6 +500,15 @@
       "selector": "section#c2213",
       "link_selector": "",
       "base_url": "https://www.ghil.ac.uk"
+    },
+    {
+      "id": 37,
+      "name": "Minority Rights Group",
+      "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
+      "method": "html",
+      "selector": "section.job-opportunities-tabs",
+      "link_selector": "ul.job-opportunities-tabs__content a.job-opportunities-tabs__content-item-wrapper",
+      "base_url": "https://minorityrights.org"
     }
   ]
 }
