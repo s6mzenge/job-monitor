@@ -453,10 +453,10 @@
       "url": "https://vacancies.soas.ac.uk/#vacancies",
       "method": "playwright",
       "selector": "div.jobListingContainer",
-      "link_selector": "div.jobListingContainer h3 a",
+      "link_selector": "div.jobListingContainer h3 a[href*='/job/']",
       "base_url": "https://vacancies.soas.ac.uk",
       "wait_until": "domcontentloaded",
-      "wait_selector": "div.jobListing",
+      "wait_selector": "h3 a[href*='/job/']",
       "wait_ms": 5000
     },
     {
