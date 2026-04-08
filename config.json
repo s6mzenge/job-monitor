@@ -612,6 +612,18 @@
       "wait_until": "domcontentloaded",
       "wait_selector": "li[data-qa='searchResultItem']",
       "wait_ms": 15000
+    },
+    {
+      "id": 49,
+      "name": "Joseph Rowntree Foundation",
+      "url": "https://www.jrf.org.uk/careers",
+      "method": "playwright",
+      "selector": "div[data-js-job-vacancies]",
+      "link_selector": "",
+      "base_url": "https://www.jrf.org.uk",
+      "wait_until": "domcontentloaded",
+      "wait_selector": "div[data-js-job-vacancies] table tbody a",
+      "wait_ms": 10000
     }
   ]
 }
