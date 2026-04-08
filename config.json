@@ -551,6 +551,15 @@
       "selector": "div.c-teaser-text__desc",
       "link_selector": "",
       "base_url": "https://www.his-online.de"
+    },
+    {
+      "id": 44,
+      "name": "Wits University",
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "selector": "table#ACADEMIC-vacancies, table#SUPPORT-vacancies",
+      "link_selector": "table#ACADEMIC-vacancies a[href*='irec.wits.ac.za'], table#SUPPORT-vacancies a[href*='irec.wits.ac.za']",
+      "base_url": "https://irec.wits.ac.za"
     }
   ]
 }
