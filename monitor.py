@@ -661,6 +661,35 @@ def check_pinpoint(site, seen_urls):
     return {"total": len(postings), "new": new_jobs}
 
 # ─── 9. PLAYWRIGHT (headless browser for JS-rendered sites) ───
+def fetch_detail_playwright(url, wait_selector="", wait_ms=5000):
+    """Fetch a detail page using Playwright and return extracted text."""
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page()
+            page.goto(url, timeout=30000, wait_until="domcontentloaded")
+            if wait_selector:
+                try:
+                    page.wait_for_selector(wait_selector, timeout=15000)
+                except:
+                    page.wait_for_timeout(wait_ms)
+            else:
+                page.wait_for_timeout(wait_ms)
+            time.sleep(1)
+            html = page.content()
+            browser.close()
+        soup = BeautifulSoup(html, "html.parser")
+        return extract_text(soup)
+    except Exception as e:
+        print(f"    Playwright detail fetch error: {e}")
+        return ""
+
+
+def strip_query_params(url):
+    """Remove query parameters from a URL for cleaner deduplication."""
+    return url.split("?")[0].rstrip("/")
+
+
 def check_playwright(site, seen_urls):
     """Use headless Chromium to scrape JS-rendered job listing pages."""
     listing_url = site["url"]
@@ -669,6 +698,11 @@ def check_playwright(site, seen_urls):
     selector = site.get("selector", "")
     wait_selector = site.get("wait_selector", "")
     wait_ms = site.get("wait_ms", 5000)
+    card_selector = site.get("card_selector", "")
+    title_selector = site.get("title_selector", "")
+    should_strip_params = site.get("strip_url_params", False)
+    detail_via_pw = site.get("detail_via_playwright", False)
+    detail_wait_sel = site.get("detail_wait_selector", "")
 
     print(f"    Launching headless Chromium...")
     try:
@@ -704,8 +738,57 @@ def check_playwright(site, seen_urls):
                     titles.append(h_text)
         return {"type": "hash_check", "text": text, "hash": text_hash, "titles": titles, "soup": soup}
 
+    # ── Card-based extraction (for Oracle HCM and similar SPAs) ──
+    if card_selector and title_selector:
+        cards = soup.select(card_selector)
+        print(f"    Found {len(cards)} job card(s) via card_selector")
 
-    # Link-extraction mode
+        all_urls = set()
+        jobs = []
+        seen_in_batch = set()
+
+        for card in cards:
+            # Extract title from dedicated selector
+            t_el = card.select_one(title_selector)
+            title = t_el.get_text(strip=True) if t_el else "Untitled"
+
+            # Extract link
+            a = card.select_one(link_selector)
+            if not a:
+                continue
+            href = a.get("href", "").strip()
+            if not href or href == "#":
+                continue
+
+            full_url = urljoin(base_url + "/", href) if base_url else urljoin(listing_url, href)
+
+            # Optionally strip query params for dedup
+            dedup_url = strip_query_params(full_url) if should_strip_params else full_url.rstrip("/")
+
+            all_urls.add(dedup_url)
+            if dedup_url not in seen_urls and dedup_url not in seen_in_batch:
+                jobs.append({"title": title, "url": dedup_url, "full_url": full_url})
+                seen_in_batch.add(dedup_url)
+
+        new_jobs = []
+        for job in jobs:
+            time.sleep(1)
+            if detail_via_pw:
+                detail_text = fetch_detail_playwright(
+                    job["full_url"], detail_wait_sel, wait_ms
+                )
+            else:
+                detail_soup = fetch_page(job["full_url"])
+                detail_text = extract_text(detail_soup) if detail_soup else ""
+            new_jobs.append({
+                "title": job["title"],
+                "url": job["url"],
+                "detail_text": detail_text or f"Title: {job['title']} (detail page could not be loaded)"
+            })
+
+        return {"total": len(all_urls), "new": new_jobs}
+
+    # ── Standard anchor-based extraction (existing logic) ──
     anchors = soup.select(link_selector)
     print(f"    Found {len(anchors)} job links after JS rendering")
 
