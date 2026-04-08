@@ -307,22 +307,5 @@
     "seen_urls": [],
     "last_checked": "2026-04-08T01:47:45.966407+00:00",
     "listing_hash": "fa0e5cf7cb56a1bc003526033f274caf864c970ffea9490ca94618e7b1e48d36"
-  },
-  "https://www.ghil.ac.uk/opportunities/vacancies": {
-    "seen_urls": [],
-    "last_checked": "2026-04-08T01:47:45.966407+00:00",
-    "listing_hash": "b3f19c730278d64f7320b803696656a72b1d4a74c8e3e5cb671c0d55d9495cd7"
-  },
-  "https://minorityrights.org/about-us/jobs-and-opportunities/": {
-    "seen_urls": [],
-    "last_checked": "2026-04-08T01:47:45.966407+00:00",
-    "listing_hash": ""
-  },
-  "https://www.integrityglobal.com/opportunities/": {
-    "seen_urls": [
-      "https://www.integrityglobal.com/our-work/job-openings/jobs/principal-expert-monitoring-evaluation-and-learning"
-    ],
-    "last_checked": "2026-04-08T01:47:45.966407+00:00",
-    "listing_hash": ""
   }
 }
