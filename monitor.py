@@ -959,6 +959,75 @@ def check_oracle_hcm(site, seen_urls):
 
     return {"total": total, "new": new_jobs}
 
+# ─── 11. HIRESERVE ATS JSON API ───
+def check_hireserve(site, seen_urls):
+    """Query a Hireserve ATS JSON feed, with optional category filtering."""
+    api = site["api"]
+    fields = api["job_fields"]
+
+    # Build URL with params + category filters
+    params = api.get("params", {})
+    query_string = "&".join(f"{k}={v}" for k, v in params.items())
+    cat_filters = api.get("category_filters", [])
+    if cat_filters:
+        query_string += "&" + "&".join(
+            f"p_category_code_arr={code}" for code in cat_filters
+        )
+    full_url = f"{api['url']}?{query_string}"
+
+    try:
+        resp = requests.get(full_url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"    Hireserve API error: {e}")
+        return None
+
+    postings = data.get(api["response_key"], [])
+    print(f"    API returned {len(postings)} job(s)")
+
+    new_jobs = []
+    for posting in postings:
+        job_id = str(posting.get(fields["id"], ""))
+        title = posting.get(fields["title"], "Untitled")
+        job_url = posting.get(fields["url"], "")
+
+        # Extract business unit from classifications for detail text
+        business_unit = ""
+        classifications = posting.get("classifications", {})
+        bu_class = classifications.get("class_17744", {})
+        bu_values = bu_class.get("values", [])
+        if bu_values:
+            business_unit = bu_values[0].get("class_val", "")
+
+        # Extract closing date
+        closing = ""
+        pub = posting.get("publication", {}).get("internet", {})
+        closing = pub.get("closing_date", "")
+
+        if job_url in seen_urls or job_id in seen_urls:
+            continue
+
+        detail_text = f"Title: {title}\nBusiness Unit: {business_unit}\nClosing: {closing}"
+
+        # Fetch detail page
+        if job_url:
+            time.sleep(1)
+            detail_soup = fetch_page(job_url)
+            if detail_soup:
+                page_text = extract_text(detail_soup)
+                if len(page_text) > len(detail_text):
+                    detail_text = f"Title: {title}\nBusiness Unit: {business_unit}\nClosing: {closing}\n\n{page_text}"
+
+        new_jobs.append({
+            "title": title,
+            "url": job_url or job_id,
+            "detail_text": detail_text,
+            "_also_track": [u for u in [job_url, job_id] if u]
+        })
+
+    return {"total": len(postings), "new": new_jobs}
+
 # ═══════════════════════════════════════════════════════════════
 #  DISPATCHER — routes each site to the correct handler
 # ═══════════════════════════════════════════════════════════════
@@ -974,6 +1043,7 @@ METHOD_HANDLERS = {
     "pinpoint_api": check_pinpoint,
     "playwright": check_playwright,
     "oracle_hcm_api": check_oracle_hcm,
+    "hireserve_api": check_hireserve,
 }
 
 
