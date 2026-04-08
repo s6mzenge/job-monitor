@@ -680,6 +680,7 @@ def check_playwright(site, seen_urls):
                 h_text = h.get_text(strip=True)
                 if h_text and len(h_text) < 100:
                     titles.append(h_text)
+        print(f"    DEBUG: headings found: {[h.name + ': ' + h.get_text(strip=True)[:50] for h in soup.select('h1, h2, h3, h4, h5, h6, strong')]}")
         return {"type": "hash_check", "text": text, "hash": text_hash, "titles": titles, "soup": soup}
 
 
