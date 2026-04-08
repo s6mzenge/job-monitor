@@ -432,11 +432,13 @@
       "id": 32,
       "name": "REDRESS",
       "url": "https://redress.org/about-us/work-at-redress/current-vacancies/",
-      "method": "html",
+      "method": "playwright",
       "selector": "div.article-body",
       "link_selector": "",
       "base_url": "https://redress.org",
-      "skip_no_vacancy_check": true
+      "skip_no_vacancy_check": true,
+      "wait_selector": "div.accordion",
+      "wait_ms": 3000
     },
     {
       "id": 33,
