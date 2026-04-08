@@ -488,8 +488,8 @@
       "selector": "section.vacancies",
       "link_selector": "",
       "base_url": "https://globalrightscompliance.org",
-      "wait_until": "domcontentloaded",
-      "wait_selector": "ul.vacancies__list li",
+      "wait_until": "networkidle",
+      "wait_selector": "h1",
       "wait_ms": 5000
     },
     {
