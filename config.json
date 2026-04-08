@@ -374,17 +374,6 @@
       "department_filter": "Public Policy"
     }, 
     {
-      "id": 26,
-      "name": "Anti-Slavery International",
-      "url": "https://www.antislavery.org/about-us/jobs-and-volunteering/",
-      "method": "html",
-      "selector": "main, article, div.entry-content",
-      "link_selector": "",
-      "base_url": "https://www.antislavery.org",
-      "job_title_selector": "h3",
-      "proxy": "cloudflare_worker"
-    }, 
-    {
       "id": 27,
       "name": "MSF UK",
       "url": "https://cezanneondemand.intervieweb.it/msfuk/en/career",
