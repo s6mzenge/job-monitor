@@ -1328,9 +1328,17 @@ def main():
         result = handler(site, seen_urls)
 
         if result is None:
-            errors.append(name)
+            prev_errors = state[site_key].get("consecutive_errors", 0)
+            state[site_key]["consecutive_errors"] = prev_errors + 1
             state[site_key]["last_checked"] = now.isoformat()
+            if state[site_key]["consecutive_errors"] >= 4:
+                errors.append(name)
+                print(f"    ⚠️ Failed {state[site_key]['consecutive_errors']} times in a row — will alert.")
+            else:
+                print(f"    ⚠️ Failed ({state[site_key]['consecutive_errors']}/4 before alert).")
             continue
+
+        state[site_key]["consecutive_errors"] = 0
 
         # Handle the hash-check case (HTML sites without link_selector)
         if isinstance(result, dict) and result.get("type") == "hash_check":
