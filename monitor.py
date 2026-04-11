@@ -636,12 +636,22 @@ def check_pinpoint(site, seen_urls):
         postings = []
     print(f"    API returned {len(postings)} jobs")
 
+    location_filter = site.get("location_filter", "")
+    total_after_filter = 0
     new_jobs = []
     for posting in postings:
         title = posting.get(fields.get("title", "title"), "Untitled")
         job_url = posting.get(fields.get("url", "url"), "")
         location = posting.get(fields.get("location", "locationName"), "")
+        if isinstance(location, dict):
+            location = location.get("name", "") or location.get("label", "") or str(location)
         department = posting.get(fields.get("department", "departmentName"), "")
+
+        # Location filter
+        if location_filter and location_filter.lower() not in location.lower():
+            continue
+
+        total_after_filter += 1
 
         # Make URL absolute if needed
         if job_url and not job_url.startswith("http"):
@@ -667,7 +677,10 @@ def check_pinpoint(site, seen_urls):
 
         new_jobs.append({"title": title, "url": job_url, "detail_text": detail_text})
 
-    return {"total": len(postings), "new": new_jobs}
+    if location_filter:
+        print(f"    After filtering: {total_after_filter} jobs")
+
+    return {"total": total_after_filter if location_filter else len(postings), "new": new_jobs}
 
 # ─── 9. PLAYWRIGHT (headless browser for JS-rendered sites) ───
 def fetch_detail_playwright(url, wait_selector="", wait_ms=5000):
