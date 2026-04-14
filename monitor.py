@@ -9,6 +9,7 @@ from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
 import cloudscraper
 from playwright.sync_api import sync_playwright
+from report import save_report
 try:
     from playwright_stealth import stealth_sync as _stealth_sync
     _STEALTH_MODE = "page"
@@ -1081,19 +1082,19 @@ INSTRUCTIONS:
    - Skills match: Does the candidate have the required or comparable skills (research, data analysis, policy writing, SPSS, Python, multilingual)?
    - Experience level: Is the role appropriate for someone with an MSc in progress, a strong BA, and research/admin assistant experience — but no full-time professional experience yet?
 3. Rate each job: High, Medium, or Low.
-4. Only include jobs rated High or Medium.
-5. If no jobs are found or none match, respond with exactly: NO_MATCH
+4. Include ALL jobs found on the page, regardless of match rating.
+5. If no jobs are found on the page at all, respond with exactly: NO_JOBS_FOUND
 
 Note: Do NOT factor location into the match rating. Location should be reported in the output for the candidate's information, but a role in another city or country should not lower the rating.
 
-FORMAT (for each matching job — use this exact format with these exact labels):
+FORMAT (for each job found — use this exact format with these exact labels):
 JOB: [Job title]
 ORGANISATION: {site_name}
 LOCATION: [City/country, or "Remote" if applicable — extract from page if possible, otherwise write "Not specified"]
 TYPE: [Full-time/Part-time/Internship/Contract — extract from page if possible, otherwise write "Not specified"]
 DEADLINE: [Application deadline if mentioned, or "Not specified"]
 SALARY: [Salary or pay range if mentioned, or "Not specified"]
-MATCH: [High/Medium]
+MATCH: [High/Medium/Low]
 FIELD: [1-5 score for field alignment, where 5 = perfect match to candidate's interests]
 SKILLS: [1-5 score for skills match, where 5 = candidate has all required skills]
 SENIORITY: [1-5 score for seniority fit, where 5 = perfect level for the candidate, 1 = far too senior or too junior]
@@ -1130,21 +1131,19 @@ RATING SCALE:
 
 Note: Do NOT factor location into the match rating. Location should be reported in the output for the candidate's information, but a role in another city or country should not lower the rating.
 
-If the match is High or Medium, respond in this exact format (use these exact labels):
+Always respond in this exact format (use these exact labels):
 JOB: {job_title}
 ORGANISATION: {site_name}
 LOCATION: [City/country as stated in the description, or "Not specified"]
 TYPE: [Full-time/Part-time/Internship/Contract as stated, or "Not specified"]
 DEADLINE: [Application deadline if mentioned, or "Not specified"]
 SALARY: [Salary or pay range if mentioned, or "Not specified"]
-MATCH: [High/Medium]
+MATCH: [High/Medium/Low]
 FIELD: [1-5 score for field alignment, where 5 = perfect match to candidate's interests]
 SKILLS: [1-5 score for skills match, where 5 = candidate has all required skills]
 SENIORITY: [1-5 score for seniority fit, where 5 = perfect level for the candidate, 1 = far too senior or too junior]
 REASON: [2-3 sentences explaining the match and any notable gaps]
 URL: {job_url}
-
-If the match is Low, respond with exactly: NO_MATCH
 
 IMPORTANT:
 - The job description may be in German or another language — assess it regardless.
@@ -1191,7 +1190,7 @@ def escape_html(text):
 def parse_gemini_matches(raw_text):
     """Parse Gemini's structured output into a list of match dicts."""
     matches = []
-    if not raw_text or "NO_MATCH" in raw_text:
+    if not raw_text or "NO_JOBS_FOUND" in raw_text:
         return matches
 
     FIELDS = ["JOB", "ORGANISATION", "LOCATION", "TYPE", "DEADLINE", "SALARY", "MATCH", "FIELD", "SKILLS", "SENIORITY", "REASON", "URL"]
@@ -1230,6 +1229,23 @@ def parse_gemini_matches(raw_text):
         if match.get("job"):
             matches.append(match)
     return matches
+
+def _match_to_report_entry(m, fallback_org="", fallback_url=""):
+    """Convert a parsed Gemini match dict into a daily report entry."""
+    return {
+        "title": m.get("job", "Untitled"),
+        "organisation": m.get("organisation", fallback_org),
+        "url": m.get("url", fallback_url),
+        "match": m.get("match", "low").lower(),
+        "field_score": m.get("field", ""),
+        "skills_score": m.get("skills", ""),
+        "seniority_score": m.get("seniority", ""),
+        "reason": m.get("reason", ""),
+        "location": m.get("location", ""),
+        "type": m.get("type", ""),
+        "deadline": m.get("deadline", ""),
+        "salary": m.get("salary", ""),
+    }
 
 def format_match_for_telegram(match):
     """Format a single parsed match into a Telegram HTML message block."""
@@ -1318,6 +1334,7 @@ def main():
 
     state = load_state()
     all_matches = []
+    daily_report_jobs = []
     errors = []
     empty_sites = []
 
@@ -1396,10 +1413,14 @@ def main():
                 else:
                     print(f"    Page content changed! Sending full text to Gemini...")
                     gemini_result = evaluate_with_gemini(name, f"Page update on {name}", site["url"], result["text"], is_page_level=True)
-                    if gemini_result and "NO_MATCH" not in gemini_result:
+                    if gemini_result:
                         parsed = parse_gemini_matches(gemini_result)
                         for m in parsed:
-                            all_matches.append(format_match_for_telegram(m))
+                            # Telegram: High/Medium only
+                            if m.get("match", "").lower() in ("high", "medium"):
+                                all_matches.append(format_match_for_telegram(m))
+                            # Daily report: all jobs
+                            daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=site["url"]))
                 state[site_key]["listing_hash"] = result["hash"]
             else:
                 print(f"    No changes detected.")
@@ -1434,13 +1455,32 @@ def main():
                     print(f"        ⚠️ Gemini failed — will retry next run.")
                     continue
 
-                if "NO_MATCH" not in gemini_result:
-                    parsed = parse_gemini_matches(gemini_result)
-                    for m in parsed:
+                parsed = parse_gemini_matches(gemini_result)
+                if parsed:
+                    m = parsed[0]
+                    match_level = m.get("match", "low").lower()
+
+                    # Telegram: High/Medium only
+                    if match_level in ("high", "medium"):
                         all_matches.append(format_match_for_telegram(m))
-                    print(f"        ✅ Match!")
+                        print(f"        ✅ Match ({match_level})!")
+                    else:
+                        print(f"        No match (low).")
+
+                    # Daily report: all jobs
+                    daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=job["url"]))
                 else:
-                    print(f"        No match.")
+                    # Gemini returned something unparseable — record minimal entry
+                    print(f"        ⚠️ Could not parse Gemini response.")
+                    daily_report_jobs.append({
+                        "title": job["title"],
+                        "organisation": name,
+                        "url": job["url"],
+                        "match": "low",
+                        "location": "", "type": "", "deadline": "", "salary": "",
+                        "field_score": "", "skills_score": "", "seniority_score": "",
+                        "reason": "",
+                    })
 
             seen_urls.add(job["url"])
             for extra in job.get("_also_track", []):
@@ -1484,6 +1524,10 @@ def main():
         print(f"Errors: {', '.join(errors)}")
     if empty_sites:
         print(f"Empty: {', '.join(empty_sites)}")
+
+    # ─── Write daily report for the dashboard ───
+    if not DRY_RUN:
+        save_report(daily_report_jobs, now)
 
 
 if __name__ == "__main__":
