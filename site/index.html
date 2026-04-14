@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Monitor — Daily Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f0eb;
+    --surface: #ffffff;
+    --text: #1a1a1a;
+    --text-secondary: #5c5c5c;
+    --text-muted: #8a8a8a;
+    --border: #d4cfc8;
+    --border-light: #e8e3dc;
+    --accent-high: #1a6b3c;
+    --accent-high-bg: #e8f5ee;
+    --accent-high-border: #b0d9c0;
+    --accent-medium: #8b6914;
+    --accent-medium-bg: #fdf6e3;
+    --accent-medium-border: #e0cc8a;
+    --accent-low: #6b6b6b;
+    --accent-low-bg: #f0eeeb;
+    --accent-low-border: #d4cfc8;
+    --rule: #1a1a1a;
+    --score-fill: #1a1a1a;
+    --score-empty: #d4cfc8;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141210;
+      --surface: #1e1c19;
+      --text: #e8e3dc;
+      --text-secondary: #a09a90;
+      --text-muted: #6b665e;
+      --border: #333028;
+      --border-light: #2a2720;
+      --accent-high: #5ec48a;
+      --accent-high-bg: #1a2e22;
+      --accent-high-border: #2a4a35;
+      --accent-medium: #d4a84b;
+      --accent-medium-bg: #2a2410;
+      --accent-medium-border: #4a3d1a;
+      --accent-low: #8a8580;
+      --accent-low-bg: #1e1c18;
+      --accent-low-border: #333028;
+      --rule: #e8e3dc;
+      --score-fill: #e8e3dc;
+      --score-empty: #333028;
+    }
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .masthead {
+    border-bottom: 3px double var(--rule);
+    padding: 2rem 1.5rem 1.5rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .masthead h1 {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(2.4rem, 6vw, 3.8rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .masthead .edition {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .date-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .date-nav button {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text);
+    cursor: pointer;
+    padding: 0.35rem 0.75rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    transition: all 0.15s;
+  }
+
+  .date-nav button:hover:not(:disabled) {
+    background: var(--surface);
+    border-color: var(--text-secondary);
+  }
+
+  .date-nav button:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  .date-nav .current-date {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.2rem;
+    min-width: 180px;
+    text-align: center;
+  }
+
+  .summary-bar {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border-light);
+    flex-wrap: wrap;
+  }
+
+  .summary-stat {
+    text-align: center;
+  }
+
+  .summary-stat .num {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  .summary-stat .label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 0.2rem;
+  }
+
+  .summary-stat.high .num { color: var(--accent-high); }
+  .summary-stat.medium .num { color: var(--accent-medium); }
+
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+  }
+
+  .section-header {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1.5rem 0 0.75rem;
+    border-bottom: 2px solid var(--rule);
+    margin-bottom: 0;
+  }
+
+  .section-header.minor {
+    font-size: 1.2rem;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--border);
+    color: var(--text-secondary);
+  }
+
+  .job-card {
+    border-bottom: 1px solid var(--border-light);
+    padding: 1.25rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    animation: fadeIn 0.3s ease both;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .job-card.match-high {
+    padding: 1.25rem 1rem;
+    margin: 0 -1rem;
+    background: var(--accent-high-bg);
+    border-left: 3px solid var(--accent-high);
+    border-bottom-color: var(--accent-high-border);
+  }
+
+  .job-card.match-medium {
+    padding: 1.25rem 1rem;
+    margin: 0 -1rem;
+    background: var(--accent-medium-bg);
+    border-left: 3px solid var(--accent-medium);
+    border-bottom-color: var(--accent-medium-border);
+  }
+
+  .job-card.match-low {
+    padding: 1.25rem 1rem;
+    margin: 0 -1rem;
+    background: var(--accent-low-bg);
+    border-left: 2px solid var(--accent-low-border);
+    border-bottom-color: var(--accent-low-border);
+  }
+
+  .job-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .job-title {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  .job-title a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+
+  .job-title a:hover {
+    border-bottom-color: var(--text);
+  }
+
+  .match-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .match-badge.high {
+    background: var(--accent-high);
+    color: #fff;
+  }
+
+  .match-badge.medium {
+    background: var(--accent-medium);
+    color: #fff;
+  }
+
+  .match-badge.low {
+    background: var(--accent-low);
+    color: #fff;
+  }
+
+  .job-meta {
+    display: flex;
+    gap: 0.4rem 1.2rem;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+
+  .job-meta span::before {
+    margin-right: 0.3rem;
+    opacity: 0.6;
+  }
+
+  .job-org::before { content: '⌂'; }
+  .job-loc::before { content: '↗'; }
+  .job-type::before { content: '◇'; }
+  .job-deadline::before { content: '◷'; }
+  .job-salary::before { content: '£'; font-style: normal; }
+
+  .job-scores {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    flex-wrap: wrap;
+  }
+
+  .score-item {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .score-dots {
+    display: flex;
+    gap: 2px;
+  }
+
+  .score-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--score-empty);
+  }
+
+  .score-dot.filled {
+    background: var(--score-fill);
+  }
+
+  .match-high .score-dot.filled { background: var(--accent-high); }
+  .match-medium .score-dot.filled { background: var(--accent-medium); }
+
+  .job-reason {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 4rem 1rem;
+    color: var(--text-muted);
+  }
+
+  .empty-state .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.4;
+  }
+
+  .empty-state p {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.2rem;
+  }
+
+  .loading {
+    text-align: center;
+    padding: 4rem 1rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .collapsible-toggle {
+    display: block;
+    width: 100%;
+    background: none;
+    border: 1px dashed var(--border);
+    color: var(--text-secondary);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: all 0.15s;
+  }
+
+  .collapsible-toggle:hover {
+    border-color: var(--text-secondary);
+    color: var(--text);
+  }
+
+  .collapsible { display: none; }
+  .collapsible.visible { display: block; }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-light);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .summary-bar { gap: 1.2rem; }
+    .job-card-header { flex-direction: column; gap: 0.3rem; }
+    .match-badge { align-self: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <h1>The Daily Brief</h1>
+  <div class="edition">Job Monitor — Automated Intelligence</div>
+</header>
+
+<nav class="date-nav">
+  <button id="btn-prev" onclick="navigateDate(-1)">← Prev</button>
+  <span class="current-date" id="current-date">Loading…</span>
+  <button id="btn-next" onclick="navigateDate(1)">Next →</button>
+</nav>
+
+<div class="summary-bar" id="summary-bar" style="display:none;">
+  <div class="summary-stat"><div class="num" id="stat-total">0</div><div class="label">New Jobs</div></div>
+  <div class="summary-stat high"><div class="num" id="stat-high">0</div><div class="label">High Match</div></div>
+  <div class="summary-stat medium"><div class="num" id="stat-medium">0</div><div class="label">Medium Match</div></div>
+  <div class="summary-stat"><div class="num" id="stat-orgs">0</div><div class="label">Organisations</div></div>
+</div>
+
+<main id="content">
+  <div class="loading" id="loading">Loading today's brief…</div>
+</main>
+
+<footer>
+  Data generated automatically by Job Monitor · Evaluated by Gemini · Updated three times daily
+</footer>
+
+<script>
+  let dates = [];
+  let currentIndex = -1;
+
+  const DATA_BASE = './data';
+
+  async function init() {
+    try {
+      const resp = await fetch(`${DATA_BASE}/dates.json?t=${Date.now()}`);
+      if (!resp.ok) throw new Error('No data yet');
+      dates = await resp.json();
+      dates.sort();
+      if (dates.length === 0) {
+        showEmpty('No reports generated yet. Run the monitor to populate data.');
+        return;
+      }
+      currentIndex = dates.length - 1;
+      await loadDate(dates[currentIndex]);
+    } catch (e) {
+      showEmpty('No reports available yet. The monitor will generate data on its next run.');
+    }
+  }
+
+  async function loadDate(dateStr) {
+    const content = document.getElementById('content');
+    document.getElementById('loading').style.display = '';
+    content.querySelectorAll('.section-header, .job-card, .collapsible-toggle, .collapsible, .empty-state, .error-msg')
+      .forEach(el => el.remove());
+
+    const formatted = formatDate(dateStr);
+    document.getElementById('current-date').textContent = formatted;
+    updateNavButtons();
+
+    try {
+      const resp = await fetch(`${DATA_BASE}/${dateStr}.json?t=${Date.now()}`);
+      if (!resp.ok) throw new Error('Not found');
+      const data = await resp.json();
+      document.getElementById('loading').style.display = 'none';
+      renderJobs(data);
+    } catch (e) {
+      document.getElementById('loading').style.display = 'none';
+      showEmpty('No data for this date.');
+    }
+  }
+
+  function renderJobs(data) {
+    const content = document.getElementById('content');
+    const jobs = data.jobs || [];
+
+    const high = jobs.filter(j => j.match === 'high');
+    const medium = jobs.filter(j => j.match === 'medium');
+    const low = jobs.filter(j => j.match !== 'high' && j.match !== 'medium');
+
+    // Summary
+    const bar = document.getElementById('summary-bar');
+    bar.style.display = '';
+    document.getElementById('stat-total').textContent = jobs.length;
+    document.getElementById('stat-high').textContent = high.length;
+    document.getElementById('stat-medium').textContent = medium.length;
+    const orgs = new Set(jobs.map(j => j.organisation).filter(Boolean));
+    document.getElementById('stat-orgs').textContent = orgs.size;
+
+    if (jobs.length === 0) {
+      showEmpty('No new jobs were found during this period.');
+      return;
+    }
+
+    let cardIndex = 0;
+
+    // Recommended section (High + Medium)
+    if (high.length + medium.length > 0) {
+      const header = document.createElement('h2');
+      header.className = 'section-header';
+      header.textContent = 'Recommended for You';
+      content.appendChild(header);
+      [...high, ...medium].forEach(job => {
+        content.appendChild(createJobCard(job, cardIndex++));
+      });
+    }
+
+    // Low match section (collapsible)
+    if (low.length > 0) {
+      const toggle = document.createElement('button');
+      toggle.className = 'collapsible-toggle';
+      toggle.textContent = `Show ${low.length} other new job${low.length === 1 ? '' : 's'} (not matched)`;
+      content.appendChild(toggle);
+
+      const container = document.createElement('div');
+      container.className = 'collapsible';
+
+      const header = document.createElement('h2');
+      header.className = 'section-header minor';
+      header.textContent = 'Other New Listings';
+      container.appendChild(header);
+
+      low.forEach(job => {
+        container.appendChild(createJobCard(job, cardIndex++));
+      });
+      content.appendChild(container);
+
+      toggle.addEventListener('click', () => {
+        const vis = container.classList.toggle('visible');
+        toggle.textContent = vis
+          ? `Hide ${low.length} other job${low.length === 1 ? '' : 's'}`
+          : `Show ${low.length} other new job${low.length === 1 ? '' : 's'} (not matched)`;
+      });
+    }
+  }
+
+  function createJobCard(job, index) {
+    const card = document.createElement('div');
+    const level = (job.match || 'low').toLowerCase();
+    const matchClass = ['high', 'medium', 'low'].includes(level) ? `match-${level}` : 'match-low';
+    card.className = `job-card ${matchClass}`;
+    card.style.animationDelay = `${Math.min(index, 15) * 0.04}s`;
+
+    let html = '<div class="job-card-header"><div class="job-title">';
+    if (job.url) {
+      html += `<a href="${esc(job.url)}" target="_blank" rel="noopener">${esc(job.title)}</a>`;
+    } else {
+      html += esc(job.title);
+    }
+    html += '</div>';
+    html += `<span class="match-badge ${level}">${level} match</span>`;
+    html += '</div>';
+
+    // Meta
+    const meta = [];
+    if (job.organisation) meta.push(`<span class="job-org">${esc(job.organisation)}</span>`);
+    if (job.location && job.location.toLowerCase() !== 'not specified') meta.push(`<span class="job-loc">${esc(job.location)}</span>`);
+    if (job.type && job.type.toLowerCase() !== 'not specified') meta.push(`<span class="job-type">${esc(job.type)}</span>`);
+    if (job.deadline && job.deadline.toLowerCase() !== 'not specified') meta.push(`<span class="job-deadline">${esc(job.deadline)}</span>`);
+    if (job.salary && job.salary.toLowerCase() !== 'not specified') meta.push(`<span class="job-salary">${esc(job.salary)}</span>`);
+    if (meta.length) html += `<div class="job-meta">${meta.join('')}</div>`;
+
+    // Scores
+    if (job.field_score || job.skills_score || job.seniority_score) {
+      html += '<div class="job-scores">';
+      if (job.field_score) html += scoreItem('Field', job.field_score);
+      if (job.skills_score) html += scoreItem('Skills', job.skills_score);
+      if (job.seniority_score) html += scoreItem('Seniority', job.seniority_score);
+      html += '</div>';
+    }
+
+    // Reason
+    if (job.reason) {
+      html += `<div class="job-reason">${esc(job.reason)}</div>`;
+    }
+
+    card.innerHTML = html;
+    return card;
+  }
+
+  function scoreItem(label, score) {
+    const n = parseInt(score) || 0;
+    let dots = '';
+    for (let i = 1; i <= 5; i++) {
+      dots += `<div class="score-dot ${i <= n ? 'filled' : ''}"></div>`;
+    }
+    return `<div class="score-item"><span>${label}</span><div class="score-dots">${dots}</div></div>`;
+  }
+
+  function navigateDate(dir) {
+    const newIndex = currentIndex + dir;
+    if (newIndex < 0 || newIndex >= dates.length) return;
+    currentIndex = newIndex;
+    loadDate(dates[currentIndex]);
+  }
+
+  function updateNavButtons() {
+    document.getElementById('btn-prev').disabled = currentIndex <= 0;
+    document.getElementById('btn-next').disabled = currentIndex >= dates.length - 1;
+  }
+
+  function formatDate(str) {
+    const [y, m, d] = str.split('-');
+    const date = new Date(+y, +m - 1, +d);
+    return date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  }
+
+  function showEmpty(msg) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('summary-bar').style.display = 'none';
+    const content = document.getElementById('content');
+    const el = document.createElement('div');
+    el.className = 'empty-state';
+    el.innerHTML = `<div class="icon">◇</div><p>${esc(msg)}</p>`;
+    content.appendChild(el);
+  }
+
+  function esc(s) {
+    if (!s) return '';
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  init();
+</script>
+</body>
+</html>
