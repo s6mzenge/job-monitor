@@ -1,7 +1,7 @@
 {
   "date": "2026-04-15",
-  "generated_at": "2026-04-15T10:01:01.576724+00:00",
-  "run_count": 11,
+  "generated_at": "2026-04-15T10:38:53.320850+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Network Engineer",
@@ -58,6 +58,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Ambassador Relations Manager",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/ambassador-relations-manager-61675/en",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "While the organisation's humanitarian mission aligns well with the candidate's interests in international relations, international law, and genocide studies, the role itself is far too senior and requires a very specific skillset the candidate does not possess. The job explicitly asks for an \"experienced, strategic\" manager with a \"proven track record of managing high-profile partnerships\" and \"established networks\" in entertainment/arts, which the candidate, with only student assistant experience, lacks.",
+      "location": "London, United Kingdom",
+      "type": "Fixed Term - 18 months (Full-time, 37.5 hours/week)",
+      "deadline": "4 May 2026, 12pm (BST)",
+      "salary": "£54,452.47- £66,553.01 per annum"
     }
   ]
 }
