@@ -1,7 +1,7 @@
 {
   "date": "2026-04-15",
-  "generated_at": "2026-04-15T15:01:01.508044+00:00",
-  "run_count": 22,
+  "generated_at": "2026-04-15T15:30:58.199911+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Network Engineer",
@@ -86,6 +86,20 @@
       "type": "Fixed Term Contract",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Summer Internship, Human Resources",
+      "organisation": "Eurasia Group",
+      "url": "https://ats.rippling.com/en-GB/eurasia-group/jobs/e1cc276f-35c9-4245-91ed-7755c058599",
+      "match": "medium",
+      "field_score": "2",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "While the specific Human Resources function is not directly aligned with the candidate's academic focus on International Relations, Law, or Policy Research, the company's mission in political risk and geopolitics is highly relevant. The candidate possesses strong transferable skills in data analysis, reporting, organization, and communication, which are crucial for many of the internship's responsibilities. The role is also perfectly suited for an MSc student seeking an entry-level internship.",
+      "location": "New York / London",
+      "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "$17 per hour"
     }
   ]
 }
