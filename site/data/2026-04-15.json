@@ -1,7 +1,7 @@
 {
   "date": "2026-04-15",
-  "generated_at": "2026-04-15T13:01:03.113941+00:00",
-  "run_count": 18,
+  "generated_at": "2026-04-15T13:30:52.807229+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Network Engineer",
@@ -72,6 +72,20 @@
       "type": "Fixed Term - 18 months (Full-time, 37.5 hours/week)",
       "deadline": "4 May 2026, 12pm (BST)",
       "salary": "£54,452.47- £66,553.01 per annum"
+    },
+    {
+      "title": "Talent Operations Associate, Fixed Term Contract",
+      "organisation": "Google DeepMind",
+      "url": "https://job-boards.greenhouse.io/deepmind/jobs/7795430",
+      "match": "medium",
+      "field_score": "1",
+      "skills_score": "5",
+      "seniority_score": "5",
+      "reason": "While the candidate possesses an excellent skillset (administrative, data analysis, project support, technical tools like Python/SPSS, multilingualism) and the role's seniority is appropriate for their experience level, the core field of Talent Operations at an AI company is a significant departure from their stated academic interests in international relations, law, and policy research. The candidate's strong transferable skills make them capable of performing the role, but the lack of field alignment suggests it may not be a long-term fit for their career aspirations.",
+      "location": "London, UK",
+      "type": "Fixed Term Contract",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
