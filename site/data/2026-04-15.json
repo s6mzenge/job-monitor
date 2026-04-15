@@ -1,6 +1,21 @@
 {
   "date": "2026-04-15",
-  "generated_at": "2026-04-15T06:01:05.461558+00:00",
-  "run_count": 3,
-  "jobs": []
+  "generated_at": "2026-04-15T06:30:58.660158+00:00",
+  "run_count": 4,
+  "jobs": [
+    {
+      "title": "Network Engineer",
+      "organisation": "The Bridgespan Group",
+      "url": "https://phh.tbe.taleo.net/phh01/ats/careers/requisition.jsp?org=THEBRIDG12&cws=40&rid=513",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is for a highly experienced Network Engineer with 5-7+ years in IT infrastructure, cloud, and data center networking. The candidate's background is in International Relations and social sciences, with student assistant experience in research and administration. There is no alignment in field, required technical skills, or experience level.",
+      "location": "Not specified (requires US Eastern Time hours)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
 }
