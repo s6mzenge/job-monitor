@@ -178,8 +178,6 @@
 
       const high = jobs.filter(j => j.match === 'high');
       const medium = jobs.filter(j => j.match === 'medium');
-      const low = jobs.filter(j => j.match !== 'high' && j.match !== 'medium');
-      const recommended = [...high, ...medium];
 
       const totalBadge = `<span class="text-xs font-medium px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400">${jobs.length} job${jobs.length === 1 ? '' : 's'}</span>`;
       const highBadge = high.length ? `<span class="text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-400">${high.length} high</span>` : '';
@@ -194,33 +192,11 @@
             </div>
           </div>`;
 
-      // Recommended
-      if (recommended.length > 0) {
-        html += `
-          <div class="px-3 sm:px-5 py-4">
-            <div class="flex items-center gap-2 mb-3">
-              <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 11.08V12a10 10 0 1 1-5.93-9.14M22 4L12 14.01l-3-3"/></svg>
-              <h3 class="text-sm font-semibold text-slate-700 dark:text-slate-300">Recommended for You</h3>
-            </div>
-            <div class="space-y-3">
-              ${recommended.map((j, i) => jobCard(j, i)).join('')}
-            </div>
-          </div>`;
-      }
-
-      // Low matches — collapsible
-      if (low.length > 0) {
-        const bordTop = recommended.length > 0 ? 'border-t border-slate-100 dark:border-slate-700' : '';
-        html += `
-          <div class="${bordTop}">
-            <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chev').classList.toggle('rotate-90')"
-              class="w-full text-left px-3 sm:px-5 py-3 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors cursor-pointer">
-              <span class="text-sm text-slate-500 dark:text-slate-400">${low.length} other listing${low.length === 1 ? '' : 's'} (not matched)</span>
-              <svg class="chev w-4 h-4 text-slate-400 transition-transform shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 18l6-6-6-6"/></svg>
-            </button>
-            <div class="hidden px-3 sm:px-5 pb-4 space-y-3">
-              ${low.map((j, i) => jobCard(j, i)).join('')}
-            </div>
+      // All jobs in chronological order (newest first)
+      const reversed = [...jobs].reverse();
+      html += `
+          <div class="px-3 sm:px-5 py-4 space-y-3">
+            ${reversed.map((j, i) => jobCard(j, i)).join('')}
           </div>`;
       }
 
