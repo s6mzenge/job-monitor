@@ -1,7 +1,7 @@
 {
   "date": "2026-04-15",
-  "generated_at": "2026-04-15T09:01:01.404359+00:00",
-  "run_count": 9,
+  "generated_at": "2026-04-15T09:30:56.936388+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Network Engineer",
@@ -14,6 +14,48 @@
       "reason": "This role is for a highly experienced Network Engineer with 5-7+ years in IT infrastructure, cloud, and data center networking. The candidate's background is in International Relations and social sciences, with student assistant experience in research and administration. There is no alignment in field, required technical skills, or experience level.",
       "location": "Not specified (requires US Eastern Time hours)",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Internship (Graduate or Masters Associate)",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/New-York/Internship--Graduate-or-Masters-Associate-_JR-0003803",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "This role is an excellent match for the candidate. Their MSc focus on International Law and Genocide, coupled with a strong BA in Politics and Society, aligns perfectly with the Open Society Foundations' mission in human rights, justice, and policy reform, even with the specific drug policy focus. The candidate possesses strong research, writing, and organizational skills, along with advanced English proficiency and relevant assistant experience, making them a highly competitive applicant for this graduate-level internship.",
+      "location": "New York",
+      "type": "Part-time Internship",
+      "deadline": "04/20/2026",
+      "salary": "$20 to $23 (USD) per hour"
+    },
+    {
+      "title": "SENIOR EMPLOYEE RELATIONS ADVISOR.3.04 (AD.07.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106255&p_spid=5146824",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit as it explicitly requires a Bachelor of Laws degree and a minimum of five years of specialized experience in employee relations and labour law, which the candidate lacks. The candidate's academic background in international relations and international law, while strong, does not align with the specific national labour law and HR operational focus of this senior position.",
+      "location": "Johannesburg, ZA",
+      "type": "Not specified",
+      "deadline": "24 April 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Partner, REACH, Sustainable Product & Supply Chain",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/Harrogate-United-Kingdom/Partner--REACH--ustainable-Product---Supply-Chain_R00026213",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is a poor match for the candidate. The job requires deep expertise in chemical regulations (REACH, TSCA) and extensive experience in business development and leadership as a 'Partner', which is far beyond the candidate's academic background and student assistant experience. While the candidate possesses general research and data analysis skills, the specific industry knowledge and senior-level commercial experience required are entirely absent.",
+      "location": "Harrogate, United Kingdom",
+      "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
