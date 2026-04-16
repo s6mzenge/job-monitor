@@ -1,7 +1,7 @@
 {
   "date": "2026-04-16",
-  "generated_at": "2026-04-16T13:01:49.388911+00:00",
-  "run_count": 17,
+  "generated_at": "2026-04-16T13:30:56.510881+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Lecturer (AC.08.4)",
@@ -100,6 +100,20 @@
       "type": "Permanent * Full time",
       "deadline": "Thursday, April 23, 2026",
       "salary": "£43297.57 to £50562.57 Per Annum"
+    },
+    {
+      "title": "Systems and Change Project Manager",
+      "organisation": "Alan Turing Institute",
+      "url": "https://cezanneondemand.intervieweb.it/turing/jobs/systems-and-change-project-manager-61706/en",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The candidate's academic background in international relations and law, and experience in higher education policy research and administration, do not align with the operational focus of a Systems and Change Project Manager role. While the candidate has strong analytical and organisational skills, they lack the specific professional experience in system project management and change management methodologies required for this mid-to-senior level position.",
+      "location": "London, United Kingdom",
+      "type": "Full-time, Permanent",
+      "deadline": "Thursday 30 April 2026",
+      "salary": "£55,000 plus excellent benefits"
     }
   ]
 }
