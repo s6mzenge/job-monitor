@@ -1,7 +1,7 @@
 {
   "date": "2026-04-16",
-  "generated_at": "2026-04-16T16:31:01.412082+00:00",
-  "run_count": 24,
+  "generated_at": "2026-04-16T17:01:15.233363+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Lecturer (AC.08.4)",
@@ -114,6 +114,34 @@
       "type": "Full-time, Permanent",
       "deadline": "Thursday 30 April 2026",
       "salary": "£55,000 plus excellent benefits"
+    },
+    {
+      "title": "Postdoctoral Research Associate",
+      "organisation": "Queen Mary University of London",
+      "url": "https://www.jobs.ac.uk/job/DRF588/postdoctoral-research-associate",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The candidate's academic interests in critical international relations, decolonial theory, and colonial violence align exceptionally well with the research focus on postcolonialism, racial capitalism, and state racism. However, the role is for a Postdoctoral Research Associate, explicitly requiring a PhD or equivalent, which the candidate does not possess as they are currently pursuing an MSc. This fundamental seniority mismatch, along with specific experience requirements like conducting interviews with vulnerable individuals and archival analysis, makes it a poor fit despite strong thematic alignment.",
+      "location": "London",
+      "type": "Full Time, Fixed-Term/Contract",
+      "deadline": "30th April 2026",
+      "salary": "£38,419 to £51,755 per annum."
+    },
+    {
+      "title": "Peter D Sharrock Chair in Tantric Buddhist Art",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/866382",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a very poor match. The candidate's academic background and interests are in international relations, law, and policy, which are entirely unrelated to Tantric Buddhist Art, archaeology, or Southeast Asian studies. Furthermore, the position requires a leading international scholar at a professorial level, a seniority far beyond the candidate's current stage as an MSc student with assistant experience.",
+      "location": "Bloomsbury, Camden, Greater London, United Kingdom",
+      "type": "Permanent * Full time",
+      "deadline": "Friday, May 1, 2026",
+      "salary": "£72,538.57+"
     }
   ]
 }
