@@ -1,7 +1,7 @@
 {
   "date": "2026-04-16",
-  "generated_at": "2026-04-16T08:01:06.427600+00:00",
-  "run_count": 7,
+  "generated_at": "2026-04-16T08:30:54.501230+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Lecturer (AC.08.4)",
@@ -44,6 +44,20 @@
       "type": "Fixed-term, five years (full-time implied)",
       "deadline": "12 May 2026",
       "salary": "Market related. Annual package inclusive of Retirement Funds Medical Aid, 13th Cheque (Optional). Benchmarked against Senior Consultant in the Gauteng Department of Health."
+    },
+    {
+      "title": "Postdoctoral Research Associate",
+      "organisation": "Queen Mary University of London",
+      "url": "https://www.jobs.ac.uk/job/DRF568/postdoctoral-research-associate",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "5",
+      "seniority_score": "1",
+      "reason": "While the candidate's academic interests in European politics, history, and political theory align well with the project's interdisciplinary nature, and their research and analytical skills are excellent, this role explicitly requires a PhD. The candidate is currently pursuing an MSc, making them significantly underqualified for a postdoctoral position.",
+      "location": "London",
+      "type": "Full Time, Fixed-Term/Contract",
+      "deadline": "15th May 2026",
+      "salary": "£42,091 to £46,618 per annum."
     }
   ]
 }
