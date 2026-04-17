@@ -1,0 +1,35 @@
+{
+  "date": "2026-04-17",
+  "generated_at": "2026-04-17T05:00:58.500965+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Gift Aid Officer",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/gift-aid-officer-61708/en",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The role is a poor fit due to a significant mismatch in specific field experience and seniority. While MSF is an international organisation, this particular role is administrative and financial, focused on UK Gift Aid, which does not align with the candidate's academic focus on international relations, law, and policy research. The candidate lacks the required \"considerable experience of Gift Aid management\" and knowledge of HMRC regulations.",
+      "location": "London, United Kingdom",
+      "type": "9 Month Fixed Term Contract (Full-time, 37.5 hours/week)",
+      "deadline": "Monday 27 April 2026, 8.00am (BST)",
+      "salary": "£ 36,437.07 to £ 44,534.19 per annum"
+    },
+    {
+      "title": "People and Culture Partner",
+      "organisation": "Google DeepMind",
+      "url": "https://job-boards.greenhouse.io/deepmind/jobs/7530620",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role requires substantial professional HR experience, which the candidate, with only student assistant experience, does not possess. The job's focus on corporate People & Culture strategy and operations is also a significant mismatch with the candidate's academic and research interests in international relations, law, and policy. While the candidate has strong research and organizational skills, they lack the core HR-specific expertise required.",
+      "location": "London, UK",
+      "type": "Not specified",
+      "deadline": "10am BST Friday 1st May 2026",
+      "salary": "Not specified"
+    }
+  ]
+}
