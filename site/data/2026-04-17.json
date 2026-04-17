@@ -1,7 +1,7 @@
 {
   "date": "2026-04-17",
-  "generated_at": "2026-04-17T11:01:12.711960+00:00",
-  "run_count": 13,
+  "generated_at": "2026-04-17T11:30:55.766281+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Gift Aid Officer",
@@ -58,6 +58,20 @@
       "type": "2 year full-time fixed-term appointment",
       "deadline": "15 May 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Senior Lecturer in Midwifery",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=HED526",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a complete mismatch for the candidate. The position requires current registration with the NMC as a Midwife and contemporary experience in midwifery practice and education, none of which the candidate possesses. The candidate's academic background and interests are in international relations, law, and policy, which are entirely unrelated to midwifery.",
+      "location": "Hendon",
+      "type": "Permanent, Full-time",
+      "deadline": "Tuesday 12 May 2026",
+      "salary": "£51,569 to £59,282 per annum"
     }
   ]
 }
