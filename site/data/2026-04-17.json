@@ -1,7 +1,7 @@
 {
   "date": "2026-04-17",
-  "generated_at": "2026-04-17T14:30:51.830482+00:00",
-  "run_count": 20,
+  "generated_at": "2026-04-17T14:35:34.918828+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Gift Aid Officer",
@@ -100,6 +100,20 @@
       "type": "Fixed Term - 6 months, Full-time",
       "deadline": "Sunday 03 May 2026",
       "salary": "£41,064 to £47,389 per annum"
+    },
+    {
+      "title": "Chronic and Infectious Diseases Implementer",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/chronic-and-infectious-diseases-implementer-61716/en",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a very poor match for the candidate. The primary requirement is to be a medical doctor with postgraduate clinical experience in chronic and infectious diseases, which the candidate does not possess. While the candidate's interests in international relations align broadly with MSF's humanitarian mission, the specific medical focus of this implementer role is entirely outside their academic and professional background. The seniority and salary also indicate a highly experienced professional role, far beyond the candidate's current level.",
+      "location": "London, United Kingdom",
+      "type": "Full-time, Fixed Term - 14 months - Maternity Cover",
+      "deadline": "4 May 2026, 11:59pm (BST)",
+      "salary": "£61,531.29 - £75,204.91 per annum"
     }
   ]
 }
