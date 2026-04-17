@@ -1,7 +1,7 @@
 {
   "date": "2026-04-17",
-  "generated_at": "2026-04-17T14:01:05.901806+00:00",
-  "run_count": 19,
+  "generated_at": "2026-04-17T14:30:51.830482+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Gift Aid Officer",
@@ -72,6 +72,34 @@
       "type": "Permanent, Full-time",
       "deadline": "Tuesday 12 May 2026",
       "salary": "£51,569 to £59,282 per annum"
+    },
+    {
+      "title": "Housekeeping Coordinator",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/804773",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit. The Housekeeping Coordinator position is operational and administrative, focusing on facilities management and staff supervision, which is entirely unrelated to the candidate's academic background and interests in international relations, law, and policy research. The required supervisory and hands-on operational skills are not demonstrated in the candidate's CV, and their advanced research and data analysis skills are irrelevant to this role. The seniority level also appears too high for someone without full-time professional or supervisory experience.",
+      "location": "Bloomsbury, Camden, Greater London, United Kingdom",
+      "type": "Permanent * Full time",
+      "deadline": "Thursday, April 30, 2026",
+      "salary": "£35,749.57 to £42,207.57 Per Annum"
+    },
+    {
+      "title": "Lecturer in Visual Communication Design (Graphic Design and Visual Cultures)",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=ACI200",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a complete mismatch for the candidate. The job is in visual communication design, graphic design, and visual cultures, which is entirely outside the candidate's academic background and interests in international relations, law, and policy. The candidate lacks the specific creative design skills and teaching experience required for a Lecturer position in this field.",
+      "location": "Hainan, China",
+      "type": "Fixed Term - 6 months, Full-time",
+      "deadline": "Sunday 03 May 2026",
+      "salary": "£41,064 to £47,389 per annum"
     }
   ]
 }
