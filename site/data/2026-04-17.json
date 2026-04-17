@@ -1,7 +1,7 @@
 {
   "date": "2026-04-17",
-  "generated_at": "2026-04-17T17:00:59.851494+00:00",
-  "run_count": 26,
+  "generated_at": "2026-04-17T17:30:53.139983+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Gift Aid Officer",
@@ -170,6 +170,34 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Functional Analyst (Workday Pro Certified)",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/London/People-and-Culture-Officer--Workday-Functional-Analyst_JR-0003791",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a highly specialized IT/HR systems position requiring a Workday HCM Core Certification and at least 7 years of Workday experience, which the candidate does not possess. While the organization's mission aligns with the candidate's interests, the specific functional role is entirely outside their academic and professional background. The seniority requirement is also far too high for a candidate with no full-time professional experience.",
+      "location": "New York or London",
+      "type": "Regular (Full-time implied)",
+      "deadline": "04/29/2026",
+      "salary": "$144,000 - $156,000 (USD) for US, competitive rates for others"
+    },
+    {
+      "title": "Lecturer in Children and Young Peoples Nursing and Clinical Skills",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=HED525",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a complete mismatch for the candidate. The position requires a background in Children and Young People's Nursing, including NMC registration and substantial clinical experience, none of which the candidate possesses. Their academic background and interests are in International Relations and related social sciences, making the field, skills, and seniority requirements entirely misaligned.",
+      "location": "Hendon",
+      "type": "Permanent",
+      "deadline": "Tuesday 12 May 2026",
+      "salary": "£43,811 to £50,136 per annum"
     }
   ]
 }
