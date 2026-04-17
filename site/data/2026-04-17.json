@@ -1,7 +1,7 @@
 {
   "date": "2026-04-17",
-  "generated_at": "2026-04-17T05:00:58.500965+00:00",
-  "run_count": 1,
+  "generated_at": "2026-04-17T05:30:51.322539+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Gift Aid Officer",
@@ -29,6 +29,34 @@
       "location": "London, UK",
       "type": "Not specified",
       "deadline": "10am BST Friday 1st May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "RESEARCHER (AU.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106265&p_spid=5146834",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This role is a highly specialized technical position in Machine Learning and MLOps for climate forecasting, requiring a Master's or PhD in Computer Science, Data Science, or a related technical field, along with specific experience in ML frameworks, pipelines, and cloud computing. The candidate's background is firmly in International Relations, Law, and Social Sciences, with strong research and administrative experience in higher education policy. While the candidate is pursuing an MSc and lists Python as a skill, their academic field and specific technical skills do not align with the core requirements of this role.",
+      "location": "Johannesburg,ZA",
+      "type": "Full-time fixed-term appointment (2 years)",
+      "deadline": "15 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "SENIOR RESEARCHER (AU.07.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106266&p_spid=5146835",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit due to a significant mismatch in the required scientific field and the candidate's academic background. While the candidate possesses general research, data analysis, and Python skills, the job demands highly specialized expertise in AI for weather and climate prediction, atmospheric science, and meteorological datasets, which are outside the candidate's focus on international relations and social sciences. Furthermore, the Senior Researcher position requires a PhD and 3-5 years of postdoctoral experience, making it far too senior for a candidate with an MSc in progress and no full-time professional experience.",
+      "location": "Johannesburg,ZA",
+      "type": "2 year full-time fixed-term appointment",
+      "deadline": "15 May 2026",
       "salary": "Not specified"
     }
   ]
