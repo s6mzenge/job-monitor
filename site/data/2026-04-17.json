@@ -1,7 +1,7 @@
 {
   "date": "2026-04-17",
-  "generated_at": "2026-04-17T16:30:58.094525+00:00",
-  "run_count": 25,
+  "generated_at": "2026-04-17T17:00:59.851494+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Gift Aid Officer",
@@ -128,6 +128,48 @@
       "type": "10 month Fixed Term contract (37.5 Hours per week)",
       "deadline": "08 April, 2026 11.59pm (GMT)",
       "salary": "€ 43,824.73"
+    },
+    {
+      "title": "Mentor Coordinator (AD.09.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=100301&p_spid=4995771",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "4",
+      "seniority_score": "1",
+      "reason": "While the candidate has strong alignment in the higher education field and possesses many of the required skills (research, data analysis, report writing, facilitation, multilingualism), the role explicitly requires a \"Minimum of five years relevant experience in Higher Education.\" The candidate's experience is limited to student assistant roles, which falls significantly short of this requirement.",
+      "location": "Johannesburg, ZA",
+      "type": "Not specified",
+      "deadline": "21 April 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Junior Graphic Designer - Global Design Desk",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7703898003?gh_jid=7703898003",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "4",
+      "reason": "This role is for a Junior Graphic Designer, requiring specific design skills, software proficiency (Adobe Creative Suite), and a portfolio. The candidate's background is entirely academic and research-focused in international relations and policy, with no mention of graphic design skills or experience. While the role is entry-level, the core requirements are a complete mismatch.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Competitive salary (depending on experience)"
+    },
+    {
+      "title": "Technical Managing Consultant: Acoustics",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/Manchester-United-Kingdom/Technical-Managing-Consultant--Acoustics_R00029882-1",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a very poor match for the candidate. The job is highly specialized in acoustics and environmental consulting, which is entirely outside the candidate's academic background and interests in international relations, law, and social sciences. Furthermore, the role requires at least six years of relevant professional experience and specific technical skills (e.g., acoustics diploma, MIOA membership, noise modelling software) that the candidate does not possess.",
+      "location": "Manchester, United Kingdom (Job description states \"4 Locations\")",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
