@@ -1,7 +1,7 @@
 {
   "date": "2026-04-17",
-  "generated_at": "2026-04-17T15:00:58.907917+00:00",
-  "run_count": 22,
+  "generated_at": "2026-04-17T15:30:56.929035+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Gift Aid Officer",
@@ -114,6 +114,20 @@
       "type": "Full-time, Fixed Term - 14 months - Maternity Cover",
       "deadline": "4 May 2026, 11:59pm (BST)",
       "salary": "£61,531.29 - £75,204.91 per annum"
+    },
+    {
+      "title": "HR Administrator (MSF IE)",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/hr-administrator-msf-ie-60207/en",
+      "match": "medium",
+      "field_score": "2",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "While the organization (MSF) aligns well with the candidate's broader interests in international relations and humanitarian work, the specific role of HR Administrator is not directly related to their academic focus on international law, genocide studies, or policy research. However, the candidate possesses strong administrative, organizational, and software skills from their student assistant roles, making them capable of handling the required tasks. The seniority level is appropriate for someone seeking their first full-time professional role.",
+      "location": "County Dublin, Ireland",
+      "type": "10 month Fixed Term contract (37.5 Hours per week)",
+      "deadline": "08 April, 2026 11.59pm (GMT)",
+      "salary": "€ 43,824.73"
     }
   ]
 }
