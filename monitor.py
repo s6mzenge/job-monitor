@@ -303,10 +303,18 @@ def check_workday(site, seen_urls):
     offset = 0
     limit = api["body"].get("limit", 20)
 
+    # Use a session so Cloudflare cookies from the landing page carry over
+    session = requests.Session()
+    session.headers.update(HEADERS)
+    try:
+        session.get(site["url"], timeout=30)
+    except Exception as e:
+        print(f"    Warning: could not load landing page for cookies: {e}")
+
     while True:
         body = {**api["body"], "offset": offset, "limit": limit}
         try:
-            resp = requests.post(api["url"], headers=api["headers"], json=body, timeout=30)
+            resp = session.post(api["url"], headers=api["headers"], json=body, timeout=30)
             resp.raise_for_status()
             data = resp.json()
         except Exception as e:
@@ -339,7 +347,7 @@ def check_workday(site, seen_urls):
             detail_url = detail_api_template.replace("{externalPath}", path.lstrip("/"))
             try:
                 time.sleep(1)
-                dr = requests.get(detail_url, headers=api["headers"], timeout=30)
+                dr = session.get(detail_url, headers=api["headers"], timeout=30)
                 dr.raise_for_status()
                 dd = dr.json()
                 info = dd.get("jobPostingInfo", {})
