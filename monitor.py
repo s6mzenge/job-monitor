@@ -303,18 +303,10 @@ def check_workday(site, seen_urls):
     offset = 0
     limit = api["body"].get("limit", 20)
 
-    # Use a session so Cloudflare cookies from the landing page carry over
-    session = requests.Session()
-    session.headers.update(HEADERS)
-    try:
-        session.get(site["url"], timeout=30)
-    except Exception as e:
-        print(f"    Warning: could not load landing page for cookies: {e}")
-
     while True:
         body = {**api["body"], "offset": offset, "limit": limit}
         try:
-            resp = session.post(api["url"], headers=api["headers"], json=body, timeout=30)
+            resp = requests.post(api["url"], headers=api["headers"], json=body, timeout=30)
             resp.raise_for_status()
             data = resp.json()
         except Exception as e:
@@ -347,7 +339,7 @@ def check_workday(site, seen_urls):
             detail_url = detail_api_template.replace("{externalPath}", path.lstrip("/"))
             try:
                 time.sleep(1)
-                dr = session.get(detail_url, headers=api["headers"], timeout=30)
+                dr = requests.get(detail_url, headers=api["headers"], timeout=30)
                 dr.raise_for_status()
                 dd = dr.json()
                 info = dd.get("jobPostingInfo", {})
@@ -1344,6 +1336,7 @@ def main():
     all_matches = []
     daily_report_jobs = []
     errors = []
+    paused_sites = []
     empty_sites = []
 
     for site in SITES:
@@ -1355,6 +1348,19 @@ def main():
 
         if site_key not in state:
             state[site_key] = {"seen_urls": [], "last_checked": "", "listing_hash": ""}
+
+        # Check if site is paused due to repeated failures
+        paused_until = state[site_key].get("paused_until", "")
+        if paused_until:
+            pause_end = datetime.fromisoformat(paused_until)
+            if now < pause_end:
+                remaining = (pause_end - now).total_seconds() / 3600
+                print(f"    ⏸️ Paused until {paused_until[:16]} ({remaining:.0f}h remaining) — skipping.")
+                continue
+            else:
+                print(f"    🔄 Pause expired — retrying...")
+                state[site_key]["consecutive_errors"] = 0
+                state[site_key].pop("paused_until", None)
 
         seen_urls = set(state[site_key].get("seen_urls", []))
         handler = METHOD_HANDLERS.get(method)
@@ -1369,11 +1375,15 @@ def main():
             prev_errors = state[site_key].get("consecutive_errors", 0)
             state[site_key]["consecutive_errors"] = prev_errors + 1
             state[site_key]["last_checked"] = now.isoformat()
-            if state[site_key]["consecutive_errors"] >= 4:
-                errors.append(name)
-                print(f"    ⚠️ Failed {state[site_key]['consecutive_errors']} times in a row — will alert.")
+            err_count = state[site_key]["consecutive_errors"]
+
+            if err_count >= 16:
+                pause_end = now + timedelta(days=2)
+                state[site_key]["paused_until"] = pause_end.isoformat()
+                paused_sites.append(name)
+                print(f"    ⏸️ Failed {err_count} times — pausing until {pause_end.isoformat()[:16]}.")
             else:
-                print(f"    ⚠️ Failed ({state[site_key]['consecutive_errors']}/4 before alert).")
+                print(f"    ⚠️ Failed ({err_count}/16 before pause).")
             continue
 
         state[site_key]["consecutive_errors"] = 0
@@ -1528,8 +1538,14 @@ def main():
         error_msg = f"⚠️ <b>Job Monitor Errors</b>\nFailed to scrape: {escape_html(', '.join(errors))}"
         send_telegram(error_msg)
 
+    if paused_sites and not DRY_RUN:
+        pause_msg = f"⏸️ <b>Sites Paused (16+ failures)</b>\n{escape_html(', '.join(paused_sites))}\nWill automatically retry in 2 days."
+        send_telegram(pause_msg)
+
     if errors:
         print(f"Errors: {', '.join(errors)}")
+    if paused_sites:
+        print(f"Paused: {', '.join(paused_sites)}")
     if empty_sites:
         print(f"Empty: {', '.join(empty_sites)}")
 
