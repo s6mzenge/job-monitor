@@ -1,7 +1,7 @@
 {
   "date": "2026-04-20",
-  "generated_at": "2026-04-20T14:30:56.474406+00:00",
-  "run_count": 20,
+  "generated_at": "2026-04-20T15:01:37.104198+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Fachhandwerkerin/Fachhandwerker (w/m/d) im Referat Gebäudetechnik",
@@ -44,6 +44,20 @@
       "type": "Not specified",
       "deadline": "8 MAY 2026",
       "salary": "A competitive salary package will be offered."
+    },
+    {
+      "title": "Senior Communications and Donor Stewardship Manager",
+      "organisation": "Pew Trusts",
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/job/Washington-DC-Pew-Research-Center/Senior-Communications-and-Donor-Stewardship-Manager_R003157-1",
+      "match": "low",
+      "field_score": "4/5",
+      "skills_score": "2/5",
+      "seniority_score": "1/5",
+      "reason": "The candidate's academic background in International Relations and related fields aligns well with the Pew Research Center's mission and areas of study. They possess strong research, data analysis, and academic writing skills, and are multilingual. However, this role requires 10+ years of experience in strategic communications, fundraising, and donor relations, which the candidate, with only student assistant experience, does not meet. They also lack direct experience in grant proposal writing and program budgeting at the required senior level.",
+      "location": "Washington, DC",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "$104,000 (typical starting)"
     }
   ]
 }
