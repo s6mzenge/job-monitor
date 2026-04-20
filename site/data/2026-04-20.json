@@ -1,0 +1,21 @@
+{
+  "date": "2026-04-20",
+  "generated_at": "2026-04-20T05:00:57.310229+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Fachhandwerkerin/Fachhandwerker (w/m/d) im Referat Gebäudetechnik",
+      "organisation": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-bg3-521-2-15052026-1145726",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is for a skilled tradesperson in building technology, specifically requiring vocational training in mechatronics or electromechanics and several years of experience in technical building equipment. The candidate's background is entirely academic, focused on international relations, policy research, and social sciences, with no technical qualifications or experience in building maintenance. This represents a fundamental mismatch in field, skills, and experience level.",
+      "location": "Berlin, Germany",
+      "type": "Permanent, Part-time possible",
+      "deadline": "15. Mai 2026",
+      "salary": "Entgeltgruppe 7 (TVöD) / Besoldungsgruppe A 7 (Bundesbesoldungsordnung) - approx. 3.582,38 Euro brutto in Erfahrungsstufe 3 plus 220 Euro Ministerialzulage (with relevant professional experience)"
+    }
+  ]
+}
