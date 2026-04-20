@@ -1,7 +1,7 @@
 {
   "date": "2026-04-20",
-  "generated_at": "2026-04-20T16:01:00.303809+00:00",
-  "run_count": 23,
+  "generated_at": "2026-04-20T16:30:53.582923+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Fachhandwerkerin/Fachhandwerker (w/m/d) im Referat Gebäudetechnik",
@@ -58,6 +58,62 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "$104,000 (typical starting)"
+    },
+    {
+      "title": "Librarian Information Services (LB.09.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106289&p_spid=5147818",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "4",
+      "seniority_score": "1",
+      "reason": "The candidate's academic background and student assistant experience are not a direct match for the specific degree and three years of academic library experience required for this role. While they possess strong transferable skills in research, data analysis, report writing, and IT, and have experience within higher education, the core qualification and seniority requirements are not met.",
+      "location": "Johannesburg, ZA",
+      "type": "Not specified",
+      "deadline": "08 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Climate Manager, China - 12 Month FTC",
+      "organisation": "CIFF",
+      "url": "https://apply.workable.com/j/C753DE0B08",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The role's focus on climate management in China does not align with the candidate's primary academic focus on international relations, law, and European policy. While the candidate possesses strong research, data analysis, policy writing, and organizational skills, the \"Manager\" title suggests a level of professional experience that the candidate, with only student assistant roles, has not yet attained.",
+      "location": "Beijing, China",
+      "type": "Contract",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Assistant Editor – Research Publications",
+      "organisation": "RUSI",
+      "url": "https://royalunitedservicesinstitute.peoplehr.net/Pages/JobBoard/Opening.aspx?v=58a2b6d9-b479-4007-af49-92f48af9ffea",
+      "match": "medium",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "The candidate's academic background in International Relations and explicit interest in security studies align perfectly with RUSI's focus. However, while the candidate has strong academic writing and research skills, they lack the \"proven, extensive experience of copy-editing and proofreading\" and direct \"project-managing publications from author handover to delivery\" that are essential requirements for this role. The seniority level, requiring professional publishing experience, is a stretch for someone with only student assistant experience.",
+      "location": "London, United Kingdom",
+      "type": "Permanent",
+      "deadline": "03/05/2026",
+      "salary": "£37,500"
+    },
+    {
+      "title": "Compensation Analyst",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/Compensation-Analyst_R00029488-1",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit as it requires an experienced compensation analyst, a field entirely outside the candidate's academic background and interests in international relations and law. While the candidate possesses strong general analytical and research skills, they lack the specific domain experience in compensation/total rewards, advanced Excel, Power BI, and Workday explicitly requested. The seniority level is also far too high for someone with only student assistant experience.",
+      "location": "3 Locations",
+      "type": "6 month fixed term contract",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
