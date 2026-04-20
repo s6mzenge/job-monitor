@@ -1,7 +1,7 @@
 {
   "date": "2026-04-20",
-  "generated_at": "2026-04-20T05:00:57.310229+00:00",
-  "run_count": 1,
+  "generated_at": "2026-04-20T05:30:54.505039+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Fachhandwerkerin/Fachhandwerker (w/m/d) im Referat Gebäudetechnik",
@@ -16,6 +16,20 @@
       "type": "Permanent, Part-time possible",
       "deadline": "15. Mai 2026",
       "salary": "Entgeltgruppe 7 (TVöD) / Besoldungsgruppe A 7 (Bundesbesoldungsordnung) - approx. 3.582,38 Euro brutto in Erfahrungsstufe 3 plus 220 Euro Ministerialzulage (with relevant professional experience)"
+    },
+    {
+      "title": "Global Communications Associate",
+      "organisation": "Dalberg",
+      "url": "https://dalberg.hua.hrsmart.com/hr/ats/Posting/view/873",
+      "match": "medium",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "Moritz's academic background in International Relations and Law, coupled with his policy research and writing experience, aligns strongly with Dalberg's mission and the content areas of their work. He possesses excellent research, data analysis, and multilingual skills, and his student assistant roles provide relevant experience for an Associate-level position. However, he lacks explicit experience with specific design and content creation platforms like Canva or video editing, which are mentioned as key skills.",
+      "location": "Americas (multi-location) - Bogota, CO; Mexico City, MX",
+      "type": "Not specified (implied Full-time)",
+      "deadline": "4th May 2026",
+      "salary": "Not specified"
     }
   ]
 }
