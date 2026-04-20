@@ -1,7 +1,7 @@
 {
   "date": "2026-04-20",
-  "generated_at": "2026-04-20T12:30:57.714325+00:00",
-  "run_count": 16,
+  "generated_at": "2026-04-20T13:01:02.376954+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Fachhandwerkerin/Fachhandwerker (w/m/d) im Referat Gebäudetechnik",
@@ -30,6 +30,20 @@
       "type": "Not specified (implied Full-time)",
       "deadline": "4th May 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "SENIOR LECTURER.2.01 - AC07 (AC.07.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106262&p_spid=5146831",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit for the candidate. The position requires a PhD and extensive experience in Economics/Finance, econometrics, and environmental economics, with a strong emphasis on R Studio coding, financial engineering, and machine learning. The candidate's background is in International Relations, Law, and Political Science, with limited economics coursework and no specific expertise in the required quantitative methods or teaching experience at this level.",
+      "location": "Johannesburg,ZA",
+      "type": "Not specified",
+      "deadline": "8 MAY 2026",
+      "salary": "A competitive salary package will be offered."
     }
   ]
 }
