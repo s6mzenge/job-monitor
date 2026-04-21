@@ -1,7 +1,7 @@
 {
   "date": "2026-04-21",
-  "generated_at": "2026-04-21T09:30:59.453569+00:00",
-  "run_count": 10,
+  "generated_at": "2026-04-21T10:01:05.592363+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Working Student - Project Support (m/f/d)",
@@ -127,6 +127,34 @@
       "location": "London",
       "type": "Permanent",
       "deadline": "04/27/2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Embedded GSOC Analyst (12 month FTC)",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000121975438-embedded-gsoc-analyst-12-month-ftc-",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "4",
+      "reason": "This role is an excellent match for the candidate's academic background in International Relations and strong interest in security studies and geopolitics. While lacking direct full-time corporate security experience, the candidate possesses strong research, data analysis, policy writing, and multilingual skills, which are highly relevant. The role's nature as a 12-month fixed-term contract and the company's encouragement for diverse applicants suggest it could be a suitable entry point for a highly qualified candidate like Moritz.",
+      "location": "Not specified",
+      "type": "Full-time, Fixed-term contract (12 months)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "LECTURER.2.01",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106291&p_spid=5147820",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is for a Lecturer in Organic Chemistry, requiring a PhD in organic chemistry and experience teaching the subject. The candidate's background is in International Relations and related social sciences, with no academic or professional experience in chemistry. They do not meet the minimum qualification or subject-specific skill requirements for this position.",
+      "location": "Johannesburg, South Africa",
+      "type": "Not specified",
+      "deadline": "30 May 2026",
       "salary": "Not specified"
     }
   ]
