@@ -1,7 +1,7 @@
 {
   "date": "2026-04-21",
-  "generated_at": "2026-04-21T12:01:02.395101+00:00",
-  "run_count": 16,
+  "generated_at": "2026-04-21T12:31:10.323980+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Working Student - Project Support (m/f/d)",
@@ -449,6 +449,48 @@
       "location": "London, United Kingdom",
       "type": "Full-time, Hybrid",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer in Music (Composition Specialist)",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=ACI201",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is for a Lecturer in Music Composition, which is entirely unrelated to the candidate's academic background and interests in international relations, law, and social sciences. The candidate lacks the specific subject matter expertise in music composition and the required level of teaching experience for a university lecturer position.",
+      "location": "Hainan, China",
+      "type": "Fixed Term - 12 months",
+      "deadline": "Tuesday 05 May 2026",
+      "salary": "£41,064 to £47,389 per annum"
+    },
+    {
+      "title": "Programme Coordinator - India",
+      "organisation": "CIFF",
+      "url": "https://apply.workable.com/j/F001E7D5CE",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "5",
+      "seniority_score": "4",
+      "reason": "Moritz possesses strong research, data analysis, policy writing, and multilingual skills, along with relevant experience in project support and policy implementation from his student assistant roles. While the specific thematic focus on children's issues is not explicitly in his core interests, his background in international relations, policy, and social development provides a solid foundation. The role's seniority appears appropriate for his advanced academic standing and substantive assistant experience.",
+      "location": "Delhi, India",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Group Rewards Manager",
+      "organisation": "Brunswick Group",
+      "url": "https://job-boards.greenhouse.io/brunswickgroup/jobs/8516268002",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The role of Group Rewards Manager is highly specialized in HR/People Operations, focusing on compensation, benefits, and global mobility, which is a significant mismatch with the candidate's academic background and interests. The job also requires \"proven experience\" in this specific field, making it far too senior for a candidate with only student assistant experience.",
+      "location": "London, England, United Kingdom",
+      "type": "Not specified",
+      "deadline": "EOB Tuesday May 5th 2026",
       "salary": "Not specified"
     }
   ]
