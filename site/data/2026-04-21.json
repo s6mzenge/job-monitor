@@ -1,0 +1,91 @@
+{
+  "date": "2026-04-21",
+  "generated_at": "2026-04-21T05:01:01.340992+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Working Student - Project Support (m/f/d)",
+      "organisation": "ECFR",
+      "url": "https://ecfr.jobs.personio.com/job/2605617",
+      "match": "high",
+      "field_score": "4",
+      "skills_score": "5",
+      "seniority_score": "5",
+      "reason": "This role is an excellent match for the candidate. Moritz is currently enrolled in an MSc in International Relations Research, perfectly meeting the educational requirement for a working student. His strong background in policy research, administrative support, and event organisation from previous student assistant roles directly aligns with the job's responsibilities, and his advanced data analysis skills (Python, SPSS) exceed the stated requirements. While his specific interests lean more towards international law and genocide studies, the broader field of international affairs and European foreign policy at a leading think tank like ECFR is a very strong fit.",
+      "location": "Berlin",
+      "type": "Part-time, Working Student",
+      "deadline": "26th April 2026",
+      "salary": "14 euros per hour"
+    },
+    {
+      "title": "Geographical Information System (GIS) Intern",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/geographical-information-system-gis-intern-61750/en",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "The candidate's strong academic background in International Relations and Law, coupled with a clear interest in humanitarian issues, aligns well with MSF's mission. Their extensive research, data analysis (Python, SPSS), and policy writing skills are highly relevant. However, the candidate lacks explicit experience with specific GIS software (QGIS, ArcGIS) and a stated interest in epidemiology/public health, which are central to this role. The internship level is a perfect fit for their current experience.",
+      "location": "London, United Kingdom",
+      "type": "Internship (12-months FTC)",
+      "deadline": "6 May 2026, 12pm (BST)",
+      "salary": "£28,860 per annum (London Living Wage)"
+    },
+    {
+      "title": "Head of Knowledge Exchange, Enterprise and Impact",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/867958",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "While the role's focus on higher education, social sciences, and humanities aligns perfectly with the candidate's academic background and interests, the position is far too senior. The candidate lacks the required strategic leadership, business development, income generation, and line management experience for a \"Head of\" role within an executive team.",
+      "location": "Bloomsbury, Camden, Greater London, United Kingdom",
+      "type": "Permanent, Full time",
+      "deadline": "Monday, May 18, 2026",
+      "salary": "62,738.57 - 71,981.57 per annum"
+    },
+    {
+      "title": "Marketing Manager",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7708879003?gh_jid=7708879003",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit due to a significant mismatch in both field and experience level. The candidate's background is heavily academic in international relations and policy research, while this is a marketing role requiring 7+ years of progressive marketing experience. While the candidate possesses strong research, writing, and analytical skills, they lack the specific marketing campaign, digital content, and channel management expertise required.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "People Operations Coordinator",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7708016003?gh_jid=7708016003",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is in People Operations (HR), which is a significant departure from the candidate's academic focus on international relations, law, and policy research. The candidate lacks the explicitly required 2 years of HR administration experience and specific knowledge of employment legislation or HRIS systems like Workday. While the candidate possesses strong general administrative and organizational skills, the core HR-specific requirements are not met.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Competitive salary (depending on experience)"
+    },
+    {
+      "title": "Climate Manager, China - 6 Month FTC",
+      "organisation": "CIFF",
+      "url": "https://apply.workable.com/j/4AD3DD88E3",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "5",
+      "seniority_score": "2",
+      "reason": "While the candidate possesses excellent research, data analysis, policy writing, and technical skills, and is multilingual, the role's focus on \"Climate\" does not align with their primary academic interests in international relations, international law, and genocide studies. Furthermore, a \"Manager\" title typically requires more full-time professional experience than the candidate currently has, making the seniority level a significant mismatch.",
+      "location": "Beijing, China",
+      "type": "Contract (6 Month FTC)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
