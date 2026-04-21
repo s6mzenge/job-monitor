@@ -1,7 +1,7 @@
 {
   "date": "2026-04-21",
-  "generated_at": "2026-04-21T09:01:06.627873+00:00",
-  "run_count": 9,
+  "generated_at": "2026-04-21T09:30:59.453569+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Working Student - Project Support (m/f/d)",
@@ -113,6 +113,20 @@
       "location": "Not specified",
       "type": "Full-time (fixed-term until end of June 2027)",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Communications Officer, Europe",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/London/Communications-Officer_JR-0003769",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The candidate's academic background and interests in international relations, international law, and European policy align perfectly with OSF's mission. However, the role is explicitly for a \"senior strategic leader\" requiring \"substantial relevant communications experience,\" an established media network, and a proven track record in crisis communications and advising senior leadership. The candidate, with only student assistant experience, lacks the required professional seniority and specific communications expertise.",
+      "location": "London",
+      "type": "Permanent",
+      "deadline": "04/27/2026",
       "salary": "Not specified"
     }
   ]
