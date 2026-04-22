@@ -1,7 +1,7 @@
 {
   "date": "2026-04-22",
-  "generated_at": "2026-04-22T05:01:14.040511+00:00",
-  "run_count": 1,
+  "generated_at": "2026-04-22T05:30:57.482764+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Director of Convening",
@@ -16,6 +16,34 @@
       "type": "Full-time, Permanent",
       "deadline": "Tuesday, 12 May 2026, 23:59 BST",
       "salary": "£85,000 per year"
+    },
+    {
+      "title": "Senior Research Analyst - Research and Innovation Policy (Evaluation)",
+      "organisation": "RAND Europe",
+      "url": "https://apply.workable.com/j/C9A40AE44C",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "4",
+      "seniority_score": "1",
+      "reason": "While the candidate demonstrates strong alignment in higher education policy research and possesses relevant research, data analysis, and policy writing skills, the \"Senior Research Analyst\" title indicates a requirement for significant professional experience (typically 5+ years) that the candidate, with only student assistant roles, does not yet meet. This seniority mismatch is the primary reason for the low rating.",
+      "location": "Cambridge, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Public Affairs and Communications Executive",
+      "organisation": "Hanbury Strategy",
+      "url": "https://hanburystrategy.teamtailor.com/jobs/6864492-public-affairs-and-communications-executive",
+      "match": "high",
+      "field_score": "4",
+      "skills_score": "5",
+      "seniority_score": "5",
+      "reason": "This role is an excellent match for the candidate. Their extensive research, data analysis, and policy writing experience from academic assistant roles and publications directly align with the job's core duties. The \"junior recruit\" and \"introductory experience\" requirements are perfectly met by the candidate's MSc in progress and relevant student assistant positions. While the candidate's academic focus is on international relations and critical theory, the role's generalist nature and emphasis on learning new policy areas make their broad analytical background a strong asset. The primary practical consideration is the May 2026 start date, which may precede the completion of their MSc.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Competitive and dependent on experience"
     }
   ]
 }
