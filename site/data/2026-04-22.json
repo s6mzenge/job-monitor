@@ -1,7 +1,7 @@
 {
   "date": "2026-04-22",
-  "generated_at": "2026-04-22T06:01:08.272826+00:00",
-  "run_count": 3,
+  "generated_at": "2026-04-22T06:33:34.815418+00:00",
+  "run_count": 4,
   "jobs": [
     {
       "title": "Director of Convening",
@@ -44,6 +44,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Competitive and dependent on experience"
+    },
+    {
+      "title": "Account Executive | Healthcare Policy, Advocacy and Public Affairs | London",
+      "organisation": "Hanover",
+      "url": "https://job-boards.greenhouse.io/hanover/jobs/4553001007",
+      "match": "medium",
+      "field_score": "2",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "The candidate's strong research, policy writing, data analysis, and organisational skills are an excellent match for the Account Executive role, which is also appropriate for their experience level (MSc in progress, relevant assistant roles). However, the specific focus on UK healthcare policy and politics is not explicitly aligned with the candidate's stated interests in international relations, international law, or German/European foreign policy, which is the primary gap.",
+      "location": "London, England, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
