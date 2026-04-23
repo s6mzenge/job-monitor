@@ -1,7 +1,7 @@
 {
   "date": "2026-04-23",
-  "generated_at": "2026-04-23T14:01:00.102027+00:00",
-  "run_count": 21,
+  "generated_at": "2026-04-23T14:38:23.086838+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "B2B Marketing Associate",
@@ -170,6 +170,76 @@
       "type": "Fixed-Term/Contract (Part Time)",
       "deadline": "24th May 2026",
       "salary": "£43,277 to £51,714 per annum (pro rata) inclusive with potential to progress to £55,497 pa (pro rata) inclusive of London allowance"
+    },
+    {
+      "title": "Research Fellow (0.8 - 1.0 FTE)",
+      "organisation": "London School of Hygiene & Tropical Medicine",
+      "url": "https://www.jobs.ac.uk/job/DRH738/research-fellow-08-10-fte",
+      "match": "medium",
+      "field_score": "3/5",
+      "skills_score": "5/5",
+      "seniority_score": "2/5",
+      "reason": "The candidate possesses an excellent skill set for research, data analysis, and policy writing, including specific software like SPSS and Python. However, the role's specific focus on health services research and policy is a significant departure from the candidate's core interests, though their experience in higher education policy offers some transferable relevance. The requirement for \"ideally a doctoral degree\" for a Research Fellow position also presents a seniority gap for a candidate with an MSc in progress and no full-time professional experience.",
+      "location": "London",
+      "type": "Fixed-Term/Contract (Full Time, Part Time)",
+      "deadline": "14th May 2026",
+      "salary": "£45,728 to £51,872 per annum pro rata inclusive"
+    },
+    {
+      "title": "UET Business Support Officer & Executive Assistant",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=GLA1-R",
+      "match": "high",
+      "field_score": "4",
+      "skills_score": "5",
+      "seniority_score": "4",
+      "reason": "This role aligns well with the candidate's strong interest and experience in higher education policy and administration. Their exceptional organisational, communication, and IT skills, including Python and SPSS, are a perfect match for the requirements. The seniority level is appropriate for a highly capable individual transitioning from substantive student assistant roles into a full-time professional support position.",
+      "location": "Hendon",
+      "type": "Permanent",
+      "deadline": "Thursday 21 May 2026",
+      "salary": "£37,357 to £42,653 per annum"
+    },
+    {
+      "title": "Applicant Enquiries Assistant",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=MKG511-R",
+      "match": "high",
+      "field_score": "4",
+      "skills_score": "5",
+      "seniority_score": "5",
+      "reason": "This role is an excellent fit for the candidate. Their experience as a Student Assistant at two HEIs, including supporting a diversity initiative and conducting research on higher education trends, directly aligns with the \"beneficial\" experience in higher education or admissions. The required communication, customer service, and detail-oriented skills are clearly demonstrated through their previous roles, and the seniority level is appropriate for someone with an MSc in progress and relevant part-time experience.",
+      "location": "Hendon (London)",
+      "type": "Permanent",
+      "deadline": "Friday 08 May 2026",
+      "salary": "£28,840 to £32,335 per annum"
+    },
+    {
+      "title": "Security Consultant - Speculative applications to be part of our talent pool",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/6D76681827",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "5",
+      "seniority_score": "4",
+      "reason": "The candidate's focus on international relations, international law, and security studies, along with a forthcoming publication on defence/security policies, aligns perfectly with a Security Consultant role. They possess all the required skills, including research, data analysis, policy writing, SPSS, Python, and multilingualism. While the role title \"Consultant\" often implies professional experience, the \"speculative applications to be part of our talent pool\" suggests openness to exceptional candidates like Moritz, whose strong academic background and relevant research experience make them a competitive applicant.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "ESG Assurance Associate/ Assessor",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/ESG-Assurance-Associate--Assessor_R00029950-1",
+      "match": "medium",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "The role's seniority (0-2 years experience) is a good fit for the candidate's profile. The candidate also possesses strong transferable skills in research, data analysis (including Excel, Python, SPSS), policy writing, and project support. However, the core focus on ESG, GHG, and sustainability assurance is a significant departure from the candidate's academic and research interests in international relations, law, and social theory, making the field alignment weak. The candidate lacks specific domain knowledge in ESG/GHG reporting frameworks and assurance concepts.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
