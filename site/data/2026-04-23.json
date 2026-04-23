@@ -1,7 +1,7 @@
 {
   "date": "2026-04-23",
-  "generated_at": "2026-04-23T17:01:00.690632+00:00",
-  "run_count": 27,
+  "generated_at": "2026-04-23T17:30:57.714472+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "B2B Marketing Associate",
@@ -296,6 +296,20 @@
       "type": "Full-Time, Fixed-Term",
       "deadline": "19/05/2026",
       "salary": "£44,753 - £49,738"
+    },
+    {
+      "title": "Enterprise Architect",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Mexico-City/Enterprise-Architect_JR-0003739-1",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a significant mismatch for the candidate. It requires 10 years of highly specialized experience in Enterprise Architecture, IT systems design, and specific technical frameworks/tools, which the candidate lacks. The candidate's academic background and interests are in international relations and social sciences, with only very general programming skills, making the field and skills alignment extremely low.",
+      "location": "Mexico City",
+      "type": "Regular",
+      "deadline": "05/06/2026",
+      "salary": "Competitive rates of pay apply."
     }
   ]
 }
