@@ -1,7 +1,7 @@
 {
   "date": "2026-04-23",
-  "generated_at": "2026-04-23T13:31:02.138989+00:00",
-  "run_count": 20,
+  "generated_at": "2026-04-23T14:01:00.102027+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "B2B Marketing Associate",
@@ -156,6 +156,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Post-doctoral Research Officer in European Politics",
+      "organisation": "London School of Economics and Political Science",
+      "url": "https://www.jobs.ac.uk/job/DRH785/post-doctoral-research-officer-in-european-politics",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "5",
+      "seniority_score": "1",
+      "reason": "While the candidate possesses strong research, writing, and organisational skills, and their academic background in International Relations aligns well with the field, the role explicitly requires a completed or nearly completed PhD. The candidate is currently pursuing an MSc, making this post-doctoral position far too senior for their current career stage.",
+      "location": "London",
+      "type": "Fixed-Term/Contract (Part Time)",
+      "deadline": "24th May 2026",
+      "salary": "£43,277 to £51,714 per annum (pro rata) inclusive with potential to progress to £55,497 pa (pro rata) inclusive of London allowance"
     }
   ]
 }
