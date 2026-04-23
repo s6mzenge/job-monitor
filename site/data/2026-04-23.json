@@ -1,7 +1,7 @@
 {
   "date": "2026-04-23",
-  "generated_at": "2026-04-23T16:00:58.902568+00:00",
-  "run_count": 25,
+  "generated_at": "2026-04-23T16:30:53.141921+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "B2B Marketing Associate",
@@ -282,6 +282,20 @@
       "type": "12 Month FTC",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Academic Partnerships Development Manager (12-month Fixed Term)",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/academic-partnerships-development-manager-12month-fixed-term-608212.html",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "The candidate demonstrates a strong understanding of higher education policy and institutional dynamics through their student assistant roles and publications, directly aligning with the role's context. They possess excellent research, data analysis, policy writing, and communication skills. However, the role requires direct experience in *developing and managing* institutional-level academic partnerships, which the candidate's student assistant experience, while highly relevant, does not fully cover at a managerial level.",
+      "location": "London, UK",
+      "type": "Full-Time, Fixed-Term",
+      "deadline": "19/05/2026",
+      "salary": "£44,753 - £49,738"
     }
   ]
 }
