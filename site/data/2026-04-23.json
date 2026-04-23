@@ -1,7 +1,7 @@
 {
   "date": "2026-04-23",
-  "generated_at": "2026-04-23T12:00:53.355689+00:00",
-  "run_count": 16,
+  "generated_at": "2026-04-23T12:14:21.797748+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "B2B Marketing Associate",
@@ -140,6 +140,20 @@
       "reason": "This role is a poor fit due to a significant mismatch in both field and experience level. The candidate's academic background and interests are in international relations, law, and policy research, while the job is a senior commercial operations and change management role within a global advisory firm. The requirement for 8+ years of experience at a director or senior change programme leadership level is far beyond the candidate's current student assistant experience.",
       "location": "London, England, United Kingdom",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Embedded PSOC Analyst",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000122427289-embedded-psoc-analyst",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "The candidate's strong research, data analysis, and policy writing skills, coupled with an interest in security studies and an appropriate experience level, make this a plausible fit. While the core physical security operations are a stretch from their academic focus, the role's intelligence analysis, threat monitoring, and horizon scanning components align well with their background.",
+      "location": "London",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
