@@ -1,7 +1,7 @@
 {
   "date": "2026-04-23",
-  "generated_at": "2026-04-23T15:01:04.873994+00:00",
-  "run_count": 23,
+  "generated_at": "2026-04-23T15:31:03.913047+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "B2B Marketing Associate",
@@ -238,6 +238,48 @@
       "reason": "The role's seniority (0-2 years experience) is a good fit for the candidate's profile. The candidate also possesses strong transferable skills in research, data analysis (including Excel, Python, SPSS), policy writing, and project support. However, the core focus on ESG, GHG, and sustainability assurance is a significant departure from the candidate's academic and research interests in international relations, law, and social theory, making the field alignment weak. The candidate lacks specific domain knowledge in ESG/GHG reporting frameworks and assurance concepts.",
       "location": "London, United Kingdom",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "PhD Studentship on Justice and Energy Transitions with Emphasis on Critical Minerals",
+      "organisation": "King's College London - African Leadership Centre",
+      "url": "https://www.jobs.ac.uk/job/DRH276/phd-studentship-on-justice-and-energy-transitions-with-emphasis-on-critical-minerals",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "This PhD studentship is an excellent fit for the candidate. Their MSc in International Relations Research with a focus on International Law and Genocide, coupled with interests in justice, decolonial theory, and international political sociology, aligns strongly with the project's focus on justice in critical minerals governance and energy transitions. The candidate possesses strong qualitative research skills and experience, and while specific qualitative analysis software is not listed, their existing technical proficiency suggests a high capacity to learn. The role's seniority is perfectly aligned with someone completing a Master's and seeking doctoral research.",
+      "location": "London",
+      "type": "Full Time",
+      "deadline": "17th May 2026",
+      "salary": "Stipend: £23,805 per year. Tuition fees: Full home tuition fees. Research allowance: £1350 per year"
+    },
+    {
+      "title": "Lecturer in Ethics and/or Politics",
+      "organisation": "King's College London",
+      "url": "https://www.jobs.ac.uk/job/DRH675/lecturer-in-ethics-and-or-politics",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "While the candidate's background in Politics and related critical theory aligns well with the \"Politics\" aspect of the role, this is a Lecturer position with an essential requirement for a completed PhD and relevant teaching experience. The candidate is currently pursuing an MSc and lacks both the required terminal degree and direct teaching experience for this senior academic role.",
+      "location": "London",
+      "type": "Full Time, Permanent",
+      "deadline": "15th November 2026",
+      "salary": "£45,031 to £47,379 per annum, including London Weighting Allowance"
+    },
+    {
+      "title": "Technical Program Manager, Agents Innovation - 12 Month FTC",
+      "organisation": "Google DeepMind",
+      "url": "https://job-boards.greenhouse.io/deepmind/jobs/7839536",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit due to a significant mismatch in field, required technical skills, and experience level. The candidate's background is in international relations and social sciences, while the job is a highly technical role in AI/ML program management requiring deep domain expertise and 8+ years of professional experience, which the candidate does not possess.",
+      "location": "London, UK",
+      "type": "12 Month FTC",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
