@@ -1,7 +1,7 @@
 {
   "date": "2026-04-24",
-  "generated_at": "2026-04-24T10:30:51.377354+00:00",
-  "run_count": 12,
+  "generated_at": "2026-04-24T11:00:53.656920+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "LECTURER.2.01 (AC.08.4)",
@@ -15,6 +15,20 @@
       "location": "Not specified",
       "type": "Fixed-term part-time lecturer appointment (50%)",
       "deadline": "17 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate, TMT",
+      "organisation": "Brunswick Group",
+      "url": "https://job-boards.greenhouse.io/brunswickgroup/jobs/8514495002",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit primarily due to the significant seniority requirement of 5-8 years of relevant professional experience, which the candidate does not possess. While the candidate has strong research, data analysis, and policy writing skills, the job's focus on corporate communications within the TMT sector, financial situations, and established media/stakeholder networks does not align with their academic background in international relations and law.",
+      "location": "London, England, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
