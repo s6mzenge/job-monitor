@@ -1,6 +1,21 @@
 {
   "date": "2026-04-24",
-  "generated_at": "2026-04-24T08:00:56.426656+00:00",
-  "run_count": 7,
-  "jobs": []
+  "generated_at": "2026-04-24T08:30:52.994374+00:00",
+  "run_count": 8,
+  "jobs": [
+    {
+      "title": "LECTURER.2.01 (AC.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106294&p_spid=5147823",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is for a Clinical Educator in Paediatrics & Child Health, requiring a medical degree (MBBCH) and current registration as a doctor. The candidate's academic background in International Relations, Politics, and Sociology, along with their research assistant experience, does not align with these fundamental medical and clinical requirements.",
+      "location": "Not specified",
+      "type": "Fixed-term part-time lecturer appointment (50%)",
+      "deadline": "17 May 2026",
+      "salary": "Not specified"
+    }
+  ]
 }
