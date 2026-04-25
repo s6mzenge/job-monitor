@@ -1,7 +1,7 @@
 {
   "date": "2026-04-25",
-  "generated_at": "2026-04-25T16:30:56.989356+00:00",
-  "run_count": 24,
+  "generated_at": "2026-04-25T17:00:57.262023+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Director, Audience",
@@ -30,6 +30,20 @@
       "type": "Full-time",
       "deadline": "Rolling basis",
       "salary": "$75K-$85K annually"
+    },
+    {
+      "title": "Economic Consulting, Executive Assistant",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7710785003?gh_jid=7710785003",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "4",
+      "seniority_score": "2",
+      "reason": "This Executive Assistant role in Economic Consulting does not align with the candidate's academic focus on International Relations, Law, and Genocide studies. While the candidate demonstrates strong administrative, communication, and software skills, their 1.5 years of student assistant experience does not meet the \"minimum 3 years' experience in a corporate environment\" requirement for this senior support role.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
