@@ -1,7 +1,7 @@
 {
   "date": "2026-04-27",
-  "generated_at": "2026-04-27T15:30:55.623325+00:00",
-  "run_count": 22,
+  "generated_at": "2026-04-27T16:01:31.067096+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Global Learning Facilitator (Virtual)",
@@ -44,6 +44,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Studio Coordinator",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/studio-coordinator-608433.html",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "The role of Studio Coordinator in a Design Department is a poor fit for the candidate. Their academic background and research interests are in international relations, law, and policy, which are entirely unrelated to studio management. While they have general administrative and organisational skills from previous student assistant roles in an educational setting, they lack the specific \"studio co-ordination, estates organisation, or planning\" experience explicitly required for this permanent, part-time role.",
+      "location": "London, UK",
+      "type": "Part Time, Open-ended/Permanent",
+      "deadline": "11/05/2026",
+      "salary": "£34,925 - £39,297 (FTE for 0.4 FTE / 14 hours)"
     }
   ]
 }
