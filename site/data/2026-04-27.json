@@ -1,7 +1,7 @@
 {
   "date": "2026-04-27",
-  "generated_at": "2026-04-27T12:00:57.670249+00:00",
-  "run_count": 15,
+  "generated_at": "2026-04-27T12:31:03.717140+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Global Learning Facilitator (Virtual)",
@@ -30,6 +30,20 @@
       "type": "Permanent, Part-time",
       "deadline": "Sunday 10 May 2026",
       "salary": "£37,357 to £42,653 per annum pro rata"
+    },
+    {
+      "title": "Director | Corporate Communications | London",
+      "organisation": "Hanover",
+      "url": "https://job-boards.greenhouse.io/hanover/jobs/5117030007",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a significant mismatch for the candidate. The job requires extensive senior leadership experience in corporate communications, client management, and business development within an agency setting, which the candidate, with academic and student assistant experience, does not possess. The candidate's academic focus on international relations, law, and policy research also does not align with the commercial communications field of this position.",
+      "location": "London, England, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
