@@ -1,7 +1,7 @@
 {
   "date": "2026-04-28",
-  "generated_at": "2026-04-28T11:00:54.777197+00:00",
-  "run_count": 13,
+  "generated_at": "2026-04-28T11:31:04.313227+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Advocacy Advisor, Domestic Policy",
@@ -156,6 +156,34 @@
       "type": "Part Time, Fixed-Term",
       "deadline": "29/05/2026",
       "salary": "£44,753 - £49,738 (pro-rata for 0.5 FTE)"
+    },
+    {
+      "title": "JUSTICE Internship",
+      "organisation": "JUSTICE",
+      "url": "https://justice.org.uk/job-opportunity/justice-internship-2",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "1",
+      "seniority_score": "5",
+      "reason": "The candidate's strong academic background in International Relations, International Law, and Genocide Studies, coupled with their research and policy writing experience, aligns well with the human rights and justice aspects of the role. The internship level is also perfectly suited to their experience. However, the job explicitly requires a UK qualifying law degree or equivalent, which the candidate does not possess, making them ineligible despite strong transferable skills.",
+      "location": "UK (hybrid, office in central London)",
+      "type": "Internship (three months, full-time or part-time minimum three days per week)",
+      "deadline": "Sunday 24 May 2026 at 11:59pm",
+      "salary": "£26,936 per annum, pro rata"
+    },
+    {
+      "title": "Legal Fellow (sponsored by Linklaters LLP)",
+      "organisation": "JUSTICE",
+      "url": "https://justice.org.uk/job-opportunity/linklaters-legal-fellow",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "4",
+      "seniority_score": "1",
+      "reason": "While the candidate's academic focus on international law, human rights, and policy research aligns well with the fellowship's scope, and their research and analytical skills are strong, they do not meet the essential eligibility criteria of having completed a UK qualifying law degree, GDL, SQE Part 1, or CILEX CPQ Advanced Stage. This is a fundamental requirement that the candidate does not possess.",
+      "location": "UK (hybrid, office in central London)",
+      "type": "Full-time (six months), flexible part-time options available",
+      "deadline": "Sunday 24 May 2026 at 11:59pm",
+      "salary": "£38,564 per annum, pro rata"
     }
   ]
 }
