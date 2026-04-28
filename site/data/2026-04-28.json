@@ -1,7 +1,7 @@
 {
   "date": "2026-04-28",
-  "generated_at": "2026-04-28T16:31:03.212409+00:00",
-  "run_count": 24,
+  "generated_at": "2026-04-28T17:01:07.313007+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Advocacy Advisor, Domestic Policy",
@@ -240,6 +240,20 @@
       "type": "Fixed-Term, Full Time",
       "deadline": "12/05/2026",
       "salary": "£29,493 - £31,720"
+    },
+    {
+      "title": "Research Analyst - Health and Care",
+      "organisation": "RAND Europe",
+      "url": "https://apply.workable.com/j/CE95A7D09E",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "5",
+      "seniority_score": "4",
+      "reason": "The candidate possesses strong research, data analysis, and policy writing skills, along with relevant software (SPSS, Python) and language proficiency, making them well-suited for a Research Analyst role in terms of capability and experience level. However, the role's specific focus on \"Health and Care\" does not align with the candidate's academic background or stated interests in international relations, law, security, or higher education policy.",
+      "location": "Cambridge, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
