@@ -1,7 +1,7 @@
 {
   "date": "2026-04-28",
-  "generated_at": "2026-04-28T12:30:51.509218+00:00",
-  "run_count": 16,
+  "generated_at": "2026-04-28T13:01:05.518437+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Advocacy Advisor, Domestic Policy",
@@ -184,6 +184,20 @@
       "type": "Full-time (six months), flexible part-time options available",
       "deadline": "Sunday 24 May 2026 at 11:59pm",
       "salary": "£38,564 per annum, pro rata"
+    },
+    {
+      "title": "Student Appeals, Complaints and Conduct Administrator",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=ESE32-R",
+      "match": "high",
+      "field_score": "4",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "The candidate possesses strong administrative, organisational, and communication skills, demonstrated through significant student assistant roles within higher education institutions, which directly align with the job's requirements. While their primary academic focus is distinct, their proven experience in higher education policy and administration makes this role a strong fit for their current career stage and capabilities.",
+      "location": "Hendon",
+      "type": "Permanent",
+      "deadline": "Monday 11 May 2026",
+      "salary": "£28,840 to £32,335 per annum"
     }
   ]
 }
