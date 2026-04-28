@@ -1,7 +1,7 @@
 {
   "date": "2026-04-28",
-  "generated_at": "2026-04-28T10:00:59.764754+00:00",
-  "run_count": 11,
+  "generated_at": "2026-04-28T10:30:51.435344+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Advocacy Advisor, Domestic Policy",
@@ -98,6 +98,48 @@
       "reason": "This role is a poor fit as it requires substantial experience in B2B sales and account management, which the candidate lacks. While the candidate has strong academic credentials and some research skills, these do not align with the commercial, target-driven nature of a Senior Account Manager position. The only minor alignment is the \"interest in global risk\" and the candidate's multilingual skills.",
       "location": "London, United Kingdom",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "LECTURER.2.01 - Academic Advisor at Lecturer level (AC08) (AC.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106311&p_spid=5148820",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "1",
+      "reason": "The candidate demonstrates strong alignment in the field of higher education policy and possesses most of the required skills, including research, data analysis, and policy writing. However, the role explicitly requires at least two years of experience as an academic advisor in the South African public higher education sector at a Lecturer level, which the candidate, with only student assistant experience, does not meet.",
+      "location": "Johannesburg,ZA",
+      "type": "Full-time position (subject to standard probation requirements)",
+      "deadline": "22 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Director",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106331&p_spid=5149820",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is entirely unsuitable for the candidate. It requires an admitted practising legal practitioner with at least ten years of post-admission experience and an LLM, none of which the candidate possesses. While the candidate has strong academic credentials and research skills, they lack the fundamental legal qualifications, practical experience, and seniority required for a Director of a Law Clinic.",
+      "location": "Johannesburg,ZA",
+      "type": "5-year fixed period contract",
+      "deadline": "25 May 2026",
+      "salary": "Negotiable"
+    },
+    {
+      "title": "Sustainable Finance & Portfolio Solutions Lead",
+      "organisation": "Anthesis Group",
+      "url": "https://anthesisgroup.pinpointhq.com/en/postings/1459fb87-b84c-4c46-ba4a-be78mcdb851",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit due to a significant mismatch in field and seniority. The \"Sustainable Finance & Portfolio Solutions Lead\" position requires deep expertise in finance and sustainability consulting, which does not align with the candidate's academic focus on international relations, law, and social sciences. Furthermore, the \"Lead\" title indicates a senior role requiring extensive professional experience, which the candidate, currently pursuing an MSc with student assistant experience, does not possess.",
+      "location": "UK - London",
+      "type": "Permanent - Full Time",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
