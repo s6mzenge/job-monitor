@@ -1,7 +1,7 @@
 {
   "date": "2026-04-28",
-  "generated_at": "2026-04-28T10:30:51.435344+00:00",
-  "run_count": 12,
+  "generated_at": "2026-04-28T11:00:54.777197+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Advocacy Advisor, Domestic Policy",
@@ -142,6 +142,20 @@
       "type": "Permanent - Full Time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Postdoctoral Research Associate",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/postdoctoral-research-associate-610219.html",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The candidate's strong research, data analysis (Python, SPSS), and policy writing skills align well with the role's tasks, and their interest in policy and power networks connects to the project. However, the position explicitly requires a PhD or equivalent, which the candidate, currently pursuing an MSc, does not possess. This fundamental seniority mismatch makes the candidate ineligible despite some relevant field interests and strong functional skills.",
+      "location": "London, UK",
+      "type": "Part Time, Fixed-Term",
+      "deadline": "29/05/2026",
+      "salary": "£44,753 - £49,738 (pro-rata for 0.5 FTE)"
     }
   ]
 }
