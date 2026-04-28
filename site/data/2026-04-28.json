@@ -1,0 +1,63 @@
+{
+  "date": "2026-04-28",
+  "generated_at": "2026-04-28T05:01:01.155832+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Advocacy Advisor, Domestic Policy",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Washington-DC/Advocacy-Advisor--Domestic-Policy_JR-0003806",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "4",
+      "seniority_score": "1",
+      "reason": "The role requires significant prior employment and advocacy experience with the US Congress and Executive Branch, which the candidate lacks. While the candidate possesses strong research, data analysis, and policy writing skills, the specific US domestic policy focus and high seniority level make this a poor fit.",
+      "location": "Washington, D.C. or New York",
+      "type": "Regular",
+      "deadline": "05/11/2026",
+      "salary": "US: $181,600-208,300"
+    },
+    {
+      "title": "Program Manager, Domestic",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/New-York/Program-Manager--Domestic_JR-0003809",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "1",
+      "reason": "While the candidate possesses strong research, data analysis, policy writing, and communication skills highly relevant to the role, and the mission aligns with their interests in justice and policy, the seniority requirements are a significant mismatch. The Program Manager title, high salary range, and responsibilities like \"manages complex projects\" suggest a need for substantial full-time professional experience (likely 5+ years) that the candidate, with their assistant-level experience, does not yet have.",
+      "location": "New York or Washington, DC",
+      "type": "Regular",
+      "deadline": "05/11/2026",
+      "salary": "$136,900-157,000"
+    },
+    {
+      "title": "Advocacy Advisor, Foreign Policy",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Washington-DC/Advocacy-Advisor--Foreign-Policy_JR-0003807",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "This role is far too senior for the candidate, requiring extensive prior foreign policy leadership experience, experience managing teams/large projects, and direct engagement with senior U.S. policymakers or prior employment in U.S. government agencies. While the candidate's academic field and research skills show promise, they lack the specific U.S. foreign policy expertise and the many years of professional advocacy experience demanded.",
+      "location": "Washington, D.C.",
+      "type": "Regular",
+      "deadline": "05/11/2026",
+      "salary": "$181,600-208,300"
+    },
+    {
+      "title": "Advocacy Advisor, Foreign Policy",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Washington-DC/Advocacy-Advisor--Foreign-Policy_JR-0003808",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The role is a senior-level position requiring extensive foreign policy leadership experience, including prior US government employment and managing large projects, which the candidate does not possess. While the candidate's academic background and research skills align well with the field, they lack the specific advocacy and high-level relationship management experience required for this senior role.",
+      "location": "Washington, D.C.",
+      "type": "Regular",
+      "deadline": "05/11/2026",
+      "salary": "$181,600-208,300"
+    }
+  ]
+}
