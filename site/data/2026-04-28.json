@@ -1,7 +1,7 @@
 {
   "date": "2026-04-28",
-  "generated_at": "2026-04-28T14:31:19.815816+00:00",
-  "run_count": 20,
+  "generated_at": "2026-04-28T15:01:15.839184+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Advocacy Advisor, Domestic Policy",
@@ -212,6 +212,20 @@
       "type": "Contract (Full-time)",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Postdoctoral Research Associate",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://www.jobs.ac.uk/job/DRJ027/postdoctoral-research-associate",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "1",
+      "reason": "While the candidate possesses strong research, data analysis (including Python and SPSS), and policy writing skills, and their background in Politics and Society aligns with the project's focus on government and policy, the role is explicitly for a Postdoctoral Research Associate requiring a PhD. The candidate is currently pursuing an MSc, making them significantly under-qualified for the required seniority level.",
+      "location": "London, New Cross",
+      "type": "Fixed-Term/Contract (Part Time)",
+      "deadline": "29th May 2026",
+      "salary": "£44,753 to £49,738"
     }
   ]
 }
