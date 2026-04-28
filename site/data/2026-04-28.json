@@ -1,7 +1,7 @@
 {
   "date": "2026-04-28",
-  "generated_at": "2026-04-28T09:30:50.957243+00:00",
-  "run_count": 10,
+  "generated_at": "2026-04-28T10:00:59.764754+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Advocacy Advisor, Domestic Policy",
@@ -83,6 +83,20 @@
       "seniority_score": "1",
       "reason": "While the candidate's academic interests in international law, genocide studies, and human rights align perfectly with CALS's mission, and their research, writing, and data analysis skills are excellent, the role explicitly requires an LLB or BProc degree. The candidate does not possess this fundamental qualification for a \"Candidate Legal Practitioner\" position, making the role unsuitable despite other strengths.",
       "location": "Johannesburg, ZA",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Account Manager",
+      "organisation": "Verisk Maplecroft",
+      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3727/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit as it requires substantial experience in B2B sales and account management, which the candidate lacks. While the candidate has strong academic credentials and some research skills, these do not align with the commercial, target-driven nature of a Senior Account Manager position. The only minor alignment is the \"interest in global risk\" and the candidate's multilingual skills.",
+      "location": "London, United Kingdom",
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
