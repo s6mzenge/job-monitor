@@ -1,7 +1,7 @@
 {
   "date": "2026-04-28",
-  "generated_at": "2026-04-28T14:01:02.059465+00:00",
-  "run_count": 19,
+  "generated_at": "2026-04-28T14:31:19.815816+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Advocacy Advisor, Domestic Policy",
@@ -198,6 +198,20 @@
       "type": "Permanent",
       "deadline": "Monday 11 May 2026",
       "salary": "£28,840 to £32,335 per annum"
+    },
+    {
+      "title": "Embedded GSOC Analyst (12 month FTC)",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000123471694-embedded-gsoc-analyst-12-month-ftc-",
+      "match": "high",
+      "field_score": "4",
+      "skills_score": "4",
+      "seniority_score": "4",
+      "reason": "The candidate's strong academic background in International Relations and security studies aligns well with the role's focus on geopolitical and security risk analysis. Their research, data analysis, policy writing, and multilingual skills are highly relevant. While lacking direct corporate security experience, their extensive academic and assistant roles provide comparable analytical and reporting experience, making them a strong candidate for this entry-level analyst position, especially given the company's encouragement for applicants who meet most requirements.",
+      "location": "Not specified",
+      "type": "Contract (Full-time)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
