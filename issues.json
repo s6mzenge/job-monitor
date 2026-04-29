@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29T16:01:08.590770+00:00",
+  "last_updated": "2026-04-29T16:30:52.316716+00:00",
   "site_summary": {},
   "issues": [
     {
@@ -44,6 +44,17 @@
       "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
       "job_title": "Editorial and Communications Assistant",
       "job_url": "https://careers.chathamhouse.org/jobs/7652736-editorial-and-communications-assistant"
+    },
+    {
+      "timestamp": "2026-04-29T16:30:52.316716+00:00",
+      "site": "Teneo",
+      "site_id": 50,
+      "url": "https://www.teneo.com/careers/open-positions/office/london/",
+      "method": "greenhouse_api",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "CRM Director",
+      "job_url": "https://www.teneo.com/careers/open-positions/7719696003?gh_jid=7719696003"
     }
   ]
 }

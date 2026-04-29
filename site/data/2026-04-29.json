@@ -1,7 +1,7 @@
 {
   "date": "2026-04-29",
-  "generated_at": "2026-04-29T16:01:08.590770+00:00",
-  "run_count": 25,
+  "generated_at": "2026-04-29T16:30:52.316716+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Researcher: Research and Learning Business Line (12 Month Grant Funded Contract) (AC.09.4)",
@@ -72,6 +72,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Editorial and Communications Assistant",
+      "organisation": "Chatham House",
+      "url": "https://careers.chathamhouse.org/jobs/7652736-editorial-and-communications-assistant",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Moritz's academic background in International Relations and Law aligns perfectly with the journal's focus. His experience as a student assistant, including administrative support, research, event coordination, and contributing to academic publications, directly matches many of the role's requirements. While specific experience with ScholarOne or dedicated social media promotion is not explicitly stated, his strong technical aptitude and understanding of academic processes make him a highly competitive candidate for this entry-level publishing role.",
+      "location": "London (Hybrid)",
+      "type": "Part-time, Permanent",
+      "deadline": "Monday, 4 May 2026, 23:59 BST",
+      "salary": "£29,000 per year, Full-time equivalent (FTE)"
     }
   ]
 }
