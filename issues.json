@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29T15:30:58.211694+00:00",
+  "last_updated": "2026-04-29T16:01:08.590770+00:00",
   "site_summary": {},
   "issues": [
     {
@@ -33,6 +33,17 @@
       "type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-04-29T16:01:08.590770+00:00",
+      "site": "Chatham House",
+      "site_id": 23,
+      "url": "https://careers.chathamhouse.org/jobs",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Editorial and Communications Assistant",
+      "job_url": "https://careers.chathamhouse.org/jobs/7652736-editorial-and-communications-assistant"
     }
   ]
 }
