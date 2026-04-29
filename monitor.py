@@ -10,6 +10,7 @@ from urllib.parse import urljoin
 import cloudscraper
 from playwright.sync_api import sync_playwright
 from report import save_report
+import issues
 try:
     from playwright_stealth import stealth_sync as _stealth_sync
     _STEALTH_MODE = "page"
@@ -64,6 +65,24 @@ def gemini_rate_limit():
         print(f"    ⏳ Gemini rate limit — waiting {wait:.0f}s")
         time.sleep(wait)
     _gemini_calls.append(time.time())
+
+# ─── Error capture for issues log ───
+# Handlers swallow exceptions internally and return None on failure, so the
+# actual error message is otherwise lost. _record_error() is called inside
+# each exception block; the main loop calls _consume_error() after every
+# handler call to read and clear the captured message.
+_last_error = ""
+
+def _record_error(msg):
+    global _last_error
+    _last_error = msg
+
+def _consume_error():
+    global _last_error
+    msg = _last_error
+    _last_error = ""
+    return msg
+
 
 # ─── State management ───
 STATE_FILE = "state.json"
@@ -121,6 +140,7 @@ def fetch_page(url, extra_headers=None, proxy=None):
         resp.raise_for_status()
         return BeautifulSoup(resp.text, "html.parser")
     except Exception as e:
+        _record_error(f"fetch_page: {e}")
         print(f"    Error fetching {url}: {e}")
         return None
 
@@ -178,6 +198,7 @@ def check_html(site, seen_urls):
             resp.raise_for_status()
             soup = BeautifulSoup(resp.text, "html.parser")
         except Exception as e:
+            _record_error(f"cloudscraper listing: {e}")
             print(f"    Error fetching {listing_url}: {e}")
             soup = None
     else:
@@ -310,6 +331,7 @@ def check_workday(site, seen_urls):
             resp.raise_for_status()
             data = resp.json()
         except Exception as e:
+            _record_error(f"Workday API: {e}")
             print(f"    Workday API error: {e}")
             return None if not all_postings else {"total": len(all_postings), "new": []}
 
@@ -368,6 +390,7 @@ def check_greenhouse(site, seen_urls):
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
+        _record_error(f"Greenhouse API: {e}")
         print(f"    Greenhouse API error: {e}")
         return None
 
@@ -433,6 +456,7 @@ def check_workable(site, seen_urls):
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
+        _record_error(f"Workable API: {e}")
         print(f"    Workable API error: {e}")
         return None
 
@@ -483,6 +507,7 @@ def check_personio(site, seen_urls):
         resp.raise_for_status()
         root = ET.fromstring(resp.content)
     except Exception as e:
+        _record_error(f"Personio XML: {e}")
         print(f"    Personio XML error: {e}")
         return None
 
@@ -528,6 +553,7 @@ def check_taleo(site, seen_urls):
     rss_url = primary.get("url", "")
 
     if not rss_url:
+        _record_error("Taleo: no RSS URL configured")
         print("    No RSS URL configured for Taleo site.")
         return None
 
@@ -536,6 +562,7 @@ def check_taleo(site, seen_urls):
         resp.raise_for_status()
         root = ET.fromstring(resp.content)
     except Exception as e:
+        _record_error(f"Taleo RSS: {e}")
         print(f"    Taleo RSS error: {e}")
         print("    (This site may need a headless browser — see notes in config)")
         return None
@@ -581,6 +608,7 @@ def check_palladium(site, seen_urls):
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
+        _record_error(f"Palladium API: {e}")
         print(f"    Palladium API error: {e}")
         return None
 
@@ -629,6 +657,7 @@ def check_pinpoint(site, seen_urls):
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
+        _record_error(f"Pinpoint API: {e}")
         print(f"    Pinpoint API error: {e}")
         return None
 
@@ -755,6 +784,7 @@ def check_playwright(site, seen_urls):
                 print(f"    [stealth debug] {len(html)} chars, headings: {_h}")
             browser.close()
     except Exception as e:
+        _record_error(f"Playwright: {e}")
         print(f"    Playwright error: {e}")
         return None
 
@@ -907,6 +937,7 @@ def check_oracle_hcm(site, seen_urls):
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
+        _record_error(f"Oracle HCM API: {e}")
         print(f"    Oracle HCM API error: {e}")
         return None
 
@@ -994,6 +1025,7 @@ def check_hireserve(site, seen_urls):
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
+        _record_error(f"Hireserve API: {e}")
         print(f"    Hireserve API error: {e}")
         return None
 
@@ -1175,6 +1207,7 @@ CANDIDATE CV:
         print(f"    --- End Gemini response ---")
         return result
     except Exception as e:
+        _record_error(f"Gemini API: {e}")
         print(f"    Gemini error: {e}")
         return None
 
@@ -1333,6 +1366,7 @@ def main():
     print()
 
     state = load_state()
+    issues_data = issues.load()
     all_matches = []
     daily_report_jobs = []
     errors = []
@@ -1367,9 +1401,15 @@ def main():
 
         if not handler:
             print(f"    Unknown method: {method}. Skipping.")
+            issues.add(
+                issues_data, now, site,
+                "unknown_method",
+                f"No handler registered for method '{method}'",
+            )
             continue
 
         result = handler(site, seen_urls)
+        last_err = _consume_error()
 
         if result is None:
             prev_errors = state[site_key].get("consecutive_errors", 0)
@@ -1377,11 +1417,25 @@ def main():
             state[site_key]["last_checked"] = now.isoformat()
             err_count = state[site_key]["consecutive_errors"]
 
+            issues.add(
+                issues_data, now, site,
+                "fetch_error",
+                last_err or "Handler returned None (no error captured)",
+                consecutive_count=err_count,
+            )
+
             if err_count >= 16:
                 pause_end = now + timedelta(days=2)
                 state[site_key]["paused_until"] = pause_end.isoformat()
                 paused_sites.append(name)
                 print(f"    ⏸️ Failed {err_count} times — pausing until {pause_end.isoformat()[:16]}.")
+                issues.add(
+                    issues_data, now, site,
+                    "site_paused",
+                    f"Site paused after {err_count} consecutive failures",
+                    consecutive_count=err_count,
+                    paused_until=pause_end.isoformat(),
+                )
             else:
                 print(f"    ⚠️ Failed ({err_count}/16 before pause).")
             continue
@@ -1431,6 +1485,7 @@ def main():
                 else:
                     print(f"    Page content changed! Sending full text to Gemini...")
                     gemini_result = evaluate_with_gemini(name, f"Page update on {name}", site["url"], result["text"], is_page_level=True)
+                    gemini_err = _consume_error()
                     if gemini_result:
                         parsed = parse_gemini_matches(gemini_result)
                         for m in parsed:
@@ -1439,6 +1494,13 @@ def main():
                                 all_matches.append(format_match_for_telegram(m))
                             # Daily report: all jobs
                             daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=site["url"]))
+                    else:
+                        issues.add(
+                            issues_data, now, site,
+                            "gemini_call_failed",
+                            gemini_err or "Gemini returned no result for page-level call",
+                            scope="page_level",
+                        )
                 state[site_key]["listing_hash"] = result["hash"]
             else:
                 print(f"    No changes detected.")
@@ -1467,10 +1529,18 @@ def main():
 
             if not DRY_RUN:
                 gemini_result = evaluate_with_gemini(name, job["title"], job["url"], job["detail_text"])
+                gemini_err = _consume_error()
 
                 if gemini_result is None:
                     # Gemini call failed — do NOT mark as seen, retry next run
                     print(f"        ⚠️ Gemini failed — will retry next run.")
+                    issues.add(
+                        issues_data, now, site,
+                        "gemini_call_failed",
+                        gemini_err or "Gemini returned no result",
+                        job_title=job["title"],
+                        job_url=job["url"],
+                    )
                     continue
 
                 parsed = parse_gemini_matches(gemini_result)
@@ -1490,6 +1560,14 @@ def main():
                 else:
                     # Gemini returned something unparseable — record minimal entry
                     print(f"        ⚠️ Could not parse Gemini response.")
+                    issues.add(
+                        issues_data, now, site,
+                        "gemini_parse_failed",
+                        "Gemini response could not be parsed into a match block",
+                        job_title=job["title"],
+                        job_url=job["url"],
+                        raw_snippet=(gemini_result or "")[:300],
+                    )
                     daily_report_jobs.append({
                         "title": job["title"],
                         "organisation": name,
@@ -1517,6 +1595,9 @@ def main():
 
     # ─── Save state ───
     save_state(state)
+
+    # ─── Save issues log ───
+    issues.finalize(issues_data, state, now)
 
     # ─── Send results ───
     if DRY_RUN:
