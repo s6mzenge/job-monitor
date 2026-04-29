@@ -1,7 +1,7 @@
 {
   "date": "2026-04-29",
-  "generated_at": "2026-04-29T14:05:43.157388+00:00",
-  "run_count": 21,
+  "generated_at": "2026-04-29T14:30:54.708355+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Researcher: Research and Learning Business Line (12 Month Grant Funded Contract) (AC.09.4)",
@@ -42,6 +42,34 @@
       "reason": "This role is a significant mismatch for the candidate. The academic field of Construction Economics and Management is entirely unrelated to the candidate's expertise in International Relations, Law, and Social Sciences. Furthermore, the position of Professor/Associate Professor requires extensive senior academic experience, including a PhD, substantial lecturing, postgraduate supervision, and a robust publication and funding track record, none of which the candidate possesses at this stage of their career.",
       "location": "Johannesburg,ZA",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Language Administrator (INTERNAL ONLY)",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/872522",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "This role is a purely administrative position within a university's Language Centre, which does not align with the candidate's strong academic background and research interests in international relations, law, and policy. While the candidate possesses general administrative and organisational skills, and experience with data and databases from their student assistant roles, they lack specific experience in customer-facing financial administration (fees, refunds) mentioned in the job description. Furthermore, the role is explicitly marked 'INTERNAL ONLY', making the candidate ineligible.",
+      "location": "Bloomsbury, London, UK",
+      "type": "Permanent, Part-time (0.8 FTE, 28 hours per week)",
+      "deadline": "Sunday, May 10, 2026",
+      "salary": "£25,234.55 to £28,171.35 pro rata based on 0.8 FTE"
+    },
+    {
+      "title": "Partnerships & Campaign Manager",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Partnerships---Campaign-Manager_JR102278",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit due to a significant mismatch in field, required skills, and experience level. The candidate's background is academic and policy-focused (international relations, law, social theory), while the job is in commercial entertainment/sports marketing, requiring 5-6 years of direct experience in campaign and client management, which the candidate lacks. While the candidate demonstrates strong organisational and communication skills, they do not align with the core requirements of this specific commercial role.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
