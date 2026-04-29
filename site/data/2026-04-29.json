@@ -1,6 +1,21 @@
 {
   "date": "2026-04-29",
-  "generated_at": "2026-04-29T12:31:00.760569+00:00",
-  "run_count": 16,
-  "jobs": []
+  "generated_at": "2026-04-29T13:01:00.092350+00:00",
+  "run_count": 17,
+  "jobs": [
+    {
+      "title": "Researcher: Research and Learning Business Line (12 Month Grant Funded Contract) (AC.09.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106333&p_spid=5149822",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The candidate's academic background and research interests in higher education policy, particularly with an African focus, show some field alignment with the role's research and learning agenda. However, the position requires a minimum of three years of qualitative research experience and at least three published peer-reviewed articles, which significantly exceeds the candidate's current student assistant experience and publication record.",
+      "location": "Johannesburg,ZA",
+      "type": "Contract",
+      "deadline": "15 May 2026",
+      "salary": "Not specified"
+    }
+  ]
 }
