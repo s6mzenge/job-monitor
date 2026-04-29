@@ -1,0 +1,17 @@
+{
+  "last_updated": "2026-04-29T13:44:49.306684+00:00",
+  "site_summary": {},
+  "issues": [
+    {
+      "timestamp": "2026-04-29T13:44:49.306684+00:00",
+      "site": "Edelman",
+      "site_id": 78,
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
+      "method": "workday_api",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAjMEpGHgA_cqaW52fZtiRdhlqJrDBVva4",
+      "job_title": "Partnerships & Campaign Manager",
+      "job_url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Partnerships---Campaign-Manager_JR102278"
+    }
+  ]
+}

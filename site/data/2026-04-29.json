@@ -1,7 +1,7 @@
 {
   "date": "2026-04-29",
-  "generated_at": "2026-04-29T13:01:00.092350+00:00",
-  "run_count": 17,
+  "generated_at": "2026-04-29T13:44:49.306684+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Researcher: Research and Learning Business Line (12 Month Grant Funded Contract) (AC.09.4)",
@@ -15,6 +15,34 @@
       "location": "Johannesburg,ZA",
       "type": "Contract",
       "deadline": "15 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer: Media Studies (4 Year fixed-term Contract) (AC.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106330&p_spid=5149819",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit for the candidate. The position requires a PhD in Media and Communication Studies (or related) and essential teaching experience, neither of which the candidate possesses as they are currently pursuing an MSc. While the candidate has strong research and administrative skills, and some methodological knowledge (SPSS, Python), the core field of Media Studies and the seniority level of a Lecturer are significant mismatches.",
+      "location": "Johannesburg,ZA",
+      "type": "4 Year fixed-term Contract",
+      "deadline": "28 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "PROFESSOR/ASSOCIATE PROFESSOR (IRC106334)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106334&p_spid=5149823",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is a significant mismatch for the candidate. The academic field of Construction Economics and Management is entirely unrelated to the candidate's expertise in International Relations, Law, and Social Sciences. Furthermore, the position of Professor/Associate Professor requires extensive senior academic experience, including a PhD, substantial lecturing, postgraduate supervision, and a robust publication and funding track record, none of which the candidate possesses at this stage of their career.",
+      "location": "Johannesburg,ZA",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
