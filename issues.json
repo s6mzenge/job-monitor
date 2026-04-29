@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29T13:51:13.032539+00:00",
+  "last_updated": "2026-04-29T14:01:09.592852+00:00",
   "site_summary": {},
   "issues": [
     {
@@ -26,6 +26,28 @@
     },
     {
       "timestamp": "2026-04-29T13:51:13.032539+00:00",
+      "site": "Edelman",
+      "site_id": 78,
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
+      "method": "workday_api",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Partnerships & Campaign Manager",
+      "job_url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Partnerships---Campaign-Manager_JR102278"
+    },
+    {
+      "timestamp": "2026-04-29T14:01:09.592852+00:00",
+      "site": "SOAS University of London",
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Language Administrator (INTERNAL ONLY)",
+      "job_url": "https://vacancies.soas.ac.uk/job/872522"
+    },
+    {
+      "timestamp": "2026-04-29T14:01:09.592852+00:00",
       "site": "Edelman",
       "site_id": 78,
       "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
