@@ -1,7 +1,7 @@
 {
   "date": "2026-04-29",
-  "generated_at": "2026-04-29T17:01:02.270957+00:00",
-  "run_count": 27,
+  "generated_at": "2026-04-29T17:30:50.605866+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Researcher: Research and Learning Business Line (12 Month Grant Funded Contract) (AC.09.4)",
@@ -86,6 +86,20 @@
       "type": "Part-time, Permanent",
       "deadline": "Monday, 4 May 2026, 23:59 BST",
       "salary": "£29,000 per year, Full-time equivalent (FTE)"
+    },
+    {
+      "title": "CRM Director",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7719696003?gh_jid=7719696003",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a very poor match for the candidate. It requires a minimum of 10 years of experience in CRM platforms, data governance, and marketing/business development technologies, at a Director level with leadership responsibilities. The candidate has no full-time professional experience, and their academic background and interests are in international relations, law, and social sciences, which are entirely unrelated to CRM strategy and business development.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Competitive salary (depending on experience)"
     }
   ]
 }

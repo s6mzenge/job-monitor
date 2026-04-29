@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-04-29T17:01:02.270957+00:00",
+  "last_updated": "2026-04-29T17:30:50.605866+00:00",
   "site_summary": {
     "Impunity Watch": {
       "site_id": 45,
       "url": "https://www.impunitywatch.org/join-us/join-our-team/",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
+      "consecutive_failures": 2,
+      "total_recent_failures": 3,
       "first_recent_failure": "2026-04-29T15:01:18.017646+00:00",
-      "last_recent_failure": "2026-04-29T17:01:02.270957+00:00",
+      "last_recent_failure": "2026-04-29T17:30:50.605866+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -90,6 +90,16 @@
       "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
       "job_title": "CRM Director",
       "job_url": "https://www.teneo.com/careers/open-positions/7719696003?gh_jid=7719696003"
+    },
+    {
+      "timestamp": "2026-04-29T17:30:50.605866+00:00",
+      "site": "Impunity Watch",
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
+      "consecutive_count": 2
     }
   ]
 }
