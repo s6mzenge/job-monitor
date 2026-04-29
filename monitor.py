@@ -1,6 +1,7 @@
 import json
 import os
 import hashlib
+import re
 import requests
 import time
 import xml.etree.ElementTree as ET
@@ -71,11 +72,33 @@ def gemini_rate_limit():
 # actual error message is otherwise lost. _record_error() is called inside
 # each exception block; the main loop calls _consume_error() after every
 # handler call to read and clear the captured message.
+#
+# IMPORTANT: error messages from libraries like `requests` often include the
+# full request URL, which can contain API keys as query parameters. We redact
+# common secret patterns before storing so they never reach issues.json (which
+# is committed to the public repo).
 _last_error = ""
+
+# Patterns: key/token/secret in URL query params, Google API keys, Bearer tokens
+_REDACT_KV = re.compile(
+    r'(\b(?:key|token|api[_-]?key|auth[_-]?token|password|secret|access[_-]?token)=)[^&\s"\'<>]+',
+    re.IGNORECASE,
+)
+_REDACT_GOOGLE_KEY = re.compile(r'AIza[0-9A-Za-z\-_]{35}')
+_REDACT_BEARER = re.compile(r'(Bearer\s+)[A-Za-z0-9\-_\.]+', re.IGNORECASE)
+
+def _redact_secrets(text):
+    """Strip common secret patterns from a string before logging."""
+    if not text:
+        return text
+    out = _REDACT_KV.sub(r'\1***', text)
+    out = _REDACT_GOOGLE_KEY.sub('AIza***REDACTED***', out)
+    out = _REDACT_BEARER.sub(r'\1***', out)
+    return out
 
 def _record_error(msg):
     global _last_error
-    _last_error = msg
+    _last_error = _redact_secrets(msg)
 
 def _consume_error():
     global _last_error
