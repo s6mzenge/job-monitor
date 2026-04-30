@@ -1,7 +1,7 @@
 {
   "date": "2026-04-30",
-  "generated_at": "2026-04-30T16:01:19.358227+00:00",
-  "run_count": 23,
+  "generated_at": "2026-04-30T16:30:51.232859+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Lecturer - Practice Based Learning Nursing & Midwifery",
@@ -68,6 +68,34 @@
       "skills_score": "5",
       "seniority_score": "4",
       "reason": "The candidate possesses excellent research, data analysis, and policy writing skills, along with proficiency in SPSS, Python, and multiple languages, which are highly relevant. While their primary academic focus is on international law and genocide, their interest in security policy and strong analytical background could be transferable to an insider risk role, though the specific domain might require a learning curve. The seniority level is plausible for a high-achieving candidate with assistant experience.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer/Senior Lecturer in Politics (0.5FTE) – Fixed Term to June 2028",
+      "organisation": "University of Roehampton",
+      "url": "https://www.jobs.ac.uk/job/DRJ834/lecturer-senior-lecturer-in-politics-05fte-fixed-term-to-june-2028",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The candidate's academic background and interests align perfectly with the Politics and International Relations field of this lectureship. However, the role explicitly requires a PhD and prior teaching experience, neither of which the candidate possesses at this stage (MSc in progress, research assistant experience). This makes the role far too senior for their current qualifications.",
+      "location": "London",
+      "type": "Part Time / Fixed-Term/Contract",
+      "deadline": "29th May 2026",
+      "salary": "£46,438 to £60,720 pro rata per annum"
+    },
+    {
+      "title": "HR Advisor - Learning and Development",
+      "organisation": "CIFF",
+      "url": "https://apply.workable.com/j/6E89D0DC10",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is in Human Resources, specifically Learning and Development, which is a significant departure from the candidate's academic and professional focus on international relations, law, and higher education policy. While the candidate has strong transferable skills in research, data analysis, and organisation, they lack direct experience or specific skills in HR or L&D. The \"Advisor\" title also suggests a level of professional experience that the candidate, without prior full-time HR roles, is unlikely to meet.",
       "location": "London, United Kingdom",
       "type": "Not specified",
       "deadline": "Not specified",

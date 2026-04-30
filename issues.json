@@ -1,18 +1,31 @@
 {
-  "last_updated": "2026-04-30T16:01:19.358227+00:00",
+  "last_updated": "2026-04-30T16:30:51.232859+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 11,
-      "total_recent_failures": 11,
+      "consecutive_failures": 12,
+      "total_recent_failures": 12,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-04-30T16:01:19.358227+00:00",
+      "last_recent_failure": "2026-04-30T16:30:51.232859+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0"
+    },
+    "Trust for London": {
+      "site_id": 66,
+      "url": "https://trustforlondon.org.uk/about/vacancies/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-04-30T07:01:01.295584+00:00",
+      "last_recent_failure": "2026-04-30T16:30:51.232859+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/"
     }
   },
   "issues": [
@@ -661,6 +674,48 @@
       "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
       "job_title": "HR Advisor - Learning and Development",
       "job_url": "https://apply.workable.com/j/6E89D0DC10"
+    },
+    {
+      "timestamp": "2026-04-30T16:30:51.232859+00:00",
+      "site": "Chatham House",
+      "site_id": 23,
+      "url": "https://careers.chathamhouse.org/jobs",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Senior Research Fellow – Russia & Eurasia",
+      "job_url": "https://careers.chathamhouse.org/jobs/7660483-senior-research-fellow-russia-eurasia"
+    },
+    {
+      "timestamp": "2026-04-30T16:30:51.232859+00:00",
+      "site": "SOAS University of London",
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lecturer in Music Performance",
+      "job_url": "https://vacancies.soas.ac.uk/job/873111"
+    },
+    {
+      "timestamp": "2026-04-30T16:30:51.232859+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
+      "consecutive_count": 12
+    },
+    {
+      "timestamp": "2026-04-30T16:30:51.232859+00:00",
+      "site": "Trust for London",
+      "site_id": 66,
+      "url": "https://trustforlondon.org.uk/about/vacancies/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
+      "consecutive_count": 1
     }
   ]
 }
