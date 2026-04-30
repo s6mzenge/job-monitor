@@ -1,6 +1,63 @@
 {
   "date": "2026-04-30",
-  "generated_at": "2026-04-30T10:30:57.159604+00:00",
-  "run_count": 12,
-  "jobs": []
+  "generated_at": "2026-04-30T11:01:03.872534+00:00",
+  "run_count": 13,
+  "jobs": [
+    {
+      "title": "Lecturer - Practice Based Learning Nursing & Midwifery",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=HED527",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a complete mismatch for the candidate. The job requires NMC registration and substantial experience in adult nursing practice, which the candidate does not possess. Their academic background and experience are in international relations, social sciences, and higher education policy research, not healthcare or nursing.",
+      "location": "Hendon",
+      "type": "Permanent",
+      "deadline": "Friday 22 May 2026",
+      "salary": "£43,811 to £50,136 per annum"
+    },
+    {
+      "title": "Lecturer in Dance",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=ACI203",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a complete mismatch for the candidate. Their academic background and interests are exclusively in social sciences, international relations, and law, with no experience or qualifications in dance or creative arts. The position requires specific expertise in dance practice and pedagogy, which the candidate entirely lacks, and is too senior for someone with only student assistant experience.",
+      "location": "Hainan, China",
+      "type": "Fixed Term - 12 months",
+      "deadline": "Sunday 17 May 2026",
+      "salary": "£41,064 to £47,389 per annum"
+    },
+    {
+      "title": "CRM Communications Manager",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=MKG528",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The role is a poor fit due to a significant mismatch in both field and seniority. While the candidate has experience within the higher education sector, their academic focus and interests are in international relations and policy research, not marketing or CRM. The role requires proven experience in CRM, email marketing platforms, campaign automation, and team leadership, which the candidate lacks as they are still pursuing an MSc and have only student assistant experience.",
+      "location": "Hendon",
+      "type": "Permanent",
+      "deadline": "Friday 15 May 2026",
+      "salary": "£43,811 to £50,136 per annum"
+    },
+    {
+      "title": "Policy and Projects Lead",
+      "organisation": "Paul Hamlyn Foundation",
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "Moritz demonstrates strong research, data analysis, and policy writing skills through his academic work and student assistant roles, particularly in higher education policy and federal funding. While he has experience supporting projects and coordinating activities, the \"Lead\" aspect of the role suggests a level of independent project management and strategic influence that might be a stretch for someone without full-time professional experience, making it a slightly ambitious but plausible step.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Wednesday 13 May",
+      "salary": "£37,000 per annum"
+    }
+  ]
 }
