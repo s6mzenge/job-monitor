@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-04-30T09:30:51.741217+00:00",
+  "last_updated": "2026-04-30T10:01:02.706616+00:00",
   "site_summary": {
-    "Trust for London": {
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
+    "Save the Children UK": {
+      "site_id": 55,
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/",
+      "method": "playwright",
       "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-04-30T07:01:01.295584+00:00",
-      "last_recent_failure": "2026-04-30T09:30:51.741217+00:00",
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-04-30T10:01:02.706616+00:00",
+      "last_recent_failure": "2026-04-30T10:01:02.706616+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/"
+      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -193,6 +193,38 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-04-30T10:01:02.706616+00:00",
+      "site": "Middlesex University",
+      "site_id": 35,
+      "url": "https://jobs.mdx.ac.uk/vacancies.aspx?cat=-1",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lecturer in Dance",
+      "job_url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=ACI203"
+    },
+    {
+      "timestamp": "2026-04-30T10:01:02.706616+00:00",
+      "site": "Middlesex University",
+      "site_id": 35,
+      "url": "https://jobs.mdx.ac.uk/vacancies.aspx?cat=-1",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "CRM Communications Manager",
+      "job_url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=MKG528"
+    },
+    {
+      "timestamp": "2026-04-30T10:01:02.706616+00:00",
+      "site": "Save the Children UK",
+      "site_id": 55,
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
     }
   ]
