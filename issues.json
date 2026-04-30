@@ -1,27 +1,14 @@
 {
-  "last_updated": "2026-04-30T12:31:01.840643+00:00",
+  "last_updated": "2026-04-30T13:01:02.524732+00:00",
   "site_summary": {
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-04-30T06:00:58.738290+00:00",
-      "last_recent_failure": "2026-04-30T12:31:01.840643+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://globalrightscompliance.org/work-with-us/\", waiting until \"networkidle\""
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 4,
+      "consecutive_failures": 5,
+      "total_recent_failures": 5,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-04-30T12:31:01.840643+00:00",
+      "last_recent_failure": "2026-04-30T13:01:02.524732+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -322,6 +309,27 @@
       "type": "fetch_error",
       "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
       "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-04-30T13:01:02.524732+00:00",
+      "site": "jobs.ac.uk",
+      "site_id": 6,
+      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lecturer/Senior Lecturer in Politics (0.5FTE) – Fixed Term to June 2028",
+      "job_url": "https://www.jobs.ac.uk/job/DRJ834/lecturer-senior-lecturer-in-politics-05fte-fixed-term-to-june-2028"
+    },
+    {
+      "timestamp": "2026-04-30T13:01:02.524732+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
+      "consecutive_count": 5
     }
   ]
 }
