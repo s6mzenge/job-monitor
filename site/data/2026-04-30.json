@@ -1,7 +1,7 @@
 {
   "date": "2026-04-30",
-  "generated_at": "2026-04-30T11:01:03.872534+00:00",
-  "run_count": 13,
+  "generated_at": "2026-04-30T11:30:56.938728+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Lecturer - Practice Based Learning Nursing & Midwifery",
@@ -58,6 +58,20 @@
       "type": "Not specified",
       "deadline": "Wednesday 13 May",
       "salary": "£37,000 per annum"
+    },
+    {
+      "title": "Embedded Insider Risk Consultant",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/E149427320",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "5",
+      "seniority_score": "4",
+      "reason": "The candidate possesses excellent research, data analysis, and policy writing skills, along with proficiency in SPSS, Python, and multiple languages, which are highly relevant. While their primary academic focus is on international law and genocide, their interest in security policy and strong analytical background could be transferable to an insider risk role, though the specific domain might require a learning curve. The seniority level is plausible for a high-achieving candidate with assistant experience.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
