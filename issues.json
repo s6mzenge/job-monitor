@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-04-30T08:00:58.203424+00:00",
+  "last_updated": "2026-04-30T08:30:50.677925+00:00",
   "site_summary": {
     "Reprieve": {
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
+      "consecutive_failures": 2,
+      "total_recent_failures": 2,
       "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
-      "last_recent_failure": "2026-04-30T08:00:58.203424+00:00",
+      "last_recent_failure": "2026-04-30T08:30:50.677925+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 521 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/"
+      "last_message": "fetch_page: 523 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/"
     }
   },
   "issues": [
@@ -130,6 +130,27 @@
       "type": "fetch_error",
       "message": "fetch_page: 521 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-04-30T08:30:50.677925+00:00",
+      "site": "Middlesex University",
+      "site_id": 35,
+      "url": "https://jobs.mdx.ac.uk/vacancies.aspx?cat=-1",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lecturer in Dance",
+      "job_url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=ACI203"
+    },
+    {
+      "timestamp": "2026-04-30T08:30:50.677925+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 523 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/",
+      "consecutive_count": 2
     }
   ]
 }
