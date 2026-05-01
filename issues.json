@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-01T14:30:57.443280+00:00",
+  "last_updated": "2026-05-01T15:00:58.187277+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -18,14 +18,27 @@
       "site_id": 65,
       "url": "https://www.rusi.org/about/our-people/job-opportunities",
       "method": "playwright",
-      "consecutive_failures": 6,
-      "total_recent_failures": 6,
+      "consecutive_failures": 7,
+      "total_recent_failures": 7,
       "first_recent_failure": "2026-05-01T12:06:03.894237+00:00",
-      "last_recent_failure": "2026-05-01T14:30:57.443280+00:00",
+      "last_recent_failure": "2026-05-01T15:00:58.187277+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible"
+    },
+    "Trust for London": {
+      "site_id": 66,
+      "url": "https://trustforlondon.org.uk/about/vacancies/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 6,
+      "first_recent_failure": "2026-04-30T07:01:01.295584+00:00",
+      "last_recent_failure": "2026-05-01T15:00:58.187277+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/"
     }
   },
   "issues": [
@@ -1202,6 +1215,26 @@
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
       "consecutive_count": 6
+    },
+    {
+      "timestamp": "2026-05-01T15:00:58.187277+00:00",
+      "site": "RUSI",
+      "site_id": 65,
+      "url": "https://www.rusi.org/about/our-people/job-opportunities",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
+      "consecutive_count": 7
+    },
+    {
+      "timestamp": "2026-05-01T15:00:58.187277+00:00",
+      "site": "Trust for London",
+      "site_id": 66,
+      "url": "https://trustforlondon.org.uk/about/vacancies/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
+      "consecutive_count": 1
     }
   ]
 }
