@@ -1,7 +1,7 @@
 {
   "date": "2026-05-01",
-  "generated_at": "2026-05-01T11:30:55.448346+00:00",
-  "run_count": 14,
+  "generated_at": "2026-05-01T12:06:03.894237+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Political, Crisis & Litigation, Associate Consultant",
@@ -86,6 +86,20 @@
       "type": "Full Time, Fixed-Term/Contract",
       "deadline": "14th May 2026",
       "salary": "£43,277 to £51,714 pa inclusive with potential to progress to £55,497 pa inclusive of London allowance"
+    },
+    {
+      "title": "Junior Designer",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=MKG523-R",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is for a Junior Designer, requiring a design degree, a strong portfolio, and experience in a creative environment. The candidate's background is entirely academic, focused on international relations, law, and policy research, with no design experience or portfolio. While the candidate has some HTML/CSS knowledge, it's not sufficient for the core design requirements.",
+      "location": "Hendon",
+      "type": "Permanent",
+      "deadline": "Tuesday 19 May 2026",
+      "salary": "£33,125 to £36,698 per annum"
     }
   ]
 }
