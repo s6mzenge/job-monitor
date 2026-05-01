@@ -1,7 +1,7 @@
 {
   "date": "2026-05-01",
-  "generated_at": "2026-05-01T08:30:51.722141+00:00",
-  "run_count": 8,
+  "generated_at": "2026-05-01T09:01:04.355034+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Political, Crisis & Litigation, Associate Consultant",
@@ -44,6 +44,20 @@
       "type": "Contract * Part time (0.6 FTE)",
       "deadline": "Sunday, May 31, 2026",
       "salary": "£31,141.53 - £36,629.14 pro rata"
+    },
+    {
+      "title": "Embedded Intelligence Analyst",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000124099679-embedded-intelligence-analyst",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "4",
+      "seniority_score": "3",
+      "reason": "The candidate has a strong academic background in International Relations and Security Studies, aligning well with the role's focus on intelligence, geopolitical risk, and threat assessment. They possess excellent research, data analysis, and writing skills, along with multilingualism. The main gap is the requirement for 1-3 years of professional experience in an intelligence or customer-focused role, which the candidate, with their MSc in progress and student assistant experience, does not fully meet. However, the job description encourages applications from candidates who meet some requirements and can offer a unique perspective, making it a plausible fit.",
+      "location": "UK (fully remote)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
