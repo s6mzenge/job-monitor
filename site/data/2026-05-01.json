@@ -1,7 +1,7 @@
 {
   "date": "2026-05-01",
-  "generated_at": "2026-05-01T17:01:00.296511+00:00",
-  "run_count": 25,
+  "generated_at": "2026-05-01T17:30:57.233044+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Political, Crisis & Litigation, Associate Consultant",
@@ -156,6 +156,34 @@
       "type": "Full time",
       "deadline": "26 May 2026 at 09:00",
       "salary": "Approx £40,000"
+    },
+    {
+      "title": "Research Fellow (Data and Democracy)",
+      "organisation": "UCL",
+      "url": "https://www.jobs.ac.uk/job/DRK558/research-fellow-data-and-democracy",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "5",
+      "seniority_score": "1",
+      "reason": "While the candidate demonstrates strong alignment in research skills and a relevant academic background in International Relations and Law, the role explicitly requires a doctoral degree (awarded or close to completion). The candidate is currently pursuing an MSc, which makes them significantly underqualified for the required seniority level of this Research Fellow position.",
+      "location": "London, Hybrid",
+      "type": "Fixed-Term/Contract",
+      "deadline": "24th May 2026",
+      "salary": "£43,981 to £52,586 (Grade 7) or £39,148 - £41,833 (Grade 6B)"
+    },
+    {
+      "title": "Commercial Finance Business Partner",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/3B18F103EC",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a complete mismatch for the candidate. The position is in commercial finance, which is entirely outside the candidate's academic background and interests in international relations, law, and policy. Furthermore, the role title suggests a level of seniority and specific financial expertise that the candidate, with their academic and student assistant experience, does not possess.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
