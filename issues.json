@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-01T07:01:04.108093+00:00",
+  "last_updated": "2026-05-01T07:30:48.628751+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,19 +13,6 @@
       "paused_until": "2026-05-03T05:30:51.840976+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Reprieve": {
-      "site_id": 58,
-      "url": "https://reprieve.org/uk/work-for-reprieve/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
-      "last_recent_failure": "2026-05-01T07:01:04.108093+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 522 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/"
     }
   },
   "issues": [
