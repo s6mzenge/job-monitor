@@ -1,31 +1,18 @@
 {
-  "last_updated": "2026-05-01T05:30:51.840976+00:00",
+  "last_updated": "2026-05-01T06:00:57.500676+00:00",
   "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
+    "Wiener Holocaust Library": {
+      "site_id": 4,
+      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
+      "method": "html",
       "consecutive_failures": 1,
       "total_recent_failures": 1,
-      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "last_recent_failure": "2026-05-01T05:30:51.840976+00:00",
+      "first_recent_failure": "2026-05-01T06:00:57.500676+00:00",
+      "last_recent_failure": "2026-05-01T06:00:57.500676+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f584ca97c80>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))"
-    },
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 4,
-      "first_recent_failure": "2026-04-30T06:00:58.738290+00:00",
-      "last_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://globalrightscompliance.org/work-with-us/\", waiting until \"networkidle\""
+      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
     },
     "ICTJ": {
       "site_id": 41,
@@ -39,19 +26,6 @@
       "paused_until": "2026-05-03T05:30:51.840976+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Ceasefire Centre for Civilian Rights": {
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "last_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f584bf0bc50>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
@@ -943,6 +917,27 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f584bf0bc50>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-01T06:00:57.500676+00:00",
+      "site": "Wiener Holocaust Library",
+      "site_id": 4,
+      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-01T06:00:57.500676+00:00",
+      "site": "SOAS University of London",
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lecturer in Music Performance",
+      "job_url": "https://vacancies.soas.ac.uk/job/873111"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "date": "2026-05-01",
-  "generated_at": "2026-05-01T05:30:51.840976+00:00",
-  "run_count": 2,
+  "generated_at": "2026-05-01T06:00:57.500676+00:00",
+  "run_count": 3,
   "jobs": [
     {
       "title": "Political, Crisis & Litigation, Associate Consultant",
@@ -16,6 +16,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Competitive salary (dependent on experience)"
+    },
+    {
+      "title": "Senior Research Fellow – Russia & Eurasia",
+      "organisation": "Chatham House",
+      "url": "https://careers.chathamhouse.org/jobs/7660483-senior-research-fellow-russia-eurasia",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is far too senior for the candidate, requiring a highly experienced researcher with a substantial track record in leading research, policymaker engagement, and fundraising. Crucially, the role also requires fluency in Russian, which the candidate does not possess. While the candidate has strong academic credentials in International Relations and good research skills, the specific regional focus and the seniority level are a significant mismatch.",
+      "location": "London, UK",
+      "type": "Full-time, Permanent",
+      "deadline": "Tuesday, 19 May 2026, 23:59 BST",
+      "salary": "Competitive"
     }
   ]
 }
