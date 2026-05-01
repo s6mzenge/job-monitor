@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-01T08:01:07.261147+00:00",
+  "last_updated": "2026-05-01T08:30:51.722141+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -945,6 +945,28 @@
       "type": "fetch_error",
       "message": "fetch_page: 522 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-01T08:30:51.722141+00:00",
+      "site": "jobs.ac.uk",
+      "site_id": 6,
+      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "LSE Fellow (GV101)",
+      "job_url": "https://www.jobs.ac.uk/job/DRK169/lse-fellow-gv101"
+    },
+    {
+      "timestamp": "2026-05-01T08:30:51.722141+00:00",
+      "site": "Sibylline",
+      "site_id": 8,
+      "url": "https://careers.smartrecruiters.com/SibyllineLtd/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Embedded Intelligence Analyst",
+      "job_url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000124099679-embedded-intelligence-analyst"
     }
   ]
 }
