@@ -1,7 +1,7 @@
 {
   "date": "2026-05-01",
-  "generated_at": "2026-05-01T09:01:04.355034+00:00",
-  "run_count": 9,
+  "generated_at": "2026-05-01T09:30:50.131222+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Political, Crisis & Litigation, Associate Consultant",
@@ -58,6 +58,34 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Administration Officer",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/London/Administration-Officer_JR-0003811-0",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "4",
+      "seniority_score": "3",
+      "reason": "The candidate's strong academic background in International Relations and Law, with a focus on international law and genocide, aligns well with OSF's mission and the legal support aspects of the Office of the General Counsel. They possess strong language skills and relevant administrative experience from student assistant roles, including organizing meetings and managing documentation. However, the role requires \"proven experience as a highly skilled administrator/executive assistant\" and specific contract/invoice administration, which the candidate's current experience might not fully meet at a professional level.",
+      "location": "London, Nairobi or Rio De Janeiro",
+      "type": "Full Time",
+      "deadline": "05/14/2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "LSE Fellow (GV101)",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRK169/lse-fellow-gv101",
+      "match": "low",
+      "field_score": "4/5",
+      "skills_score": "3/5",
+      "seniority_score": "1/5",
+      "reason": "While the candidate's academic background in International Relations and Political Science, strong research skills, and publications align well with the field, the role explicitly requires a completed or near-completed PhD by September 2026. The candidate will only be starting their MSc in September 2025, making them ineligible for this specific academic fellowship.",
+      "location": "London",
+      "type": "Full Time, Fixed-Term/Contract",
+      "deadline": "14th May 2026",
+      "salary": "£43,277 to £51,714 pa inclusive with potential to progress to £55,497 pa inclusive of London allowance"
     }
   ]
 }
