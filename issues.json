@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-05-01T16:30:53.466239+00:00",
+  "last_updated": "2026-05-01T17:01:00.296511+00:00",
   "site_summary": {
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
+    "Aegis Trust": {
+      "site_id": 5,
+      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
+      "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 7,
-      "first_recent_failure": "2026-04-30T06:00:58.738290+00:00",
-      "last_recent_failure": "2026-05-01T16:30:53.466239+00:00",
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-05-01T17:01:00.296511+00:00",
+      "last_recent_failure": "2026-05-01T17:01:00.296511+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://globalrightscompliance.org/work-with-us/\", waiting until \"networkidle\""
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://aegistrust.online/get-involved/work-at-aegis/"
     },
     "ICTJ": {
       "site_id": 41,
@@ -27,31 +27,83 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
+    "HIS Hamburg": {
+      "site_id": 43,
+      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 3,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-01T17:01:00.296511+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/"
+    },
+    "Institute for Government": {
+      "site_id": 46,
+      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 3,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-01T17:01:00.296511+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies"
+    },
+    "Ceasefire Centre for Civilian Rights": {
+      "site_id": 54,
+      "url": "https://www.ceasefire.org/work-with-us/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 4,
+      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
+      "last_recent_failure": "2026-05-01T17:01:00.296511+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.ceasefire.org/work-with-us/"
+    },
+    "Paul Hamlyn Foundation": {
+      "site_id": 64,
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 3,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-01T17:01:00.296511+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities"
+    },
     "RUSI": {
       "site_id": 65,
       "url": "https://www.rusi.org/about/our-people/job-opportunities",
       "method": "playwright",
-      "consecutive_failures": 10,
-      "total_recent_failures": 10,
+      "consecutive_failures": 11,
+      "total_recent_failures": 11,
       "first_recent_failure": "2026-05-01T12:06:03.894237+00:00",
-      "last_recent_failure": "2026-05-01T16:30:53.466239+00:00",
+      "last_recent_failure": "2026-05-01T17:01:00.296511+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible"
     },
-    "Trust for London": {
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
+    "twentyfifty": {
+      "site_id": 73,
+      "url": "https://twentyfifty.co.uk/contact/opportunities/",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 7,
-      "first_recent_failure": "2026-04-30T07:01:01.295584+00:00",
-      "last_recent_failure": "2026-05-01T16:30:53.466239+00:00",
+      "total_recent_failures": 3,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-01T17:01:00.296511+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/"
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/"
     }
   },
   "issues": [
@@ -1329,6 +1381,98 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-01T17:01:00.296511+00:00",
+      "site": "Aegis Trust",
+      "site_id": 5,
+      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://aegistrust.online/get-involved/work-at-aegis/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-01T17:01:00.296511+00:00",
+      "site": "jobs.ac.uk",
+      "site_id": 6,
+      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Research Fellow (Data and Democracy)",
+      "job_url": "https://www.jobs.ac.uk/job/DRK558/research-fellow-data-and-democracy"
+    },
+    {
+      "timestamp": "2026-05-01T17:01:00.296511+00:00",
+      "site": "HIS Hamburg",
+      "site_id": 43,
+      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-01T17:01:00.296511+00:00",
+      "site": "Institute for Government",
+      "site_id": 46,
+      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-01T17:01:00.296511+00:00",
+      "site": "Teneo",
+      "site_id": 50,
+      "url": "https://www.teneo.com/careers/open-positions/office/london/",
+      "method": "greenhouse_api",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Talent Acquisition Coordinator | London",
+      "job_url": "https://www.teneo.com/careers/open-positions/7720857003?gh_jid=7720857003"
+    },
+    {
+      "timestamp": "2026-05-01T17:01:00.296511+00:00",
+      "site": "Ceasefire Centre for Civilian Rights",
+      "site_id": 54,
+      "url": "https://www.ceasefire.org/work-with-us/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.ceasefire.org/work-with-us/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-01T17:01:00.296511+00:00",
+      "site": "Paul Hamlyn Foundation",
+      "site_id": 64,
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-01T17:01:00.296511+00:00",
+      "site": "RUSI",
+      "site_id": 65,
+      "url": "https://www.rusi.org/about/our-people/job-opportunities",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
+      "consecutive_count": 11
+    },
+    {
+      "timestamp": "2026-05-01T17:01:00.296511+00:00",
+      "site": "twentyfifty",
+      "site_id": 73,
+      "url": "https://twentyfifty.co.uk/contact/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/",
       "consecutive_count": 1
     }
   ]
