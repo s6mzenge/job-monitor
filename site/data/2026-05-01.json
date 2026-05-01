@@ -1,7 +1,7 @@
 {
   "date": "2026-05-01",
-  "generated_at": "2026-05-01T15:00:58.187277+00:00",
-  "run_count": 21,
+  "generated_at": "2026-05-01T15:30:54.259692+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Political, Crisis & Litigation, Associate Consultant",
@@ -142,6 +142,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Executive Assistant",
+      "organisation": "JUSTICE",
+      "url": "https://justice.org.uk/job-opportunity/executive-assistant",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The candidate does not meet the essential eligibility criteria of having a UK qualifying law degree or equivalent. While their interests in international law and justice align with the charity's mission, the role also requires an \"experienced EA\" which the candidate, with student assistant experience, does not possess.",
+      "location": "London and UK Wide (negotiable)",
+      "type": "Full time",
+      "deadline": "26 May 2026 at 09:00",
+      "salary": "Approx £40,000"
     }
   ]
 }
