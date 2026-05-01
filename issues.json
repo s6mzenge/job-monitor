@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-01T13:01:04.887150+00:00",
+  "last_updated": "2026-05-01T13:30:56.960800+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -18,10 +18,10 @@
       "site_id": 65,
       "url": "https://www.rusi.org/about/our-people/job-opportunities",
       "method": "playwright",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
+      "consecutive_failures": 4,
+      "total_recent_failures": 4,
       "first_recent_failure": "2026-05-01T12:06:03.894237+00:00",
-      "last_recent_failure": "2026-05-01T13:01:04.887150+00:00",
+      "last_recent_failure": "2026-05-01T13:30:56.960800+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -1162,6 +1162,16 @@
       "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
       "job_title": "Operations Assistant",
       "job_url": "https://job-boards.greenhouse.io/brunswickgroup/jobs/8529761002"
+    },
+    {
+      "timestamp": "2026-05-01T13:30:56.960800+00:00",
+      "site": "RUSI",
+      "site_id": 65,
+      "url": "https://www.rusi.org/about/our-people/job-opportunities",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
+      "consecutive_count": 4
     }
   ]
 }

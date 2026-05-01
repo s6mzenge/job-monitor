@@ -1,7 +1,7 @@
 {
   "date": "2026-05-01",
-  "generated_at": "2026-05-01T13:01:04.887150+00:00",
-  "run_count": 17,
+  "generated_at": "2026-05-01T13:30:56.960800+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Political, Crisis & Litigation, Associate Consultant",
@@ -125,6 +125,20 @@
       "seniority_score": "5",
       "reason": "The candidate is an excellent fit for this Research Assistant role. Their MSc in International Relations Research, coupled with a forthcoming publication specifically on \"changing defence/security policies,\" demonstrates a direct and strong alignment with the programme's focus. They possess all required research, data analysis (SPSS, Python), and policy writing skills, and the \"Research Assistant\" level is perfectly suited to their academic background and extensive student assistant experience.",
       "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Operations Assistant",
+      "organisation": "Brunswick Group",
+      "url": "https://job-boards.greenhouse.io/brunswickgroup/jobs/8529761002",
+      "match": "medium",
+      "field_score": "1",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "The candidate possesses strong administrative, organisational, and communication skills, along with relevant IT proficiency, making them well-suited for the operational and coordination tasks. The role's entry-level nature aligns perfectly with their current experience. However, the position does not directly leverage their deep academic expertise in international relations, law, or policy research.",
+      "location": "London, England, United Kingdom",
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
