@@ -1,7 +1,7 @@
 {
   "date": "2026-05-01",
-  "generated_at": "2026-05-01T12:06:03.894237+00:00",
-  "run_count": 15,
+  "generated_at": "2026-05-01T12:30:48.087187+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Political, Crisis & Litigation, Associate Consultant",
@@ -100,6 +100,34 @@
       "type": "Permanent",
       "deadline": "Tuesday 19 May 2026",
       "salary": "£33,125 to £36,698 per annum"
+    },
+    {
+      "title": "Seasonal Face to Face Fundraising Festivals and Events Manager",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/seasonal-face-to-face-fundraising-festivals-and-events-manager-61898/en",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is an operational management position focused on face-to-face fundraising and event coordination, requiring specific experience in these areas and people management. The candidate's background is highly academic, focused on international relations, law, and policy research, with experience as a student assistant. There is a significant mismatch in both the field of work and the required professional experience and specific skills for this operational fundraising management role.",
+      "location": "London, United Kingdom (and on-site at festivals across the UK)",
+      "type": "Full-time (6-month contract, agency worker assignment)",
+      "deadline": "8 May 2026, 12pm (BST)",
+      "salary": "£24.71 per hour"
+    },
+    {
+      "title": "Research Assistant for Defence and Military Analysis Programme",
+      "organisation": "IISS",
+      "url": "https://www.iiss.org/careers/jobs/2026/05/research-assistant-for-defence-and-military-analysis-programme",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "5",
+      "seniority_score": "5",
+      "reason": "The candidate is an excellent fit for this Research Assistant role. Their MSc in International Relations Research, coupled with a forthcoming publication specifically on \"changing defence/security policies,\" demonstrates a direct and strong alignment with the programme's focus. They possess all required research, data analysis (SPSS, Python), and policy writing skills, and the \"Research Assistant\" level is perfectly suited to their academic background and extensive student assistant experience.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
