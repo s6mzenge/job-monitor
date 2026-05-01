@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-05-01T06:00:57.500676+00:00",
+  "last_updated": "2026-05-01T06:30:52.937825+00:00",
   "site_summary": {
-    "Wiener Holocaust Library": {
-      "site_id": 4,
-      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
-      "method": "html",
+    "Global Rights Compliance": {
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
       "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-05-01T06:00:57.500676+00:00",
-      "last_recent_failure": "2026-05-01T06:00:57.500676+00:00",
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-04-30T06:00:58.738290+00:00",
+      "last_recent_failure": "2026-05-01T06:30:52.937825+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
+      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://globalrightscompliance.org/work-with-us/\", waiting until \"networkidle\""
     },
     "ICTJ": {
       "site_id": 41,
@@ -938,6 +938,16 @@
       "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
       "job_title": "Lecturer in Music Performance",
       "job_url": "https://vacancies.soas.ac.uk/job/873111"
+    },
+    {
+      "timestamp": "2026-05-01T06:30:52.937825+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://globalrightscompliance.org/work-with-us/\", waiting until \"networkidle\"",
+      "consecutive_count": 1
     }
   ]
 }

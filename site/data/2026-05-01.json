@@ -1,7 +1,7 @@
 {
   "date": "2026-05-01",
-  "generated_at": "2026-05-01T06:00:57.500676+00:00",
-  "run_count": 3,
+  "generated_at": "2026-05-01T06:30:52.937825+00:00",
+  "run_count": 4,
   "jobs": [
     {
       "title": "Political, Crisis & Litigation, Associate Consultant",
@@ -30,6 +30,20 @@
       "type": "Full-time, Permanent",
       "deadline": "Tuesday, 19 May 2026, 23:59 BST",
       "salary": "Competitive"
+    },
+    {
+      "title": "Lecturer in Music Performance",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/873111",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is for a Lecturer in Music Performance, requiring a PhD in Music and a strong profile as a performer and educator. The candidate's academic background and interests are exclusively in International Relations, Law, and Policy, with no relevant musical or performance experience. The required qualifications and experience level are significantly beyond the candidate's current academic status and student assistant experience.",
+      "location": "Bloomsbury, Camden, Greater London, United Kingdom",
+      "type": "Contract * Part time (0.6 FTE)",
+      "deadline": "Sunday, May 31, 2026",
+      "salary": "£31,141.53 - £36,629.14 pro rata"
     }
   ]
 }
