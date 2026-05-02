@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-02T16:30:52.976934+00:00",
+  "last_updated": "2026-05-02T17:00:55.646755+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -27,18 +27,57 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Reprieve": {
-      "site_id": 58,
-      "url": "https://reprieve.org/uk/work-for-reprieve/",
+    "HIS Hamburg": {
+      "site_id": 43,
+      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 15,
-      "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
-      "last_recent_failure": "2026-05-02T16:30:52.976934+00:00",
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-02T17:00:55.646755+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 522 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/"
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/"
+    },
+    "Institute for Government": {
+      "site_id": 46,
+      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-02T17:00:55.646755+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies"
+    },
+    "Ceasefire Centre for Civilian Rights": {
+      "site_id": 54,
+      "url": "https://www.ceasefire.org/work-with-us/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 6,
+      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
+      "last_recent_failure": "2026-05-02T17:00:55.646755+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.ceasefire.org/work-with-us/"
+    },
+    "Paul Hamlyn Foundation": {
+      "site_id": 64,
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-02T17:00:55.646755+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities"
     },
     "RUSI": {
       "site_id": 65,
@@ -52,6 +91,32 @@
       "paused_until": "2026-05-04T06:30:55.077963+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "LRQA": {
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-05-02T17:00:55.646755+00:00",
+      "last_recent_failure": "2026-05-02T17:00:55.646755+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fb3a234eb40>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+    },
+    "twentyfifty": {
+      "site_id": 73,
+      "url": "https://twentyfifty.co.uk/contact/opportunities/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-02T17:00:55.646755+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/"
     }
   },
   "issues": [
@@ -2125,6 +2190,66 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 522 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T17:00:55.646755+00:00",
+      "site": "HIS Hamburg",
+      "site_id": 43,
+      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T17:00:55.646755+00:00",
+      "site": "Institute for Government",
+      "site_id": 46,
+      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T17:00:55.646755+00:00",
+      "site": "Ceasefire Centre for Civilian Rights",
+      "site_id": 54,
+      "url": "https://www.ceasefire.org/work-with-us/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.ceasefire.org/work-with-us/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T17:00:55.646755+00:00",
+      "site": "Paul Hamlyn Foundation",
+      "site_id": 64,
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T17:00:55.646755+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fb3a234eb40>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T17:00:55.646755+00:00",
+      "site": "twentyfifty",
+      "site_id": 73,
+      "url": "https://twentyfifty.co.uk/contact/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/",
       "consecutive_count": 1
     }
   ]
