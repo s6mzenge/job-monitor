@@ -1,0 +1,49 @@
+{
+  "date": "2026-05-02",
+  "generated_at": "2026-05-02T05:00:58.602448+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Government Solutions Director",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25119?c=palladium",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "The job title \"Government Solutions Director\" strongly implies a senior leadership role requiring extensive professional experience, which the candidate, with an MSc in progress and assistant experience, does not yet possess. Without a full job description, it is impossible to assess specific field or skills alignment, but the significant seniority mismatch makes this role unsuitable.",
+      "location": "United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Marketing Services Operations Coordinator",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/82F5090A6B",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This role is a poor fit due to a significant mismatch in field. The candidate's expertise lies in international relations, law, and policy research, while this role is focused on marketing services operations. While the candidate possesses strong administrative and data analysis skills that are transferable, they lack specific experience or interest in marketing.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Talent Acquisition Coordinator | London",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7720857003?gh_jid=7720857003",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "The role is in talent acquisition, which is entirely outside the candidate's academic fields of international relations, law, and policy research. While the candidate possesses strong administrative, organizational, and communication skills, and the seniority level is appropriate, the fundamental mismatch in the field makes this a poor fit for their stated interests and career trajectory.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
