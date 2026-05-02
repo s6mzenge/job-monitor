@@ -1,18 +1,57 @@
 {
-  "last_updated": "2026-05-02T12:01:13.947755+00:00",
+  "last_updated": "2026-05-02T12:30:56.911190+00:00",
   "site_summary": {
+    "Palladium Group": {
+      "site_id": 1,
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
+      "last_recent_failure": "2026-05-02T12:30:56.911190+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f9ccc0777a0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))"
+    },
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
-      "consecutive_failures": 15,
-      "total_recent_failures": 15,
+      "consecutive_failures": 16,
+      "total_recent_failures": 17,
       "first_recent_failure": "2026-05-02T05:00:58.602448+00:00",
-      "last_recent_failure": "2026-05-02T12:01:13.947755+00:00",
+      "last_recent_failure": "2026-05-02T12:30:56.911190+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-05-04T12:30:56.911190+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Protection Approaches": {
+      "site_id": 31,
+      "url": "https://protectionapproaches.org/current-vacancies",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-05-02T12:30:56.911190+00:00",
+      "last_recent_failure": "2026-05-02T12:30:56.911190+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='protectionapproaches.org', port=443): Max retries exceeded with url: /current-vacancies (Caused by ConnectTimeoutError(<HTTPSConnection(host='protectionapproaches.org', port=443) at 0x7f9ccb55af60>, 'Connection to protectionapproaches.org timed out. (connect timeout=30)'))"
+    },
+    "REDRESS": {
+      "site_id": 32,
+      "url": "https://redress.org/about-us/work-at-redress/current-vacancies/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-04-30T14:31:01.950620+00:00",
+      "last_recent_failure": "2026-05-02T12:30:56.911190+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://redress.org/about-us/work-at-redress/current-vacancies/"
     },
     "ICTJ": {
       "site_id": 41,
@@ -27,6 +66,71 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
+    "HIS Hamburg": {
+      "site_id": 43,
+      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 4,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-02T12:30:56.911190+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/"
+    },
+    "Institute for Government": {
+      "site_id": 46,
+      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 4,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-02T12:30:56.911190+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies"
+    },
+    "Ceasefire Centre for Civilian Rights": {
+      "site_id": 54,
+      "url": "https://www.ceasefire.org/work-with-us/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
+      "last_recent_failure": "2026-05-02T12:30:56.911190+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f9ccb1b9ca0>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))"
+    },
+    "Reprieve": {
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 13,
+      "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
+      "last_recent_failure": "2026-05-02T12:30:56.911190+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 522 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/"
+    },
+    "Paul Hamlyn Foundation": {
+      "site_id": 64,
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 4,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-02T12:30:56.911190+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities"
+    },
     "RUSI": {
       "site_id": 65,
       "url": "https://www.rusi.org/about/our-people/job-opportunities",
@@ -40,18 +144,31 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Trust for London": {
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
+    "Impactt": {
+      "site_id": 71,
+      "url": "https://impacttlimited.com/about/careers/",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 9,
-      "first_recent_failure": "2026-04-30T07:01:01.295584+00:00",
-      "last_recent_failure": "2026-05-02T12:01:13.947755+00:00",
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-05-02T12:30:56.911190+00:00",
+      "last_recent_failure": "2026-05-02T12:30:56.911190+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/"
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://impacttlimited.com/about/careers/"
+    },
+    "twentyfifty": {
+      "site_id": 73,
+      "url": "https://twentyfifty.co.uk/contact/opportunities/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 4,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-02T12:30:56.911190+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/"
     }
   },
   "issues": [
@@ -1924,6 +2041,127 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T12:30:56.911190+00:00",
+      "site": "Palladium Group",
+      "site_id": 1,
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "type": "fetch_error",
+      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f9ccc0777a0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T12:30:56.911190+00:00",
+      "site": "FTI Consulting",
+      "site_id": 11,
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-05-02T12:30:56.911190+00:00",
+      "site": "FTI Consulting",
+      "site_id": 11,
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-05-04T12:30:56.911190+00:00"
+    },
+    {
+      "timestamp": "2026-05-02T12:30:56.911190+00:00",
+      "site": "Protection Approaches",
+      "site_id": 31,
+      "url": "https://protectionapproaches.org/current-vacancies",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='protectionapproaches.org', port=443): Max retries exceeded with url: /current-vacancies (Caused by ConnectTimeoutError(<HTTPSConnection(host='protectionapproaches.org', port=443) at 0x7f9ccb55af60>, 'Connection to protectionapproaches.org timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T12:30:56.911190+00:00",
+      "site": "REDRESS",
+      "site_id": 32,
+      "url": "https://redress.org/about-us/work-at-redress/current-vacancies/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://redress.org/about-us/work-at-redress/current-vacancies/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T12:30:56.911190+00:00",
+      "site": "HIS Hamburg",
+      "site_id": 43,
+      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T12:30:56.911190+00:00",
+      "site": "Institute for Government",
+      "site_id": 46,
+      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T12:30:56.911190+00:00",
+      "site": "Ceasefire Centre for Civilian Rights",
+      "site_id": 54,
+      "url": "https://www.ceasefire.org/work-with-us/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f9ccb1b9ca0>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T12:30:56.911190+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T12:30:56.911190+00:00",
+      "site": "Paul Hamlyn Foundation",
+      "site_id": 64,
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T12:30:56.911190+00:00",
+      "site": "Impactt",
+      "site_id": 71,
+      "url": "https://impacttlimited.com/about/careers/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://impacttlimited.com/about/careers/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T12:30:56.911190+00:00",
+      "site": "twentyfifty",
+      "site_id": 73,
+      "url": "https://twentyfifty.co.uk/contact/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/",
       "consecutive_count": 1
     }
   ]
