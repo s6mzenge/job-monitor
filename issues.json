@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-02T09:00:58.705989+00:00",
+  "last_updated": "2026-05-02T09:30:52.314625+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
-      "consecutive_failures": 9,
-      "total_recent_failures": 9,
+      "consecutive_failures": 10,
+      "total_recent_failures": 10,
       "first_recent_failure": "2026-05-02T05:00:58.602448+00:00",
-      "last_recent_failure": "2026-05-02T09:00:58.705989+00:00",
+      "last_recent_failure": "2026-05-02T09:30:52.314625+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -26,19 +26,6 @@
       "paused_until": "2026-05-03T05:30:51.840976+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Birkbeck, University of London": {
-      "site_id": 53,
-      "url": "https://cis7.bbk.ac.uk/home.html",
-      "method": "hireserve_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 4,
-      "first_recent_failure": "2026-05-02T05:00:58.602448+00:00",
-      "last_recent_failure": "2026-05-02T09:00:58.705989+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Hireserve API: 503 Server Error: Service Temporarily Unavailable for url: https://cis7.bbk.ac.uk/utf8/ic_job_feeds.feed_engine?p_web_site_id=6056&p_published_to=WWW&p_language=DEFAULT&p_direct=Y&p_format=MOBILE&p_include_exclude_from_list=N&p_search=&p_category_code_arr=17744-607542&p_category_code_arr=17744-607543&p_category_code_arr=17744-706568&p_category_code_arr=17744-706567"
     },
     "RUSI": {
       "site_id": 65,
@@ -1835,6 +1822,16 @@
       "type": "fetch_error",
       "message": "Hireserve API: 503 Server Error: Service Temporarily Unavailable for url: https://cis7.bbk.ac.uk/utf8/ic_job_feeds.feed_engine?p_web_site_id=6056&p_published_to=WWW&p_language=DEFAULT&p_direct=Y&p_format=MOBILE&p_include_exclude_from_list=N&p_search=&p_category_code_arr=17744-607542&p_category_code_arr=17744-607543&p_category_code_arr=17744-706568&p_category_code_arr=17744-706567",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T09:30:52.314625+00:00",
+      "site": "FTI Consulting",
+      "site_id": 11,
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "consecutive_count": 10
     }
   ]
 }
