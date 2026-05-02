@@ -1,14 +1,40 @@
 {
-  "last_updated": "2026-05-02T06:01:12.916362+00:00",
+  "last_updated": "2026-05-02T06:30:55.077963+00:00",
   "site_summary": {
+    "Open Society Foundations": {
+      "site_id": 2,
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
+      "method": "workday_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-05-02T06:30:55.077963+00:00",
+      "last_recent_failure": "2026-05-02T06:30:55.077963+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
+    },
+    "Pew Trusts": {
+      "site_id": 3,
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
+      "method": "workday_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-05-02T06:30:55.077963+00:00",
+      "last_recent_failure": "2026-05-02T06:30:55.077963+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
+    },
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
+      "consecutive_failures": 4,
+      "total_recent_failures": 4,
       "first_recent_failure": "2026-05-02T05:00:58.602448+00:00",
-      "last_recent_failure": "2026-05-02T06:01:12.916362+00:00",
+      "last_recent_failure": "2026-05-02T06:30:55.077963+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -27,14 +53,40 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
+    "Goldsmiths, University of London": {
+      "site_id": 52,
+      "url": "https://jobs.gold.ac.uk/job-search.html",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-05-02T06:30:55.077963+00:00",
+      "last_recent_failure": "2026-05-02T06:30:55.077963+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 503 Server Error: Service Temporarily Unavailable for url: https://jobs.gold.ac.uk/job-search.html"
+    },
+    "Birkbeck, University of London": {
+      "site_id": 53,
+      "url": "https://cis7.bbk.ac.uk/home.html",
+      "method": "hireserve_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-05-02T05:00:58.602448+00:00",
+      "last_recent_failure": "2026-05-02T06:30:55.077963+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Hireserve API: 503 Server Error: Service Temporarily Unavailable for url: https://cis7.bbk.ac.uk/utf8/ic_job_feeds.feed_engine?p_web_site_id=6056&p_published_to=WWW&p_language=DEFAULT&p_direct=Y&p_format=MOBILE&p_include_exclude_from_list=N&p_search=&p_category_code_arr=17744-607542&p_category_code_arr=17744-607543&p_category_code_arr=17744-706568&p_category_code_arr=17744-706567"
+    },
     "Reprieve": {
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 9,
+      "consecutive_failures": 3,
+      "total_recent_failures": 10,
       "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
-      "last_recent_failure": "2026-05-02T06:01:12.916362+00:00",
+      "last_recent_failure": "2026-05-02T06:30:55.077963+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -44,14 +96,40 @@
       "site_id": 65,
       "url": "https://www.rusi.org/about/our-people/job-opportunities",
       "method": "playwright",
-      "consecutive_failures": 15,
-      "total_recent_failures": 15,
+      "consecutive_failures": 16,
+      "total_recent_failures": 17,
       "first_recent_failure": "2026-05-01T12:06:03.894237+00:00",
-      "last_recent_failure": "2026-05-02T06:01:12.916362+00:00",
+      "last_recent_failure": "2026-05-02T06:30:55.077963+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-05-04T06:30:55.077963+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
+    },
+    "ERM": {
+      "site_id": 69,
+      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
+      "method": "workday_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-05-02T06:30:55.077963+00:00",
+      "last_recent_failure": "2026-05-02T06:30:55.077963+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible"
+      "last_message": "Workday API: 504 Server Error: Gateway Timeout for url: https://community.workday.com/maintenance-page"
+    },
+    "Edelman": {
+      "site_id": 78,
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
+      "method": "workday_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-04-29T14:05:43.157388+00:00",
+      "last_recent_failure": "2026-05-02T06:30:55.077963+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
     }
   },
   "issues": [
@@ -1554,6 +1632,107 @@
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
       "consecutive_count": 15
+    },
+    {
+      "timestamp": "2026-05-02T06:30:55.077963+00:00",
+      "site": "Open Society Foundations",
+      "site_id": 2,
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T06:30:55.077963+00:00",
+      "site": "Pew Trusts",
+      "site_id": 3,
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T06:30:55.077963+00:00",
+      "site": "FTI Consulting",
+      "site_id": 11,
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-05-02T06:30:55.077963+00:00",
+      "site": "Goldsmiths, University of London",
+      "site_id": 52,
+      "url": "https://jobs.gold.ac.uk/job-search.html",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Temporarily Unavailable for url: https://jobs.gold.ac.uk/job-search.html",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T06:30:55.077963+00:00",
+      "site": "Birkbeck, University of London",
+      "site_id": 53,
+      "url": "https://cis7.bbk.ac.uk/home.html",
+      "method": "hireserve_api",
+      "type": "fetch_error",
+      "message": "Hireserve API: 503 Server Error: Service Temporarily Unavailable for url: https://cis7.bbk.ac.uk/utf8/ic_job_feeds.feed_engine?p_web_site_id=6056&p_published_to=WWW&p_language=DEFAULT&p_direct=Y&p_format=MOBILE&p_include_exclude_from_list=N&p_search=&p_category_code_arr=17744-607542&p_category_code_arr=17744-607543&p_category_code_arr=17744-706568&p_category_code_arr=17744-706567",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T06:30:55.077963+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/",
+      "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-05-02T06:30:55.077963+00:00",
+      "site": "RUSI",
+      "site_id": 65,
+      "url": "https://www.rusi.org/about/our-people/job-opportunities",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-05-02T06:30:55.077963+00:00",
+      "site": "RUSI",
+      "site_id": 65,
+      "url": "https://www.rusi.org/about/our-people/job-opportunities",
+      "method": "playwright",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-05-04T06:30:55.077963+00:00"
+    },
+    {
+      "timestamp": "2026-05-02T06:30:55.077963+00:00",
+      "site": "ERM",
+      "site_id": 69,
+      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: 504 Server Error: Gateway Timeout for url: https://community.workday.com/maintenance-page",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T06:30:55.077963+00:00",
+      "site": "Edelman",
+      "site_id": 78,
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 1
     }
   ]
 }
