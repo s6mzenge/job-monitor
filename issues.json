@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-02T09:30:52.314625+00:00",
+  "last_updated": "2026-05-02T10:01:02.187368+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
-      "consecutive_failures": 10,
-      "total_recent_failures": 10,
+      "consecutive_failures": 11,
+      "total_recent_failures": 11,
       "first_recent_failure": "2026-05-02T05:00:58.602448+00:00",
-      "last_recent_failure": "2026-05-02T09:30:52.314625+00:00",
+      "last_recent_failure": "2026-05-02T10:01:02.187368+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -1832,6 +1832,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "consecutive_count": 10
+    },
+    {
+      "timestamp": "2026-05-02T10:01:02.187368+00:00",
+      "site": "FTI Consulting",
+      "site_id": 11,
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "consecutive_count": 11
     }
   ]
 }
