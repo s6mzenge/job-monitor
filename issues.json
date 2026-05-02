@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-02T14:30:54.119726+00:00",
+  "last_updated": "2026-05-02T15:00:59.581629+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -27,18 +27,18 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Reprieve": {
-      "site_id": 58,
-      "url": "https://reprieve.org/uk/work-for-reprieve/",
+    "Goldsmiths, University of London": {
+      "site_id": 52,
+      "url": "https://jobs.gold.ac.uk/job-search.html",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 14,
-      "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
-      "last_recent_failure": "2026-05-02T14:30:54.119726+00:00",
+      "total_recent_failures": 4,
+      "first_recent_failure": "2026-05-02T06:30:55.077963+00:00",
+      "last_recent_failure": "2026-05-02T15:00:59.581629+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 522 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/"
+      "last_message": "fetch_page: 503 Server Error: Service Temporarily Unavailable for url: https://jobs.gold.ac.uk/job-search.html"
     },
     "RUSI": {
       "site_id": 65,
@@ -2095,6 +2095,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 522 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T15:00:59.581629+00:00",
+      "site": "Goldsmiths, University of London",
+      "site_id": 52,
+      "url": "https://jobs.gold.ac.uk/job-search.html",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Temporarily Unavailable for url: https://jobs.gold.ac.uk/job-search.html",
       "consecutive_count": 1
     }
   ]
