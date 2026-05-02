@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-02T15:30:50.265441+00:00",
+  "last_updated": "2026-05-02T16:00:58.443472+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -26,6 +26,19 @@
       "paused_until": "2026-05-03T05:30:51.840976+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Goldsmiths, University of London": {
+      "site_id": 52,
+      "url": "https://jobs.gold.ac.uk/job-search.html",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-05-02T06:30:55.077963+00:00",
+      "last_recent_failure": "2026-05-02T16:00:58.443472+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 503 Server Error: Service Temporarily Unavailable for url: https://jobs.gold.ac.uk/job-search.html"
     },
     "RUSI": {
       "site_id": 65,
@@ -2086,6 +2099,16 @@
     },
     {
       "timestamp": "2026-05-02T15:00:59.581629+00:00",
+      "site": "Goldsmiths, University of London",
+      "site_id": 52,
+      "url": "https://jobs.gold.ac.uk/job-search.html",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Temporarily Unavailable for url: https://jobs.gold.ac.uk/job-search.html",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T16:00:58.443472+00:00",
       "site": "Goldsmiths, University of London",
       "site_id": 52,
       "url": "https://jobs.gold.ac.uk/job-search.html",
