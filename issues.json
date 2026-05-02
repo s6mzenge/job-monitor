@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-02T05:00:58.602448+00:00",
+  "last_updated": "2026-05-02T05:31:11.861137+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
+      "consecutive_failures": 2,
+      "total_recent_failures": 2,
       "first_recent_failure": "2026-05-02T05:00:58.602448+00:00",
-      "last_recent_failure": "2026-05-02T05:00:58.602448+00:00",
+      "last_recent_failure": "2026-05-02T05:31:11.861137+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -27,44 +27,31 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Birkbeck, University of London": {
-      "site_id": 53,
-      "url": "https://cis7.bbk.ac.uk/home.html",
-      "method": "hireserve_api",
+    "Reprieve": {
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-05-02T05:00:58.602448+00:00",
-      "last_recent_failure": "2026-05-02T05:00:58.602448+00:00",
+      "total_recent_failures": 8,
+      "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
+      "last_recent_failure": "2026-05-02T05:31:11.861137+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Hireserve API: 503 Server Error: Service Temporarily Unavailable for url: https://cis7.bbk.ac.uk/utf8/ic_job_feeds.feed_engine?p_web_site_id=6056&p_published_to=WWW&p_language=DEFAULT&p_direct=Y&p_format=MOBILE&p_include_exclude_from_list=N&p_search=&p_category_code_arr=17744-607542&p_category_code_arr=17744-607543&p_category_code_arr=17744-706568&p_category_code_arr=17744-706567"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='reprieve.org', port=443): Read timed out. (read timeout=30)"
     },
     "RUSI": {
       "site_id": 65,
       "url": "https://www.rusi.org/about/our-people/job-opportunities",
       "method": "playwright",
-      "consecutive_failures": 13,
-      "total_recent_failures": 13,
+      "consecutive_failures": 14,
+      "total_recent_failures": 14,
       "first_recent_failure": "2026-05-01T12:06:03.894237+00:00",
-      "last_recent_failure": "2026-05-02T05:00:58.602448+00:00",
+      "last_recent_failure": "2026-05-02T05:31:11.861137+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible"
-    },
-    "Trust for London": {
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 8,
-      "first_recent_failure": "2026-04-30T07:01:01.295584+00:00",
-      "last_recent_failure": "2026-05-02T05:00:58.602448+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/"
     }
   },
   "issues": [
@@ -1507,6 +1494,36 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T05:31:11.861137+00:00",
+      "site": "FTI Consulting",
+      "site_id": 11,
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-05-02T05:31:11.861137+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='reprieve.org', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-02T05:31:11.861137+00:00",
+      "site": "RUSI",
+      "site_id": 65,
+      "url": "https://www.rusi.org/about/our-people/job-opportunities",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
+      "consecutive_count": 14
     }
   ]
 }
