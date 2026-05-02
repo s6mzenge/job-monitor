@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-02T11:31:05.512173+00:00",
+  "last_updated": "2026-05-02T12:01:13.947755+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
-      "consecutive_failures": 14,
-      "total_recent_failures": 14,
+      "consecutive_failures": 15,
+      "total_recent_failures": 15,
       "first_recent_failure": "2026-05-02T05:00:58.602448+00:00",
-      "last_recent_failure": "2026-05-02T11:31:05.512173+00:00",
+      "last_recent_failure": "2026-05-02T12:01:13.947755+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -39,6 +39,19 @@
       "paused_until": "2026-05-04T06:30:55.077963+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Trust for London": {
+      "site_id": 66,
+      "url": "https://trustforlondon.org.uk/about/vacancies/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 9,
+      "first_recent_failure": "2026-04-30T07:01:01.295584+00:00",
+      "last_recent_failure": "2026-05-02T12:01:13.947755+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/"
     }
   },
   "issues": [
@@ -1892,6 +1905,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "consecutive_count": 14
+    },
+    {
+      "timestamp": "2026-05-02T12:01:13.947755+00:00",
+      "site": "FTI Consulting",
+      "site_id": 11,
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "consecutive_count": 15
+    },
+    {
+      "timestamp": "2026-05-02T12:01:13.947755+00:00",
+      "site": "Trust for London",
+      "site_id": 66,
+      "url": "https://trustforlondon.org.uk/about/vacancies/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
+      "consecutive_count": 1
     }
   ]
 }
