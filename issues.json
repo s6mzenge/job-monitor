@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T12:30:56.205378+00:00",
+  "last_updated": "2026-05-03T13:01:00.194088+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -18,14 +18,14 @@
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 15,
-      "total_recent_failures": 32,
+      "consecutive_failures": 16,
+      "total_recent_failures": 34,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-03T12:30:56.205378+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0"
+      "last_recent_failure": "2026-05-03T13:01:00.194088+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-05-05T13:01:00.194088+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
     },
     "RUSI": {
       "site_id": 65,
@@ -2537,6 +2537,27 @@
       "type": "fetch_error",
       "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
       "consecutive_count": 15
+    },
+    {
+      "timestamp": "2026-05-03T13:01:00.194088+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-05-03T13:01:00.194088+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-05-05T13:01:00.194088+00:00"
     }
   ]
 }
