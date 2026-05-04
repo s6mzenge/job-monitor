@@ -1,6 +1,49 @@
 {
   "date": "2026-05-04",
-  "generated_at": "2026-05-04T06:31:00.102139+00:00",
-  "run_count": 4,
-  "jobs": []
+  "generated_at": "2026-05-04T07:02:54.491599+00:00",
+  "run_count": 5,
+  "jobs": [
+    {
+      "title": "Fellow in Maternal and Fetal Medicine",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106329&p_spid=5149818",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is for a highly specialized medical professional in Obstetrics & Gynaecology, requiring specialist registration and extensive clinical experience in maternal and fetal medicine. The candidate's background is in International Relations and social sciences, with no medical qualifications or experience. There is a fundamental mismatch in field, required skills, and seniority level.",
+      "location": "Johannesburg, ZA",
+      "type": "Unfunded Fellow (2 posts)",
+      "deadline": "15 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Bibliothekar (w/m/d)für dasReferat – Bibliothek –",
+      "organisation": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-id1-aush-25052026-1173672",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The role requires a mandatory degree in Library Science or Information Science, which the candidate does not possess. While the candidate has strong research and administrative skills, they lack the specific library management and cataloging expertise (e.g., RDA standard) required for this specialized librarian position.",
+      "location": "Berlin/Germany",
+      "type": "Full-time (fixed-term until May 31, 2027)",
+      "deadline": "May 25, 2026",
+      "salary": "4.794,69 EUR brutto in Stufe 3 (Entgeltgruppe 10 TVöD) + 275 EUR brutto monthly allowance"
+    },
+    {
+      "title": "Ingenieur (w/m/d) für den Bereich Gebäudetechnik",
+      "organisation": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-bg3-51-25052026-1170590",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is for an engineer in building services, requiring a degree in mechanical engineering, building services engineering, or a related technical field, along with at least three years of professional experience. The candidate's background is in international relations, law, and social sciences, with no relevant technical qualifications or professional engineering experience. There is a complete mismatch in both field and required skills, and the experience level is far too senior for the candidate.",
+      "location": "Berlin",
+      "type": "Permanent, Full-time",
+      "deadline": "25. Mai 2026",
+      "salary": "Entgeltgruppe 12 TVöD (5.359,50 EUR brutto in Stufe 3) + 275 EUR brutto Zulage + Jahressonderzahlung"
+    }
+  ]
 }
