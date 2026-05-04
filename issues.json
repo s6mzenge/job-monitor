@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-04T10:31:20.848893+00:00",
+  "last_updated": "2026-05-04T11:01:08.492293+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -31,10 +31,10 @@
       "site_id": 65,
       "url": "https://www.rusi.org/about/our-people/job-opportunities",
       "method": "playwright",
-      "consecutive_failures": 9,
-      "total_recent_failures": 26,
+      "consecutive_failures": 10,
+      "total_recent_failures": 27,
       "first_recent_failure": "2026-05-01T12:06:03.894237+00:00",
-      "last_recent_failure": "2026-05-04T10:31:20.848893+00:00",
+      "last_recent_failure": "2026-05-04T11:01:08.492293+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -2698,6 +2698,16 @@
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
       "consecutive_count": 9
+    },
+    {
+      "timestamp": "2026-05-04T11:01:08.492293+00:00",
+      "site": "RUSI",
+      "site_id": 65,
+      "url": "https://www.rusi.org/about/our-people/job-opportunities",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
+      "consecutive_count": 10
     }
   ]
 }
