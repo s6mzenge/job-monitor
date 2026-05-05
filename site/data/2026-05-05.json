@@ -1,7 +1,7 @@
 {
   "date": "2026-05-05",
-  "generated_at": "2026-05-05T14:01:11.588777+00:00",
-  "run_count": 19,
+  "generated_at": "2026-05-05T14:31:57.166949+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Manager, Applied AI Engineering",
@@ -58,6 +58,20 @@
       "type": "Fixed Term (3 months)",
       "deadline": "05/11/2026",
       "salary": "$30 to $35 per hour"
+    },
+    {
+      "title": "Lecturer in Music Performance",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/874692",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit as the candidate's academic background and interests are entirely in international relations, law, and policy, with no stated experience or interest in music performance or ethnomusicology. The job also requires a completed PhD in Music or a related field, a strong profile as a performer and educator, and a proven track record in professional performance, none of which the candidate possesses.",
+      "location": "Bloomsbury, Camden, Greater London, United Kingdom",
+      "type": "Contract * Part time",
+      "deadline": "Sunday, May 31, 2026",
+      "salary": "£31,141.53 - £36,629.14 pro rata"
     }
   ]
 }
