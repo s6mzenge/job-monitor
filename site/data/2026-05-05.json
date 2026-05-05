@@ -1,7 +1,7 @@
 {
   "date": "2026-05-05",
-  "generated_at": "2026-05-05T17:02:07.030608+00:00",
-  "run_count": 25,
+  "generated_at": "2026-05-05T17:35:22.171721+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Manager, Applied AI Engineering",
@@ -141,6 +141,34 @@
       "location": "Not specified",
       "type": "3-year fixed-term contract",
       "deadline": "12 May 2026, close of business",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Finance Manager - 12mth Fixed Term Contract (maternity cover)",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7724597003?gh_jid=7724597003",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a complete mismatch for the candidate. The candidate's academic background and interests are in international relations, law, and policy, while this is a senior finance management position requiring specific financial qualifications (ACCA, CIMA, AAT) and extensive experience in financial accounting and team management. The candidate lacks the required professional experience and core financial skills.",
+      "location": "London, United Kingdom",
+      "type": "Contract",
+      "deadline": "Not specified",
+      "salary": "Competitive salary (depending on experience)"
+    },
+    {
+      "title": "Group Reporting Senior Accountant",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Group-Reporting-Senior-Accountant-B37-7ES/1390495533",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is for a Group Reporting Senior Accountant, requiring a professionally qualified accountant with specific financial reporting knowledge (IFRS, FRS102) and experience with ERP systems. The candidate's academic and professional background is in international relations, law, and higher education policy, with no relevant accounting qualifications or experience. The seniority level is also far beyond their current experience.",
+      "location": "Birmingham, GB, B37 7ES",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
