@@ -1,7 +1,7 @@
 {
   "date": "2026-05-05",
-  "generated_at": "2026-05-05T15:31:01.325662+00:00",
-  "run_count": 22,
+  "generated_at": "2026-05-05T16:02:33.430509+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Manager, Applied AI Engineering",
@@ -100,6 +100,20 @@
       "type": "Permanent, full-time or part-time",
       "deadline": "5. Juni 2026",
       "salary": "Entgeltgruppe 9b (TVöD) / Besoldungsgruppe A 9m (Bundesbesoldungsordnung) - approx. 4,267.03 Euro brutto (Erfahrungsstufe 3) + 265.00 Euro Ministerialzulage with relevant experience."
+    },
+    {
+      "title": "Open Source Analyst – Violent Extremist Organisations – Pakistan Specialist",
+      "organisation": "Centre for Information Resilience",
+      "url": "https://apply.workable.com/centre-for-information-resilience/j/C2F9640948",
+      "match": "high",
+      "field_score": "4",
+      "skills_score": "5",
+      "seniority_score": "4",
+      "reason": "The candidate demonstrates strong alignment in field, with a focus on International Relations, International Law, and an interest in security studies and political psychology relevant to violent extremism. Their research, data analysis, policy writing, and software skills (SPSS, Python) are an excellent match. While the \"Pakistan Specialist\" aspect is not explicitly covered, their strong academic background and research experience make them well-suited for a junior analyst role.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
