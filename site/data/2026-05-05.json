@@ -1,0 +1,21 @@
+{
+  "date": "2026-05-05",
+  "generated_at": "2026-05-05T05:01:02.920598+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Manager, Applied AI Engineering",
+      "organisation": "Google DeepMind",
+      "url": "https://job-boards.greenhouse.io/deepmind/jobs/7106323",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a poor match due to a fundamental mismatch in field, skills, and seniority. The job requires extensive professional experience (5-8+ years) in software development, machine learning engineering, and technical leadership, which the candidate lacks. The candidate's academic background and interests are in international relations and social sciences, not applied AI or software engineering.",
+      "location": "London, UK",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
