@@ -1,7 +1,7 @@
 {
   "date": "2026-05-05",
-  "generated_at": "2026-05-05T10:31:03.093956+00:00",
-  "run_count": 12,
+  "generated_at": "2026-05-05T11:01:08.068273+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Manager, Applied AI Engineering",
@@ -29,6 +29,20 @@
       "location": "Johannesburg,ZA",
       "type": "Full-time",
       "deadline": "12 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Researcher 40% (AC.09.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106293&p_spid=5147822",
+      "match": "high",
+      "field_score": "4",
+      "skills_score": "5",
+      "seniority_score": "5",
+      "reason": "The candidate is an excellent match for this role, possessing a strong academic background, relevant student assistant experience in higher education research and policy, and a proven track record in academic writing and publication. While the specific health science focus is new, the candidate's explicit interest in higher education policy and policy research, combined with their strong research, writing, and project management skills, makes them a highly competitive applicant. The experience level and part-time nature are also perfectly aligned with the candidate's current stage.",
+      "location": "Johannesburg, ZA",
+      "type": "Part-time, one-year fixed-term contract",
+      "deadline": "30 April 2026",
       "salary": "Not specified"
     }
   ]

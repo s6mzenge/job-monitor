@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-05T10:31:03.093956+00:00",
+  "last_updated": "2026-05-05T11:01:08.068273+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -3172,6 +3172,149 @@
       "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
       "job_title": "Associate Researcher 40% (AC.09.4)",
       "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106293&p_spid=5147822"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "Open Society Foundations",
+      "site_id": 2,
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
+      "method": "workday_api",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Internship (Graduate or Masters Associate)",
+      "job_url": "https://osfglobal.wd5.myworkdayjobs.com/job/New-York/Internship--Graduate-or-Masters-Associate-_JR-0003812"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "Dalberg",
+      "site_id": 14,
+      "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Project Manager- Media",
+      "job_url": "https://dalberg.hua.hrsmart.com/hr/ats/Posting/view/608"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Business Development Officer (AD.05.3)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106349&p_spid=5150818"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Basic Surveyor",
+      "job_url": "https://jobs.lrqa.com/job/Lyon-Basic-Surveyor-69003/1291288701"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Inspection Coordinator",
+      "job_url": "https://jobs.lrqa.com/job/Mumbai-Inspection-Coordinator-400-093/1389754933"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Subcontractor for LRQA",
+      "job_url": "https://jobs.lrqa.com/job/Sofia-Subcontractor-for-LRQA/1290699101"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "LRQA Sub-contractor",
+      "job_url": "https://jobs.lrqa.com/job/Sofia-LRQA-Sub-contractor/1290698701"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lead Assessor Automotive",
+      "job_url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-Automotive-69003/1370906333"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "DevOps Engineer",
+      "job_url": "https://jobs.lrqa.com/job/Birmingham-DevOps-Engineer-B37-7ES/1371005533"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lead Assessor QSE",
+      "job_url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-QSE-69003/1371037333"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lead Assessor Cyber 27001",
+      "job_url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-Cyber-27001-69003/1371017033"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lead Assessor IFS BRC",
+      "job_url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-IFS-BRC-69003/1370901533"
+    },
+    {
+      "timestamp": "2026-05-05T11:01:08.068273+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lead Assessor QSE",
+      "job_url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-QSE-69003/1371040233"
     }
   ]
 }
