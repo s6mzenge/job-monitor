@@ -1,7 +1,7 @@
 {
   "date": "2026-05-05",
-  "generated_at": "2026-05-05T16:02:33.430509+00:00",
-  "run_count": 23,
+  "generated_at": "2026-05-05T16:31:33.512453+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Manager, Applied AI Engineering",
@@ -113,6 +113,34 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Project Manager- Media",
+      "organisation": "Dalberg",
+      "url": "https://dalberg.hua.hrsmart.com/hr/ats/Posting/view/608",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "While the candidate's interests in international relations and policy research align with Dalberg's global development focus, the role's emphasis on strategic communication, campaign work, and project management is a significant skill gap. Crucially, the requirement for a minimum of 4 years of professional experience, including 2 years as a project manager, makes this role far too senior for a candidate with only part-time student assistant experience.",
+      "location": "Nairobi, KE (Africa multi-location)",
+      "type": "Full-time",
+      "deadline": "30/4/2023",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Business Development Officer (AD.05.3)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106349&p_spid=5150818",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is heavily focused on the commercialisation of research, technology transfer, and business development, which is a significant departure from the candidate's academic background and interests in international relations, law, and social theory. While the candidate possesses strong general research, administrative, and coordination skills, they lack the specific 3 years of professional experience in technology transfer or commercialisation explicitly required, as well as the specialised knowledge in commercial due diligence, licensing, and spinout support.",
+      "location": "Not specified",
+      "type": "3-year fixed-term contract",
+      "deadline": "12 May 2026, close of business",
       "salary": "Not specified"
     }
   ]
