@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-05T10:01:13.816076+00:00",
+  "last_updated": "2026-05-05T10:31:03.093956+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -26,19 +26,6 @@
       "paused_until": "2026-05-05T13:01:00.194088+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Impunity Watch": {
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 11,
-      "first_recent_failure": "2026-04-29T15:01:18.017646+00:00",
-      "last_recent_failure": "2026-05-05T10:01:13.816076+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/"
     },
     "RUSI": {
       "site_id": 65,
@@ -3152,6 +3139,39 @@
       "type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-05T10:31:03.093956+00:00",
+      "site": "Open Society Foundations",
+      "site_id": 2,
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
+      "method": "workday_api",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Internship (Graduate or Masters Associate)",
+      "job_url": "https://osfglobal.wd5.myworkdayjobs.com/job/New-York/Internship--Graduate-or-Masters-Associate-_JR-0003812"
+    },
+    {
+      "timestamp": "2026-05-05T10:31:03.093956+00:00",
+      "site": "Dalberg",
+      "site_id": 14,
+      "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Project Manager- Media",
+      "job_url": "https://dalberg.hua.hrsmart.com/hr/ats/Posting/view/608"
+    },
+    {
+      "timestamp": "2026-05-05T10:31:03.093956+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Associate Researcher 40% (AC.09.4)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106293&p_spid=5147822"
     }
   ]
 }
