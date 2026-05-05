@@ -1,7 +1,7 @@
 {
   "date": "2026-05-05",
-  "generated_at": "2026-05-05T11:01:08.068273+00:00",
-  "run_count": 13,
+  "generated_at": "2026-05-05T11:31:03.152355+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Manager, Applied AI Engineering",
@@ -44,6 +44,20 @@
       "type": "Part-time, one-year fixed-term contract",
       "deadline": "30 April 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Internship (Graduate or Masters Associate)",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/New-York/Internship--Graduate-or-Masters-Associate-_JR-0003812",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "The role is an excellent fit for the candidate's academic stage (MSc in progress). While the Open Society Foundations' mission aligns with the candidate's interests in international relations and policy, the specific focus of the Soros Economic Development Fund on impact investment and financial analysis is a significant gap in the candidate's background. However, their strong research, data analysis, policy writing, and multilingual skills are highly relevant to other aspects of the role.",
+      "location": "New York",
+      "type": "Fixed Term (3 months)",
+      "deadline": "05/11/2026",
+      "salary": "$30 to $35 per hour"
     }
   ]
 }
