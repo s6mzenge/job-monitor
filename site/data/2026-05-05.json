@@ -1,7 +1,7 @@
 {
   "date": "2026-05-05",
-  "generated_at": "2026-05-05T14:31:57.166949+00:00",
-  "run_count": 20,
+  "generated_at": "2026-05-05T15:01:05.130849+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Manager, Applied AI Engineering",
@@ -72,6 +72,34 @@
       "type": "Contract * Part time",
       "deadline": "Sunday, May 31, 2026",
       "salary": "£31,141.53 - £36,629.14 pro rata"
+    },
+    {
+      "title": "Senior Planning Advisor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Leverkusen-Senior-Planning-Advisor-51373/1390419533",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "The role is a poor fit due to a significant mismatch in field and skills. The candidate's academic background and interests are in international relations, law, and policy research, which do not align with a client management/operations role in an audit and certification company. Crucially, the job requires fluency in Czech, which the candidate does not possess. The \"Senior\" title also suggests a level of professional experience beyond the candidate's current student assistant roles.",
+      "location": "Leverkusen, DE, 51373",
+      "type": "Employee Fixed Term",
+      "deadline": "Not specified (ongoing selection, early application encouraged)",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Technikerin/Techniker (w/m/d) im Referat Gebäudetechnik",
+      "organisation": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-bg3-638-05062026-1145728",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a highly specialized technical position in building services and energy management, requiring specific engineering qualifications or extensive professional experience in automation and building control systems. The candidate's background is entirely in international relations, social sciences, and policy research, with no relevant technical skills or experience.",
+      "location": "Berlin, Germany",
+      "type": "Permanent, full-time or part-time",
+      "deadline": "5. Juni 2026",
+      "salary": "Entgeltgruppe 9b (TVöD) / Besoldungsgruppe A 9m (Bundesbesoldungsordnung) - approx. 4,267.03 Euro brutto (Erfahrungsstufe 3) + 265.00 Euro Ministerialzulage with relevant experience."
     }
   ]
 }

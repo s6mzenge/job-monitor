@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-05T14:31:57.166949+00:00",
+  "last_updated": "2026-05-05T15:01:05.130849+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -14,14 +14,27 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
+    "SOAS University of London": {
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 17,
+      "first_recent_failure": "2026-04-29T14:05:43.157388+00:00",
+      "last_recent_failure": "2026-05-05T15:01:05.130849+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h3 a[href*='/job/']\") to be visible"
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 38,
+      "consecutive_failures": 5,
+      "total_recent_failures": 39,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-05T14:31:57.166949+00:00",
+      "last_recent_failure": "2026-05-05T15:01:05.130849+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -44,10 +57,10 @@
       "site_id": 66,
       "url": "https://trustforlondon.org.uk/about/vacancies/",
       "method": "html",
-      "consecutive_failures": 6,
-      "total_recent_failures": 32,
+      "consecutive_failures": 7,
+      "total_recent_failures": 33,
       "first_recent_failure": "2026-04-30T07:01:01.295584+00:00",
-      "last_recent_failure": "2026-05-05T14:31:57.166949+00:00",
+      "last_recent_failure": "2026-05-05T15:01:05.130849+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -4490,6 +4503,168 @@
       "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
       "job_title": "Technikerin/Techniker (w/m/d) im Referat Gebäudetechnik",
       "job_url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-bg3-638-05062026-1145728"
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "Dalberg",
+      "site_id": 14,
+      "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Project Manager- Media",
+      "job_url": "https://dalberg.hua.hrsmart.com/hr/ats/Posting/view/608"
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "SOAS University of London",
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h3 a[href*='/job/']\") to be visible",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
+      "consecutive_count": 5
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Business Development Officer (AD.05.3)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106349&p_spid=5150818"
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "Centre for Information Resilience",
+      "site_id": 57,
+      "url": "https://www.info-res.org/careers/current-openings/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Open Source Analyst – Violent Extremist Organisations – Pakistan Specialist",
+      "job_url": "https://apply.workable.com/centre-for-information-resilience/j/C2F9640948"
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "Trust for London",
+      "site_id": 66,
+      "url": "https://trustforlondon.org.uk/about/vacancies/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
+      "consecutive_count": 7
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Basic Surveyor",
+      "job_url": "https://jobs.lrqa.com/job/Lyon-Basic-Surveyor-69003/1291288701"
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Inspection Coordinator",
+      "job_url": "https://jobs.lrqa.com/job/Mumbai-Inspection-Coordinator-400-093/1389754933"
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Subcontractor for LRQA",
+      "job_url": "https://jobs.lrqa.com/job/Sofia-Subcontractor-for-LRQA/1290699101"
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "LRQA Sub-contractor",
+      "job_url": "https://jobs.lrqa.com/job/Sofia-LRQA-Sub-contractor/1290698701"
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lead Assessor Automotive",
+      "job_url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-Automotive-69003/1370906333"
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "DevOps Engineer",
+      "job_url": "https://jobs.lrqa.com/job/Birmingham-DevOps-Engineer-B37-7ES/1371005533"
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lead Assessor QSE",
+      "job_url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-QSE-69003/1371037333"
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lead Assessor Cyber 27001",
+      "job_url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-Cyber-27001-69003/1371017033"
+    },
+    {
+      "timestamp": "2026-05-05T15:01:05.130849+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lead Assessor IFS BRC",
+      "job_url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-IFS-BRC-69003/1370901533"
     }
   ]
 }
