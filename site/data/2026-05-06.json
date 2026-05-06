@@ -1,7 +1,7 @@
 {
   "date": "2026-05-06",
-  "generated_at": "2026-05-06T12:01:00.281476+00:00",
-  "run_count": 15,
+  "generated_at": "2026-05-06T12:31:02.476764+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Head of Financial Controls",
@@ -128,6 +128,20 @@
       "type": "Part Time, Permanent",
       "deadline": "28/05/2026",
       "salary": "£52,511 - £71,157"
+    },
+    {
+      "title": "Coordinator",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Coordinator-12950/1390819733",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "The role's focus on operational coordination within ESG services has very limited alignment with the candidate's strong academic background and interests in international relations, law, and policy research. While the candidate possesses many transferable skills like organization, communication, and MS Office proficiency, the role requires a minimum of 2 years of experience in a similar role, which the candidate's student assistant experience (approx. 1 year 7 months) does not fully meet. The core of the role does not leverage the candidate's advanced research and analytical capabilities.",
+      "location": "ID, 12950 (Indonesia)",
+      "type": "Not specified",
+      "deadline": "6 May 2026",
+      "salary": "Not specified"
     }
   ]
 }
