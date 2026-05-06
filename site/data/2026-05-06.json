@@ -1,7 +1,7 @@
 {
   "date": "2026-05-06",
-  "generated_at": "2026-05-06T06:01:08.272358+00:00",
-  "run_count": 3,
+  "generated_at": "2026-05-06T06:32:51.003833+00:00",
+  "run_count": 4,
   "jobs": [
     {
       "title": "Head of Financial Controls",
@@ -30,6 +30,20 @@
       "type": "Not specified (implied Full-time)",
       "deadline": "4 May 2026",
       "salary": "Not specified (attractive remuneration)"
+    },
+    {
+      "title": "DevOps Engineer",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-DevOps-Engineer-B37-7ES/1371005533",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "The candidate's background is entirely in international relations, law, and policy research, which is a complete mismatch for a highly technical DevOps Engineer role. The job requires extensive experience (4+ years) in IT platforms, cloud infrastructure, and specific DevOps tools, none of which the candidate possesses. While the candidate lists Python, it is not in the context of DevOps automation, and they lack all other core technical skills required.",
+      "location": "Birmingham, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
