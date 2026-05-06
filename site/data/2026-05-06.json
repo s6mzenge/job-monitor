@@ -1,7 +1,7 @@
 {
   "date": "2026-05-06",
-  "generated_at": "2026-05-06T11:30:59.705064+00:00",
-  "run_count": 14,
+  "generated_at": "2026-05-06T12:01:00.281476+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Head of Financial Controls",
@@ -114,6 +114,20 @@
       "type": "Full-time",
       "deadline": "4 May 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Head of Initial Teacher Education",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/head-of-initial-teacher-education-610830.html",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "This role is significantly too senior for the candidate, requiring a proven track record in strategic management and significant recent experience in university-based Teacher Education Programmes. While the candidate has strong research and administrative skills related to higher education policy, their academic background and experience do not align with the specific field of Initial Teacher Education or the leadership responsibilities of a \"Head of\" role.",
+      "location": "London, UK",
+      "type": "Part Time, Permanent",
+      "deadline": "28/05/2026",
+      "salary": "£52,511 - £71,157"
     }
   ]
 }
