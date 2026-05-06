@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06T17:01:11.448431+00:00",
+  "last_updated": "2026-05-06T17:30:59.076584+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -27,27 +27,14 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Reprieve": {
-      "site_id": 58,
-      "url": "https://reprieve.org/uk/work-for-reprieve/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 20,
-      "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
-      "last_recent_failure": "2026-05-06T17:01:11.448431+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='reprieve.org', port=443): Read timed out. (read timeout=30)"
-    },
     "RUSI": {
       "site_id": 65,
       "url": "https://www.rusi.org/about/our-people/job-opportunities",
       "method": "playwright",
-      "consecutive_failures": 7,
-      "total_recent_failures": 41,
+      "consecutive_failures": 8,
+      "total_recent_failures": 42,
       "first_recent_failure": "2026-05-01T12:06:03.894237+00:00",
-      "last_recent_failure": "2026-05-06T17:01:11.448431+00:00",
+      "last_recent_failure": "2026-05-06T17:30:59.076584+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -6961,6 +6948,60 @@
     },
     {
       "timestamp": "2026-05-06T17:01:11.448431+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Subcontractor for LRQA",
+      "job_url": "https://jobs.lrqa.com/job/Sofia-Subcontractor-for-LRQA/1290699101"
+    },
+    {
+      "timestamp": "2026-05-06T17:30:59.076584+00:00",
+      "site": "Palladium Group",
+      "site_id": 1,
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Deputy Communications Manager – Editorial and Digital Content Lead, UK PACT",
+      "job_url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25128?c=palladium"
+    },
+    {
+      "timestamp": "2026-05-06T17:30:59.076584+00:00",
+      "site": "jobs.ac.uk",
+      "site_id": 6,
+      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Associate Lecturer (Teaching) in Quantitative Methods",
+      "job_url": "https://www.jobs.ac.uk/job/DRL493/associate-lecturer-teaching-in-quantitative-methods"
+    },
+    {
+      "timestamp": "2026-05-06T17:30:59.076584+00:00",
+      "site": "Sibylline",
+      "site_id": 8,
+      "url": "https://careers.smartrecruiters.com/SibyllineLtd/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Intelligence Analyst - LATAM",
+      "job_url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000124913717-intelligence-analyst-latam"
+    },
+    {
+      "timestamp": "2026-05-06T17:30:59.076584+00:00",
+      "site": "RUSI",
+      "site_id": 65,
+      "url": "https://www.rusi.org/about/our-people/job-opportunities",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
+      "consecutive_count": 8
+    },
+    {
+      "timestamp": "2026-05-06T17:30:59.076584+00:00",
       "site": "LRQA",
       "site_id": 70,
       "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
