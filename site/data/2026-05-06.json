@@ -1,7 +1,7 @@
 {
   "date": "2026-05-06",
-  "generated_at": "2026-05-06T07:01:11.594276+00:00",
-  "run_count": 5,
+  "generated_at": "2026-05-06T07:30:55.405912+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Head of Financial Controls",
@@ -44,6 +44,62 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Group Finance Manager",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25127?c=palladium",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit for Moritz Engel. The position of Group Finance Manager requires extensive experience and specialized skills in corporate finance and accounting, which do not align with Moritz's academic background in international relations and social sciences, nor his research and administrative assistant experience. The seniority level is also far beyond his current stage of career development.",
+      "location": "United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Auditor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Lead-Auditor-B37-7ES/1381124433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a poor match as it requires extensive practical experience in information technology and information security auditing, a field entirely unrelated to the candidate's academic background in international relations, law, and social sciences. The position of \"Lead Auditor\" is also far too senior, demanding significant professional experience and the ability to guide other auditors, which the candidate does not possess.",
+      "location": "Birmingham, GB",
+      "type": "Full-time",
+      "deadline": "6 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Financial Controls Accountant",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Financial-Controls-Accountant-B37-7ES/1390497833",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This role is a poor match as it is entirely within finance and accounting, which does not align with the candidate's academic background or interests in international relations, law, and policy. While the candidate possesses strong general research and analytical skills, they lack the specific financial controls, risk assessment, and accounting expertise required for this position. The role also appears to require a level of professional experience in finance that the candidate does not have.",
+      "location": "Birmingham, GB",
+      "type": "Employee Regular (Full-time implied)",
+      "deadline": "May 5, 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Associate / Manager, Responsible Sourcing Client Management",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Villas-Universidad-Senior-Associate-Manager%2C-Responsible-Sourcing-Client-Management-PUE-72197/1390466833",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit due to a significant mismatch in both field and experience level. The candidate's academic focus on international relations, law, and social theory is far removed from corporate social responsibility, responsible sourcing, and supply chain management. Furthermore, the role requires 3-5 years of professional experience, including 1-2 years in the specific industry, which the candidate, with only student assistant experience, does not possess.",
+      "location": "Mexico",
+      "type": "Full-time (implied)",
+      "deadline": "5 May 2026",
+      "salary": "Competitive salary and benefits package"
     }
   ]
 }

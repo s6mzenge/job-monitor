@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06T07:01:11.594276+00:00",
+  "last_updated": "2026-05-06T07:30:55.405912+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -14,31 +14,31 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "ECFR": {
-      "site_id": 19,
-      "url": "https://ecfr.eu/jobs/",
-      "method": "personio_xml",
+    "SWP Berlin": {
+      "site_id": 21,
+      "url": "https://www.swp-berlin.org/karriere",
+      "method": "html",
       "consecutive_failures": 1,
       "total_recent_failures": 1,
-      "first_recent_failure": "2026-05-06T07:01:11.594276+00:00",
-      "last_recent_failure": "2026-05-06T07:01:11.594276+00:00",
+      "first_recent_failure": "2026-05-06T07:30:55.405912+00:00",
+      "last_recent_failure": "2026-05-06T07:30:55.405912+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Personio XML: 502 Server Error: Bad Gateway for url: https://ecfr.jobs.personio.com/xml"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.swp-berlin.org', port=443): Max retries exceeded with url: /karriere (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.swp-berlin.org', port=443) at 0x7f1c1ad97710>, 'Connection to www.swp-berlin.org timed out. (connect timeout=30)'))"
     },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 15,
-      "total_recent_failures": 49,
+      "consecutive_failures": 16,
+      "total_recent_failures": 51,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-06T07:01:11.594276+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0"
+      "last_recent_failure": "2026-05-06T07:30:55.405912+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-05-08T07:30:55.405912+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
     },
     "RUSI": {
       "site_id": 65,
@@ -5867,6 +5867,70 @@
     },
     {
       "timestamp": "2026-05-06T07:01:11.594276+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Subcontractor for LRQA",
+      "job_url": "https://jobs.lrqa.com/job/Sofia-Subcontractor-for-LRQA/1290699101"
+    },
+    {
+      "timestamp": "2026-05-06T07:30:55.405912+00:00",
+      "site": "jobs.ac.uk",
+      "site_id": 6,
+      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "LSE Fellow in International Social and Public Policy",
+      "job_url": "https://www.jobs.ac.uk/job/DRJ165/lse-fellow-in-international-social-and-public-policy"
+    },
+    {
+      "timestamp": "2026-05-06T07:30:55.405912+00:00",
+      "site": "SWP Berlin",
+      "site_id": 21,
+      "url": "https://www.swp-berlin.org/karriere",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.swp-berlin.org', port=443): Max retries exceeded with url: /karriere (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.swp-berlin.org', port=443) at 0x7f1c1ad97710>, 'Connection to www.swp-berlin.org timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-06T07:30:55.405912+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-05-06T07:30:55.405912+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-05-08T07:30:55.405912+00:00"
+    },
+    {
+      "timestamp": "2026-05-06T07:30:55.405912+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Inspection Coordinator",
+      "job_url": "https://jobs.lrqa.com/job/Mumbai-Inspection-Coordinator-400-093/1389754933"
+    },
+    {
+      "timestamp": "2026-05-06T07:30:55.405912+00:00",
       "site": "LRQA",
       "site_id": 70,
       "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
