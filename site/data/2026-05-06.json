@@ -1,0 +1,35 @@
+{
+  "date": "2026-05-06",
+  "generated_at": "2026-05-06T05:01:09.215547+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Head of Financial Controls",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Head-of-Financial-Controls-B37-7ES/1390493433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a complete mismatch for the candidate. The position requires a qualified accountant with extensive experience in financial controls, IFRS, and FRS102, which is entirely outside the candidate's academic background in international relations, law, and social sciences. The candidate also lacks the specific financial skills and the significant professional experience required for a \"Head of\" level role.",
+      "location": "Birmingham, GB, B37 7ES",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Basic Surveyor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lyon-Basic-Surveyor-69003/1291288701",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a poor match as it requires a strong technical background in mechanics and/or materials, with a minimum of 3 years of experience in industrial inspection, quality, or project management. The candidate's expertise lies in international relations, law, and social sciences, with academic research and administrative experience, which does not align with the technical requirements or the seniority level of this position.",
+      "location": "Lyon, FR",
+      "type": "Not specified (implied Full-time)",
+      "deadline": "4 May 2026",
+      "salary": "Not specified (attractive remuneration)"
+    }
+  ]
+}
