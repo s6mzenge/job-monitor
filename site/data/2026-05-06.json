@@ -1,7 +1,7 @@
 {
   "date": "2026-05-06",
-  "generated_at": "2026-05-06T16:31:05.166983+00:00",
-  "run_count": 24,
+  "generated_at": "2026-05-06T17:01:11.448431+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Head of Financial Controls",
@@ -142,6 +142,20 @@
       "type": "Not specified",
       "deadline": "6 May 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "LSE Fellow in International Social and Public Policy",
+      "organisation": "London School of Economics and Political Science",
+      "url": "https://www.jobs.ac.uk/job/DRJ165/lse-fellow-in-international-social-and-public-policy",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "While the candidate's academic interests in international relations, policy research, sociology, and political science align well with the department's multidisciplinary approach, there are critical gaps in the required qualifications. The role explicitly requires candidates to have completed or be close to obtaining a PhD by the start date, which the candidate, currently pursuing an MSc, does not meet. Additionally, the candidate lacks explicit teaching experience at the university level, which is a key requirement for this academic fellowship.",
+      "location": "London",
+      "type": "Full Time, Fixed-Term/Contract",
+      "deadline": "31st May 2026",
+      "salary": "£43,277 to £51,714 per annum inclusive with potential to progress to £55,497 pa inclusive of London allowance"
     }
   ]
 }
