@@ -1,7 +1,7 @@
 {
   "date": "2026-05-06",
-  "generated_at": "2026-05-06T11:01:14.674565+00:00",
-  "run_count": 13,
+  "generated_at": "2026-05-06T11:30:59.705064+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Head of Financial Controls",
@@ -100,6 +100,20 @@
       "type": "Full-time (implied)",
       "deadline": "5 May 2026",
       "salary": "Competitive salary and benefits package"
+    },
+    {
+      "title": "Inspection Coordinator",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Mumbai-Inspection-Coordinator-400-093/1389754933",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The role requires a minimum of 5+ years of professional experience and a background in engineering or industrial inspection, which the candidate lacks. The candidate's academic and research focus on international relations and social policy is entirely misaligned with this techno-commercial inspection coordination role.",
+      "location": "Mumbai, IN",
+      "type": "Full-time",
+      "deadline": "4 May 2026",
+      "salary": "Not specified"
     }
   ]
 }
