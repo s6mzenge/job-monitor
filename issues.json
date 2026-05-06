@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06T08:30:58.019701+00:00",
+  "last_updated": "2026-05-06T09:00:59.389399+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -6012,6 +6012,50 @@
       "method": "html",
       "type": "gemini_call_failed",
       "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Subcontractor for LRQA",
+      "job_url": "https://jobs.lrqa.com/job/Sofia-Subcontractor-for-LRQA/1290699101"
+    },
+    {
+      "timestamp": "2026-05-06T09:00:59.389399+00:00",
+      "site": "jobs.ac.uk",
+      "site_id": 6,
+      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "LSE Fellow in International Social and Public Policy",
+      "job_url": "https://www.jobs.ac.uk/job/DRJ165/lse-fellow-in-international-social-and-public-policy"
+    },
+    {
+      "timestamp": "2026-05-06T09:00:59.389399+00:00",
+      "site": "Goldsmiths, University of London",
+      "site_id": 52,
+      "url": "https://jobs.gold.ac.uk/job-search.html",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Head of Initial Teacher Education",
+      "job_url": "https://jobs.gold.ac.uk/vacancy/head-of-initial-teacher-education-610830.html"
+    },
+    {
+      "timestamp": "2026-05-06T09:00:59.389399+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Inspection Coordinator",
+      "job_url": "https://jobs.lrqa.com/job/Mumbai-Inspection-Coordinator-400-093/1389754933"
+    },
+    {
+      "timestamp": "2026-05-06T09:00:59.389399+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
       "job_title": "Subcontractor for LRQA",
       "job_url": "https://jobs.lrqa.com/job/Sofia-Subcontractor-for-LRQA/1290699101"
     }
