@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-07T11:01:09.916324+00:00",
+  "last_updated": "2026-05-07T11:30:55.035331+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
-      "consecutive_failures": 8,
-      "total_recent_failures": 42,
+      "consecutive_failures": 9,
+      "total_recent_failures": 43,
       "first_recent_failure": "2026-05-02T05:00:58.602448+00:00",
-      "last_recent_failure": "2026-05-07T11:01:09.916324+00:00",
+      "last_recent_failure": "2026-05-07T11:30:55.035331+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -7520,6 +7520,49 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607",
       "consecutive_count": 8
+    },
+    {
+      "timestamp": "2026-05-07T11:30:55.035331+00:00",
+      "site": "Sibylline",
+      "site_id": 8,
+      "url": "https://careers.smartrecruiters.com/SibyllineLtd/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "B2B Marketing Associate",
+      "job_url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125100271-b2b-marketing-associate"
+    },
+    {
+      "timestamp": "2026-05-07T11:30:55.035331+00:00",
+      "site": "Sibylline",
+      "site_id": 8,
+      "url": "https://careers.smartrecruiters.com/SibyllineLtd/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Assistant Accountant",
+      "job_url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125061599-assistant-accountant-"
+    },
+    {
+      "timestamp": "2026-05-07T11:30:55.035331+00:00",
+      "site": "FTI Consulting",
+      "site_id": 11,
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607",
+      "consecutive_count": 9
+    },
+    {
+      "timestamp": "2026-05-07T11:30:55.035331+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lecturer: LINK Centre (3-Year Contract) (AC.08.4)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106356&p_spid=5150825"
     }
   ]
 }
