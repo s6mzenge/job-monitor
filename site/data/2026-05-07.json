@@ -1,0 +1,49 @@
+{
+  "date": "2026-05-07",
+  "generated_at": "2026-05-07T05:00:57.657351+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Deputy Communications Manager – Editorial and Digital Content Lead, UK PACT",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25128?c=palladium",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "4",
+      "seniority_score": "2",
+      "reason": "Moritz has a strong academic background in international relations, policy research, and European foreign policy, aligning well with the likely focus of UK PACT. Their research, policy writing, digital skills (including journalism workshop experience and various software), and multilingualism are highly relevant for an editorial and digital content role. However, the \"Deputy Communications Manager\" title suggests a level of professional experience and management responsibility that the candidate, with only student assistant roles, does not yet possess.",
+      "location": "United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Assistant Digital Producer (Term‑Limited)",
+      "organisation": "Pew Trusts",
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/job/Washington-DC-Pew-Research-Center/Assistant-Digital-Producer_R003045",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "4",
+      "reason": "While the core function of digital content stewardship and metadata management is not a direct match to the candidate's primary research interests, the role is within a prominent research organization focused on international affairs and policy, aligning with the candidate's academic background. The candidate possesses strong research, data analysis (Python), policy writing, and multilingual skills, along with relevant digital aptitude. The experience level (1-3 years or equivalent) is a good fit for their extensive student assistant experience.",
+      "location": "Washington, DC",
+      "type": "Term-Limited (approx. 9 months), Hybrid Work Schedule",
+      "deadline": "Not specified",
+      "salary": "$60,000 annually"
+    },
+    {
+      "title": "FSSC Auditor Canada",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Home-based-FSSC-Auditor-Canada-AB/1372192233",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a very poor match. The job requires highly specialized experience in food safety auditing, management systems (FSSC22000, ISO9001), and a background in food science, microbiology, or chemistry. The candidate's academic and professional background is entirely in international relations, law, and social sciences, with no relevant industry experience or certifications. The seniority requirement of 3+ years full-time experience in the food industry also makes this role unsuitable.",
+      "location": "Home based, CA",
+      "type": "Contractor On Demand",
+      "deadline": "7 May 2026",
+      "salary": "Not specified"
+    }
+  ]
+}
