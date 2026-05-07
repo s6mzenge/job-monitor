@@ -1,7 +1,7 @@
 {
   "date": "2026-05-07",
-  "generated_at": "2026-05-07T09:01:08.069189+00:00",
-  "run_count": 9,
+  "generated_at": "2026-05-07T09:31:03.334228+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Deputy Communications Manager – Editorial and Digital Content Lead, UK PACT",
@@ -127,6 +127,20 @@
       "location": "MYS, MY, 50088 (Kuala Lumpur)",
       "type": "Employee Regular (Full-time implied)",
       "deadline": "Not specified (Date: 7 May 2026 seems to be a posting date, not deadline)",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Report Reviewer -contractor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Hangzhou-Report-Reviewer-contractor/1391236433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "This role presents a low match primarily due to a significant field misalignment. The candidate's expertise lies in international relations, law, and social sciences, while LRQA is a global assurance provider, suggesting the reports would be technical or compliance-focused, unrelated to the candidate's academic focus. While the candidate has strong transferable research and analytical skills, the lack of subject matter expertise for the likely content of the reports makes this a poor fit.",
+      "location": "Not specified",
+      "type": "Contractor",
+      "deadline": "7 May 2026 (Note: Job description states \"Sorry, this position has been filled.\")",
       "salary": "Not specified"
     }
   ]
