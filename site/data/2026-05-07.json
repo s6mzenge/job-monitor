@@ -1,7 +1,7 @@
 {
   "date": "2026-05-07",
-  "generated_at": "2026-05-07T07:01:03.913135+00:00",
-  "run_count": 5,
+  "generated_at": "2026-05-07T07:30:59.160461+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Deputy Communications Manager – Editorial and Digital Content Lead, UK PACT",
@@ -71,6 +71,62 @@
       "location": "London",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Technical Manager - Nuclear Projects",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Technical-Manager-Nuclear-Projects-B37-7ES/1371994733",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a highly specialized and senior position in nuclear projects, requiring extensive technical expertise in nuclear engineering, conformity assessments, and specific industry codes, along with significant line management experience. The candidate's background is in international relations, law, and social sciences, with academic research and administrative assistant experience. There is a fundamental mismatch in both the technical field and the required seniority and management experience.",
+      "location": "Birmingham, GB, B37 7ES",
+      "type": "Not specified",
+      "deadline": "7 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Paralegal",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Paralegal-B37-7ES/1372220933",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "2",
+      "reason": "The candidate's strong academic background in International Law and excellent research, writing, and administrative skills align well with the legal research, compliance, and regulatory aspects of the role. While the job seeks an \"experienced Paralegal\" and the candidate lacks direct commercial paralegal experience, their extensive student assistant roles provide valuable transferable skills. The seniority requirement is a stretch, but the strong foundational skills and academic relevance make it a plausible fit.",
+      "location": "Birmingham, GB",
+      "type": "Permanent, Full-Time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Advisory Lead - APAC",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Singapore-Advisory-Lead-APAC-Sing-119963/1381782033",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a very poor match for the candidate. The job is a senior commercial leadership position requiring extensive experience in client account management, sales, P&L responsibility, and managing a large team within a global assurance provider. The candidate's background is academic, focused on international relations and policy research, with only student assistant experience. There is no alignment in field, required commercial skills, or experience level.",
+      "location": "Singapore, Singapore",
+      "type": "Employee Regular (Full-time implied)",
+      "deadline": "11th December 2025",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Auditor - SE Asia",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/MYS-Lead-Auditor-SE-Asia-50088/1391140033",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a very poor match. The candidate's academic background and interests are in international relations, law, and social sciences, while the job is highly specialized in food safety and hospitality auditing. The candidate lacks all the specific food safety qualifications and industry experience required, and the role's seniority (5+ years in retail food safety) is far beyond their current experience level.",
+      "location": "MYS, MY, 50088 (Kuala Lumpur)",
+      "type": "Employee Regular (Full-time implied)",
+      "deadline": "Not specified (Date: 7 May 2026 seems to be a posting date, not deadline)",
       "salary": "Not specified"
     }
   ]
