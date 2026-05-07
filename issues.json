@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T16:01:07.397576+00:00",
+  "last_updated": "2026-05-07T16:31:10.764634+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -8000,6 +8000,50 @@
     },
     {
       "timestamp": "2026-05-07T16:01:07.397576+00:00",
+      "site": "Hanover",
+      "site_id": 76,
+      "url": "https://job-boards.greenhouse.io/hanover",
+      "method": "greenhouse_api",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Account Director | Healthcare Communications | London",
+      "job_url": "https://job-boards.greenhouse.io/hanover/jobs/4412968007"
+    },
+    {
+      "timestamp": "2026-05-07T16:31:10.764634+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Laboratory Manager (AD.07) (AD.07.4)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106358&p_spid=5150827"
+    },
+    {
+      "timestamp": "2026-05-07T16:31:10.764634+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Head: Dean's office and strategic projects (AD.07.4)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106359&p_spid=5150828"
+    },
+    {
+      "timestamp": "2026-05-07T16:31:10.764634+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Programme Lead",
+      "job_url": "https://jobs.lrqa.com/job/Programme-Lead/1391454633"
+    },
+    {
+      "timestamp": "2026-05-07T16:31:10.764634+00:00",
       "site": "Hanover",
       "site_id": 76,
       "url": "https://job-boards.greenhouse.io/hanover",
