@@ -1,7 +1,7 @@
 {
   "date": "2026-05-07",
-  "generated_at": "2026-05-07T05:00:57.657351+00:00",
-  "run_count": 1,
+  "generated_at": "2026-05-07T05:31:02.472524+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Deputy Communications Manager – Editorial and Digital Content Lead, UK PACT",
@@ -43,6 +43,34 @@
       "location": "Home based, CA",
       "type": "Contractor On Demand",
       "deadline": "7 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Lecturer (Teaching) in Quantitative Methods",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRL493/associate-lecturer-teaching-in-quantitative-methods",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit primarily due to the seniority requirement, which explicitly states candidates should have completed a PhD or be close to completion. The candidate, while academically strong with an MSc in progress, does not meet this fundamental criterion. Additionally, while the candidate has data analysis skills and proficiency in SPSS/Python, they lack explicit teaching experience in quantitative methods, and their stated interests lean towards qualitative research.",
+      "location": "London, Hybrid",
+      "type": "Full Time, Fixed-Term/Contract",
+      "deadline": "26th May 2026",
+      "salary": "£47,451 to £52,586"
+    },
+    {
+      "title": "Intelligence Analyst - LATAM",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000124913717-intelligence-analyst-latam",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "The candidate has a strong academic background in International Relations and Security Studies, with excellent research and analytical skills that align well with the role's demands. Their student assistant experience also meets the minimum work experience requirement. However, the critical gap in Spanish language proficiency, a stated requirement for this LATAM-focused role, significantly hinders their suitability.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
