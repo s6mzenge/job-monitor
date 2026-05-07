@@ -1,7 +1,7 @@
 {
   "date": "2026-05-07",
-  "generated_at": "2026-05-07T17:01:21.024411+00:00",
-  "run_count": 25,
+  "generated_at": "2026-05-07T17:31:14.466312+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Deputy Communications Manager – Editorial and Digital Content Lead, UK PACT",
@@ -211,6 +211,20 @@
       "location": "Johannesburg,ZA",
       "type": "Not specified",
       "deadline": "13 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Threat Intelligence Analyst",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125191860-associate-threat-intelligence-analyst",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "The candidate's academic focus on International Relations, International Law, and Security Studies, combined with strong research and data analysis skills (including Python and SPSS), aligns perfectly with the threat intelligence domain. The \"Associate Analyst\" role is well-suited for someone with their academic background and relevant assistant experience, despite lacking full-time professional experience. While specific social media monitoring software experience is not listed, the core analytical and research capabilities are a strong match.",
+      "location": "UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
