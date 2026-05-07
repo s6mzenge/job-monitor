@@ -1,7 +1,7 @@
 {
   "date": "2026-05-07",
-  "generated_at": "2026-05-07T15:01:18.494683+00:00",
-  "run_count": 21,
+  "generated_at": "2026-05-07T15:31:19.069761+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Deputy Communications Manager – Editorial and Digital Content Lead, UK PACT",
@@ -169,6 +169,34 @@
       "location": "Not specified",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "POSTDOCTORAL FELLOWSHIP.2.01",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106352&p_spid=5150821",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "5",
+      "seniority_score": "1",
+      "reason": "While the candidate possesses excellent research, data analysis, and writing skills, and their background in social sciences and policy research aligns with the unit's broader development focus, the role explicitly requires a PhD awarded within the past 5 years. The candidate is currently pursuing an MSc and does not meet this fundamental seniority requirement.",
+      "location": "Johannesburg,ZA",
+      "type": "Not specified (Postdoctoral fellowships are typically full-time contracts)",
+      "deadline": "30 April 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer: LINK Centre (3-Year Contract) (AC.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106356&p_spid=5150825",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "The candidate lacks the minimum requirement of a PhD and direct teaching/convening experience for a Lecturer position. While they possess strong research skills and some policy-related administrative experience, their academic focus on critical international relations and law does not directly align with the job's specific emphasis on digital governance, policy, and regulation.",
+      "location": "Not specified",
+      "type": "Fixed-term (3-year) Contract",
+      "deadline": "08 June 2026",
       "salary": "Not specified"
     }
   ]

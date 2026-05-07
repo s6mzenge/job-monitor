@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-05-07T15:01:18.494683+00:00",
+  "last_updated": "2026-05-07T15:31:19.069761+00:00",
   "site_summary": {
+    "Palladium Group": {
+      "site_id": 1,
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 18,
+      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
+      "last_recent_failure": "2026-05-07T15:31:19.069761+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7fb00d1da570>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))"
+    },
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
@@ -14,18 +27,18 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "SOAS University of London": {
-      "site_id": 34,
-      "url": "https://vacancies.soas.ac.uk/#vacancies",
+    "Global Rights Compliance": {
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
       "method": "playwright",
       "consecutive_failures": 1,
-      "total_recent_failures": 19,
-      "first_recent_failure": "2026-04-29T14:05:43.157388+00:00",
-      "last_recent_failure": "2026-05-07T15:01:18.494683+00:00",
+      "total_recent_failures": 15,
+      "first_recent_failure": "2026-04-30T06:00:58.738290+00:00",
+      "last_recent_failure": "2026-05-07T15:31:19.069761+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h3 a[href*='/job/']\") to be visible"
+      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://globalrightscompliance.org/work-with-us/\", waiting until \"networkidle\""
     },
     "ICTJ": {
       "site_id": 41,
@@ -39,6 +52,71 @@
       "paused_until": "2026-05-08T07:30:55.405912+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "HIS Hamburg": {
+      "site_id": 43,
+      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 9,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-07T15:31:19.069761+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/"
+    },
+    "Impunity Watch": {
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 15,
+      "first_recent_failure": "2026-04-29T15:01:18.017646+00:00",
+      "last_recent_failure": "2026-05-07T15:31:19.069761+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 401 Client Error: Unauthorized for url: https://www.impunitywatch.org/join-us/join-our-team/"
+    },
+    "Institute for Government": {
+      "site_id": 46,
+      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 8,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-07T15:31:19.069761+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies"
+    },
+    "Ceasefire Centre for Civilian Rights": {
+      "site_id": 54,
+      "url": "https://www.ceasefire.org/work-with-us/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 9,
+      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
+      "last_recent_failure": "2026-05-07T15:31:19.069761+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7fb00b887170>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))"
+    },
+    "Paul Hamlyn Foundation": {
+      "site_id": 64,
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 10,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-07T15:31:19.069761+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities"
     },
     "RUSI": {
       "site_id": 65,
@@ -65,6 +143,19 @@
       "paused_until": "2026-05-08T06:32:51.003833+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "twentyfifty": {
+      "site_id": 73,
+      "url": "https://twentyfifty.co.uk/contact/opportunities/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 9,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-07T15:31:19.069761+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/"
     }
   },
   "issues": [
@@ -7853,6 +7944,130 @@
       "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
       "job_title": "Programme Lead",
       "job_url": "https://jobs.lrqa.com/job/Programme-Lead/1391454633"
+    },
+    {
+      "timestamp": "2026-05-07T15:31:19.069761+00:00",
+      "site": "Palladium Group",
+      "site_id": 1,
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "type": "fetch_error",
+      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7fb00d1da570>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-07T15:31:19.069761+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://globalrightscompliance.org/work-with-us/\", waiting until \"networkidle\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-07T15:31:19.069761+00:00",
+      "site": "HIS Hamburg",
+      "site_id": 43,
+      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-07T15:31:19.069761+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "FINANCIAL & QA OPERATIONS OFFICER.3.04 (AD.10.4)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106261&p_spid=5146830"
+    },
+    {
+      "timestamp": "2026-05-07T15:31:19.069761+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Laboratory Manager (AD.07) (AD.07.4)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106358&p_spid=5150827"
+    },
+    {
+      "timestamp": "2026-05-07T15:31:19.069761+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Head: Dean's office and strategic projects (AD.07.4)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106359&p_spid=5150828"
+    },
+    {
+      "timestamp": "2026-05-07T15:31:19.069761+00:00",
+      "site": "Impunity Watch",
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 401 Client Error: Unauthorized for url: https://www.impunitywatch.org/join-us/join-our-team/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-07T15:31:19.069761+00:00",
+      "site": "Institute for Government",
+      "site_id": 46,
+      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-07T15:31:19.069761+00:00",
+      "site": "Ceasefire Centre for Civilian Rights",
+      "site_id": 54,
+      "url": "https://www.ceasefire.org/work-with-us/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7fb00b887170>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-07T15:31:19.069761+00:00",
+      "site": "Paul Hamlyn Foundation",
+      "site_id": 64,
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-07T15:31:19.069761+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Programme Lead",
+      "job_url": "https://jobs.lrqa.com/job/Programme-Lead/1391454633"
+    },
+    {
+      "timestamp": "2026-05-07T15:31:19.069761+00:00",
+      "site": "twentyfifty",
+      "site_id": 73,
+      "url": "https://twentyfifty.co.uk/contact/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/",
+      "consecutive_count": 1
     }
   ]
 }
