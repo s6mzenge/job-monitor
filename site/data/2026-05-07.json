@@ -1,7 +1,7 @@
 {
   "date": "2026-05-07",
-  "generated_at": "2026-05-07T10:01:09.623268+00:00",
-  "run_count": 11,
+  "generated_at": "2026-05-07T10:31:06.013487+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Deputy Communications Manager – Editorial and Digital Content Lead, UK PACT",
@@ -141,6 +141,20 @@
       "location": "Not specified",
       "type": "Contractor",
       "deadline": "7 May 2026 (Note: Job description states \"Sorry, this position has been filled.\")",
+      "salary": "Not specified"
+    },
+    {
+      "title": "LATAM Intelligence Analyst",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125065919-latam-intelligence-analyst",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "While the candidate has a strong academic background in International Relations and excellent research/analytical skills, there are critical gaps. The role requires a comprehensive understanding of Latin America and proficiency in Spanish/Portuguese, neither of which are present in the candidate's profile. Additionally, the candidate is slightly under the 2 years of required professional experience.",
+      "location": "Not specified",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
