@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T06:31:17.181908+00:00",
+  "last_updated": "2026-05-07T07:01:03.913135+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -31,10 +31,10 @@
       "site_id": 65,
       "url": "https://www.rusi.org/about/our-people/job-opportunities",
       "method": "playwright",
-      "consecutive_failures": 12,
-      "total_recent_failures": 46,
+      "consecutive_failures": 13,
+      "total_recent_failures": 47,
       "first_recent_failure": "2026-05-01T12:06:03.894237+00:00",
-      "last_recent_failure": "2026-05-07T06:31:17.181908+00:00",
+      "last_recent_failure": "2026-05-07T07:01:03.913135+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -7214,6 +7214,60 @@
       "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
       "job_title": "Advisory Lead - APAC",
       "job_url": "https://jobs.lrqa.com/job/Singapore-Advisory-Lead-APAC-Sing-119963/1381782033"
+    },
+    {
+      "timestamp": "2026-05-07T07:01:03.913135+00:00",
+      "site": "RUSI",
+      "site_id": 65,
+      "url": "https://www.rusi.org/about/our-people/job-opportunities",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
+      "consecutive_count": 13
+    },
+    {
+      "timestamp": "2026-05-07T07:01:03.913135+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Technical Manager - Nuclear Projects",
+      "job_url": "https://jobs.lrqa.com/job/Birmingham-Technical-Manager-Nuclear-Projects-B37-7ES/1371994733"
+    },
+    {
+      "timestamp": "2026-05-07T07:01:03.913135+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Paralegal",
+      "job_url": "https://jobs.lrqa.com/job/Birmingham-Paralegal-B37-7ES/1372220933"
+    },
+    {
+      "timestamp": "2026-05-07T07:01:03.913135+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Advisory Lead - APAC",
+      "job_url": "https://jobs.lrqa.com/job/Singapore-Advisory-Lead-APAC-Sing-119963/1381782033"
+    },
+    {
+      "timestamp": "2026-05-07T07:01:03.913135+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Lead Auditor - SE Asia",
+      "job_url": "https://jobs.lrqa.com/job/MYS-Lead-Auditor-SE-Asia-50088/1391140033"
     }
   ]
 }
