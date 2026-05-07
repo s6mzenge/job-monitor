@@ -1,7 +1,7 @@
 {
   "date": "2026-05-07",
-  "generated_at": "2026-05-07T15:31:19.069761+00:00",
-  "run_count": 22,
+  "generated_at": "2026-05-07T16:01:07.397576+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Deputy Communications Manager – Editorial and Digital Content Lead, UK PACT",
@@ -197,6 +197,20 @@
       "location": "Not specified",
       "type": "Fixed-term (3-year) Contract",
       "deadline": "08 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "FINANCIAL & QA OPERATIONS OFFICER.3.04 (AD.10.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106261&p_spid=5146830",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is primarily focused on financial management and administrative support, requiring a National Diploma in Accounting/Bookkeeping and at least 3 years of financial operations experience. The candidate's background is in international relations, law, and policy research, with no relevant financial qualifications or professional experience in financial operations. The role's requirements are a fundamental mismatch for the candidate's field, specific skills, and experience level.",
+      "location": "Johannesburg,ZA",
+      "type": "Not specified",
+      "deadline": "13 May 2026",
       "salary": "Not specified"
     }
   ]
