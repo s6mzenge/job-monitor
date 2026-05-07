@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T16:31:10.764634+00:00",
+  "last_updated": "2026-05-07T17:01:21.024411+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -52,6 +52,19 @@
       "paused_until": "2026-05-08T06:32:51.003833+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "LRQA": {
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 206,
+      "first_recent_failure": "2026-05-02T17:00:55.646755+00:00",
+      "last_recent_failure": "2026-05-07T17:01:21.024411+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f1bb7f9e330>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
@@ -8044,6 +8057,49 @@
     },
     {
       "timestamp": "2026-05-07T16:31:10.764634+00:00",
+      "site": "Hanover",
+      "site_id": 76,
+      "url": "https://job-boards.greenhouse.io/hanover",
+      "method": "greenhouse_api",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Account Director | Healthcare Communications | London",
+      "job_url": "https://job-boards.greenhouse.io/hanover/jobs/4412968007"
+    },
+    {
+      "timestamp": "2026-05-07T17:01:21.024411+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Laboratory Manager (AD.07) (AD.07.4)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106358&p_spid=5150827"
+    },
+    {
+      "timestamp": "2026-05-07T17:01:21.024411+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Head: Dean's office and strategic projects (AD.07.4)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106359&p_spid=5150828"
+    },
+    {
+      "timestamp": "2026-05-07T17:01:21.024411+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f1bb7f9e330>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-07T17:01:21.024411+00:00",
       "site": "Hanover",
       "site_id": 76,
       "url": "https://job-boards.greenhouse.io/hanover",
