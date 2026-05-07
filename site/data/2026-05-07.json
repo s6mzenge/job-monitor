@@ -1,7 +1,7 @@
 {
   "date": "2026-05-07",
-  "generated_at": "2026-05-07T12:01:14.206754+00:00",
-  "run_count": 15,
+  "generated_at": "2026-05-07T12:31:04.995722+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Deputy Communications Manager – Editorial and Digital Content Lead, UK PACT",
@@ -152,6 +152,20 @@
       "skills_score": "2",
       "seniority_score": "3",
       "reason": "While the candidate has a strong academic background in International Relations and excellent research/analytical skills, there are critical gaps. The role requires a comprehensive understanding of Latin America and proficiency in Spanish/Portuguese, neither of which are present in the candidate's profile. Additionally, the candidate is slightly under the 2 years of required professional experience.",
+      "location": "Not specified",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Assistant Accountant",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125061599-assistant-accountant-",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit as it requires specific accounting qualifications (AAT, CIMA, ACCA) and 2+ years of experience in Accounts Payable and Receivable, which the candidate does not possess. The candidate's academic background and interests are entirely in international relations, law, and policy research, with no alignment to finance or accounting.",
       "location": "Not specified",
       "type": "Full-time",
       "deadline": "Not specified",
