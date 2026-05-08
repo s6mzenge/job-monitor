@@ -1101,6 +1101,113 @@ def check_hireserve(site, seen_urls):
 
     return {"total": len(postings), "new": new_jobs}
 
+
+# ─── 12. PLUMM CAREERS API (heyplumm.com) ───
+def _plumm_slug(title):
+    """Replicate Plumm's URL slug: lowercase, spaces→hyphens, strip punctuation
+    (except hyphens and en-/em-dashes), URL-encode."""
+    import re as _re
+    import urllib.parse as _up
+    s = title.lower().replace(" ", "-")
+    # Keep word chars (letters/digits/underscore), hyphens, en-dash, em-dash
+    s = _re.sub(r"[^\w\-\u2013\u2014]", "", s)
+    return _up.quote(s, safe="-")
+
+
+def check_plumm_api(site, seen_urls):
+    """Query Plumm's CareerSite/GetOpenJobs endpoint."""
+    api = site["api"]
+    body = api.get("body", {})
+    referer = api.get("referer", site.get("url", ""))
+    location_filter = site.get("location_filter", "")
+    job_url_template = site.get(
+        "job_url_template",
+        "https://app.heyplumm.com/jobs/{company}/{slug}/{id}?refer=Plumm",
+    )
+
+    headers = {
+        "Content-Type": "application/json",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "X-Requested-With": "XMLHttpRequest",
+        "Referer": referer,
+        "User-Agent": HEADERS["User-Agent"],
+    }
+
+    try:
+        resp = requests.post(api["url"], headers=headers, json=body, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"    Plumm API error: {e}")
+        return None
+
+    if not data.get("status"):
+        print(f"    Plumm API returned status=false (raw: {str(data)[:200]})")
+        return None
+
+    postings = data.get("data", []) or []
+    print(f"    API returned {len(postings)} job(s)")
+
+    total_after_filter = 0
+    new_jobs = []
+    for posting in postings:
+        title = posting.get("JobTitle", "Untitled")
+        encoded_id = posting.get("EncodedId", "")
+        company = (posting.get("companyNameUrl", "") or "").lower()
+        city = posting.get("City", "") or ""
+        country = posting.get("Country", "") or ""
+        salary = posting.get("Salary", "") or ""
+        job_type = posting.get("JobType", "") or ""
+        workplace = posting.get("WorkplaceType", "") or ""
+        time_elapsed = posting.get("TimeElapsed", "") or ""
+        experience = posting.get("ExperienceRequired", "")
+
+        # Location filter (case-insensitive substring on city + country)
+        if location_filter:
+            location_str = f"{city} {country}".lower()
+            if location_filter.lower() not in location_str:
+                continue
+
+        total_after_filter += 1
+
+        # Build job URL
+        slug = _plumm_slug(title)
+        job_url = (
+            job_url_template
+            .replace("{company}", company)
+            .replace("{slug}", slug)
+            .replace("{id}", encoded_id)
+        )
+
+        if job_url in seen_urls or encoded_id in seen_urls:
+            continue
+
+        detail_text = (
+            f"Title: {title}\n"
+            f"Location: {city}, {country}\n"
+            f"Workplace Type: {workplace}\n"
+            f"Job Type: {job_type}\n"
+            f"Salary: {salary}\n"
+            f"Experience Required: {experience} years\n"
+            f"Posted: {time_elapsed}"
+        )
+
+        new_jobs.append({
+            "title": title,
+            "url": job_url,
+            "detail_text": detail_text,
+            "_also_track": [u for u in [job_url, encoded_id] if u],
+        })
+
+    if location_filter:
+        print(f"    After filtering: {total_after_filter} job(s)")
+
+    return {
+        "total": total_after_filter if location_filter else len(postings),
+        "new": new_jobs,
+    }
+
+
 # ═══════════════════════════════════════════════════════════════
 #  DISPATCHER — routes each site to the correct handler
 # ═══════════════════════════════════════════════════════════════
@@ -1117,6 +1224,7 @@ METHOD_HANDLERS = {
     "playwright": check_playwright,
     "oracle_hcm_api": check_oracle_hcm,
     "hireserve_api": check_hireserve,
+    "plumm_api": check_plumm_api,
 }
 
 
