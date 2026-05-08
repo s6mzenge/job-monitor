@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T12:00:58.975073+00:00",
+  "last_updated": "2026-05-08T12:30:54.023166+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -18,10 +18,10 @@
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 10,
-      "total_recent_failures": 61,
+      "consecutive_failures": 11,
+      "total_recent_failures": 62,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-08T12:00:58.975073+00:00",
+      "last_recent_failure": "2026-05-08T12:30:54.023166+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -44,10 +44,10 @@
       "site_id": 66,
       "url": "https://trustforlondon.org.uk/about/vacancies/",
       "method": "html",
-      "consecutive_failures": 11,
-      "total_recent_failures": 54,
+      "consecutive_failures": 12,
+      "total_recent_failures": 55,
       "first_recent_failure": "2026-04-30T07:01:01.295584+00:00",
-      "last_recent_failure": "2026-05-08T12:00:58.975073+00:00",
+      "last_recent_failure": "2026-05-08T12:30:54.023166+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -8581,6 +8581,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
       "consecutive_count": 11
+    },
+    {
+      "timestamp": "2026-05-08T12:30:54.023166+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
+      "consecutive_count": 11
+    },
+    {
+      "timestamp": "2026-05-08T12:30:54.023166+00:00",
+      "site": "Trust for London",
+      "site_id": 66,
+      "url": "https://trustforlondon.org.uk/about/vacancies/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
+      "consecutive_count": 12
     }
   ]
 }

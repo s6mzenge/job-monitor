@@ -1,7 +1,7 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T12:00:58.975073+00:00",
-  "run_count": 15,
+  "generated_at": "2026-05-08T12:30:54.023166+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Laboratory Manager (AD.07) (AD.07.4)",
@@ -124,6 +124,34 @@
       "skills_score": "1",
       "seniority_score": "1",
       "reason": "This role is a Senior Finance Manager position requiring 7+ years of finance or accounting experience and a relevant degree. The candidate's background is in international relations, law, and social sciences, with no professional finance experience, making it a poor fit for both field and seniority. The required technical finance skills are also absent from the candidate's profile.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Product Specialist",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=DLS23-R",
+      "match": "medium",
+      "field_score": "4/5",
+      "skills_score": "3/5",
+      "seniority_score": "4/5",
+      "reason": "Moritz has a strong academic background and highly relevant student assistant experience in higher education, demonstrating strong analytical, research, data analysis, and communication skills. While they lack direct product lifecycle management and UX/UI experience, their technical proficiency and understanding of the university context make them a plausible candidate for this supporting role.",
+      "location": "Middlesex University (London, UK)",
+      "type": "Permanent, Full-time (35.5 hours/week)",
+      "deadline": "Monday 25 May 2026",
+      "salary": "£37,357 to £42,653 per annum"
+    },
+    {
+      "title": "Account Executive, Creator Marketing",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Account-Executive--Creator-Marketing_JR102436",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "The role is in creator/influencer marketing, which is a significant mismatch with the candidate's strong academic background and interests in international relations, law, and policy research. While the candidate possesses excellent transferable skills in research, data analysis, organisation, and communication, they lack specific experience or stated passion for social media, influencer culture, or digital marketing, which are core requirements for this role. The seniority level is appropriate for the candidate's stage.",
       "location": "London, United Kingdom",
       "type": "Not specified",
       "deadline": "Not specified",
