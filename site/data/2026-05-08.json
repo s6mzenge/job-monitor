@@ -1,7 +1,7 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T14:01:02.013416+00:00",
-  "run_count": 19,
+  "generated_at": "2026-05-08T14:31:15.452376+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Laboratory Manager (AD.07) (AD.07.4)",
@@ -167,6 +167,34 @@
       "seniority_score": "1",
       "reason": "While the candidate's academic background in International Relations and interest in security studies aligns well with the field, and they possess strong research, data analysis, and multilingual skills, the role requires significant professional and management experience (5-7+ years relevant experience, 3-5 years management experience) which the candidate currently lacks. This is a senior role for which the candidate is not yet qualified.",
       "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead IT Security Specialist",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/London/Senior-IT-Security-Specialist_JR-0003724",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a highly specialized technical IT security position requiring a minimum of 5 years of experience in IT security, cloud architecture, and identity and access management. The candidate's background is in international relations, law, and higher education policy, with academic research and administrative assistant experience. There is a fundamental mismatch in the required field, specific technical skills (e.g., KQL, PowerShell, Microsoft 365 security ecosystem), and the seniority level.",
+      "location": "London, Johannesburg or Nairobi",
+      "type": "Regular",
+      "deadline": "05/17/2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Threat Intelligence Analyst",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125345005-associate-threat-intelligence-analyst",
+      "match": "high",
+      "field_score": "4",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "This role is an excellent fit for the candidate's academic background in International Relations and International Law, with a strong interest in security and foreign policy. The candidate possesses strong research, data analysis (including Python and SPSS), and policy writing skills, which are central to the role. The \"Associate Analyst\" level is perfectly aligned with the candidate's current experience as a highly qualified student assistant, making them a competitive applicant despite lacking full-time professional experience.",
+      "location": "UK (remote with occasional travel)",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
