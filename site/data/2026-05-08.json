@@ -1,7 +1,7 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T06:31:04.218253+00:00",
-  "run_count": 4,
+  "generated_at": "2026-05-08T07:03:19.117674+00:00",
+  "run_count": 5,
   "jobs": [
     {
       "title": "Laboratory Manager (AD.07) (AD.07.4)",
@@ -86,6 +86,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Grocery Shopper (Canada)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/New-Brunswick-Grocery-Shopper-%28Canada%29-NB/1372396833",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit for the candidate. The job involves practical food safety sampling with no relation to international relations, law, or policy research. While the candidate possesses basic organizational skills and Excel proficiency, their advanced research, analytical, and policy writing skills are entirely irrelevant. The role is also far too junior and operational for someone pursuing an MSc at LSE with a strong academic and research assistant background.",
+      "location": "New Brunswick, CA",
+      "type": "Part-Time, Flexible Schedule (Contractor On Demand)",
+      "deadline": "8 May 2026",
+      "salary": "$300-$500 a month (Competitive pay per assignment)"
     }
   ]
 }
