@@ -1,7 +1,7 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T06:01:06.781711+00:00",
-  "run_count": 3,
+  "generated_at": "2026-05-08T06:31:04.218253+00:00",
+  "run_count": 4,
   "jobs": [
     {
       "title": "Laboratory Manager (AD.07) (AD.07.4)",
@@ -69,6 +69,20 @@
       "seniority_score": "1",
       "reason": "This role is a significant mismatch for the candidate. It is a senior Account Director position in healthcare communications, requiring extensive professional experience in PR, media relations, client management, and new business development. The candidate's academic background in international relations and law, coupled with their student assistant experience, does not align with the industry or the required seniority and specific PR skills.",
       "location": "London, England, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Programme Lead",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Programme-Lead/1391454633",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit. The candidate's academic background and interests are in international relations, law, and policy, which do not align with a digital transformation programme lead role in an assurance company. The role also requires extensive senior leadership experience in large-scale technology programmes, which the candidate, with only student assistant experience, does not possess.",
+      "location": "UK : Home Based",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
