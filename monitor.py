@@ -328,7 +328,7 @@ def check_html(site, seen_urls):
                     print(f"    Error fetching detail {job['url']}: {e}")
                     detail_soup = None
             else:
-                detail_soup = fetch_page(job["url"])
+                detail_soup = fetch_page(job["url"], proxy=site.get("proxy"))
             detail_text = extract_text(detail_soup) if detail_soup else ""
         new_jobs.append({
             "title": job["title"],
@@ -513,7 +513,7 @@ def check_workable(site, seen_urls):
         detail_text = f"Title: {title}\nLocation: {city}, {country}\nDepartment: {department}"
         if job_url:
             time.sleep(1)
-            detail_soup = fetch_page(job_url)
+            detail_soup = fetch_page(job_url, proxy=site.get("proxy"))
             if detail_soup:
                 page_text = extract_text(detail_soup)
                 detail_text = f"Title: {title}\nLocation: {city}, {country}\n\n{page_text}"
@@ -562,7 +562,7 @@ def check_personio(site, seen_urls):
 
         if job_url:
             time.sleep(1)
-            detail_soup = fetch_page(job_url)
+            detail_soup = fetch_page(job_url, proxy=site.get("proxy"))
             if detail_soup:
                 page_text = extract_text(detail_soup)
                 if len(page_text) > len(detail_text):
@@ -610,7 +610,7 @@ def check_taleo(site, seen_urls):
 
         if link:
             time.sleep(1)
-            detail_soup = fetch_page(link)
+            detail_soup = fetch_page(link, proxy=site.get("proxy"))
             if detail_soup:
                 page_text = extract_text(detail_soup)
                 if len(page_text) > len(detail_text):
@@ -872,7 +872,7 @@ def check_playwright(site, seen_urls):
                     job["full_url"], detail_wait_sel, wait_ms
                 )
             else:
-                detail_soup = fetch_page(job["full_url"])
+                detail_soup = fetch_page(job["full_url"], proxy=site.get("proxy"))
                 detail_text = extract_text(detail_soup) if detail_soup else ""
             new_jobs.append({
                 "title": job["title"],
@@ -941,7 +941,7 @@ def check_playwright(site, seen_urls):
     new_jobs = []
     for job in jobs:
         time.sleep(1)
-        detail_soup = fetch_page(job["url"])
+        detail_soup = fetch_page(job["url"], proxy=site.get("proxy"))
         detail_text = extract_text(detail_soup) if detail_soup else ""
         new_jobs.append({
             "title": job["title"],
@@ -1086,7 +1086,7 @@ def check_hireserve(site, seen_urls):
         # Fetch detail page
         if job_url:
             time.sleep(1)
-            detail_soup = fetch_page(job_url)
+            detail_soup = fetch_page(job_url, proxy=site.get("proxy"))
             if detail_soup:
                 page_text = extract_text(detail_soup)
                 if len(page_text) > len(detail_text):
