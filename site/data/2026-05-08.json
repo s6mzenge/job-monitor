@@ -1,7 +1,7 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T20:37:50.152789+00:00",
-  "run_count": 30,
+  "generated_at": "2026-05-08T20:47:02.363691+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Laboratory Manager (AD.07) (AD.07.4)",
@@ -239,6 +239,34 @@
       "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "External Evaluation Consultant",
+      "organisation": "ICTJ",
+      "url": "https://www.ictj.org/careers/external-evaluation-consultant",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Field alignment is excellent — transitional justice in Ethiopia sits squarely within the candidate's core interests. However, this is a senior consultancy requiring an experienced external evaluator able to design and lead a final project evaluation, propose a budget, and ideally show prior evaluation reports — well beyond the candidate's student-assistant track record. Hard ineligibility on seniority.",
+      "location": "Not specified (Ethiopia project focus)",
+      "type": "Contract (Consultancy)",
+      "deadline": "May 15, 2026",
+      "salary": "Not specified (candidate proposes daily rate)"
+    },
+    {
+      "title": "ICTJ Core Grant External Evaluation",
+      "organisation": "ICTJ",
+      "url": "https://www.ictj.org/careers/ictj-core-grant-external-evaluation",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Field alignment is excellent — ICTJ is a leading transitional justice organisation, directly aligned with the candidate's core interests. However, this is a senior consultancy requiring an established evaluator/firm with prior evaluation reports and credentials, which the candidate (MSc in progress, student-assistant experience) cannot provide. Hard ineligibility on seniority.",
+      "location": "Not specified",
+      "type": "Contract",
+      "deadline": "May 15, 2026",
       "salary": "Not specified"
     }
   ]
