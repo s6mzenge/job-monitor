@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T19:20:05.581128+00:00",
+  "last_updated": "2026-05-08T19:41:40.555377+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -26,6 +26,19 @@
       "paused_until": "2026-05-10T15:01:29.116088+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Impunity Watch": {
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 17,
+      "first_recent_failure": "2026-04-29T15:01:18.017646+00:00",
+      "last_recent_failure": "2026-05-08T19:41:40.555377+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/"
     },
     "RUSI": {
       "site_id": 65,
@@ -8787,6 +8800,16 @@
       "message": "Anthropic API: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/messages",
       "job_title": "Change, Culture and Engagement, Consultant",
       "job_url": "https://www.teneo.com/careers/open-positions/7728227003?gh_jid=7728227003"
+    },
+    {
+      "timestamp": "2026-05-08T19:41:40.555377+00:00",
+      "site": "Impunity Watch",
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
+      "consecutive_count": 1
     }
   ]
 }

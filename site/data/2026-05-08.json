@@ -1,7 +1,7 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T19:20:05.581128+00:00",
-  "run_count": 27,
+  "generated_at": "2026-05-08T19:41:40.555377+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Laboratory Manager (AD.07) (AD.07.4)",
@@ -210,6 +210,34 @@
       "reason": "This entry-level role is an excellent fit for the candidate's experience level, with strong transferable skills in research, data analysis (including Python and SPSS), and policy writing. While the core focus on environmental LCA and carbon strategy is not a direct match with the candidate's primary interests, their workshop experience in climate transformation and work on diversity strategies provide some relevant context for sustainability and social impact.",
       "location": "3 Locations",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Campaigning, Associate Consultant",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7728562003?gh_jid=7728562003",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "Corporate communications and campaigning for FTSE/Fortune 100 clients across sectors like energy, tech, and FMCG sits well outside the candidate's policy/IR/international law focus. The role asks for media relations skills and contacts plus agency/in-house comms experience the candidate lacks, though research and writing skills transfer. Seniority (1–3 years) is broadly compatible but two weak scores push this to Low.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Change, Culture and Engagement, Consultant",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7728227003?gh_jid=7728227003",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "This is a corporate change/culture consulting role focused on organisational psychology, employee engagement and corporate culture — far from the candidate's core interests in international law, genocide studies and IR. The role also requires 3-6 years of comparable consulting experience, which the candidate (student-assistant roles, MSc in progress) does not have.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
