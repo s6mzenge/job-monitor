@@ -1,7 +1,7 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T13:00:58.094328+00:00",
-  "run_count": 17,
+  "generated_at": "2026-05-08T13:31:18.531134+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Laboratory Manager (AD.07) (AD.07.4)",
@@ -154,6 +154,20 @@
       "reason": "The role is in creator/influencer marketing, which is a significant mismatch with the candidate's strong academic background and interests in international relations, law, and policy research. While the candidate possesses excellent transferable skills in research, data analysis, organisation, and communication, they lack specific experience or stated passion for social media, influencer culture, or digital marketing, which are core requirements for this role. The seniority level is appropriate for the candidate's stage.",
       "location": "London, United Kingdom",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Embedded Program Manager",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125330074-embedded-program-manager",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "While the candidate's academic background in International Relations and interest in security studies aligns well with the field, and they possess strong research, data analysis, and multilingual skills, the role requires significant professional and management experience (5-7+ years relevant experience, 3-5 years management experience) which the candidate currently lacks. This is a senior role for which the candidate is not yet qualified.",
+      "location": "London, UK",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
