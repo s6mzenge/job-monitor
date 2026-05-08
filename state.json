@@ -198,8 +198,7 @@
     "seen_urls": [],
     "last_checked": "2026-05-07T15:01:18.494683+00:00",
     "listing_hash": "",
-    "consecutive_errors": 16,
-    "paused_until": "2026-05-09T15:01:18.494683+00:00"
+    "consecutive_errors": 0
   },
   "https://job-boards.greenhouse.io/fsg": {
     "seen_urls": [],
@@ -480,8 +479,7 @@
     ],
     "last_checked": "2026-05-08T15:01:29.116088+00:00",
     "listing_hash": "",
-    "consecutive_errors": 16,
-    "paused_until": "2026-05-10T15:01:29.116088+00:00"
+    "consecutive_errors": 0
   },
   "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities": {
     "seen_urls": [],
@@ -882,15 +880,13 @@
     ],
     "last_checked": "2026-05-07T08:31:08.842574+00:00",
     "listing_hash": "",
-    "consecutive_errors": 16,
-    "paused_until": "2026-05-09T08:31:08.842574+00:00"
+    "consecutive_errors": 0
   },
   "https://trustforlondon.org.uk/about/vacancies/": {
     "seen_urls": [],
     "last_checked": "2026-05-08T14:31:15.452376+00:00",
     "listing_hash": "f701391dd216a18d07b5b284789abf8105b3978d48c16f80fbd0d60a105eb897",
-    "consecutive_errors": 16,
-    "paused_until": "2026-05-10T14:31:15.452376+00:00"
+    "consecutive_errors": 0
   },
   "https://www.bsr.org/en/careers": {
     "seen_urls": [
