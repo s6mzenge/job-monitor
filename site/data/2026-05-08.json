@@ -1,7 +1,7 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T08:01:12.979287+00:00",
-  "run_count": 7,
+  "generated_at": "2026-05-08T08:31:03.259226+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Laboratory Manager (AD.07) (AD.07.4)",
@@ -100,6 +100,20 @@
       "type": "Part-Time, Flexible Schedule (Contractor On Demand)",
       "deadline": "8 May 2026",
       "salary": "$300-$500 a month (Competitive pay per assignment)"
+    },
+    {
+      "title": "Consulting Director- Nature Finance Strategist",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/Consulting-Director--Nature-Finance-Strategist--Director-level-_R00028805-1",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is far too senior for the candidate, requiring 10+ years of professional experience in sustainability and strategy advisory, which the candidate, currently pursuing an MSc, does not have. Additionally, the job's focus on nature finance, biodiversity, and ESG frameworks does not align with the candidate's academic background or stated interests in international relations, law, and social theory.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
