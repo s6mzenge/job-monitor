@@ -1,0 +1,35 @@
+{
+  "date": "2026-05-08",
+  "generated_at": "2026-05-08T05:01:01.241974+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Laboratory Manager (AD.07) (AD.07.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106358&p_spid=5150827",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This role is a poor fit. The position requires a minimum of 5 years of experience managing scientific or laboratory facilities, along with a technical MTech qualification and professional registration in a relevant scientific field. The candidate's background is in International Relations and social sciences, with no direct experience or academic qualifications in laboratory management, health sciences, or biosafety. While the candidate possesses strong general academic and transferable soft skills, the core technical and experience requirements are entirely mismatched.",
+      "location": "Parktown, ZA",
+      "type": "Not specified (implied Full-time)",
+      "deadline": "14 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Sales Account Executive - Cyber",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/New-York-Sales-Account-Executive-Cyber-10019/1290913801",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is a significant mismatch for the candidate. It requires a minimum of 8 years of enterprise sales experience in cybersecurity, with a focus on the financial services industry, which the candidate entirely lacks. The candidate's academic background in international relations and policy research, while strong, does not align with the commercial, sales-driven nature of this position.",
+      "location": "New York, US",
+      "type": "Full-time",
+      "deadline": "8 May 2026",
+      "salary": "$120,000–$140,000"
+    }
+  ]
+}

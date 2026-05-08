@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T17:31:14.466312+00:00",
+  "last_updated": "2026-05-08T05:01:01.241974+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -26,19 +26,6 @@
       "paused_until": "2026-05-08T07:30:55.405912+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "HIS Hamburg": {
-      "site_id": 43,
-      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 10,
-      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
-      "last_recent_failure": "2026-05-07T17:31:14.466312+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.his-online.de', port=443): Max retries exceeded with url: /das-institut/arbeiten-am-his/aktuelle-ausschreibungen/ (Caused by NewConnectionError(\"HTTPSConnection(host='www.his-online.de', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
     },
     "RUSI": {
       "site_id": 65,
@@ -8154,6 +8141,61 @@
     },
     {
       "timestamp": "2026-05-07T17:31:14.466312+00:00",
+      "site": "Hanover",
+      "site_id": 76,
+      "url": "https://job-boards.greenhouse.io/hanover",
+      "method": "greenhouse_api",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Account Director | Healthcare Communications | London",
+      "job_url": "https://job-boards.greenhouse.io/hanover/jobs/4412968007"
+    },
+    {
+      "timestamp": "2026-05-08T05:01:01.241974+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Head: Dean's office and strategic projects (AD.07.4)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106359&p_spid=5150828"
+    },
+    {
+      "timestamp": "2026-05-08T05:01:01.241974+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Grocery Shopper (Canada)",
+      "job_url": "https://jobs.lrqa.com/job/New-Brunswick-Grocery-Shopper-%28Canada%29-NB/1372396833"
+    },
+    {
+      "timestamp": "2026-05-08T05:01:01.241974+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Inside Sales Executive German",
+      "job_url": "https://jobs.lrqa.com/job/Lisbon-Inside-Sales-Executive-German-1050-122/1382291433"
+    },
+    {
+      "timestamp": "2026-05-08T05:01:01.241974+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Programme Lead",
+      "job_url": "https://jobs.lrqa.com/job/Programme-Lead/1391454633"
+    },
+    {
+      "timestamp": "2026-05-08T05:01:01.241974+00:00",
       "site": "Hanover",
       "site_id": 76,
       "url": "https://job-boards.greenhouse.io/hanover",
