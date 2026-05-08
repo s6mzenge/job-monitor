@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T17:33:26.999684+00:00",
+  "last_updated": "2026-05-08T19:20:05.581128+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -13,19 +13,6 @@
       "paused_until": "2026-05-09T15:01:18.494683+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "REDRESS": {
-      "site_id": 32,
-      "url": "https://redress.org/about-us/work-at-redress/current-vacancies/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 4,
-      "first_recent_failure": "2026-04-30T14:31:01.950620+00:00",
-      "last_recent_failure": "2026-05-08T17:33:26.999684+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 525 Server Error: <none> for url: https://redress.org/about-us/work-at-redress/current-vacancies/"
     },
     "ICTJ": {
       "site_id": 41,
@@ -8776,6 +8763,28 @@
       "method": "greenhouse_api",
       "type": "gemini_call_failed",
       "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Change, Culture and Engagement, Consultant",
+      "job_url": "https://www.teneo.com/careers/open-positions/7728227003?gh_jid=7728227003"
+    },
+    {
+      "timestamp": "2026-05-08T19:20:05.581128+00:00",
+      "site": "Teneo",
+      "site_id": 50,
+      "url": "https://www.teneo.com/careers/open-positions/office/london/",
+      "method": "greenhouse_api",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/messages",
+      "job_title": "Campaigning, Associate Consultant",
+      "job_url": "https://www.teneo.com/careers/open-positions/7728562003?gh_jid=7728562003"
+    },
+    {
+      "timestamp": "2026-05-08T19:20:05.581128+00:00",
+      "site": "Teneo",
+      "site_id": 50,
+      "url": "https://www.teneo.com/careers/open-positions/office/london/",
+      "method": "greenhouse_api",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/messages",
       "job_title": "Change, Culture and Engagement, Consultant",
       "job_url": "https://www.teneo.com/careers/open-positions/7728227003?gh_jid=7728227003"
     }
