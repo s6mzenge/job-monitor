@@ -1,7 +1,7 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T16:01:13.919411+00:00",
-  "run_count": 23,
+  "generated_at": "2026-05-08T16:30:57.087960+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Laboratory Manager (AD.07) (AD.07.4)",
@@ -196,6 +196,20 @@
       "reason": "This role is an excellent fit for the candidate's academic background in International Relations and International Law, with a strong interest in security and foreign policy. The candidate possesses strong research, data analysis (including Python and SPSS), and policy writing skills, which are central to the role. The \"Associate Analyst\" level is perfectly aligned with the candidate's current experience as a highly qualified student assistant, making them a competitive applicant despite lacking full-time professional experience.",
       "location": "UK (remote with occasional travel)",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Consultant - LCA (Entry Level)",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/Consultant---LCA--Entry-Level-_R00030165-1",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "This entry-level role is an excellent fit for the candidate's experience level, with strong transferable skills in research, data analysis (including Python and SPSS), and policy writing. While the core focus on environmental LCA and carbon strategy is not a direct match with the candidate's primary interests, their workshop experience in climate transformation and work on diversity strategies provide some relevant context for sustainability and social impact.",
+      "location": "3 Locations",
+      "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
