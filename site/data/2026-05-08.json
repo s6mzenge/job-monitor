@@ -1,7 +1,7 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T20:47:02.363691+00:00",
-  "run_count": 31,
+  "generated_at": "2026-05-08T21:15:26.248961+00:00",
+  "run_count": 32,
   "jobs": [
     {
       "title": "Laboratory Manager (AD.07) (AD.07.4)",
@@ -268,6 +268,62 @@
       "type": "Contract",
       "deadline": "May 15, 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Research Fellow, Technology and National Security",
+      "organisation": "RUSI",
+      "url": "https://app.heyplumm.com/jobs/rusi/research-fellow-technology-and-national-security/d8bf4988-7176-470d-b0ba-f9e2ea9150e6?refer=Plumm",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Field alignment is excellent — RUSI is a leading security/defence think tank and the topic aligns with the candidate's interest in security policy. However, the role explicitly requires 5 years of experience, triggering hard ineligibility on seniority. The candidate's experience to date is at student-assistant level.",
+      "location": "London, United Kingdom",
+      "type": "Full-time (Permanent)",
+      "deadline": "Not specified",
+      "salary": "£40,000 - £55,000"
+    },
+    {
+      "title": "Programme Manager - Networks and Engagement",
+      "organisation": "RUSI",
+      "url": "https://app.heyplumm.com/jobs/rusi/programme-manager----networks-and-engagement/d0dc4824-d05e-4c7d-a962-921e7f0a4331?refer=Plumm",
+      "match": "medium",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "RUSI is a top-tier defence/security think tank that aligns directly with the candidate's IR/security focus and forthcoming defence-policy publication. However, the role is a Programme Manager position requiring 3 years of experience and emphasises networks/engagement/event management rather than research, where the candidate's analytical strengths lie. The seniority and skills profile is a stretch but not strictly disqualifying.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£35,000 - £45,000"
+    },
+    {
+      "title": "Programme Manager - Proliferation and Nuclear Policy",
+      "organisation": "RUSI",
+      "url": "https://app.heyplumm.com/jobs/rusi/programme-manager---proliferation-and-nuclear-policy/03a58d8b-942c-4698-ad59-dfe20ed70773?refer=Plumm",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "Field alignment is excellent — RUSI's proliferation and nuclear policy programme sits squarely in the candidate's security-studies and IR interests. However, the \"Programme Manager\" title with 3 years of required experience exceeds the candidate's student-assistant background, and programme management/stakeholder coordination skills are only partially evidenced.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£38,500 - £43,000"
+    },
+    {
+      "title": "Research Analyst/Project Officer – Organised Crime and Policing",
+      "organisation": "RUSI",
+      "url": "https://app.heyplumm.com/jobs/rusi/research-analystproject-officer-%E2%80%93-organised-crime-and-policing/bd7a97dc-e0df-4b10-a9fa-e36d181b401c?refer=Plumm",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "4",
+      "seniority_score": "4",
+      "reason": "RUSI is a leading security/defence think tank, and organised crime/policing research is policy-adjacent to the candidate's IR and security interests, though not core to their international law/genocide focus. The 1-year experience requirement aligns with the candidate's substantial student-assistant research background, and their qualitative research and policy-writing skills transfer well.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£30,000 - £34,000"
     }
   ]
 }
