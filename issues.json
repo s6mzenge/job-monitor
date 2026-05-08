@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T13:31:18.531134+00:00",
+  "last_updated": "2026-05-08T14:01:02.013416+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -18,14 +18,27 @@
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 13,
-      "total_recent_failures": 64,
+      "consecutive_failures": 14,
+      "total_recent_failures": 65,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-08T13:31:18.531134+00:00",
+      "last_recent_failure": "2026-05-08T14:01:02.013416+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0"
+    },
+    "Paul Hamlyn Foundation": {
+      "site_id": 64,
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 12,
+      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
+      "last_recent_failure": "2026-05-08T14:01:02.013416+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 522 Server Error: <none> for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities"
     },
     "RUSI": {
       "site_id": 65,
@@ -44,10 +57,10 @@
       "site_id": 66,
       "url": "https://trustforlondon.org.uk/about/vacancies/",
       "method": "html",
-      "consecutive_failures": 14,
-      "total_recent_failures": 57,
+      "consecutive_failures": 15,
+      "total_recent_failures": 58,
       "first_recent_failure": "2026-04-30T07:01:01.295584+00:00",
-      "last_recent_failure": "2026-05-08T13:31:18.531134+00:00",
+      "last_recent_failure": "2026-05-08T14:01:02.013416+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -8651,6 +8664,47 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
       "consecutive_count": 14
+    },
+    {
+      "timestamp": "2026-05-08T14:01:02.013416+00:00",
+      "site": "Sibylline",
+      "site_id": 8,
+      "url": "https://careers.smartrecruiters.com/SibyllineLtd/",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Associate Threat Intelligence Analyst",
+      "job_url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125345005-associate-threat-intelligence-analyst"
+    },
+    {
+      "timestamp": "2026-05-08T14:01:02.013416+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
+      "consecutive_count": 14
+    },
+    {
+      "timestamp": "2026-05-08T14:01:02.013416+00:00",
+      "site": "Paul Hamlyn Foundation",
+      "site_id": 64,
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-08T14:01:02.013416+00:00",
+      "site": "Trust for London",
+      "site_id": 66,
+      "url": "https://trustforlondon.org.uk/about/vacancies/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
+      "consecutive_count": 15
     }
   ]
 }
