@@ -870,20 +870,6 @@
     "listing_hash": "ceb10431b702b8fed5c4b3dbd0428bacade68ccc48623454f8d49cdfba1b16d8",
     "consecutive_errors": 0
   },
-  "https://www.rusi.org/about/our-people/job-opportunities": {
-    "seen_urls": [
-      "https://royalunitedservicesinstitute.peoplehr.net/Pages/JobBoard/Opening.aspx?v=3deb14ae-afd5-43ad-8403-8bbd8e4a4337",
-      "https://royalunitedservicesinstitute.peoplehr.net/Pages/JobBoard/Opening.aspx?v=58a2b6d9-b479-4007-af49-92f48af9ffea",
-      "https://royalunitedservicesinstitute.peoplehr.net/Pages/JobBoard/Opening.aspx?v=ea5c65f3-6ece-4bb5-8814-b2516bef28fb",
-      "https://royalunitedservicesinstitute.peoplehr.net/Pages/JobBoard/Opening.aspx?v=300deaad-7b65-4bdb-a260-f96f9f30f20e",
-      "https://royalunitedservicesinstitute.peoplehr.net/Pages/JobBoard/Opening.aspx?v=aa8d1523-3533-4be3-b813-0aee948107ca",
-      "https://royalunitedservicesinstitute.peoplehr.net/Pages/JobBoard/Opening.aspx?v=e367f95b-5b96-48b4-9160-a7c279e8c249",
-      "https://royalunitedservicesinstitute.peoplehr.net/Pages/JobBoard/Opening.aspx?v=2d9cf001-01fb-42df-99b1-d5d95fd3fdcf"
-    ],
-    "last_checked": "2026-05-08T20:47:02.363691+00:00",
-    "listing_hash": "",
-    "consecutive_errors": 1
-  },
   "https://trustforlondon.org.uk/about/vacancies/": {
     "seen_urls": [],
     "last_checked": "2026-05-08T20:47:02.363691+00:00",
