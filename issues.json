@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T05:01:01.241974+00:00",
+  "last_updated": "2026-05-08T05:30:58.632168+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -8196,6 +8196,39 @@
     },
     {
       "timestamp": "2026-05-08T05:01:01.241974+00:00",
+      "site": "Hanover",
+      "site_id": 76,
+      "url": "https://job-boards.greenhouse.io/hanover",
+      "method": "greenhouse_api",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Account Director | Healthcare Communications | London",
+      "job_url": "https://job-boards.greenhouse.io/hanover/jobs/4412968007"
+    },
+    {
+      "timestamp": "2026-05-08T05:30:58.632168+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Grocery Shopper (Canada)",
+      "job_url": "https://jobs.lrqa.com/job/New-Brunswick-Grocery-Shopper-%28Canada%29-NB/1372396833"
+    },
+    {
+      "timestamp": "2026-05-08T05:30:58.632168+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "gemini_call_failed",
+      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
+      "job_title": "Programme Lead",
+      "job_url": "https://jobs.lrqa.com/job/Programme-Lead/1391454633"
+    },
+    {
+      "timestamp": "2026-05-08T05:30:58.632168+00:00",
       "site": "Hanover",
       "site_id": 76,
       "url": "https://job-boards.greenhouse.io/hanover",

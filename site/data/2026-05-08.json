@@ -1,7 +1,7 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T05:01:01.241974+00:00",
-  "run_count": 1,
+  "generated_at": "2026-05-08T05:30:58.632168+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Laboratory Manager (AD.07) (AD.07.4)",
@@ -30,6 +30,34 @@
       "type": "Full-time",
       "deadline": "8 May 2026",
       "salary": "$120,000–$140,000"
+    },
+    {
+      "title": "Head: Dean's office and strategic projects (AD.07.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106359&p_spid=5150828",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "1",
+      "reason": "While the candidate demonstrates strong research, analytical, and policy writing skills, with relevant experience in higher education administration and policy research, the role's requirement for a minimum of 8 years of relevant work experience and leadership responsibilities makes it far too senior for their current profile.",
+      "location": "Parktown,ZA",
+      "type": "Full-time",
+      "deadline": "21 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Inside Sales Executive German",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lisbon-Inside-Sales-Executive-German-1050-122/1382291433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role is for an Inside Sales Executive requiring a demonstrable track record in B2B/B2C sales and achieving sales targets, which the candidate does not possess. The candidate's academic background in international relations, law, and policy research, along with their research and administrative assistant experience, is entirely misaligned with the commercial sales nature of this position. While the candidate is fluent in German and English, the core requirements for sales experience and field of work are a significant mismatch.",
+      "location": "Lisbon, PT, 1050-122",
+      "type": "Full-time",
+      "deadline": "8 May 2026",
+      "salary": "Not specified"
     }
   ]
 }
