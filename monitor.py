@@ -42,7 +42,8 @@ else:
 # ─── Secrets from environment ───
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
-GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
+ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
+ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-opus-4-7")
 DRY_RUN_FILE = "dry_run.txt"
 if os.path.exists(DRY_RUN_FILE):
     with open(DRY_RUN_FILE, "r") as f:
@@ -53,19 +54,22 @@ CF_WORKER_URL = os.environ.get("CF_WORKER_URL", "")
 CF_WORKER_TOKEN = os.environ.get("CF_WORKER_TOKEN", "")
 
 
-# ─── Gemini rate limiter (15 RPM on free tier) ───
-_gemini_calls = []
+# ─── Anthropic rate limiter ───
+# Tier 1 limits for Claude Opus 4.7: 50 RPM, ~30K ITPM, ~8K OTPM.
+# At ~3K input tokens per call the ITPM is the real bottleneck (~10 calls/min).
+# We cap at 9 RPM to stay safely under the per-minute input-token ceiling.
+_anthropic_calls = []
 
-def gemini_rate_limit():
-    """Enforce max 14 calls per 60 seconds (staying under 15 RPM limit)."""
-    global _gemini_calls
+def anthropic_rate_limit():
+    """Enforce max 9 calls per 60 seconds (staying under Opus 4.7 ITPM ceiling)."""
+    global _anthropic_calls
     now_ts = time.time()
-    _gemini_calls = [t for t in _gemini_calls if now_ts - t < 60]
-    if len(_gemini_calls) >= 14:
-        wait = 60 - (now_ts - _gemini_calls[0]) + 1
-        print(f"    ⏳ Gemini rate limit — waiting {wait:.0f}s")
+    _anthropic_calls = [t for t in _anthropic_calls if now_ts - t < 60]
+    if len(_anthropic_calls) >= 9:
+        wait = 60 - (now_ts - _anthropic_calls[0]) + 1
+        print(f"    ⏳ Anthropic rate limit — waiting {wait:.0f}s")
         time.sleep(wait)
-    _gemini_calls.append(time.time())
+    _anthropic_calls.append(time.time())
 
 # ─── Error capture for issues log ───
 # Handlers swallow exceptions internally and return None on failure, so the
@@ -1117,121 +1121,254 @@ METHOD_HANDLERS = {
 
 
 # ═══════════════════════════════════════════════════════════════
-#  AI MATCHING — send job details to Gemini
+#  AI MATCHING — send job details to Anthropic
 # ═══════════════════════════════════════════════════════════════
+#
+# Architecture:
+#   - System prompt holds the rubric, format, examples, and CV. It is
+#     identical across every call so we mark it as cacheable. Anthropic
+#     reads cached input at ~10% of normal price, which roughly cuts
+#     monthly cost in half.
+#   - User message holds only the per-call data: org name, URL, job text,
+#     and a one-line marker switching between page-level and single-job
+#     mode. This part is dynamic and not cached.
+#   - temperature=0 makes ratings near-deterministic (same input → same
+#     rating), which matters for a structured scoring task.
 
-def evaluate_with_gemini(site_name, job_title, job_url, detail_text, is_page_level=False):
-    gemini_rate_limit()
-    url = (
-        f"https://generativelanguage.googleapis.com/v1beta/"
-        f"models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
-    )
+SYSTEM_PROMPT = f"""You are an expert career assistant evaluating job postings against the CV of one specific candidate. The candidate's full CV is included at the end of this prompt — refer to it whenever you assess a role.
 
+────────────────────────────────────────
+ASSESSMENT FRAMEWORK
+────────────────────────────────────────
+
+You will rate each job on three dimensions, scored 1–5.
+
+FIELD alignment
+  5 — Core fit: international law, transitional justice, genocide prevention,
+       human rights research, IR research/policy, European foreign policy,
+       security studies, higher education policy, think-tank research, refugee/
+       displacement research.
+  4 — Strong fit: policy roles in major NGOs / multilateral bodies, diplomatic/
+       parliamentary research, conflict analysis, geopolitical risk advisory.
+  3 — Adjacent: government affairs, public affairs / political consulting,
+       broader sociology / history / political science research, comms roles
+       attached to a relevant policy area.
+  2 — Weak: general comms/marketing/PR for non-policy clients, generic project
+       management, general operations in unrelated sectors.
+  1 — Mismatch: pure sales, HR/talent, finance/accounting, software engineering,
+       healthcare/clinical, design/creative, building services, lab work.
+
+SKILLS match
+  The candidate has: research methods, qualitative & quantitative analysis
+  (SPSS, Python, Excel), policy/academic writing, literature review, project
+  administration; languages German (native), English (C2), French (B1).
+  5 — All required skills demonstrably present in the CV.
+  4 — Most required skills present; minor gaps the candidate could close
+       quickly with their transferable analytical/writing background.
+  3 — About half present; the rest are reasonable transferable skills.
+  2 — Specific tooling or methods the candidate lacks (e.g., specific GIS
+       software, advanced econometrics, specific CRM platforms).
+  1 — Specialist technical skills the candidate cannot substitute for
+       (clinical practice, accountancy software, civil engineering tools,
+       qualified-lawyer drafting, hands-on lab work).
+
+SENIORITY fit
+  5 — Internships, working-student roles, research / admin / programme
+       assistant, junior analyst, "graduate scheme", entry-level positions
+       explicitly open to those with no full-time professional experience.
+  4 — Roles asking for ~1–2 years of experience or equivalent. The
+       candidate's substantial student-assistant experience often counts.
+  3 — Roles asking for ~3 years of post-degree experience.
+  2 — Roles asking for 4 years, or "Manager" titles where management
+       experience is preferred but not strictly required.
+  1 — Senior, Lead, Director, Head, Partner, Principal titles; roles
+       requiring 5+ years as a hard requirement; explicit PhD requirement;
+       specialist licences/registrations the candidate doesn't hold.
+
+────────────────────────────────────────
+HARD INELIGIBILITY RULES
+────────────────────────────────────────
+
+If ANY of the following apply, set SENIORITY = 1 and MATCH = Low regardless
+of how strong the field or skills alignment is:
+
+  • Requires a PhD that is awarded, near-completion, or "by the start date"
+  • Requires a UK qualifying law degree, GDL, SQE, or CILEX (the candidate
+     does not have one — applies to JUSTICE roles, paralegal positions, etc.)
+  • Requires NMC nursing/midwifery registration, GMC medical registration,
+     dental registration, or other clinical practice licence
+  • Requires ACA, ACCA, CIMA, AAT or equivalent accounting qualification
+  • Requires fluency in a language the candidate does not speak — the
+     candidate has German, English, and basic French only. Roles requiring
+     Spanish, Portuguese, Russian, Mandarin, Arabic, Czech, Polish, etc.
+     for the actual work (not "nice to have") trigger this rule.
+  • Requires 5+ years of professional full-time experience as a HARD
+     requirement. Note carefully: "ideally 5 years", "preferably",
+     "5+ desirable" are NOT hard requirements — they are preferences. Only
+     exclude when the requirement is explicit and non-negotiable.
+  • Requires a specific vocational training (e.g., German "Ausbildung" in a
+     trade like Mechatronik, Sanitär-/Klimatechnik) that the candidate lacks
+
+────────────────────────────────────────
+OVERALL MATCH RATING (deterministic mapping)
+────────────────────────────────────────
+
+After scoring the three dimensions, derive MATCH using this exact rule:
+
+  HIGH    — All three scores ≥ 4 AND no hard ineligibility triggered.
+  MEDIUM  — At least one score ≥ 4, no score = 1, no hard ineligibility.
+  LOW     — Any score = 1, OR two or more scores = 2, OR any hard
+            ineligibility rule triggered.
+
+Do NOT factor location into the rating. Report it for information only —
+a role in another city or country does not lower the rating.
+
+Err on the side of inclusion for genuinely relevant roles where seniority
+fits: when in doubt between Medium and Low for a plausibly relevant role,
+choose Medium.
+
+────────────────────────────────────────
+OUTPUT FORMAT
+────────────────────────────────────────
+
+Use these exact labels, one per line, in this order. The user message will
+provide the ORGANISATION and URL — copy them verbatim into your response.
+
+JOB: [job title]
+ORGANISATION: [as provided in the user message]
+LOCATION: [city/country from job content; "Not specified" if absent]
+TYPE: [Full-time / Part-time / Internship / Contract; "Not specified" if absent]
+DEADLINE: [application deadline if stated; "Not specified" if absent]
+SALARY: [salary or pay range if stated; "Not specified" if absent]
+MATCH: [High / Medium / Low]
+FIELD: [1-5]
+SKILLS: [1-5]
+SENIORITY: [1-5]
+REASON: [2-3 sentences. Lead with the strongest signal — alignment or gap. If a hard ineligibility rule applies, name it explicitly.]
+URL: [as provided in the user message]
+
+PAGE-LEVEL MODE
+If the user message begins with "PAGE-LEVEL SCAN", the content is a careers
+page that may list multiple jobs. Identify each individual job posting and
+emit the format above for each one, separated by a blank line. If no jobs
+are found on the page at all, respond with exactly: NO_JOBS_FOUND
+
+LANGUAGE
+Job content may be in German, French, Spanish, etc. Assess regardless of
+the source language. Output in English.
+
+────────────────────────────────────────
+CALIBRATION EXAMPLES
+────────────────────────────────────────
+
+Example 1 — postdoctoral role (hard ineligibility)
+A "Postdoctoral Research Associate" role in critical IR at Queen Mary that
+explicitly requires a completed PhD →
+  FIELD: 5  SKILLS: 4  SENIORITY: 1  MATCH: Low
+  REASON: Field alignment is excellent (critical IR is core to candidate's
+  interests) but the role explicitly requires a completed PhD, which the
+  candidate (currently MSc) does not hold. Hard ineligibility on seniority.
+
+Example 2 — adjacent field, junior level (Medium)
+An "Account Executive — Healthcare Policy & Public Affairs" role at Hanover,
+described as a junior recruit role with intro-to-public-affairs framing →
+  FIELD: 3  SKILLS: 4  SENIORITY: 5  MATCH: Medium
+  REASON: Healthcare policy is outside the candidate's stated core interests
+  but is policy-adjacent. The junior framing matches their stage perfectly,
+  and their research/policy-writing background transfers cleanly.
+
+Example 3 — direct fit (High)
+A "Research Assistant for Defence and Military Analysis Programme" at IISS,
+asking for a strong background in IR/security and research/writing skills →
+  FIELD: 5  SKILLS: 5  SENIORITY: 5  MATCH: High
+  REASON: Direct overlap with candidate's IR/security focus and forthcoming
+  defence-policy publication. RA level is exactly appropriate for their
+  MSc-in-progress and substantial research-assistant experience.
+
+Example 4 — senior leadership (hard ineligibility on years)
+A "Director of Convening" at Chatham House, demanding extensive senior
+leadership experience and high-level event management →
+  FIELD: 5  SKILLS: 2  SENIORITY: 1  MATCH: Low
+  REASON: Field alignment is excellent but the Director title requires
+  significant leadership experience the candidate (only student-assistant
+  roles to date) does not have. Hard ineligibility on seniority.
+
+────────────────────────────────────────
+CANDIDATE CV
+────────────────────────────────────────
+
+{CANDIDATE_CV}
+"""
+
+
+def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_level=False):
+    anthropic_rate_limit()
+
+    # Build the per-call user message. Everything that varies between calls
+    # goes here; everything static lives in SYSTEM_PROMPT and is cached.
     if is_page_level:
-        prompt = f"""You are a job matching assistant. You will be given the full content of a careers page and a candidate's complete CV. Your task is to identify job listings on the page and assess each one against the candidate's profile.
-
-INSTRUCTIONS:
-1. Identify any individual job listings or vacancies mentioned on the page.
-2. For each job found, assess alignment with the candidate's CV using these criteria:
-   - Field alignment: Does the role relate to the candidate's areas of study and interest (international relations, international law, genocide/transitional justice, European foreign policy, security studies, higher education policy, policy research, sociology, history)?
-   - Skills match: Does the candidate have the required or comparable skills (research, data analysis, policy writing, SPSS, Python, multilingual)?
-   - Experience level: Is the role appropriate for someone with an MSc in progress, a strong BA, and research/admin assistant experience — but no full-time professional experience yet?
-3. Rate each job: High, Medium, or Low.
-4. Include ALL jobs found on the page, regardless of match rating.
-5. If no jobs are found on the page at all, respond with exactly: NO_JOBS_FOUND
-
-Note: Do NOT factor location into the match rating. Location should be reported in the output for the candidate's information, but a role in another city or country should not lower the rating.
-
-FORMAT (for each job found — use this exact format with these exact labels):
-JOB: [Job title]
-ORGANISATION: {site_name}
-LOCATION: [City/country, or "Remote" if applicable — extract from page if possible, otherwise write "Not specified"]
-TYPE: [Full-time/Part-time/Internship/Contract — extract from page if possible, otherwise write "Not specified"]
-DEADLINE: [Application deadline if mentioned, or "Not specified"]
-SALARY: [Salary or pay range if mentioned, or "Not specified"]
-MATCH: [High/Medium/Low]
-FIELD: [1-5 score for field alignment, where 5 = perfect match to candidate's interests]
-SKILLS: [1-5 score for skills match, where 5 = candidate has all required skills]
-SENIORITY: [1-5 score for seniority fit, where 5 = perfect level for the candidate, 1 = far too senior or too junior]
-REASON: [2-3 sentences explaining the match and any notable gaps]
-URL: {job_url}
-
-IMPORTANT:
-- The page content may be in German or another language — assess it regardless.
-- Err on the side of inclusion: if a role is plausibly relevant, rate it Medium rather than Low.
-- Pay close attention to seniority requirements — roles requiring 5+ years of experience should be rated Low.
-
----
-
-CAREERS PAGE CONTENT:
-{detail_text[:10000]}
-
----
-
-CANDIDATE CV:
-{CANDIDATE_CV}
-"""
+        user_message = (
+            f"PAGE-LEVEL SCAN\n"
+            f"ORGANISATION: {site_name}\n"
+            f"URL: {job_url}\n\n"
+            f"PAGE CONTENT:\n{detail_text[:10000]}"
+        )
     else:
-        prompt = f"""You are a job matching assistant. You will be given a full job description and a candidate's complete CV. Assess how well this specific role matches the candidate.
+        user_message = (
+            f"SINGLE JOB EVALUATION\n"
+            f"JOB: {job_title}\n"
+            f"ORGANISATION: {site_name}\n"
+            f"URL: {job_url}\n\n"
+            f"JOB DESCRIPTION:\n{detail_text[:10000]}"
+        )
 
-ASSESSMENT CRITERIA:
-1. Field alignment: Does the role relate to the candidate's areas of study and interest (international relations, international law, genocide/transitional justice, European foreign policy, security studies, higher education policy, policy research, sociology, history)?
-2. Skills match: Does the candidate have the required or comparable skills (research, data analysis, policy writing, SPSS, Python, multilingual)?
-3. Experience level: Is the role appropriate for someone with an MSc in progress, a strong BA, and research/admin assistant experience — but no full-time professional experience yet? Roles requiring 5+ years of professional experience should be rated Low.
-
-RATING SCALE:
-- High: Strong alignment in field, skills, and seniority. The candidate is a competitive applicant.
-- Medium: Plausible fit — the candidate could apply with some stretch, or the role is adjacent to their expertise.
-- Low: Poor fit due to field mismatch or excessive seniority requirements.
-
-Note: Do NOT factor location into the match rating. Location should be reported in the output for the candidate's information, but a role in another city or country should not lower the rating.
-
-Always respond in this exact format (use these exact labels):
-JOB: {job_title}
-ORGANISATION: {site_name}
-LOCATION: [City/country as stated in the description, or "Not specified"]
-TYPE: [Full-time/Part-time/Internship/Contract as stated, or "Not specified"]
-DEADLINE: [Application deadline if mentioned, or "Not specified"]
-SALARY: [Salary or pay range if mentioned, or "Not specified"]
-MATCH: [High/Medium/Low]
-FIELD: [1-5 score for field alignment, where 5 = perfect match to candidate's interests]
-SKILLS: [1-5 score for skills match, where 5 = candidate has all required skills]
-SENIORITY: [1-5 score for seniority fit, where 5 = perfect level for the candidate, 1 = far too senior or too junior]
-REASON: [2-3 sentences explaining the match and any notable gaps]
-URL: {job_url}
-
-IMPORTANT:
-- The job description may be in German or another language — assess it regardless.
-- Err on the side of inclusion for genuinely relevant roles.
-
----
-
-JOB DESCRIPTION:
-{detail_text[:10000]}
-
----
-
-CANDIDATE CV:
-{CANDIDATE_CV}
-"""
-
+    headers = {
+        "x-api-key": ANTHROPIC_API_KEY,
+        "anthropic-version": "2023-06-01",
+        "content-type": "application/json",
+    }
     payload = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 8192}
+        "model": ANTHROPIC_MODEL,
+        "max_tokens": 4096,
+        "temperature": 0,
+        "system": [
+            {
+                "type": "text",
+                "text": SYSTEM_PROMPT,
+                "cache_control": {"type": "ephemeral"},
+            }
+        ],
+        "messages": [{"role": "user", "content": user_message}],
     }
 
     try:
-        resp = requests.post(url, json=payload, timeout=60)
+        resp = requests.post(
+            "https://api.anthropic.com/v1/messages",
+            headers=headers, json=payload, timeout=60,
+        )
         resp.raise_for_status()
         data = resp.json()
-        result = data["candidates"][0]["content"]["parts"][0]["text"]
-        print(f"    --- Gemini raw response ---")
+        result = "".join(
+            b.get("text", "") for b in data.get("content", [])
+            if b.get("type") == "text"
+        )
+        # Log token usage and cache stats — helps confirm caching is working
+        usage = data.get("usage", {})
+        cache_read = usage.get("cache_read_input_tokens", 0)
+        cache_write = usage.get("cache_creation_input_tokens", 0)
+        in_tok = usage.get("input_tokens", 0)
+        out_tok = usage.get("output_tokens", 0)
+        print(
+            f"    [tokens] in={in_tok} out={out_tok} "
+            f"cache_read={cache_read} cache_write={cache_write}"
+        )
+        print(f"    --- Anthropic raw response ---")
         print(result)
-        print(f"    --- End Gemini response ---")
+        print(f"    --- End Anthropic response ---")
         return result
     except Exception as e:
-        _record_error(f"Gemini API: {e}")
-        print(f"    Gemini error: {e}")
+        _record_error(f"Anthropic API: {e}")
+        print(f"    Anthropic error: {e}")
         return None
 
 
@@ -1385,7 +1522,7 @@ def main():
     now = datetime.now(timezone.utc)
     print(f"=== Job Monitor Run: {now.isoformat()} ===")
     if DRY_RUN:
-        print("🏃 DRY RUN — populating state only, no Gemini calls or notifications\n")
+        print("🏃 DRY RUN — populating state only, no LLM calls or notifications\n")
     print()
 
     state = load_state()
@@ -1504,13 +1641,13 @@ def main():
                 for t in result.get("titles", []):
                     print(f"      → {t}")
                 if DRY_RUN:
-                    print(f"    Page content changed (dry run — skipping Gemini)")
+                    print(f"    Page content changed (dry run — skipping LLM)")
                 else:
-                    print(f"    Page content changed! Sending full text to Gemini...")
-                    gemini_result = evaluate_with_gemini(name, f"Page update on {name}", site["url"], result["text"], is_page_level=True)
-                    gemini_err = _consume_error()
-                    if gemini_result:
-                        parsed = parse_gemini_matches(gemini_result)
+                    print(f"    Page content changed! Sending full text to Anthropic...")
+                    llm_result = evaluate_with_anthropic(name, f"Page update on {name}", site["url"], result["text"], is_page_level=True)
+                    llm_err = _consume_error()
+                    if llm_result:
+                        parsed = parse_gemini_matches(llm_result)
                         for m in parsed:
                             # Telegram: High/Medium only
                             if m.get("match", "").lower() in ("high", "medium"):
@@ -1520,8 +1657,8 @@ def main():
                     else:
                         issues.add(
                             issues_data, now, site,
-                            "gemini_call_failed",
-                            gemini_err or "Gemini returned no result for page-level call",
+                            "llm_call_failed",
+                            llm_err or "LLM returned no result for page-level call",
                             scope="page_level",
                         )
                 state[site_key]["listing_hash"] = result["hash"]
@@ -1551,22 +1688,22 @@ def main():
             print(f"      → {job['title']}")
 
             if not DRY_RUN:
-                gemini_result = evaluate_with_gemini(name, job["title"], job["url"], job["detail_text"])
-                gemini_err = _consume_error()
+                llm_result = evaluate_with_anthropic(name, job["title"], job["url"], job["detail_text"])
+                llm_err = _consume_error()
 
-                if gemini_result is None:
-                    # Gemini call failed — do NOT mark as seen, retry next run
-                    print(f"        ⚠️ Gemini failed — will retry next run.")
+                if llm_result is None:
+                    # LLM call failed — do NOT mark as seen, retry next run
+                    print(f"        ⚠️ Anthropic call failed — will retry next run.")
                     issues.add(
                         issues_data, now, site,
-                        "gemini_call_failed",
-                        gemini_err or "Gemini returned no result",
+                        "llm_call_failed",
+                        llm_err or "LLM returned no result",
                         job_title=job["title"],
                         job_url=job["url"],
                     )
                     continue
 
-                parsed = parse_gemini_matches(gemini_result)
+                parsed = parse_gemini_matches(llm_result)
                 if parsed:
                     m = parsed[0]
                     match_level = m.get("match", "low").lower()
@@ -1581,15 +1718,15 @@ def main():
                     # Daily report: all jobs
                     daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=job["url"]))
                 else:
-                    # Gemini returned something unparseable — record minimal entry
-                    print(f"        ⚠️ Could not parse Gemini response.")
+                    # LLM returned something unparseable — record minimal entry
+                    print(f"        ⚠️ Could not parse LLM response.")
                     issues.add(
                         issues_data, now, site,
-                        "gemini_parse_failed",
-                        "Gemini response could not be parsed into a match block",
+                        "llm_parse_failed",
+                        "LLM response could not be parsed into a match block",
                         job_title=job["title"],
                         job_url=job["url"],
-                        raw_snippet=(gemini_result or "")[:300],
+                        raw_snippet=(llm_result or "")[:300],
                     )
                     daily_report_jobs.append({
                         "title": job["title"],
