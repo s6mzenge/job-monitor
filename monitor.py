@@ -1132,8 +1132,10 @@ METHOD_HANDLERS = {
 #   - User message holds only the per-call data: org name, URL, job text,
 #     and a one-line marker switching between page-level and single-job
 #     mode. This part is dynamic and not cached.
-#   - temperature=0 makes ratings near-deterministic (same input → same
-#     rating), which matters for a structured scoring task.
+#   - Determinism on this scoring task comes from the rubric structure and
+#     the formula-based MATCH derivation in the system prompt. Note that
+#     Claude Opus 4.7 rejects temperature/top_p/top_k parameters outright
+#     (400 error) — these must be omitted.
 
 SYSTEM_PROMPT = f"""You are an expert career assistant evaluating job postings against the CV of one specific candidate. The candidate's full CV is included at the end of this prompt — refer to it whenever you assess a role.
 
@@ -1330,7 +1332,10 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
     payload = {
         "model": ANTHROPIC_MODEL,
         "max_tokens": 4096,
-        "temperature": 0,
+        # NOTE: Claude Opus 4.7 rejects temperature/top_p/top_k with a 400
+        # error. Determinism on this scoring task comes from the rubric and
+        # the formula-based MATCH derivation in the system prompt, not from
+        # sampling parameters. Do not re-add temperature here.
         "system": [
             {
                 "type": "text",
@@ -1346,7 +1351,15 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
             "https://api.anthropic.com/v1/messages",
             headers=headers, json=payload, timeout=60,
         )
-        resp.raise_for_status()
+        # Surface the API's own error message on non-2xx responses, not just
+        # the generic HTTP status. Anthropic returns a JSON body with an
+        # explanatory message that is essential for debugging.
+        if resp.status_code >= 400:
+            body_snippet = (resp.text or "")[:1000]
+            err_msg = f"HTTP {resp.status_code}: {body_snippet}"
+            _record_error(f"Anthropic API: {err_msg}")
+            print(f"    Anthropic error: {err_msg}")
+            return None
         data = resp.json()
         result = "".join(
             b.get("text", "") for b in data.get("content", [])
