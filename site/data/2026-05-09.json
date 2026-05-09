@@ -1,7 +1,7 @@
 {
   "date": "2026-05-09",
-  "generated_at": "2026-05-09T15:00:58.913423+00:00",
-  "run_count": 21,
+  "generated_at": "2026-05-09T15:31:00.501759+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Junior Security Consultant",
@@ -55,6 +55,20 @@
       "seniority_score": "4",
       "reason": "This is a technical penetration-testing/cyber security role requiring hands-on offensive security skills (web/mobile/infrastructure testing, exploit development, OSCP-type certifications), which the candidate does not have. Despite the \"Junior\" framing, the field and skills are a fundamental mismatch with the candidate's IR/international law profile.",
       "location": "Kuala Lumpur, Malaysia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Assistant Accountant",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125459389-assistant-accountant-",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "Hard ineligibility: the role requires part-qualification in AAT, CIMA, ACCA or equivalent, which the candidate does not hold. Although Sibylline operates in the security/intelligence sector, this is a finance/accounting role with no overlap with the candidate's research and policy background.",
+      "location": "Not specified",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
