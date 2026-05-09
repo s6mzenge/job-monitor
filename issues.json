@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-05-09T14:00:55.671204+00:00",
-  "site_summary": {
-    "REDRESS": {
-      "site_id": 32,
-      "url": "https://redress.org/about-us/work-at-redress/current-vacancies/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 5,
-      "first_recent_failure": "2026-04-30T14:31:01.950620+00:00",
-      "last_recent_failure": "2026-05-09T14:00:55.671204+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 522 Server Error: <none> for url: https://redress.org/about-us/work-at-redress/current-vacancies/"
-    }
-  },
+  "last_updated": "2026-05-09T14:30:52.274724+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-04-29T14:05:43.157388+00:00",
