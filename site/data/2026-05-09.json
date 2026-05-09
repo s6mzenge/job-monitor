@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-09",
+  "generated_at": "2026-05-09T05:00:57.735600+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Junior Security Consultant",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/MYS-Junior-Security-Consultant-50088/1382523033",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "4",
+      "reason": "This is a hands-on penetration testing / cyber security technical role requiring offensive security skills, networking expertise, and coding — entirely unrelated to the candidate's IR/international law background. Both field and skills are mismatched despite the junior framing.",
+      "location": "Kuala Lumpur, Malaysia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Junior Security Consultant",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/MYS-Junior-Security-Consultant-50088/1382521633",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "3",
+      "reason": "This is a technical penetration testing / cyber security role requiring hands-on offensive security skills, networking/system administration knowledge, and certifications like OSCP or CREST. The candidate's IR/international law background and basic Python/web skills are not substitutes for specialist penetration testing expertise.",
+      "location": "Kuala Lumpur, Malaysia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Security Consultant",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/MYS-Senior-Security-Consultant-50088/1382523633",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a technical penetration testing / cyber security role requiring hands-on offensive security expertise (web/mobile/infrastructure testing, OSCP/CREST certifications), which is entirely outside the candidate's IR/policy field and skill set. The \"Senior\" title and Malaysia residency requirement further exclude the candidate.",
+      "location": "Kuala Lumpur, Malaysia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Junior Security Consultant",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/MYS-Junior-Security-Consultant-50088/1382522633",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "4",
+      "reason": "This is a technical penetration-testing/cyber security role requiring hands-on offensive security skills (web/mobile/infrastructure testing, exploit development, OSCP-type certifications), which the candidate does not have. Despite the \"Junior\" framing, the field and skills are a fundamental mismatch with the candidate's IR/international law profile.",
+      "location": "Kuala Lumpur, Malaysia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
