@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-05-10T07:01:54.216713+00:00",
+  "last_updated": "2026-05-10T07:30:50.745773+00:00",
   "site_summary": {
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
+    "Impunity Watch": {
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
       "consecutive_failures": 1,
       "total_recent_failures": 22,
-      "first_recent_failure": "2026-04-30T06:00:58.738290+00:00",
-      "last_recent_failure": "2026-05-10T07:01:54.216713+00:00",
+      "first_recent_failure": "2026-04-29T15:01:18.017646+00:00",
+      "last_recent_failure": "2026-05-10T07:30:50.745773+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://globalrightscompliance.org/work-with-us/\", waiting until \"networkidle\""
+      "last_message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/"
     }
   },
   "issues": [
@@ -9047,6 +9047,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://globalrightscompliance.org/work-with-us/\", waiting until \"networkidle\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-10T07:30:50.745773+00:00",
+      "site": "Impunity Watch",
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
       "consecutive_count": 1
     }
   ]
