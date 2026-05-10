@@ -1,0 +1,49 @@
+{
+  "date": "2026-05-10",
+  "generated_at": "2026-05-10T05:01:02.753692+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Technical reviewer - IATF",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Mumbai-Technical-reviewer-IATF-MH-400093/1293212701",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is an automotive certification/quality assurance role requiring an engineering degree, IATF/ISO auditing qualifications, and automotive industry expertise — none of which the candidate possesses. Complete mismatch with the candidate's IR/international law profile.",
+      "location": "Mumbai, India",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Customer Service Advisor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Kuala-Lumpur-Customer-Service-Advisor-50088/1373515433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "Customer service / client account management in a commercial assurance firm is a complete mismatch with the candidate's international law and IR research focus. Location and shift time (Melbourne hours from KL) are also impractical, though location is not part of the rating.",
+      "location": "Kuala Lumpur, Malaysia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Consultant Network Manager",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Consultant-Network-Manager-B37-7ES/1373619133",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a relationship/business development role managing a network of assurance consultants — entirely outside the candidate's field of international relations, law, and policy research. Core requirements (lead generation, account management, CRM-based partner management) are not part of the candidate's profile.",
+      "location": "Birmingham, UK",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
