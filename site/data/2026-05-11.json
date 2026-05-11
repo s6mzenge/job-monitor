@@ -1,7 +1,7 @@
 {
   "date": "2026-05-11",
-  "generated_at": "2026-05-11T09:30:52.374679+00:00",
-  "run_count": 10,
+  "generated_at": "2026-05-11T10:01:02.888248+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Global Process Owner - R2R",
@@ -99,6 +99,34 @@
       "location": "London, UK",
       "type": "Full-time, Fixed-term",
       "deadline": "3rd June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Embedded Intelligence Program Manager",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125794225-embedded-intelligence-program-manager",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility on seniority: the role explicitly requires 5-7+ years of relevant experience plus 3-5 years of management experience, far beyond the candidate's student-assistant background. Although the geopolitical/intelligence field is adjacent to the candidate's interests, this is a senior program management position.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Food Safety Auditors - (Global)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Edinburgh-Food-Safety-Auditors-%28Global%29/1392193733",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a food safety auditing contractor role requiring specialist sector qualifications and audit experience (retail, hospitality, seafood, agriculture) entirely unrelated to the candidate's international relations and policy research background. No relevant skills or field overlap.",
+      "location": "Edinburgh, GB",
+      "type": "Contractor On Demand",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
