@@ -1,7 +1,7 @@
 {
   "date": "2026-05-11",
-  "generated_at": "2026-05-11T07:01:03.993955+00:00",
-  "run_count": 5,
+  "generated_at": "2026-05-11T07:30:52.386109+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Global Process Owner - R2R",
@@ -13,6 +13,20 @@
       "seniority_score": "1",
       "reason": "This is a senior global finance process ownership role (Record-to-Report / Procure-to-Pay), entirely outside the candidate's field of international relations and law. It requires deep finance process expertise, ERP systems knowledge, and ideally ACCA/CIMA qualification, none of which the candidate holds, and the seniority level (owning $1.6B turnover processes, influencing 180 finance staff) is far beyond entry level.",
       "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Future Lead Auditor for ISO 13485",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Cape-Town-Future-Lead-Auditor-for-ISO-13485-7441/1392145933",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a medical-device auditor role requiring a BSc in biomedical/life sciences and four years of medical device industry experience — entirely outside the candidate's IR/policy field and skill set. Pure mismatch on field and specialist technical skills.",
+      "location": "Cape Town / Johannesburg, South Africa",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
