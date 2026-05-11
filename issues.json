@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-05-11T06:31:05.272843+00:00",
-  "site_summary": {},
+  "last_updated": "2026-05-11T07:01:03.993955+00:00",
+  "site_summary": {
+    "LRQA": {
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 217,
+      "first_recent_failure": "2026-05-02T17:00:55.646755+00:00",
+      "last_recent_failure": "2026-05-11T07:01:03.993955+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f7ca0b820f0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+    }
+  },
   "issues": [
     {
       "timestamp": "2026-04-29T14:05:43.157388+00:00",
@@ -9133,6 +9147,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-11T07:01:03.993955+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f7ca0b820f0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 1
     }
   ]
