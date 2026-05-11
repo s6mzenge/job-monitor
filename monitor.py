@@ -158,18 +158,35 @@ def save_state(state):
 # ═══════════════════════════════════════════════════════════════
 
 def fetch_page(url, extra_headers=None, proxy=None):
-    """Fetch a URL and return a BeautifulSoup object, or None on error."""
+    """Fetch a URL and return a BeautifulSoup object, or None on error.
+
+    If proxy='cloudflare_worker', uses the Worker proxy directly.
+    Otherwise fetches directly; on 403/415/429/503 (typical CDN bot-block
+    statuses) automatically retries once via the Worker proxy if available.
+    GitHub Actions datacenter IPs intermittently get flagged by some CDNs
+    (HIS Hamburg, Institute for Government, Paul Hamlyn, twentyfifty,
+    Ceasefire — all hit this since 2026-05-01), and the fallback handles
+    it transparently without per-site config.
+    """
     hdrs = {**HEADERS, **(extra_headers or {})}
+
+    def via_proxy():
+        return requests.get(
+            CF_WORKER_URL,
+            params={"url": url},
+            headers={"X-Proxy-Token": CF_WORKER_TOKEN},
+            timeout=30,
+        )
+
     try:
         if proxy == "cloudflare_worker" and CF_WORKER_URL:
-            resp = requests.get(
-                CF_WORKER_URL,
-                params={"url": url},
-                headers={"X-Proxy-Token": CF_WORKER_TOKEN},
-                timeout=30,
-            )
+            resp = via_proxy()
         else:
             resp = requests.get(url, headers=hdrs, timeout=30)
+            # CDN bot-blocking heuristic — retry via proxy if available
+            if resp.status_code in (403, 415, 429, 503) and CF_WORKER_URL:
+                print(f"    Got {resp.status_code} on direct fetch — retrying via proxy")
+                resp = via_proxy()
         resp.raise_for_status()
         return BeautifulSoup(resp.text, "html.parser")
     except Exception as e:
