@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T10:31:05.189507+00:00",
+  "last_updated": "2026-05-11T11:01:08.525147+00:00",
   "site_summary": {},
   "issues": [
     {
@@ -9224,6 +9224,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-11T11:01:08.525147+00:00",
+      "site": "Institute of Race Relations",
+      "site_id": 48,
+      "url": "https://irr.org.uk/about/vacancies/",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 529: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CavfhTPmAMvM4KxY6QF8R\"}",
+      "scope": "page_level"
     }
   ]
 }
