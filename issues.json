@@ -1,33 +1,6 @@
 {
-  "last_updated": "2026-05-11T16:31:26.946466+00:00",
-  "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 21,
-      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "last_recent_failure": "2026-05-11T16:31:26.946466+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f520913e030>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))"
-    },
-    "Ceasefire Centre for Civilian Rights": {
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 15,
-      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "last_recent_failure": "2026-05-11T16:31:26.946466+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f520871df40>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))"
-    }
-  },
+  "last_updated": "2026-05-11T17:01:06.924507+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-04-29T14:05:43.157388+00:00",
