@@ -1,7 +1,7 @@
 {
   "date": "2026-05-11",
-  "generated_at": "2026-05-11T07:30:52.386109+00:00",
-  "run_count": 6,
+  "generated_at": "2026-05-11T08:01:03.897839+00:00",
+  "run_count": 7,
   "jobs": [
     {
       "title": "Global Process Owner - R2R",
@@ -28,6 +28,20 @@
       "reason": "This is a medical-device auditor role requiring a BSc in biomedical/life sciences and four years of medical device industry experience — entirely outside the candidate's IR/policy field and skill set. Pure mismatch on field and specialist technical skills.",
       "location": "Cape Town / Johannesburg, South Africa",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Working Student - Data & Polling (m/f/d)",
+      "organisation": "ECFR",
+      "url": "https://ecfr.jobs.personio.com/job/2628601",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "ECFR is a leading European foreign policy think tank — a direct fit with the candidate's core interests in IR and European policy. The data/polling focus aligns well with their quantitative skills (SPSS, Python, Excel), and the working-student format is exactly appropriate for their MSc-in-progress stage.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (Working Student)",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
