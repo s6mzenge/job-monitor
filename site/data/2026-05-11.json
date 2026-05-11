@@ -1,7 +1,7 @@
 {
   "date": "2026-05-11",
-  "generated_at": "2026-05-11T08:01:03.897839+00:00",
-  "run_count": 7,
+  "generated_at": "2026-05-11T08:31:03.388873+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Global Process Owner - R2R",
@@ -44,6 +44,48 @@
       "type": "Part-time (Working Student)",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Assistant Accountant",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125775029-assistant-accountant-",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility triggered: the role requires part-qualification in AAT, CIMA, ACCA or equivalent accounting credentials, which the candidate does not hold. The position is also a pure finance/accounting role unrelated to the candidate's IR/policy field.",
+      "location": "Not specified",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Campaigning, Senior Consultant",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7728573003?gh_jid=7728573003",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior corporate communications/campaigning role requiring 6–9 years of experience, which is a hard ineligibility trigger for the candidate. The field (corporate PR for FTSE/Fortune clients) is also far from the candidate's IR/international law focus.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Lecturer in Archaeology",
+      "organisation": "Birkbeck, University of London",
+      "url": "https://cis7.bbk.ac.uk/vacancy/associate-lecturer-in-archaeology-611175.html",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the role requires a completed or near-completed PhD in Roman archaeology, which the candidate does not have. Field (Roman archaeology) and skills (subject-matter expertise, undergraduate teaching experience) are entirely outside the candidate's IR/international law profile.",
+      "location": "London, UK",
+      "type": "Part-time, Fixed-term",
+      "deadline": "7 June 2026",
+      "salary": "£69.68 per hour"
     }
   ]
 }
