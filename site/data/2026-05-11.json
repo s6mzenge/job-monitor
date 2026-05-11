@@ -1,7 +1,7 @@
 {
   "date": "2026-05-11",
-  "generated_at": "2026-05-11T13:31:05.441817+00:00",
-  "run_count": 20,
+  "generated_at": "2026-05-11T14:31:09.718424+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Global Process Owner - R2R",
@@ -128,6 +128,20 @@
       "type": "Contractor On Demand",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Senior Designer - Brand & Ideas",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7725968003?gh_jid=7725968003",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior creative/design role requiring expert proficiency in Adobe Creative Suite, Figma, typography and brand design — specialist skills the candidate does not have. The field (B2B brand design) is unrelated to IR/policy/intelligence, and the senior level requires substantial prior design studio experience.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Competitive (depending on experience)"
     }
   ]
 }
