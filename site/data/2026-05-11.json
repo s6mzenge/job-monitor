@@ -1,7 +1,7 @@
 {
   "date": "2026-05-11",
-  "generated_at": "2026-05-11T09:01:05.949849+00:00",
-  "run_count": 9,
+  "generated_at": "2026-05-11T09:30:52.374679+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Global Process Owner - R2R",
@@ -86,6 +86,20 @@
       "type": "Part-time, Fixed-term",
       "deadline": "7 June 2026",
       "salary": "£69.68 per hour"
+    },
+    {
+      "title": "Defence & Security Policy Fellow (m/f/d)",
+      "organisation": "ECFR",
+      "url": "https://ecfr.jobs.personio.com/job/2628693",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Field alignment is excellent — European security/defence policy at a top pan-European think tank directly matches the candidate's forthcoming defence-policy publication and IR focus. However, the role explicitly requires a minimum of 5 years' experience in security/defence and EU-UK relations as a hard requirement, which the candidate (MSc in progress, student-assistant roles only) does not meet. Hard ineligibility on seniority.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-term",
+      "deadline": "3rd June 2026",
+      "salary": "Not specified"
     }
   ]
 }
