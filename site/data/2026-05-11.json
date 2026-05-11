@@ -1,7 +1,7 @@
 {
   "date": "2026-05-11",
-  "generated_at": "2026-05-11T16:01:06.175434+00:00",
-  "run_count": 24,
+  "generated_at": "2026-05-11T16:31:26.946466+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Global Process Owner - R2R",
@@ -155,6 +155,20 @@
       "location": "Johannesburg, South Africa",
       "type": "Full-time",
       "deadline": "25 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Assistant Accountant",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125889508-assistant-accountant-",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "Although Sibylline is a core target firm, this is a finance/accounting role requiring part-qualification in AAT, CIMA, or ACCA — a hard ineligibility trigger. The candidate has no bookkeeping or accounts payable/receivable background and no accountancy qualification.",
+      "location": "Not specified",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
