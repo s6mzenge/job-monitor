@@ -116,7 +116,13 @@ STATE_FILE = "state.json"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                   "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                   "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    # Cloudflare WAF on several sites (HIS Hamburg, IfG, PHF, twentyfifty,
+    # Ceasefire) returns HTTP 415 when the requests-default Accept header is
+    # sent. Mirror a real browser to avoid the filter.
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,"
+              "image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-GB,en;q=0.9",
 }
 
 NO_VACANCY_PHRASES = [
