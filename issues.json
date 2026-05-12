@@ -1,33 +1,6 @@
 {
-  "last_updated": "2026-05-12T06:02:24.544180+00:00",
-  "site_summary": {
-    "Goldsmiths, University of London": {
-      "site_id": 52,
-      "url": "https://jobs.gold.ac.uk/job-search.html",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 14,
-      "first_recent_failure": "2026-05-02T06:30:55.077963+00:00",
-      "last_recent_failure": "2026-05-12T06:02:24.544180+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.gold.ac.uk', port=443): Read timed out. (read timeout=30)"
-    },
-    "Birkbeck, University of London": {
-      "site_id": 53,
-      "url": "https://cis7.bbk.ac.uk/home.html",
-      "method": "hireserve_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 8,
-      "first_recent_failure": "2026-05-02T05:00:58.602448+00:00",
-      "last_recent_failure": "2026-05-12T06:02:24.544180+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Hireserve API: HTTPSConnectionPool(host='cis7.bbk.ac.uk', port=443): Read timed out. (read timeout=30)"
-    }
-  },
+  "last_updated": "2026-05-12T06:31:10.678179+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-04-29T14:05:43.157388+00:00",
