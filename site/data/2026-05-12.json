@@ -1,7 +1,7 @@
 {
   "date": "2026-05-12",
-  "generated_at": "2026-05-12T09:01:26.359691+00:00",
-  "run_count": 9,
+  "generated_at": "2026-05-12T09:31:00.241468+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "UX Researcher Role - 12 Months - FTC",
@@ -71,6 +71,34 @@
       "location": "Not specified (South Africa)",
       "type": "Full-time",
       "deadline": "29 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "ASSISTANT ANIMAL ATTENDANT.9.07 (AC.09.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106362&p_spid=5150831",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "The posting is for an Associate Lecturer in Pharmacy Practice requiring a Master of Pharmacy degree and non-negotiable registration with the South African Pharmacy Council. Hard ineligibility: the candidate lacks the required professional pharmacy qualification and licensure.",
+      "location": "Not specified (Wits Research Animal Facility; South Africa)",
+      "type": "Full-time Fixed-term (3 years)",
+      "deadline": "24 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer, Clinical Pharmacy",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106370&p_spid=5151819",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a clinical pharmacy lectureship requiring a BPharm/MBBCh, SAPC pharmacist registration, and 5+ years tertiary teaching experience — hard ineligibilities the candidate cannot meet. Complete mismatch with the candidate's IR/policy background.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time, Fixed-term (18 months)",
+      "deadline": "25 May 2026",
       "salary": "Not specified"
     }
   ]

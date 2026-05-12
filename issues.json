@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-05-12T09:01:26.359691+00:00",
-  "site_summary": {},
+  "last_updated": "2026-05-12T09:31:00.241468+00:00",
+  "site_summary": {
+    "S-RM": {
+      "site_id": 49,
+      "url": "https://www.s-rminform.com/careers/open-positions?locations=London",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-05-12T09:31:00.241468+00:00",
+      "last_recent_failure": "2026-05-12T09:31:00.241468+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.resources__item\") to be visible"
+    }
+  },
   "issues": [
     {
       "timestamp": "2026-04-29T14:05:43.157388+00:00",
@@ -9345,6 +9359,16 @@
       "message": "Anthropic API: HTTP 529: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CaxHTia8QHoi4JMu7TURG\"}",
       "job_title": "Project Manager  Research and Consulting (AD.10.4)",
       "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106374&p_spid=5151823"
+    },
+    {
+      "timestamp": "2026-05-12T09:31:00.241468+00:00",
+      "site": "S-RM",
+      "site_id": 49,
+      "url": "https://www.s-rminform.com/careers/open-positions?locations=London",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.resources__item\") to be visible",
+      "consecutive_count": 1
     }
   ]
 }
