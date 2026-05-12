@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-12",
+  "generated_at": "2026-05-12T05:00:59.356454+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "UX Researcher Role - 12 Months - FTC",
+      "organisation": "Google DeepMind",
+      "url": "https://job-boards.greenhouse.io/deepmind/jobs/7913506",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "UX research for AI product development sits outside the candidate's target zones — this is product/design research, not AI policy, governance, or security research. The role requires HCI/cognitive science/experimental psychology backgrounds with usability studies and product strategy experience, which the candidate lacks; their IR/policy research methods don't transfer cleanly to UXR practice.",
+      "location": "London, UK",
+      "type": "Contract (12 months FTC)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "CAP and Remediation Manager",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Istanbul-CAP-and-Remediation-Manager-34742/1383098433",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Ethical sourcing/supplier compliance is outside the candidate's policy and intelligence focus. The role hard-requires 8+ years of experience in responsible sourcing/labor compliance, triggering the seniority ineligibility rule, and demands domain expertise (audit methodologies, CAPs) the candidate does not have.",
+      "location": "Istanbul, Turkey (or Portugal, remote)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Mystery Shopper (Spain)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Madrid-Mystery-Shopper-%28Spain%29/1383384033",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "This is a freelance retail mystery-shopping gig with no connection to IR, policy, intelligence, or research. It also requires residence in Spain and effectively requires Spanish, a language the candidate does not speak. Clear mismatch on field.",
+      "location": "Spain (especially Zaragoza, Lleida, Ibiza, Mallorca)",
+      "type": "Contractor / Freelance",
+      "deadline": "Not specified",
+      "salary": "Payment per completed assignment"
+    },
+    {
+      "title": "Aerospace Auditor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Earth%2C-TX-Aerospace-Auditor-TX-TX-77042/1392555833",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "Complete mismatch — aerospace management-system auditing requires specialist industry certification and technical expertise the candidate does not possess. No overlap with IR, policy, or research work.",
+      "location": "Texas, US",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
