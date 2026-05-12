@@ -1,7 +1,7 @@
 {
   "date": "2026-05-12",
-  "generated_at": "2026-05-12T14:32:50.801411+00:00",
-  "run_count": 20,
+  "generated_at": "2026-05-12T15:01:08.997870+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "UX Researcher Role - 12 Months - FTC",
@@ -210,6 +210,20 @@
       "reason": "This is a senior software engineering role requiring 5+ years of hands-on Delphi/Object Pascal development experience — a specialist technical skill the candidate does not have. Hard ineligibility on both the 5+ year requirement and specialist technical skills; field is entirely unrelated to IR/policy/intelligence.",
       "location": "Birmingham, UK",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Account Director",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Account-Director_JR102431",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior B2B technology PR/communications role requiring around five years of relevant agency or in-house experience, established media relationships, and team management — none of which the candidate has. Field alignment is weak (commercial tech PR, not policy/IR/risk), and the Director title with team leadership responsibilities triggers hard ineligibility on seniority.",
+      "location": "London, United Kingdom",
+      "type": "Fixed-Term Contract",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
