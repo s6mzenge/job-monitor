@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-05-12T09:31:00.241468+00:00",
-  "site_summary": {
-    "S-RM": {
-      "site_id": 49,
-      "url": "https://www.s-rminform.com/careers/open-positions?locations=London",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-05-12T09:31:00.241468+00:00",
-      "last_recent_failure": "2026-05-12T09:31:00.241468+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.resources__item\") to be visible"
-    }
-  },
+  "last_updated": "2026-05-12T10:01:04.140003+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-04-29T14:05:43.157388+00:00",
