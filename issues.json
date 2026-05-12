@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-05-12T13:30:55.526171+00:00",
-  "site_summary": {
-    "Paul Hamlyn Foundation": {
-      "site_id": 64,
-      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 17,
-      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
-      "last_recent_failure": "2026-05-12T13:30:55.526171+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 522 Server Error: <none> for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities"
-    }
-  },
+  "last_updated": "2026-05-12T14:04:41.007764+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-04-29T14:05:43.157388+00:00",
