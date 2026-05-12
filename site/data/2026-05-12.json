@@ -1,7 +1,7 @@
 {
   "date": "2026-05-12",
-  "generated_at": "2026-05-12T16:01:22.944186+00:00",
-  "run_count": 23,
+  "generated_at": "2026-05-12T16:34:08.238234+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "UX Researcher Role - 12 Months - FTC",
@@ -254,6 +254,20 @@
       "type": "Part-time (50% FTE)",
       "deadline": "08 June 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "EHRAC Project Officer",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=BAL41",
+      "match": "medium",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "Strong field alignment — EHRAC works on international human rights law, conflict, and security force abuses in the post-Soviet space, directly relevant to the candidate's international law and atrocity-focused research interests. However, the role is project management rather than research, asking for an \"experienced Project Officer\" with project delivery, monitoring and evaluation experience, where the candidate's background is primarily research/student-assistant work. Seniority sits above entry-level but is not a hard exclusion.",
+      "location": "Hendon, London",
+      "type": "Full-time or Part-time, Fixed Term 24 months",
+      "deadline": "Friday 12 June 2026",
+      "salary": "£37,357 to £41,531 per annum"
     }
   ]
 }
