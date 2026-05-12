@@ -1,7 +1,7 @@
 {
   "date": "2026-05-12",
-  "generated_at": "2026-05-12T11:01:10.423403+00:00",
-  "run_count": 13,
+  "generated_at": "2026-05-12T11:31:02.458073+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "UX Researcher Role - 12 Months - FTC",
@@ -128,6 +128,48 @@
       "type": "Contract (Freelance/Subcontract)",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer / Senior Lecturer: Music Education",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106377&p_spid=5151826",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Complete mismatch — this is a music education academic post requiring a PhD in Music/Music Education, piano proficiency, and years of higher education teaching experience. Hard ineligibility triggered on the PhD requirement alone, plus the field is entirely unrelated to the candidate's IR/policy background.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "12 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer / Senior Lecturer: Physical Science",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106376&p_spid=5151825",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Mismatch on every dimension: the role is a physical sciences education academic post requiring a PhD in Science/Science Education, teaching experience in physical sciences, and a publication record in the field. Hard ineligibility triggers on the PhD requirement and on the senior academic seniority level.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time, Permanent",
+      "deadline": "12 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Volljuristen (w/m/d)",
+      "organisation": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-volljuristen-27052026-1161430",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The role requires two completed German state law examinations (Volljurist) with a minimum combined score of 15 points — a hard qualification the candidate does not hold. While the parliamentary/policy context aligns well with the candidate's interests, this is a strict legal qualification requirement triggering hard ineligibility.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (fixed-term up to 2 years; part-time possible)",
+      "deadline": "27 May 2026",
+      "salary": "Entgeltgruppe 13 TVöD plus €275 monthly allowance"
     }
   ]
 }
