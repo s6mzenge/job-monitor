@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T07:01:01.216798+00:00",
+  "last_updated": "2026-05-12T07:30:56.089870+00:00",
   "site_summary": {},
   "issues": [
     {
@@ -9334,6 +9334,17 @@
       "type": "fetch_error",
       "message": "Hireserve API: HTTPSConnectionPool(host='cis7.bbk.ac.uk', port=443): Read timed out. (read timeout=30)",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-12T07:30:56.089870+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 529: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CaxHTia8QHoi4JMu7TURG\"}",
+      "job_title": "Project Manager  Research and Consulting (AD.10.4)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106374&p_spid=5151823"
     }
   ]
 }
