@@ -1,7 +1,7 @@
 {
   "date": "2026-05-12",
-  "generated_at": "2026-05-12T07:30:56.089870+00:00",
-  "run_count": 6,
+  "generated_at": "2026-05-12T08:01:08.133827+00:00",
+  "run_count": 7,
   "jobs": [
     {
       "title": "UX Researcher Role - 12 Months - FTC",
@@ -57,6 +57,20 @@
       "location": "Texas, US",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Project Manager – Research and Consulting (AD.10.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106374&p_spid=5151823",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The role requires at least 5 years of experience managing contract research or donor-funded projects as a hard minimum, which triggers seniority ineligibility. It is also a financial/contractual project management role rather than substantive research, and demands specialised expertise in funder compliance (EU, GIZ, WHO, etc.) and team leadership the candidate does not have.",
+      "location": "Not specified (South Africa)",
+      "type": "Full-time",
+      "deadline": "29 May 2026",
       "salary": "Not specified"
     }
   ]
