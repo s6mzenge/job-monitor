@@ -1,7 +1,7 @@
 {
   "date": "2026-05-12",
-  "generated_at": "2026-05-12T13:01:09.407975+00:00",
-  "run_count": 17,
+  "generated_at": "2026-05-12T13:30:55.526171+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "UX Researcher Role - 12 Months - FTC",
@@ -170,6 +170,34 @@
       "type": "Full-time (fixed-term up to 2 years; part-time possible)",
       "deadline": "27 May 2026",
       "salary": "Entgeltgruppe 13 TVöD plus €275 monthly allowance"
+    },
+    {
+      "title": "Lecturer 20%-40% (AC.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106382&p_spid=5151831",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an architecture lectureship requiring a professionally accredited M.Arch degree, SACAP registration as a Professional Architect, and 5+ years of post-registration experience — all hard ineligibility triggers. The field (architectural design and construction teaching) is entirely outside the candidate's IR/policy background.",
+      "location": "Johannesburg, South Africa",
+      "type": "Part-time",
+      "deadline": "08 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer 80%-100% (Architectural History and Theory)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106381&p_spid=5151830",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a lecturer post in architectural history and theory, requiring a master's in architecture or closely related discipline and subject-matter expertise in pre-modern, modern, or contemporary architecture. The candidate's IR/international law background does not align with the field, and they lack the required architectural training.",
+      "location": "Johannesburg, South Africa (assumed; not explicitly stated)",
+      "type": "Full-time / Part-time (80–100% FTE)",
+      "deadline": "08 June 2026",
+      "salary": "Not specified"
     }
   ]
 }
