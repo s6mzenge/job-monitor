@@ -1,7 +1,7 @@
 {
   "date": "2026-05-12",
-  "generated_at": "2026-05-12T15:01:08.997870+00:00",
-  "run_count": 21,
+  "generated_at": "2026-05-12T15:35:35.687433+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "UX Researcher Role - 12 Months - FTC",
@@ -225,6 +225,34 @@
       "location": "London, United Kingdom",
       "type": "Fixed-Term Contract",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Student Recruitment and Marketing Assistant",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=MKG522-R",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is an operational marketing and recruitment administration role in a university, not a research or policy position. While it sits within higher education (an area the candidate has worked in), the core activities — CRM data entry, budget processing, event logistics, supplier liaison — are general marketing/admin tasks unrelated to the candidate's research, policy, or intelligence targets.",
+      "location": "Hendon, London",
+      "type": "Full-time (Permanent, 35.5 hours/week)",
+      "deadline": "Wednesday 27 May 2026",
+      "salary": "£28,840 to £32,335 per annum"
+    },
+    {
+      "title": "Lecturer 50% (Planning Programme)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106383&p_spid=5151832",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a lecturer post in urban/town planning requiring a SACPLAN-recognised planning degree, a Master's in Urban Planning, and eligibility for SACPLAN registration — specialist professional qualifications the candidate does not hold. Hard ineligibility on credentials, and the field (planning theory, development economics, land-use management) is unrelated to the candidate's IR/international law background.",
+      "location": "Johannesburg, South Africa",
+      "type": "Part-time (50% FTE)",
+      "deadline": "08 June 2026",
       "salary": "Not specified"
     }
   ]
