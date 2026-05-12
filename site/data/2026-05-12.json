@@ -1,7 +1,7 @@
 {
   "date": "2026-05-12",
-  "generated_at": "2026-05-12T10:30:52.181740+00:00",
-  "run_count": 12,
+  "generated_at": "2026-05-12T11:01:10.423403+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "UX Researcher Role - 12 Months - FTC",
@@ -99,6 +99,34 @@
       "location": "Johannesburg, South Africa",
       "type": "Full-time, Fixed-term (18 months)",
       "deadline": "25 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Freelance ISMS Lead Auditor for UAE",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/DUBAI-Freelance-ISMS-Lead-Auditor-for-UAE/1392790433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Mismatch on all dimensions: this is an information security management systems auditing role requiring a CS/engineering degree, IRCA Lead Auditor certification, 4+ years IT/InfoSec experience, and Arabic fluency — none of which the candidate has. Hard ineligibility triggered on language requirement (Arabic) and 4+ years specialist IT experience.",
+      "location": "Dubai or Abu Dhabi, UAE",
+      "type": "Contractor",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Freelance IMS & Food Auditor for South Africa",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Johannesburg_-Freelance-IMS-&-Food-Auditor-for-South-Africa/1392789033",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a food safety/management systems auditing role requiring a degree in microbiology/chemistry/food science, GFSI/ISO auditor certifications, and 5+ years of food industry experience — all hard requirements the candidate cannot meet. Complete mismatch with the candidate's IR/policy background.",
+      "location": "Johannesburg, South Africa",
+      "type": "Contract (Freelance/Subcontract)",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
