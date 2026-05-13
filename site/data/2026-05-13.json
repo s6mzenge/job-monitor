@@ -1,7 +1,7 @@
 {
   "date": "2026-05-13",
-  "generated_at": "2026-05-13T08:33:31.791521+00:00",
-  "run_count": 8,
+  "generated_at": "2026-05-13T09:01:01.290719+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Program Manager",
@@ -56,6 +56,20 @@
       "reason": "This is an audit scheduling/coordination role in supply-chain assurance, not policy, intelligence, or research work — it falls outside all three of the candidate's target zones. The role also requires good command of Spanish (oral and written) for client and factory communication, which the candidate does not have, triggering the language hard ineligibility rule.",
       "location": "Puebla, Mexico",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Contractor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Taipei-Contractor/1393224133",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is an auditor/assessor contractor role for compliance assessments in Taipei, requiring APSCA auditor qualifications and on-site assessment experience — entirely outside the candidate's IR/policy/research field. The role also likely requires Mandarin for Taipei-based client work, which the candidate does not speak.",
+      "location": "Taipei",
+      "type": "Contractor",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
