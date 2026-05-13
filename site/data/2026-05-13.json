@@ -1,7 +1,7 @@
 {
   "date": "2026-05-13",
-  "generated_at": "2026-05-13T14:06:34.689257+00:00",
-  "run_count": 19,
+  "generated_at": "2026-05-13T14:31:01.806490+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Program Manager",
@@ -128,6 +128,20 @@
       "type": "Full-Time, Fixed-Term (14 weeks)",
       "deadline": "20/05/2026",
       "salary": "£26,750 - £29,493"
+    },
+    {
+      "title": "Student Engagement Coach (maternity cover)",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/student-engagement-coach-maternity-cover-610543.html",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "This is a student-facing support/coaching role focused on attendance interventions and retention, not a research or policy role — it sits well outside the candidate's three target zones. While higher education administration is loosely adjacent to the candidate's HE policy student-assistant work, the day-to-day skills (coaching, 1:1 student support, visa compliance) are not core strengths and offer little career fit.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-Term (6 months)",
+      "deadline": "27/05/2026",
+      "salary": "£34,925 - £39,297"
     }
   ]
 }
