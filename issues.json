@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-13T13:31:17.919346+00:00",
+  "last_updated": "2026-05-13T14:06:34.689257+00:00",
   "site_summary": {},
   "issues": [
     {
@@ -9465,6 +9465,17 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-13T14:06:34.689257+00:00",
+      "site": "Goldsmiths, University of London",
+      "site_id": 52,
+      "url": "https://jobs.gold.ac.uk/job-search.html",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 529: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CazhTK3KdRsk6Y5vNxWTK\"}",
+      "job_title": "Student Engagement Coach (maternity cover)",
+      "job_url": "https://jobs.gold.ac.uk/vacancy/student-engagement-coach-maternity-cover-610543.html"
     }
   ]
 }
