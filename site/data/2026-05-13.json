@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-13",
+  "generated_at": "2026-05-13T05:01:12.842642+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Program Manager",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Mexico-City/Program-Manager_JR-0003819",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Migration policy at OSF is policy-adjacent and relevant, but this Program Manager role requires substantial regional expertise, established government/multilateral relationships, and a proven track record leading multi-year change initiatives — well beyond the candidate's MSc-stage profile. The role also effectively requires working Spanish for Western Hemisphere stakeholder engagement, which the candidate does not have (hard ineligibility on language).",
+      "location": "Mexico City, Mexico or Bogotá, Colombia",
+      "type": "Full-time",
+      "deadline": "25 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Surveyor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/DEU-Surveyor/1192313501",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a technical engineering inspection role requiring a completed engineering degree in mechanical/plant engineering, knowledge of pressure equipment directives, and ideally certifications as a welding engineer (IWE) or ASME Authorized Inspector. The candidate's IR/policy background is a complete mismatch, and the role requires specialist vocational engineering qualifications they do not hold — hard ineligibility.",
+      "location": "Germany (Remote, focus on Ruhr area)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Food Safety Auditor / Social Assessor - Global",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Edinburgh-Food-Safety-Auditor-Social-Assessor-Global/1383852133",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "Food safety auditing and social compliance assessment for workplace standards is a specialist commercial auditing field unrelated to the candidate's IR/policy/intelligence targets. The role expects prior social auditing experience or APSCA qualification, which the candidate lacks, and is residence-restricted to specific countries.",
+      "location": "Home-based (Europe, Caucasus, Central/South America, Africa, Asia — various countries)",
+      "type": "Contractor",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Coordinator, Responsible Sourcing",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Villas-Universidad-Coordinator%2C-Responsible-Sourcing-PUE-72150/1393094833",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is an audit scheduling/coordination role in supply-chain assurance, not policy, intelligence, or research work — it falls outside all three of the candidate's target zones. The role also requires good command of Spanish (oral and written) for client and factory communication, which the candidate does not have, triggering the language hard ineligibility rule.",
+      "location": "Puebla, Mexico",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
