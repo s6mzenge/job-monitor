@@ -1,7 +1,7 @@
 {
   "date": "2026-05-13",
-  "generated_at": "2026-05-13T15:38:21.509828+00:00",
-  "run_count": 22,
+  "generated_at": "2026-05-13T16:01:18.373371+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Program Manager",
@@ -153,6 +153,20 @@
       "seniority_score": "1",
       "reason": "Corporate PR/reputation management is outside the candidate's target zones (academic/policy, geopolitical risk, OSINT/tech policy). The Account Director title requires substantial prior agency/PR experience including line management, financial forecasting, and leading new business pitches — far beyond the candidate's student-assistant background. Hard ineligibility on seniority.",
       "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Account Director, Account Management",
+      "organisation": "Verisk Maplecroft",
+      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3810/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Although Verisk Maplecroft is a core target firm in geopolitical risk, this is a senior commercial sales/account management role, not a research or analyst position. It requires substantial proven B2B sales experience, CRM/pipeline discipline, and a track record of revenue growth — triggering hard ineligibility on seniority and falling well outside the candidate's research-focused skill set.",
+      "location": "Boston, MA, United States",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
