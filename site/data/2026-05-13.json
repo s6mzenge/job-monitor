@@ -1,7 +1,7 @@
 {
   "date": "2026-05-13",
-  "generated_at": "2026-05-13T16:01:18.373371+00:00",
-  "run_count": 23,
+  "generated_at": "2026-05-13T16:32:01.656552+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Program Manager",
@@ -167,6 +167,20 @@
       "seniority_score": "1",
       "reason": "Although Verisk Maplecroft is a core target firm in geopolitical risk, this is a senior commercial sales/account management role, not a research or analyst position. It requires substantial proven B2B sales experience, CRM/pipeline discipline, and a track record of revenue growth — triggering hard ineligibility on seniority and falling well outside the candidate's research-focused skill set.",
       "location": "Boston, MA, United States",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Assessor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Villas-Universidad-Assessor-PUE-72197/1393451833",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "Supply chain social/environmental auditing is tangentially related to human rights but is a commercial compliance role, not policy/research. The position requires excellent Spanish for worker interviews — a language the candidate does not speak — which triggers hard ineligibility. Heavy travel in Mexico and degree preferences in Law/HR/OHS also reduce fit.",
+      "location": "Puebla, Mexico",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
