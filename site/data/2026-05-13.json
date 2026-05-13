@@ -1,7 +1,7 @@
 {
   "date": "2026-05-13",
-  "generated_at": "2026-05-13T11:31:02.153357+00:00",
-  "run_count": 14,
+  "generated_at": "2026-05-13T12:01:01.404501+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Program Manager",
@@ -86,6 +86,34 @@
       "type": "Consultancy",
       "deadline": "7 June 2026, 23:59 BST",
       "salary": "Not specified"
+    },
+    {
+      "title": "Employment Adviser - Andover",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25143?c=palladium",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "Employment advisory / welfare-to-work case management is a mismatch with the candidate's IR research, policy, and intelligence target zones. The role requires client-facing employment coaching skills rather than research or analytical skills the candidate brings.",
+      "location": "Andover, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Fachhandwerkerin/Fachhandwerker (w/m/d) im Referat Gebäudetechnik",
+      "organisation": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-bg3-521-2-12062026-1145726",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a skilled-trades role requiring a completed German vocational training (Ausbildung) in Mechatronik/Elektromechanik plus several years of experience in elevator/conveyor technology and building services — a hard ineligibility trigger (specific vocational training the candidate lacks). The role has no overlap with the candidate's IR/policy background.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (part-time eligible), permanent",
+      "deadline": "12 June 2026",
+      "salary": "€3,582.38 gross/month (Experience level 3) + €220 ministerial allowance (TVöD E7 / A7)"
     }
   ]
 }
