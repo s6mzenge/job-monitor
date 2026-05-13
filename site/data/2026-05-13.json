@@ -1,7 +1,7 @@
 {
   "date": "2026-05-13",
-  "generated_at": "2026-05-13T12:34:02.983779+00:00",
-  "run_count": 16,
+  "generated_at": "2026-05-13T13:01:02.258083+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Program Manager",
@@ -114,6 +114,20 @@
       "type": "Full-time (part-time eligible), permanent",
       "deadline": "12 June 2026",
       "salary": "€3,582.38 gross/month (Experience level 3) + €220 ministerial allowance (TVöD E7 / A7)"
+    },
+    {
+      "title": "Summer Conference Assistant",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/summer-conference-assistant-611400.html",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is a conference/events administration role within Estates and Facilities, with no connection to research, policy, intelligence, or any of the candidate's target zones. While the seniority level fits and general office skills transfer, the substantive work is unrelated to IR, policy, or analytical work.",
+      "location": "London, UK",
+      "type": "Full-Time, Fixed-Term (14 weeks)",
+      "deadline": "20/05/2026",
+      "salary": "£26,750 - £29,493"
     }
   ]
 }
