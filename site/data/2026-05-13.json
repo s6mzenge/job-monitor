@@ -1,7 +1,7 @@
 {
   "date": "2026-05-13",
-  "generated_at": "2026-05-13T15:01:52.377135+00:00",
-  "run_count": 21,
+  "generated_at": "2026-05-13T15:38:21.509828+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Program Manager",
@@ -142,6 +142,20 @@
       "type": "Full-time, Fixed-Term (6 months)",
       "deadline": "27/05/2026",
       "salary": "£34,925 - £39,297"
+    },
+    {
+      "title": "Account Director - Corporate Reputation",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Account-Director---Corporate-Reputation_JR102398",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Corporate PR/reputation management is outside the candidate's target zones (academic/policy, geopolitical risk, OSINT/tech policy). The Account Director title requires substantial prior agency/PR experience including line management, financial forecasting, and leading new business pitches — far beyond the candidate's student-assistant background. Hard ineligibility on seniority.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
