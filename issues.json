@@ -1,27 +1,14 @@
 {
-  "last_updated": "2026-05-14T06:00:57.743082+00:00",
+  "last_updated": "2026-05-14T06:30:58.796221+00:00",
   "site_summary": {
-    "Protection Approaches": {
-      "site_id": 31,
-      "url": "https://protectionapproaches.org/current-vacancies",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-05-02T12:30:56.911190+00:00",
-      "last_recent_failure": "2026-05-14T06:00:57.743082+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-    },
     "BSR": {
       "site_id": 67,
       "url": "https://www.bsr.org/en/careers",
       "method": "playwright",
-      "consecutive_failures": 3,
-      "total_recent_failures": 4,
+      "consecutive_failures": 4,
+      "total_recent_failures": 5,
       "first_recent_failure": "2026-05-13T09:31:00.064575+00:00",
-      "last_recent_failure": "2026-05-14T06:00:57.743082+00:00",
+      "last_recent_failure": "2026-05-14T06:30:58.796221+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -9553,6 +9540,16 @@
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
       "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-05-14T06:30:58.796221+00:00",
+      "site": "BSR",
+      "site_id": 67,
+      "url": "https://www.bsr.org/en/careers",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
+      "consecutive_count": 4
     }
   ]
 }
