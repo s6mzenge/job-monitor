@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-14T16:00:59.487828+00:00",
+  "last_updated": "2026-05-14T16:30:54.889786+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 6,
-      "total_recent_failures": 74,
+      "consecutive_failures": 7,
+      "total_recent_failures": 75,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-14T16:00:59.487828+00:00",
+      "last_recent_failure": "2026-05-14T16:30:54.889786+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -18,27 +18,14 @@
       "site_id": 63,
       "url": "https://www.sigrid-rausing-trust.org/jobs/",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
+      "consecutive_failures": 2,
+      "total_recent_failures": 2,
       "first_recent_failure": "2026-05-14T16:00:59.487828+00:00",
-      "last_recent_failure": "2026-05-14T16:00:59.487828+00:00",
+      "last_recent_failure": "2026-05-14T16:30:54.889786+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 504 Server Error: Gateway Timeout for url: https://www.sigrid-rausing-trust.org/jobs/"
-    },
-    "Trust for London": {
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 64,
-      "first_recent_failure": "2026-04-30T07:01:01.295584+00:00",
-      "last_recent_failure": "2026-05-14T16:00:59.487828+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.sigrid-rausing-trust.org', port=443): Read timed out. (read timeout=30)"
     }
   },
   "issues": [
@@ -9907,6 +9894,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-14T16:30:54.889786+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
+      "consecutive_count": 7
+    },
+    {
+      "timestamp": "2026-05-14T16:30:54.889786+00:00",
+      "site": "Sigrid Rausing Trust",
+      "site_id": 63,
+      "url": "https://www.sigrid-rausing-trust.org/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.sigrid-rausing-trust.org', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 2
     }
   ]
 }

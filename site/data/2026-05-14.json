@@ -1,7 +1,7 @@
 {
   "date": "2026-05-14",
-  "generated_at": "2026-05-14T16:00:59.487828+00:00",
-  "run_count": 26,
+  "generated_at": "2026-05-14T16:30:54.889786+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -253,6 +253,20 @@
       "location": "United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Grant Associate, Data and Analytics",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Rio-de-Janeiro/Grant-Associate--Data-and-Anlytics_JR-0003816",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "This is an internal grants-operations/data-systems role focused on CRM administration, Salesforce data quality, and grants management workflows — it sits outside the candidate's policy/research/intelligence targets despite OSF being a values-aligned organisation. The role also implicitly favours Spanish/Portuguese for the Latin America hubs, and the candidate lacks Salesforce/SQL/Power BI experience that underpins the substantive work.",
+      "location": "Rio de Janeiro / Mexico City / Bogota",
+      "type": "Full-time (Hybrid)",
+      "deadline": "28/05/2026",
       "salary": "Not specified"
     }
   ]
