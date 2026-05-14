@@ -1,18 +1,44 @@
 {
-  "last_updated": "2026-05-14T12:01:00.419078+00:00",
+  "last_updated": "2026-05-14T12:31:05.476994+00:00",
   "site_summary": {
+    "Global Rights Compliance": {
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 28,
+      "first_recent_failure": "2026-04-30T06:00:58.738290+00:00",
+      "last_recent_failure": "2026-05-14T12:31:05.476994+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    23 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\""
+    },
     "BSR": {
       "site_id": 67,
       "url": "https://www.bsr.org/en/careers",
       "method": "playwright",
-      "consecutive_failures": 15,
-      "total_recent_failures": 16,
+      "consecutive_failures": 16,
+      "total_recent_failures": 18,
       "first_recent_failure": "2026-05-13T09:31:00.064575+00:00",
-      "last_recent_failure": "2026-05-14T12:01:00.419078+00:00",
+      "last_recent_failure": "2026-05-14T12:31:05.476994+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-05-16T12:31:05.476994+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
+    },
+    "LRQA": {
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 218,
+      "first_recent_failure": "2026-05-02T17:00:55.646755+00:00",
+      "last_recent_failure": "2026-05-14T12:31:05.476994+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f4ef10fe810>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
@@ -9690,6 +9716,47 @@
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
       "consecutive_count": 15
+    },
+    {
+      "timestamp": "2026-05-14T12:31:05.476994+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    23 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-14T12:31:05.476994+00:00",
+      "site": "BSR",
+      "site_id": 67,
+      "url": "https://www.bsr.org/en/careers",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-05-14T12:31:05.476994+00:00",
+      "site": "BSR",
+      "site_id": 67,
+      "url": "https://www.bsr.org/en/careers",
+      "method": "playwright",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-05-16T12:31:05.476994+00:00"
+    },
+    {
+      "timestamp": "2026-05-14T12:31:05.476994+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f4ef10fe810>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
     }
   ]
 }
