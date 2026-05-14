@@ -1,7 +1,7 @@
 {
   "date": "2026-05-14",
-  "generated_at": "2026-05-14T15:01:15.483547+00:00",
-  "run_count": 24,
+  "generated_at": "2026-05-14T15:30:56.358902+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -224,6 +224,34 @@
       "reason": "Finance roles fall outside the candidate's policy/research targeting and typically require accounting qualifications or finance-specific experience the candidate does not have.",
       "location": "Remote",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Threat Intelligence Analyst",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000126538479-associate-threat-intelligence-analyst",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Commercial threat intelligence and geopolitical risk analysis at Sibylline is a core target zone for this candidate. IR background, research/writing skills, OSINT-relevant digital toolkit (Python, regex, document analysis), and demonstrated interest in security policy align directly; the Associate level fits the candidate's MSc-in-progress stage cleanly. Some specific tools (Dataminr, Navigator) are unfamiliar but easily learned.",
+      "location": "United Kingdom (Remote)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Threat Intelligence Analyst (Night Shift)",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000126537071-associate-threat-intelligence-analyst-night-shift-",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Commercial threat intelligence at Sibylline is a core target zone — IR/security background, OSINT-adjacent research skills, and strong written analysis map directly onto the role. The Associate level is well-suited to the candidate's stage, and their IR degree explicitly matches the listed qualifications. The night-shift requirement is a lifestyle consideration but not a disqualifier.",
+      "location": "United Kingdom",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
