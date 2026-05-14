@@ -1,7 +1,7 @@
 {
   "date": "2026-05-14",
-  "generated_at": "2026-05-14T09:31:21.485187+00:00",
-  "run_count": 10,
+  "generated_at": "2026-05-14T10:01:08.454903+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -169,6 +169,20 @@
       "location": "Johannesburg, South Africa",
       "type": "Full-time (3-year fixed term contract)",
       "deadline": "21 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Executive",
+      "organisation": "Brunswick Group",
+      "url": "https://job-boards.greenhouse.io/brunswickgroup/jobs/8547710002",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "4",
+      "reason": "Brunswick is a corporate advisory/communications firm focused on financial, business and stakeholder communications — adjacent to but outside the candidate's core policy/intelligence targets, with a strong financial-markets and media-relations emphasis. Research, writing, analysis and EU-language (German) skills transfer cleanly, and the 1.5+ years' experience requirement is broadly compatible with the candidate's substantial student-assistant track record.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "19 June (9:00am)",
       "salary": "Not specified"
     }
   ]
