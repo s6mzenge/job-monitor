@@ -1,7 +1,7 @@
 {
   "date": "2026-05-14",
-  "generated_at": "2026-05-14T05:01:04.198850+00:00",
-  "run_count": 1,
+  "generated_at": "2026-05-14T05:31:00.561706+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -140,6 +140,20 @@
       "reason": "This is a B2B sales/account management role in supply chain assurance — pure commercial sales, not policy, risk analysis, or research. The role also requires fluency in a regional business language (Mandarin/Cantonese for Shenzhen) which the candidate does not have, and demands 2+ years of proven sales target achievement. Hard mismatch with the candidate's research-focused profile.",
       "location": "Shenzhen, China",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Contract Analyst--C--Contingent",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/New-Delhi-India/Contract-Analyst--C--Contingent_R00030302-1",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is a commercial contracts administration role within a sustainability consultancy's legal department — unrelated to IR, policy research, intelligence, or OSINT. The role requires 3+ years of contract management experience and specialised knowledge of commercial contract law that the candidate lacks.",
+      "location": "New Delhi, India",
+      "type": "Contingent/Contract",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
