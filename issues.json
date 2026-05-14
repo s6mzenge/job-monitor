@@ -1,44 +1,31 @@
 {
-  "last_updated": "2026-05-14T14:30:59.714496+00:00",
+  "last_updated": "2026-05-14T14:34:05.331229+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 70,
+      "consecutive_failures": 3,
+      "total_recent_failures": 71,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-14T14:30:59.714496+00:00",
+      "last_recent_failure": "2026-05-14T14:34:05.331229+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0"
     },
-    "Trust for London": {
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
+    "Impunity Watch": {
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 63,
-      "first_recent_failure": "2026-04-30T07:01:01.295584+00:00",
-      "last_recent_failure": "2026-05-14T14:30:59.714496+00:00",
+      "consecutive_failures": 1,
+      "total_recent_failures": 27,
+      "first_recent_failure": "2026-04-29T15:01:18.017646+00:00",
+      "last_recent_failure": "2026-05-14T14:34:05.331229+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/"
-    },
-    "BSR": {
-      "site_id": 67,
-      "url": "https://www.bsr.org/en/careers",
-      "method": "playwright",
-      "consecutive_failures": 16,
-      "total_recent_failures": 18,
-      "first_recent_failure": "2026-05-13T09:31:00.064575+00:00",
-      "last_recent_failure": "2026-05-14T12:31:05.476994+00:00",
-      "currently_paused": true,
-      "paused_until": "2026-05-16T12:31:05.476994+00:00",
-      "last_type": "site_paused",
-      "last_message": "Site paused after 16 consecutive failures"
+      "last_message": "fetch_page: 401 Client Error: Unauthorized for url: https://www.impunitywatch.org/join-us/join-our-team/"
     }
   },
   "issues": [
@@ -9837,6 +9824,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-05-14T14:34:05.331229+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
+      "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-05-14T14:34:05.331229+00:00",
+      "site": "Impunity Watch",
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 401 Client Error: Unauthorized for url: https://www.impunitywatch.org/join-us/join-our-team/",
+      "consecutive_count": 1
     }
   ]
 }
