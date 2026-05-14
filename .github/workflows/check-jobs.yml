@@ -25,12 +25,10 @@ jobs:
       - name: Install Playwright browsers
         run: playwright install chromium --with-deps
 
-      - name: Write config files from secrets
+      - name: Write CV file from secret
         env:
-          CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
           CV_TEXT: ${{ secrets.CV_TEXT }}
         run: |
-          printenv CONFIG_JSON > config.json
           printenv CV_TEXT > cv.txt
 
       - name: Run job monitor
