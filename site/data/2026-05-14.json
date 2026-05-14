@@ -1,7 +1,7 @@
 {
   "date": "2026-05-14",
-  "generated_at": "2026-05-14T08:31:09.322264+00:00",
-  "run_count": 8,
+  "generated_at": "2026-05-14T09:01:21.961974+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -155,6 +155,20 @@
       "location": "New Delhi, India",
       "type": "Contingent/Contract",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "RESEARCHER.2.01 (AC.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106385&p_spid=5151834",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the role explicitly requires a PhD in health sciences or social/economic sciences, which the candidate (currently MSc) does not hold. The field (public health, health policy and systems research on first referral hospitals) is also outside the candidate's IR/security/international law focus, and the role requires 3–5 years of public health research experience plus prior peer-reviewed publications as lead author.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time (3-year fixed term contract)",
+      "deadline": "21 May 2026",
       "salary": "Not specified"
     }
   ]
