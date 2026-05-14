@@ -158,35 +158,18 @@ def save_state(state):
 # ═══════════════════════════════════════════════════════════════
 
 def fetch_page(url, extra_headers=None, proxy=None):
-    """Fetch a URL and return a BeautifulSoup object, or None on error.
-
-    If proxy='cloudflare_worker', uses the Worker proxy directly.
-    Otherwise fetches directly; on 403/415/429/503 (typical CDN bot-block
-    statuses) automatically retries once via the Worker proxy if available.
-    GitHub Actions datacenter IPs intermittently get flagged by some CDNs
-    (HIS Hamburg, Institute for Government, Paul Hamlyn, twentyfifty,
-    Ceasefire — all hit this since 2026-05-01), and the fallback handles
-    it transparently without per-site config.
-    """
+    """Fetch a URL and return a BeautifulSoup object, or None on error."""
     hdrs = {**HEADERS, **(extra_headers or {})}
-
-    def via_proxy():
-        return requests.get(
-            CF_WORKER_URL,
-            params={"url": url},
-            headers={"X-Proxy-Token": CF_WORKER_TOKEN},
-            timeout=30,
-        )
-
     try:
         if proxy == "cloudflare_worker" and CF_WORKER_URL:
-            resp = via_proxy()
+            resp = requests.get(
+                CF_WORKER_URL,
+                params={"url": url},
+                headers={"X-Proxy-Token": CF_WORKER_TOKEN},
+                timeout=30,
+            )
         else:
             resp = requests.get(url, headers=hdrs, timeout=30)
-            # CDN bot-blocking heuristic — retry via proxy if available
-            if resp.status_code in (403, 415, 429, 503) and CF_WORKER_URL:
-                print(f"    Got {resp.status_code} on direct fetch — retrying via proxy")
-                resp = via_proxy()
         resp.raise_for_status()
         return BeautifulSoup(resp.text, "html.parser")
     except Exception as e:
@@ -1231,6 +1214,93 @@ def check_plumm_api(site, seen_urls):
     }
 
 
+# ─── 13. RIPPLING ATS API ───
+def check_rippling_api(site, seen_urls):
+    """Query Rippling's public board API.
+
+    Endpoint shape: https://api.rippling.com/platform/api/ats/v1/board/{slug}/jobs
+    Returns a JSON array of job objects with keys: uuid, name, url,
+    workLocation: {label, id}, department: {label, id}.
+    """
+    api = site["api"]
+    location_filter = site.get("location_filter", "")
+
+    try:
+        resp = requests.get(
+            api["url"],
+            headers={**HEADERS, "Accept": "application/json"},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"    Rippling API error: {e}")
+        return None
+
+    # Response is a list at the top level
+    postings = data if isinstance(data, list) else data.get("jobs", []) or []
+    print(f"    API returned {len(postings)} job(s)")
+
+    total_after_filter = 0
+    new_jobs = []
+    for posting in postings:
+        title = posting.get("name", "Untitled")
+        job_url = posting.get("url", "")
+        uuid = posting.get("uuid", "")
+        loc = posting.get("workLocation") or {}
+        location = loc.get("label", "") if isinstance(loc, dict) else str(loc)
+        dept = posting.get("department") or {}
+        department = dept.get("label", "") if isinstance(dept, dict) else str(dept)
+
+        # Location filter: case-insensitive substring match.
+        # Note: Rippling returns one primary workLocation, but multi-city jobs
+        # often list every city in the job's title or detail page rather than
+        # this field. Sites that want multi-location coverage should leave
+        # location_filter empty and let the LLM filter on detail text.
+        if location_filter:
+            if location_filter.lower() not in location.lower():
+                continue
+
+        total_after_filter += 1
+
+        if job_url in seen_urls or uuid in seen_urls:
+            continue
+
+        detail_text = (
+            f"Title: {title}\n"
+            f"Location: {location}\n"
+            f"Department: {department}"
+        )
+
+        # Fetch detail page for full description if not explicitly disabled
+        if not site.get("skip_detail_fetch") and job_url:
+            time.sleep(1)
+            detail_soup = fetch_page(job_url, proxy=site.get("proxy"))
+            if detail_soup:
+                page_text = extract_text(detail_soup)
+                if len(page_text) > len(detail_text):
+                    detail_text = (
+                        f"Title: {title}\n"
+                        f"Location: {location}\n"
+                        f"Department: {department}\n\n{page_text}"
+                    )
+
+        new_jobs.append({
+            "title": title,
+            "url": job_url or uuid,
+            "detail_text": detail_text,
+            "_also_track": [u for u in [job_url, uuid] if u],
+        })
+
+    if location_filter:
+        print(f"    After filtering: {total_after_filter} job(s)")
+
+    return {
+        "total": total_after_filter if location_filter else len(postings),
+        "new": new_jobs,
+    }
+
+
 # ═══════════════════════════════════════════════════════════════
 #  DISPATCHER — routes each site to the correct handler
 # ═══════════════════════════════════════════════════════════════
@@ -1248,6 +1318,7 @@ METHOD_HANDLERS = {
     "oracle_hcm_api": check_oracle_hcm,
     "hireserve_api": check_hireserve,
     "plumm_api": check_plumm_api,
+    "rippling_api": check_rippling_api,
 }
 
 
