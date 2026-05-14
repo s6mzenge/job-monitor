@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-05-14T13:47:06.891210+00:00",
+  "last_updated": "2026-05-14T14:01:14.207855+00:00",
   "site_summary": {
-    "Centre for Information Resilience": {
-      "site_id": 57,
-      "url": "https://www.info-res.org/careers/current-openings/",
+    "Uppsala UHGS": {
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 7,
-      "first_recent_failure": "2026-05-05T13:01:05.718078+00:00",
-      "last_recent_failure": "2026-05-14T13:47:06.891210+00:00",
+      "total_recent_failures": 4,
+      "first_recent_failure": "2026-05-06T12:31:02.476764+00:00",
+      "last_recent_failure": "2026-05-14T14:01:14.207855+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.info-res.org', port=443): Read timed out. (read timeout=30)"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "BSR": {
       "site_id": 67,
@@ -9773,6 +9773,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='www.info-res.org', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-14T14:01:14.207855+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
       "consecutive_count": 1
     }
   ]

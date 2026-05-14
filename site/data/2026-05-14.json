@@ -1,7 +1,7 @@
 {
   "date": "2026-05-14",
-  "generated_at": "2026-05-14T13:47:06.891210+00:00",
-  "run_count": 19,
+  "generated_at": "2026-05-14T14:01:14.207855+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -210,6 +210,20 @@
       "reason": "This is a digital communications/social media campaign role at a comms agency, not a policy, research, or intelligence role — it falls outside the candidate's three target zones. The role requires proven experience running paid digital campaigns on LinkedIn/Meta/Google and GEO audits, which the candidate lacks, and the \"Senior Account Manager\" title presumes substantial agency experience.",
       "location": "London, United Kingdom",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Finance Officer",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "3",
+      "reason": "Finance roles fall outside the candidate's policy/research targeting and typically require accounting qualifications or finance-specific experience the candidate does not have.",
+      "location": "Remote",
+      "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
