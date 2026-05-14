@@ -922,8 +922,7 @@
     ],
     "last_checked": "2026-05-14T12:31:05.476994+00:00",
     "listing_hash": "",
-    "consecutive_errors": 16,
-    "paused_until": "2026-05-16T12:31:05.476994+00:00"
+    "consecutive_errors": 0
   },
   "https://anthesisgroup.pinpointhq.com/": {
     "seen_urls": [
