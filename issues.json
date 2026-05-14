@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-14T11:30:48.710197+00:00",
+  "last_updated": "2026-05-14T12:01:00.419078+00:00",
   "site_summary": {
     "BSR": {
       "site_id": 67,
       "url": "https://www.bsr.org/en/careers",
       "method": "playwright",
-      "consecutive_failures": 14,
-      "total_recent_failures": 15,
+      "consecutive_failures": 15,
+      "total_recent_failures": 16,
       "first_recent_failure": "2026-05-13T09:31:00.064575+00:00",
-      "last_recent_failure": "2026-05-14T11:30:48.710197+00:00",
+      "last_recent_failure": "2026-05-14T12:01:00.419078+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -9680,6 +9680,16 @@
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
       "consecutive_count": 14
+    },
+    {
+      "timestamp": "2026-05-14T12:01:00.419078+00:00",
+      "site": "BSR",
+      "site_id": 67,
+      "url": "https://www.bsr.org/en/careers",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
+      "consecutive_count": 15
     }
   ]
 }
