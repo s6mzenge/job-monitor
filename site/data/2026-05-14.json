@@ -1,7 +1,7 @@
 {
   "date": "2026-05-14",
-  "generated_at": "2026-05-14T12:31:05.476994+00:00",
-  "run_count": 16,
+  "generated_at": "2026-05-14T13:01:07.294107+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -183,6 +183,20 @@
       "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "19 June (9:00am)",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Account Manager - Digital",
+      "organisation": "Portland Communications",
+      "url": "https://job-boards.greenhouse.io/portland-communications/jobs/5137499007",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a commercial digital communications/social media campaign role focused on paid media (LinkedIn, Meta, Google), GEO audits, and influencer partnerships — outside the candidate's policy research and intelligence targets. The \"Senior Account Manager\" title requires proven agency-side digital campaign management experience the candidate does not have, and the role lacks substantive overlap with their research/analytical skill set.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
