@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-05-14T17:31:10.815443+00:00",
+  "last_updated": "2026-05-15T05:00:56.927827+00:00",
   "site_summary": {
+    "Global Rights Compliance": {
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 29,
+      "first_recent_failure": "2026-04-30T06:00:58.738290+00:00",
+      "last_recent_failure": "2026-05-15T05:00:56.927827+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    25 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\""
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 9,
-      "total_recent_failures": 77,
+      "consecutive_failures": 10,
+      "total_recent_failures": 78,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-14T17:31:10.815443+00:00",
+      "last_recent_failure": "2026-05-15T05:00:56.927827+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0"
-    },
-    "Sigrid Rausing Trust": {
-      "site_id": 63,
-      "url": "https://www.sigrid-rausing-trust.org/jobs/",
-      "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 4,
-      "first_recent_failure": "2026-05-14T16:00:59.487828+00:00",
-      "last_recent_failure": "2026-05-14T17:31:10.815443+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 504 Server Error: Gateway Timeout for url: https://www.sigrid-rausing-trust.org/jobs/"
     }
   },
   "issues": [
@@ -9964,6 +9964,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 504 Server Error: Gateway Timeout for url: https://www.sigrid-rausing-trust.org/jobs/",
       "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-05-15T05:00:56.927827+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    25 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-15T05:00:56.927827+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
+      "consecutive_count": 10
     }
   ]
 }
