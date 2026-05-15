@@ -1,7 +1,7 @@
 {
   "date": "2026-05-15",
-  "generated_at": "2026-05-15T11:00:53.835849+00:00",
-  "run_count": 13,
+  "generated_at": "2026-05-15T11:30:53.542701+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "SOC Operations Technical Lead",
@@ -142,6 +142,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Director of Fundraising",
+      "organisation": "Chatham House",
+      "url": "https://careers.chathamhouse.org/jobs/7501520-director-of-fundraising",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Director-level role requiring an extensive track record in income generation, six-figure deals, and senior team leadership — hard ineligibility on seniority. Although Chatham House is a core target institution, this is a fundraising/development position rather than a research role, and the candidate lacks the required fundraising expertise.",
+      "location": "London (Hybrid)",
+      "type": "Full-time, Permanent",
+      "deadline": "3 June 2026",
+      "salary": "£120,000 - £140,000 per year"
     }
   ]
 }
