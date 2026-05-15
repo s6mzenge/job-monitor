@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-15T08:30:57.544998+00:00",
+  "last_updated": "2026-05-15T09:01:13.435721+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -14,44 +14,18 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Impunity Watch": {
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 29,
-      "first_recent_failure": "2026-04-29T15:01:18.017646+00:00",
-      "last_recent_failure": "2026-05-15T08:30:57.544998+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/"
-    },
     "Sigrid Rausing Trust": {
       "site_id": 63,
       "url": "https://www.sigrid-rausing-trust.org/jobs/",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 8,
+      "consecutive_failures": 5,
+      "total_recent_failures": 9,
       "first_recent_failure": "2026-05-14T16:00:59.487828+00:00",
-      "last_recent_failure": "2026-05-15T08:30:57.544998+00:00",
+      "last_recent_failure": "2026-05-15T09:01:13.435721+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/"
-    },
-    "LRQA": {
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 219,
-      "first_recent_failure": "2026-05-02T17:00:55.646755+00:00",
-      "last_recent_failure": "2026-05-15T08:30:57.544998+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Read timed out. (read timeout=30)"
     }
   },
   "issues": [
@@ -10141,6 +10115,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Read timed out. (read timeout=30)",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-15T09:01:13.435721+00:00",
+      "site": "Sigrid Rausing Trust",
+      "site_id": 63,
+      "url": "https://www.sigrid-rausing-trust.org/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/",
+      "consecutive_count": 5
     }
   ]
 }
