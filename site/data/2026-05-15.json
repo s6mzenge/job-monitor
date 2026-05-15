@@ -1,7 +1,7 @@
 {
   "date": "2026-05-15",
-  "generated_at": "2026-05-15T12:00:56.816677+00:00",
-  "run_count": 15,
+  "generated_at": "2026-05-15T12:30:50.171559+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "SOC Operations Technical Lead",
@@ -156,6 +156,20 @@
       "type": "Full-time, Permanent",
       "deadline": "3 June 2026",
       "salary": "£120,000 - £140,000 per year"
+    },
+    {
+      "title": "Research Associate - Air Power",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRO441/research-associate-air-power",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Field alignment is strong — air power, defence policy, and strategic studies at KCL's War Studies sit within the candidate's security studies interests. However, the role explicitly requires a PhD (awarded or near submission), which the candidate (MSc in progress) does not hold. Hard ineligibility triggered.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-Term Contract (until March 2031)",
+      "deadline": "31st May 2026",
+      "salary": "£45,031 to £52,514 per annum (inclusive of London Weighting)"
     }
   ]
 }
