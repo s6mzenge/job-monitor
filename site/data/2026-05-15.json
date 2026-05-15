@@ -1,7 +1,7 @@
 {
   "date": "2026-05-15",
-  "generated_at": "2026-05-15T13:00:57.687089+00:00",
-  "run_count": 17,
+  "generated_at": "2026-05-15T13:30:50.490031+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "SOC Operations Technical Lead",
@@ -170,6 +170,20 @@
       "type": "Full-time, Fixed-Term Contract (until March 2031)",
       "deadline": "31st May 2026",
       "salary": "£45,031 to £52,514 per annum (inclusive of London Weighting)"
+    },
+    {
+      "title": "Research Associate, Global Health - Maternity cover",
+      "organisation": "Chatham House",
+      "url": "https://careers.chathamhouse.org/jobs/7742971-research-associate-global-health-maternity-cover",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "Chatham House is a premier policy research institution and the Research Associate level fits the candidate's stage, but global health policy sits outside their core areas (IR, international law, security, atrocity prevention). The role specifically asks for research experience in global health policy or a related field, which the candidate lacks, though their research, writing, and stakeholder-engagement skills transfer.",
+      "location": "London, UK",
+      "type": "Full-time, 12-month fixed-term contract",
+      "deadline": "Sunday, 31 May 2026, 23:59 BST",
+      "salary": "£38,000 per year"
     }
   ]
 }
