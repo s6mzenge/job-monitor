@@ -1,7 +1,7 @@
 {
   "date": "2026-05-15",
-  "generated_at": "2026-05-15T15:00:56.513997+00:00",
-  "run_count": 21,
+  "generated_at": "2026-05-15T15:30:51.119652+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "SOC Operations Technical Lead",
@@ -226,6 +226,20 @@
       "type": "Full-time or part-time, Fixed Term Contract (12 Months)",
       "deadline": "31 May 2026",
       "salary": "£51,902.55 - £61,048.57 per annum inc. London Allowance"
+    },
+    {
+      "title": "Research Officer – British Institute in Eastern Africa (BIEA) Partnership",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRO634/research-officer-british-institute-in-eastern-africa-biea-partnership",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility — the role explicitly requires a PhD close to completion by the start date, which the candidate (currently MSc) does not have. It additionally requires fieldwork experience in Eastern Africa and a track record of academic publishing and grant funding that the candidate cannot match.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-Term/Contract (until 30 September 2027)",
+      "deadline": "3 June 2026",
+      "salary": "£43,277 to £51,714 per annum (potential progression to £55,497)"
     }
   ]
 }
