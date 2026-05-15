@@ -1,7 +1,7 @@
 {
   "date": "2026-05-15",
-  "generated_at": "2026-05-15T15:30:51.119652+00:00",
-  "run_count": 22,
+  "generated_at": "2026-05-15T16:01:30.946171+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "SOC Operations Technical Lead",
@@ -240,6 +240,20 @@
       "type": "Full-time, Fixed-Term/Contract (until 30 September 2027)",
       "deadline": "3 June 2026",
       "salary": "£43,277 to £51,714 per annum (potential progression to £55,497)"
+    },
+    {
+      "title": "Senior Associate, Group Finance",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25151?c=palladium",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a corporate finance role requiring accounting/finance expertise the candidate does not have. Field, skills, and seniority all mismatch — the candidate's IR/policy research background is not relevant to group finance work.",
+      "location": "United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
