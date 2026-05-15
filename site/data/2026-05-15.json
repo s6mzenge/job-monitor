@@ -1,7 +1,7 @@
 {
   "date": "2026-05-15",
-  "generated_at": "2026-05-15T13:30:50.490031+00:00",
-  "run_count": 18,
+  "generated_at": "2026-05-15T14:00:56.711539+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "SOC Operations Technical Lead",
@@ -184,6 +184,34 @@
       "type": "Full-time, 12-month fixed-term contract",
       "deadline": "Sunday, 31 May 2026, 23:59 BST",
       "salary": "£38,000 per year"
+    },
+    {
+      "title": "CAMHRA Research Fellow",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/880795",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility — the role is a Postdoctoral Research Fellowship explicitly requiring existing anthropological training at doctoral and/or postdoctoral level. The candidate is currently an MSc student without a PhD. The substantive focus (anthropology of mental health, ethnographic fieldwork) is also outside the candidate's core areas.",
+      "location": "Bloomsbury, London, UK",
+      "type": "Full-time, Fixed-term contract (3 years)",
+      "deadline": "5 June 2026",
+      "salary": "£51,248.57 to £60,268.57 per annum"
+    },
+    {
+      "title": "Finance Officer",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "Finance/accounting role is outside the candidate's research/policy focus and likely requires accounting qualifications or experience the candidate lacks. The organisation's mission is highly relevant but the function is not.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
