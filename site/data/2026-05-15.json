@@ -1,7 +1,7 @@
 {
   "date": "2026-05-15",
-  "generated_at": "2026-05-15T14:00:56.711539+00:00",
-  "run_count": 19,
+  "generated_at": "2026-05-15T14:30:58.590993+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "SOC Operations Technical Lead",
@@ -212,6 +212,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "HR Business Partner",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/880842",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior HR specialist role requiring substantial HR business partnering experience, employee relations casework leadership, and CIPD-level expertise — none of which the candidate has. Field, skills, and seniority are all clear mismatches for an MSc IR researcher.",
+      "location": "Bloomsbury, London, UK",
+      "type": "Full-time or part-time, Fixed Term Contract (12 Months)",
+      "deadline": "31 May 2026",
+      "salary": "£51,902.55 - £61,048.57 per annum inc. London Allowance"
     }
   ]
 }
