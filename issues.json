@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-16T09:00:50.234052+00:00",
+  "last_updated": "2026-05-16T09:30:53.629085+00:00",
   "site_summary": {
     "Open Society Foundations": {
       "site_id": 2,
       "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
       "method": "workday_api",
-      "consecutive_failures": 6,
-      "total_recent_failures": 16,
+      "consecutive_failures": 7,
+      "total_recent_failures": 17,
       "first_recent_failure": "2026-05-02T06:30:55.077963+00:00",
-      "last_recent_failure": "2026-05-16T09:00:50.234052+00:00",
+      "last_recent_failure": "2026-05-16T09:30:53.629085+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -18,40 +18,14 @@
       "site_id": 3,
       "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
       "method": "workday_api",
-      "consecutive_failures": 6,
-      "total_recent_failures": 12,
+      "consecutive_failures": 7,
+      "total_recent_failures": 13,
       "first_recent_failure": "2026-05-02T06:30:55.077963+00:00",
-      "last_recent_failure": "2026-05-16T09:00:50.234052+00:00",
+      "last_recent_failure": "2026-05-16T09:30:53.629085+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
-    },
-    "Runnymede Trust": {
-      "site_id": 17,
-      "url": "https://www.runnymedetrust.org/about/careers",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-05-16T09:00:50.234052+00:00",
-      "last_recent_failure": "2026-05-16T09:00:50.234052+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.runnymedetrust.org', port=443): Max retries exceeded with url: /about/careers (Caused by NewConnectionError(\"HTTPSConnection(host='www.runnymedetrust.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    "JUSTICE": {
-      "site_id": 29,
-      "url": "https://justice.org.uk/about-us/careers",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-05-16T09:00:50.234052+00:00",
-      "last_recent_failure": "2026-05-16T09:00:50.234052+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='justice.org.uk', port=443): Max retries exceeded with url: /about-us/careers (Caused by ConnectTimeoutError(<HTTPSConnection(host='justice.org.uk', port=443) at 0x7f261d3b4a70>, 'Connection to justice.org.uk timed out. (connect timeout=30)'))"
     },
     "ICTJ": {
       "site_id": 41,
@@ -83,10 +57,10 @@
       "site_id": 78,
       "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
       "method": "workday_api",
-      "consecutive_failures": 6,
-      "total_recent_failures": 13,
+      "consecutive_failures": 7,
+      "total_recent_failures": 14,
       "first_recent_failure": "2026-04-29T14:05:43.157388+00:00",
-      "last_recent_failure": "2026-05-16T09:00:50.234052+00:00",
+      "last_recent_failure": "2026-05-16T09:30:53.629085+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -10721,6 +10695,36 @@
       "type": "fetch_error",
       "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
       "consecutive_count": 6
+    },
+    {
+      "timestamp": "2026-05-16T09:30:53.629085+00:00",
+      "site": "Open Society Foundations",
+      "site_id": 2,
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 7
+    },
+    {
+      "timestamp": "2026-05-16T09:30:53.629085+00:00",
+      "site": "Pew Trusts",
+      "site_id": 3,
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 7
+    },
+    {
+      "timestamp": "2026-05-16T09:30:53.629085+00:00",
+      "site": "Edelman",
+      "site_id": 78,
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 7
     }
   ]
 }
