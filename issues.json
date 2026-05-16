@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16T12:01:06.060632+00:00",
+  "last_updated": "2026-05-16T12:31:01.767678+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -14,18 +14,18 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Reprieve": {
-      "site_id": 58,
-      "url": "https://reprieve.org/uk/work-for-reprieve/",
+    "Impunity Watch": {
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 21,
-      "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
-      "last_recent_failure": "2026-05-16T12:01:06.060632+00:00",
+      "total_recent_failures": 33,
+      "first_recent_failure": "2026-04-29T15:01:18.017646+00:00",
+      "last_recent_failure": "2026-05-16T12:31:01.767678+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 522 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/"
+      "last_message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/"
     },
     "Sigrid Rausing Trust": {
       "site_id": 63,
@@ -10708,6 +10708,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 522 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-16T12:31:01.767678+00:00",
+      "site": "Impunity Watch",
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
       "consecutive_count": 1
     }
   ]
