@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-16T07:30:55.523141+00:00",
+  "last_updated": "2026-05-16T08:00:56.941723+00:00",
   "site_summary": {
     "Open Society Foundations": {
       "site_id": 2,
       "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
       "method": "workday_api",
-      "consecutive_failures": 3,
-      "total_recent_failures": 13,
+      "consecutive_failures": 4,
+      "total_recent_failures": 14,
       "first_recent_failure": "2026-05-02T06:30:55.077963+00:00",
-      "last_recent_failure": "2026-05-16T07:30:55.523141+00:00",
+      "last_recent_failure": "2026-05-16T08:00:56.941723+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -18,10 +18,10 @@
       "site_id": 3,
       "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
       "method": "workday_api",
-      "consecutive_failures": 3,
-      "total_recent_failures": 9,
+      "consecutive_failures": 4,
+      "total_recent_failures": 10,
       "first_recent_failure": "2026-05-02T06:30:55.077963+00:00",
-      "last_recent_failure": "2026-05-16T07:30:55.523141+00:00",
+      "last_recent_failure": "2026-05-16T08:00:56.941723+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -40,6 +40,19 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
+    "Uppsala UHGS": {
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 6,
+      "first_recent_failure": "2026-05-06T12:31:02.476764+00:00",
+      "last_recent_failure": "2026-05-16T08:00:56.941723+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
     "Sigrid Rausing Trust": {
       "site_id": 63,
       "url": "https://www.sigrid-rausing-trust.org/jobs/",
@@ -57,23 +70,36 @@
       "site_id": 69,
       "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
       "method": "workday_api",
-      "consecutive_failures": 3,
-      "total_recent_failures": 8,
+      "consecutive_failures": 4,
+      "total_recent_failures": 9,
       "first_recent_failure": "2026-05-02T06:30:55.077963+00:00",
-      "last_recent_failure": "2026-05-16T07:30:55.523141+00:00",
+      "last_recent_failure": "2026-05-16T08:00:56.941723+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
     },
+    "Verisk Maplecroft": {
+      "site_id": 72,
+      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs?lastSelectedFacet=AttributeChar12&selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22",
+      "method": "oracle_hcm_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-05-16T08:00:56.941723+00:00",
+      "last_recent_failure": "2026-05-16T08:00:56.941723+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Oracle HCM API: 503 Server Error: Service Unavailable for url: https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,facetsList=LOCATIONS%3BCATEGORIES%3BPOSTING_DATES%3BAttributeChar12,limit=25,selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22"
+    },
     "Edelman": {
       "site_id": 78,
       "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
       "method": "workday_api",
-      "consecutive_failures": 3,
-      "total_recent_failures": 10,
+      "consecutive_failures": 4,
+      "total_recent_failures": 11,
       "first_recent_failure": "2026-04-29T14:05:43.157388+00:00",
-      "last_recent_failure": "2026-05-16T07:30:55.523141+00:00",
+      "last_recent_failure": "2026-05-16T08:00:56.941723+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -10528,6 +10554,66 @@
       "type": "fetch_error",
       "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
       "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-05-16T08:00:56.941723+00:00",
+      "site": "Open Society Foundations",
+      "site_id": 2,
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-05-16T08:00:56.941723+00:00",
+      "site": "Pew Trusts",
+      "site_id": 3,
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-05-16T08:00:56.941723+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-16T08:00:56.941723+00:00",
+      "site": "ERM",
+      "site_id": 69,
+      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-05-16T08:00:56.941723+00:00",
+      "site": "Verisk Maplecroft",
+      "site_id": 72,
+      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs?lastSelectedFacet=AttributeChar12&selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22",
+      "method": "oracle_hcm_api",
+      "type": "fetch_error",
+      "message": "Oracle HCM API: 503 Server Error: Service Unavailable for url: https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,facetsList=LOCATIONS%3BCATEGORIES%3BPOSTING_DATES%3BAttributeChar12,limit=25,selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-16T08:00:56.941723+00:00",
+      "site": "Edelman",
+      "site_id": 78,
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 4
     }
   ]
 }
