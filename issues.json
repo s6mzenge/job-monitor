@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16T16:01:04.708995+00:00",
+  "last_updated": "2026-05-16T16:30:48.834955+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,6 +13,19 @@
       "paused_until": "2026-05-17T08:01:00.232761+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Impunity Watch": {
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 35,
+      "first_recent_failure": "2026-04-29T15:01:18.017646+00:00",
+      "last_recent_failure": "2026-05-16T16:30:48.834955+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/"
     },
     "Sigrid Rausing Trust": {
       "site_id": 63,
@@ -10745,6 +10758,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-16T16:30:48.834955+00:00",
+      "site": "Impunity Watch",
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
       "consecutive_count": 1
     }
   ]
