@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T17:00:57.751215+00:00",
+  "last_updated": "2026-05-17T17:30:48.860577+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -18,27 +18,14 @@
       "site_id": 63,
       "url": "https://www.sigrid-rausing-trust.org/jobs/",
       "method": "html",
-      "consecutive_failures": 5,
-      "total_recent_failures": 26,
+      "consecutive_failures": 6,
+      "total_recent_failures": 27,
       "first_recent_failure": "2026-05-14T16:00:59.487828+00:00",
-      "last_recent_failure": "2026-05-17T17:00:57.751215+00:00",
+      "last_recent_failure": "2026-05-17T17:30:48.860577+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/"
-    },
-    "Paul Hamlyn Foundation": {
-      "site_id": 64,
-      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 19,
-      "first_recent_failure": "2026-05-01T09:01:04.355034+00:00",
-      "last_recent_failure": "2026-05-17T17:00:57.751215+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 522 Server Error: <none> for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities"
     }
   },
   "issues": [
@@ -11180,6 +11167,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 522 Server Error: <none> for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-17T17:30:48.860577+00:00",
+      "site": "Sigrid Rausing Trust",
+      "site_id": 63,
+      "url": "https://www.sigrid-rausing-trust.org/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/",
+      "consecutive_count": 6
     }
   ]
 }
