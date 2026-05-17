@@ -1,44 +1,18 @@
 {
-  "last_updated": "2026-05-17T09:30:51.130249+00:00",
+  "last_updated": "2026-05-17T10:00:53.277562+00:00",
   "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 27,
-      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "last_recent_failure": "2026-05-17T09:30:51.130249+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f8d2c8bfec0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))"
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 88,
+      "consecutive_failures": 4,
+      "total_recent_failures": 89,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-17T09:30:51.130249+00:00",
+      "last_recent_failure": "2026-05-17T10:00:53.277562+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0"
-    },
-    "Ceasefire Centre for Civilian Rights": {
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 21,
-      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "last_recent_failure": "2026-05-17T09:30:51.130249+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f8d2b87f680>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))"
     },
     "Sigrid Rausing Trust": {
       "site_id": 63,
@@ -10862,6 +10836,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f8d2b87f680>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-17T10:00:53.277562+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
+      "consecutive_count": 4
     }
   ]
 }
