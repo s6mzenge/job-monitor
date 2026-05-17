@@ -1,0 +1,49 @@
+{
+  "date": "2026-05-17",
+  "generated_at": "2026-05-17T05:01:00.279795+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Management System Lead Auditor & Verifier for Saudi Arabia",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Management-System-Lead-Auditor-&-Verifier-for-Saudi-Arabia/1276687101",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a management systems auditor role requiring an engineering degree, ISO 9001/14001/45001 certification audit experience, and ISO 14064 GHG verification training — none of which the candidate has. Hard ineligibility triggered by the explicit 5+ years of certification audit experience requirement, and the field (industrial assurance/auditing) is entirely outside the candidate's IR/policy focus.",
+      "location": "Jeddah / Al Khobar, Saudi Arabia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Food Safety Trainer",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Madrid-Food-Safety-Trainer/1287171201",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "Complete mismatch — this is a QSR (quick service restaurant) industry training role focused on food safety, store operations, and customer service delivery, with no connection to IR, policy, intelligence, or research. The role also requires QSR industry experience and likely working Spanish, neither of which the candidate has.",
+      "location": "Madrid, Spain",
+      "type": "Contractor On Demand",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Strategic Account Manager",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Rotterdam-Strategic-Account-Manager-3068-AX/1375646633",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a B2B sales / strategic account management role in the assurance and certification sector — pure commercial sales rather than policy, research, or intelligence work. The candidate has no sales track record, no Salesforce experience, and no record of double-digit revenue growth, and the role requires 3+ years of sector-specific sales experience.",
+      "location": "Rotterdam, Netherlands",
+      "type": "Full-time (Fixed Term)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
