@@ -1,18 +1,31 @@
 {
-  "last_updated": "2026-05-17T12:42:05.763989+00:00",
+  "last_updated": "2026-05-17T13:00:52.609332+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 10,
-      "total_recent_failures": 95,
+      "consecutive_failures": 11,
+      "total_recent_failures": 96,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-17T12:42:05.763989+00:00",
+      "last_recent_failure": "2026-05-17T13:00:52.609332+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0"
+    },
+    "Impunity Watch": {
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 39,
+      "first_recent_failure": "2026-04-29T15:01:18.017646+00:00",
+      "last_recent_failure": "2026-05-17T13:00:52.609332+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 401 Client Error: Unauthorized for url: https://www.impunitywatch.org/join-us/join-our-team/"
     },
     "Sigrid Rausing Trust": {
       "site_id": 63,
@@ -10946,6 +10959,26 @@
       "type": "fetch_error",
       "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
       "consecutive_count": 10
+    },
+    {
+      "timestamp": "2026-05-17T13:00:52.609332+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
+      "consecutive_count": 11
+    },
+    {
+      "timestamp": "2026-05-17T13:00:52.609332+00:00",
+      "site": "Impunity Watch",
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 401 Client Error: Unauthorized for url: https://www.impunitywatch.org/join-us/join-our-team/",
+      "consecutive_count": 1
     }
   ]
 }
