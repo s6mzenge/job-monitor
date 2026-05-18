@@ -1,7 +1,7 @@
 {
   "date": "2026-05-18",
-  "generated_at": "2026-05-18T11:30:47.275338+00:00",
-  "run_count": 15,
+  "generated_at": "2026-05-18T12:00:55.383167+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Aerospace Lead Auditor - Contractor",
@@ -142,6 +142,20 @@
       "type": "Full-time (part-time possible), permanent",
       "deadline": "17 June 2026",
       "salary": "Entgeltgruppe 10 TVöD (€4,438.16 brutto Stufe 2) + €275 monthly allowance + Jahressonderzahlung"
+    },
+    {
+      "title": "PR & Faculty Communications Officer x 2",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=MKG527-R",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "This is a PR/communications role for a university marketing team, not a policy, research, or intelligence role — it falls outside all three target zones. While the candidate has strong writing skills, the role requires proven PR/journalism experience and stakeholder-advisory communications work which is not the candidate's background.",
+      "location": "Hendon, London",
+      "type": "Full-time, Permanent (35.5 hours/week)",
+      "deadline": "Monday 08 June 2026",
+      "salary": "£37,357 to £42,653 per annum"
     }
   ]
 }
