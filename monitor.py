@@ -140,6 +140,8 @@ NO_VACANCY_PHRASES = [
     "keine offenen positionen",
     "derzeit keine",
     "do not have any vacancies",
+    "not currently recruiting",
+    "do not accept unsolicited",
 ]
 
 def load_state():
@@ -241,7 +243,7 @@ def check_html(site, seen_urls):
 
     if not link_selector:
         text = extract_text(soup, selector)
-        if len(text) < 50:
+        if len(text) < 50 and not any(p in text.lower() for p in NO_VACANCY_PHRASES):
             print(f"    ⚠️ Very little content extracted ({len(text)} chars) — site may require JavaScript rendering")
         text_hash = hashlib.sha256(text.encode()).hexdigest()
         titles = []
