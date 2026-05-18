@@ -1,7 +1,7 @@
 {
   "date": "2026-05-18",
-  "generated_at": "2026-05-18T12:00:55.383167+00:00",
-  "run_count": 16,
+  "generated_at": "2026-05-18T12:09:39.392438+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Aerospace Lead Auditor - Contractor",
@@ -156,6 +156,48 @@
       "type": "Full-time, Permanent (35.5 hours/week)",
       "deadline": "Monday 08 June 2026",
       "salary": "£37,357 to £42,653 per annum"
+    },
+    {
+      "title": "Associate Professor - NS06 (Geosciences)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106391&p_spid=5152820",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility on multiple grounds: the role requires a PhD in Geosciences (candidate has neither a PhD nor any geosciences background) and is an Associate Professor position requiring an established research and funding record. Field is a complete mismatch with the candidate's IR/international law profile.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "31 August 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Professor / Lecturer in Computational Geophysics",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106392&p_spid=5152821",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility on multiple counts: the role explicitly requires a PhD in Geophysics, plus subject-matter expertise in computational geosciences, numerical modelling, and seismology — none of which align with the candidate's IR/international law background. Field, skills, and seniority are all mismatched.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "31 August 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Adjunct Professor in Economic Geology and Ore Systems Science",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106389&p_spid=5152818",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior professorial role in economic geology requiring an MSc in Geosciences and 10+ years of mining/mineral exploration industry experience — none of which the candidate has. Hard ineligibility on seniority (Professor title, 10+ years required) and complete field/skills mismatch with IR research background.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time (other modalities negotiable)",
+      "deadline": "31 August 2026",
+      "salary": "Not specified"
     }
   ]
 }
