@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-18T07:01:07.023531+00:00",
+  "last_updated": "2026-05-18T07:30:51.108919+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -18,10 +18,10 @@
       "site_id": 63,
       "url": "https://www.sigrid-rausing-trust.org/jobs/",
       "method": "html",
-      "consecutive_failures": 11,
-      "total_recent_failures": 32,
+      "consecutive_failures": 12,
+      "total_recent_failures": 33,
       "first_recent_failure": "2026-05-14T16:00:59.487828+00:00",
-      "last_recent_failure": "2026-05-18T07:01:07.023531+00:00",
+      "last_recent_failure": "2026-05-18T07:30:51.108919+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -11227,6 +11227,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/",
       "consecutive_count": 11
+    },
+    {
+      "timestamp": "2026-05-18T07:30:51.108919+00:00",
+      "site": "Sigrid Rausing Trust",
+      "site_id": 63,
+      "url": "https://www.sigrid-rausing-trust.org/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/",
+      "consecutive_count": 12
     }
   ]
 }
