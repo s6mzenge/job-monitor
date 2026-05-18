@@ -1929,6 +1929,8 @@ def main():
                     print(f"      → {t}")
                 if DRY_RUN:
                     print(f"    Page content changed (dry run — skipping LLM)")
+                    # In dry-run we deliberately advance the hash to seed state.
+                    state[site_key]["listing_hash"] = result["hash"]
                 else:
                     print(f"    Page content changed! Sending full text to Anthropic...")
                     llm_result = evaluate_with_anthropic(name, f"Page update on {name}", site["url"], result["text"], is_page_level=True)
@@ -1941,14 +1943,18 @@ def main():
                                 all_matches.append(format_match_for_telegram(m))
                             # Daily report: all jobs
                             daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=site["url"]))
+                        # Only commit the new hash after a successful LLM call.
+                        # If the call failed we leave the OLD hash in place so
+                        # the next run will retry the page-level evaluation.
+                        state[site_key]["listing_hash"] = result["hash"]
                     else:
+                        print(f"    ⚠️ LLM call failed — hash NOT updated, will retry next run.")
                         issues.add(
                             issues_data, now, site,
                             "llm_call_failed",
                             llm_err or "LLM returned no result for page-level call",
                             scope="page_level",
                         )
-                state[site_key]["listing_hash"] = result["hash"]
             else:
                 print(f"    No changes detected.")
             state[site_key]["last_checked"] = now.isoformat()
