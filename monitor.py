@@ -142,6 +142,7 @@ NO_VACANCY_PHRASES = [
     "do not have any vacancies",
     "not currently recruiting",
     "do not accept unsolicited",
+    "no posts on the list",
 ]
 
 def load_state():
@@ -269,8 +270,10 @@ def check_html(site, seen_urls):
             anchors = scope_el.select(link_selector) if scope_el else []
         else:
             anchors = soup.select(link_selector)
-    if not anchors and len(extract_text(soup, selector)) < 100:
-        print(f"    ⚠️ No job links found and page content is minimal — likely JS-rendered")
+    if not anchors:
+        check_text = extract_text(soup, selector)
+        if len(check_text) < 100 and not any(p in check_text.lower() for p in NO_VACANCY_PHRASES):
+            print(f"    ⚠️ No job links found and page content is minimal — likely JS-rendered")
 
     all_urls = set()
     jobs = []
