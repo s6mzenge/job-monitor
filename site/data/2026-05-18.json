@@ -1,7 +1,7 @@
 {
   "date": "2026-05-18",
-  "generated_at": "2026-05-18T14:30:56.384355+00:00",
-  "run_count": 24,
+  "generated_at": "2026-05-18T15:00:59.390554+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Aerospace Lead Auditor - Contractor",
@@ -250,6 +250,20 @@
       "skills_score": "2",
       "seniority_score": "3",
       "reason": "This is a creator/celebrity marketing role in entertainment and lifestyle — a clear mismatch with the candidate's IR, policy and intelligence focus. The required skills (influencer partnerships, talent contract negotiation, social platform campaign delivery) are not present in the CV.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Principal Consultant - International ESIA and Project Finance",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/Principal-Consultant---International-ESIA-and-Project-Finance_R00030237",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Principal Consultant is a senior leadership role requiring extensive consultancy experience, business development track record, and deep technical expertise in ESIA, IFC Performance Standards, and Equator Principles — none of which the candidate has. Field (environmental/social impact assessment for project finance) is also outside the candidate's IR/security/policy targets.",
       "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
