@@ -1,7 +1,7 @@
 {
   "date": "2026-05-18",
-  "generated_at": "2026-05-18T15:00:59.390554+00:00",
-  "run_count": 25,
+  "generated_at": "2026-05-18T15:30:54.530971+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Aerospace Lead Auditor - Contractor",
@@ -267,6 +267,20 @@
       "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Professor/Full Professor (Corporate Governance and Sustainability)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106394&p_spid=5152823",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the role explicitly requires a completed PhD plus an internationally recognised research profile and academic leadership experience at Associate/Full Professor level. Field (corporate governance and sustainability in a business school) is also outside the candidate's IR/security/policy focus.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time (renewable 5-year fixed term)",
+      "deadline": "15 June 2026",
       "salary": "Not specified"
     }
   ]
