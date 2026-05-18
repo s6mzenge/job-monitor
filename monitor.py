@@ -160,25 +160,65 @@ def save_state(state):
 #  UTILITY FUNCTIONS
 # ═══════════════════════════════════════════════════════════════
 
+# Retryable HTTP status codes: rate limiting + transient 5xx (incl. Cloudflare
+# 521/522/523/524 which generally mean "origin temporarily unreachable").
+# Note: 403/404 are NOT retried — those are persistent and need a config fix.
+RETRY_STATUS_CODES = {429, 500, 502, 503, 504, 521, 522, 523, 524}
+FETCH_MAX_ATTEMPTS = 3
+FETCH_RETRY_BACKOFF = 10  # seconds between retries
+
 def fetch_page(url, extra_headers=None, proxy=None):
-    """Fetch a URL and return a BeautifulSoup object, or None on error."""
+    """Fetch a URL and return a BeautifulSoup object, or None on error.
+
+    Retries up to FETCH_MAX_ATTEMPTS times on transient errors:
+      - HTTP 429 (rate-limited) and 5xx (server errors, incl. Cloudflare 52x)
+      - Network timeouts and connection errors
+    Permanent errors (403, 404, etc.) fail fast on the first attempt.
+    """
     hdrs = {**HEADERS, **(extra_headers or {})}
-    try:
-        if proxy == "cloudflare_worker" and CF_WORKER_URL:
-            resp = requests.get(
-                CF_WORKER_URL,
-                params={"url": url},
-                headers={"X-Proxy-Token": CF_WORKER_TOKEN},
-                timeout=30,
-            )
-        else:
-            resp = requests.get(url, headers=hdrs, timeout=30)
-        resp.raise_for_status()
-        return BeautifulSoup(resp.text, "html.parser")
-    except Exception as e:
-        _record_error(f"fetch_page: {e}")
-        print(f"    Error fetching {url}: {e}")
-        return None
+    last_err = None
+    for attempt in range(1, FETCH_MAX_ATTEMPTS + 1):
+        try:
+            if proxy == "cloudflare_worker" and CF_WORKER_URL:
+                resp = requests.get(
+                    CF_WORKER_URL,
+                    params={"url": url},
+                    headers={"X-Proxy-Token": CF_WORKER_TOKEN},
+                    timeout=30,
+                )
+            else:
+                resp = requests.get(url, headers=hdrs, timeout=30)
+
+            # Retryable status codes: log and try again
+            if resp.status_code in RETRY_STATUS_CODES and attempt < FETCH_MAX_ATTEMPTS:
+                print(
+                    f"    HTTP {resp.status_code} for {url} — retry in "
+                    f"{FETCH_RETRY_BACKOFF}s (attempt {attempt}/{FETCH_MAX_ATTEMPTS})"
+                )
+                last_err = f"HTTP {resp.status_code}"
+                time.sleep(FETCH_RETRY_BACKOFF)
+                continue
+
+            resp.raise_for_status()
+            return BeautifulSoup(resp.text, "html.parser")
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+            last_err = e
+            if attempt < FETCH_MAX_ATTEMPTS:
+                print(
+                    f"    Network error for {url} — retry in "
+                    f"{FETCH_RETRY_BACKOFF}s (attempt {attempt}/{FETCH_MAX_ATTEMPTS}): {e}"
+                )
+                time.sleep(FETCH_RETRY_BACKOFF)
+                continue
+            break
+        except Exception as e:
+            # Permanent error (HTTPError for 4xx, parse error, etc.) — fail fast
+            last_err = e
+            break
+
+    _record_error(f"fetch_page: {last_err}")
+    print(f"    Error fetching {url}: {last_err}")
+    return None
 
 def extract_text(soup, selector=""):
     """Extract cleaned text from a BeautifulSoup object, optionally within a CSS selector."""
@@ -1149,10 +1189,12 @@ def check_plumm_api(site, seen_urls):
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
+        _record_error(f"Plumm API: {e}")
         print(f"    Plumm API error: {e}")
         return None
 
     if not data.get("status"):
+        _record_error(f"Plumm API: status=false (raw: {str(data)[:200]})")
         print(f"    Plumm API returned status=false (raw: {str(data)[:200]})")
         return None
 
@@ -1239,6 +1281,7 @@ def check_rippling_api(site, seen_urls):
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
+        _record_error(f"Rippling API: {e}")
         print(f"    Rippling API error: {e}")
         return None
 
@@ -1816,7 +1859,6 @@ def main():
     issues_data = issues.load()
     all_matches = []
     daily_report_jobs = []
-    errors = []
     paused_sites = []
     empty_sites = []
 
@@ -1843,7 +1885,12 @@ def main():
                 state[site_key]["consecutive_errors"] = 0
                 state[site_key].pop("paused_until", None)
 
-        seen_urls = set(state[site_key].get("seen_urls", []))
+        # Load seen URLs as an ordered list (for state persistence) and a
+        # parallel set (handlers use O(1) `in` checks). Order is preserved
+        # so that the prune-to-last-200 step at the end correctly drops the
+        # OLDEST entries rather than an arbitrary subset.
+        seen_urls_ordered = list(state[site_key].get("seen_urls", []))
+        seen_urls = set(seen_urls_ordered)
         handler = METHOD_HANDLERS.get(method)
 
         if not handler:
@@ -2031,12 +2078,19 @@ def main():
                         "reason": "",
                     })
 
-            seen_urls.add(job["url"])
+            # Track this URL (and any aliases) in BOTH the set (O(1) lookup
+            # for the rest of this run) and the ordered list (preserves
+            # insertion order for state persistence + prune-by-recency).
+            if job["url"] not in seen_urls:
+                seen_urls.add(job["url"])
+                seen_urls_ordered.append(job["url"])
             for extra in job.get("_also_track", []):
-                seen_urls.add(extra)
+                if extra not in seen_urls:
+                    seen_urls.add(extra)
+                    seen_urls_ordered.append(extra)
             time.sleep(1)
 
-        state[site_key]["seen_urls"] = list(seen_urls)
+        state[site_key]["seen_urls"] = seen_urls_ordered
         state[site_key]["last_checked"] = now.isoformat()
 
     # ─── Prune seen_urls to prevent state.json bloat ───
@@ -2068,16 +2122,10 @@ def main():
     else:
         print("\nNo matching jobs found this run.")
 
-    if errors and not DRY_RUN:
-        error_msg = f"⚠️ <b>Job Monitor Errors</b>\nFailed to scrape: {escape_html(', '.join(errors))}"
-        send_telegram(error_msg)
-
     if paused_sites and not DRY_RUN:
         pause_msg = f"⏸️ <b>Sites Paused (16+ failures)</b>\n{escape_html(', '.join(paused_sites))}\nWill automatically retry in 2 days."
         send_telegram(pause_msg)
 
-    if errors:
-        print(f"Errors: {', '.join(errors)}")
     if paused_sites:
         print(f"Paused: {', '.join(paused_sites)}")
     if empty_sites:
