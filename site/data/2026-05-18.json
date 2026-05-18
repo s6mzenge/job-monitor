@@ -1,7 +1,7 @@
 {
   "date": "2026-05-18",
-  "generated_at": "2026-05-18T13:46:05.052526+00:00",
-  "run_count": 22,
+  "generated_at": "2026-05-18T14:00:55.988778+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Aerospace Lead Auditor - Contractor",
@@ -208,6 +208,48 @@
       "skills_score": "2",
       "seniority_score": "2",
       "reason": "This is a corporate PR/media relations role focused on press office work, media campaigns, and account management for corporate clients — outside the candidate's policy research, intelligence, and OSINT target zones. The role explicitly requires prior account management experience in PR consultancy or in-house communications plus an established media contacts network, neither of which the candidate has.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Internship - Speculative Opportunities",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "GRC works on accountability, international criminal justice, and atrocity prevention — directly aligned with the candidate's MSc focus on international law and genocide. Internship level fits the candidate's stage perfectly, and their research, writing, and analytical skills transfer cleanly.",
+      "location": "Remote",
+      "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Managing Consultant - ESIA and ESDD",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/Managing-Consultant---ESIA-and-ESDD_R00030238-1",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "Environmental & Social Impact Assessment consulting is outside the candidate's core targeting zones (academic/policy IR, geopolitical risk, or OSINT/tech policy). The role requires specific ESIA technical expertise, knowledge of IFC Performance Standards and Equator Principles, and proven consultancy delivery experience the candidate does not have. \"Managing Consultant\" also implies mid-level seniority beyond the candidate's stage.",
+      "location": "London, United Kingdom (4 locations)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Creator & Celebrity Partnerships Specialist",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Manager--Creator-Marketing_JR102389",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is a creator/celebrity marketing role in entertainment and lifestyle — a clear mismatch with the candidate's IR, policy and intelligence focus. The required skills (influencer partnerships, talent contract negotiation, social platform campaign delivery) are not present in the CV.",
       "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
