@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-05-18T08:00:53.152309+00:00",
+  "last_updated": "2026-05-18T08:30:55.965645+00:00",
   "site_summary": {
+    "SOAS University of London": {
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 23,
+      "first_recent_failure": "2026-04-29T14:05:43.157388+00:00",
+      "last_recent_failure": "2026-05-18T08:30:55.965645+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h3 a[href*='/job/']\") to be visible"
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -18,10 +31,10 @@
       "site_id": 63,
       "url": "https://www.sigrid-rausing-trust.org/jobs/",
       "method": "html",
-      "consecutive_failures": 13,
-      "total_recent_failures": 34,
+      "consecutive_failures": 14,
+      "total_recent_failures": 35,
       "first_recent_failure": "2026-05-14T16:00:59.487828+00:00",
-      "last_recent_failure": "2026-05-18T08:00:53.152309+00:00",
+      "last_recent_failure": "2026-05-18T08:30:55.965645+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -11247,6 +11260,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/",
       "consecutive_count": 13
+    },
+    {
+      "timestamp": "2026-05-18T08:30:55.965645+00:00",
+      "site": "SOAS University of London",
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h3 a[href*='/job/']\") to be visible",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-18T08:30:55.965645+00:00",
+      "site": "Sigrid Rausing Trust",
+      "site_id": 63,
+      "url": "https://www.sigrid-rausing-trust.org/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/",
+      "consecutive_count": 14
     }
   ]
 }
