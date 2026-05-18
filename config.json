@@ -514,7 +514,7 @@
       "link_selector": "h3.resource-title a.title-link",
       "base_url": "https://www.ictj.org",
       "scope_links": true,
-      "use_cloudscraper": true
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 42,
@@ -793,7 +793,8 @@
       "method": "html",
       "selector": "div.content, div.article",
       "link_selector": "",
-      "base_url": "https://www.sigrid-rausing-trust.org"
+      "base_url": "https://www.sigrid-rausing-trust.org",
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 64,
@@ -829,7 +830,8 @@
       "method": "html",
       "selector": "main",
       "link_selector": "",
-      "base_url": "https://trustforlondon.org.uk"
+      "base_url": "https://trustforlondon.org.uk",
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 67,
