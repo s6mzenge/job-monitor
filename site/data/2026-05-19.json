@@ -1,7 +1,7 @@
 {
   "date": "2026-05-19",
-  "generated_at": "2026-05-19T11:00:59.473026+00:00",
-  "run_count": 13,
+  "generated_at": "2026-05-19T11:30:53.085307+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Research Methodologist",
@@ -156,6 +156,20 @@
       "type": "Full-time (Permanent, Hybrid)",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Data Insight Officer",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/-62122/en",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is a fundraising data analytics role focused on Power BI, SQL, Microsoft Dynamics CRM, and predictive modelling for charity income — not policy, research, or intelligence work. The candidate lacks the core required toolset (Power BI, SQL, advanced Excel/Power Query, dashboarding experience) and the role is squarely in commercial fundraising analytics rather than humanitarian policy research.",
+      "location": "London, UK (hybrid)",
+      "type": "Full-time, Permanent",
+      "deadline": "2 June 2026, 12.00pm BST",
+      "salary": "£41,902.62 - £51,214.32 per annum"
     }
   ]
 }
