@@ -1,7 +1,7 @@
 {
   "date": "2026-05-19",
-  "generated_at": "2026-05-19T16:01:01.635740+00:00",
-  "run_count": 23,
+  "generated_at": "2026-05-19T16:30:54.168437+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Research Methodologist",
@@ -212,6 +212,20 @@
       "type": "Full-time, Fixed-term contract (until 30 June 2027)",
       "deadline": "21 May 2026",
       "salary": "From £63,370 per annum"
+    },
+    {
+      "title": "Lecturer in International Relations",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRP542/lecturer-in-international-relations",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Field alignment with IR/international law/human rights/security is excellent, but a Lecturer post requires a PhD (or near-completion) and prior UK HE teaching experience, neither of which the candidate has as a current MSc student. Hard ineligibility on seniority.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-Term Contract (12 months)",
+      "deadline": "3rd June",
+      "salary": "£42,400 to £52,776 per annum"
     }
   ]
 }
