@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-05-19T09:30:54.980290+00:00",
+  "last_updated": "2026-05-19T10:00:59.570451+00:00",
   "site_summary": {
-    "Impunity Watch": {
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
+    "Global Rights Compliance": {
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
       "consecutive_failures": 1,
-      "total_recent_failures": 43,
-      "first_recent_failure": "2026-04-29T15:01:18.017646+00:00",
-      "last_recent_failure": "2026-05-19T09:30:54.980290+00:00",
+      "total_recent_failures": 36,
+      "first_recent_failure": "2026-04-30T06:00:58.738290+00:00",
+      "last_recent_failure": "2026-05-19T10:00:59.570451+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/"
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    7 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\""
     }
   },
   "issues": [
@@ -11344,6 +11344,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-19T10:00:59.570451+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    7 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
       "consecutive_count": 1
     }
   ]
