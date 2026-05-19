@@ -1,7 +1,7 @@
 {
   "date": "2026-05-19",
-  "generated_at": "2026-05-19T15:01:04.650447+00:00",
-  "run_count": 21,
+  "generated_at": "2026-05-19T15:31:23.721448+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Research Methodologist",
@@ -198,6 +198,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "2x Resident Senior Policy Fellows, Bloomberg LSE European City Leadership Initiative",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRP575/2x-resident-senior-policy-fellows-bloomberg-lse-european-city-leadership-initiative",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior fellowship requiring proven leadership in driving innovation across city government, decision-making experience in European/international institutions, and extensive work with high-level policy institutions — far beyond the candidate's MSc-stage profile. Urban governance is also adjacent rather than core to the candidate's IR/security/international law focus. Hard ineligibility on seniority.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-term contract (until 30 June 2027)",
+      "deadline": "21 May 2026",
+      "salary": "From £63,370 per annum"
     }
   ]
 }
