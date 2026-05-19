@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-19T14:30:51.632669+00:00",
+  "last_updated": "2026-05-19T15:01:04.650447+00:00",
   "site_summary": {},
   "issues": [
     {
@@ -11351,6 +11351,17 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='irr.org.uk', port=443): Read timed out. (read timeout=30)",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-19T15:01:04.650447+00:00",
+      "site": "jobs.ac.uk",
+      "site_id": 6,
+      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 529: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CbC8QbuTbpbCWYNtP77KM\"}",
+      "job_title": "2x Resident Senior Policy Fellows, Bloomberg LSE European City Leadership Initiative",
+      "job_url": "https://www.jobs.ac.uk/job/DRP575/2x-resident-senior-policy-fellows-bloomberg-lse-european-city-leadership-initiative"
     }
   ]
 }
