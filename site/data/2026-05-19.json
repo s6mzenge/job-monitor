@@ -1,7 +1,7 @@
 {
   "date": "2026-05-19",
-  "generated_at": "2026-05-19T07:30:48.187706+00:00",
-  "run_count": 6,
+  "generated_at": "2026-05-19T08:01:00.695458+00:00",
+  "run_count": 7,
   "jobs": [
     {
       "title": "Research Methodologist",
@@ -113,6 +113,34 @@
       "location": "Johannesburg, South Africa",
       "type": "Full-time",
       "deadline": "01 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "AI and Machine Learning Advisor",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25167?c=palladium",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "An \"Advisor\" role in AI/ML implies specialist technical expertise and seniority that the candidate does not have — their Python and data analysis skills are at research-assistant level, not advisory ML practitioner level. Field alignment is weak unless the role is specifically about AI policy/governance, which the title does not suggest. Insufficient detail provided, but on the face of it this is not a fit.",
+      "location": "United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Account Manager - Healthcare & Life Sciences",
+      "organisation": "Portland Communications",
+      "url": "https://job-boards.greenhouse.io/portland-communications/jobs/5140074007",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "Healthcare/life sciences communications and public affairs is outside the candidate's core target zones (IR, security, geopolitical risk, OSINT/tech policy). The role also requires prior account management experience in healthcare comms, which the candidate lacks, and \"Account Manager\" sits above entry level. Two scores at 2 trigger a Low rating.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
