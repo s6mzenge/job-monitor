@@ -1,7 +1,7 @@
 {
   "date": "2026-05-19",
-  "generated_at": "2026-05-19T12:00:56.117865+00:00",
-  "run_count": 15,
+  "generated_at": "2026-05-19T12:31:01.115265+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Research Methodologist",
@@ -170,6 +170,20 @@
       "type": "Full-time, Permanent",
       "deadline": "2 June 2026, 12.00pm BST",
       "salary": "£41,902.62 - £51,214.32 per annum"
+    },
+    {
+      "title": "Intern, PGA",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Intern--PGA_JR102514",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Public affairs consulting is policy-adjacent rather than core to the candidate's IR/security/international law focus, and the client portfolio (energy, tech, healthcare, F&B) is broader commercial PR rather than geopolitical risk. However, the research, political monitoring, briefing-drafting and stakeholder mapping tasks map well onto the candidate's research/writing background, and the internship level fits their stage cleanly.",
+      "location": "London, United Kingdom",
+      "type": "Internship (3 months)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
