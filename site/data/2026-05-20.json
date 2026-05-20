@@ -1,7 +1,7 @@
 {
   "date": "2026-05-20",
-  "generated_at": "2026-05-20T15:30:57.667226+00:00",
-  "run_count": 22,
+  "generated_at": "2026-05-20T16:01:07.964509+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Operations Programme Manager",
@@ -320,6 +320,34 @@
       "skills_score": "3",
       "seniority_score": "1",
       "reason": "Role explicitly requires 5+ years of experience in science communications/technical writing with a focus on AI, computer science, or physics — a hard ineligibility trigger. Field is also a poor fit (science/AI communications rather than policy, IR, or geopolitical research), and the candidate lacks the requested technical AI writing portfolio.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Research Assistant, Science & Society",
+      "organisation": "Pew Trusts",
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/job/Washington-DC-Pew-Research-Center/Research-Assistant--Science---Society_R003181",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Pew Research Center is a leading social science research organisation, but the Science & Society team's focus (public opinion on vaccines, climate, AI, biotechnology) sits adjacent to the candidate's core IR/security/international law interests rather than within them. Quantitative skills (SPSS, Excel) and research/writing background match well, and the RA level fits the candidate's stage; US-based hybrid role may also raise work-authorisation considerations not addressed in the posting.",
+      "location": "Washington, DC, USA",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "$59,900 annually"
+    },
+    {
+      "title": "Design Studio Manager",
+      "organisation": "Anthesis Group",
+      "url": "https://anthesisgroup.pinpointhq.com/en/postings/601e5484-8bff-463a-b4fd-6a0d134c77ee",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "Design studio management within a brand and communications function is a mismatch for the candidate's IR/policy research profile, with no overlap to academic, intelligence, or OSINT zones. The role requires creative/design leadership experience the candidate does not have.",
       "location": "London, UK",
       "type": "Full-time",
       "deadline": "Not specified",
