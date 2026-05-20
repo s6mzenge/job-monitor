@@ -1,7 +1,7 @@
 {
   "date": "2026-05-20",
-  "generated_at": "2026-05-20T10:00:56.819403+00:00",
-  "run_count": 11,
+  "generated_at": "2026-05-20T10:33:04.337286+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Operations Programme Manager",
@@ -198,6 +198,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Examinations and Timetabling Officer (INTERNAL)",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/883169",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "This is an internal-only administrative role focused on exams and timetabling operations within a university registry — it is not research, policy, or intelligence work. The post is also explicitly marked INTERNAL, meaning it is restricted to existing SOAS staff, which the candidate is not.",
+      "location": "Bloomsbury, London, UK (hybrid, 3 days on campus)",
+      "type": "Full-time (1 Permanent + 1 Fixed-term to 31 January 2027)",
+      "deadline": "27 May 2026",
+      "salary": "£35,749.57 – £42,207.57 per annum inclusive of London Allowance"
     }
   ]
 }
