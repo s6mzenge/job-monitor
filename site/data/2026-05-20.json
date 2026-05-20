@@ -1,7 +1,7 @@
 {
   "date": "2026-05-20",
-  "generated_at": "2026-05-20T12:01:18.912066+00:00",
-  "run_count": 15,
+  "generated_at": "2026-05-20T12:31:06.377036+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Operations Programme Manager",
@@ -212,6 +212,20 @@
       "type": "Full-time (1 Permanent + 1 Fixed-term to 31 January 2027)",
       "deadline": "27 May 2026",
       "salary": "£35,749.57 – £42,207.57 per annum inclusive of London Allowance"
+    },
+    {
+      "title": "Supporter Services Assistant (MSF Ireland)",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/supporter-services-assistant-msf-ireland-62136/en",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "This is a donor services/fundraising administration role at a humanitarian NGO — while MSF's mission is adjacent to humanitarian/policy work, the actual job is supporter care and donation processing, not policy or research. The candidate's analytical and research skills are not the focus here, and the role sits well outside their three target zones.",
+      "location": "County Dublin, Ireland",
+      "type": "Full-time (Permanent, 37.5 hours/week)",
+      "deadline": "16 June 2026",
+      "salary": "€32,481.23"
     }
   ]
 }
