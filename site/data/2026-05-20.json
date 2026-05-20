@@ -1,7 +1,7 @@
 {
   "date": "2026-05-20",
-  "generated_at": "2026-05-20T14:01:11.082368+00:00",
-  "run_count": 19,
+  "generated_at": "2026-05-20T14:33:46.850507+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Operations Programme Manager",
@@ -293,6 +293,34 @@
       "seniority_score": "1",
       "reason": "Associate Director is a senior leadership role requiring proven corporate affairs experience, team leadership, and new business origination — well beyond the candidate's MSc/student-assistant stage. The field is corporate communications/PR rather than policy or intelligence research, and the role demands established media/business networks the candidate does not have. Hard ineligibility on seniority.",
       "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Finance and Organisational Support Officer",
+      "organisation": "Institute of Race Relations",
+      "url": "https://irr.org.uk/about/vacancies/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "Finance and organisational support is outside the candidate's research/policy focus and requires specific finance/admin skills the CV does not emphasise. Two scores at 2 trigger Low under the framework.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "23 June 2026, 11:59pm",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Science & Frontier AI Research - Writer / Communicator",
+      "organisation": "Google DeepMind",
+      "url": "https://job-boards.greenhouse.io/deepmind/jobs/7614597",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Role explicitly requires 5+ years of experience in science communications/technical writing with a focus on AI, computer science, or physics — a hard ineligibility trigger. Field is also a poor fit (science/AI communications rather than policy, IR, or geopolitical research), and the candidate lacks the requested technical AI writing portfolio.",
+      "location": "London, UK",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
