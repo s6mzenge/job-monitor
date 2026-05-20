@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-05-20T15:00:57.108010+00:00",
-  "site_summary": {
-    "SOAS University of London": {
-      "site_id": 34,
-      "url": "https://vacancies.soas.ac.uk/#vacancies",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 24,
-      "first_recent_failure": "2026-04-29T14:05:43.157388+00:00",
-      "last_recent_failure": "2026-05-20T15:00:57.108010+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://vacancies.soas.ac.uk/#vacancies\", waiting until \"domcontentloaded\""
-    }
-  },
+  "last_updated": "2026-05-20T15:30:57.667226+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-04-29T14:05:43.157388+00:00",
@@ -11435,6 +11421,17 @@
       "method": "pinpoint_api",
       "type": "llm_call_failed",
       "message": "Anthropic API: HTTP 529: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CbE2N9SVQo7NUqczbDkCo\"}",
+      "job_title": "Design Studio Manager",
+      "job_url": "https://anthesisgroup.pinpointhq.com/en/postings/601e5484-8bff-463a-b4fd-6a0d134c77ee"
+    },
+    {
+      "timestamp": "2026-05-20T15:30:57.667226+00:00",
+      "site": "Anthesis Group",
+      "site_id": 68,
+      "url": "https://anthesisgroup.pinpointhq.com/",
+      "method": "pinpoint_api",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 529: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CbE4ZyGsodGJDBqcHRP9q\"}",
       "job_title": "Design Studio Manager",
       "job_url": "https://anthesisgroup.pinpointhq.com/en/postings/601e5484-8bff-463a-b4fd-6a0d134c77ee"
     }
