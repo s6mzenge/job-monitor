@@ -1,7 +1,7 @@
 {
   "date": "2026-05-20",
-  "generated_at": "2026-05-20T08:01:15.927840+00:00",
-  "run_count": 7,
+  "generated_at": "2026-05-20T08:30:49.353493+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Operations Programme Manager",
@@ -111,6 +111,20 @@
       "seniority_score": "2",
       "reason": "This is a B2B sales/account management role focused on revenue targets and pipeline management — pure sales, not policy, intelligence, or research. It also requires fluency in a regional business language (Mandarin/Cantonese in Shenzhen) which the candidate does not have, and 2+ years of B2B sales experience the candidate lacks.",
       "location": "Shenzhen, China",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Managing Consultant- Low Carbon Solutions – Electricity Networks & Energy Systems (Mid-Senior level)",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/Managing-Consultant--Low-Carbon-Solutions---Electricity-Networks---Energy-Systems--Mid-Senior-level-_R00030331-1",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a mid-senior energy consultancy role requiring deep technical expertise in electricity networks/markets, project leadership, and business development — entirely outside the candidate's IR/policy field. Hard ineligibility on seniority (Managing Consultant level with team leadership and work-winning track record required).",
+      "location": "London, United Kingdom (4 locations)",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
