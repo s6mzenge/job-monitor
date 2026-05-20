@@ -1,7 +1,7 @@
 {
   "date": "2026-05-20",
-  "generated_at": "2026-05-20T08:30:49.353493+00:00",
-  "run_count": 8,
+  "generated_at": "2026-05-20T09:01:02.700246+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Operations Programme Manager",
@@ -125,6 +125,20 @@
       "seniority_score": "1",
       "reason": "This is a mid-senior energy consultancy role requiring deep technical expertise in electricity networks/markets, project leadership, and business development — entirely outside the candidate's IR/policy field. Hard ineligibility on seniority (Managing Consultant level with team leadership and work-winning track record required).",
       "location": "London, United Kingdom (4 locations)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Reputation Strategy & Research, Senior Consultant",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7735254003?gh_jid=7735254003",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The role requires a hard minimum of 5-7 years' experience in a mixed-methods research agency, which triggers the hard ineligibility rule on years of experience. Field alignment is also only moderate — this is corporate reputation/communications research rather than the candidate's core IR, policy, or geopolitical risk targets.",
+      "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
