@@ -1,7 +1,7 @@
 {
   "date": "2026-05-20",
-  "generated_at": "2026-05-20T12:31:06.377036+00:00",
-  "run_count": 16,
+  "generated_at": "2026-05-20T13:00:59.004882+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Operations Programme Manager",
@@ -226,6 +226,62 @@
       "type": "Full-time (Permanent, 37.5 hours/week)",
       "deadline": "16 June 2026",
       "salary": "€32,481.23"
+    },
+    {
+      "title": "Embedded Intelligence Program Manager",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000127427099-embedded-intelligence-program-manager",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Field alignment is excellent — Sibylline is a core target firm and the role is squarely in commercial intelligence. However, this is a Program Manager position with a hard requirement of 5–7+ years of relevant experience including 3–5 years of management experience, which the candidate (MSc in progress, student-assistant roles only) cannot meet. Hard ineligibility on seniority/years of experience.",
+      "location": "London, UK (hybrid, 3 days/week on client site)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Country Finance Manager & Bilanzbuchhalter - Germany",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/Frankfurt-Germany/Country-Finance-Manager---Bilanzbuchhalter---Germany_R00030323-1",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior finance/accounting role requiring a Bilanzbuchhalter qualification, deep IFRS/HGB expertise, and several years of professional experience in finance — none of which the candidate possesses. Hard ineligibility triggered on accounting qualification and specialist technical skills the candidate cannot substitute for.",
+      "location": "Frankfurt, Germany",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Invoicing Advisor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Invoicing-Advisor-400-093/1395558133",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "This is an accounts payable / invoice processing role requiring SAP and finance operations experience — a complete mismatch with the candidate's IR/policy research profile. Field is a pure mismatch (finance back-office), triggering Low.",
+      "location": "Mumbai, India",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Global Head of Commercial",
+      "organisation": "Verisk Maplecroft",
+      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3510/",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Although Verisk Maplecroft is a core target organisation in geopolitical risk, this is a Chief Commercial Officer / executive leadership role requiring a proven senior commercial leadership track record in B2B data/SaaS, with accountability for global revenue and team leadership across multiple regions. Hard ineligibility on seniority — the candidate has only student-assistant experience and no commercial leadership background.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
