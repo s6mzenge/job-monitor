@@ -1,7 +1,7 @@
 {
   "date": "2026-05-20",
-  "generated_at": "2026-05-20T16:01:07.964509+00:00",
-  "run_count": 23,
+  "generated_at": "2026-05-20T16:31:15.468617+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Operations Programme Manager",
@@ -352,6 +352,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Publications Officer",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=MKG525-R",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "This is a corporate publications/marketing role focused on prospectuses, annual reports and editorial production — not research, policy, or intelligence work, so field alignment is weak. The role expects demonstrated experience coordinating complex publications end-to-end and managing external designers/printers, which goes beyond the candidate's student-assistant track record.",
+      "location": "Hendon, London (hybrid, min 3 days on campus)",
+      "type": "Full-time, Permanent (35.5 hours/week)",
+      "deadline": "Thursday 04 June 2026",
+      "salary": "£37,357 to £42,653 per annum"
     }
   ]
 }

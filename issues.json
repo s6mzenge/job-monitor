@@ -1,46 +1,6 @@
 {
-  "last_updated": "2026-05-20T16:01:07.964509+00:00",
-  "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 31,
-      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "last_recent_failure": "2026-05-20T16:01:07.964509+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7fd1e4c93a40>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))"
-    },
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 38,
-      "first_recent_failure": "2026-04-30T06:00:58.738290+00:00",
-      "last_recent_failure": "2026-05-20T16:01:07.964509+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    23 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"\n    - waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish..."
-    },
-    "Ceasefire Centre for Civilian Rights": {
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 25,
-      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "last_recent_failure": "2026-05-20T16:01:07.964509+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7fd1e2fb50a0>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))"
-    }
-  },
+  "last_updated": "2026-05-20T16:31:15.468617+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-04-29T14:05:43.157388+00:00",
