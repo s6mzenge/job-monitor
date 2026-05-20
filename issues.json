@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-05-20T13:00:59.004882+00:00",
-  "site_summary": {},
+  "last_updated": "2026-05-20T13:31:08.146102+00:00",
+  "site_summary": {
+    "IISS": {
+      "site_id": 36,
+      "url": "https://www.iiss.org/careers/",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-04-30T14:31:01.950620+00:00",
+      "last_recent_failure": "2026-05-20T13:31:08.146102+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.iiss.org/careers/\", waiting until \"domcontentloaded\""
+    }
+  },
   "issues": [
     {
       "timestamp": "2026-04-29T14:05:43.157388+00:00",
@@ -11381,6 +11395,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    24 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-20T13:31:08.146102+00:00",
+      "site": "IISS",
+      "site_id": 36,
+      "url": "https://www.iiss.org/careers/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.iiss.org/careers/\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
     }
   ]
