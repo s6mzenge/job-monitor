@@ -1,7 +1,7 @@
 {
   "date": "2026-05-20",
-  "generated_at": "2026-05-20T09:01:02.700246+00:00",
-  "run_count": 9,
+  "generated_at": "2026-05-20T09:30:57.623228+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Operations Programme Manager",
@@ -140,6 +140,62 @@
       "reason": "The role requires a hard minimum of 5-7 years' experience in a mixed-methods research agency, which triggers the hard ineligibility rule on years of experience. Field alignment is also only moderate — this is corporate reputation/communications research rather than the candidate's core IR, policy, or geopolitical risk targets.",
       "location": "London, United Kingdom",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Embedded Intelligence Analyst",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000127388868-embedded-intelligence-analyst",
+      "match": "medium",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "3",
+      "reason": "Commercial intelligence and geopolitical risk analysis at Sibylline is a core target zone, and the candidate's IR/security background, OSINT-adjacent research skills, and strong writing align well. The role asks for 1–3 years of intelligence/risk experience, which slightly exceeds the candidate's student-assistant background, and the unsociable rotating 5am–2pm shift pattern is a practical consideration but not disqualifying.",
+      "location": "UK (fully remote)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Operations Director (AD05)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106364&p_spid=5150833",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Senior director-level role requiring 10 years of operations experience including 5 years in senior leadership at a large organisation — a hard ineligibility trigger. The role is operational/administrative leadership at a business school, not policy or IR research, and is well outside the candidate's stage and field.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "05 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Research and Innovation Associate in Virtual Reality",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/research-and-innovation-associate-in-virtual-reality-611812.html",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the role explicitly requires a PhD (or near submission), which the candidate does not hold. The substantive focus on VR/XR development in Unity/Unreal for paediatric medical applications is also far outside the candidate's IR/policy field and technical skill set.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-Term",
+      "deadline": "31 May 2026",
+      "salary": "£44,753 - £49,738"
+    },
+    {
+      "title": "Research Associate/EMEA Analyst",
+      "organisation": "Verisk Maplecroft",
+      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3884/",
+      "match": "medium",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "Verisk Maplecroft is a core target firm in the geopolitical risk space and the role's political/economic risk analysis aligns directly with the candidate's IR background. However, the role asks for at least three years of relevant professional experience plus specific Africa regional expertise, which the candidate lacks; the three-year requirement is stated but not framed as absolutely non-negotiable, so it's a stretch rather than a hard bar.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
