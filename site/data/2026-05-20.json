@@ -1,7 +1,7 @@
 {
   "date": "2026-05-20",
-  "generated_at": "2026-05-20T06:30:49.949188+00:00",
-  "run_count": 4,
+  "generated_at": "2026-05-20T07:00:57.431755+00:00",
+  "run_count": 5,
   "jobs": [
     {
       "title": "Operations Programme Manager",
@@ -98,6 +98,20 @@
       "reason": "This is an automotive quality assurance auditing role requiring deep expertise in IATF 16949, AIAG core tools, and automotive OEM standards — none of which the candidate possesses. The field (automotive industry compliance auditing) is entirely unrelated to IR/policy research, and the role requires a senior certified Lead Auditor.",
       "location": "Houston, US",
       "type": "Contractor",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Strategic Account Manager",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Strategic-Account-Manager-511464/1395337133",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a B2B sales/account management role focused on revenue targets and pipeline management — pure sales, not policy, intelligence, or research. It also requires fluency in a regional business language (Mandarin/Cantonese in Shenzhen) which the candidate does not have, and 2+ years of B2B sales experience the candidate lacks.",
+      "location": "Shenzhen, China",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
