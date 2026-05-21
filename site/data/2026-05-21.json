@@ -1,7 +1,7 @@
 {
   "date": "2026-05-21",
-  "generated_at": "2026-05-21T08:30:51.524732+00:00",
-  "run_count": 8,
+  "generated_at": "2026-05-21T09:00:55.051497+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Auditor Integrated Management Systems",
@@ -140,6 +140,20 @@
       "reason": "This is a senior HR/People leadership role in an enabling function at a sustainability consultancy — entirely outside the candidate's IR/policy/intelligence target zones. It requires specialist HR expertise and leadership experience the candidate does not have.",
       "location": "London, UK",
       "type": "Full-time (Permanent, Hybrid)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Auditor Food",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Nieuwolda-Oost-Lead-Auditor-Food-3068-AX/1395895433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Complete mismatch — food industry auditing requires a food science/technology degree, 5+ years in food production, third-party audit qualifications (IFS, BRC, ISO 22000), and Dutch fluency, none of which the candidate has. Hard ineligibility triggered on language (Dutch required for work, candidate only A1), 5+ years hard experience requirement, and specialist vocational qualifications.",
+      "location": "Netherlands (NL, 3068 AX)",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
