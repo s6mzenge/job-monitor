@@ -1,7 +1,7 @@
 {
   "date": "2026-05-21",
-  "generated_at": "2026-05-21T17:00:55.856397+00:00",
-  "run_count": 25,
+  "generated_at": "2026-05-21T17:31:04.669617+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Auditor Integrated Management Systems",
@@ -251,6 +251,20 @@
       "seniority_score": "3",
       "reason": "This is a quality management and accreditation compliance role in certification/verification services (ISO standards, audit programs), which is a mismatch with the candidate's IR/policy/intelligence focus. The role requires specific technical knowledge of accreditation frameworks (ISO/IEC 17021, ISQM) and audit lifecycle experience the candidate does not have.",
       "location": "London, United Kingdom (12 locations)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Consultant, Executive Search - Insurance Sector",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7742560003?gh_jid=7742560003",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is an executive search/recruitment role in the insurance sector — not the Teneo political risk practice the candidate would target. It has no overlap with IR, policy, intelligence, or research, and the \"Senior Consultant\" level expects prior search/financial services experience the candidate lacks.",
+      "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
