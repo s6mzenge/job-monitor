@@ -1,7 +1,7 @@
 {
   "date": "2026-05-21",
-  "generated_at": "2026-05-21T07:30:56.031074+00:00",
-  "run_count": 6,
+  "generated_at": "2026-05-21T08:01:05.054642+00:00",
+  "run_count": 7,
   "jobs": [
     {
       "title": "Auditor Integrated Management Systems",
@@ -126,6 +126,20 @@
       "reason": "This is an assurance/assessor contractor role at LRQA in Yokohama, with the posting note indicating it is earmarked for a specific named individual. The field (assurance assessment) is unrelated to the candidate's IR/policy/intelligence targets, and the role likely requires Japanese-language capability and specialist assessor qualifications the candidate lacks.",
       "location": "Yokohama, Japan",
       "type": "Contractor",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Global People Lead – Global Business Lines",
+      "organisation": "Anthesis Group",
+      "url": "https://anthesisgroup.pinpointhq.com/en/postings/5f7001f5-4b47-4e4f-9e98-5466a4aca571",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior HR/People leadership role in an enabling function at a sustainability consultancy — entirely outside the candidate's IR/policy/intelligence target zones. It requires specialist HR expertise and leadership experience the candidate does not have.",
+      "location": "London, UK",
+      "type": "Full-time (Permanent, Hybrid)",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
