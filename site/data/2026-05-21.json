@@ -1,7 +1,7 @@
 {
   "date": "2026-05-21",
-  "generated_at": "2026-05-21T13:30:53.965763+00:00",
-  "run_count": 18,
+  "generated_at": "2026-05-21T14:01:13.823853+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Auditor Integrated Management Systems",
@@ -212,6 +212,34 @@
       "type": "Full-time",
       "deadline": "03 June 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Institutional Researcher and BI Analyst (AD07)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106417&p_spid=5152834",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "Higher education institutional research aligns well with the candidate's work for Prof Kaldewey on HEI trends and their German Rectors Conference experience. However, the role asks for a Master's plus 3 years of work experience including research, and emphasises BI/data warehouse and statistical analytics expertise that the candidate has only at a basic level (SPSS, Excel, Python). Seniority is a stretch but not a hard exclusion.",
+      "location": "Braamfontein, South Africa",
+      "type": "Full-time",
+      "deadline": "04 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer in Medieval Art and Architecture",
+      "organisation": "Birkbeck, University of London",
+      "url": "https://cis7.bbk.ac.uk/vacancy/lecturer-in-medieval-art-and-architecture-612081.html",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a specialist lectureship in medieval art and architecture, an entirely different discipline from the candidate's IR/international law background. The role requires an established art historian with a PhD-level research and teaching record in medieval art, which the candidate does not have. Hard ineligibility on seniority (lecturer role requiring proven scholarly track record) and field mismatch.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-term (12 months)",
+      "deadline": "15 June 2026",
+      "salary": "£44,247 – £60,858 per annum"
     }
   ]
 }
