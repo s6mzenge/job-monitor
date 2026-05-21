@@ -1,44 +1,18 @@
 {
-  "last_updated": "2026-05-21T05:00:55.749698+00:00",
+  "last_updated": "2026-05-21T05:30:49.834102+00:00",
   "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 32,
-      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "last_recent_failure": "2026-05-21T05:00:55.749698+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7fce26a402f0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))"
-    },
-    "SOAS University of London": {
-      "site_id": 34,
-      "url": "https://vacancies.soas.ac.uk/#vacancies",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 25,
-      "first_recent_failure": "2026-04-29T14:05:43.157388+00:00",
-      "last_recent_failure": "2026-05-21T05:00:55.749698+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h3 a[href*='/job/']\") to be visible"
-    },
-    "Ceasefire Centre for Civilian Rights": {
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
+    "Reprieve": {
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 26,
-      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "last_recent_failure": "2026-05-21T05:00:55.749698+00:00",
+      "total_recent_failures": 22,
+      "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
+      "last_recent_failure": "2026-05-21T05:30:49.834102+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7fce259d1c10>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))"
+      "last_message": "fetch_page: 523 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/"
     }
   },
   "issues": [
@@ -11543,6 +11517,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7fce259d1c10>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-21T05:30:49.834102+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 523 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/",
       "consecutive_count": 1
     }
   ]
