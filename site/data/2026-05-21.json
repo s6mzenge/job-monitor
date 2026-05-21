@@ -1,7 +1,7 @@
 {
   "date": "2026-05-21",
-  "generated_at": "2026-05-21T15:30:56.125416+00:00",
-  "run_count": 22,
+  "generated_at": "2026-05-21T16:01:00.501894+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Auditor Integrated Management Systems",
@@ -240,6 +240,20 @@
       "type": "Full-time, Fixed-term (12 months)",
       "deadline": "15 June 2026",
       "salary": "£44,247 – £60,858 per annum"
+    },
+    {
+      "title": "Accreditation and Management Systems Specialist",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/Accreditation-and-Management-Systems-Specialist_R00030401-1",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is a quality management and accreditation compliance role in certification/verification services (ISO standards, audit programs), which is a mismatch with the candidate's IR/policy/intelligence focus. The role requires specific technical knowledge of accreditation frameworks (ISO/IEC 17021, ISQM) and audit lifecycle experience the candidate does not have.",
+      "location": "London, United Kingdom (12 locations)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
