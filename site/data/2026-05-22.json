@@ -1,7 +1,7 @@
 {
   "date": "2026-05-22",
-  "generated_at": "2026-05-22T14:00:58.425527+00:00",
-  "run_count": 19,
+  "generated_at": "2026-05-22T14:30:48.666035+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "MS Senior Assessor",
@@ -198,6 +198,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Careers Transformation Programme Lecturer",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRQ735/careers-transformation-programme-lecturer",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is an employability/careers education lecturer role focused on curriculum design and graduate labour market expertise — outside the candidate's IR/policy research focus. It also requires prior academic teaching experience and strong knowledge of the UK graduate labour market, which the candidate lacks. Not a fit across all three dimensions.",
+      "location": "London, UK",
+      "type": "Full-time, Permanent",
+      "deadline": "14 June 2026",
+      "salary": "£43,482 to £44,746 per annum"
     }
   ]
 }
