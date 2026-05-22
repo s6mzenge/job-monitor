@@ -1,7 +1,7 @@
 {
   "date": "2026-05-22",
-  "generated_at": "2026-05-22T15:30:58.048424+00:00",
-  "run_count": 22,
+  "generated_at": "2026-05-22T16:01:00.851122+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "MS Senior Assessor",
@@ -212,6 +212,34 @@
       "type": "Full-time, Permanent",
       "deadline": "14 June 2026",
       "salary": "£43,482 to £44,746 per annum"
+    },
+    {
+      "title": "Senior Analyst - Maternity Cover",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25184?c=palladium",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "Insufficient job detail was provided to assess substantive fit, but Palladium is an international development consultancy where \"Senior Analyst\" titles typically require several years of post-degree experience that the candidate (MSc in progress, only student-assistant roles) does not have. Without further role specifics, seniority is the limiting factor.",
+      "location": "United Kingdom",
+      "type": "Contract (Maternity Cover)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Humanitarian Affairs Officer",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25182?c=palladium",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "Humanitarian affairs is adjacent to the candidate's IR/international law focus and likely involves policy research and writing that transfers from their background. However, the job description provided is minimal (title and location only), making it difficult to assess specific requirements; \"Officer\" roles at Palladium typically expect some prior humanitarian/development experience the candidate lacks.",
+      "location": "United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
