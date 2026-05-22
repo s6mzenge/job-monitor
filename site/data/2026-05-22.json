@@ -1,7 +1,7 @@
 {
   "date": "2026-05-22",
-  "generated_at": "2026-05-22T11:31:04.328379+00:00",
-  "run_count": 14,
+  "generated_at": "2026-05-22T12:00:54.198184+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "MS Senior Assessor",
@@ -170,6 +170,20 @@
       "type": "Full-time (Fixed-Term, 36 months)",
       "deadline": "21/06/2026",
       "salary": "£44,753 - £49,738"
+    },
+    {
+      "title": "Assistant Digital Producer (Term-Limited 3 years)",
+      "organisation": "Pew Trusts",
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/job/Washington-DC-Pew-Research-Center/Assistant-Digital-Producer--Term-Limited-3-years-_R003183",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "Although Pew Research Center is a respected research organisation, this specific role is digital production/publishing operations (CMS work, QA, project management) rather than substantive research on policy, IR, or intelligence topics. The work is largely production/workflow-oriented and does not leverage the candidate's IR/security analytical strengths.",
+      "location": "Washington, DC, USA",
+      "type": "Full-time (Term-limited, ~3 years)",
+      "deadline": "Not specified",
+      "salary": "$61,690 starting"
     }
   ]
 }
