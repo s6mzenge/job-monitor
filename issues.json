@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-05-22T08:01:02.880216+00:00",
-  "site_summary": {
-    "Institute of Race Relations": {
-      "site_id": 48,
-      "url": "https://irr.org.uk/about/vacancies/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 5,
-      "first_recent_failure": "2026-05-07T12:31:04.995722+00:00",
-      "last_recent_failure": "2026-05-22T08:01:02.880216+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='irr.org.uk', port=443): Read timed out. (read timeout=30)"
-    }
-  },
+  "last_updated": "2026-05-22T08:30:54.103884+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-04-29T14:05:43.157388+00:00",
