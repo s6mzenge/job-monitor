@@ -1,7 +1,7 @@
 {
   "date": "2026-05-22",
-  "generated_at": "2026-05-22T12:30:59.826481+00:00",
-  "run_count": 16,
+  "generated_at": "2026-05-22T13:01:01.194661+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "MS Senior Assessor",
@@ -184,6 +184,20 @@
       "type": "Full-time (Term-limited, ~3 years)",
       "deadline": "Not specified",
       "salary": "$61,690 starting"
+    },
+    {
+      "title": "Humanitarian Reporting Officer",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25181?c=palladium",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "Humanitarian reporting is policy-adjacent and the candidate's research/writing background would transfer, but the job description provided is minimal — no detail on responsibilities, required skills, or seniority is given. Without further information, this appears to be a mid-level humanitarian programme role likely requiring sector-specific field experience the candidate lacks.",
+      "location": "United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
