@@ -1,59 +1,6 @@
 {
-  "last_updated": "2026-05-22T12:00:54.198184+00:00",
-  "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 33,
-      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "last_recent_failure": "2026-05-22T12:00:54.198184+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f5c6d393da0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))"
-    },
-    "Aegis Trust": {
-      "site_id": 5,
-      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 6,
-      "first_recent_failure": "2026-05-01T17:01:00.296511+00:00",
-      "last_recent_failure": "2026-05-22T12:00:54.198184+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 503 Server Error: Service Unavailable for url: https://aegistrust.online/get-involved/work-at-aegis/"
-    },
-    "Protection Approaches": {
-      "site_id": 31,
-      "url": "https://protectionapproaches.org/current-vacancies",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 6,
-      "first_recent_failure": "2026-05-02T12:30:56.911190+00:00",
-      "last_recent_failure": "2026-05-22T12:00:54.198184+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='protectionapproaches.org', port=443): Max retries exceeded with url: /current-vacancies (Caused by ConnectTimeoutError(<HTTPSConnection(host='protectionapproaches.org', port=443) at 0x7f5c6ca56c00>, 'Connection to protectionapproaches.org timed out. (connect timeout=30)'))"
-    },
-    "Ceasefire Centre for Civilian Rights": {
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 27,
-      "first_recent_failure": "2026-05-01T05:30:51.840976+00:00",
-      "last_recent_failure": "2026-05-22T12:00:54.198184+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f5c6c191f10>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))"
-    }
-  },
+  "last_updated": "2026-05-22T12:30:59.826481+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-04-29T14:05:43.157388+00:00",
