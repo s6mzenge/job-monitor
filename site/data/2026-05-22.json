@@ -1,7 +1,7 @@
 {
   "date": "2026-05-22",
-  "generated_at": "2026-05-22T09:30:48.634274+00:00",
-  "run_count": 10,
+  "generated_at": "2026-05-22T10:00:55.988692+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "MS Senior Assessor",
@@ -142,6 +142,34 @@
       "type": "Contractor",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Postdoctoral Research Associate",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/postdoctoral-research-associate-612023.html",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility triggered — the role explicitly requires a PhD in political economy, economic sociology or related fields, which the candidate (currently MSc) does not hold. Field is adjacent (datafication, state-tech relations, European policy) but seniority rule is decisive.",
+      "location": "London, UK",
+      "type": "Full-time (Fixed-Term, 36 months)",
+      "deadline": "21/06/2026",
+      "salary": "£44,753 - £49,738"
+    },
+    {
+      "title": "Postdoctoral Research Associate x2",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/postdoctoral-research-associate-x2-612019.html",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The role explicitly requires a completed PhD in media studies, sociology, anthropology or related fields, which triggers hard ineligibility — the candidate is currently an MSc student. Field alignment with critical data studies and governance research is reasonable but not core, and the postdoctoral level is well beyond the candidate's stage.",
+      "location": "London, UK",
+      "type": "Full-time (Fixed-Term, 36 months)",
+      "deadline": "21/06/2026",
+      "salary": "£44,753 - £49,738"
     }
   ]
 }
