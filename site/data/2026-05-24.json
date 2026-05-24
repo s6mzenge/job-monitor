@@ -1,7 +1,7 @@
 {
   "date": "2026-05-24",
-  "generated_at": "2026-05-24T15:30:52.195031+00:00",
-  "run_count": 22,
+  "generated_at": "2026-05-24T16:00:56.569297+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Health & Safety Assessor (EMEA)",
@@ -72,6 +72,20 @@
       "type": "Full-time (shift-based)",
       "deadline": "Not specified",
       "salary": "Not specified (base + shift allowance)"
+    },
+    {
+      "title": "Associate Consultant - 2026/2027 Start Date",
+      "organisation": "Bridgespan Group",
+      "url": "https://phh.tbe.taleo.net/phh01/ats/careers/requisition.jsp?org=THEBRIDG12&cws=40&rid=514",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Bridgespan is a social-impact consultancy advising NGOs and philanthropic organisations — policy-adjacent but not core to the candidate's IR/security/intelligence targets. The Associate Consultant level fits an early-career applicant, and the analytical/research/writing skills transfer well, though the job description provided is sparse.",
+      "location": "Singapore",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
