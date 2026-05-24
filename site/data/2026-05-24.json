@@ -1,0 +1,77 @@
+{
+  "date": "2026-05-24",
+  "generated_at": "2026-05-24T05:01:01.743031+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Health & Safety Assessor (EMEA)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Rotterdam-Health-&-Safety-Assessor-%28EMEA%29/1162974301",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a health & safety compliance auditor role requiring a specialist H&S qualification (e.g. ISO 45000) and a minimum of four years of H&S experience — hard ineligibility on both specialist credentials and years of experience. Field is also a mismatch with the candidate's IR/policy focus.",
+      "location": "Rotterdam, Netherlands",
+      "type": "Contractor On Demand",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Nuclear Export Controller",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Nuclear-Export-Controller-B37-7ES/1378240333",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a specialist export-control compliance role focused on nuclear equipment inspection licensing — a regulatory/compliance function rather than policy, intelligence, or research. It requires specific experience with export control legislation (ideally civil nuclear), which the candidate does not have, and is pitched at a subject-matter expert level advising leadership.",
+      "location": "Birmingham, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Security Consultant",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/MYS-Senior-Security-Consultant-50088/1378405833",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a hands-on penetration testing role requiring deep technical cyber security expertise (web/mobile/infrastructure pentesting, OSCP/CREST certifications, exploit development) that the candidate does not have. The \"Senior\" title and requirement for Malaysian residency further rule it out. Complete mismatch with the candidate's IR/policy research profile.",
+      "location": "Kuala Lumpur, Malaysia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Security Consultant",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/MYS-Senior-Security-Consultant-50088/1378405933",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a hands-on penetration testing role requiring deep technical cyber security expertise (web/mobile/infrastructure pentesting, exploit development, CREST/OSCP certifications) that the candidate does not possess. The \"Senior\" title and requirement for Malaysian residency further rule it out. Complete mismatch with the candidate's IR/policy research background.",
+      "location": "Kuala Lumpur, Malaysia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Security Consultant",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/MYS-Security-Consultant-50088/1378408233",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a hands-on penetration testing role requiring technical cyber security skills (web/mobile/infrastructure pentesting, exploit development, CREST/OSCP certifications) that the candidate does not possess. It is unrelated to IR, policy, or geopolitical risk work, and also requires Malaysian residency.",
+      "location": "Kuala Lumpur, Malaysia (hybrid; must reside in Malaysia)",
+      "type": "Full-time (shift-based)",
+      "deadline": "Not specified",
+      "salary": "Not specified (base + shift allowance)"
+    }
+  ]
+}
