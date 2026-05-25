@@ -1,7 +1,7 @@
 {
   "date": "2026-05-25",
-  "generated_at": "2026-05-25T13:30:48.306462+00:00",
-  "run_count": 18,
+  "generated_at": "2026-05-25T14:00:59.782036+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Senior Food Auditor",
@@ -138,6 +138,20 @@
       "skills_score": "2",
       "seniority_score": "1",
       "reason": "This is a cybersecurity sales/account management role requiring cold-calling, CRM pipeline management, and revenue delivery — unrelated to the candidate's research/policy focus. Hard ineligibility triggers: explicit minimum of 5 years' experience, and Cantonese/Japanese/Korean strongly preferred for the target markets (candidate has none).",
+      "location": "Singapore",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Principal Human Rights Consultant",
+      "organisation": "Verisk Maplecroft",
+      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3903/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Field is a direct fit (business and human rights consulting at a core target firm), but the role requires approximately 10+ years of experience as a hard requirement and is a senior \"Principal\" position requiring proven consulting leadership, business development, and team management. Hard ineligibility on seniority.",
       "location": "Singapore",
       "type": "Full-time",
       "deadline": "Not specified",
