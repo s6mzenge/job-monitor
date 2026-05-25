@@ -1,31 +1,18 @@
 {
-  "last_updated": "2026-05-25T17:00:53.968599+00:00",
+  "last_updated": "2026-05-25T17:30:57.240822+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 118,
+      "consecutive_failures": 4,
+      "total_recent_failures": 119,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-25T17:00:53.968599+00:00",
+      "last_recent_failure": "2026-05-25T17:30:57.240822+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0"
-    },
-    "Institute of Race Relations": {
-      "site_id": 48,
-      "url": "https://irr.org.uk/about/vacancies/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 9,
-      "first_recent_failure": "2026-05-07T12:31:04.995722+00:00",
-      "last_recent_failure": "2026-05-25T17:00:53.968599+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='irr.org.uk', port=443): Max retries exceeded with url: /about/vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='irr.org.uk', port=443) at 0x7f45ed5b8410>, 'Connection to irr.org.uk timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
@@ -12171,6 +12158,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='irr.org.uk', port=443): Max retries exceeded with url: /about/vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='irr.org.uk', port=443) at 0x7f45ed5b8410>, 'Connection to irr.org.uk timed out. (connect timeout=30)'))",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-25T17:30:57.240822+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 4
     }
   ]
 }
