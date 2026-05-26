@@ -1,7 +1,7 @@
 {
   "date": "2026-05-26",
-  "generated_at": "2026-05-26T09:30:50.738942+00:00",
-  "run_count": 10,
+  "generated_at": "2026-05-26T10:01:17.987112+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "IATF Assessor",
@@ -100,6 +100,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Planning Officer",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/885607",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "3",
+      "reason": "Higher education planning/analytics is adjacent to the candidate's prior work supporting Prof Kaldewey on HE policy data and the German Rectors Conference role. Data skills (Excel, SPSS, Python) and analytical writing transfer well, but the role focuses on statutory HESA reporting and UK-specific datasets rather than the candidate's IR/policy research interests. Grade 7 permanent role typically expects a few years of HE planning experience, somewhat above the candidate's stage but not strictly gated.",
+      "location": "Bloomsbury, London, UK",
+      "type": "Full-time, Permanent",
+      "deadline": "14 June 2026",
+      "salary": "£43,297.57 - £50,562.57 per annum inc LA"
     }
   ]
 }
