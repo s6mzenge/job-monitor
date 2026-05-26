@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-26",
+  "generated_at": "2026-05-26T05:00:52.843940+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "IATF Assessor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Yokohama-IATF-Assessor-14-220-6010/1276216401",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an automotive industry quality management systems auditor role requiring IATF 16949 certification and fluent Japanese — a hard ineligibility trigger as the candidate does not speak Japanese. Field, skills, and seniority all mismatch entirely with the candidate's IR/policy research profile.",
+      "location": "Yokohama, Japan",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Client Operations Advisor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Client-Operations-Advisor-50088/1397071333",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "This is a training operations and client management role in a commercial assurance/certification business — unrelated to IR, policy research, intelligence, or any of the candidate's target zones. Additionally, the role requires command of Bahasa Malaysia, which the candidate does not speak, triggering the language hard ineligibility rule.",
+      "location": "Kuala Lumpur, Malaysia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Fachhandwerker/in (w/m/d) im Referat – Gebäudetechnik im Sachbereich Sanitär-, Küchen- und Feuerlöschtechnik",
+      "organisation": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-bg3-312-3-19062026-1167046",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a skilled-trades position in building services (sanitary, kitchen, and fire-extinguishing technology) requiring a completed German vocational training (Ausbildung) as an electrician, mechatronics technician, or plumbing/HVAC installer, plus specialist certifications (e.g., F-gas Kälteschein). Hard ineligibility triggered: the candidate lacks the required vocational training and trade qualifications. Field, skills, and role type are entirely unrelated to the candidate's profile.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (part-time possible)",
+      "deadline": "19 June 2026",
+      "salary": "€3,582.38 gross/month (experience level 3) + €220 ministerial allowance; TVöD E7 / BBesO A7"
+    },
+    {
+      "title": "Mechaniker/in für Feuerlöschanlagen/Anlagenmechaniker/in (w/m/d)",
+      "organisation": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-bg3-311-5-19062026-1167044",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a fire-suppression-systems mechanic role requiring a completed German vocational Ausbildung as Anlagenmechaniker (Sanitär-/Heizungs-/Klimatechnik) plus 2+ years of trade experience and certifications such as Sprinklerwart — hard ineligibility on specific vocational training the candidate lacks. The role has no connection to IR, policy, or research.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (Teilzeit possible)",
+      "deadline": "19 June 2026",
+      "salary": "€3,582.38 gross/month (Erfahrungsstufe 3) + €220 Ministerialzulage"
+    }
+  ]
+}
