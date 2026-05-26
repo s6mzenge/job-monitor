@@ -1,7 +1,7 @@
 {
   "date": "2026-05-26",
-  "generated_at": "2026-05-26T14:01:06.126587+00:00",
-  "run_count": 15,
+  "generated_at": "2026-05-26T14:31:10.084106+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "IATF Assessor",
@@ -170,6 +170,34 @@
       "type": "Part-time (20 hours/week), fixed-term until 31 December 2026",
       "deadline": "05.06.2026",
       "salary": "TVöD Bund, Entgeltgruppe 2"
+    },
+    {
+      "title": "Senior Lecturer in Planning (100%)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106431&p_spid=5153820",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility triggered on multiple counts: the role explicitly requires a PhD, a SACPLAN-recognised degree in Urban/Town and Regional Planning, registration with SACPLAN, and 5–10 years of professional planning experience. The field (urban planning, planning law, municipal governance) is also outside the candidate's IR/security focus.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "30 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Lecturer 50% (Planning)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106432&p_spid=5153821",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility on multiple grounds: the role explicitly requires a PhD, SACPLAN registration/eligibility, and a SACPLAN-recognised PhD in Urban/Town/Regional Planning. Field (urban planning) is also outside the candidate's IR/security/policy focus.",
+      "location": "Johannesburg, South Africa",
+      "type": "Part-time (50% FTE)",
+      "deadline": "30 June 2026",
+      "salary": "Not specified"
     }
   ]
 }
