@@ -1,7 +1,7 @@
 {
   "date": "2026-05-26",
-  "generated_at": "2026-05-26T13:01:00.962898+00:00",
-  "run_count": 13,
+  "generated_at": "2026-05-26T13:30:56.056432+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "IATF Assessor",
@@ -156,6 +156,20 @@
       "type": "Full-time",
       "deadline": "22 June 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Studentische Hilfskraft (d/m/w) für das Forschungsprojekt „Kernpartner im OSZE Think Tank-Netzwerk\"",
+      "organisation": "SWP Berlin",
+      "url": "https://www.swp-berlin.org/karriere/stellenangebot/studentische-hilfskraft-d-m-w-fuer-das-forschungsprojekt-kernpartner-im-osze-think-tank-netzwerk",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Direct fit — a student assistant role at one of Germany's premier foreign policy think-tanks, focused on European security order and the OSCE, which aligns squarely with the candidate's IR/security focus and German foreign policy interests. Required research, writing, and Office/analysis skills match the CV; Russian is only \"von Vorteil\" so the lack of it is not disqualifying. Student-assistant level is exactly appropriate.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (20 hours/week), fixed-term until 31 December 2026",
+      "deadline": "05.06.2026",
+      "salary": "TVöD Bund, Entgeltgruppe 2"
     }
   ]
 }
