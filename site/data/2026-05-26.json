@@ -1,7 +1,7 @@
 {
   "date": "2026-05-26",
-  "generated_at": "2026-05-26T07:00:57.615051+00:00",
-  "run_count": 5,
+  "generated_at": "2026-05-26T07:30:59.416764+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "IATF Assessor",
@@ -69,6 +69,20 @@
       "seniority_score": "4",
       "reason": "This is a back-office customer service / administrative role focused on invoice processing, supplier setup, and data entry in an assurance/certification business — entirely unrelated to IR, policy research, intelligence, or OSINT. Field mismatch is severe.",
       "location": "Mumbai, India",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Analyst, Growth & Performance",
+      "organisation": "Brunswick Group",
+      "url": "https://job-boards.greenhouse.io/brunswickgroup/jobs/8535517002",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "This is an internal commercial/business performance analyst role focused on revenue drivers, client analytics, and operational metrics at an advisory firm — not policy, geopolitical risk, or research-oriented work that aligns with the candidate's target zones. It also asks for 3+ years of consulting/commercial experience, which exceeds the candidate's current stage.",
+      "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
