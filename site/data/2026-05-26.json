@@ -1,7 +1,7 @@
 {
   "date": "2026-05-26",
-  "generated_at": "2026-05-26T06:30:48.873800+00:00",
-  "run_count": 4,
+  "generated_at": "2026-05-26T07:00:57.615051+00:00",
+  "run_count": 5,
   "jobs": [
     {
       "title": "IATF Assessor",
@@ -58,6 +58,20 @@
       "type": "Full-time (Teilzeit possible)",
       "deadline": "19 June 2026",
       "salary": "€3,582.38 gross/month (Erfahrungsstufe 3) + €220 Ministerialzulage"
+    },
+    {
+      "title": "Customer Service Representative",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Customer-Service-Representative-400-093/1397116533",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "This is a back-office customer service / administrative role focused on invoice processing, supplier setup, and data entry in an assurance/certification business — entirely unrelated to IR, policy research, intelligence, or OSINT. Field mismatch is severe.",
+      "location": "Mumbai, India",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
