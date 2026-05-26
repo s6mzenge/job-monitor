@@ -1,7 +1,7 @@
 {
   "date": "2026-05-26",
-  "generated_at": "2026-05-26T14:31:10.084106+00:00",
-  "run_count": 16,
+  "generated_at": "2026-05-26T15:01:04.489305+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "IATF Assessor",
@@ -197,6 +197,20 @@
       "location": "Johannesburg, South Africa",
       "type": "Part-time (50% FTE)",
       "deadline": "30 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Consultant - Financial Communications, Industrials",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7748287003?gh_jid=7748287003",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "This is financial communications/investor relations for industrial-sector corporate clients — distinct from Teneo's political risk practice, which is the candidate's target zone. The role focuses on capital markets, sell-side analysts, and corporate PR, areas where the candidate has no demonstrated background or interest. Seniority level fits, but field alignment is weak.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
