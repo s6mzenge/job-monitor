@@ -1,7 +1,7 @@
 {
   "date": "2026-05-26",
-  "generated_at": "2026-05-26T10:30:53.794219+00:00",
-  "run_count": 12,
+  "generated_at": "2026-05-26T13:01:00.962898+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "IATF Assessor",
@@ -114,6 +114,48 @@
       "type": "Full-time, Permanent",
       "deadline": "14 June 2026",
       "salary": "£43,297.57 - £50,562.57 per annum inc LA"
+    },
+    {
+      "title": "Research Assistant, Middle East",
+      "organisation": "IISS",
+      "url": "https://www.iiss.org/careers/jobs/2026/05/research-assistant-middle-east",
+      "match": "medium",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "IISS is a core target organisation and a Middle East RA role sits squarely in the candidate's security/IR research zone. However, the role almost certainly expects Middle East regional expertise and likely Arabic, which the candidate does not have — a significant skills gap given the minimal description provided. RA-level seniority fits perfectly.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Lecturer/Lecturer: Security, International Relations, and Development",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106420&p_spid=5152837",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Field alignment is excellent (security, IR, development), but the role requires a PhD (with a Master's only considered as an exception) and is a Senior Lecturer/Lecturer academic post requiring teaching and supervision experience. Hard ineligibility on seniority — the candidate is currently an MSc student without a PhD or university teaching record.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "22 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "SENIOR LECTURER: Economics and quantitative research methods",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106421&p_spid=5152838",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the role requires a PhD in economics, development or governance (Master's only considered exceptionally, and even then for a Senior Lecturer position requiring teaching and supervision experience). The candidate is currently an MSc student with no economics specialism or university-level teaching experience, and the Senior Lecturer title is well above their stage.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "22 June 2026",
+      "salary": "Not specified"
     }
   ]
 }
