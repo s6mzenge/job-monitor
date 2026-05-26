@@ -1,7 +1,7 @@
 {
   "date": "2026-05-26",
-  "generated_at": "2026-05-26T09:01:10.892638+00:00",
-  "run_count": 9,
+  "generated_at": "2026-05-26T09:30:50.738942+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "IATF Assessor",
@@ -83,6 +83,20 @@
       "seniority_score": "3",
       "reason": "This is an internal commercial/business performance analyst role focused on revenue drivers, client analytics, and operational metrics at an advisory firm — not policy, geopolitical risk, or research-oriented work that aligns with the candidate's target zones. It also asks for 3+ years of consulting/commercial experience, which exceeds the candidate's current stage.",
       "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Global Corporate Real Estate Co-Ordinator",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Global-Corporate-Real-Estate-Co-Ordinator-400-093/1397189533",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "Corporate real estate administration, lease negotiation, and property portfolio management are entirely unrelated to the candidate's IR, policy, and intelligence focus. The role requires specific commercial real estate experience and negotiation skills the candidate does not have.",
+      "location": "Mumbai, India",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
