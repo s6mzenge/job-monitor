@@ -1,7 +1,7 @@
 {
   "date": "2026-05-27",
-  "generated_at": "2026-05-27T15:01:11.484725+00:00",
-  "run_count": 21,
+  "generated_at": "2026-05-27T15:31:05.901055+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Food Safety Auditors - LAOS",
@@ -253,6 +253,20 @@
       "location": "London, United Kingdom (hybrid)",
       "type": "Full-time, Permanent",
       "deadline": "16 June 2026, 12.00pm (BST)",
+      "salary": "£32,826.19 - £40,120.90 per annum"
+    },
+    {
+      "title": "Trusts and Foundations Assistant",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/trusts-and-foundations-assistant-62226/en",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is a fundraising/relationship management role focused on donor stewardship for Trusts and Foundations, which sits well outside the candidate's target zones of academic/policy research, geopolitical risk, or OSINT/computational research. While MSF is a humanitarian organisation and the entry-level seniority fits, the role is essentially fundraising administration rather than research or analysis, and the candidate lacks specific fundraising/relationship management experience.",
+      "location": "London, United Kingdom (hybrid)",
+      "type": "Full-time, Permanent",
+      "deadline": "Tuesday 16 June 2026, 12.00pm (BST)",
       "salary": "£32,826.19 - £40,120.90 per annum"
     }
   ]
