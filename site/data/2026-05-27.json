@@ -1,7 +1,7 @@
 {
   "date": "2026-05-27",
-  "generated_at": "2026-05-27T14:30:55.683541+00:00",
-  "run_count": 20,
+  "generated_at": "2026-05-27T15:01:11.484725+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Food Safety Auditors - LAOS",
@@ -240,6 +240,20 @@
       "type": "Internship",
       "deadline": "22 June 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Major Donor Assistant",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/major-donor-assistant-62222/en",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "This is a fundraising/donor stewardship role, not a research or policy position — it sits outside the candidate's three target zones despite MSF's humanitarian mission. The role requires fundraising/sales/relationship-management experience the candidate lacks, and the work itself (managing HNW donor portfolios) does not draw on their IR research, analytical, or writing strengths in a meaningful way.",
+      "location": "London, United Kingdom (hybrid)",
+      "type": "Full-time, Permanent",
+      "deadline": "16 June 2026, 12.00pm (BST)",
+      "salary": "£32,826.19 - £40,120.90 per annum"
     }
   ]
 }
