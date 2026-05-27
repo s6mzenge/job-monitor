@@ -1,7 +1,7 @@
 {
   "date": "2026-05-27",
-  "generated_at": "2026-05-27T08:30:55.202939+00:00",
-  "run_count": 8,
+  "generated_at": "2026-05-27T09:01:01.832135+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Food Safety Auditors - LAOS",
@@ -128,6 +128,48 @@
       "type": "Full-time, Permanent",
       "deadline": "Sunday, 7 June 2026, 23:59 BST",
       "salary": "£40,000 per year"
+    },
+    {
+      "title": "Operations Support Manager",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/97A6D0DA9E",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "Although Control Risks is a core target employer in commercial intelligence, this is an operations support management role rather than an analyst/research position, so the substantive field alignment with the candidate's IR/risk research background is weak. The \"Manager\" title and operations focus also indicate experience requirements and skills (operations management, internal business support) that don't match the candidate's research-oriented profile.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Business Consultant",
+      "organisation": "Anthesis Group",
+      "url": "https://anthesisgroup.pinpointhq.com/en/postings/f3ff71eb-d964-4c71-b828-7c3ebb8b590b",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Anthesis is a sustainability consultancy and this role sits in Brand & Comms / Client Service — outside the candidate's core IR, policy, intelligence, or OSINT zones. The \"Senior\" title also implies several years of consulting experience the candidate does not have, triggering a seniority mismatch.",
+      "location": "London, UK",
+      "type": "Full-time (Permanent, Hybrid)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Consultant - Transactions Advisory Due Diligence",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/Senior-Consultant---Transactions-Advisory-Due-Diligence_R00030498",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "ESG/sustainability due diligence for M&A transactions sits well outside the candidate's core IR/security/policy targets and is closer to commercial sustainability consulting than geopolitical risk. The \"Senior Consultant\" title and expectations to lead global projects and advise on commercial transactions require professional consulting experience the candidate lacks, and the role assumes ESG/transactions domain knowledge not evidenced in the CV.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
