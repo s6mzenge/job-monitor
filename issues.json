@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-27T08:01:04.854739+00:00",
+  "last_updated": "2026-05-27T08:30:55.202939+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 143,
+      "consecutive_failures": 3,
+      "total_recent_failures": 144,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-27T08:01:04.854739+00:00",
+      "last_recent_failure": "2026-05-27T08:30:55.202939+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -12489,6 +12489,38 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-05-27T08:30:55.202939+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-05-27T08:30:55.202939+00:00",
+      "site": "Control Risks",
+      "site_id": 47,
+      "url": "https://apply.workable.com/control-risks-6/#jobs",
+      "method": "workable_api",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 529: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CbSmAAK3umcSF5cTe7Km1\"}",
+      "job_title": "Operations Support Manager",
+      "job_url": "https://apply.workable.com/j/97A6D0DA9E"
+    },
+    {
+      "timestamp": "2026-05-27T08:30:55.202939+00:00",
+      "site": "Anthesis Group",
+      "site_id": 68,
+      "url": "https://anthesisgroup.pinpointhq.com/",
+      "method": "pinpoint_api",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 529: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CbSmBk2cJqw81c74sREBv\"}",
+      "job_title": "Senior Business Consultant",
+      "job_url": "https://anthesisgroup.pinpointhq.com/en/postings/f3ff71eb-d964-4c71-b828-7c3ebb8b590b"
     }
   ]
 }
