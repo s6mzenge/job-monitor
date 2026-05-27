@@ -1,7 +1,7 @@
 {
   "date": "2026-05-27",
-  "generated_at": "2026-05-27T13:30:56.502769+00:00",
-  "run_count": 18,
+  "generated_at": "2026-05-27T14:01:10.920889+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Food Safety Auditors - LAOS",
@@ -211,6 +211,34 @@
       "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Account Director, Financial Practice",
+      "organisation": "Brunswick Group",
+      "url": "https://job-boards.greenhouse.io/brunswickgroup/jobs/8535544002",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Financial communications advisory is well outside the candidate's core IR/policy/risk targets — this is corporate financial PR, not policy or geopolitical analysis. The role requires 3–6 years of financial advisory experience plus specialist knowledge of M&A, IPO processes, disclosure obligations, and financial media handling, none of which the candidate has. Director-level title with team management responsibilities exceeds the candidate's MSc-stage experience.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Edelman UK Internship Programme",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Edelman-UK-Internship-Programme_JR102553",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Edelman is a major communications consultancy with a Public Affairs practice that is policy-adjacent, though the rotational programme spans Brand, Health, Tech and Creator Marketing which dilutes the policy fit. Internship seniority is ideal, and the candidate's research, writing and analytical skills transfer cleanly to media monitoring, content development and research tasks.",
+      "location": "London, United Kingdom",
+      "type": "Internship",
+      "deadline": "22 June 2026",
       "salary": "Not specified"
     }
   ]
