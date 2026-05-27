@@ -1,7 +1,7 @@
 {
   "date": "2026-05-27",
-  "generated_at": "2026-05-27T06:30:49.802252+00:00",
-  "run_count": 4,
+  "generated_at": "2026-05-27T07:00:56.093518+00:00",
+  "run_count": 5,
   "jobs": [
     {
       "title": "Food Safety Auditors - LAOS",
@@ -114,6 +114,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Communications Manager",
+      "organisation": "Chatham House",
+      "url": "https://careers.chathamhouse.org/jobs/7781864-communications-manager",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "While International Affairs journal sits squarely in the candidate's substantive area, this is a communications/marketing role requiring proven experience in multi-channel comms strategy, SEO, and analytics tools — not research. The \"Manager\" title and \"proven experience\" framing point to a mid-level comms professional, and the candidate lacks the specific communications-campaign track record the role centres on.",
+      "location": "London (Hybrid)",
+      "type": "Full-time, Permanent",
+      "deadline": "Sunday, 7 June 2026, 23:59 BST",
+      "salary": "£40,000 per year"
     }
   ]
 }
