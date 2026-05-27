@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-27T13:01:12.014802+00:00",
+  "last_updated": "2026-05-27T13:30:56.502769+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 152,
+      "consecutive_failures": 5,
+      "total_recent_failures": 153,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-27T13:01:12.014802+00:00",
+      "last_recent_failure": "2026-05-27T13:30:56.502769+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -12601,6 +12601,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
       "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-05-27T13:30:56.502769+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 5
     }
   ]
 }

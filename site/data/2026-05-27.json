@@ -1,7 +1,7 @@
 {
   "date": "2026-05-27",
-  "generated_at": "2026-05-27T13:01:12.014802+00:00",
-  "run_count": 17,
+  "generated_at": "2026-05-27T13:30:56.502769+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Food Safety Auditors - LAOS",
@@ -196,6 +196,20 @@
       "reason": "Employment support/welfare-to-work casework is unrelated to the candidate's IR, policy research, geopolitical risk, or OSINT targets. The role requires direct employment-coaching and client-facing case management skills the candidate does not have.",
       "location": "Oxfordshire, United Kingdom",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Account Director | Healthcare Policy, Advocacy & Public Affairs | London",
+      "organisation": "Hanover",
+      "url": "https://job-boards.greenhouse.io/hanover/jobs/4421160007",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Account Director is a senior role requiring a proven track record in account management, team leadership, budget management, and new business pitching — none of which the candidate has from their student-assistant background. Healthcare policy/public affairs is policy-adjacent but outside the candidate's core areas, and the seniority gap is decisive.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
