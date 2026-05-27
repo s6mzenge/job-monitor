@@ -1,7 +1,7 @@
 {
   "date": "2026-05-27",
-  "generated_at": "2026-05-27T11:30:53.551814+00:00",
-  "run_count": 14,
+  "generated_at": "2026-05-27T12:01:46.071415+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Food Safety Auditors - LAOS",
@@ -184,6 +184,20 @@
       "type": "Full-time, Permanent",
       "deadline": "14 June 2026",
       "salary": "£35,993 per annum"
+    },
+    {
+      "title": "Employment Specialist – Connect to Work, Oxfordshire",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25193?c=palladium",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "Employment support/welfare-to-work casework is unrelated to the candidate's IR, policy research, geopolitical risk, or OSINT targets. The role requires direct employment-coaching and client-facing case management skills the candidate does not have.",
+      "location": "Oxfordshire, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
