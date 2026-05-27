@@ -1,7 +1,7 @@
 {
   "date": "2026-05-27",
-  "generated_at": "2026-05-27T10:30:49.126428+00:00",
-  "run_count": 12,
+  "generated_at": "2026-05-27T11:01:00.219592+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Food Safety Auditors - LAOS",
@@ -170,6 +170,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Curator: Modern Archives and Manuscripts",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRR461/curator-modern-archives-and-manuscripts",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a specialist curatorial role focused on 17th–18th century manuscripts and archives, which sits well outside the candidate's IR/policy/intelligence target zones. It requires professional experience with manuscript cataloguing, archival standards, and collection management that the candidate does not have. Additionally, the role cannot sponsor a Skilled Worker visa, which is likely a practical barrier.",
+      "location": "London, Saint Pancras, UK",
+      "type": "Full-time, Permanent",
+      "deadline": "14 June 2026",
+      "salary": "£35,993 per annum"
     }
   ]
 }
