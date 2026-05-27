@@ -1,18 +1,44 @@
 {
-  "last_updated": "2026-05-27T05:00:54.614516+00:00",
+  "last_updated": "2026-05-27T05:30:52.113125+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 6,
-      "total_recent_failures": 138,
+      "consecutive_failures": 7,
+      "total_recent_failures": 139,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-27T05:00:54.614516+00:00",
+      "last_recent_failure": "2026-05-27T05:30:52.113125+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0"
+    },
+    "Wits University": {
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 39,
+      "first_recent_failure": "2026-05-05T08:31:00.988844+00:00",
+      "last_recent_failure": "2026-05-27T05:30:52.113125+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.wits.ac.za', port=443): Max retries exceeded with url: /vacancies/ (Caused by NewConnectionError(\"HTTPSConnection(host='www.wits.ac.za', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+    },
+    "Impunity Watch": {
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 53,
+      "first_recent_failure": "2026-04-29T15:01:18.017646+00:00",
+      "last_recent_failure": "2026-05-27T05:30:52.113125+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 401 Client Error: Unauthorized for url: https://www.impunitywatch.org/join-us/join-our-team/"
     }
   },
   "issues": [
@@ -12398,6 +12424,36 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
       "consecutive_count": 6
+    },
+    {
+      "timestamp": "2026-05-27T05:30:52.113125+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 7
+    },
+    {
+      "timestamp": "2026-05-27T05:30:52.113125+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.wits.ac.za', port=443): Max retries exceeded with url: /vacancies/ (Caused by NewConnectionError(\"HTTPSConnection(host='www.wits.ac.za', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-27T05:30:52.113125+00:00",
+      "site": "Impunity Watch",
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 401 Client Error: Unauthorized for url: https://www.impunitywatch.org/join-us/join-our-team/",
+      "consecutive_count": 1
     }
   ]
 }
