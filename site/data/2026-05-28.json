@@ -1,7 +1,7 @@
 {
   "date": "2026-05-28",
-  "generated_at": "2026-05-28T09:01:05.785549+00:00",
-  "run_count": 8,
+  "generated_at": "2026-05-28T09:30:57.661579+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Strategic Account Manager Inspection",
@@ -85,6 +85,20 @@
       "location": "Home-based (with possible field data collection)",
       "type": "Consultancy (Contract)",
       "deadline": "11 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer (Family Medicine and Primary Care)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106434&p_spid=5153823",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a clinical academic lectureship in family medicine and primary care requiring a master's in epidemiology, public health or health systems science, plus health sciences teaching and supervision experience. The candidate has no health sciences background, no clinical or public health training, and the lecturer role requires specialist qualifications and experience they do not hold.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "07 June 2026",
       "salary": "Not specified"
     }
   ]
