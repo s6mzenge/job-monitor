@@ -1,7 +1,7 @@
 {
   "date": "2026-05-28",
-  "generated_at": "2026-05-28T14:01:16.184871+00:00",
-  "run_count": 18,
+  "generated_at": "2026-05-28T14:31:19.523486+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Strategic Account Manager Inspection",
@@ -156,6 +156,20 @@
       "type": "Full-time, Permanent",
       "deadline": "21 June 2026",
       "salary": "£31,543.19 - £35,214.19 per annum inc London Allowance"
+    },
+    {
+      "title": "Events Assistant",
+      "organisation": "Brunswick Group",
+      "url": "https://job-boards.greenhouse.io/brunswickgroup/jobs/8514577002",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is an entry-level events and marketing logistics role focused on coordination, venues, suppliers, and LinkedIn scheduling — not research, policy, or intelligence work. While Brunswick operates in strategic advisory, this specific position has no substantive policy or analytical content aligned with the candidate's target zones.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
