@@ -1,7 +1,7 @@
 {
   "date": "2026-05-28",
-  "generated_at": "2026-05-28T08:30:50.174475+00:00",
-  "run_count": 7,
+  "generated_at": "2026-05-28T09:01:05.785549+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Strategic Account Manager Inspection",
@@ -57,6 +57,34 @@
       "location": "Birmingham, UK",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Programme Manager (Executive Education)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106437&p_spid=5153826",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The role requires a minimum of 5 years' relevant work experience plus 3 years in higher education administration and a valid driver's licence — hard ineligibility on seniority. The field (executive education programme management) is also only weakly related to the candidate's IR/policy research focus.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "11 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Consultancy: Global Comparative Study — \"Captured justice: Judicial and institutional capture, civic space, and transitional justice\"",
+      "organisation": "Impunity Watch",
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "match": "medium",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "Transitional justice and impunity research is a core field fit for the candidate's international law and atrocity-prevention interests. However, consultancy roles leading a global comparative study typically expect substantial prior research/consulting experience and likely a doctoral-level profile, which is a stretch for an MSc-in-progress candidate; specific comparative legal-research methodology may also be a partial gap.",
+      "location": "Home-based (with possible field data collection)",
+      "type": "Consultancy (Contract)",
+      "deadline": "11 June 2026",
       "salary": "Not specified"
     }
   ]
