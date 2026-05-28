@@ -1,7 +1,7 @@
 {
   "date": "2026-05-28",
-  "generated_at": "2026-05-28T11:30:50.576101+00:00",
-  "run_count": 13,
+  "generated_at": "2026-05-28T12:01:13.745376+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Strategic Account Manager Inspection",
@@ -128,6 +128,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "€62,730 + €3,000 Paris location adjustment"
+    },
+    {
+      "title": "Head of Department: Social Work, Counselling and Social Care",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRR454/head-of-department-social-work-counselling-and-social-care",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a Head of Department leadership role requiring doctoral qualifications, an established publication record, and extensive HE leadership experience in social work/counselling — none of which the candidate has. Hard ineligibility triggered on both PhD requirement and senior leadership level.",
+      "location": "London, Stratford, UK",
+      "type": "Full-time, Permanent",
+      "deadline": "24th June 2026",
+      "salary": "£73,705 to £92,190"
     }
   ]
 }
