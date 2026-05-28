@@ -1,7 +1,7 @@
 {
   "date": "2026-05-28",
-  "generated_at": "2026-05-28T10:01:09.111733+00:00",
-  "run_count": 10,
+  "generated_at": "2026-05-28T10:30:54.617704+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Strategic Account Manager Inspection",
@@ -99,6 +99,20 @@
       "location": "Johannesburg, South Africa",
       "type": "Full-time",
       "deadline": "07 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Professor / Senior Lecturer — Governance, Leadership, and Political Economy",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106438&p_spid=5153827",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the post requires a completed PhD and publication/supervision record at Associate Professor or Senior Lecturer level, which the candidate (MSc in progress) cannot meet. Field is adjacent-to-strong (governance, political economy, development) but seniority is far above the candidate's stage.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "19 June 2026",
       "salary": "Not specified"
     }
   ]
