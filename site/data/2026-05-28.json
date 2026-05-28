@@ -1,7 +1,7 @@
 {
   "date": "2026-05-28",
-  "generated_at": "2026-05-28T13:01:05.266540+00:00",
-  "run_count": 16,
+  "generated_at": "2026-05-28T13:31:08.246187+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Strategic Account Manager Inspection",
@@ -142,6 +142,20 @@
       "type": "Full-time, Permanent",
       "deadline": "24th June 2026",
       "salary": "£73,705 to £92,190"
+    },
+    {
+      "title": "Estates Helpdesk CAFM Coordinator",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/887073",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is an estates/facilities maintenance coordination role focused on planned/reactive maintenance scheduling — entirely unrelated to the candidate's IR research, policy, or intelligence targets. Required skills (CAFM systems, facilities/asset management) are not in the candidate's profile.",
+      "location": "Bloomsbury, London, UK",
+      "type": "Full-time, Permanent",
+      "deadline": "21 June 2026",
+      "salary": "£31,543.19 - £35,214.19 per annum inc London Allowance"
     }
   ]
 }
