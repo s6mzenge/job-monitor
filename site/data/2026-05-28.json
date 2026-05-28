@@ -1,7 +1,7 @@
 {
   "date": "2026-05-28",
-  "generated_at": "2026-05-28T10:30:54.617704+00:00",
-  "run_count": 11,
+  "generated_at": "2026-05-28T11:01:04.150354+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Strategic Account Manager Inspection",
@@ -114,6 +114,20 @@
       "type": "Full-time",
       "deadline": "19 June 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "HR Operations Manager, French Speaker",
+      "organisation": "BSR",
+      "url": "https://ats.rippling.com/bsr/jobs/2ac30d53-ab9e-4750-8895-d15ca776c5ca",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an HR Operations Manager role requiring 5+ years of HR generalist experience and deep expertise in French employment law — none of which the candidate has. Hard ineligibility triggered on multiple grounds: 5+ years required, specialist HR/employment-law expertise the candidate cannot substitute, and full professional French fluency (candidate is only B1).",
+      "location": "Paris, France",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "€62,730 + €3,000 Paris location adjustment"
     }
   ]
 }
