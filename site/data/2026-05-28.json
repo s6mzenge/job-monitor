@@ -1,7 +1,7 @@
 {
   "date": "2026-05-28",
-  "generated_at": "2026-05-28T17:01:05.489855+00:00",
-  "run_count": 24,
+  "generated_at": "2026-05-28T17:30:52.409854+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Strategic Account Manager Inspection",
@@ -184,6 +184,20 @@
       "type": "Full-time, Permanent",
       "deadline": "Rolling basis",
       "salary": "Circa £70k"
+    },
+    {
+      "title": "Philanthropy Manager",
+      "organisation": "JUSTICE",
+      "url": "https://justice.org.uk/job-opportunity/philanthropy-manager",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a fundraising/philanthropy role focused on cultivating high-net-worth donors, not legal or policy research — field alignment is weak despite JUSTICE's legal reform mission. The role requires demonstrated major-donor fundraising experience and relationship management skills the candidate does not have, and the Manager title implies several years of relevant fundraising experience.",
+      "location": "London (Hybrid)",
+      "type": "Full-time",
+      "deadline": "9am, Monday 15 June",
+      "salary": "£45,000 per year"
     }
   ]
 }
