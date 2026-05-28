@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-28",
+  "generated_at": "2026-05-28T05:00:55.089999+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Strategic Account Manager Inspection",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lyon-Strategic-Account-Manager-Inspection-69003/1277932301",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a B2B sales role in inspection/assurance services — pure commercial sales with no policy, research, or intelligence component, putting it firmly outside all three of the candidate's target zones. The role requires demonstrable sales-target achievement and account management experience the candidate does not have, and working French at professional level would likely be required.",
+      "location": "Lyon / Paris / Northern France",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Freelance Auditor HKZ Ambulancezorg/GHOR/GGD",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Rotterdam-Freelance-Auditor-HKZ-AmbulancezorgGHORGGD/1284701001",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a healthcare quality auditor role requiring demonstrable experience in Dutch ambulance/GHOR/GGD services and HKZ certification standards — entirely outside the candidate's field. It also effectively requires working Dutch (the candidate has only A1) and sector-specific auditing credentials the candidate does not hold.",
+      "location": "Rotterdam, Netherlands",
+      "type": "Contractor / Freelance",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Assessor Lift",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-Lift-69003/1379378833",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Complete mismatch — this is a technical lift/elevator certification auditor role requiring an engineering degree in Mechanics/Electricity, 5+ years in the Lifts Industry, and deep knowledge of EU Lifts Directive standards. Hard ineligibility triggered on multiple counts: specialist engineering qualification the candidate lacks, 5+ years hard experience requirement, and French at C level for client-facing work.",
+      "location": "Lyon, France (or Paris area)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Auditor - Multi Standard",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Lead-Auditor-Multi-Standard-B37-7ES/1379415433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is an ISO management systems auditing role (quality, environmental, H&S) requiring a technical/engineering background and current industry experience in a Quality/EHS role. It has no overlap with the candidate's IR, policy, or intelligence focus, and requires specialist auditor competencies they do not hold.",
+      "location": "Birmingham, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
