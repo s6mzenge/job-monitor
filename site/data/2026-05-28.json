@@ -1,7 +1,7 @@
 {
   "date": "2026-05-28",
-  "generated_at": "2026-05-28T16:30:51.247087+00:00",
-  "run_count": 23,
+  "generated_at": "2026-05-28T17:01:05.489855+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Strategic Account Manager Inspection",
@@ -170,6 +170,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Legal Director",
+      "organisation": "JUSTICE",
+      "url": "https://justice.org.uk/job-opportunity/legal-director",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: this is a senior Legal Director role at a UK legal reform charity, requiring deep legal expertise, senior leadership experience, and a UK qualifying legal background the candidate does not have. Although the policy reform mission is adjacent to the candidate's interests, the seniority and qualifications gap are decisive.",
+      "location": "London (Hybrid), UK",
+      "type": "Full-time, Permanent",
+      "deadline": "Rolling basis",
+      "salary": "Circa £70k"
     }
   ]
 }
