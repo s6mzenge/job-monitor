@@ -1,18 +1,31 @@
 {
-  "last_updated": "2026-05-28T16:01:04.125479+00:00",
+  "last_updated": "2026-05-28T16:30:51.247087+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 179,
+      "consecutive_failures": 5,
+      "total_recent_failures": 180,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-28T16:01:04.125479+00:00",
+      "last_recent_failure": "2026-05-28T16:30:51.247087+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0"
+    },
+    "BSR": {
+      "site_id": 67,
+      "url": "https://www.bsr.org/en/careers",
+      "method": "rippling_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 19,
+      "first_recent_failure": "2026-05-13T09:31:00.064575+00:00",
+      "last_recent_failure": "2026-05-28T16:30:51.247087+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Rippling API: HTTPSConnectionPool(host='api.rippling.com', port=443): Read timed out. (read timeout=30)"
     }
   },
   "issues": [
@@ -12891,6 +12904,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
       "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-05-28T16:30:51.247087+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 5
+    },
+    {
+      "timestamp": "2026-05-28T16:30:51.247087+00:00",
+      "site": "BSR",
+      "site_id": 67,
+      "url": "https://www.bsr.org/en/careers",
+      "method": "rippling_api",
+      "type": "fetch_error",
+      "message": "Rippling API: HTTPSConnectionPool(host='api.rippling.com', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
     }
   ]
 }
