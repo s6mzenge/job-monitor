@@ -1,7 +1,7 @@
 {
   "date": "2026-05-29",
-  "generated_at": "2026-05-29T05:30:49.367126+00:00",
-  "run_count": 2,
+  "generated_at": "2026-05-29T06:00:58.768592+00:00",
+  "run_count": 3,
   "jobs": [
     {
       "title": "Global Account Manager",
@@ -111,6 +111,20 @@
       "seniority_score": "1",
       "reason": "This is a B2B marketing role in the testing/inspection/certification industry — entirely outside the candidate's policy/research focus. It also hard-requires 5+ years of B2B marketing experience in the TIC sector, which the candidate does not have, triggering hard ineligibility on seniority.",
       "location": "Shanghai, China",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Security Consultant",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Senior-Security-Consultant-Sing-119963/1398505033",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a hands-on penetration testing role requiring deep technical cybersecurity expertise (web/mobile/infrastructure pentesting, OSCP/CREST certifications, exploit development) that the candidate does not possess. It is also a Senior-level position requiring substantial prior pentesting experience. Complete mismatch with the candidate's IR/policy research profile.",
+      "location": "Singapore",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
