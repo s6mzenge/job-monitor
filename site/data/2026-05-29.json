@@ -1,7 +1,7 @@
 {
   "date": "2026-05-29",
-  "generated_at": "2026-05-29T10:30:55.154623+00:00",
-  "run_count": 12,
+  "generated_at": "2026-05-29T11:01:02.539535+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Global Account Manager",
@@ -240,6 +240,34 @@
       "type": "Full-time, Permanent",
       "deadline": "11/06/2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "London Office Coordinator (m/f/d)",
+      "organisation": "ECFR",
+      "url": "https://ecfr.jobs.personio.com/job/2650180",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "ECFR is a core-fit organisation and the EU-UK foreign policy subject area aligns well with the candidate's IR background. However, the role is primarily project coordination, events and office administration rather than research, and asks for 2-4 years of experience in coordination/events plus CRM proficiency — areas where the candidate has only limited exposure through their student assistant roles.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-term",
+      "deadline": "22 June 2026, 09:00 CET",
+      "salary": "£38,000 - £44,000 per year"
+    },
+    {
+      "title": "Enterprise Finance Coordinator",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/887668",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is a finance/operations coordinator role focused on managing project budgets, purchase orders, and compliance for knowledge exchange projects — outside the candidate's research/policy focus. While it sits within a university research directorate, the work is finance administration rather than substantive research, and the candidate lacks specific KE finance experience.",
+      "location": "Bloomsbury, London, UK",
+      "type": "Full-time, Permanent",
+      "deadline": "15 June 2026",
+      "salary": "£35,749.57 - £42,207.57 per annum inc LA"
     }
   ]
 }
