@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T17:01:02.124580+00:00",
+  "last_updated": "2026-05-29T17:30:59.751030+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
@@ -31,10 +31,10 @@
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 31,
+      "consecutive_failures": 5,
+      "total_recent_failures": 32,
       "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
-      "last_recent_failure": "2026-05-29T17:01:02.124580+00:00",
+      "last_recent_failure": "2026-05-29T17:30:59.751030+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -42,37 +42,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-04-29T17:01:02.270957+00:00",
-      "site": "Impunity Watch",
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-04-29T17:01:02.270957+00:00",
-      "site": "Teneo",
-      "site_id": 50,
-      "url": "https://www.teneo.com/careers/open-positions/office/london/",
-      "method": "greenhouse_api",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "CRM Director",
-      "job_url": "https://www.teneo.com/careers/open-positions/7719696003?gh_jid=7719696003"
-    },
-    {
-      "timestamp": "2026-04-29T17:30:50.605866+00:00",
-      "site": "Impunity Watch",
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
-      "consecutive_count": 2
-    },
     {
       "timestamp": "2026-04-30T06:00:58.738290+00:00",
       "site": "Global Rights Compliance",
@@ -13455,6 +13424,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-05-29T17:30:59.751030+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 5
     }
   ]
 }
