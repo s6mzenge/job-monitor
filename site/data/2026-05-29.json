@@ -1,7 +1,7 @@
 {
   "date": "2026-05-29",
-  "generated_at": "2026-05-29T08:01:02.365497+00:00",
-  "run_count": 7,
+  "generated_at": "2026-05-29T08:30:58.301674+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Global Account Manager",
@@ -142,6 +142,48 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Senior Lecturer, School of Physics",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106441&p_spid=5153830",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the role explicitly requires a PhD in Physics, which the candidate does not hold. Field (physics academia) and skills (experimental/theoretical physics) are entirely outside the candidate's IR/policy background.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "13 July 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Lecturer in Experimental Condensed Matter Physics",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106442&p_spid=5153831",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Complete mismatch — this is a senior academic physics role requiring a PhD in Physics, postdoctoral experience, and specialist expertise in cryogenics and condensed matter experimental work. Hard ineligibility on the PhD requirement and on the Senior Lecturer seniority level.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "13 July 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Interim Head of Initial Teacher Education",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/interim-head-of-initial-teacher-education-612445.html",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: role requires QTS (Qualified Teacher Status) or equivalent and extensive experience leading Initial Teacher Education programmes, neither of which the candidate holds. Field, skills, and seniority all mismatch — this is a senior teacher-training leadership role unrelated to IR/policy research.",
+      "location": "London, UK",
+      "type": "Part-time, Fixed-Term (0.4 FTE, to 31-10-26)",
+      "deadline": "12/06/2026",
+      "salary": "£52,511 - £71,157 (pro-rata)"
     }
   ]
 }
