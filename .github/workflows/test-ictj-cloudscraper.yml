@@ -1,0 +1,119 @@
+name: Test ICTJ cloudscraper from GHA
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install cloudscraper==1.2.71 requests==2.32.3
+
+      - name: Test ICTJ
+        run: |
+          python - <<'PYEOF'
+          import time
+          import requests
+          import cloudscraper
+
+          URL = "https://www.ictj.org/careers-0"
+          BROWSER_HEADERS = {
+              "User-Agent": (
+                  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                  "AppleWebKit/537.36 (KHTML, like Gecko) "
+                  "Chrome/120.0.0.0 Safari/537.36"
+              ),
+              "Accept": (
+                  "text/html,application/xhtml+xml,application/xml;q=0.9,"
+                  "image/avif,image/webp,*/*;q=0.8"
+              ),
+              "Accept-Language": "en-GB,en;q=0.9",
+          }
+
+          successes = []
+
+          def report(label, status, body, headers):
+              flag = "OK " if 200 <= status < 300 else "BAD"
+              server = headers.get("server", "-")
+              cf_ray = headers.get("cf-ray", "-")
+              snippet = " ".join(body[:400].split())
+              looks_like_challenge = "Just a moment" in body[:1000]
+              looks_like_drupal = "Drupal" in body[:2000]
+              print(f"\n[{label}]")
+              print(f"  {flag} HTTP {status} | {len(body)} bytes")
+              print(f"      server={server}   cf-ray={cf_ray}")
+              print(f"      challenge_page={looks_like_challenge}   real_page={looks_like_drupal}")
+              print(f"      body[:400]: {snippet}")
+              if 200 <= status < 300 and looks_like_drupal:
+                  successes.append(label)
+
+          # Control: plain requests — expected to 403
+          print("=" * 70)
+          print("CONTROL: plain requests + browser headers (expected 403)")
+          print("=" * 70)
+          try:
+              r = requests.get(URL, headers=BROWSER_HEADERS, timeout=30)
+              report("plain", r.status_code, r.text, r.headers)
+          except Exception as e:
+              print(f"  ERROR: {e}")
+
+          # Test 1: cloudscraper default, 3 attempts with delays
+          print()
+          print("=" * 70)
+          print("TEST 1: cloudscraper (default) — 3 attempts")
+          print("=" * 70)
+          for i in range(1, 4):
+              try:
+                  scraper = cloudscraper.create_scraper()
+                  r = scraper.get(URL, timeout=30)
+                  report(f"cs default #{i}", r.status_code, r.text, r.headers)
+              except Exception as e:
+                  print(f"\n[cs default #{i}]\n  ERROR: {e}")
+              time.sleep(3)
+
+          # Test 2: cloudscraper with explicit Chrome on Windows
+          print()
+          print("=" * 70)
+          print("TEST 2: cloudscraper (browser=chrome/windows)")
+          print("=" * 70)
+          try:
+              scraper = cloudscraper.create_scraper(
+                  browser={"browser": "chrome", "platform": "windows", "mobile": False}
+              )
+              r = scraper.get(URL, timeout=30)
+              report("cs chrome/win", r.status_code, r.text, r.headers)
+          except Exception as e:
+              print(f"\n[cs chrome/win]\n  ERROR: {e}")
+
+          # Test 3: cloudscraper with longer delay (gives challenge more time)
+          print()
+          print("=" * 70)
+          print("TEST 3: cloudscraper with delay=10")
+          print("=" * 70)
+          try:
+              scraper = cloudscraper.create_scraper(delay=10)
+              r = scraper.get(URL, timeout=60)
+              report("cs delay=10", r.status_code, r.text, r.headers)
+          except Exception as e:
+              print(f"\n[cs delay=10]\n  ERROR: {e}")
+
+          # Verdict
+          print()
+          print("=" * 70)
+          print("VERDICT")
+          print("=" * 70)
+          if successes:
+              print(f"  cloudscraper WORKS from GHA. Successful attempts: {successes}")
+              print(f"  Fix: in config.json, ICTJ entry, set use_cloudscraper: true")
+              print(f"        (and remove proxy: cloudflare_worker — the worker is being blocked anyway)")
+          else:
+              print(f"  cloudscraper FAILS from GHA on every attempt.")
+              print(f"  Next options: Oracle Cloud proxy, or remove ICTJ from config.")
+          PYEOF
