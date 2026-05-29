@@ -1,7 +1,7 @@
 {
   "date": "2026-05-29",
-  "generated_at": "2026-05-29T13:31:13.578259+00:00",
-  "run_count": 18,
+  "generated_at": "2026-05-29T14:01:03.728901+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Global Account Manager",
@@ -282,6 +282,20 @@
       "type": "Full-time",
       "deadline": "30/06/2026",
       "salary": "£52,511 - £60,224"
+    },
+    {
+      "title": "Lecturer / Associate Lecturer (Cybersecurity)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106445&p_spid=5153834",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an academic computer science post requiring a PhD (Lecturer) or MSc plus PhD-in-progress in CS/Cybersecurity (Associate Lecturer), with teaching duties in offensive security, cryptography, and related technical fields. Hard ineligibility: candidate holds neither a CS degree nor a doctorate, and lacks the specialist technical cybersecurity background required.",
+      "location": "Braamfontein, Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "18 June 2026",
+      "salary": "Not specified"
     }
   ]
 }
