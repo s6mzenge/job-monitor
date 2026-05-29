@@ -124,10 +124,13 @@
       "id": 7,
       "name": "Eurasia Group",
       "url": "https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
-      "method": "html",
-      "selector": "main, div[class*='job']",
-      "link_selector": "a[href*='/eurasia-group/jobs/']",
-      "base_url": "https://ats.rippling.com"
+      "method": "rippling_api",
+      "base_url": "https://ats.rippling.com",
+      "api": {
+        "url": "https://api.rippling.com/platform/api/ats/v1/board/eurasia-group/jobs",
+        "http_method": "GET"
+      },
+      "location_filter": "London"
     },
     {
       "id": 8,
