@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T16:01:21.407028+00:00",
+  "last_updated": "2026-05-29T16:30:58.108904+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
@@ -14,14 +14,27 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
+    "Global Rights Compliance": {
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 51,
+      "first_recent_failure": "2026-04-30T06:00:58.738290+00:00",
+      "last_recent_failure": "2026-05-29T16:30:58.108904+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    5 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\""
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 14,
-      "total_recent_failures": 204,
+      "consecutive_failures": 15,
+      "total_recent_failures": 205,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-29T16:01:21.407028+00:00",
+      "last_recent_failure": "2026-05-29T16:30:58.108904+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -31,10 +44,10 @@
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 29,
+      "consecutive_failures": 3,
+      "total_recent_failures": 30,
       "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
-      "last_recent_failure": "2026-05-29T16:01:21.407028+00:00",
+      "last_recent_failure": "2026-05-29T16:30:58.108904+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -42,17 +55,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-04-29T16:30:52.316716+00:00",
-      "site": "Teneo",
-      "site_id": 50,
-      "url": "https://www.teneo.com/careers/open-positions/office/london/",
-      "method": "greenhouse_api",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "CRM Director",
-      "job_url": "https://www.teneo.com/careers/open-positions/7719696003?gh_jid=7719696003"
-    },
     {
       "timestamp": "2026-04-29T17:01:02.270957+00:00",
       "site": "Impunity Watch",
@@ -13405,6 +13407,36 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-05-29T16:30:58.108904+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    5 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-29T16:30:58.108904+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 15
+    },
+    {
+      "timestamp": "2026-05-29T16:30:58.108904+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 3
     }
   ]
 }
