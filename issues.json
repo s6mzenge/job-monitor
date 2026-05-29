@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-29T09:30:56.834503+00:00",
+  "last_updated": "2026-05-29T10:01:04.147269+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
       "url": "https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
       "method": "html",
-      "consecutive_failures": 10,
-      "total_recent_failures": 10,
+      "consecutive_failures": 11,
+      "total_recent_failures": 11,
       "first_recent_failure": "2026-05-29T05:00:57.943400+00:00",
-      "last_recent_failure": "2026-05-29T09:30:56.834503+00:00",
+      "last_recent_failure": "2026-05-29T10:01:04.147269+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -18,10 +18,10 @@
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 191,
+      "consecutive_failures": 2,
+      "total_recent_failures": 192,
       "first_recent_failure": "2026-04-30T11:01:03.872534+00:00",
-      "last_recent_failure": "2026-05-29T09:30:56.834503+00:00",
+      "last_recent_failure": "2026-05-29T10:01:04.147269+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -13164,6 +13164,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-29T10:01:04.147269+00:00",
+      "site": "Eurasia Group",
+      "site_id": 7,
+      "url": "https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
+      "consecutive_count": 11
+    },
+    {
+      "timestamp": "2026-05-29T10:01:04.147269+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 2
     }
   ]
 }

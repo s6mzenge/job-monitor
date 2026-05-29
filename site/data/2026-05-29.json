@@ -1,7 +1,7 @@
 {
   "date": "2026-05-29",
-  "generated_at": "2026-05-29T09:30:56.834503+00:00",
-  "run_count": 10,
+  "generated_at": "2026-05-29T10:01:04.147269+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Global Account Manager",
@@ -184,6 +184,48 @@
       "type": "Part-time, Fixed-Term (0.4 FTE, to 31-10-26)",
       "deadline": "12/06/2026",
       "salary": "£52,511 - £71,157 (pro-rata)"
+    },
+    {
+      "title": "Associate Director, Global Operations",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Bogota/Associate-Director--Global-Operations_JR-0003822",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior operations leadership role requiring significant prior experience leading cross-functional global projects, line-managing four direct reports, and fluency in the local language (Spanish for Bogota/Mexico City, or relevant language for Johannesburg) — the candidate has neither the seniority nor the required Spanish. Field alignment is also weak: it is internal operations/project management rather than policy or research.",
+      "location": "Mexico City / Johannesburg / Bogota",
+      "type": "Full-time, Permanent",
+      "deadline": "06/11/2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Operations Officer, Europe",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Berlin/Operations-Officer--Europe_JR-0003821",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is a facilities/operations role focused on vendor management, invoice processing, and office administration — not policy, research, or intelligence work. While OSF is a relevant mission-driven organisation, the role requires specific operations experience (facilities management, procurement, vendor contracts) that the candidate lacks, and the substantive work is unrelated to their research profile.",
+      "location": "Berlin / London",
+      "type": "Full-time",
+      "deadline": "11/06/2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Executive Assistant: SCIS Director",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106440&p_spid=5153829",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The role requires at least 10 years of demonstrable experience in a research or similar organisation, which is a hard requirement the candidate cannot meet. While inequality research at SCIS is policy-adjacent, this is an administrative/executive support post rather than a research role.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time, Fixed-term (3 years)",
+      "deadline": "09 June 2026",
+      "salary": "Not specified"
     }
   ]
 }
