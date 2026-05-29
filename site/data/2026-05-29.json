@@ -1,7 +1,7 @@
 {
   "date": "2026-05-29",
-  "generated_at": "2026-05-29T10:01:04.147269+00:00",
-  "run_count": 11,
+  "generated_at": "2026-05-29T10:30:55.154623+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Global Account Manager",
@@ -225,6 +225,20 @@
       "location": "Johannesburg, South Africa",
       "type": "Full-time, Fixed-term (3 years)",
       "deadline": "09 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Officer, Meetings and Events",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Dakar/Officer--Meetings-and-Events_JR-0003823",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is an events/logistics operations role, not policy or research — outside all three of the candidate's target zones despite OSF being a relevant organisation. The role requires demonstrable end-to-end event delivery experience and vendor management which the candidate lacks, and the Dakar/West Africa coverage realistically needs French fluency (candidate has only B1).",
+      "location": "Johannesburg, Dakar or Nairobi",
+      "type": "Full-time, Permanent",
+      "deadline": "11/06/2026",
       "salary": "Not specified"
     }
   ]
