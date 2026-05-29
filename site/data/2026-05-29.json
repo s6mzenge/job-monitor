@@ -1,7 +1,7 @@
 {
   "date": "2026-05-29",
-  "generated_at": "2026-05-29T14:01:03.728901+00:00",
-  "run_count": 19,
+  "generated_at": "2026-05-29T14:31:02.010239+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Global Account Manager",
@@ -295,6 +295,34 @@
       "location": "Braamfontein, Johannesburg, South Africa",
       "type": "Full-time",
       "deadline": "18 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Administrative Officer",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106443&p_spid=5153832",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "This is a general executive/administrative support role in a clinical medicine school, not a research or policy role. The field is largely unrelated to the candidate's IR/security/policy focus, and it requires 3 years of executive administration experience which the candidate does not have in a full-time capacity.",
+      "location": "Johannesburg, South Africa",
+      "type": "Temporary, Full-time",
+      "deadline": "31 May 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Group Head of Financial Planning & Analysis",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/DD5794D500",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Although Control Risks is a core target organisation, this is a senior finance leadership role requiring extensive FP&A and accounting expertise the candidate does not have. Hard ineligibility on seniority (Head-level role) and skills mismatch (financial planning/accounting qualifications).",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
