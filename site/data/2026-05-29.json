@@ -1,7 +1,7 @@
 {
   "date": "2026-05-29",
-  "generated_at": "2026-05-29T14:31:02.010239+00:00",
-  "run_count": 20,
+  "generated_at": "2026-05-29T15:00:57.093738+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Global Account Manager",
@@ -322,6 +322,20 @@
       "reason": "Although Control Risks is a core target organisation, this is a senior finance leadership role requiring extensive FP&A and accounting expertise the candidate does not have. Hard ineligibility on seniority (Head-level role) and skills mismatch (financial planning/accounting qualifications).",
       "location": "London, United Kingdom",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Experiential & Content Producer",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Experiential---Content-Producer_JR100114-1",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a creative agency production role focused on experiential events, content shoots, and integrated brand campaigns for commercial clients — entirely outside the candidate's policy/research/intelligence target zones. The role requires hands-on production experience with budgets, vendors, and live activations that the candidate does not have.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
