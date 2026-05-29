@@ -1,7 +1,7 @@
 {
   "date": "2026-05-29",
-  "generated_at": "2026-05-29T07:31:02.148123+00:00",
-  "run_count": 6,
+  "generated_at": "2026-05-29T08:01:02.365497+00:00",
+  "run_count": 7,
   "jobs": [
     {
       "title": "Global Account Manager",
@@ -125,6 +125,20 @@
       "seniority_score": "1",
       "reason": "This is a hands-on penetration testing role requiring deep technical cybersecurity expertise (web/mobile/infrastructure pentesting, OSCP/CREST certifications, exploit development) that the candidate does not possess. It is also a Senior-level position requiring substantial prior pentesting experience. Complete mismatch with the candidate's IR/policy research profile.",
       "location": "Singapore",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Business Support Specialist",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Leamington-Business-Support-Specialist-EH12-9DT/1398565233",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "Hard ineligibility: the role explicitly requires fluent Spanish (written and spoken) for client engagement, which the candidate does not have. The field (seafood/supply assurance audit support) is also unrelated to the candidate's policy/IR/intelligence targets.",
+      "location": "Edinburgh, UK",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
