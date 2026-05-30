@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T17:30:59.751030+00:00",
+  "last_updated": "2026-05-30T05:00:55.897691+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
@@ -26,19 +26,6 @@
       "paused_until": "2026-05-31T17:01:02.124580+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Reprieve": {
-      "site_id": 58,
-      "url": "https://reprieve.org/uk/work-for-reprieve/",
-      "method": "html",
-      "consecutive_failures": 5,
-      "total_recent_failures": 32,
-      "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
-      "last_recent_failure": "2026-05-29T17:30:59.751030+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
     }
   },
   "issues": [

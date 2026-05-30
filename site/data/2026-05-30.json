@@ -1,0 +1,77 @@
+{
+  "date": "2026-05-30",
+  "generated_at": "2026-05-30T05:00:55.897691+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Senior Developer",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Senior-Developer/1289330701",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a software engineering role requiring 5+ years of C# .NET development experience — outside the candidate's field and skill set, and a hard ineligibility trigger on the years-of-experience requirement. The candidate's research/policy background is not applicable.",
+      "location": "UK (Home Based)",
+      "type": "Fixed Term Employee (Full-time)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Developer",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Senior-Developer/1289038201",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Pure software engineering role (full-stack .NET/React development) unrelated to the candidate's IR/policy/intelligence targets. Requires 5+ years of professional software development experience as a hard requirement, plus specialist technical stack (C#, .NET Core, Tailwind) the candidate does not have. Hard ineligibility on years of experience.",
+      "location": "UK (Home Based)",
+      "type": "Fixed Term Employee",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "ISMS/BCM Auditor for UAE",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Dubai-ISMSBCM-Auditor-for-UAE/1264265501",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a specialist ISO management-systems auditing role requiring a CS/engineering degree, 4+ years IT/InfoSec experience, IRCA Lead Auditor certification, and Arabic language proficiency — all hard requirements the candidate does not meet. Triggers hard ineligibility on language (Arabic) and 4+ years specialist experience.",
+      "location": "Dubai or Abu Dhabi, United Arab Emirates",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "UI/UX Product Designer",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/UIUX-Product-Designer/1287506501",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a product design role requiring 5-8 years of digital product design experience, advanced Figma skills, AI-assisted design tooling, and Mandarin fluency — none of which the candidate possesses. Hard ineligibility triggered on both the 5+ years requirement and the Mandarin language requirement, and the field (UI/UX design for ESG supply-chain software) is unrelated to the candidate's IR/policy background.",
+      "location": "Quarry Bay, Hong Kong",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Auditor - Non Food Global",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Dublin-Auditor-Non-Food-Global/1364475533",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a supply-chain auditing role requiring ISO lead auditor certification and a qualification in manufacturing, production, or engineering — specialist credentials the candidate does not hold. Field is entirely unrelated to IR/policy/intelligence work.",
+      "location": "Dublin (with audits across Egypt, Slovenia, Greece, Ethiopia, Serbia & Cambodia)",
+      "type": "Contractor On Demand",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
