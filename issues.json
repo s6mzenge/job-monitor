@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T10:30:53.828945+00:00",
+  "last_updated": "2026-05-30T11:00:59.996136+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
@@ -31,10 +31,10 @@
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 11,
-      "total_recent_failures": 41,
+      "consecutive_failures": 12,
+      "total_recent_failures": 42,
       "first_recent_failure": "2026-05-01T07:01:04.108093+00:00",
-      "last_recent_failure": "2026-05-30T10:30:53.828945+00:00",
+      "last_recent_failure": "2026-05-30T11:00:59.996136+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -42,39 +42,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-04-30T10:30:57.159604+00:00",
-      "site": "Middlesex University",
-      "site_id": 35,
-      "url": "https://jobs.mdx.ac.uk/vacancies.aspx?cat=-1",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Lecturer - Practice Based Learning Nursing & Midwifery",
-      "job_url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=HED527"
-    },
-    {
-      "timestamp": "2026-04-30T10:30:57.159604+00:00",
-      "site": "Middlesex University",
-      "site_id": 35,
-      "url": "https://jobs.mdx.ac.uk/vacancies.aspx?cat=-1",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Lecturer in Dance",
-      "job_url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=ACI203"
-    },
-    {
-      "timestamp": "2026-04-30T10:30:57.159604+00:00",
-      "site": "Middlesex University",
-      "site_id": 35,
-      "url": "https://jobs.mdx.ac.uk/vacancies.aspx?cat=-1",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "CRM Communications Manager",
-      "job_url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=MKG528"
-    },
     {
       "timestamp": "2026-04-30T11:01:03.872534+00:00",
       "site": "ICTJ",
@@ -13508,6 +13475,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 11
+    },
+    {
+      "timestamp": "2026-05-30T11:00:59.996136+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 12
     }
   ]
 }
