@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T13:31:01.881062+00:00",
+  "last_updated": "2026-05-30T14:01:01.275278+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
@@ -13,19 +13,6 @@
       "paused_until": "2026-05-31T12:30:52.088679+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 51,
-      "first_recent_failure": "2026-04-30T17:31:02.689783+00:00",
-      "last_recent_failure": "2026-05-30T13:31:01.881062+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    14 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\""
     },
     "ICTJ": {
       "site_id": 41,
@@ -52,19 +39,6 @@
       "paused_until": "2026-06-01T13:00:56.713463+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "LRQA": {
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 222,
-      "first_recent_failure": "2026-05-02T17:00:55.646755+00:00",
-      "last_recent_failure": "2026-05-30T13:31:01.881062+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f28bb311ca0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
