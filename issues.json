@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T09:00:59.299740+00:00",
+  "last_updated": "2026-05-30T09:30:48.748484+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
@@ -31,10 +31,10 @@
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 8,
-      "total_recent_failures": 38,
+      "consecutive_failures": 9,
+      "total_recent_failures": 39,
       "first_recent_failure": "2026-05-01T07:01:04.108093+00:00",
-      "last_recent_failure": "2026-05-30T09:00:59.299740+00:00",
+      "last_recent_failure": "2026-05-30T09:30:48.748484+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -13542,6 +13542,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 8
+    },
+    {
+      "timestamp": "2026-05-30T09:30:48.748484+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 9
     }
   ]
 }
