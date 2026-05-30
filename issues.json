@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T09:30:48.748484+00:00",
+  "last_updated": "2026-05-30T10:01:00.294563+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
@@ -31,10 +31,10 @@
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 9,
-      "total_recent_failures": 39,
+      "consecutive_failures": 10,
+      "total_recent_failures": 40,
       "first_recent_failure": "2026-05-01T07:01:04.108093+00:00",
-      "last_recent_failure": "2026-05-30T09:30:48.748484+00:00",
+      "last_recent_failure": "2026-05-30T10:01:00.294563+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -42,38 +42,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-04-30T09:30:51.741217+00:00",
-      "site": "Middlesex University",
-      "site_id": 35,
-      "url": "https://jobs.mdx.ac.uk/vacancies.aspx?cat=-1",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Lecturer in Dance",
-      "job_url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=ACI203"
-    },
-    {
-      "timestamp": "2026-04-30T09:30:51.741217+00:00",
-      "site": "Middlesex University",
-      "site_id": 35,
-      "url": "https://jobs.mdx.ac.uk/vacancies.aspx?cat=-1",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "CRM Communications Manager",
-      "job_url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=MKG528"
-    },
-    {
-      "timestamp": "2026-04-30T09:30:51.741217+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-04-30T10:01:02.706616+00:00",
       "site": "Middlesex University",
@@ -13552,6 +13520,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 9
+    },
+    {
+      "timestamp": "2026-05-30T10:01:00.294563+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 10
     }
   ]
 }
