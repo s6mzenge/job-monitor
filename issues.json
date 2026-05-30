@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T16:30:51.388414+00:00",
+  "last_updated": "2026-05-30T17:01:12.433821+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
@@ -19,8 +19,8 @@
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 195,
-      "first_recent_failure": "2026-04-30T17:01:11.323186+00:00",
+      "total_recent_failures": 194,
+      "first_recent_failure": "2026-04-30T17:31:02.689783+00:00",
       "last_recent_failure": "2026-05-29T17:01:02.124580+00:00",
       "currently_paused": true,
       "paused_until": "2026-05-31T17:01:02.124580+00:00",
@@ -39,65 +39,9 @@
       "paused_until": "2026-06-01T13:00:56.713463+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "LRQA": {
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 223,
-      "first_recent_failure": "2026-05-02T17:00:55.646755+00:00",
-      "last_recent_failure": "2026-05-30T16:30:51.388414+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f4528568410>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-04-30T17:01:11.323186+00:00",
-      "site": "Chatham House",
-      "site_id": 23,
-      "url": "https://careers.chathamhouse.org/jobs",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Senior Research Fellow – Russia & Eurasia",
-      "job_url": "https://careers.chathamhouse.org/jobs/7660483-senior-research-fellow-russia-eurasia"
-    },
-    {
-      "timestamp": "2026-04-30T17:01:11.323186+00:00",
-      "site": "SOAS University of London",
-      "site_id": 34,
-      "url": "https://vacancies.soas.ac.uk/#vacancies",
-      "method": "playwright",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Lecturer in Music Performance",
-      "job_url": "https://vacancies.soas.ac.uk/job/873111"
-    },
-    {
-      "timestamp": "2026-04-30T17:01:11.323186+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 13
-    },
-    {
-      "timestamp": "2026-04-30T17:01:11.323186+00:00",
-      "site": "Teneo",
-      "site_id": 50,
-      "url": "https://www.teneo.com/careers/open-positions/office/london/",
-      "method": "greenhouse_api",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Political, Crisis & Litigation, Associate Consultant",
-      "job_url": "https://www.teneo.com/careers/open-positions/7712130003?gh_jid=7712130003"
-    },
     {
       "timestamp": "2026-04-30T17:31:02.689783+00:00",
       "site": "Chatham House",
