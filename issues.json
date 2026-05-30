@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T15:00:54.785423+00:00",
+  "last_updated": "2026-05-30T15:30:50.464889+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
@@ -19,8 +19,8 @@
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 199,
-      "first_recent_failure": "2026-04-30T15:01:08.132629+00:00",
+      "total_recent_failures": 198,
+      "first_recent_failure": "2026-04-30T15:31:04.223623+00:00",
       "last_recent_failure": "2026-05-29T17:01:02.124580+00:00",
       "currently_paused": true,
       "paused_until": "2026-05-31T17:01:02.124580+00:00",
@@ -42,60 +42,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-04-30T15:01:08.132629+00:00",
-      "site": "jobs.ac.uk",
-      "site_id": 6,
-      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Lecturer/Senior Lecturer in Politics (0.5FTE) – Fixed Term to June 2028",
-      "job_url": "https://www.jobs.ac.uk/job/DRJ834/lecturer-senior-lecturer-in-politics-05fte-fixed-term-to-june-2028"
-    },
-    {
-      "timestamp": "2026-04-30T15:01:08.132629+00:00",
-      "site": "Chatham House",
-      "site_id": 23,
-      "url": "https://careers.chathamhouse.org/jobs",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Senior Research Fellow – Russia & Eurasia",
-      "job_url": "https://careers.chathamhouse.org/jobs/7660483-senior-research-fellow-russia-eurasia"
-    },
-    {
-      "timestamp": "2026-04-30T15:01:08.132629+00:00",
-      "site": "SOAS University of London",
-      "site_id": 34,
-      "url": "https://vacancies.soas.ac.uk/#vacancies",
-      "method": "playwright",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Lecturer in Music Performance",
-      "job_url": "https://vacancies.soas.ac.uk/job/873111"
-    },
-    {
-      "timestamp": "2026-04-30T15:01:08.132629+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 9
-    },
-    {
-      "timestamp": "2026-04-30T15:01:08.132629+00:00",
-      "site": "CIFF",
-      "site_id": 62,
-      "url": "https://careers.ciff.org/vacancies/",
-      "method": "workable_api",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "HR Advisor - Learning and Development",
-      "job_url": "https://apply.workable.com/j/6E89D0DC10"
-    },
     {
       "timestamp": "2026-04-30T15:31:04.223623+00:00",
       "site": "jobs.ac.uk",
