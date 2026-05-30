@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T07:30:50.396537+00:00",
+  "last_updated": "2026-05-30T08:00:59.378263+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
@@ -31,10 +31,10 @@
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 5,
+      "consecutive_failures": 6,
       "total_recent_failures": 37,
-      "first_recent_failure": "2026-04-30T08:00:58.203424+00:00",
-      "last_recent_failure": "2026-05-30T07:30:50.396537+00:00",
+      "first_recent_failure": "2026-04-30T08:30:50.677925+00:00",
+      "last_recent_failure": "2026-05-30T08:00:59.378263+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -42,16 +42,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-04-30T08:00:58.203424+00:00",
-      "site": "Reprieve",
-      "site_id": 58,
-      "url": "https://reprieve.org/uk/work-for-reprieve/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 521 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-04-30T08:30:50.677925+00:00",
       "site": "Middlesex University",
@@ -13554,6 +13544,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 5
+    },
+    {
+      "timestamp": "2026-05-30T08:00:59.378263+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 6
     }
   ]
 }
