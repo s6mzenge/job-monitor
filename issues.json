@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T15:30:47.670920+00:00",
+  "last_updated": "2026-05-31T16:00:57.919774+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -29,16 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-01T15:30:54.259692+00:00",
-      "site": "RUSI",
-      "site_id": 65,
-      "url": "https://www.rusi.org/about/our-people/job-opportunities",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
-      "consecutive_count": 8
-    },
     {
       "timestamp": "2026-05-01T16:01:19.188150+00:00",
       "site": "Reprieve",
