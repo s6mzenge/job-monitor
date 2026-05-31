@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T05:30:54.590478+00:00",
+  "last_updated": "2026-05-31T06:01:04.368278+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
@@ -13,6 +13,19 @@
       "paused_until": "2026-05-31T12:30:52.088679+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Global Rights Compliance": {
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 50,
+      "first_recent_failure": "2026-05-01T06:30:52.937825+00:00",
+      "last_recent_failure": "2026-05-31T06:01:04.368278+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    25 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\""
     },
     "ICTJ": {
       "site_id": 41,
@@ -42,27 +55,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-01T06:00:57.500676+00:00",
-      "site": "Wiener Holocaust Library",
-      "site_id": 4,
-      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-01T06:00:57.500676+00:00",
-      "site": "SOAS University of London",
-      "site_id": 34,
-      "url": "https://vacancies.soas.ac.uk/#vacancies",
-      "method": "playwright",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Lecturer in Music Performance",
-      "job_url": "https://vacancies.soas.ac.uk/job/873111"
-    },
     {
       "timestamp": "2026-05-01T06:30:52.937825+00:00",
       "site": "Global Rights Compliance",
@@ -12940,6 +12932,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f4528568410>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-31T06:01:04.368278+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    25 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
       "consecutive_count": 1
     }
   ]
