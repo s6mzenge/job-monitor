@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T10:00:53.382017+00:00",
+  "last_updated": "2026-05-31T10:30:50.784946+00:00",
   "site_summary": {
     "Eurasia Group": {
       "site_id": 7,
@@ -26,6 +26,19 @@
       "paused_until": "2026-05-31T17:01:02.124580+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Impunity Watch": {
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 52,
+      "first_recent_failure": "2026-05-03T13:30:57.533269+00:00",
+      "last_recent_failure": "2026-05-31T10:30:50.784946+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 401 Client Error: Unauthorized for url: https://www.impunitywatch.org/join-us/join-our-team/"
     },
     "Reprieve": {
       "site_id": 58,
@@ -12836,6 +12849,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    5 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-31T10:30:50.784946+00:00",
+      "site": "Impunity Watch",
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 401 Client Error: Unauthorized for url: https://www.impunitywatch.org/join-us/join-our-team/",
       "consecutive_count": 1
     }
   ]
