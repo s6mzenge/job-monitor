@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-05-31T12:01:00.232106+00:00",
+  "last_updated": "2026-05-31T12:30:54.353198+00:00",
   "site_summary": {
-    "Eurasia Group": {
-      "site_id": 7,
-      "url": "https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
-      "method": "html",
-      "consecutive_failures": 16,
-      "total_recent_failures": 17,
-      "first_recent_failure": "2026-05-29T05:00:57.943400+00:00",
-      "last_recent_failure": "2026-05-29T12:30:52.088679+00:00",
-      "currently_paused": true,
-      "paused_until": "2026-05-31T12:30:52.088679+00:00",
-      "last_type": "site_paused",
-      "last_message": "Site paused after 16 consecutive failures"
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -42,26 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-01T12:06:03.894237+00:00",
-      "site": "RUSI",
-      "site_id": 65,
-      "url": "https://www.rusi.org/about/our-people/job-opportunities",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-01T12:30:48.087187+00:00",
-      "site": "RUSI",
-      "site_id": 65,
-      "url": "https://www.rusi.org/about/our-people/job-opportunities",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
-      "consecutive_count": 2
-    },
     {
       "timestamp": "2026-05-01T13:01:04.887150+00:00",
       "site": "RUSI",
