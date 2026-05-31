@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-05-31T17:00:54.888503+00:00",
+  "last_updated": "2026-05-31T17:30:49.274297+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 16,
-      "total_recent_failures": 190,
+      "consecutive_failures": 1,
+      "total_recent_failures": 191,
       "first_recent_failure": "2026-05-03T05:30:56.901414+00:00",
-      "last_recent_failure": "2026-05-29T17:01:02.124580+00:00",
-      "currently_paused": true,
-      "paused_until": "2026-05-31T17:01:02.124580+00:00",
-      "last_type": "site_paused",
-      "last_message": "Site paused after 16 consecutive failures"
+      "last_recent_failure": "2026-05-31T17:30:49.274297+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0"
     },
     "Reprieve": {
       "site_id": 58,
@@ -29,98 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-01T17:01:00.296511+00:00",
-      "site": "Aegis Trust",
-      "site_id": 5,
-      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://aegistrust.online/get-involved/work-at-aegis/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-01T17:01:00.296511+00:00",
-      "site": "jobs.ac.uk",
-      "site_id": 6,
-      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Research Fellow (Data and Democracy)",
-      "job_url": "https://www.jobs.ac.uk/job/DRK558/research-fellow-data-and-democracy"
-    },
-    {
-      "timestamp": "2026-05-01T17:01:00.296511+00:00",
-      "site": "HIS Hamburg",
-      "site_id": 43,
-      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-01T17:01:00.296511+00:00",
-      "site": "Institute for Government",
-      "site_id": 46,
-      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-01T17:01:00.296511+00:00",
-      "site": "Teneo",
-      "site_id": 50,
-      "url": "https://www.teneo.com/careers/open-positions/office/london/",
-      "method": "greenhouse_api",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Talent Acquisition Coordinator | London",
-      "job_url": "https://www.teneo.com/careers/open-positions/7720857003?gh_jid=7720857003"
-    },
-    {
-      "timestamp": "2026-05-01T17:01:00.296511+00:00",
-      "site": "Ceasefire Centre for Civilian Rights",
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.ceasefire.org/work-with-us/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-01T17:01:00.296511+00:00",
-      "site": "Paul Hamlyn Foundation",
-      "site_id": 64,
-      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-01T17:01:00.296511+00:00",
-      "site": "RUSI",
-      "site_id": 65,
-      "url": "https://www.rusi.org/about/our-people/job-opportunities",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
-      "consecutive_count": 11
-    },
-    {
-      "timestamp": "2026-05-01T17:01:00.296511+00:00",
-      "site": "twentyfifty",
-      "site_id": 73,
-      "url": "https://twentyfifty.co.uk/contact/opportunities/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-01T17:30:57.233044+00:00",
       "site": "Control Risks",
@@ -12600,6 +12508,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7efc85f5e420>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-05-31T17:30:49.274297+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
       "consecutive_count": 1
     }
   ]
