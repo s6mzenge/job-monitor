@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T16:30:46.749009+00:00",
+  "last_updated": "2026-05-31T17:00:54.888503+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -29,58 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-01T16:30:53.466239+00:00",
-      "site": "jobs.ac.uk",
-      "site_id": 6,
-      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Research Fellow (Data and Democracy)",
-      "job_url": "https://www.jobs.ac.uk/job/DRK558/research-fellow-data-and-democracy"
-    },
-    {
-      "timestamp": "2026-05-01T16:30:53.466239+00:00",
-      "site": "Global Rights Compliance",
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://globalrightscompliance.org/work-with-us/\", waiting until \"networkidle\"",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-01T16:30:53.466239+00:00",
-      "site": "Teneo",
-      "site_id": 50,
-      "url": "https://www.teneo.com/careers/open-positions/office/london/",
-      "method": "greenhouse_api",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Talent Acquisition Coordinator | London",
-      "job_url": "https://www.teneo.com/careers/open-positions/7720857003?gh_jid=7720857003"
-    },
-    {
-      "timestamp": "2026-05-01T16:30:53.466239+00:00",
-      "site": "RUSI",
-      "site_id": 65,
-      "url": "https://www.rusi.org/about/our-people/job-opportunities",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
-      "consecutive_count": 10
-    },
-    {
-      "timestamp": "2026-05-01T16:30:53.466239+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-01T17:01:00.296511+00:00",
       "site": "Aegis Trust",
