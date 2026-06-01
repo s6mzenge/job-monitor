@@ -1,7 +1,7 @@
 {
   "date": "2026-06-01",
-  "generated_at": "2026-06-01T11:31:03.608246+00:00",
-  "run_count": 14,
+  "generated_at": "2026-06-01T12:01:07.172676+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -127,6 +127,20 @@
       "location": "Johannesburg, South Africa",
       "type": "Full-time",
       "deadline": "07 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Systems Administrator (AD.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106447&p_spid=5153836",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a specialist IT systems administration role requiring 3–5 years of experience with Archibus IWMS platform, AutoCAD/Revit, and database administration — none of which align with the candidate's IR research background. Hard ineligibility on multiple counts: specialist technical skills the candidate lacks, plus senior-level role requiring team leadership and substantial post-degree experience.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "15 June 2026",
       "salary": "Not specified"
     }
   ]
