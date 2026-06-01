@@ -9,10 +9,8 @@
       "total_recent_failures": 207,
       "first_recent_failure": "2026-05-03T05:30:56.901414+00:00",
       "last_recent_failure": "2026-06-01T12:01:07.172676+00:00",
-      "currently_paused": true,
-      "paused_until": "2026-06-03T12:01:07.172676+00:00",
-      "last_type": "site_paused",
-      "last_message": "Site paused after 16 consecutive failures"
+      "currently_paused": false,
+      "paused_until": ""
     },
     "Reprieve": {
       "site_id": 58,
