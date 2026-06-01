@@ -553,7 +553,8 @@
       "method": "html",
       "selector": "section.text-content",
       "link_selector": "",
-      "base_url": "https://www.impunitywatch.org"
+      "base_url": "https://www.impunitywatch.org",
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 46,
