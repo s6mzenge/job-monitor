@@ -1,7 +1,7 @@
 {
   "date": "2026-06-01",
-  "generated_at": "2026-06-01T16:31:06.859417+00:00",
-  "run_count": 24,
+  "generated_at": "2026-06-01T17:01:08.001195+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -198,6 +198,20 @@
       "type": "Internship (Full-time, 6-month fixed-term contract)",
       "deadline": "10 June 2026, 23:59 BST",
       "salary": "London Living Wage, £13.85 per hour"
+    },
+    {
+      "title": "Programs US (Graduate/Masters Associate Intern)",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/New-York/Programs-US_JR-0003828",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "OSF is a major policy/grantmaking foundation, but this specific role focuses on US domestic programs mapping and grantmaking analysis rather than the candidate's core IR/international law/security interests. Research, analysis, and writing skills transfer cleanly, and the intern-level framing matches the candidate's stage perfectly. Note: the role requires US work authorization (no sponsorship), which may be a practical barrier.",
+      "location": "New York, USA",
+      "type": "Internship (Fixed Term, 3 months, Full-time, Hybrid)",
+      "deadline": "06/08/2026",
+      "salary": "$20–$23/hour (USD)"
     }
   ]
 }

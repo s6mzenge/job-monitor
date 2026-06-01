@@ -1,6 +1,32 @@
 {
-  "last_updated": "2026-06-01T16:31:06.859417+00:00",
+  "last_updated": "2026-06-01T17:01:08.001195+00:00",
   "site_summary": {
+    "Palladium Group": {
+      "site_id": 1,
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 38,
+      "first_recent_failure": "2026-05-06T05:01:09.215547+00:00",
+      "last_recent_failure": "2026-06-01T17:01:08.001195+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f963441f0b0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))"
+    },
+    "Global Rights Compliance": {
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 51,
+      "first_recent_failure": "2026-05-03T05:30:56.901414+00:00",
+      "last_recent_failure": "2026-06-01T17:01:08.001195+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    25 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\""
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -14,14 +40,27 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
+    "Ceasefire Centre for Civilian Rights": {
+      "site_id": 54,
+      "url": "https://www.ceasefire.org/work-with-us/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 28,
+      "first_recent_failure": "2026-05-06T12:31:02.476764+00:00",
+      "last_recent_failure": "2026-06-01T17:01:08.001195+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f9632c01f40>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))"
+    },
     "Reprieve": {
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 6,
-      "total_recent_failures": 41,
+      "consecutive_failures": 7,
+      "total_recent_failures": 42,
       "first_recent_failure": "2026-05-03T06:30:53.122318+00:00",
-      "last_recent_failure": "2026-06-01T16:31:06.859417+00:00",
+      "last_recent_failure": "2026-06-01T17:01:08.001195+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -29,66 +68,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-02T17:00:55.646755+00:00",
-      "site": "HIS Hamburg",
-      "site_id": 43,
-      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-02T17:00:55.646755+00:00",
-      "site": "Institute for Government",
-      "site_id": 46,
-      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-02T17:00:55.646755+00:00",
-      "site": "Ceasefire Centre for Civilian Rights",
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.ceasefire.org/work-with-us/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-02T17:00:55.646755+00:00",
-      "site": "Paul Hamlyn Foundation",
-      "site_id": 64,
-      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-02T17:00:55.646755+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fb3a234eb40>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-02T17:00:55.646755+00:00",
-      "site": "twentyfifty",
-      "site_id": 73,
-      "url": "https://twentyfifty.co.uk/contact/opportunities/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-02T17:30:54.348669+00:00",
       "site": "Trust for London",
@@ -12096,6 +12075,46 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 6
+    },
+    {
+      "timestamp": "2026-06-01T17:01:08.001195+00:00",
+      "site": "Palladium Group",
+      "site_id": 1,
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "type": "fetch_error",
+      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f963441f0b0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-01T17:01:08.001195+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    25 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-01T17:01:08.001195+00:00",
+      "site": "Ceasefire Centre for Civilian Rights",
+      "site_id": 54,
+      "url": "https://www.ceasefire.org/work-with-us/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f9632c01f40>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-01T17:01:08.001195+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 7
     }
   ]
 }
