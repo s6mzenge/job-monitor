@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-01T05:31:00.645266+00:00",
+  "last_updated": "2026-06-01T06:01:00.833790+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 193,
+      "consecutive_failures": 4,
+      "total_recent_failures": 194,
       "first_recent_failure": "2026-05-03T05:30:56.901414+00:00",
-      "last_recent_failure": "2026-06-01T05:31:00.645266+00:00",
+      "last_recent_failure": "2026-06-01T06:01:00.833790+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -19,8 +19,8 @@
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 42,
-      "first_recent_failure": "2026-05-02T05:31:11.861137+00:00",
+      "total_recent_failures": 41,
+      "first_recent_failure": "2026-05-02T06:01:12.916362+00:00",
       "last_recent_failure": "2026-05-30T13:00:56.713463+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-01T13:00:56.713463+00:00",
@@ -29,36 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-02T05:31:11.861137+00:00",
-      "site": "FTI Consulting",
-      "site_id": 11,
-      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-02T05:31:11.861137+00:00",
-      "site": "Reprieve",
-      "site_id": 58,
-      "url": "https://reprieve.org/uk/work-for-reprieve/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='reprieve.org', port=443): Read timed out. (read timeout=30)",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-02T05:31:11.861137+00:00",
-      "site": "RUSI",
-      "site_id": 65,
-      "url": "https://www.rusi.org/about/our-people/job-opportunities",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
-      "consecutive_count": 14
-    },
     {
       "timestamp": "2026-05-02T06:01:12.916362+00:00",
       "site": "FTI Consulting",
@@ -12467,6 +12437,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
       "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-06-01T06:01:00.833790+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 4
     }
   ]
 }
