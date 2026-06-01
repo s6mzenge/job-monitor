@@ -1,7 +1,7 @@
 {
   "date": "2026-06-01",
-  "generated_at": "2026-06-01T10:30:54.501658+00:00",
-  "run_count": 12,
+  "generated_at": "2026-06-01T11:01:05.915728+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -100,6 +100,20 @@
       "type": "Contractor (Self-Employed)",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Research Assistant in Mental Health",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=HED528",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This role is in applied mental health / implementation science for a schools-based depression intervention, which is outside the candidate's IR/policy/intelligence focus. It also requires a strong qualitative analysis track record (ideally to publication) in health research and familiarity with implementation science frameworks (CFIR), which the candidate lacks.",
+      "location": "Hendon, London",
+      "type": "Full-time, Fixed Term (21 months)",
+      "deadline": "Monday 15 June 2026",
+      "salary": "£37,357 to £42,653 per annum"
     }
   ]
 }
