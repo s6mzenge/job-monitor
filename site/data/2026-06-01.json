@@ -1,7 +1,7 @@
 {
   "date": "2026-06-01",
-  "generated_at": "2026-06-01T07:30:54.814712+00:00",
-  "run_count": 6,
+  "generated_at": "2026-06-01T08:01:06.001943+00:00",
+  "run_count": 7,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -84,6 +84,20 @@
       "reason": "This is a food industry auditing role requiring a food technology degree, IFS/BRC auditor qualification, and food safety experience — none of which the candidate has. Field, skills, and required vocational qualifications are entirely outside the candidate's profile.",
       "location": "Lyon, France",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Contractor - Retail & Hospitality Auditor (Israel)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Tel-Aviv-Contractor-Retail-&-Hospitality-Auditor-%28Israel%29/1399160833",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a food safety auditing role requiring specific country health & safety qualifications and 3 years of retail auditing experience — a complete mismatch with the candidate's IR/policy research profile. Hard ineligibility on specialist vocational qualifications the candidate does not hold.",
+      "location": "Tel Aviv, Israel",
+      "type": "Contractor (Self-Employed)",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
