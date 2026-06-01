@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-01T07:00:59.358491+00:00",
+  "last_updated": "2026-06-01T07:30:54.814712+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 6,
-      "total_recent_failures": 196,
+      "consecutive_failures": 7,
+      "total_recent_failures": 197,
       "first_recent_failure": "2026-05-03T05:30:56.901414+00:00",
-      "last_recent_failure": "2026-06-01T07:00:59.358491+00:00",
+      "last_recent_failure": "2026-06-01T07:30:54.814712+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -19,8 +19,8 @@
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 39,
-      "first_recent_failure": "2026-05-02T07:01:04.506372+00:00",
+      "total_recent_failures": 38,
+      "first_recent_failure": "2026-05-02T08:01:01.252042+00:00",
       "last_recent_failure": "2026-05-30T13:00:56.713463+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-01T13:00:56.713463+00:00",
@@ -29,126 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-02T07:01:04.506372+00:00",
-      "site": "Open Society Foundations",
-      "site_id": 2,
-      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-02T07:01:04.506372+00:00",
-      "site": "Pew Trusts",
-      "site_id": 3,
-      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-02T07:01:04.506372+00:00",
-      "site": "FTI Consulting",
-      "site_id": 11,
-      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
-      "consecutive_count": 5
-    },
-    {
-      "timestamp": "2026-05-02T07:01:04.506372+00:00",
-      "site": "Birkbeck, University of London",
-      "site_id": 53,
-      "url": "https://cis7.bbk.ac.uk/home.html",
-      "method": "hireserve_api",
-      "type": "fetch_error",
-      "message": "Hireserve API: 503 Server Error: Service Temporarily Unavailable for url: https://cis7.bbk.ac.uk/utf8/ic_job_feeds.feed_engine?p_web_site_id=6056&p_published_to=WWW&p_language=DEFAULT&p_direct=Y&p_format=MOBILE&p_include_exclude_from_list=N&p_search=&p_category_code_arr=17744-607542&p_category_code_arr=17744-607543&p_category_code_arr=17744-706568&p_category_code_arr=17744-706567",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-02T07:01:04.506372+00:00",
-      "site": "Reprieve",
-      "site_id": 58,
-      "url": "https://reprieve.org/uk/work-for-reprieve/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='reprieve.org', port=443): Read timed out. (read timeout=30)",
-      "consecutive_count": 4
-    },
-    {
-      "timestamp": "2026-05-02T07:01:04.506372+00:00",
-      "site": "ERM",
-      "site_id": 69,
-      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-02T07:01:04.506372+00:00",
-      "site": "Edelman",
-      "site_id": 78,
-      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-02T07:30:53.457746+00:00",
-      "site": "Open Society Foundations",
-      "site_id": 2,
-      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 3
-    },
-    {
-      "timestamp": "2026-05-02T07:30:53.457746+00:00",
-      "site": "Pew Trusts",
-      "site_id": 3,
-      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 3
-    },
-    {
-      "timestamp": "2026-05-02T07:30:53.457746+00:00",
-      "site": "FTI Consulting",
-      "site_id": 11,
-      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
-      "consecutive_count": 6
-    },
-    {
-      "timestamp": "2026-05-02T07:30:53.457746+00:00",
-      "site": "ERM",
-      "site_id": 69,
-      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 3
-    },
-    {
-      "timestamp": "2026-05-02T07:30:53.457746+00:00",
-      "site": "Edelman",
-      "site_id": 78,
-      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 3
-    },
     {
       "timestamp": "2026-05-02T08:01:01.252042+00:00",
       "site": "FTI Consulting",
@@ -12336,6 +12216,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
       "consecutive_count": 6
+    },
+    {
+      "timestamp": "2026-06-01T07:30:54.814712+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 7
     }
   ]
 }
