@@ -1,7 +1,7 @@
 {
   "date": "2026-06-01",
-  "generated_at": "2026-06-01T14:30:59.267055+00:00",
-  "run_count": 20,
+  "generated_at": "2026-06-01T15:01:09.083237+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -184,6 +184,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Molchanov Sustainability Internship 2026-2027",
+      "organisation": "Chatham House",
+      "url": "https://careers.chathamhouse.org/jobs/7816531-molchanov-sustainability-internship-2026-2027",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "5",
+      "seniority_score": "5",
+      "reason": "Chatham House is a world-leading international affairs think tank, and multiple host teams (Europe Programme/Russia and Eurasia, UK in the World/US and North America, MENA) sit squarely within the candidate's IR and security policy focus. The internship explicitly targets early-career professionals and emphasises research support, policy writing, and event work — all aligned with the candidate's research-assistant track record and writing skills.",
+      "location": "London, UK (Hybrid)",
+      "type": "Internship (Full-time, 6-month fixed-term contract)",
+      "deadline": "10 June 2026, 23:59 BST",
+      "salary": "London Living Wage, £13.85 per hour"
     }
   ]
 }
