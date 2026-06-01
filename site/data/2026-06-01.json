@@ -1,7 +1,7 @@
 {
   "date": "2026-06-01",
-  "generated_at": "2026-06-01T13:30:58.766064+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-01T14:01:17.648523+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -153,6 +153,34 @@
       "seniority_score": "1",
       "reason": "This is an IT/business analyst role focused on agile delivery, requirements engineering, and product/systems analysis — entirely outside the candidate's policy/IR/intelligence target zones. The \"Senior\" title and expectation of substantial BA experience plus mentoring of junior analysts triggers hard ineligibility on seniority.",
       "location": "Birmingham, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Research Scientist, Material Intelligence",
+      "organisation": "Google DeepMind",
+      "url": "https://job-boards.greenhouse.io/deepmind/jobs/7353237",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the role requires significant post-PhD experience in computational materials science, plus deep expertise in DFT/MD simulation packages (VASP, Quantum ESPRESSO, LAMMPS) that the candidate does not have. Field (materials science) is entirely unrelated to the candidate's IR/policy background.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Director, Healthcare & Life Sciences",
+      "organisation": "Brunswick Group",
+      "url": "https://job-boards.greenhouse.io/brunswickgroup/jobs/8549508002",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility on seniority: the role explicitly requires 10+ years of professional experience and is a Director-level position leading client accounts and teams. Field is also weak — healthcare/life sciences strategic communications sits outside the candidate's policy/IR/intelligence targets.",
+      "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
