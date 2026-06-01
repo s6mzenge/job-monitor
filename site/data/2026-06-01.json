@@ -1,0 +1,91 @@
+{
+  "date": "2026-06-01",
+  "generated_at": "2026-06-01T05:00:57.951118+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "LRQA Sub-contractor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Sofia-LRQA-Sub-contractor/1290698701",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an ISO 27001 lead auditor sub-contractor role requiring qualified information security audit credentials and assessor experience — entirely outside the candidate's field and skill set. Hard mismatch on specialist certification the candidate does not hold.",
+      "location": "Sofia, Bulgaria",
+      "type": "Contractor (On Demand)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Subcontractor for LRQA",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Sofia-Subcontractor-for-LRQA/1290699101",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an ISO 9001/14001/45001 lead auditor subcontractor role requiring specific qualifications and accreditations in business assurance auditing — entirely outside the candidate's IR/policy field. The candidate lacks the required lead auditor certifications, triggering a specialist-qualification mismatch.",
+      "location": "Sofia, Bulgaria",
+      "type": "Contractor On Demand",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Assessor Automotive",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-Automotive-69003/1370906333",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Complete mismatch — this is an automotive industry quality-systems auditor role requiring an engineering degree, 4+ years automotive experience, IATF qualifications, and French C-level fluency. The candidate has none of these and the role is unrelated to IR, policy, or intelligence work.",
+      "location": "Lyon, France (or Paris/north France)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Assessor QSE",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-QSE-69003/1371032033",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "Mismatch on field (quality/environmental/safety auditing for industrial clients, not policy or IR research) and skills (requires a technical bachelor's in Environment/Chemistry/Energy/Mechanical, plus IRCA/ICA auditor qualifications the candidate lacks). Also requires 4+ years of industry experience and working French at C level, which the candidate (B1) does not meet.",
+      "location": "Lyon, France",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Assessor QSE",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-QSE-69003/1371037333",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a quality/environment/safety management systems auditor role requiring a science/chemistry/environment degree, 4+ years of industry experience, and IRCA/ICA auditor qualifications — none of which the candidate has. The role also requires working French at level C for client-facing audits, which exceeds the candidate's B1 French. Complete mismatch with the candidate's IR/policy research profile.",
+      "location": "Lyon, France",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Assessor IFS BRC",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-IFS-BRC-69003/1370901533",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a food industry auditing role requiring a food technology degree, IFS/BRC auditor qualification, and food safety experience — none of which the candidate has. Field, skills, and required vocational qualifications are entirely outside the candidate's profile.",
+      "location": "Lyon, France",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}

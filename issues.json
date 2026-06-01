@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-05-31T17:30:49.274297+00:00",
+  "last_updated": "2026-06-01T05:00:57.951118+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 191,
+      "consecutive_failures": 2,
+      "total_recent_failures": 192,
       "first_recent_failure": "2026-05-03T05:30:56.901414+00:00",
-      "last_recent_failure": "2026-05-31T17:30:49.274297+00:00",
+      "last_recent_failure": "2026-06-01T05:00:57.951118+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -29,38 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-01T17:30:57.233044+00:00",
-      "site": "Control Risks",
-      "site_id": 47,
-      "url": "https://apply.workable.com/control-risks-6/#jobs",
-      "method": "workable_api",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Marketing Services Operations Coordinator",
-      "job_url": "https://apply.workable.com/j/82F5090A6B"
-    },
-    {
-      "timestamp": "2026-05-01T17:30:57.233044+00:00",
-      "site": "Teneo",
-      "site_id": 50,
-      "url": "https://www.teneo.com/careers/open-positions/office/london/",
-      "method": "greenhouse_api",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Talent Acquisition Coordinator | London",
-      "job_url": "https://www.teneo.com/careers/open-positions/7720857003?gh_jid=7720857003"
-    },
-    {
-      "timestamp": "2026-05-01T17:30:57.233044+00:00",
-      "site": "RUSI",
-      "site_id": 65,
-      "url": "https://www.rusi.org/about/our-people/job-opportunities",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
-      "consecutive_count": 12
-    },
     {
       "timestamp": "2026-05-02T05:00:58.602448+00:00",
       "site": "FTI Consulting",
@@ -12519,6 +12487,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-01T05:00:57.951118+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 2
     }
   ]
 }
