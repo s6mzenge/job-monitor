@@ -1,7 +1,7 @@
 {
   "date": "2026-06-01",
-  "generated_at": "2026-06-01T11:01:05.915728+00:00",
-  "run_count": 13,
+  "generated_at": "2026-06-01T11:31:03.608246+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -114,6 +114,20 @@
       "type": "Full-time, Fixed Term (21 months)",
       "deadline": "Monday 15 June 2026",
       "salary": "£37,357 to £42,653 per annum"
+    },
+    {
+      "title": "Technician, Forensic Medicine and Pathology",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106396&p_spid=5152825",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a forensic mortuary technician role requiring a BSc in health science or forensic science, hands-on experience with human remains, LODOX radiographic imaging, and forensic photography — none of which the candidate has. Complete mismatch with the candidate's IR/policy research profile.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "07 June 2026",
+      "salary": "Not specified"
     }
   ]
 }
