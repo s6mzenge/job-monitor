@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T15:30:59.671917+00:00",
+  "last_updated": "2026-06-01T16:01:11.908790+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -18,10 +18,10 @@
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 40,
+      "consecutive_failures": 5,
+      "total_recent_failures": 41,
       "first_recent_failure": "2026-05-02T16:30:52.976934+00:00",
-      "last_recent_failure": "2026-06-01T15:30:59.671917+00:00",
+      "last_recent_failure": "2026-06-01T16:01:11.908790+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -29,16 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-02T16:00:58.443472+00:00",
-      "site": "Goldsmiths, University of London",
-      "site_id": 52,
-      "url": "https://jobs.gold.ac.uk/job-search.html",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 503 Server Error: Service Temporarily Unavailable for url: https://jobs.gold.ac.uk/job-search.html",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-02T16:30:52.976934+00:00",
       "site": "Reprieve",
@@ -12096,6 +12086,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-06-01T16:01:11.908790+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 5
     }
   ]
 }
