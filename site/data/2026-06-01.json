@@ -1,7 +1,7 @@
 {
   "date": "2026-06-01",
-  "generated_at": "2026-06-01T13:01:16.136611+00:00",
-  "run_count": 17,
+  "generated_at": "2026-06-01T13:30:58.766064+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "LRQA Sub-contractor",
@@ -141,6 +141,20 @@
       "location": "Johannesburg, South Africa",
       "type": "Full-time",
       "deadline": "15 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Business Analyst",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Leamington-Senior-Business-Analyst-B37-7ES/1399365033",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is an IT/business analyst role focused on agile delivery, requirements engineering, and product/systems analysis — entirely outside the candidate's policy/IR/intelligence target zones. The \"Senior\" title and expectation of substantial BA experience plus mentoring of junior analysts triggers hard ineligibility on seniority.",
+      "location": "Birmingham, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
