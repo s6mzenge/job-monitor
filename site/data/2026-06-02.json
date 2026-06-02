@@ -1,7 +1,7 @@
 {
   "date": "2026-06-02",
-  "generated_at": "2026-06-02T16:01:10.301768+00:00",
-  "run_count": 23,
+  "generated_at": "2026-06-02T16:31:05.911810+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Placement Supervisor (Nursing and Midwifery)",
@@ -69,6 +69,20 @@
       "seniority_score": "1",
       "reason": "This is a senior IT/business analyst role requiring 5+ years in a Senior BA role and agile product delivery experience — hard ineligibility on both seniority and years of experience. The field (corporate IT business analysis) is unrelated to the candidate's policy/IR focus.",
       "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Account Manager - Brand Marketing & Earned",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Senior-Account-Manager---Brand-Marketing---Earned_JR102634",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a brand marketing / consumer communications role focused on culture, creators and earned media — outside the candidate's policy, IR, and intelligence targets. The role requires consumer brand campaign experience and marketing channel expertise the candidate lacks, and the \"Senior Account Manager\" title implies several years of agency experience beyond the candidate's student-assistant background.",
+      "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"

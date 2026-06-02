@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T16:01:10.301768+00:00",
+  "last_updated": "2026-06-02T16:31:05.911810+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -18,27 +18,14 @@
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 56,
+      "consecutive_failures": 3,
+      "total_recent_failures": 57,
       "first_recent_failure": "2026-05-05T13:01:05.718078+00:00",
-      "last_recent_failure": "2026-06-02T16:01:10.301768+00:00",
+      "last_recent_failure": "2026-06-02T16:31:05.911810+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
-    },
-    "ERM": {
-      "site_id": 69,
-      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
-      "method": "workday_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 11,
-      "first_recent_failure": "2026-05-09T06:30:57.441694+00:00",
-      "last_recent_failure": "2026-06-02T16:01:10.301768+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Workday API: 503 Server Error: Service Unavailable for url: https://erm.wd3.myworkdayjobs.com/wday/cxs/erm/ERM_Careers/jobs"
     }
   },
   "issues": [
@@ -11917,6 +11904,16 @@
       "type": "fetch_error",
       "message": "Workday API: 503 Server Error: Service Unavailable for url: https://erm.wd3.myworkdayjobs.com/wday/cxs/erm/ERM_Careers/jobs",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-02T16:31:05.911810+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 3
     }
   ]
 }
