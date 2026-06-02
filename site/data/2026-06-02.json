@@ -1,7 +1,7 @@
 {
   "date": "2026-06-02",
-  "generated_at": "2026-06-02T16:31:05.911810+00:00",
-  "run_count": 24,
+  "generated_at": "2026-06-02T17:01:05.533271+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Placement Supervisor (Nursing and Midwifery)",
@@ -86,6 +86,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Estates & Facilities Administrator - 6 month FTC",
+      "organisation": "Chatham House",
+      "url": "https://careers.chathamhouse.org/jobs/7839429-estates-facilities-administrator-6-month-ftc",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "Although Chatham House is a flagship policy institute, this role is pure estates/facilities administration with no research, policy or analytical content — a field mismatch for the candidate's IR/security focus. The required experience is in facilities/property/office management, which the candidate lacks.",
+      "location": "London, UK",
+      "type": "Full-time, 6-month fixed-term contract",
+      "deadline": "Tuesday, 9 June 2026, 23:59 BST",
+      "salary": "£30,000 per year"
     }
   ]
 }
