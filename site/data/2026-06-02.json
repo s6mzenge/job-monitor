@@ -1,7 +1,7 @@
 {
   "date": "2026-06-02",
-  "generated_at": "2026-06-02T13:01:10.010572+00:00",
-  "run_count": 17,
+  "generated_at": "2026-06-02T13:31:03.343980+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Placement Supervisor (Nursing and Midwifery)",
@@ -29,6 +29,20 @@
       "location": "Nieuwolda-Oost, Netherlands",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer / Associate Lecturer (Computer Science / Data Science)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106446&p_spid=5153835",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Academic computer science lectureship requiring a PhD (Lecturer) or Master's in CS plus active PhD registration (Associate Lecturer) — the candidate holds neither, triggering hard ineligibility on seniority. Field (computer science teaching/research) and required CS specialisation are also a mismatch with the candidate's IR background.",
+      "location": "Braamfontein, Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "18 June 2026",
       "salary": "Not specified"
     }
   ]
