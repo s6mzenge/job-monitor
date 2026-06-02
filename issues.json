@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-06-02T15:01:07.433254+00:00",
+  "last_updated": "2026-06-02T15:31:01.878890+00:00",
   "site_summary": {
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 50,
-      "first_recent_failure": "2026-05-04T13:31:15.389180+00:00",
-      "last_recent_failure": "2026-06-02T15:01:07.433254+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    - waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n    - navigated to \"https://globalrightscompliance.org/work-with-us/\""
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -26,19 +13,22 @@
       "paused_until": "2026-06-03T12:01:07.172676+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    }
-  },
-  "issues": [
-    {
-      "timestamp": "2026-05-03T15:30:53.040511+00:00",
-      "site": "Reprieve",
+    },
+    "Reprieve": {
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 522 Server Error: <none> for url: https://reprieve.org/uk/work-for-reprieve/",
-      "consecutive_count": 1
-    },
+      "consecutive_failures": 1,
+      "total_recent_failures": 55,
+      "first_recent_failure": "2026-05-05T13:01:05.718078+00:00",
+      "last_recent_failure": "2026-06-02T15:31:01.878890+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
+    }
+  },
+  "issues": [
     {
       "timestamp": "2026-05-04T05:00:56.420273+00:00",
       "site": "Impunity Watch",
@@ -11883,6 +11873,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    - waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n    - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-02T15:31:01.878890+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 1
     }
   ]

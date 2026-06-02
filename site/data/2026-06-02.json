@@ -1,7 +1,7 @@
 {
   "date": "2026-06-02",
-  "generated_at": "2026-06-02T15:01:07.433254+00:00",
-  "run_count": 21,
+  "generated_at": "2026-06-02T15:31:01.878890+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Placement Supervisor (Nursing and Midwifery)",
@@ -43,6 +43,34 @@
       "location": "Braamfontein, Johannesburg, South Africa",
       "type": "Full-time",
       "deadline": "18 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Product Manager AI",
+      "organisation": "Bridgespan Group",
+      "url": "https://phh.tbe.taleo.net/phh01/ats/careers/requisition.jsp?org=THEBRIDG12&cws=40&rid=520",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Role requires 5+ years professional experience including 3+ in product management as a hard requirement, plus US work authorization without sponsorship — both are hard ineligibility triggers. Field (enterprise AI product management at a nonprofit consultancy) is also outside the candidate's core target zones.",
+      "location": "Not specified (US-based; offices include Boston, NY, San Francisco)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Business Analyst",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Senior-Business-Analyst/1399956633",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior IT/business analyst role requiring 5+ years in a Senior BA role and agile product delivery experience — hard ineligibility on both seniority and years of experience. The field (corporate IT business analysis) is unrelated to the candidate's policy/IR focus.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
