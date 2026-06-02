@@ -1,7 +1,7 @@
 {
   "date": "2026-06-02",
-  "generated_at": "2026-06-02T11:01:15.613225+00:00",
-  "run_count": 13,
+  "generated_at": "2026-06-02T11:30:56.835203+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Placement Supervisor (Nursing and Midwifery)",
@@ -16,6 +16,20 @@
       "type": "Fixed Term - 6 months, Full-time (35.5 hrs/week)",
       "deadline": "Wednesday 17 June 2026",
       "salary": "£37,357 to £42,653 per annum"
+    },
+    {
+      "title": "Lead Auditor Food",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Nieuwolda-Oost-Lead-Auditor-Food-3068-AX/1399798333",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Complete mismatch — this is a food industry auditing role requiring a food technology degree, 5+ years in food production, third-party auditing qualifications (IFS/BRC), and fluent Dutch. Hard ineligibility on multiple grounds: required Dutch fluency (candidate has only A1), 5+ years hard experience requirement, and specialist food-industry credentials the candidate lacks.",
+      "location": "Nieuwolda-Oost, Netherlands",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
