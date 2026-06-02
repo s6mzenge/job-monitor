@@ -1,111 +1,34 @@
 {
-  "last_updated": "2026-06-02T11:30:56.835203+00:00",
+  "last_updated": "2026-06-02T12:01:24.147336+00:00",
   "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 40,
-      "first_recent_failure": "2026-05-06T05:01:09.215547+00:00",
-      "last_recent_failure": "2026-06-02T11:30:56.835203+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f24c9f5e390>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))"
-    },
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 50,
-      "first_recent_failure": "2026-05-03T14:00:58.852572+00:00",
-      "last_recent_failure": "2026-06-02T11:30:56.835203+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    6 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\""
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 195,
-      "first_recent_failure": "2026-05-03T11:31:03.082687+00:00",
+      "total_recent_failures": 193,
+      "first_recent_failure": "2026-05-03T12:30:56.205378+00:00",
       "last_recent_failure": "2026-06-01T12:01:07.172676+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-03T12:01:07.172676+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Ceasefire Centre for Civilian Rights": {
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
+    "Reprieve": {
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 30,
-      "first_recent_failure": "2026-05-06T12:31:02.476764+00:00",
-      "last_recent_failure": "2026-06-02T11:30:56.835203+00:00",
+      "total_recent_failures": 52,
+      "first_recent_failure": "2026-05-03T15:30:53.040511+00:00",
+      "last_recent_failure": "2026-06-02T12:01:24.147336+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f24c8d335c0>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))"
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-03T11:31:03.082687+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 13
-    },
-    {
-      "timestamp": "2026-05-03T11:31:03.082687+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
-      "consecutive_count": 15
-    },
-    {
-      "timestamp": "2026-05-03T12:01:02.900294+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 14
-    },
-    {
-      "timestamp": "2026-05-03T12:01:02.900294+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
-      "consecutive_count": 16
-    },
-    {
-      "timestamp": "2026-05-03T12:01:02.900294+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "site_paused",
-      "message": "Site paused after 16 consecutive failures",
-      "consecutive_count": 16,
-      "paused_until": "2026-05-05T12:01:02.900294+00:00"
-    },
     {
       "timestamp": "2026-05-03T12:30:56.205378+00:00",
       "site": "ICTJ",
@@ -11961,6 +11884,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f24c8d335c0>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-02T12:01:24.147336+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 1
     }
   ]
