@@ -1,6 +1,21 @@
 {
   "date": "2026-06-02",
-  "generated_at": "2026-06-02T07:01:02.141813+00:00",
-  "run_count": 5,
-  "jobs": []
+  "generated_at": "2026-06-02T07:31:10.215016+00:00",
+  "run_count": 6,
+  "jobs": [
+    {
+      "title": "Placement Supervisor (Nursing and Midwifery)",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=ESE33",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a placement administration role in nursing/midwifery education — operational and regulatory compliance work in a clinical training context, far from the candidate's IR/policy/intelligence focus. It also requires experience leading an administrative team and familiarity with NMC and PSRB regulatory frameworks, which the candidate lacks.",
+      "location": "Hendon, London",
+      "type": "Fixed Term - 6 months, Full-time (35.5 hrs/week)",
+      "deadline": "Wednesday 17 June 2026",
+      "salary": "£37,357 to £42,653 per annum"
+    }
+  ]
 }
