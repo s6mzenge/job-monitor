@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T23:49:12.991082+00:00",
+  "last_updated": "2026-06-02T05:01:00.021218+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -18,10 +18,10 @@
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 9,
-      "total_recent_failures": 44,
+      "consecutive_failures": 10,
+      "total_recent_failures": 45,
       "first_recent_failure": "2026-05-03T06:30:53.122318+00:00",
-      "last_recent_failure": "2026-06-01T23:49:12.991082+00:00",
+      "last_recent_failure": "2026-06-02T05:01:00.021218+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -12086,6 +12086,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 9
+    },
+    {
+      "timestamp": "2026-06-02T05:01:00.021218+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 10
     }
   ]
 }
