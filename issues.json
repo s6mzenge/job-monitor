@@ -1,54 +1,21 @@
 {
-  "last_updated": "2026-06-02T09:01:09.852093+00:00",
+  "last_updated": "2026-06-02T09:30:59.649926+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 199,
-      "first_recent_failure": "2026-05-03T09:30:51.469760+00:00",
+      "total_recent_failures": 198,
+      "first_recent_failure": "2026-05-03T10:00:56.189140+00:00",
       "last_recent_failure": "2026-06-01T12:01:07.172676+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-03T12:01:07.172676+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Reprieve": {
-      "site_id": 58,
-      "url": "https://reprieve.org/uk/work-for-reprieve/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 49,
-      "first_recent_failure": "2026-05-03T15:30:53.040511+00:00",
-      "last_recent_failure": "2026-06-02T09:01:09.852093+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-03T09:30:51.469760+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 9
-    },
-    {
-      "timestamp": "2026-05-03T09:30:51.469760+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
-      "consecutive_count": 11
-    },
     {
       "timestamp": "2026-05-03T10:00:56.189140+00:00",
       "site": "ICTJ",
