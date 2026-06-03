@@ -1,0 +1,35 @@
+{
+  "date": "2026-06-03",
+  "generated_at": "2026-06-03T05:01:12.389682+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Lead Auditor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lead-Auditor-12950/1271917801",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Pure mismatch — ISO compliance auditing (quality, environmental, OH&S management systems) is unrelated to IR, policy, or intelligence work. The role mandates certified Lead Auditor credentials for ISO 9001/14001/45001 which the candidate does not hold, and \"Senior Lead\" framing implies substantial prior auditing experience.",
+      "location": "Jakarta, Indonesia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior BI Analyst Developer",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Senior-BI-Analyst-Developer/1400120733",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior Power BI developer role requiring 5+ years of specialist BI development experience, deep Power BI/DAX/SQL/Azure DevOps expertise, and technical leadership — none of which match the candidate's IR research profile. Hard ineligibility triggered on the 5+ years requirement and on specialist technical skills the candidate cannot substitute for.",
+      "location": "Hong Kong",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
