@@ -1,7 +1,7 @@
 {
   "date": "2026-06-03",
-  "generated_at": "2026-06-03T11:01:07.543003+00:00",
-  "run_count": 12,
+  "generated_at": "2026-06-03T11:31:01.639391+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Lead Auditor",
@@ -128,6 +128,20 @@
       "type": "Full-time",
       "deadline": "Friday 26 June 2026",
       "salary": "Competitive (Senior Staff grade)"
+    },
+    {
+      "title": "Data Scientist",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Data-Scientist/1400308433",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is a commercial data science role focused on ESG/supply chain analytics, outside the candidate's policy/IR/intelligence target zones. It requires strong applied machine learning, statistical modelling, and GCP/AWS experience that the candidate does not demonstrably have, plus 2+ years of relevant work experience in data science specifically.",
+      "location": "Hong Kong",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
