@@ -1,31 +1,18 @@
 {
-  "last_updated": "2026-06-03T14:01:14.438808+00:00",
+  "last_updated": "2026-06-03T14:31:08.360541+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 5,
-      "total_recent_failures": 195,
+      "consecutive_failures": 6,
+      "total_recent_failures": 196,
       "first_recent_failure": "2026-05-05T13:01:05.718078+00:00",
-      "last_recent_failure": "2026-06-03T14:01:14.438808+00:00",
+      "last_recent_failure": "2026-06-03T14:31:08.360541+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0"
-    },
-    "Reprieve": {
-      "site_id": 58,
-      "url": "https://reprieve.org/uk/work-for-reprieve/",
-      "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 73,
-      "first_recent_failure": "2026-05-05T13:01:05.718078+00:00",
-      "last_recent_failure": "2026-06-03T14:01:14.438808+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
     }
   },
   "issues": [
@@ -11983,6 +11970,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-06-03T14:31:08.360541+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 6
     }
   ]
 }
