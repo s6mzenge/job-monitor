@@ -1,7 +1,7 @@
 {
   "date": "2026-06-03",
-  "generated_at": "2026-06-03T15:31:03.315730+00:00",
-  "run_count": 21,
+  "generated_at": "2026-06-03T16:01:23.915580+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Lead Auditor",
@@ -170,6 +170,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "$69,000 starting"
+    },
+    {
+      "title": "Risk Consultant - Control Risks ONE",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/8B359F1E2A",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "4",
+      "reason": "Control Risks is a core target firm in the commercial intelligence/geopolitical risk zone, and a Risk Consultant role aligns directly with the candidate's IR/security background and research/writing skills. Job details are minimal, but the Consultant title typically implies 1–2 years of experience, which the candidate's substantial student-assistant and research portfolio can plausibly meet.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
