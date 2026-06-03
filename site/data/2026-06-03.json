@@ -1,7 +1,7 @@
 {
   "date": "2026-06-03",
-  "generated_at": "2026-06-03T09:01:18.169071+00:00",
-  "run_count": 8,
+  "generated_at": "2026-06-03T09:31:04.064269+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Lead Auditor",
@@ -44,6 +44,34 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Embedded Intelligence Program Manager",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000129948261-embedded-intelligence-program-manager",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Field alignment is excellent — Sibylline is a core target employer in commercial intelligence. However, the role hard-requires 5–7+ years of relevant experience plus 3–5 years of management experience, triggering the hard ineligibility rule on years of experience and seniority (Program Manager / team lead level).",
+      "location": "London, UK (hybrid)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Fachhandwerkerin/Fachhandwerker (w/m/d) im Referat – Gebäudetechnik",
+      "organisation": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-bg3-322-2-dg-03072026-1183222",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a skilled-trades position in building services (sanitary, heating, water and gas systems) requiring a completed German vocational training (Ausbildung) as Anlagenmechaniker SHK or equivalent, plus several years of relevant hands-on experience and certified physical fitness for working at heights. Hard ineligibility triggered: candidate lacks the required vocational training and technical trade skills, and the role is entirely outside the IR/policy/research field.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (part-time possible), permanent",
+      "deadline": "3 July 2026",
+      "salary": "€3,682.69 gross/month (experience level 3) + €220 ministerial allowance (TVöD E7 / A7)"
     }
   ]
 }
