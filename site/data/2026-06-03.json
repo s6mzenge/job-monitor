@@ -1,7 +1,7 @@
 {
   "date": "2026-06-03",
-  "generated_at": "2026-06-03T09:31:04.064269+00:00",
-  "run_count": 9,
+  "generated_at": "2026-06-03T10:01:13.984838+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Lead Auditor",
@@ -72,6 +72,48 @@
       "type": "Full-time (part-time possible), permanent",
       "deadline": "3 July 2026",
       "salary": "€3,682.69 gross/month (experience level 3) + €220 ministerial allowance (TVöD E7 / A7)"
+    },
+    {
+      "title": "Embedded Travel Security Specialist",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000129954239-embedded-travel-security-specialist",
+      "match": "medium",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "Sibylline is a core target organisation and the role draws on geopolitical risk and OSINT — directly aligned with the candidate's zone (b) targets. However, the role asks for at least three years of specific travel security/risk management experience plus familiarity with travel risk frameworks, which the candidate lacks; their experience is in academic research rather than operational security delivery.",
+      "location": "London, UK (hybrid, 3 days/week in client office)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Studentische Hilfskraft (d/m/w) in der Forschungsgruppe EU/Europa",
+      "organisation": "SWP Berlin",
+      "url": "https://www.swp-berlin.org/karriere/stellenangebot/studentische-hilfskraft-d-m-w-in-der-forschungsgruppe-eu-europa",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "5",
+      "seniority_score": "5",
+      "reason": "SWP is Germany's leading foreign-policy think-tank and the EU/Europa research group aligns directly with the candidate's IR focus and Franco-German/European interests. The profile (advanced social sciences study, native German + strong English, research and event-organisation experience) matches the candidate's CV precisely, and the student-assistant level fits their stage.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (10 hours/week), fixed-term 1 year with option to extend",
+      "deadline": "17.06.2026",
+      "salary": "TVöD Bund Entgeltgruppe 2"
+    },
+    {
+      "title": "Wissenschaftler:in (d/m/w) für das Projekt „Volumetrisches Imperium: Autonomie und Abhängigkeit im Export chinesischer Weltraum-infrastruktur\"",
+      "organisation": "SWP Berlin",
+      "url": "https://www.swp-berlin.org/karriere/stellenangebot/wissenschaftlerin-d-m-w",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "Field is broadly relevant (IR/IPE doctoral research at a top German policy institute), but the project demands deep China expertise, fieldwork in China and Ethiopia, and preferably fluent Mandarin — none of which the candidate has. The role is a PhD position requiring a specialised China/Africa background and lexicometric methods, which is a significant mismatch with the candidate's profile despite the MSc-level entry point.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (75%), Fixed-term until 30.09.2030",
+      "deadline": "17 June 2026",
+      "salary": "TVöD Bund up to E13 (pro-rated to 75%)"
     }
   ]
 }
