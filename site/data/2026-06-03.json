@@ -1,7 +1,7 @@
 {
   "date": "2026-06-03",
-  "generated_at": "2026-06-03T11:31:01.639391+00:00",
-  "run_count": 13,
+  "generated_at": "2026-06-03T12:01:13.598556+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Lead Auditor",
@@ -140,6 +140,20 @@
       "reason": "This is a commercial data science role focused on ESG/supply chain analytics, outside the candidate's policy/IR/intelligence target zones. It requires strong applied machine learning, statistical modelling, and GCP/AWS experience that the candidate does not demonstrably have, plus 2+ years of relevant work experience in data science specifically.",
       "location": "Hong Kong",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Employment Specialist – Connect to Work, Berkshire",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25214?c=palladium",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "Employment support / welfare-to-work coaching is unrelated to the candidate's core targets in IR research, geopolitical risk, or OSINT/policy work. The role requires hands-on case management and employment advisory skills the candidate does not have.",
+      "location": "Berkshire, United Kingdom",
+      "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
