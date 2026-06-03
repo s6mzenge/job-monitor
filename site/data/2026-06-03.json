@@ -1,7 +1,7 @@
 {
   "date": "2026-06-03",
-  "generated_at": "2026-06-03T10:01:13.984838+00:00",
-  "run_count": 10,
+  "generated_at": "2026-06-03T10:31:06.157147+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Lead Auditor",
@@ -114,6 +114,20 @@
       "type": "Part-time (75%), Fixed-term until 30.09.2030",
       "deadline": "17 June 2026",
       "salary": "TVöD Bund up to E13 (pro-rated to 75%)"
+    },
+    {
+      "title": "Head of School of Computer Science and Engineering",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=SCT376-R",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility on multiple grounds: the role explicitly requires a PhD, is a senior leadership appointment at Associate Professor/Professor level, and is in computer science and engineering — entirely outside the candidate's IR/policy field. Not a viable target on any dimension.",
+      "location": "Hendon, London",
+      "type": "Full-time",
+      "deadline": "Friday 26 June 2026",
+      "salary": "Competitive (Senior Staff grade)"
     }
   ]
 }
