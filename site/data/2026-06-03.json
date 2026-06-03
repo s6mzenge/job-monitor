@@ -1,7 +1,7 @@
 {
   "date": "2026-06-03",
-  "generated_at": "2026-06-03T17:01:12.343580+00:00",
-  "run_count": 24,
+  "generated_at": "2026-06-03T17:31:03.533321+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Lead Auditor",
@@ -182,6 +182,20 @@
       "reason": "Control Risks is a core target firm in the commercial intelligence/geopolitical risk zone, and a Risk Consultant role aligns directly with the candidate's IR/security background and research/writing skills. Job details are minimal, but the Consultant title typically implies 1–2 years of experience, which the candidate's substantial student-assistant and research portfolio can plausibly meet.",
       "location": "London, United Kingdom",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "FSSC Auditor -subcon.",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Monterey-FSSC-Auditor-subcon_/1400538433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a food safety auditing contractor role requiring GFSI auditor certification, a degree in food science/microbiology/chemistry, and 5+ years of food industry experience — none of which the candidate has. Hard ineligibility on the 5-year experience requirement and specialist certification.",
+      "location": "Monterey, Mexico",
+      "type": "Contractor (On Demand)",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
