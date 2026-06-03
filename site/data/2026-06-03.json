@@ -1,7 +1,7 @@
 {
   "date": "2026-06-03",
-  "generated_at": "2026-06-03T08:31:05.620461+00:00",
-  "run_count": 7,
+  "generated_at": "2026-06-03T09:01:18.169071+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Lead Auditor",
@@ -28,6 +28,20 @@
       "reason": "This is a senior Power BI developer role requiring 5+ years of specialist BI development experience, deep Power BI/DAX/SQL/Azure DevOps expertise, and technical leadership — none of which match the candidate's IR research profile. Hard ineligibility triggered on the 5+ years requirement and on specialist technical skills the candidate cannot substitute for.",
       "location": "Hong Kong",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Researcher",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/2E1807AD21",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "4",
+      "reason": "Control Risks is a core target firm in commercial intelligence and geopolitical risk — a direct fit for zone (b). A Researcher title typically maps to a junior/early-career analyst level suited to the candidate's MSc-in-progress and substantial research-assistant experience. Note: the job description provided is minimal, so specific skill/seniority requirements could not be fully verified.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
