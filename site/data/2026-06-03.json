@@ -1,7 +1,7 @@
 {
   "date": "2026-06-03",
-  "generated_at": "2026-06-03T15:01:14.245273+00:00",
-  "run_count": 20,
+  "generated_at": "2026-06-03T15:31:03.315730+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Lead Auditor",
@@ -156,6 +156,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Human Resources Associate",
+      "organisation": "Pew Trusts",
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/job/Washington-DC-Pew-Research-Center/Human-Resources-Associate_R003192-1",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "HR/talent is a field mismatch per the rubric — this is internal human resources operations, not policy, research, or intelligence work. The candidate also lacks HR-specific experience (Workday, PeopleSoft, recruitment cycles) and the role asks for 3–5 years in an HR/admin support role.",
+      "location": "Washington, DC, USA",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "$69,000 starting"
     }
   ]
 }
