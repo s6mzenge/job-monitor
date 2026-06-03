@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03T07:01:04.346760+00:00",
+  "last_updated": "2026-06-03T07:31:00.122223+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -18,10 +18,10 @@
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 62,
+      "consecutive_failures": 3,
+      "total_recent_failures": 63,
       "first_recent_failure": "2026-05-05T13:01:05.718078+00:00",
-      "last_recent_failure": "2026-06-03T07:01:04.346760+00:00",
+      "last_recent_failure": "2026-06-03T07:31:00.122223+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -29,26 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-04T07:02:54.491599+00:00",
-      "site": "RUSI",
-      "site_id": 65,
-      "url": "https://www.rusi.org/about/our-people/job-opportunities",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-04T07:30:58.561929+00:00",
-      "site": "RUSI",
-      "site_id": 65,
-      "url": "https://www.rusi.org/about/our-people/job-opportunities",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
-      "consecutive_count": 3
-    },
     {
       "timestamp": "2026-05-04T08:01:13.162458+00:00",
       "site": "RUSI",
@@ -11984,6 +11964,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-03T07:31:00.122223+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 3
     }
   ]
 }
