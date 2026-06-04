@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-04T08:01:09.608707+00:00",
+  "last_updated": "2026-06-04T08:31:07.550951+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -14,55 +14,21 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Uppsala UHGS": {
-      "site_id": 42,
-      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+    "Reprieve": {
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 16,
-      "first_recent_failure": "2026-05-06T12:31:02.476764+00:00",
-      "last_recent_failure": "2026-06-04T08:01:09.608707+00:00",
+      "total_recent_failures": 77,
+      "first_recent_failure": "2026-05-05T13:01:05.718078+00:00",
+      "last_recent_failure": "2026-06-04T08:31:07.550951+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    "LRQA": {
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 228,
-      "first_recent_failure": "2026-05-05T11:01:08.068273+00:00",
-      "last_recent_failure": "2026-06-04T08:01:09.608707+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7faefe2b6270>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-05T08:31:00.988844+00:00",
-      "site": "Wits University",
-      "site_id": 44,
-      "url": "https://www.wits.ac.za/vacancies/",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Associate Researcher 40% (AC.09.4)",
-      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106293&p_spid=5147822"
-    },
-    {
-      "timestamp": "2026-05-05T08:31:00.988844+00:00",
-      "site": "Impunity Watch",
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-05T09:01:14.088636+00:00",
       "site": "Dalberg",
@@ -12126,6 +12092,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7faefe2b6270>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-04T08:31:07.550951+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 1
     }
   ]
 }
