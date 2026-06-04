@@ -1,7 +1,7 @@
 {
   "date": "2026-06-04",
-  "generated_at": "2026-06-04T14:01:13.145735+00:00",
-  "run_count": 19,
+  "generated_at": "2026-06-04T14:31:08.691212+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Assistant Digital Producer (Term-Limited 3 years)",
@@ -730,6 +730,20 @@
       "type": "Full-time (part-time possible), permanent",
       "deadline": "Not specified",
       "salary": "TVöD Bund up to E9c"
+    },
+    {
+      "title": "Customer Success Manager, Beneficial Deployments, EMEA",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5153511008",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a commercial customer success role requiring 5+ years of customer-facing experience as a hard requirement, which the candidate (MSc in progress, only student-assistant roles) does not meet — triggering hard ineligibility on seniority. Field alignment is also weak: the role is about account management and product adoption, not policy research or intelligence analysis.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£125,000–£165,000 GBP"
     }
   ]
 }
