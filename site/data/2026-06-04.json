@@ -1,7 +1,7 @@
 {
   "date": "2026-06-04",
-  "generated_at": "2026-06-04T17:01:18.308414+00:00",
-  "run_count": 25,
+  "generated_at": "2026-06-04T17:31:01.473395+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Assistant Digital Producer (Term-Limited 3 years)",
@@ -744,6 +744,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "£125,000–£165,000 GBP"
+    },
+    {
+      "title": "Sales Development Representative",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Sales-Development-Representative-10019/1400956133",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "Pure B2B sales role focused on outbound prospecting, lead qualification, and CRM pipeline management — a clear field mismatch with the candidate's IR/policy research focus. While the seniority level is appropriate for an early-career candidate, the core skills (cold calling, sales methodology, commercial negotiation) are not part of the candidate's profile.",
+      "location": "New York, US",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
