@@ -220,6 +220,58 @@ def fetch_page(url, extra_headers=None, proxy=None):
     print(f"    Error fetching {url}: {last_err}")
     return None
 
+
+def request_with_retry(method, url, **kwargs):
+    """Like requests.request(), but retries transient failures.
+
+    Used by the JSON/XML/RSS API handlers, which previously called
+    requests.get/post directly with no retry — so a single transient blip
+    (HTTP 429/5xx, a Cloudflare 52x, or a connection timeout from a GHA
+    runner's datacenter IP) killed the whole site for that run. fetch_page
+    already had this resilience for HTML sites; this brings the API handlers
+    to parity.
+
+    Retry policy mirrors fetch_page exactly:
+      - HTTP 429 + 5xx (incl. Cloudflare 521-524): retry with backoff
+      - Timeouts / connection errors: retry with backoff
+      - Permanent errors (403, 404, other 4xx, parse errors): fail fast
+    Returns the Response object WITHOUT calling raise_for_status(), so the
+    caller keeps its existing raise_for_status()/.json()/try-except flow
+    unchanged (its except block still records the error message). On a final
+    transient failure the underlying exception is re-raised for the same
+    reason.
+    """
+    last_exc = None
+    for attempt in range(1, FETCH_MAX_ATTEMPTS + 1):
+        try:
+            resp = requests.request(method, url, **kwargs)
+            if resp.status_code in RETRY_STATUS_CODES and attempt < FETCH_MAX_ATTEMPTS:
+                print(
+                    f"    HTTP {resp.status_code} for {url} — retry in "
+                    f"{FETCH_RETRY_BACKOFF}s (attempt {attempt}/{FETCH_MAX_ATTEMPTS})"
+                )
+                time.sleep(FETCH_RETRY_BACKOFF)
+                continue
+            return resp
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+            last_exc = e
+            if attempt < FETCH_MAX_ATTEMPTS:
+                print(
+                    f"    Network error for {url} — retry in "
+                    f"{FETCH_RETRY_BACKOFF}s (attempt {attempt}/{FETCH_MAX_ATTEMPTS}): {e}"
+                )
+                time.sleep(FETCH_RETRY_BACKOFF)
+                continue
+            raise
+        except Exception:
+            # Permanent / non-retryable — let the caller's except handle it.
+            raise
+    # Exhausted retries on a retryable connection error.
+    if last_exc:
+        raise last_exc
+    return resp
+
+
 def extract_text(soup, selector=""):
     """Extract cleaned text from a BeautifulSoup object, optionally within a CSS selector."""
     for tag in soup(["script", "style", "nav", "footer", "header", "noscript"]):
@@ -405,7 +457,7 @@ def check_workday(site, seen_urls):
     while True:
         body = {**api["body"], "offset": offset, "limit": limit}
         try:
-            resp = requests.post(api["url"], headers=api["headers"], json=body, timeout=30)
+            resp = request_with_retry("POST", api["url"], headers=api["headers"], json=body, timeout=30)
             resp.raise_for_status()
             data = resp.json()
         except Exception as e:
@@ -464,7 +516,7 @@ def check_greenhouse(site, seen_urls):
     department_filter = site.get("department_filter", "")
 
     try:
-        resp = requests.get(api["url"], headers=HEADERS, timeout=30)
+        resp = request_with_retry("GET", api["url"], headers=HEADERS, timeout=30)
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
@@ -484,11 +536,19 @@ def check_greenhouse(site, seen_urls):
         desc_html = posting.get(fields.get("description_html", ""), "")
         job_id = str(posting.get(fields.get("id", ""), ""))
 
-        # Department filter: Greenhouse returns departments as a list of objects
+        # Department filter: Greenhouse returns departments as a list of objects.
+        # Accepts a string OR a list of strings — matches if ANY filter value is
+        # a substring of the (joined, lowercased) department names. The list form
+        # exists because a single exact label is brittle: Greenhouse boards often
+        # name the department something other than you'd guess (e.g. "Policy" or
+        # "Public Policy & Partnerships" rather than "Public Policy"), which
+        # silently filters everything out. Use the diagnostic to find the real
+        # label, or list a few plausible variants here.
         if department_filter:
             departments = posting.get("departments", [])
             dept_names = " ".join(d.get("name", "") for d in departments).lower()
-            if department_filter.lower() not in dept_names:
+            wanted = department_filter if isinstance(department_filter, list) else [department_filter]
+            if not any(w.lower() in dept_names for w in wanted if w):
                 continue
 
         # Location filter
@@ -530,7 +590,7 @@ def check_workable(site, seen_urls):
     fields = api["job_fields"]
 
     try:
-        resp = requests.get(api["url"], headers=HEADERS, timeout=30)
+        resp = request_with_retry("GET", api["url"], headers=HEADERS, timeout=30)
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
@@ -581,7 +641,7 @@ def check_personio(site, seen_urls):
     detail_template = site.get("job_detail_url_template", "")
 
     try:
-        resp = requests.get(api["url"], headers=HEADERS, timeout=30)
+        resp = request_with_retry("GET", api["url"], headers=HEADERS, timeout=30)
         resp.raise_for_status()
         root = ET.fromstring(resp.content)
     except Exception as e:
@@ -636,7 +696,7 @@ def check_taleo(site, seen_urls):
         return None
 
     try:
-        resp = requests.get(rss_url, headers=HEADERS, timeout=30)
+        resp = request_with_retry("GET", rss_url, headers=HEADERS, timeout=30)
         resp.raise_for_status()
         root = ET.fromstring(resp.content)
     except Exception as e:
@@ -682,7 +742,7 @@ def check_palladium(site, seen_urls):
     hdrs = {**HEADERS, **api.get("headers", {})}
 
     try:
-        resp = requests.get(api["url"], headers=hdrs, timeout=30)
+        resp = request_with_retry("GET", api["url"], headers=hdrs, timeout=30)
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
@@ -811,6 +871,11 @@ def fetch_detail_playwright(url, wait_selector="", wait_ms=5000):
         soup = BeautifulSoup(html, "html.parser")
         return extract_text(soup)
     except Exception as e:
+        # Non-fatal: caller falls back to listing-derived text. We still record
+        # so a systemic detail-fetch failure isn't completely invisible. (main()
+        # consumes-and-discards this when the handler ultimately returns a valid
+        # result, so it never masks a healthy run.)
+        _record_error(f"fetch_detail_playwright: {e}")
         print(f"    Playwright detail fetch error: {e}")
         return ""
 
@@ -1011,7 +1076,7 @@ def check_oracle_hcm(site, seen_urls):
     page_template = api.get("job_page_template", "")
 
     try:
-        resp = requests.get(listing_url, headers=HEADERS, timeout=30)
+        resp = request_with_retry("GET", listing_url, headers=HEADERS, timeout=30)
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
@@ -1099,7 +1164,7 @@ def check_hireserve(site, seen_urls):
     full_url = f"{api['url']}?{query_string}"
 
     try:
-        resp = requests.get(full_url, headers=HEADERS, timeout=30)
+        resp = request_with_retry("GET", full_url, headers=HEADERS, timeout=30)
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
@@ -1185,7 +1250,7 @@ def check_plumm_api(site, seen_urls):
     }
 
     try:
-        resp = requests.post(api["url"], headers=headers, json=body, timeout=30)
+        resp = request_with_retry("POST", api["url"], headers=headers, json=body, timeout=30)
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
@@ -1273,7 +1338,8 @@ def check_rippling_api(site, seen_urls):
     location_filter = site.get("location_filter", "")
 
     try:
-        resp = requests.get(
+        resp = request_with_retry(
+            "GET",
             api["url"],
             headers={**HEADERS, "Accept": "application/json"},
             timeout=30,
@@ -1663,11 +1729,47 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
         "messages": [{"role": "user", "content": user_message}],
     }
 
-    try:
-        resp = requests.post(
-            "https://api.anthropic.com/v1/messages",
-            headers=headers, json=payload, timeout=60,
-        )
+    # Transient API failures (429 rate-limit, 529 overloaded, 5xx) are common
+    # and self-resolve. Previously a single one produced a permanent
+    # llm_call_failed for that job. Retry those a few times (honouring the
+    # Retry-After header) while still failing fast on real errors like 400.
+    ANTHROPIC_RETRY_CODES = {429, 500, 502, 503, 504, 529}
+    ANTHROPIC_MAX_ATTEMPTS = 4
+    last_err = ""
+    for attempt in range(1, ANTHROPIC_MAX_ATTEMPTS + 1):
+        try:
+            resp = requests.post(
+                "https://api.anthropic.com/v1/messages",
+                headers=headers, json=payload, timeout=60,
+            )
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+            last_err = f"Anthropic API: {e}"
+            if attempt < ANTHROPIC_MAX_ATTEMPTS:
+                wait = 5 * attempt
+                print(f"    Anthropic network error — retry in {wait}s "
+                      f"(attempt {attempt}/{ANTHROPIC_MAX_ATTEMPTS}): {e}")
+                time.sleep(wait)
+                continue
+            break
+        except Exception as e:
+            _record_error(f"Anthropic API: {e}")
+            print(f"    Anthropic error: {e}")
+            return None
+
+        # Retryable status: back off (prefer server's Retry-After) and try again
+        if resp.status_code in ANTHROPIC_RETRY_CODES and attempt < ANTHROPIC_MAX_ATTEMPTS:
+            ra = resp.headers.get("retry-after", "")
+            try:
+                wait = float(ra)
+            except (TypeError, ValueError):
+                wait = 5 * attempt
+            wait = min(wait, 30)
+            last_err = f"Anthropic API: HTTP {resp.status_code}"
+            print(f"    Anthropic HTTP {resp.status_code} — retry in {wait:.0f}s "
+                  f"(attempt {attempt}/{ANTHROPIC_MAX_ATTEMPTS})")
+            time.sleep(wait)
+            continue
+
         # Surface the API's own error message on non-2xx responses, not just
         # the generic HTTP status. Anthropic returns a JSON body with an
         # explanatory message that is essential for debugging.
@@ -1677,7 +1779,13 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
             _record_error(f"Anthropic API: {err_msg}")
             print(f"    Anthropic error: {err_msg}")
             return None
-        data = resp.json()
+
+        try:
+            data = resp.json()
+        except Exception as e:
+            _record_error(f"Anthropic API: invalid JSON response: {e}")
+            print(f"    Anthropic error: invalid JSON response: {e}")
+            return None
         result = "".join(
             b.get("text", "") for b in data.get("content", [])
             if b.get("type") == "text"
@@ -1696,10 +1804,11 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
         print(result)
         print(f"    --- End Anthropic response ---")
         return result
-    except Exception as e:
-        _record_error(f"Anthropic API: {e}")
-        print(f"    Anthropic error: {e}")
-        return None
+
+    # Exhausted retries on a transient error.
+    _record_error(last_err or "Anthropic API: exhausted retries on transient error")
+    print(f"    Anthropic error: exhausted retries ({last_err})")
+    return None
 
 
 # ═══════════════════════════════════════════════════════════════
