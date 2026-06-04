@@ -367,8 +367,7 @@
           "description_html": "content"
         }
       },
-      "location_filter": "London",
-      "department_filter": "Public Policy"
+      "location_filter": "London"
     },
     {
       "id": 27,
@@ -724,11 +723,12 @@
     {
       "id": 58,
       "name": "Reprieve",
-      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
       "method": "html",
-      "selector": "div.entry-content",
-      "link_selector": "a.wp-block-button__link[href*='vacancy']",
-      "base_url": "https://reprieve.org"
+      "selector": "main, div.entry-content, article",
+      "link_selector": "",
+      "base_url": "https://reprieve.org.uk",
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 59,
@@ -1042,7 +1042,8 @@
       "method": "html",
       "selector": "ul#jobs_list_container",
       "link_selector": "ul#jobs_list_container a[href*='/jobs/']",
-      "base_url": "https://hanburystrategy.teamtailor.com"
+      "base_url": "https://hanburystrategy.teamtailor.com",
+      "proxy": "cloudflare_worker"
     }
   ]
 }
