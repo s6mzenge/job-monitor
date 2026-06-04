@@ -1,0 +1,63 @@
+{
+  "date": "2026-06-04",
+  "generated_at": "2026-06-04T05:01:07.015027+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Assistant Digital Producer (Term-Limited 3 years)",
+      "organisation": "Pew Trusts",
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/job/Washington-DC-Pew-Research-Center/Assistant-Digital-Producer--Term-Limited-3-years--_R003193",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "Pew Research Center is a highly relevant research organisation, but this specific role is digital production/publishing support rather than substantive research — it sits adjacent to the candidate's core targets. The candidate's technical skills (HTML, CSS, JS, Python) and detail-oriented research background transfer well, though they lack specific WordPress/Asana experience. Seniority (1–3 years, internships considered) fits cleanly.",
+      "location": "Washington, DC",
+      "type": "Full-time (Term-Limited, 3 years)",
+      "deadline": "Not specified",
+      "salary": "$61,690 starting"
+    },
+    {
+      "title": "Lead auditor - IMS/Food-contractor (Perth)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Perth-Lead-auditor-IMSFood-contractor-%28Perth%29-VIC/1400649533",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a food safety/management systems lead auditor role requiring FSSC 22000 and ISO certification qualifications and substantial third-party auditing experience — entirely unrelated to the candidate's IR/policy field and lacking the specialist credentials. Hard mismatch on field, skills, and seniority.",
+      "location": "Perth, VIC, Australia",
+      "type": "Contractor",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Sales Executive",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Sales-Executive-50088/1400651033",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "Pure B2B sales role in assurance/inspection services — a field mismatch for an IR researcher targeting policy, intelligence, or hybrid research roles. The role requires proven sales track record and Dynamics 365 CRM proficiency, which the candidate does not have.",
+      "location": "Kuala Lumpur, Malaysia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "IMS Lead Auditor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/IMS-Lead-Auditor-12950/1400651933",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an ISO compliance auditing role requiring mandatory Lead Auditor certifications for ISO 9001/14001/45001 and proven third-party audit experience — specialist qualifications the candidate does not hold. Field, skills, and seniority all mismatch the candidate's IR research profile.",
+      "location": "Jakarta, Indonesia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
