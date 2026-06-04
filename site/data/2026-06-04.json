@@ -1,7 +1,7 @@
 {
   "date": "2026-06-04",
-  "generated_at": "2026-06-04T09:25:21.845653+00:00",
-  "run_count": 10,
+  "generated_at": "2026-06-04T10:01:09.203071+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Assistant Digital Producer (Term-Limited 3 years)",
@@ -716,6 +716,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Sachbearbeiter:in Personal (d/m/w)",
+      "organisation": "SWP Berlin",
+      "url": "https://www.swp-berlin.org/karriere/stellenangebot/sachbearbeiterin-personal-d-m-w",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is an HR/payroll administration role requiring a completed commercial vocational training (kaufmännische Berufsausbildung), several years of relevant HR experience, and specialist knowledge of German tax/labour/social-security law and Datev payroll software — none of which the candidate has. Although SWP is a top-tier foreign policy think-tank, the role itself has no research content and triggers the vocational-training ineligibility.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (part-time possible), permanent",
+      "deadline": "Not specified",
+      "salary": "TVöD Bund up to E9c"
     }
   ]
 }
