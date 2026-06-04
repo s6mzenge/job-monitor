@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-04T08:31:07.550951+00:00",
+  "last_updated": "2026-06-04T09:01:21.176926+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -18,10 +18,10 @@
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 77,
+      "consecutive_failures": 2,
+      "total_recent_failures": 78,
       "first_recent_failure": "2026-05-05T13:01:05.718078+00:00",
-      "last_recent_failure": "2026-06-04T08:31:07.550951+00:00",
+      "last_recent_failure": "2026-06-04T09:01:21.176926+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -29,39 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-05T09:01:14.088636+00:00",
-      "site": "Dalberg",
-      "site_id": 14,
-      "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Project Manager- Media",
-      "job_url": "https://dalberg.hua.hrsmart.com/hr/ats/Posting/view/608"
-    },
-    {
-      "timestamp": "2026-05-05T09:01:14.088636+00:00",
-      "site": "Wits University",
-      "site_id": 44,
-      "url": "https://www.wits.ac.za/vacancies/",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Associate Researcher 40% (AC.09.4)",
-      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106293&p_spid=5147822"
-    },
-    {
-      "timestamp": "2026-05-05T09:01:14.088636+00:00",
-      "site": "Wits University",
-      "site_id": 44,
-      "url": "https://www.wits.ac.za/vacancies/",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "DENTAL ASSISTANT.3.05 (AD.15.5)",
-      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106292&p_spid=5147821"
-    },
     {
       "timestamp": "2026-05-05T09:31:00.690602+00:00",
       "site": "Dalberg",
@@ -12102,6 +12069,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-04T09:01:21.176926+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org/uk/work-for-reprieve/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/",
+      "consecutive_count": 2
     }
   ]
 }
