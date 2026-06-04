@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-04T11:01:18.414302+00:00",
+  "last_updated": "2026-06-04T11:31:02.382810+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,32 +13,6 @@
       "paused_until": "2026-06-06T06:30:59.079548+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Uppsala UHGS": {
-      "site_id": 42,
-      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 18,
-      "first_recent_failure": "2026-05-06T12:31:02.476764+00:00",
-      "last_recent_failure": "2026-06-04T11:01:18.414302+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    "Save the Children UK": {
-      "site_id": 55,
-      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 5,
-      "first_recent_failure": "2026-06-03T06:01:06.824057+00:00",
-      "last_recent_failure": "2026-06-04T11:01:18.414302+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#eaContainer\") to be visible"
     },
     "Reprieve": {
       "site_id": 58,
@@ -57,14 +31,14 @@
       "site_id": 70,
       "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 219,
+      "consecutive_failures": 2,
+      "total_recent_failures": 220,
       "first_recent_failure": "2026-05-05T11:31:03.152355+00:00",
-      "last_recent_failure": "2026-06-04T11:01:18.414302+00:00",
+      "last_recent_failure": "2026-06-04T11:31:02.382810+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fcacfe05040>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f95ea263980>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
@@ -11927,6 +11901,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fcacfe05040>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-04T11:31:02.382810+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f95ea263980>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 2
     }
   ]
 }
