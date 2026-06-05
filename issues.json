@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-05T15:31:06.063170+00:00",
+  "last_updated": "2026-06-05T16:01:05.587017+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,6 +13,19 @@
       "paused_until": "2026-06-06T06:30:59.079548+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Save the Children UK": {
+      "site_id": 55,
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 9,
+      "first_recent_failure": "2026-06-03T06:01:06.824057+00:00",
+      "last_recent_failure": "2026-06-05T16:01:05.587017+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#eaContainer\") to be visible"
     },
     "Reprieve": {
       "site_id": 58,
@@ -8670,6 +8683,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f5a710c1ee0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-05T16:01:05.587017+00:00",
+      "site": "Save the Children UK",
+      "site_id": 55,
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#eaContainer\") to be visible",
       "consecutive_count": 1
     }
   ]
