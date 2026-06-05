@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-05T15:01:15.217501+00:00",
+  "last_updated": "2026-06-05T15:31:06.063170+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -29,71 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-06T15:30:57.723426+00:00",
-      "site": "Palladium Group",
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Deputy Communications Manager – Editorial and Digital Content Lead, UK PACT",
-      "job_url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25128?c=palladium"
-    },
-    {
-      "timestamp": "2026-05-06T15:30:57.723426+00:00",
-      "site": "jobs.ac.uk",
-      "site_id": 6,
-      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Associate Lecturer (Teaching) in Quantitative Methods",
-      "job_url": "https://www.jobs.ac.uk/job/DRL493/associate-lecturer-teaching-in-quantitative-methods"
-    },
-    {
-      "timestamp": "2026-05-06T15:30:57.723426+00:00",
-      "site": "jobs.ac.uk",
-      "site_id": 6,
-      "url": "https://www.jobs.ac.uk/search/?placeId=ChIJdd4hrwug2EcRmSrV3Vo6llI&locationCoords%5B%5D=51.5072178%2C-0.1275862&country%5B%5D=United+Kingdom&country%5B%5D=GB&administrativeAreaLevel2%5B%5D=Greater+London&administrativeAreaLevel1%5B%5D=England&locality%5B%5D=London&activeFacet=academicDisciplineFacet&resetFacet=&keywords=&location=London%2C+UK&distance=0&academicDisciplineFacet-expander=on&academicDisciplineFacet%5B%5D=politics-and-government",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "LSE Fellow in International Social and Public Policy",
-      "job_url": "https://www.jobs.ac.uk/job/DRJ165/lse-fellow-in-international-social-and-public-policy"
-    },
-    {
-      "timestamp": "2026-05-06T15:30:57.723426+00:00",
-      "site": "Sibylline",
-      "site_id": 8,
-      "url": "https://careers.smartrecruiters.com/SibyllineLtd/",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Intelligence Analyst - LATAM",
-      "job_url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000124913717-intelligence-analyst-latam"
-    },
-    {
-      "timestamp": "2026-05-06T15:30:57.723426+00:00",
-      "site": "RUSI",
-      "site_id": 65,
-      "url": "https://www.rusi.org/about/our-people/job-opportunities",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
-      "consecutive_count": 4
-    },
-    {
-      "timestamp": "2026-05-06T15:30:57.723426+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Subcontractor for LRQA",
-      "job_url": "https://jobs.lrqa.com/job/Sofia-Subcontractor-for-LRQA/1290699101"
-    },
     {
       "timestamp": "2026-05-06T16:01:07.136651+00:00",
       "site": "Palladium Group",
