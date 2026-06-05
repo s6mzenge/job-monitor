@@ -1,7 +1,7 @@
 {
   "date": "2026-06-05",
-  "generated_at": "2026-06-05T13:31:05.834855+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-05T14:01:13.308028+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Product Manager AI",
@@ -128,6 +128,20 @@
       "type": "Part-time, 12-month fellowship",
       "deadline": "12 July 2026, 11:59pm EST",
       "salary": "$3,500 USD monthly stipend"
+    },
+    {
+      "title": "Public Engagement Officer (MSF IE)",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/public-engagement-officer-msf-ie-62300/en",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "The role is public engagement and events management for a humanitarian NGO — while MSF is mission-aligned, the actual work is events/communications rather than policy or humanitarian research, falling outside the candidate's core target zones. The role also emphasises proven event project management experience, which the candidate lacks.",
+      "location": "County Dublin, Ireland",
+      "type": "Full-time (37.5 hours/week, Permanent)",
+      "deadline": "02 July 2026",
+      "salary": "€48,426.32"
     }
   ]
 }
