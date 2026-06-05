@@ -1,7 +1,7 @@
 {
   "date": "2026-06-05",
-  "generated_at": "2026-06-05T13:01:16.937375+00:00",
-  "run_count": 17,
+  "generated_at": "2026-06-05T13:31:05.834855+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Product Manager AI",
@@ -114,6 +114,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Harry Frank Guggenheim Fellow for Nuclear Ethics and Security",
+      "organisation": "Carnegie Council",
+      "url": "https://www.carnegiecouncil.org/about/jobs/harry-frank-guggenheim-fellow-for-nuclear-ethics-and-security",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Field alignment is excellent (nuclear ethics, security, deterrence, and international order overlap with the candidate's IR/security focus), but the fellowship explicitly requires doctoral-level expertise (PhD or equivalent applied experience) plus an established professional network. Hard ineligibility on seniority — the candidate is an MSc student without a PhD or equivalent senior standing.",
+      "location": "Non-resident (open globally; based outside US permitted)",
+      "type": "Part-time, 12-month fellowship",
+      "deadline": "12 July 2026, 11:59pm EST",
+      "salary": "$3,500 USD monthly stipend"
     }
   ]
 }
