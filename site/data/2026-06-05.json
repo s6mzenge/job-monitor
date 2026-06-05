@@ -1,7 +1,7 @@
 {
   "date": "2026-06-05",
-  "generated_at": "2026-06-05T08:31:41.518303+00:00",
-  "run_count": 8,
+  "generated_at": "2026-06-05T09:01:10.783104+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Product Manager AI",
@@ -72,6 +72,20 @@
       "type": "Full-time",
       "deadline": "15/06/2026",
       "salary": "£52,088 plus up to 5% employee matched pension contribution"
+    },
+    {
+      "title": "Interim Head of Financial Operations",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/interim-head-of-financial-operations-612833.html",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior finance leadership role requiring a qualified accountant (ACA/ACCA/CIMA) — a hard ineligibility trigger. It also requires extensive leadership experience with line management of 13 staff, and the field (financial operations/treasury) is entirely unrelated to the candidate's IR research profile.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-Term (up to 13 months)",
+      "deadline": "19/06/2026",
+      "salary": "Competitive"
     }
   ]
 }
