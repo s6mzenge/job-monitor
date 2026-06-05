@@ -1,7 +1,7 @@
 {
   "date": "2026-06-05",
-  "generated_at": "2026-06-05T10:31:04.542771+00:00",
-  "run_count": 12,
+  "generated_at": "2026-06-05T11:01:09.003400+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Product Manager AI",
@@ -86,6 +86,20 @@
       "type": "Full-time, Fixed-Term (up to 13 months)",
       "deadline": "19/06/2026",
       "salary": "Competitive"
+    },
+    {
+      "title": "LVIA Senior Consultant",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/Edinburgh-United-Kingdom/LVIA-Senior-Consultant_R00030005",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a Landscape Visual Impact Assessment role requiring an accredited Landscape Architecture degree and Chartered Membership of the Landscape Institute (CMLI), which the candidate does not hold — hard ineligibility on specialist qualifications. The field (landscape planning for energy infrastructure) is also entirely unrelated to the candidate's IR/policy background.",
+      "location": "Edinburgh, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
