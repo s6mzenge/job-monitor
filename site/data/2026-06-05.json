@@ -1,0 +1,63 @@
+{
+  "date": "2026-06-05",
+  "generated_at": "2026-06-05T05:01:01.530913+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Product Manager AI",
+      "organisation": "Bridgespan Group",
+      "url": "https://phh.tbe.taleo.net/phh01/ats/careers/requisition.jsp?org=THEBRIDG12&cws=40&rid=521",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the role requires 5+ years of professional experience including 3+ years in product management, which the candidate (MSc-in-progress with student-assistant roles) does not have. The field (internal AI product management for a nonprofit consultancy) is also outside the candidate's research/policy/intelligence targets.",
+      "location": "Not specified",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Principal Security Consultant - DSS",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Principal-Security-Consultant-DSS-B37-7ES/1284924201",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior technical cybersecurity consulting role requiring deep hands-on expertise in Microsoft/CrowdStrike security ecosystems, SIEM/SOAR, and certifications like CISSP/SC-100, none of which the candidate has. The \"Principal\" title and significant MSSP delivery experience requirement also trigger hard ineligibility on seniority. Field is technical cyber engineering, not policy/IR research.",
+      "location": "Birmingham, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Auditor - SE Asia",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lead-Auditor-SE-Asia/1391140033",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Complete mismatch — this is a food safety auditing role requiring HACCP/ISO22000/BRC certifications and 5+ years in retail food safety, none of which the candidate has. Hard ineligibility on the 5+ years requirement and specialist food-safety credentials.",
+      "location": "Bangkok, Thailand",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "S&C Analyst - Americas",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/S&C-Analyst-Americas-66278/1400984633",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "This is a finance/accounting role focused on month-end close, journal entries, and balance sheet reconciliations — entirely outside the candidate's policy/IR/intelligence focus. It also likely requires Spanish for the Americas region and an accounting/finance degree the candidate does not hold.",
+      "location": "Mexico",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}

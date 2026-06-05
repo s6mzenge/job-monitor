@@ -1,18 +1,31 @@
 {
-  "last_updated": "2026-06-04T17:31:01.473395+00:00",
+  "last_updated": "2026-06-05T05:01:01.530913+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 198,
-      "first_recent_failure": "2026-05-05T17:35:22.171721+00:00",
+      "total_recent_failures": 197,
+      "first_recent_failure": "2026-05-06T05:01:09.215547+00:00",
       "last_recent_failure": "2026-06-04T06:30:59.079548+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-06T06:30:59.079548+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uppsala UHGS": {
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 22,
+      "first_recent_failure": "2026-05-06T12:31:02.476764+00:00",
+      "last_recent_failure": "2026-06-05T05:01:01.530913+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "Reprieve": {
       "site_id": 58,
@@ -29,114 +42,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-05T17:35:22.171721+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 10
-    },
-    {
-      "timestamp": "2026-05-05T17:35:22.171721+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
-      "consecutive_count": 12
-    },
-    {
-      "timestamp": "2026-05-05T17:35:22.171721+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Senior Associate / Manager, Responsible Sourcing Client Management",
-      "job_url": "https://jobs.lrqa.com/job/Villas-Universidad-Senior-Associate-Manager%2C-Responsible-Sourcing-Client-Management-PUE-72197/1390466833"
-    },
-    {
-      "timestamp": "2026-05-05T17:35:22.171721+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Head of Financial Controls",
-      "job_url": "https://jobs.lrqa.com/job/Birmingham-Head-of-Financial-Controls-B37-7ES/1390493433"
-    },
-    {
-      "timestamp": "2026-05-05T17:35:22.171721+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Financial Controls Accountant",
-      "job_url": "https://jobs.lrqa.com/job/Birmingham-Financial-Controls-Accountant-B37-7ES/1390497833"
-    },
-    {
-      "timestamp": "2026-05-05T17:35:22.171721+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Basic Surveyor",
-      "job_url": "https://jobs.lrqa.com/job/Lyon-Basic-Surveyor-69003/1291288701"
-    },
-    {
-      "timestamp": "2026-05-05T17:35:22.171721+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Inspection Coordinator",
-      "job_url": "https://jobs.lrqa.com/job/Mumbai-Inspection-Coordinator-400-093/1389754933"
-    },
-    {
-      "timestamp": "2026-05-05T17:35:22.171721+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Lead Assessor QSE",
-      "job_url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-QSE-69003/1371032033"
-    },
-    {
-      "timestamp": "2026-05-05T17:35:22.171721+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Lead Assessor QSE",
-      "job_url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-QSE-69003/1371037333"
-    },
-    {
-      "timestamp": "2026-05-05T17:35:22.171721+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Lead Assessor QSE",
-      "job_url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-QSE-69003/1371040233"
-    },
     {
       "timestamp": "2026-05-06T05:01:09.215547+00:00",
       "site": "Palladium Group",
@@ -10087,6 +9992,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f75390e3290>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-05T05:01:01.530913+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
       "consecutive_count": 1
     }
   ]
