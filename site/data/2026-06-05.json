@@ -1,7 +1,7 @@
 {
   "date": "2026-06-05",
-  "generated_at": "2026-06-05T12:01:11.428971+00:00",
-  "run_count": 15,
+  "generated_at": "2026-06-05T12:31:10.235407+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Product Manager AI",
@@ -97,6 +97,20 @@
       "seniority_score": "1",
       "reason": "This is a Landscape Visual Impact Assessment role requiring an accredited Landscape Architecture degree and Chartered Membership of the Landscape Institute (CMLI), which the candidate does not hold — hard ineligibility on specialist qualifications. The field (landscape planning for energy infrastructure) is also entirely unrelated to the candidate's IR/policy background.",
       "location": "Edinburgh, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Assessor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lead-Assessor-10437/1401276233",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "Social compliance auditing for supply chains is outside the candidate's target zones — it is not policy research, geopolitical risk, or OSINT/computational research. The role requires APSCA qualifications and proven social auditing experience the candidate lacks, with no transferable substitute from IR research.",
+      "location": "Germany (Remote with frequent travel)",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
