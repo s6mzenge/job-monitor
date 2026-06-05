@@ -1,7 +1,7 @@
 {
   "date": "2026-06-05",
-  "generated_at": "2026-06-05T14:31:04.665885+00:00",
-  "run_count": 20,
+  "generated_at": "2026-06-05T15:01:15.217501+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Product Manager AI",
@@ -142,6 +142,34 @@
       "type": "Full-time (37.5 hours/week, Permanent)",
       "deadline": "02 July 2026",
       "salary": "€48,426.32"
+    },
+    {
+      "title": "Legacy Officer",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/legacy-officer-62341/en",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "This is a legacy fundraising/marketing administration role at a humanitarian charity — the substantive work is fundraising operations, not policy or research, placing it outside the candidate's three target zones. While MSF is a humanitarian organisation, the role itself focuses on legacy gift marketing, CRM administration, and supporter communications, which does not align with the candidate's IR/security/policy research profile.",
+      "location": "London, United Kingdom (hybrid)",
+      "type": "Full-time, Permanent",
+      "deadline": "Monday, 22 June 2026",
+      "salary": "£36,437.07 to £44,534.19 per annum"
+    },
+    {
+      "title": "Student Onboarding Manager (Internal Only)",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/891966",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "This is an internal-only vacancy at SOAS, meaning external applicants are not eligible — a hard ineligibility. The role is also a managerial administrative position in doctoral school operations, outside the candidate's research-focused target zones.",
+      "location": "Bloomsbury, London, UK",
+      "type": "Full-time, Permanent",
+      "deadline": "Friday, 12 June 2026",
+      "salary": "£43,297.57 – £50,562.57 per annum"
     }
   ]
 }
