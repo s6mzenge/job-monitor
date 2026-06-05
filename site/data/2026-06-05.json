@@ -1,7 +1,7 @@
 {
   "date": "2026-06-05",
-  "generated_at": "2026-06-05T05:01:01.530913+00:00",
-  "run_count": 1,
+  "generated_at": "2026-06-05T05:31:00.206608+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Product Manager AI",
@@ -58,6 +58,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Strategic litigation at a human rights NGO is field-adjacent to the candidate's international law interests, but \"Team Manager\" at Reprieve's Project/Regional Leads/Managers pay band requires substantial litigation experience and likely a qualifying law background the candidate lacks. Hard ineligibility on seniority.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% employee matched pension contribution"
     }
   ]
 }
