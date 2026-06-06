@@ -1,7 +1,7 @@
 {
   "date": "2026-06-06",
-  "generated_at": "2026-06-06T08:01:02.037304+00:00",
-  "run_count": 7,
+  "generated_at": "2026-06-06T08:30:58.999352+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Senior Manager, AMR Transition",
@@ -30,6 +30,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Human rights litigation aligns well with the candidate's interests in international law and justice, but a \"Team Manager\" role at the Project/Regional Lead/Manager pay band requires substantial management and legal experience the candidate lacks. Strategic litigation also typically requires legal qualifications.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% employee matched pension contribution"
     }
   ]
 }
