@@ -1,0 +1,35 @@
+{
+  "date": "2026-06-06",
+  "generated_at": "2026-06-06T05:01:11.158513+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Senior Manager, AMR Transition",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25233?c=palladium",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "\"Senior Manager\" title indicates substantial leadership and sector-specific experience (likely antimicrobial resistance / global health programme management) that the candidate does not have — hard ineligibility on seniority. Field (global health programme delivery) is also outside the candidate's IR/security/policy targeting.",
+      "location": "United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Analyst, Turkey",
+      "organisation": "Eurasia Group",
+      "url": "https://ats.rippling.com/eurasia-group/jobs/26ffcff9-f848-4922-b61c-b86e5acfd201",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Field is a perfect fit (geopolitical risk at Eurasia Group is a core target zone), but two hard ineligibility rules trigger: native/near-native Turkish is required for the actual work (candidate has German/English/French only), and 5+ years of relevant professional experience is specified. The \"Senior Analyst\" title with expert-level Turkey expertise also places this well above the candidate's stage.",
+      "location": "Istanbul/Ankara preferred; London, Washington DC, or New York City alternate",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
