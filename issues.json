@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-06T06:30:57.847556+00:00",
+  "last_updated": "2026-06-06T07:01:04.192027+00:00",
   "site_summary": {
     "Open Society Foundations": {
       "site_id": 2,
       "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
       "method": "workday_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 16,
+      "consecutive_failures": 2,
+      "total_recent_failures": 17,
       "first_recent_failure": "2026-05-09T06:30:57.441694+00:00",
-      "last_recent_failure": "2026-06-06T06:30:57.847556+00:00",
+      "last_recent_failure": "2026-06-06T07:01:04.192027+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -18,10 +18,10 @@
       "site_id": 3,
       "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
       "method": "workday_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 15,
+      "consecutive_failures": 2,
+      "total_recent_failures": 16,
       "first_recent_failure": "2026-05-09T06:30:57.441694+00:00",
-      "last_recent_failure": "2026-06-06T06:30:57.847556+00:00",
+      "last_recent_failure": "2026-06-06T07:01:04.192027+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -31,14 +31,14 @@
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 16,
-      "total_recent_failures": 190,
+      "consecutive_failures": 1,
+      "total_recent_failures": 191,
       "first_recent_failure": "2026-05-08T07:30:58.561780+00:00",
-      "last_recent_failure": "2026-06-04T06:30:59.079548+00:00",
-      "currently_paused": true,
-      "paused_until": "2026-06-06T06:30:59.079548+00:00",
-      "last_type": "site_paused",
-      "last_message": "Site paused after 16 consecutive failures"
+      "last_recent_failure": "2026-06-06T07:01:04.192027+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0"
     },
     "Reprieve": {
       "site_id": 58,
@@ -57,10 +57,10 @@
       "site_id": 69,
       "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
       "method": "workday_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 12,
+      "consecutive_failures": 2,
+      "total_recent_failures": 13,
       "first_recent_failure": "2026-05-09T06:30:57.441694+00:00",
-      "last_recent_failure": "2026-06-06T06:30:57.847556+00:00",
+      "last_recent_failure": "2026-06-06T07:01:04.192027+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -70,10 +70,10 @@
       "site_id": 78,
       "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
       "method": "workday_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 15,
+      "consecutive_failures": 2,
+      "total_recent_failures": 16,
       "first_recent_failure": "2026-05-09T06:30:57.441694+00:00",
-      "last_recent_failure": "2026-06-06T06:30:57.847556+00:00",
+      "last_recent_failure": "2026-06-06T07:01:04.192027+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -81,103 +81,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-07T06:31:17.181908+00:00",
-      "site": "RUSI",
-      "site_id": 65,
-      "url": "https://www.rusi.org/about/our-people/job-opportunities",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
-      "consecutive_count": 12
-    },
-    {
-      "timestamp": "2026-05-07T06:31:17.181908+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Technical Manager - Nuclear Projects",
-      "job_url": "https://jobs.lrqa.com/job/Birmingham-Technical-Manager-Nuclear-Projects-B37-7ES/1371994733"
-    },
-    {
-      "timestamp": "2026-05-07T06:31:17.181908+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Paralegal",
-      "job_url": "https://jobs.lrqa.com/job/Birmingham-Paralegal-B37-7ES/1372220933"
-    },
-    {
-      "timestamp": "2026-05-07T06:31:17.181908+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Advisory Lead - APAC",
-      "job_url": "https://jobs.lrqa.com/job/Singapore-Advisory-Lead-APAC-Sing-119963/1381782033"
-    },
-    {
-      "timestamp": "2026-05-07T07:01:03.913135+00:00",
-      "site": "RUSI",
-      "site_id": 65,
-      "url": "https://www.rusi.org/about/our-people/job-opportunities",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='peoplehr.net']\") to be visible",
-      "consecutive_count": 13
-    },
-    {
-      "timestamp": "2026-05-07T07:01:03.913135+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Technical Manager - Nuclear Projects",
-      "job_url": "https://jobs.lrqa.com/job/Birmingham-Technical-Manager-Nuclear-Projects-B37-7ES/1371994733"
-    },
-    {
-      "timestamp": "2026-05-07T07:01:03.913135+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Paralegal",
-      "job_url": "https://jobs.lrqa.com/job/Birmingham-Paralegal-B37-7ES/1372220933"
-    },
-    {
-      "timestamp": "2026-05-07T07:01:03.913135+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Advisory Lead - APAC",
-      "job_url": "https://jobs.lrqa.com/job/Singapore-Advisory-Lead-APAC-Sing-119963/1381782033"
-    },
-    {
-      "timestamp": "2026-05-07T07:01:03.913135+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Lead Auditor - SE Asia",
-      "job_url": "https://jobs.lrqa.com/job/MYS-Lead-Auditor-SE-Asia-50088/1391140033"
-    },
     {
       "timestamp": "2026-05-07T07:30:59.160461+00:00",
       "site": "FTI Consulting",
@@ -8364,6 +8267,56 @@
       "type": "fetch_error",
       "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-06T07:01:04.192027+00:00",
+      "site": "Open Society Foundations",
+      "site_id": 2,
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-06T07:01:04.192027+00:00",
+      "site": "Pew Trusts",
+      "site_id": 3,
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-06T07:01:04.192027+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-06T07:01:04.192027+00:00",
+      "site": "ERM",
+      "site_id": 69,
+      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-06T07:01:04.192027+00:00",
+      "site": "Edelman",
+      "site_id": 78,
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 2
     }
   ]
 }
