@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-06-06T14:01:07.816445+00:00",
+  "last_updated": "2026-06-06T14:31:02.176021+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 15,
-      "total_recent_failures": 205,
+      "consecutive_failures": 16,
+      "total_recent_failures": 207,
       "first_recent_failure": "2026-05-08T07:30:58.561780+00:00",
-      "last_recent_failure": "2026-06-06T14:01:07.816445+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0"
+      "last_recent_failure": "2026-06-06T14:31:02.176021+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-06-08T14:31:02.176021+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
     },
     "Reprieve": {
       "site_id": 58,
@@ -29,38 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-07T14:03:46.093924+00:00",
-      "site": "Sibylline",
-      "site_id": 8,
-      "url": "https://careers.smartrecruiters.com/SibyllineLtd/",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Assistant Accountant",
-      "job_url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000125130057-assistant-accountant-"
-    },
-    {
-      "timestamp": "2026-05-07T14:03:46.093924+00:00",
-      "site": "FTI Consulting",
-      "site_id": 11,
-      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607",
-      "consecutive_count": 14
-    },
-    {
-      "timestamp": "2026-05-07T14:03:46.093924+00:00",
-      "site": "Wits University",
-      "site_id": 44,
-      "url": "https://www.wits.ac.za/vacancies/",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Lecturer: LINK Centre (3-Year Contract) (AC.08.4)",
-      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106356&p_spid=5150825"
-    },
     {
       "timestamp": "2026-05-07T14:31:14.757788+00:00",
       "site": "FTI Consulting",
@@ -8069,6 +8037,27 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
       "consecutive_count": 15
+    },
+    {
+      "timestamp": "2026-06-06T14:31:02.176021+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-06-06T14:31:02.176021+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-06-08T14:31:02.176021+00:00"
     }
   ]
 }
