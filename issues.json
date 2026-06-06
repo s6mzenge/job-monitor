@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-06T17:01:04.424443+00:00",
+  "last_updated": "2026-06-06T17:31:00.725471+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,19 +13,6 @@
       "paused_until": "2026-06-08T14:31:02.176021+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Uppsala UHGS": {
-      "site_id": 42,
-      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 25,
-      "first_recent_failure": "2026-05-11T16:01:06.175434+00:00",
-      "last_recent_failure": "2026-06-06T17:01:04.424443+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "Reprieve": {
       "site_id": 58,
@@ -44,60 +31,17 @@
       "site_id": 70,
       "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
       "method": "html",
-      "consecutive_failures": 3,
+      "consecutive_failures": 4,
       "total_recent_failures": 41,
-      "first_recent_failure": "2026-05-07T17:01:21.024411+00:00",
-      "last_recent_failure": "2026-06-06T17:01:04.424443+00:00",
+      "first_recent_failure": "2026-05-07T17:31:14.466312+00:00",
+      "last_recent_failure": "2026-06-06T17:31:00.725471+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f25af5b2ae0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f9bc516cfb0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-07T17:01:21.024411+00:00",
-      "site": "Wits University",
-      "site_id": 44,
-      "url": "https://www.wits.ac.za/vacancies/",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Laboratory Manager (AD.07) (AD.07.4)",
-      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106358&p_spid=5150827"
-    },
-    {
-      "timestamp": "2026-05-07T17:01:21.024411+00:00",
-      "site": "Wits University",
-      "site_id": 44,
-      "url": "https://www.wits.ac.za/vacancies/",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Head: Dean's office and strategic projects (AD.07.4)",
-      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106359&p_spid=5150828"
-    },
-    {
-      "timestamp": "2026-05-07T17:01:21.024411+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f1bb7f9e330>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-07T17:01:21.024411+00:00",
-      "site": "Hanover",
-      "site_id": 76,
-      "url": "https://job-boards.greenhouse.io/hanover",
-      "method": "greenhouse_api",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Account Director | Healthcare Communications | London",
-      "job_url": "https://job-boards.greenhouse.io/hanover/jobs/4412968007"
-    },
     {
       "timestamp": "2026-05-07T17:31:14.466312+00:00",
       "site": "HIS Hamburg",
@@ -7858,6 +7802,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f25af5b2ae0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-06-06T17:31:00.725471+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f9bc516cfb0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 4
     }
   ]
 }
