@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-06-07T08:01:06.181454+00:00",
+  "last_updated": "2026-06-07T08:31:12.387935+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 206,
-      "first_recent_failure": "2026-05-08T08:01:12.979287+00:00",
+      "total_recent_failures": 204,
+      "first_recent_failure": "2026-05-08T09:01:10.448309+00:00",
       "last_recent_failure": "2026-06-06T14:31:02.176021+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-08T14:31:02.176021+00:00",
@@ -29,106 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-08T08:01:12.979287+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-08T08:01:12.979287+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
-      "consecutive_count": 3
-    },
-    {
-      "timestamp": "2026-05-08T08:31:03.259226+00:00",
-      "site": "REDRESS",
-      "site_id": 32,
-      "url": "https://redress.org/about-us/work-at-redress/current-vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://redress.org/about-us/work-at-redress/current-vacancies/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-08T08:31:03.259226+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 3
-    },
-    {
-      "timestamp": "2026-05-08T08:31:03.259226+00:00",
-      "site": "HIS Hamburg",
-      "site_id": 43,
-      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-08T08:31:03.259226+00:00",
-      "site": "Institute for Government",
-      "site_id": 46,
-      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-08T08:31:03.259226+00:00",
-      "site": "Ceasefire Centre for Civilian Rights",
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.ceasefire.org/work-with-us/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-08T08:31:03.259226+00:00",
-      "site": "Paul Hamlyn Foundation",
-      "site_id": 64,
-      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-08T08:31:03.259226+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
-      "consecutive_count": 4
-    },
-    {
-      "timestamp": "2026-05-08T08:31:03.259226+00:00",
-      "site": "twentyfifty",
-      "site_id": 73,
-      "url": "https://twentyfifty.co.uk/contact/opportunities/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-08T09:01:10.448309+00:00",
       "site": "ICTJ",
