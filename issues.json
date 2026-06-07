@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-06-07T12:01:11.415249+00:00",
+  "last_updated": "2026-06-07T12:31:15.226992+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 197,
-      "first_recent_failure": "2026-05-08T12:30:54.023166+00:00",
+      "total_recent_failures": 196,
+      "first_recent_failure": "2026-05-08T13:00:58.094328+00:00",
       "last_recent_failure": "2026-06-06T14:31:02.176021+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-08T14:31:02.176021+00:00",
@@ -26,42 +26,9 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
-    },
-    "LRQA": {
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 38,
-      "first_recent_failure": "2026-05-11T05:00:56.226090+00:00",
-      "last_recent_failure": "2026-06-07T12:01:11.415249+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f3e4a6ea5a0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-08T12:30:54.023166+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 11
-    },
-    {
-      "timestamp": "2026-05-08T12:30:54.023166+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
-      "consecutive_count": 12
-    },
     {
       "timestamp": "2026-05-08T13:00:58.094328+00:00",
       "site": "ICTJ",
