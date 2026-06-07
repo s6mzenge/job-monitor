@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-06T17:31:00.725471+00:00",
+  "last_updated": "2026-06-07T05:01:11.781576+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -26,131 +26,9 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
-    },
-    "LRQA": {
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 41,
-      "first_recent_failure": "2026-05-07T17:31:14.466312+00:00",
-      "last_recent_failure": "2026-06-06T17:31:00.725471+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f9bc516cfb0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-07T17:31:14.466312+00:00",
-      "site": "HIS Hamburg",
-      "site_id": 43,
-      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='www.his-online.de', port=443): Max retries exceeded with url: /das-institut/arbeiten-am-his/aktuelle-ausschreibungen/ (Caused by NewConnectionError(\"HTTPSConnection(host='www.his-online.de', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-07T17:31:14.466312+00:00",
-      "site": "Wits University",
-      "site_id": 44,
-      "url": "https://www.wits.ac.za/vacancies/",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Laboratory Manager (AD.07) (AD.07.4)",
-      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106358&p_spid=5150827"
-    },
-    {
-      "timestamp": "2026-05-07T17:31:14.466312+00:00",
-      "site": "Wits University",
-      "site_id": 44,
-      "url": "https://www.wits.ac.za/vacancies/",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Head: Dean's office and strategic projects (AD.07.4)",
-      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106359&p_spid=5150828"
-    },
-    {
-      "timestamp": "2026-05-07T17:31:14.466312+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Programme Lead",
-      "job_url": "https://jobs.lrqa.com/job/Programme-Lead/1391454633"
-    },
-    {
-      "timestamp": "2026-05-07T17:31:14.466312+00:00",
-      "site": "Hanover",
-      "site_id": 76,
-      "url": "https://job-boards.greenhouse.io/hanover",
-      "method": "greenhouse_api",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Account Director | Healthcare Communications | London",
-      "job_url": "https://job-boards.greenhouse.io/hanover/jobs/4412968007"
-    },
-    {
-      "timestamp": "2026-05-08T05:01:01.241974+00:00",
-      "site": "Wits University",
-      "site_id": 44,
-      "url": "https://www.wits.ac.za/vacancies/",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Head: Dean's office and strategic projects (AD.07.4)",
-      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106359&p_spid=5150828"
-    },
-    {
-      "timestamp": "2026-05-08T05:01:01.241974+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Grocery Shopper (Canada)",
-      "job_url": "https://jobs.lrqa.com/job/New-Brunswick-Grocery-Shopper-%28Canada%29-NB/1372396833"
-    },
-    {
-      "timestamp": "2026-05-08T05:01:01.241974+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Inside Sales Executive German",
-      "job_url": "https://jobs.lrqa.com/job/Lisbon-Inside-Sales-Executive-German-1050-122/1382291433"
-    },
-    {
-      "timestamp": "2026-05-08T05:01:01.241974+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Programme Lead",
-      "job_url": "https://jobs.lrqa.com/job/Programme-Lead/1391454633"
-    },
-    {
-      "timestamp": "2026-05-08T05:01:01.241974+00:00",
-      "site": "Hanover",
-      "site_id": 76,
-      "url": "https://job-boards.greenhouse.io/hanover",
-      "method": "greenhouse_api",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Account Director | Healthcare Communications | London",
-      "job_url": "https://job-boards.greenhouse.io/hanover/jobs/4412968007"
-    },
     {
       "timestamp": "2026-05-08T05:30:58.632168+00:00",
       "site": "LRQA",
