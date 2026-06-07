@@ -1,7 +1,7 @@
 {
   "date": "2026-06-07",
-  "generated_at": "2026-06-07T16:31:02.588128+00:00",
-  "run_count": 24,
+  "generated_at": "2026-06-07T17:01:07.878869+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -16,6 +16,20 @@
       "type": "Full-time",
       "deadline": "15/06/2026",
       "salary": "£52,088 plus up to 5% employee matched pension contribution"
+    },
+    {
+      "title": "Enterprise Account Executive, Manufacturing",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5237973008",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a pure enterprise B2B sales role requiring 8+ years of SaaS sales experience in the manufacturing sector — a hard ineligibility trigger on years of experience, and a field mismatch (sales, not research/policy). The candidate has no sales background or manufacturing expertise.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified (placeholder £1 listed)"
     }
   ]
 }
