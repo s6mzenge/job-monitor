@@ -1,6 +1,21 @@
 {
   "date": "2026-06-07",
-  "generated_at": "2026-06-07T07:01:07.814363+00:00",
-  "run_count": 5,
-  "jobs": []
+  "generated_at": "2026-06-07T07:31:02.624979+00:00",
+  "run_count": 6,
+  "jobs": [
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Human rights litigation aligns with the candidate's interests in international law and justice, but a \"Team Manager\" role at Reprieve's Project/Regional Manager band requires substantial professional and likely legal-practice experience. Hard ineligibility on seniority given the management title and likely legal qualification expectations.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% employee matched pension contribution"
+    }
+  ]
 }
