@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-06-07T11:30:58.292484+00:00",
+  "last_updated": "2026-06-07T12:01:11.415249+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 199,
-      "first_recent_failure": "2026-05-08T11:31:09.722302+00:00",
+      "total_recent_failures": 197,
+      "first_recent_failure": "2026-05-08T12:30:54.023166+00:00",
       "last_recent_failure": "2026-06-06T14:31:02.176021+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-08T14:31:02.176021+00:00",
@@ -31,78 +31,17 @@
       "site_id": 70,
       "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 37,
+      "consecutive_failures": 2,
+      "total_recent_failures": 38,
       "first_recent_failure": "2026-05-11T05:00:56.226090+00:00",
-      "last_recent_failure": "2026-06-07T11:30:58.292484+00:00",
+      "last_recent_failure": "2026-06-07T12:01:11.415249+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f607fc10ec0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f3e4a6ea5a0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-08T11:31:09.722302+00:00",
-      "site": "SOAS University of London",
-      "site_id": 34,
-      "url": "https://vacancies.soas.ac.uk/#vacancies",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://vacancies.soas.ac.uk/#vacancies\", waiting until \"domcontentloaded\"",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-08T11:31:09.722302+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 9
-    },
-    {
-      "timestamp": "2026-05-08T11:31:09.722302+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
-      "consecutive_count": 10
-    },
-    {
-      "timestamp": "2026-05-08T12:00:58.975073+00:00",
-      "site": "Middlesex University",
-      "site_id": 35,
-      "url": "https://jobs.mdx.ac.uk/vacancies.aspx?cat=-1",
-      "method": "html",
-      "type": "gemini_call_failed",
-      "message": "Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=***",
-      "job_title": "Product Specialist",
-      "job_url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=DLS23-R"
-    },
-    {
-      "timestamp": "2026-05-08T12:00:58.975073+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 10
-    },
-    {
-      "timestamp": "2026-05-08T12:00:58.975073+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftrustforlondon.org.uk%2Fabout%2Fvacancies%2F",
-      "consecutive_count": 11
-    },
     {
       "timestamp": "2026-05-08T12:30:54.023166+00:00",
       "site": "ICTJ",
@@ -7467,6 +7406,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f607fc10ec0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-07T12:01:11.415249+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f3e4a6ea5a0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 2
     }
   ]
 }
