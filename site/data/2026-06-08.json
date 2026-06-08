@@ -1,7 +1,7 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T15:31:07.926663+00:00",
-  "run_count": 22,
+  "generated_at": "2026-06-08T16:01:11.501968+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Consultant - 2026/2027 Start Date (Singapore)",
@@ -142,6 +142,20 @@
       "type": "Full-time, 6-month FTC",
       "deadline": "Monday 22 June 2026, 12.00pm (BST)",
       "salary": "£32,826.19 - £40,120.90 per annum"
+    },
+    {
+      "title": "Policy Counsel, EMEA",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5233645008",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the role requires a law degree and qualification to practice law in an EMEA jurisdiction, which the candidate does not hold, and prefers 6+ years of legal experience. While AI policy is a core field of interest, this is a qualified-lawyer position outside the candidate's reach.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
