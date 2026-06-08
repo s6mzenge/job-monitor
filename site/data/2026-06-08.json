@@ -1,7 +1,7 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T16:01:11.501968+00:00",
-  "run_count": 23,
+  "generated_at": "2026-06-08T16:31:00.500757+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Consultant - 2026/2027 Start Date (Singapore)",
@@ -156,6 +156,34 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Afghan Investigator Talent Pool",
+      "organisation": "Centre for Information Resilience",
+      "url": "https://apply.workable.com/centre-for-information-resilience/j/1244F11E55",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "CIR open-source investigations are a core target zone, but this specific talent pool is for Afghan investigators — almost certainly requiring Dari/Pashto language skills, Afghanistan regional expertise, and likely lived experience, none of which the candidate has. Field is adjacent but the role-specific requirements create a substantive mismatch.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Human rights litigation aligns broadly with the candidate's international law interests, but \"Team Manager\" at Reprieve's Project/Regional Lead pay band implies significant managerial and legal experience the candidate lacks. Strategic litigation roles typically require a qualifying law degree and several years of experience — hard ineligibility on seniority.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% employee matched pension contribution"
     }
   ]
 }
