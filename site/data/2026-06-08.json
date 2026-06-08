@@ -1,7 +1,7 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T12:31:03.144130+00:00",
-  "run_count": 16,
+  "generated_at": "2026-06-08T13:01:14.642324+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Consultant - 2026/2027 Start Date (Singapore)",
@@ -86,6 +86,20 @@
       "type": "Full-time (Fixed-Term, 36 months)",
       "deadline": "22/06/2026",
       "salary": "£44,753 - £49,738"
+    },
+    {
+      "title": "Digital Marketing Specialist",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Digital-Marketing-Specialist-176-74/1401847033",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: role explicitly requires 5+ years of B2B digital marketing experience, which the candidate does not have. Field is also a mismatch — commercial B2B marketing for assurance/certification services is unrelated to the candidate's IR/policy focus, and required tooling (Pardot, HubSpot, Salesforce, SEO/SEM platforms) is outside their skill set.",
+      "location": "Athens, Greece (Hybrid)",
+      "type": "Contract (12-month maternity cover)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
