@@ -1,7 +1,7 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T14:01:13.228806+00:00",
-  "run_count": 19,
+  "generated_at": "2026-06-08T14:31:18.934540+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Consultant - 2026/2027 Start Date (Singapore)",
@@ -114,6 +114,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Up to £67,000 yearly"
+    },
+    {
+      "title": "Researcher (Fluent French or Portuguese): Six month Fixed Term Contract",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/2AAEA1ADC8",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "Control Risks is a core target firm in commercial intelligence and the researcher role aligns directly with the candidate's interests. However, the role explicitly requires fluency in French or Portuguese — the candidate has only B1 French and no Portuguese, which triggers the hard ineligibility rule on required working language.",
+      "location": "London, United Kingdom",
+      "type": "Contract (6-month Fixed Term)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
