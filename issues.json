@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T13:31:02.513288+00:00",
+  "last_updated": "2026-06-08T14:01:13.228806+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,6 +13,19 @@
       "paused_until": "2026-06-08T14:31:02.176021+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uppsala UHGS": {
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 33,
+      "first_recent_failure": "2026-05-11T16:01:06.175434+00:00",
+      "last_recent_failure": "2026-06-08T14:01:13.228806+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "Reprieve": {
       "site_id": 58,
@@ -29,16 +42,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-09T14:00:55.671204+00:00",
-      "site": "REDRESS",
-      "site_id": 32,
-      "url": "https://redress.org/about-us/work-at-redress/current-vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 522 Server Error: <none> for url: https://redress.org/about-us/work-at-redress/current-vacancies/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-09T15:31:00.501759+00:00",
       "site": "Global Rights Compliance",
@@ -7187,6 +7190,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fb0d662e5a0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-08T14:01:13.228806+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 1
     }
   ]
 }
