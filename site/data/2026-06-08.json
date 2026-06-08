@@ -1,7 +1,7 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T06:01:05.895963+00:00",
-  "run_count": 3,
+  "generated_at": "2026-06-08T06:31:12.140371+00:00",
+  "run_count": 4,
   "jobs": [
     {
       "title": "Consultant - 2026/2027 Start Date (Singapore)",
@@ -15,6 +15,20 @@
       "location": "Singapore",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Research Administrator: Communications & Events (AD.09)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106429&p_spid=5153818",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The role is a communications/events administrator position rather than a research role, and explicitly restricts applications to South African citizens and permanent residents — a hard ineligibility for this candidate. It also requires an Honours degree in Communications/Marketing/Journalism and specific digital-comms tooling (WordPress, Canva, SEO, social media analytics) outside the candidate's profile.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time, fixed-term until 31 July 2027",
+      "deadline": "15 June 2026",
       "salary": "Not specified"
     }
   ]
