@@ -1,7 +1,7 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T09:31:03.690452+00:00",
-  "run_count": 10,
+  "generated_at": "2026-06-08T10:01:16.524770+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Consultant - 2026/2027 Start Date (Singapore)",
@@ -72,6 +72,20 @@
       "type": "Contract (6 Month FTC)",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Postdoctoral Research Associate",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/postdoctoral-research-associate-613080.html",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the role explicitly requires a PhD in data science, infrastructure studies, or a related field, which the candidate (currently MSc) does not hold. The substantive focus on datafied welfare states and platform/AI infrastructures is broadly relevant to the candidate's hybrid tech-policy interests, but the post also demands specialist technical experience analysing data infrastructures and building public-facing databases that exceeds the candidate's current skill set.",
+      "location": "London, UK",
+      "type": "Full-time (Fixed-Term, 36 months)",
+      "deadline": "22/06/2026",
+      "salary": "£44,753 - £49,738"
     }
   ]
 }
