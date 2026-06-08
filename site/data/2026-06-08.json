@@ -1,7 +1,7 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T07:01:07.974856+00:00",
-  "run_count": 5,
+  "generated_at": "2026-06-08T07:30:58.522380+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Consultant - 2026/2027 Start Date (Singapore)",
@@ -42,6 +42,20 @@
       "reason": "Control Risks and intelligence work are core target areas for the candidate, but \"Associate Director\" is a senior title that requires substantial professional experience the candidate (MSc in progress, only student-assistant roles) does not have. Hard ineligibility on seniority.",
       "location": "London, United Kingdom",
       "type": "Contract (Maternity Cover)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Strategic Account Manager, Cyber APAC",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Strategic-Account-Manager%2C-Cyber-APAC-Sing-119963/1401688233",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a cybersecurity sales role focused on revenue targets, cold-calling, and CRM pipeline management — pure commercial sales rather than intelligence or policy analysis. It also requires a minimum of 5 years' experience as a hard requirement, triggering the seniority ineligibility rule.",
+      "location": "Singapore",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
