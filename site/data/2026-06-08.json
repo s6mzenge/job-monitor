@@ -1,7 +1,7 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T14:31:18.934540+00:00",
-  "run_count": 20,
+  "generated_at": "2026-06-08T15:01:21.110457+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Consultant - 2026/2027 Start Date (Singapore)",
@@ -128,6 +128,20 @@
       "type": "Contract (6-month Fixed Term)",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Community and Events Fundraising Assistant",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/community-and-events-fundraising-assistant-62364/en",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "Although MSF is a humanitarian organisation, this is a fundraising/donor stewardship role with no research, policy, or analytical content relevant to the candidate's IR/security focus. The work centres on supporter care, event admin, and database management — transferable but a weak field fit and not aligned with any of the candidate's three target zones.",
+      "location": "London, United Kingdom (hybrid)",
+      "type": "Full-time, 6-month FTC",
+      "deadline": "Monday 22 June 2026, 12.00pm (BST)",
+      "salary": "£32,826.19 - £40,120.90 per annum"
     }
   ]
 }
