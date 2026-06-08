@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-06-08T07:30:58.522380+00:00",
+  "last_updated": "2026-06-08T08:01:20.390357+00:00",
   "site_summary": {
     "Global Rights Compliance": {
       "site_id": 37,
       "url": "https://globalrightscompliance.org/work-with-us/",
       "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 53,
+      "consecutive_failures": 2,
+      "total_recent_failures": 54,
       "first_recent_failure": "2026-05-09T15:31:00.501759+00:00",
-      "last_recent_failure": "2026-06-08T07:30:58.522380+00:00",
+      "last_recent_failure": "2026-06-08T08:01:20.390357+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    25 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\""
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    29 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\""
     },
     "ICTJ": {
       "site_id": 41,
@@ -27,6 +27,19 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
+    "Uppsala UHGS": {
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 32,
+      "first_recent_failure": "2026-05-11T16:01:06.175434+00:00",
+      "last_recent_failure": "2026-06-08T08:01:20.390357+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
     "Reprieve": {
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
@@ -39,49 +52,22 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
+    },
+    "LRQA": {
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 44,
+      "first_recent_failure": "2026-05-11T05:00:56.226090+00:00",
+      "last_recent_failure": "2026-06-08T08:01:20.390357+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7faa02fe9f40>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-09T07:32:21.187455+00:00",
-      "site": "Open Society Foundations",
-      "site_id": 2,
-      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 3
-    },
-    {
-      "timestamp": "2026-05-09T07:32:21.187455+00:00",
-      "site": "Pew Trusts",
-      "site_id": 3,
-      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 3
-    },
-    {
-      "timestamp": "2026-05-09T07:32:21.187455+00:00",
-      "site": "Edelman",
-      "site_id": 78,
-      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 3
-    },
-    {
-      "timestamp": "2026-05-09T08:01:03.152371+00:00",
-      "site": "Impunity Watch",
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-09T14:00:55.671204+00:00",
       "site": "REDRESS",
@@ -7159,6 +7145,36 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    25 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-08T08:01:20.390357+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    29 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-08T08:01:20.390357+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-08T08:01:20.390357+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7faa02fe9f40>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 1
     }
   ]

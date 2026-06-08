@@ -1,7 +1,7 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T07:30:58.522380+00:00",
-  "run_count": 6,
+  "generated_at": "2026-06-08T08:01:20.390357+00:00",
+  "run_count": 7,
   "jobs": [
     {
       "title": "Consultant - 2026/2027 Start Date (Singapore)",
@@ -56,6 +56,20 @@
       "reason": "This is a cybersecurity sales role focused on revenue targets, cold-calling, and CRM pipeline management — pure commercial sales rather than intelligence or policy analysis. It also requires a minimum of 5 years' experience as a hard requirement, triggering the seniority ineligibility rule.",
       "location": "Singapore",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Insights Manager (Media and Research) (6 Month FTC)",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Senior-Insights-Manager--Media-and-Research---6-Month-FTC-_JR102598",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a commercial PR/marketing insights role focused on brand strategy and media measurement for corporate clients, not policy, geopolitical risk, or OSINT work — outside the candidate's target zones. The role also requires expert hands-on experience with specific commercial listening/analytics tools (Brandwatch, Meltwater, Synthesio, Quid, Tableau, etc.) the candidate does not have, and the \"Senior Manager\" title with client/account management and mentoring responsibilities implies several years of agency experience beyond the candidate's student-assistant background.",
+      "location": "London, United Kingdom",
+      "type": "Contract (6 Month FTC)",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
