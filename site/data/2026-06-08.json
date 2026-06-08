@@ -1,7 +1,7 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T13:01:14.642324+00:00",
-  "run_count": 17,
+  "generated_at": "2026-06-08T13:31:02.513288+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Consultant - 2026/2027 Start Date (Singapore)",
@@ -100,6 +100,20 @@
       "type": "Contract (12-month maternity cover)",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Embedded Intelligence Program Manager",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000130804759-embedded-intelligence-program-manager",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Field alignment is excellent — Sibylline is a core target and corporate intelligence/geopolitical analysis fits squarely with the candidate's interests. However, the role is a Program Manager position requiring 5–7+ years of experience including 3–5 years of management experience as a hard requirement, which triggers the hard ineligibility rule on seniority for a candidate still completing their MSc.",
+      "location": "London, UK (hybrid)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Up to £67,000 yearly"
     }
   ]
 }
