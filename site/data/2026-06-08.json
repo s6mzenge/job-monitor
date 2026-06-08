@@ -1,7 +1,7 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T06:31:12.140371+00:00",
-  "run_count": 4,
+  "generated_at": "2026-06-08T07:01:07.974856+00:00",
+  "run_count": 5,
   "jobs": [
     {
       "title": "Consultant - 2026/2027 Start Date (Singapore)",
@@ -29,6 +29,20 @@
       "location": "Johannesburg, South Africa",
       "type": "Full-time, fixed-term until 31 July 2027",
       "deadline": "15 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Director - Dispute Intelligence (Maternity Cover)",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/29777C7499",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Control Risks and intelligence work are core target areas for the candidate, but \"Associate Director\" is a senior title that requires substantial professional experience the candidate (MSc in progress, only student-assistant roles) does not have. Hard ineligibility on seniority.",
+      "location": "London, United Kingdom",
+      "type": "Contract (Maternity Cover)",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
