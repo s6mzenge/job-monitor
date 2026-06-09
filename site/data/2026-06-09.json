@@ -1,7 +1,7 @@
 {
   "date": "2026-06-09",
-  "generated_at": "2026-06-09T16:01:20.066159+00:00",
-  "run_count": 22,
+  "generated_at": "2026-06-09T16:31:12.985051+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -168,6 +168,20 @@
       "reason": "Although S-RM is a target-zone intelligence consultancy, this is a specialist digital forensics role requiring hands-on technical expertise with tools like Cellebrite, AXIOM, X-Ways, FTK and forensic acquisition of Windows/MacOS/iOS/Android devices — none of which the candidate has. The role also asks for 3+ years of professional forensic/technical investigation experience and the ability to lead investigations and manage clients, which exceeds the candidate's student-assistant background.",
       "location": "London, UK",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior HR Business Partner (UK)",
+      "organisation": "CIFF",
+      "url": "https://apply.workable.com/j/D8B99FED50",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior HR business partner role, which is a complete mismatch for the candidate's IR research profile. HR is not a target field, the candidate lacks HR-specific expertise, and the \"Senior\" level requires substantial professional HR experience the candidate does not have.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
