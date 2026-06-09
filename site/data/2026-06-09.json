@@ -1,7 +1,7 @@
 {
   "date": "2026-06-09",
-  "generated_at": "2026-06-09T14:31:13.785320+00:00",
-  "run_count": 20,
+  "generated_at": "2026-06-09T15:31:10.859895+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -112,6 +112,34 @@
       "reason": "Although S-RM is a core target firm in commercial intelligence, this is an HR/Talent Acquisition role with no analytical or research content — pure recruitment coordination falls under the \"HR/talent\" mismatch category. The candidate's research and policy skills do not transfer meaningfully to ATS management and candidate screening.",
       "location": "London, UK",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Internal Communications Manager",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/893702",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is an internal communications management role in a university comms team — not policy or research, and outside all three target zones. The role explicitly requires demonstrable team management experience and senior stakeholder advisory experience (Grade 8, Manager title with line management duties), which the candidate does not have. Hard ineligibility on seniority.",
+      "location": "Bloomsbury, London, UK",
+      "type": "Full-time, Permanent",
+      "deadline": "9 July 2026",
+      "salary": "£51,902.57 - £61,048.57 per annum"
+    },
+    {
+      "title": "Power Platform Developer",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Leamington-Power-Platform-Developer-B37-7ES/1402527833",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "3",
+      "reason": "This is a specialist Microsoft Power Platform developer role requiring 3+ years of hands-on experience with Power Apps, Power Automate, Dataverse, and ITIL processes — none of which align with the candidate's IR/policy research profile. Both field and skills are a clear mismatch.",
+      "location": "Birmingham, UK",
+      "type": "Full-time (12-month FTC, Maternity cover)",
       "deadline": "Not specified",
       "salary": "Not specified"
     }

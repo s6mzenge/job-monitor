@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-06-09T14:31:13.785320+00:00",
+  "last_updated": "2026-06-09T15:31:10.859895+00:00",
   "site_summary": {
-    "Wiener Holocaust Library": {
-      "site_id": 4,
-      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-05-13T06:01:10.918301+00:00",
-      "last_recent_failure": "2026-06-09T14:31:13.785320+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwienerholocaustlibrary.org%2Fwhat-we-do%2Fsupport-our-work%2Fwork-with-us%2F"
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -26,6 +13,19 @@
       "paused_until": "2026-06-11T09:01:10.947789+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "S-RM": {
+      "site_id": 49,
+      "url": "https://www.s-rminform.com/careers/open-positions?locations=London",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-05-12T09:31:00.241468+00:00",
+      "last_recent_failure": "2026-06-09T15:31:10.859895+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.s-rminform.com/careers/open-positions?locations=London\", waiting until \"networkidle\""
     },
     "Reprieve": {
       "site_id": 58,
@@ -7500,6 +7500,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwienerholocaustlibrary.org%2Fwhat-we-do%2Fsupport-our-work%2Fwork-with-us%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-09T15:31:10.859895+00:00",
+      "site": "S-RM",
+      "site_id": 49,
+      "url": "https://www.s-rminform.com/careers/open-positions?locations=London",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.s-rminform.com/careers/open-positions?locations=London\", waiting until \"networkidle\"",
       "consecutive_count": 1
     }
   ]
