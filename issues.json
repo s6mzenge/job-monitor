@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-06-09T14:01:20.345124+00:00",
+  "last_updated": "2026-06-09T14:31:13.785320+00:00",
   "site_summary": {
+    "Wiener Holocaust Library": {
+      "site_id": 4,
+      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-05-13T06:01:10.918301+00:00",
+      "last_recent_failure": "2026-06-09T14:31:13.785320+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwienerholocaustlibrary.org%2Fwhat-we-do%2Fsupport-our-work%2Fwork-with-us%2F"
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -7477,6 +7490,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7feebf65fef0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-09T14:31:13.785320+00:00",
+      "site": "Wiener Holocaust Library",
+      "site_id": 4,
+      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwienerholocaustlibrary.org%2Fwhat-we-do%2Fsupport-our-work%2Fwork-with-us%2F",
       "consecutive_count": 1
     }
   ]
