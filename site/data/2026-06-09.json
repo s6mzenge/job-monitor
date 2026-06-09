@@ -1,7 +1,7 @@
 {
   "date": "2026-06-09",
-  "generated_at": "2026-06-09T10:31:04.810183+00:00",
-  "run_count": 12,
+  "generated_at": "2026-06-09T11:01:11.686946+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -30,6 +30,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Policy Fellow – Bloomberg LSE Mayoral Strategic Authorities Programme",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRV359/policy-fellow-bloomberg-lse-mayoral-strategic-authorities-programme",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior Policy Fellow role requiring substantial experience leading projects in public policy/government, designing executive education, and deep expertise in UK local government and devolution — well beyond the candidate's MSc-in-progress stage and student-assistant experience. The field (UK domestic devolution and city governance) is also adjacent rather than core to the candidate's IR/international law focus. Hard ineligibility on seniority.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-Term Contract (until 31 December 2028)",
+      "deadline": "22 June 2026",
+      "salary": "£53,949 to £62,160 pa (potential to progress to £69,073)"
     }
   ]
 }
