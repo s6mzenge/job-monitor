@@ -1,31 +1,18 @@
 {
-  "last_updated": "2026-06-09T08:31:05.138330+00:00",
+  "last_updated": "2026-06-09T09:01:10.947789+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 15,
-      "total_recent_failures": 205,
+      "consecutive_failures": 16,
+      "total_recent_failures": 207,
       "first_recent_failure": "2026-05-14T14:11:30.222227+00:00",
-      "last_recent_failure": "2026-06-09T08:31:05.138330+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0"
-    },
-    "Centre for Information Resilience": {
-      "site_id": 57,
-      "url": "https://www.info-res.org/careers/current-openings/",
-      "method": "html",
-      "consecutive_failures": 5,
-      "total_recent_failures": 6,
-      "first_recent_failure": "2026-05-14T13:47:06.891210+00:00",
-      "last_recent_failure": "2026-06-09T08:31:05.138330+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 520 Server Error: <none> for url: https://www.info-res.org/careers/current-openings/"
+      "last_recent_failure": "2026-06-09T09:01:10.947789+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-06-11T09:01:10.947789+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
     },
     "Reprieve": {
       "site_id": 58,
@@ -7400,6 +7387,27 @@
       "type": "fetch_error",
       "message": "fetch_page: 520 Server Error: <none> for url: https://www.info-res.org/careers/current-openings/",
       "consecutive_count": 5
+    },
+    {
+      "timestamp": "2026-06-09T09:01:10.947789+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-06-09T09:01:10.947789+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-06-11T09:01:10.947789+00:00"
     }
   ]
 }

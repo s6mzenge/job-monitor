@@ -1,7 +1,7 @@
 {
   "date": "2026-06-09",
-  "generated_at": "2026-06-09T08:31:05.138330+00:00",
-  "run_count": 8,
+  "generated_at": "2026-06-09T09:01:10.947789+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -16,6 +16,20 @@
       "type": "Full-time",
       "deadline": "15/06/2026",
       "salary": "£52,088 plus up to 5% employee matched pension contribution"
+    },
+    {
+      "title": "Senior Digital Forensics Consultant",
+      "organisation": "S-RM",
+      "url": "https://www.s-rminform.com/open-position-senior-digital-forensics-consultant",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility on seniority — the role requires a minimum of 8 years of professional experience plus expert-witness capability and deep specialist digital forensics tooling (Cellebrite, AXIOM, X-Ways, FTK), none of which the candidate has. While S-RM is a target firm in the commercial intelligence zone, this is a senior technical specialist position far beyond the candidate's stage.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
