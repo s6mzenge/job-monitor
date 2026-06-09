@@ -1,7 +1,7 @@
 {
   "date": "2026-06-09",
-  "generated_at": "2026-06-09T13:31:16.982819+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-09T14:01:20.345124+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -69,6 +69,48 @@
       "seniority_score": "1",
       "reason": "This is a senior PR account leadership role for a global sportswear brand — outside the candidate's policy/research/intelligence target zones. The Account Director title requires substantial agency/client leadership experience, team management, and budget ownership that the candidate (MSc in progress, student-assistant background) does not have. Hard ineligibility on seniority.",
       "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Post-Doctoral Fellowship (AC.09.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106470&p_spid=5154839",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility on multiple counts: the role requires a completed PhD (candidate is MSc in progress) and specialist expertise in population genetics, bioinformatics, and genomic data analysis — none of which the candidate has. The field (molecular bioscience) is entirely unrelated to IR/policy.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time (2-year fellowship)",
+      "deadline": "31 July 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "ASSISTANT ANIMAL ATTENDANT.9.07 (AD.13.5)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106468&p_spid=5154837",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "Complete mismatch — animal husbandry role in a research animal facility requires hands-on animal care experience and is entirely unrelated to the candidate's IR/policy background. Requires minimum 2 years of experience working with animals, which the candidate lacks.",
+      "location": "Johannesburg, South Africa",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Recruitment Coordinator, London",
+      "organisation": "S-RM",
+      "url": "https://www.s-rminform.com/open-position-recruitment-coordinator-london",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "Although S-RM is a core target firm in commercial intelligence, this is an HR/Talent Acquisition role with no analytical or research content — pure recruitment coordination falls under the \"HR/talent\" mismatch category. The candidate's research and policy skills do not transfer meaningfully to ATS management and candidate screening.",
+      "location": "London, UK",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
