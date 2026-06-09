@@ -1,7 +1,7 @@
 {
   "date": "2026-06-09",
-  "generated_at": "2026-06-09T15:31:10.859895+00:00",
-  "run_count": 21,
+  "generated_at": "2026-06-09T16:01:20.066159+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -140,6 +140,34 @@
       "reason": "This is a specialist Microsoft Power Platform developer role requiring 3+ years of hands-on experience with Power Apps, Power Automate, Dataverse, and ITIL processes — none of which align with the candidate's IR/policy research profile. Both field and skills are a clear mismatch.",
       "location": "Birmingham, UK",
       "type": "Full-time (12-month FTC, Maternity cover)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Monitoring, Evaluation & Learning Officer - Response & Impact",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25239?c=palladium",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "MEL roles at development consultancies sit outside the candidate's core targets (academic/policy research, commercial intelligence, OSINT/hybrid tech). While research and data analysis skills could partially transfer, MEL typically requires specific methodological training (logframes, theories of change, development evaluation frameworks) the candidate lacks, and the role is unlikely to be entry-level given the \"Officer\" framing.",
+      "location": "United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Digital Forensics Associate",
+      "organisation": "S-RM",
+      "url": "https://www.s-rminform.com/open-position-digital-forensics-associate",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "Although S-RM is a target-zone intelligence consultancy, this is a specialist digital forensics role requiring hands-on technical expertise with tools like Cellebrite, AXIOM, X-Ways, FTK and forensic acquisition of Windows/MacOS/iOS/Android devices — none of which the candidate has. The role also asks for 3+ years of professional forensic/technical investigation experience and the ability to lead investigations and manage clients, which exceeds the candidate's student-assistant background.",
+      "location": "London, UK",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
