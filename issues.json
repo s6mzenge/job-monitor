@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-06-09T12:01:14.005944+00:00",
+  "last_updated": "2026-06-09T12:31:07.743331+00:00",
   "site_summary": {
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 55,
-      "first_recent_failure": "2026-05-11T07:30:52.386109+00:00",
-      "last_recent_failure": "2026-06-09T12:01:14.005944+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    14 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\""
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -26,19 +13,6 @@
       "paused_until": "2026-06-11T09:01:10.947789+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Institute for Government": {
-      "site_id": 46,
-      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 5,
-      "first_recent_failure": "2026-05-11T05:00:56.226090+00:00",
-      "last_recent_failure": "2026-06-09T12:01:14.005944+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.instituteforgovernment.org.uk', port=443): Max retries exceeded with url: /about-us/careers/current-vacancies (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)')))"
     },
     "Reprieve": {
       "site_id": 58,

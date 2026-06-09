@@ -1,7 +1,7 @@
 {
   "date": "2026-06-09",
-  "generated_at": "2026-06-09T12:01:14.005944+00:00",
-  "run_count": 15,
+  "generated_at": "2026-06-09T12:31:07.743331+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -44,6 +44,20 @@
       "type": "Full-time, Fixed-Term Contract (until 31 December 2028)",
       "deadline": "22 June 2026",
       "salary": "£53,949 to £62,160 pa (potential to progress to £69,073)"
+    },
+    {
+      "title": "HR Administrative Assistant (AD.11.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106469&p_spid=5154838",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "This is an HR administrative support role with no connection to the candidate's policy, research, or intelligence targets — pure HR/talent administration falls in the field mismatch category. The role also requires 3 years of prior HR experience, which the candidate does not have.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "14 June 2026",
+      "salary": "Not specified"
     }
   ]
 }
