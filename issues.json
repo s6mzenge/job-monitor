@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-09T08:01:14.405410+00:00",
+  "last_updated": "2026-06-09T08:31:05.138330+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
-      "consecutive_failures": 14,
-      "total_recent_failures": 204,
+      "consecutive_failures": 15,
+      "total_recent_failures": 205,
       "first_recent_failure": "2026-05-14T14:11:30.222227+00:00",
-      "last_recent_failure": "2026-06-09T08:01:14.405410+00:00",
+      "last_recent_failure": "2026-06-09T08:31:05.138330+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -18,10 +18,10 @@
       "site_id": 57,
       "url": "https://www.info-res.org/careers/current-openings/",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 5,
+      "consecutive_failures": 5,
+      "total_recent_failures": 6,
       "first_recent_failure": "2026-05-14T13:47:06.891210+00:00",
-      "last_recent_failure": "2026-06-09T08:01:14.405410+00:00",
+      "last_recent_failure": "2026-06-09T08:31:05.138330+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -39,19 +39,6 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
-    },
-    "LRQA": {
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 51,
-      "first_recent_failure": "2026-05-11T05:00:56.226090+00:00",
-      "last_recent_failure": "2026-06-09T08:01:14.405410+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fb6357bb560>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
@@ -7393,6 +7380,26 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fb6357bb560>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-09T08:31:05.138330+00:00",
+      "site": "ICTJ",
+      "site_id": 41,
+      "url": "https://www.ictj.org/careers-0",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
+      "consecutive_count": 15
+    },
+    {
+      "timestamp": "2026-06-09T08:31:05.138330+00:00",
+      "site": "Centre for Information Resilience",
+      "site_id": 57,
+      "url": "https://www.info-res.org/careers/current-openings/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 520 Server Error: <none> for url: https://www.info-res.org/careers/current-openings/",
+      "consecutive_count": 5
     }
   ]
 }
