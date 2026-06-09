@@ -1,7 +1,7 @@
 {
   "date": "2026-06-09",
-  "generated_at": "2026-06-09T13:01:16.705848+00:00",
-  "run_count": 17,
+  "generated_at": "2026-06-09T13:31:16.982819+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -57,6 +57,20 @@
       "location": "Johannesburg, South Africa",
       "type": "Full-time",
       "deadline": "14 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Account Director",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Account-Director_JR102689",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior PR account leadership role for a global sportswear brand — outside the candidate's policy/research/intelligence target zones. The Account Director title requires substantial agency/client leadership experience, team management, and budget ownership that the candidate (MSc in progress, student-assistant background) does not have. Hard ineligibility on seniority.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
