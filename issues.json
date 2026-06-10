@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-10T10:01:17.151647+00:00",
+  "last_updated": "2026-06-10T10:31:06.623599+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -18,27 +18,14 @@
       "site_id": 42,
       "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 39,
+      "consecutive_failures": 2,
+      "total_recent_failures": 40,
       "first_recent_failure": "2026-05-11T16:01:06.175434+00:00",
-      "last_recent_failure": "2026-06-10T10:01:17.151647+00:00",
+      "last_recent_failure": "2026-06-10T10:31:06.623599+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    "Save the Children UK": {
-      "site_id": 55,
-      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 14,
-      "first_recent_failure": "2026-06-03T06:01:06.824057+00:00",
-      "last_recent_failure": "2026-06-10T10:01:17.151647+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/\", waiting until \"domcontentloaded\""
     },
     "Reprieve": {
       "site_id": 58,
@@ -57,77 +44,17 @@
       "site_id": 70,
       "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 55,
+      "consecutive_failures": 2,
+      "total_recent_failures": 56,
       "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
-      "last_recent_failure": "2026-06-10T10:01:17.151647+00:00",
+      "last_recent_failure": "2026-06-10T10:31:06.623599+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f7d66fd8080>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f5a0cf55af0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-11T10:14:05.344048+00:00",
-      "site": "Global Rights Compliance",
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://globalrightscompliance.org/work-with-us/\", waiting until \"networkidle\"",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-11T10:14:05.344048+00:00",
-      "site": "HIS Hamburg",
-      "site_id": 43,
-      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-11T10:14:05.344048+00:00",
-      "site": "Institute for Government",
-      "site_id": 46,
-      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-11T10:14:05.344048+00:00",
-      "site": "Ceasefire Centre for Civilian Rights",
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.ceasefire.org/work-with-us/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-11T10:14:05.344048+00:00",
-      "site": "Paul Hamlyn Foundation",
-      "site_id": 64,
-      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-11T10:14:05.344048+00:00",
-      "site": "twentyfifty",
-      "site_id": 73,
-      "url": "https://twentyfifty.co.uk/contact/opportunities/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-11T11:01:08.525147+00:00",
       "site": "Institute of Race Relations",
@@ -7557,6 +7484,26 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f7d66fd8080>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-10T10:31:06.623599+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-10T10:31:06.623599+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f5a0cf55af0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 2
     }
   ]
 }

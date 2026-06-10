@@ -1,7 +1,7 @@
 {
   "date": "2026-06-10",
-  "generated_at": "2026-06-10T10:01:17.151647+00:00",
-  "run_count": 11,
+  "generated_at": "2026-06-10T10:31:06.623599+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Practice Lead, Finance and Investment (Build and Scale a New Practice)",
@@ -56,6 +56,48 @@
       "reason": "This is an administrative/operations coordination role focused on scheduling, invoicing, and vendor management in Southeast Asia — unrelated to IR, policy research, intelligence, or OSINT. While the ESG context is mildly policy-adjacent, the actual work is logistical client-service coordination with no research component.",
       "location": "Jakarta, Indonesia",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Global Strategy and Operations Manager",
+      "organisation": "Dalberg",
+      "url": "https://dalberg.hua.hrsmart.com/hr/ats/Posting/view/877",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "This is an internal operations/chief-of-staff role at a consulting firm rather than a research or policy analyst role — it sits outside the candidate's three target zones (policy research, geopolitical risk analysis, hybrid OSINT/research-engineer). It also asks for 3-5 years of strategy consulting or cross-functional ops experience, which the candidate (still completing MSc, with student-assistant roles only) does not have.",
+      "location": "Global (multi-location)",
+      "type": "Full-time",
+      "deadline": "29/6/2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Burkina Faso Country Researcher",
+      "organisation": "Centre for Information Resilience",
+      "url": "https://apply.workable.com/centre-for-information-resilience/j/F32030AE64",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "CIR open-source investigations is a core target zone, but the \"Senior\" title and country-specialist framing indicate substantial regional expertise and years of experience the candidate lacks. Burkina Faso country research also almost certainly requires French fluency well beyond the candidate's B1 level, and likely deep Sahel/West Africa specialism — hard ineligibility on seniority.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Training Specialist Afghanistan",
+      "organisation": "Centre for Information Resilience",
+      "url": "https://apply.workable.com/centre-for-information-resilience/j/0D72759688",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "CIR is a core target organisation for OSINT/digital investigations work, but this specific role is an Afghanistan specialist training position that almost certainly requires regional expertise, likely Dari/Pashto language skills, and prior training-delivery experience the candidate lacks. The specialist framing and training-delivery focus do not align with the candidate's profile despite the strong organisational fit.",
+      "location": "Not specified",
+      "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
