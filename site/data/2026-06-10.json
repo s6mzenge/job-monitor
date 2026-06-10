@@ -1,7 +1,7 @@
 {
   "date": "2026-06-10",
-  "generated_at": "2026-06-10T14:01:23.421844+00:00",
-  "run_count": 19,
+  "generated_at": "2026-06-10T14:31:20.467682+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Practice Lead, Finance and Investment (Build and Scale a New Practice)",
@@ -114,6 +114,20 @@
       "type": "Full-time",
       "deadline": "15/06/2026",
       "salary": "£52,088 plus up to 5% employee matched pension contribution"
+    },
+    {
+      "title": "Studentische Hilfskraft (d/m/w) für das Forschungscluster »Klima- und Energiepolitik«",
+      "organisation": "SWP Berlin",
+      "url": "https://www.swp-berlin.org/karriere/stellenangebot/studentische-hilfskraft-d-m-w-fuer-das-forschungscluster-klima-und-energiepolitik",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "SWP is a top-tier German foreign and security policy think-tank — strong institutional fit — but climate and energy policy sits outside the candidate's core interests (international law, security, atrocity prevention). Skills (German native, research, literature review, Office) match cleanly and the student-assistant level is exactly right.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (10 hours/week), fixed-term 1 year",
+      "deadline": "26 June 2026",
+      "salary": "TVöD Bund, Entgeltgruppe 2"
     }
   ]
 }
