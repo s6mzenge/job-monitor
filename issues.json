@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-06-10T08:31:20.587466+00:00",
+  "last_updated": "2026-06-10T09:01:19.600963+00:00",
   "site_summary": {
+    "Global Rights Compliance": {
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 57,
+      "first_recent_failure": "2026-05-11T09:30:52.374679+00:00",
+      "last_recent_failure": "2026-06-10T09:01:19.600963+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    24 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\""
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -26,6 +39,19 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
+    },
+    "LRQA": {
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 54,
+      "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
+      "last_recent_failure": "2026-06-10T09:01:19.600963+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fe12f38b830>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
@@ -7477,6 +7503,26 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-10T09:01:19.600963+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    24 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-10T09:01:19.600963+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fe12f38b830>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 1
     }
   ]
