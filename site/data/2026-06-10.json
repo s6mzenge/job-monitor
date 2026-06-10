@@ -1,7 +1,7 @@
 {
   "date": "2026-06-10",
-  "generated_at": "2026-06-10T05:01:13.252141+00:00",
-  "run_count": 1,
+  "generated_at": "2026-06-10T05:31:01.523132+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Practice Lead, Finance and Investment (Build and Scale a New Practice)",
@@ -44,6 +44,20 @@
       "type": "Part-time (0.8 FTE, 28 hours), Fixed-Term 6 months",
       "deadline": "05/07/2026",
       "salary": "£34,925 - £39,297 (pro rata)"
+    },
+    {
+      "title": "Coordinator",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Coordinator-12950/1402669133",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "This is an administrative/operations coordination role focused on scheduling, invoicing, and vendor management in Southeast Asia — unrelated to IR, policy research, intelligence, or OSINT. While the ESG context is mildly policy-adjacent, the actual work is logistical client-service coordination with no research component.",
+      "location": "Jakarta, Indonesia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
