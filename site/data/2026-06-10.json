@@ -1,7 +1,7 @@
 {
   "date": "2026-06-10",
-  "generated_at": "2026-06-10T16:02:08.922236+00:00",
-  "run_count": 22,
+  "generated_at": "2026-06-10T16:31:06.182346+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Practice Lead, Finance and Investment (Build and Scale a New Practice)",
@@ -142,6 +142,20 @@
       "type": "Full-time, Permanent (35.5 hours/week)",
       "deadline": "Monday 29 June 2026",
       "salary": "£51,569 to £59,282 per annum"
+    },
+    {
+      "title": "Technical Supervisor: Facilities (AD.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106472&p_spid=5155836",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a facilities/building maintenance management role requiring specialist technical knowledge of electrical, HVAC, and construction systems — completely unrelated to the candidate's IR/policy background. It also requires 8 years of experience including 4 in management, triggering hard ineligibility on seniority.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "17 June 2026",
+      "salary": "Not specified"
     }
   ]
 }
