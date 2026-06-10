@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T17:31:03.504255+00:00",
+  "last_updated": "2026-06-10T05:01:13.252141+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -14,32 +14,6 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Wits University": {
-      "site_id": 44,
-      "url": "https://www.wits.ac.za/vacancies/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-05-12T07:30:56.089870+00:00",
-      "last_recent_failure": "2026-06-09T17:31:03.504255+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.wits.ac.za', port=443): Max retries exceeded with url: /vacancies/ (Caused by NewConnectionError(\"HTTPSConnection(host='www.wits.ac.za', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
-    },
-    "S-RM": {
-      "site_id": 49,
-      "url": "https://www.s-rminform.com/careers/open-positions?locations=London",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-05-12T09:31:00.241468+00:00",
-      "last_recent_failure": "2026-06-09T17:31:03.504255+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.s-rminform.com/careers/open-positions?locations=London\", waiting until \"networkidle\""
-    },
     "Reprieve": {
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
@@ -52,89 +26,22 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
-    }
-  },
-  "issues": [
-    {
-      "timestamp": "2026-05-11T05:00:56.226090+00:00",
-      "site": "Aegis Trust",
-      "site_id": 5,
-      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://aegistrust.online/get-involved/work-at-aegis/",
-      "consecutive_count": 1
     },
-    {
-      "timestamp": "2026-05-11T05:00:56.226090+00:00",
-      "site": "HIS Hamburg",
-      "site_id": 43,
-      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-11T05:00:56.226090+00:00",
-      "site": "Impunity Watch",
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 401 Client Error: Unauthorized for url: https://www.impunitywatch.org/join-us/join-our-team/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-11T05:00:56.226090+00:00",
-      "site": "Institute for Government",
-      "site_id": 46,
-      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-11T05:00:56.226090+00:00",
-      "site": "Ceasefire Centre for Civilian Rights",
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.ceasefire.org/work-with-us/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-11T05:00:56.226090+00:00",
-      "site": "Paul Hamlyn Foundation",
-      "site_id": 64,
-      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-11T05:00:56.226090+00:00",
-      "site": "LRQA",
+    "LRQA": {
       "site_id": 70,
       "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
       "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f37574f05f0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-11T05:00:56.226090+00:00",
-      "site": "twentyfifty",
-      "site_id": 73,
-      "url": "https://twentyfifty.co.uk/contact/opportunities/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 415 Client Error: Unsupported Media Type for url: https://twentyfifty.co.uk/contact/opportunities/",
-      "consecutive_count": 1
-    },
+      "consecutive_failures": 1,
+      "total_recent_failures": 54,
+      "first_recent_failure": "2026-05-11T07:01:03.993955+00:00",
+      "last_recent_failure": "2026-06-10T05:01:13.252141+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f034d528500>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+    }
+  },
+  "issues": [
     {
       "timestamp": "2026-05-11T07:01:03.993955+00:00",
       "site": "LRQA",
@@ -7543,6 +7450,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.s-rminform.com/careers/open-positions?locations=London\", waiting until \"networkidle\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-10T05:01:13.252141+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f034d528500>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 1
     }
   ]

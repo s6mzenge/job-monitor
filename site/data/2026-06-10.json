@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-10",
+  "generated_at": "2026-06-10T05:01:13.252141+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Practice Lead, Finance and Investment (Build and Scale a New Practice)",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25242?c=palladium",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior \"Practice Lead\" role requiring extensive experience building and scaling a finance/investment practice — well beyond the candidate's MSc-stage profile. Field (finance/investment advisory) is also outside the candidate's IR/policy and intelligence targets. Hard ineligibility on seniority.",
+      "location": "United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Chief of Staff, Global Partnerships",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5251864008",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior GTM/commercial Chief of Staff role requiring 7+ years of experience including prior Chief of Staff or management consulting tenure supporting C-suite leaders — a hard ineligibility on seniority. The field (cloud/AI commercial partnerships) is also outside the candidate's policy/research target zones, and the role requires specific knowledge of hyperscaler/SI/ISV ecosystems the candidate lacks.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£195,000–£225,000 GBP"
+    },
+    {
+      "title": "Migrant Futures Institute Events & Communications Coordinator",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/migrant-futures-institute-events-communications-coordinator-613115.html",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "Migration research and policy at a university institute is adjacent to the candidate's interests in post-atrocity politics, displacement, and critical IR, though this is an events/communications coordinator role rather than a research post. The candidate has relevant administrative and stakeholder-coordination experience from the German Rectors Conference, but lacks dedicated events/comms experience. Seniority and pay band fit a junior coordinator role reasonably well.",
+      "location": "London, UK",
+      "type": "Part-time (0.8 FTE, 28 hours), Fixed-Term 6 months",
+      "deadline": "05/07/2026",
+      "salary": "£34,925 - £39,297 (pro rata)"
+    }
+  ]
+}
