@@ -1,7 +1,7 @@
 {
   "date": "2026-06-10",
-  "generated_at": "2026-06-10T11:31:07.898452+00:00",
-  "run_count": 14,
+  "generated_at": "2026-06-10T12:01:20.682954+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Practice Lead, Finance and Investment (Build and Scale a New Practice)",
@@ -100,6 +100,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Reprieve's human rights and strategic litigation work is highly relevant to the candidate's interests in international law and atrocity prevention, but this is a Manager-level role requiring substantial litigation/team leadership experience the candidate lacks. Hard ineligibility on seniority.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% employee matched pension contribution"
     }
   ]
 }
