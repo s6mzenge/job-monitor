@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-10T06:31:08.024672+00:00",
+  "last_updated": "2026-06-10T07:01:14.641876+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -29,16 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-11T07:01:03.993955+00:00",
-      "site": "LRQA",
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f7ca0b820f0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-11T07:30:52.386109+00:00",
       "site": "Global Rights Compliance",
