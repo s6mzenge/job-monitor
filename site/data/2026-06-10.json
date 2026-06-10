@@ -1,7 +1,7 @@
 {
   "date": "2026-06-10",
-  "generated_at": "2026-06-10T15:01:16.765889+00:00",
-  "run_count": 21,
+  "generated_at": "2026-06-10T16:02:08.922236+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Practice Lead, Finance and Investment (Build and Scale a New Practice)",
@@ -128,6 +128,20 @@
       "type": "Part-time (10 hours/week), fixed-term 1 year",
       "deadline": "26 June 2026",
       "salary": "TVöD Bund, Entgeltgruppe 2"
+    },
+    {
+      "title": "Legal Advisor",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=GLA3",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This role requires a qualified legal practitioner to provide employment law advice and commercial contract drafting — the candidate does not hold a UK qualifying law degree, GDL, or SQE, triggering hard ineligibility. The Grade 8 salary and remit also imply significant post-qualification experience that the candidate lacks.",
+      "location": "Hendon, London",
+      "type": "Full-time, Permanent (35.5 hours/week)",
+      "deadline": "Monday 29 June 2026",
+      "salary": "£51,569 to £59,282 per annum"
     }
   ]
 }
