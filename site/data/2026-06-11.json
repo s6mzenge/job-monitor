@@ -1,7 +1,7 @@
 {
   "date": "2026-06-11",
-  "generated_at": "2026-06-11T14:31:07.938629+00:00",
-  "run_count": 20,
+  "generated_at": "2026-06-11T15:01:18.410346+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Applied AI Security Architect",
@@ -198,6 +198,20 @@
       "type": "Volunteer",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer in Intelligence Studies",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRW431/lecturer-in-intelligence-studies",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Field alignment is excellent — intelligence studies at KCL War Studies is core to the candidate's security/IR interests. However, this is a permanent academic Lecturer post requiring a completed PhD, an established publication record, PhD supervision capacity, and the ability to secure external research funding. Hard ineligibility on seniority (PhD requirement and academic faculty level).",
+      "location": "London, UK",
+      "type": "Full-time, Permanent",
+      "deadline": "28th June 2026",
+      "salary": "£45,031 to £52,514 per annum including London Weighting Allowance"
     }
   ]
 }
