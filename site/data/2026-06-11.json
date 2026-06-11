@@ -1,0 +1,35 @@
+{
+  "date": "2026-06-11",
+  "generated_at": "2026-06-11T05:01:00.494949+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Applied AI Security Architect",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5227641008",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior pre-sales technical security architect role requiring 7+ years of enterprise security/cloud architecture experience and deep technical knowledge of network security, IAM, encryption, and compliance frameworks (GDPR, EU AI Act, DORA, NIS2). Hard ineligibility triggered on both seniority (7+ years required) and specialist technical skills the candidate cannot substitute for. Field alignment is weak — this is enterprise sales engineering, not AI policy/governance research.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£190,000–£225,000 GBP (OTE)"
+    },
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Human rights litigation aligns with the candidate's interests in international law and justice, but this is a Manager-level role within Reprieve's pay structure (Project/Regional Leads/Managers band) requiring significant prior experience and likely legal qualifications for strategic litigation work. Hard ineligibility on seniority.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% employee matched pension contribution"
+    }
+  ]
+}
