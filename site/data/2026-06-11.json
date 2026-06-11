@@ -1,7 +1,7 @@
 {
   "date": "2026-06-11",
-  "generated_at": "2026-06-11T08:01:10.580626+00:00",
-  "run_count": 7,
+  "generated_at": "2026-06-11T08:31:03.792052+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Applied AI Security Architect",
@@ -55,6 +55,20 @@
       "seniority_score": "4",
       "reason": "This is an operational/administrative coordination role focused on scheduling, invoicing, and client service logistics for ESG audits — not a research or analytical role on responsible sourcing or human rights. While the ESG/modern slavery context has tangential relevance, the actual work is administrative coordination far from the candidate's research and policy targets.",
       "location": "Ho Chi Minh City, Vietnam",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Consulting Associate- Contaminated Land and Remediation (Entry Level)",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/Consulting-Associate--Contaminated-Land-and-Remediation--Entry-Level-_R00030731-1",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "5",
+      "reason": "This is an environmental sciences/geology fieldwork role requiring soil sampling, groundwater monitoring, and a relevant environmental/geoscience degree plus a UK driving licence — none of which align with the candidate's IR/policy background. Entry-level seniority fits, but the field and technical skills mismatch is fundamental.",
+      "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
