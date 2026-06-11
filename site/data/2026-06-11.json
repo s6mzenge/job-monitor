@@ -1,7 +1,7 @@
 {
   "date": "2026-06-11",
-  "generated_at": "2026-06-11T07:31:03.444025+00:00",
-  "run_count": 6,
+  "generated_at": "2026-06-11T08:01:10.580626+00:00",
+  "run_count": 7,
   "jobs": [
     {
       "title": "Applied AI Security Architect",
@@ -41,6 +41,20 @@
       "seniority_score": "1",
       "reason": "This is a cybersecurity sales/account management role focused on revenue targets, cold-calling, and CRM pipeline management — pure commercial sales rather than intelligence, research, or policy work. It also hard-requires a minimum of 5 years' experience, triggering ineligibility on seniority.",
       "location": "Singapore",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Coordinator - Responsible Sourcing",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Do-Luong-District-Coordinator-Responsible-Sourcing-District-1/1403222333",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "This is an operational/administrative coordination role focused on scheduling, invoicing, and client service logistics for ESG audits — not a research or analytical role on responsible sourcing or human rights. While the ESG/modern slavery context has tangential relevance, the actual work is administrative coordination far from the candidate's research and policy targets.",
+      "location": "Ho Chi Minh City, Vietnam",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
