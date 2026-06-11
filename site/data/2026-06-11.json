@@ -1,7 +1,7 @@
 {
   "date": "2026-06-11",
-  "generated_at": "2026-06-11T09:01:09.864372+00:00",
-  "run_count": 9,
+  "generated_at": "2026-06-11T09:31:05.394195+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Applied AI Security Architect",
@@ -71,6 +71,20 @@
       "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer in Mechatronics Engineering",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106479&p_spid=5155843",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Complete mismatch — this is a Mechatronics Engineering lectureship requiring an MSc in engineering and eligibility for Professional Engineer registration in South Africa, none of which the candidate has. Hard ineligibility on specialist qualifications.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "10 July 2026",
       "salary": "Not specified"
     }
   ]
