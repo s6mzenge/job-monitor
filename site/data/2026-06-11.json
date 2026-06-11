@@ -1,7 +1,7 @@
 {
   "date": "2026-06-11",
-  "generated_at": "2026-06-11T10:01:10.720147+00:00",
-  "run_count": 11,
+  "generated_at": "2026-06-11T10:31:07.428519+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Applied AI Security Architect",
@@ -86,6 +86,20 @@
       "type": "Full-time",
       "deadline": "10 July 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Digital Marketing Officer (MSF IE)",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/digital-marketing-officer-62426/en",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "Digital marketing/fundraising for a humanitarian NGO sits outside the candidate's policy-research, intelligence, and OSINT target zones — it's an operational marketing role, not a research or analyst position. The role requires specialist skills the candidate lacks (PPC, SEO, CRM, CMS, e-commerce platforms, Canva/Adobe content production) and demands 3–5 years of digital marketing experience, which the candidate does not have.",
+      "location": "Dublin, Ireland (Hybrid)",
+      "type": "Full-time (Permanent, 37.5 hours/week)",
+      "deadline": "09 July 2026",
+      "salary": "€48,426.32"
     }
   ]
 }
