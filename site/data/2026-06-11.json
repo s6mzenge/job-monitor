@@ -1,7 +1,7 @@
 {
   "date": "2026-06-11",
-  "generated_at": "2026-06-11T14:02:11.902571+00:00",
-  "run_count": 19,
+  "generated_at": "2026-06-11T14:31:07.938629+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Applied AI Security Architect",
@@ -184,6 +184,20 @@
       "type": "Full-time, Fixed-Term (12 months)",
       "deadline": "26/06/2026",
       "salary": "£44,753 - £49,738"
+    },
+    {
+      "title": "Administrative Volunteer (Casework Team)",
+      "organisation": "INQUEST",
+      "url": "https://inquest.org.uk/about-us/working-at-inquest/",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "INQUEST works on state accountability for deaths in custody, which is adjacent to the candidate's human rights and international law interests but not a core target area. The role is administrative volunteering rather than research, so it doesn't leverage the candidate's analytical or writing strengths, and unpaid volunteer work is a weak fit for someone seeking research roles.",
+      "location": "Not specified",
+      "type": "Volunteer",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
