@@ -1,7 +1,7 @@
 {
   "date": "2026-06-11",
-  "generated_at": "2026-06-11T11:01:31.858761+00:00",
-  "run_count": 13,
+  "generated_at": "2026-06-11T11:31:00.693499+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Applied AI Security Architect",
@@ -100,6 +100,20 @@
       "type": "Full-time (Permanent, 37.5 hours/week)",
       "deadline": "09 July 2026",
       "salary": "€48,426.32"
+    },
+    {
+      "title": "Lead Analyst, Technology and Geopolitics",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000131645944-lead-analyst-technology-and-geopolitics-",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Field alignment is excellent — Sibylline is a core target firm and the tech/geopolitics intersection fits the candidate's interests. However, the \"Lead Analyst\" title combined with expectations of defining an intellectual agenda, thought leadership, and demonstrable prior engagement with technological risk topics points to a senior hire with several years of relevant analyst experience, which the candidate (still completing MSc) does not have.",
+      "location": "London, UK (hybrid, 2 days/week in office)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
