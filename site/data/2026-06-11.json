@@ -1,7 +1,7 @@
 {
   "date": "2026-06-11",
-  "generated_at": "2026-06-11T12:31:08.230358+00:00",
-  "run_count": 16,
+  "generated_at": "2026-06-11T13:01:20.699696+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Applied AI Security Architect",
@@ -142,6 +142,20 @@
       "type": "Full-time",
       "deadline": "Rolling",
       "salary": "£325,000–£390,000"
+    },
+    {
+      "title": "Head of AI & Business Intelligence - London",
+      "organisation": "CIFF",
+      "url": "https://apply.workable.com/j/269EE56A68",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "\"Head of\" role requires substantial senior leadership experience in AI/BI that the candidate (MSc student with student-assistant roles) does not have — hard ineligibility on seniority. The role is also a technical/data leadership position rather than policy research, so field alignment is weak.",
+      "location": "London, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
