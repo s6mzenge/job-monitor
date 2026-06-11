@@ -1,7 +1,7 @@
 {
   "date": "2026-06-11",
-  "generated_at": "2026-06-11T13:31:14.592155+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-11T14:02:11.902571+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Applied AI Security Architect",
@@ -156,6 +156,34 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer in African Music",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/895247",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a music/ethnomusicology lectureship requiring a completed PhD in Music or related field (Anthropology/Area Studies) with a specialism in African music — a hard ineligibility trigger as the candidate is an MSc student with no PhD and no background in music studies. Field, skills, and seniority all mismatch fundamentally.",
+      "location": "Bloomsbury, London, UK",
+      "type": "Full-time, Fixed Term Contract (1 Sept 2026 – 1 July 2029)",
+      "deadline": "10 July 2026",
+      "salary": "£51,902.57 - £61,048.57 per annum inc LA"
+    },
+    {
+      "title": "Lecturer in Photography",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/lecturer-in-photography-613429.html",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a Lecturer post in photography practice requiring professional photography expertise and teaching experience in a creative arts discipline — entirely outside the candidate's IR/policy field. The role also requires academic teaching seniority the candidate does not have.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-Term (12 months)",
+      "deadline": "26/06/2026",
+      "salary": "£44,753 - £49,738"
     }
   ]
 }
