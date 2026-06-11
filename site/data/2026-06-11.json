@@ -1,7 +1,7 @@
 {
   "date": "2026-06-11",
-  "generated_at": "2026-06-11T15:01:18.410346+00:00",
-  "run_count": 21,
+  "generated_at": "2026-06-11T15:31:08.482435+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Applied AI Security Architect",
@@ -212,6 +212,20 @@
       "type": "Full-time, Permanent",
       "deadline": "28th June 2026",
       "salary": "£45,031 to £52,514 per annum including London Weighting Allowance"
+    },
+    {
+      "title": "Lead Auditor (Aerospace)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Leamington-Lead-Auditor-%28Aerospace%29-B37-7ES/1403523733",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an aerospace management systems auditor role requiring substantial aviation/defence industry auditing experience and sector-specific regulatory expertise — none of which the candidate has. The \"Lead\" title and specialist auditor qualifications place it firmly outside the candidate's profile.",
+      "location": "Leamington, UK (B37 7ES)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
