@@ -1,7 +1,7 @@
 {
   "date": "2026-06-11",
-  "generated_at": "2026-06-11T07:01:19.557479+00:00",
-  "run_count": 5,
+  "generated_at": "2026-06-11T07:31:03.444025+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Applied AI Security Architect",
@@ -30,6 +30,20 @@
       "type": "Full-time",
       "deadline": "15/06/2026",
       "salary": "£52,088 plus up to 5% employee matched pension contribution"
+    },
+    {
+      "title": "Strategic Account Manager, Cyber APAC",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Strategic-Account-Manager%2C-Cyber-APAC-Sing-119963/1403203933",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a cybersecurity sales/account management role focused on revenue targets, cold-calling, and CRM pipeline management — pure commercial sales rather than intelligence, research, or policy work. It also hard-requires a minimum of 5 years' experience, triggering ineligibility on seniority.",
+      "location": "Singapore",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }

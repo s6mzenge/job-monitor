@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T07:01:19.557479+00:00",
+  "last_updated": "2026-06-11T07:31:03.444025+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -31,41 +31,17 @@
       "site_id": 63,
       "url": "https://www.sigrid-rausing-trust.org/jobs/",
       "method": "html",
-      "consecutive_failures": 10,
-      "total_recent_failures": 49,
+      "consecutive_failures": 11,
+      "total_recent_failures": 50,
       "first_recent_failure": "2026-05-14T16:00:59.487828+00:00",
-      "last_recent_failure": "2026-06-11T07:01:19.557479+00:00",
+      "last_recent_failure": "2026-06-11T07:31:03.444025+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.sigrid-rausing-trust.org%2Fjobs%2F"
-    },
-    "LRQA": {
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 63,
-      "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
-      "last_recent_failure": "2026-06-11T07:01:19.557479+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fd1bf982c30>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-12T07:30:56.089870+00:00",
-      "site": "Wits University",
-      "site_id": 44,
-      "url": "https://www.wits.ac.za/vacancies/",
-      "method": "html",
-      "type": "llm_call_failed",
-      "message": "Anthropic API: HTTP 529: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CaxHTia8QHoi4JMu7TURG\"}",
-      "job_title": "Project Manager  Research and Consulting (AD.10.4)",
-      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106374&p_spid=5151823"
-    },
     {
       "timestamp": "2026-05-12T09:31:00.241468+00:00",
       "site": "S-RM",
@@ -7664,6 +7640,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fd1bf982c30>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-06-11T07:31:03.444025+00:00",
+      "site": "Sigrid Rausing Trust",
+      "site_id": 63,
+      "url": "https://www.sigrid-rausing-trust.org/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.sigrid-rausing-trust.org%2Fjobs%2F",
+      "consecutive_count": 11
     }
   ]
 }
