@@ -1,7 +1,7 @@
 {
   "date": "2026-06-11",
-  "generated_at": "2026-06-11T11:31:00.693499+00:00",
-  "run_count": 14,
+  "generated_at": "2026-06-11T12:01:17.083701+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Applied AI Security Architect",
@@ -114,6 +114,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Change Delivery Lead",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/change-delivery-lead-62371/en",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior change/programme management role requiring PRINCE2/MSP/PMI-type qualifications, LEAN/Six Sigma experience, and a track record of leading organisation-wide transformation — none of which the candidate possesses. The salary band and \"senior role for an experienced change leader\" framing confirm this is well beyond entry level, triggering hard ineligibility on seniority. Field alignment is also weak: this is internal business-process change, not humanitarian policy or research.",
+      "location": "London, United Kingdom",
+      "type": "Full-time, Fixed Term Contract (24 months)",
+      "deadline": "Monday 22nd June 2026, 11.59am (BST)",
+      "salary": "£61,531.29 to £75,204.91 per annum"
     }
   ]
 }
