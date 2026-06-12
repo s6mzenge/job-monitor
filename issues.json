@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-06-12T17:01:08.202411+00:00",
+  "last_updated": "2026-06-12T17:31:06.206278+00:00",
   "site_summary": {
     "Global Rights Compliance": {
       "site_id": 37,
       "url": "https://globalrightscompliance.org/work-with-us/",
       "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 62,
+      "consecutive_failures": 2,
+      "total_recent_failures": 63,
       "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
-      "last_recent_failure": "2026-06-12T17:01:08.202411+00:00",
+      "last_recent_failure": "2026-06-12T17:31:06.206278+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    24 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\""
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    4 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\"\n    - waiting for navigation to finish...\n    - navigated to \"https://globalrightscompliance.org/work-with-us/\"\n    - waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n    - navigated to \"https://globalrightscompliance.org/work-with-us/\""
     },
     "ICTJ": {
       "site_id": 41,
@@ -8164,6 +8164,16 @@
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    24 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-12T17:31:06.206278+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    4 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\"\n    - waiting for navigation to finish...\n    - navigated to \"https://globalrightscompliance.org/work-with-us/\"\n    - waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n    - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
+      "consecutive_count": 2
     }
   ]
 }
