@@ -1,7 +1,7 @@
 {
   "date": "2026-06-12",
-  "generated_at": "2026-06-12T13:01:09.473120+00:00",
-  "run_count": 17,
+  "generated_at": "2026-06-12T13:31:01.416773+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Associate Director, Democracy and Politics",
@@ -125,6 +125,34 @@
       "seniority_score": "2",
       "reason": "Field alignment is excellent — geopolitical risk and tech/AI governance are core targets. However, this is a \"Lead Analyst\" role requiring established expertise in AI policy, quantum, and tech-geopolitics, with a track record of thought leadership and client deliverables. The candidate's MSc-in-progress and student-assistant experience are unlikely to meet the seniority bar for a Lead-level position with thematic specialism the CV does not yet demonstrate.",
       "location": "London, UK (hybrid, 2 days/week in office)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Human rights litigation is adjacent to the candidate's international law interests, but \"Team Manager\" at Reprieve's Project/Regional Lead pay band requires significant managerial and strategic litigation experience the candidate does not have. Likely also requires legal qualifications for overseeing litigation work.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% employee matched pension contribution"
+    },
+    {
+      "title": "Global Head of Sustainable Products & Packaging - Circularity & Value Chain Transformation",
+      "organisation": "Anthesis Group",
+      "url": "https://anthesisgroup.pinpointhq.com/en/postings/381237b1-e484-4aa0-8a0f-0b5c9b856831",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a \"Global Head\" role in sustainability consulting focused on circular economy, packaging, and value chain transformation — entirely outside the candidate's IR/policy/intelligence target zones. The leadership title also requires extensive senior consulting experience the candidate does not have. Hard mismatch on both field and seniority.",
+      "location": "London, UK (Fully remote)",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
