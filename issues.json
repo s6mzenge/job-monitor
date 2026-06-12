@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T10:31:02.813989+00:00",
+  "last_updated": "2026-06-12T11:01:08.559046+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,19 +13,6 @@
       "paused_until": "2026-06-13T17:01:12.190173+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Uppsala UHGS": {
-      "site_id": 42,
-      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 48,
-      "first_recent_failure": "2026-05-14T14:01:14.207855+00:00",
-      "last_recent_failure": "2026-06-12T10:31:02.813989+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "Reprieve": {
       "site_id": 58,
