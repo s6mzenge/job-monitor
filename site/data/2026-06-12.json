@@ -1,7 +1,7 @@
 {
   "date": "2026-06-12",
-  "generated_at": "2026-06-12T12:01:19.236660+00:00",
-  "run_count": 15,
+  "generated_at": "2026-06-12T12:31:18.372408+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Associate Director, Democracy and Politics",
@@ -114,6 +114,20 @@
       "type": "Part-time (0.6 FTE, Fixed-Term 36 months)",
       "deadline": "12/07/2026",
       "salary": "£44,753 - £49,738 (pro rata)"
+    },
+    {
+      "title": "Lead Analyst, Technology and Geopolitics",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000131889605-lead-analyst-technology-and-geopolitics-",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "Field alignment is excellent — geopolitical risk and tech/AI governance are core targets. However, this is a \"Lead Analyst\" role requiring established expertise in AI policy, quantum, and tech-geopolitics, with a track record of thought leadership and client deliverables. The candidate's MSc-in-progress and student-assistant experience are unlikely to meet the seniority bar for a Lead-level position with thematic specialism the CV does not yet demonstrate.",
+      "location": "London, UK (hybrid, 2 days/week in office)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
