@@ -1,7 +1,7 @@
 {
   "date": "2026-06-12",
-  "generated_at": "2026-06-12T15:31:13.656614+00:00",
-  "run_count": 22,
+  "generated_at": "2026-06-12T16:01:16.580680+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Associate Director, Democracy and Politics",
@@ -156,6 +156,34 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Sr. Software Engineer, Inference",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5152348008",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior software engineering role focused on distributed systems and LLM inference infrastructure, requiring significant professional software engineering experience — none of which aligns with the candidate's IR research profile. Hard ineligibility on seniority (senior title) and specialist technical skills the candidate cannot substitute for.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Rolling",
+      "salary": "£225,000–£325,000 GBP"
+    },
+    {
+      "title": "Staff Software Engineer, Inference",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5097742008",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a Staff-level software engineering role focused on distributed systems, LLM inference optimization, and large-scale infrastructure — an unrelated technical specialism. The candidate lacks the required senior software engineering experience and specialist skills (Kubernetes, Rust, distributed systems at scale). Multiple hard mismatches across all dimensions.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Rolling",
+      "salary": "£325,000–£390,000 GBP"
     }
   ]
 }
