@@ -1,7 +1,7 @@
 {
   "date": "2026-06-12",
-  "generated_at": "2026-06-12T06:30:57.123305+00:00",
-  "run_count": 4,
+  "generated_at": "2026-06-12T07:01:13.134426+00:00",
+  "run_count": 5,
   "jobs": [
     {
       "title": "Associate Director, Democracy and Politics",
@@ -70,6 +70,34 @@
       "reason": "Complete mismatch — this is a food safety/dairy technology training role requiring specialist qualifications (ISO 22000, FSSC, BRCGS lead auditor certification, food/dairy technology background) that the candidate does not hold. Hard ineligibility on specialist vocational qualifications.",
       "location": "Kuala Lumpur, Malaysia",
       "type": "Contractor",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Lecturer (Practice) in Primary Education (Mathematics)",
+      "organisation": "Middlesex University",
+      "url": "https://jobs.mdx.ac.uk/vacancy.aspx?ref=HED529",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior teacher-training role requiring a qualified, experienced primary school teacher with specialist mathematics pedagogy expertise — entirely outside the candidate's IR/policy field. Hard ineligibility on seniority (Senior Lecturer level requiring substantial teaching experience) and on specialist vocational qualifications (primary teaching credentials).",
+      "location": "Hendon, London",
+      "type": "Full-time",
+      "deadline": "28 June 2026",
+      "salary": "£51,569 to £59,282 per annum"
+    },
+    {
+      "title": "Lecturer — Orthopaedic Surgery (Clinical Educator)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106481&p_spid=5155845",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a clinical medical educator role requiring an MBChB, HPCSA registration, and 4+ years post-community-service clinical experience in orthopaedic surgery. Hard ineligibility: the candidate has no medical qualification, no clinical practice licence, and lacks the required years of professional experience.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
