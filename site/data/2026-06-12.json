@@ -1,7 +1,7 @@
 {
   "date": "2026-06-12",
-  "generated_at": "2026-06-12T09:30:56.245793+00:00",
-  "run_count": 10,
+  "generated_at": "2026-06-12T10:01:09.062214+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Associate Director, Democracy and Politics",
@@ -100,6 +100,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer in Digital Media",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/lecturer-in-digital-media-613476.html",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Lecturer roles require a PhD or equivalent and an established track record of creative practice in digital media art (Unreal Engine, XR, AI image-making), none of which the candidate has. The field (digital media art practice) is also far from the candidate's IR/policy focus, and the seniority level is incompatible with an MSc-in-progress profile.",
+      "location": "London, UK",
+      "type": "Part-time (0.6 FTE, Fixed-Term 36 months)",
+      "deadline": "12/07/2026",
+      "salary": "£44,753 - £49,738 (pro rata)"
     }
   ]
 }
