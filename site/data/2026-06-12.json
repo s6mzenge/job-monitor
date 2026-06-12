@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-12",
+  "generated_at": "2026-06-12T05:01:06.808831+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Associate Director, Democracy and Politics",
+      "organisation": "IPPR",
+      "url": "https://www.ippr.org/jobs/associate-director-democracy-and-politics-2",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "IPPR is a leading progressive think-tank and the field (democracy, politics, policy research) is adjacent to the candidate's interests, but this is an Associate Director role leading a team of six, securing funding, and representing the organisation at the highest levels of government. Hard ineligibility on seniority — the role requires substantial leadership experience and a track record of influential policy delivery that an MSc candidate with student-assistant experience cannot meet.",
+      "location": "London, UK",
+      "type": "Full-time (Permanent, 35 hours/week; part-time/job share considered)",
+      "deadline": "Monday 29 June 2026, 12:00pm",
+      "salary": "£69,628 - £85,998 per year"
+    },
+    {
+      "title": "Strategic Account Manager",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Strategic-Account-Manager-511464/1393624233",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a B2B sales/account management role in the assurance sector, with no alignment to the candidate's IR, policy, or intelligence targets. It also requires fluency in a regionally-relevant business language (Mandarin/Cantonese for Shenzhen) which the candidate does not have, and 2+ years of sales experience the candidate lacks.",
+      "location": "Shenzhen, China",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Strategic Account Manager",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Leverkusen-Strategic-Account-Manager-51373/1393822833",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a B2B sales role in assurance/inspection services — pure sales is a field mismatch with the candidate's IR/policy/research focus. The role requires demonstrated sales track record and account management experience the candidate does not have.",
+      "location": "Leverkusen, Germany",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
