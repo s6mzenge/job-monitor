@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T06:01:06.675869+00:00",
+  "last_updated": "2026-06-12T06:30:57.123305+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,6 +13,19 @@
       "paused_until": "2026-06-13T17:01:12.190173+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uppsala UHGS": {
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 47,
+      "first_recent_failure": "2026-05-14T14:01:14.207855+00:00",
+      "last_recent_failure": "2026-06-12T06:30:57.123305+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "Reprieve": {
       "site_id": 58,
@@ -39,32 +52,9 @@
       "paused_until": "2026-06-13T10:01:10.720147+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "LRQA": {
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 71,
-      "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
-      "last_recent_failure": "2026-06-12T06:01:06.675869+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f9cf8991910>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-13T06:01:10.918301+00:00",
-      "site": "Wiener Holocaust Library",
-      "site_id": 4,
-      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-13T08:01:00.986211+00:00",
       "site": "Palladium Group",
@@ -8025,6 +8015,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f9cf8991910>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-12T06:30:57.123305+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 1
     }
   ]
 }

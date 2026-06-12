@@ -1,7 +1,7 @@
 {
   "date": "2026-06-12",
-  "generated_at": "2026-06-12T06:01:06.675869+00:00",
-  "run_count": 3,
+  "generated_at": "2026-06-12T06:30:57.123305+00:00",
+  "run_count": 4,
   "jobs": [
     {
       "title": "Associate Director, Democracy and Politics",
@@ -58,6 +58,20 @@
       "type": "Full-time",
       "deadline": "Saturday, June 13, 2026",
       "salary": "£1.00 to £2.00 Per Annum"
+    },
+    {
+      "title": "Food Safety Trainer - Contractor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Kuala-Lumpur-Food-safety-Trainer-contractor/1403674733",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Complete mismatch — this is a food safety/dairy technology training role requiring specialist qualifications (ISO 22000, FSSC, BRCGS lead auditor certification, food/dairy technology background) that the candidate does not hold. Hard ineligibility on specialist vocational qualifications.",
+      "location": "Kuala Lumpur, Malaysia",
+      "type": "Contractor",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
