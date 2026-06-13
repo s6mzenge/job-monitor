@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T09:31:02.231668+00:00",
+  "last_updated": "2026-06-13T10:01:11.466007+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,6 +13,19 @@
       "paused_until": "2026-06-13T17:01:12.190173+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uppsala UHGS": {
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 54,
+      "first_recent_failure": "2026-05-14T14:01:14.207855+00:00",
+      "last_recent_failure": "2026-06-13T10:01:11.466007+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "Reprieve": {
       "site_id": 58,
@@ -31,60 +44,17 @@
       "site_id": 63,
       "url": "https://www.sigrid-rausing-trust.org/jobs/",
       "method": "html",
-      "consecutive_failures": 16,
-      "total_recent_failures": 56,
+      "consecutive_failures": 1,
+      "total_recent_failures": 57,
       "first_recent_failure": "2026-05-14T16:00:59.487828+00:00",
-      "last_recent_failure": "2026-06-11T10:01:10.720147+00:00",
-      "currently_paused": true,
-      "paused_until": "2026-06-13T10:01:10.720147+00:00",
-      "last_type": "site_paused",
-      "last_message": "Site paused after 16 consecutive failures"
-    },
-    "LRQA": {
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 86,
-      "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
-      "last_recent_failure": "2026-06-13T09:31:02.231668+00:00",
+      "last_recent_failure": "2026-06-13T10:01:11.466007+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7ffb25d549e0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.sigrid-rausing-trust.org%2Fjobs%2F"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-14T09:31:21.485187+00:00",
-      "site": "Protection Approaches",
-      "site_id": 31,
-      "url": "https://protectionapproaches.org/current-vacancies",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-14T09:31:21.485187+00:00",
-      "site": "BSR",
-      "site_id": 67,
-      "url": "https://www.bsr.org/en/careers",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
-      "consecutive_count": 10
-    },
-    {
-      "timestamp": "2026-05-14T10:01:08.454903+00:00",
-      "site": "BSR",
-      "site_id": 67,
-      "url": "https://www.bsr.org/en/careers",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
-      "consecutive_count": 11
-    },
     {
       "timestamp": "2026-05-14T10:31:13.739769+00:00",
       "site": "Paul Hamlyn Foundation",
@@ -8334,6 +8304,26 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7ffb25d549e0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-13T10:01:11.466007+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-13T10:01:11.466007+00:00",
+      "site": "Sigrid Rausing Trust",
+      "site_id": 63,
+      "url": "https://www.sigrid-rausing-trust.org/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.sigrid-rausing-trust.org%2Fjobs%2F",
+      "consecutive_count": 1
     }
   ]
 }
