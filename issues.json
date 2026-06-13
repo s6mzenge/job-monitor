@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T13:31:04.465079+00:00",
+  "last_updated": "2026-06-13T14:01:09.612677+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -31,10 +31,10 @@
       "site_id": 63,
       "url": "https://www.sigrid-rausing-trust.org/jobs/",
       "method": "html",
-      "consecutive_failures": 8,
-      "total_recent_failures": 64,
+      "consecutive_failures": 9,
+      "total_recent_failures": 65,
       "first_recent_failure": "2026-05-14T16:00:59.487828+00:00",
-      "last_recent_failure": "2026-06-13T13:31:04.465079+00:00",
+      "last_recent_failure": "2026-06-13T14:01:09.612677+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -42,16 +42,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-14T13:47:06.891210+00:00",
-      "site": "Centre for Information Resilience",
-      "site_id": 57,
-      "url": "https://www.info-res.org/careers/current-openings/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='www.info-res.org', port=443): Read timed out. (read timeout=30)",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-14T14:01:14.207855+00:00",
       "site": "Uppsala UHGS",
@@ -8310,6 +8300,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.sigrid-rausing-trust.org%2Fjobs%2F",
       "consecutive_count": 8
+    },
+    {
+      "timestamp": "2026-06-13T14:01:09.612677+00:00",
+      "site": "Sigrid Rausing Trust",
+      "site_id": 63,
+      "url": "https://www.sigrid-rausing-trust.org/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.sigrid-rausing-trust.org%2Fjobs%2F",
+      "consecutive_count": 9
     }
   ]
 }
