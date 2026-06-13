@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-06-12T17:31:06.206278+00:00",
+  "last_updated": "2026-06-13T05:01:12.954619+00:00",
   "site_summary": {
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 2,
-      "total_recent_failures": 63,
-      "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
-      "last_recent_failure": "2026-06-12T17:31:06.206278+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    4 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\"\n    - waiting for navigation to finish...\n    - navigated to \"https://globalrightscompliance.org/work-with-us/\"\n    - waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n    - navigated to \"https://globalrightscompliance.org/work-with-us/\""
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -52,19 +39,22 @@
       "paused_until": "2026-06-13T10:01:10.720147+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "LRQA": {
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 82,
+      "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
+      "last_recent_failure": "2026-06-13T05:01:12.954619+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f75ed972660>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-14T05:01:04.198850+00:00",
-      "site": "BSR",
-      "site_id": 67,
-      "url": "https://www.bsr.org/en/careers",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-14T05:31:00.561706+00:00",
       "site": "Protection Approaches",
@@ -8174,6 +8164,16 @@
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    4 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\"\n    - waiting for navigation to finish...\n    - navigated to \"https://globalrightscompliance.org/work-with-us/\"\n    - waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n    - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-13T05:01:12.954619+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f75ed972660>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
     }
   ]
 }
