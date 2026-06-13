@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-13T07:31:01.497119+00:00",
+  "last_updated": "2026-06-13T08:01:11.836304+00:00",
   "site_summary": {
     "Open Society Foundations": {
       "site_id": 2,
       "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
       "method": "workday_api",
-      "consecutive_failures": 3,
-      "total_recent_failures": 18,
+      "consecutive_failures": 4,
+      "total_recent_failures": 19,
       "first_recent_failure": "2026-05-15T10:30:53.910556+00:00",
-      "last_recent_failure": "2026-06-13T07:31:01.497119+00:00",
+      "last_recent_failure": "2026-06-13T08:01:11.836304+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -18,10 +18,10 @@
       "site_id": 3,
       "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
       "method": "workday_api",
-      "consecutive_failures": 3,
-      "total_recent_failures": 16,
+      "consecutive_failures": 4,
+      "total_recent_failures": 17,
       "first_recent_failure": "2026-05-16T06:30:45.391706+00:00",
-      "last_recent_failure": "2026-06-13T07:31:01.497119+00:00",
+      "last_recent_failure": "2026-06-13T08:01:11.836304+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -39,6 +39,19 @@
       "paused_until": "2026-06-13T17:01:12.190173+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uppsala UHGS": {
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 53,
+      "first_recent_failure": "2026-05-14T14:01:14.207855+00:00",
+      "last_recent_failure": "2026-06-13T08:01:11.836304+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "Reprieve": {
       "site_id": 58,
@@ -70,23 +83,36 @@
       "site_id": 69,
       "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
       "method": "workday_api",
-      "consecutive_failures": 3,
-      "total_recent_failures": 14,
+      "consecutive_failures": 4,
+      "total_recent_failures": 15,
       "first_recent_failure": "2026-05-16T06:30:45.391706+00:00",
-      "last_recent_failure": "2026-06-13T07:31:01.497119+00:00",
+      "last_recent_failure": "2026-06-13T08:01:11.836304+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
     },
+    "LRQA": {
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 84,
+      "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
+      "last_recent_failure": "2026-06-13T08:01:11.836304+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f02036b7620>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+    },
     "Edelman": {
       "site_id": 78,
       "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
       "method": "workday_api",
-      "consecutive_failures": 3,
-      "total_recent_failures": 16,
+      "consecutive_failures": 4,
+      "total_recent_failures": 17,
       "first_recent_failure": "2026-05-16T06:30:45.391706+00:00",
-      "last_recent_failure": "2026-06-13T07:31:01.497119+00:00",
+      "last_recent_failure": "2026-06-13T08:01:11.836304+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -94,26 +120,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-14T07:31:07.054290+00:00",
-      "site": "BSR",
-      "site_id": 67,
-      "url": "https://www.bsr.org/en/careers",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
-      "consecutive_count": 6
-    },
-    {
-      "timestamp": "2026-05-14T08:01:01.001137+00:00",
-      "site": "BSR",
-      "site_id": 67,
-      "url": "https://www.bsr.org/en/careers",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
-      "consecutive_count": 7
-    },
     {
       "timestamp": "2026-05-14T08:31:09.322264+00:00",
       "site": "BSR",
@@ -8303,6 +8309,66 @@
       "type": "fetch_error",
       "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
       "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-06-13T08:01:11.836304+00:00",
+      "site": "Open Society Foundations",
+      "site_id": 2,
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-06-13T08:01:11.836304+00:00",
+      "site": "Pew Trusts",
+      "site_id": 3,
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-06-13T08:01:11.836304+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-13T08:01:11.836304+00:00",
+      "site": "ERM",
+      "site_id": 69,
+      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-06-13T08:01:11.836304+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f02036b7620>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-13T08:01:11.836304+00:00",
+      "site": "Edelman",
+      "site_id": 78,
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 4
     }
   ]
 }
