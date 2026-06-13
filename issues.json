@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-06-13T15:01:12.426159+00:00",
+  "last_updated": "2026-06-13T15:31:07.447216+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 221,
-      "first_recent_failure": "2026-05-14T15:01:15.483547+00:00",
+      "total_recent_failures": 219,
+      "first_recent_failure": "2026-05-14T16:00:59.487828+00:00",
       "last_recent_failure": "2026-06-11T17:01:12.190173+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-13T17:01:12.190173+00:00",
@@ -18,10 +18,10 @@
       "site_id": 42,
       "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 55,
+      "consecutive_failures": 2,
+      "total_recent_failures": 56,
       "first_recent_failure": "2026-05-15T12:30:50.171559+00:00",
-      "last_recent_failure": "2026-06-13T15:01:12.426159+00:00",
+      "last_recent_failure": "2026-06-13T15:31:07.447216+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -40,41 +40,34 @@
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
     },
+    "Sigrid Rausing Trust": {
+      "site_id": 63,
+      "url": "https://www.sigrid-rausing-trust.org/jobs/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 67,
+      "first_recent_failure": "2026-05-14T16:00:59.487828+00:00",
+      "last_recent_failure": "2026-06-13T15:31:07.447216+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.sigrid-rausing-trust.org%2Fjobs%2F"
+    },
     "LRQA": {
       "site_id": 70,
       "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 89,
+      "consecutive_failures": 2,
+      "total_recent_failures": 90,
       "first_recent_failure": "2026-05-15T08:30:57.544998+00:00",
-      "last_recent_failure": "2026-06-13T15:01:12.426159+00:00",
+      "last_recent_failure": "2026-06-13T15:31:07.447216+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f15e7e3ef30>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fc9e6f71730>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-14T15:01:15.483547+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 4
-    },
-    {
-      "timestamp": "2026-05-14T15:30:56.358902+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 5
-    },
     {
       "timestamp": "2026-05-14T16:00:59.487828+00:00",
       "site": "ICTJ",
@@ -8283,6 +8276,36 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f15e7e3ef30>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-13T15:31:07.447216+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-13T15:31:07.447216+00:00",
+      "site": "Sigrid Rausing Trust",
+      "site_id": 63,
+      "url": "https://www.sigrid-rausing-trust.org/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.sigrid-rausing-trust.org%2Fjobs%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-13T15:31:07.447216+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fc9e6f71730>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 2
     }
   ]
 }
