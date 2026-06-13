@@ -1,32 +1,6 @@
 {
-  "last_updated": "2026-06-13T08:31:12.417677+00:00",
+  "last_updated": "2026-06-13T09:01:07.805187+00:00",
   "site_summary": {
-    "Pew Trusts": {
-      "site_id": 3,
-      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
-      "method": "workday_api",
-      "consecutive_failures": 5,
-      "total_recent_failures": 18,
-      "first_recent_failure": "2026-05-16T06:30:45.391706+00:00",
-      "last_recent_failure": "2026-06-13T08:31:12.417677+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
-    },
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 65,
-      "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
-      "last_recent_failure": "2026-06-13T08:31:12.417677+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    14 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"\n    - waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish..."
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -66,18 +40,18 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "ERM": {
-      "site_id": 69,
-      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
-      "method": "workday_api",
-      "consecutive_failures": 5,
-      "total_recent_failures": 16,
-      "first_recent_failure": "2026-05-16T06:30:45.391706+00:00",
-      "last_recent_failure": "2026-06-13T08:31:12.417677+00:00",
+    "LRQA": {
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 85,
+      "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
+      "last_recent_failure": "2026-06-13T09:01:07.805187+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fbc12a15970>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
@@ -8350,6 +8324,16 @@
       "type": "fetch_error",
       "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
       "consecutive_count": 5
+    },
+    {
+      "timestamp": "2026-06-13T09:01:07.805187+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fbc12a15970>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
     }
   ]
 }
