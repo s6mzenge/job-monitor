@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-13T06:31:01.250606+00:00",
+  "last_updated": "2026-06-13T07:01:15.423343+00:00",
   "site_summary": {
     "Open Society Foundations": {
       "site_id": 2,
       "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
       "method": "workday_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 16,
+      "consecutive_failures": 2,
+      "total_recent_failures": 17,
       "first_recent_failure": "2026-05-15T10:30:53.910556+00:00",
-      "last_recent_failure": "2026-06-13T06:31:01.250606+00:00",
+      "last_recent_failure": "2026-06-13T07:01:15.423343+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -18,40 +18,14 @@
       "site_id": 3,
       "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
       "method": "workday_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 14,
+      "consecutive_failures": 2,
+      "total_recent_failures": 15,
       "first_recent_failure": "2026-05-16T06:30:45.391706+00:00",
-      "last_recent_failure": "2026-06-13T06:31:01.250606+00:00",
+      "last_recent_failure": "2026-06-13T07:01:15.423343+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
-    },
-    "Fabian Society": {
-      "site_id": 24,
-      "url": "https://fabians.org.uk/about-us/recruitment/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-06-13T06:31:01.250606+00:00",
-      "last_recent_failure": "2026-06-13T06:31:01.250606+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fabians.org.uk/about-us/recruitment/"
-    },
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 64,
-      "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
-      "last_recent_failure": "2026-06-13T06:31:01.250606+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    2 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\""
     },
     "ICTJ": {
       "site_id": 41,
@@ -96,23 +70,36 @@
       "site_id": 69,
       "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
       "method": "workday_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 12,
+      "consecutive_failures": 2,
+      "total_recent_failures": 13,
       "first_recent_failure": "2026-05-16T06:30:45.391706+00:00",
-      "last_recent_failure": "2026-06-13T06:31:01.250606+00:00",
+      "last_recent_failure": "2026-06-13T07:01:15.423343+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
     },
+    "LRQA": {
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 83,
+      "first_recent_failure": "2026-05-14T12:31:05.476994+00:00",
+      "last_recent_failure": "2026-06-13T07:01:15.423343+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f58e9f440b0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+    },
     "Edelman": {
       "site_id": 78,
       "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
       "method": "workday_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 14,
+      "consecutive_failures": 2,
+      "total_recent_failures": 15,
       "first_recent_failure": "2026-05-16T06:30:45.391706+00:00",
-      "last_recent_failure": "2026-06-13T06:31:01.250606+00:00",
+      "last_recent_failure": "2026-06-13T07:01:15.423343+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -120,16 +107,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-14T07:01:10.939705+00:00",
-      "site": "BSR",
-      "site_id": 67,
-      "url": "https://www.bsr.org/en/careers",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
-      "consecutive_count": 5
-    },
     {
       "timestamp": "2026-05-14T07:31:07.054290+00:00",
       "site": "BSR",
@@ -8249,6 +8226,56 @@
       "type": "fetch_error",
       "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-13T07:01:15.423343+00:00",
+      "site": "Open Society Foundations",
+      "site_id": 2,
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-13T07:01:15.423343+00:00",
+      "site": "Pew Trusts",
+      "site_id": 3,
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-13T07:01:15.423343+00:00",
+      "site": "ERM",
+      "site_id": 69,
+      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-13T07:01:15.423343+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f58e9f440b0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-13T07:01:15.423343+00:00",
+      "site": "Edelman",
+      "site_id": 78,
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 2
     }
   ]
 }
