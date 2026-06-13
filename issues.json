@@ -1,13 +1,26 @@
 {
-  "last_updated": "2026-06-13T16:01:09.063038+00:00",
+  "last_updated": "2026-06-13T16:31:27.383241+00:00",
   "site_summary": {
+    "Global Rights Compliance": {
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 65,
+      "first_recent_failure": "2026-05-15T05:00:56.927827+00:00",
+      "last_recent_failure": "2026-06-13T16:31:27.383241+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    24 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\""
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 218,
-      "first_recent_failure": "2026-05-14T16:30:54.889786+00:00",
+      "total_recent_failures": 217,
+      "first_recent_failure": "2026-05-14T17:01:08.562797+00:00",
       "last_recent_failure": "2026-06-11T17:01:12.190173+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-13T17:01:12.190173+00:00",
@@ -31,10 +44,10 @@
       "site_id": 63,
       "url": "https://www.sigrid-rausing-trust.org/jobs/",
       "method": "html",
-      "consecutive_failures": 2,
+      "consecutive_failures": 3,
       "total_recent_failures": 67,
-      "first_recent_failure": "2026-05-14T16:30:54.889786+00:00",
-      "last_recent_failure": "2026-06-13T16:01:09.063038+00:00",
+      "first_recent_failure": "2026-05-14T17:01:08.562797+00:00",
+      "last_recent_failure": "2026-06-13T16:31:27.383241+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -42,26 +55,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-14T16:30:54.889786+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 7
-    },
-    {
-      "timestamp": "2026-05-14T16:30:54.889786+00:00",
-      "site": "Sigrid Rausing Trust",
-      "site_id": 63,
-      "url": "https://www.sigrid-rausing-trust.org/jobs/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='www.sigrid-rausing-trust.org', port=443): Read timed out. (read timeout=30)",
-      "consecutive_count": 2
-    },
     {
       "timestamp": "2026-05-14T17:01:08.562797+00:00",
       "site": "ICTJ",
@@ -8260,6 +8253,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.sigrid-rausing-trust.org%2Fjobs%2F",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-13T16:31:27.383241+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    24 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-13T16:31:27.383241+00:00",
+      "site": "Sigrid Rausing Trust",
+      "site_id": 63,
+      "url": "https://www.sigrid-rausing-trust.org/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.sigrid-rausing-trust.org%2Fjobs%2F",
+      "consecutive_count": 3
     }
   ]
 }
