@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T13:01:07.794425+00:00",
+  "last_updated": "2026-06-13T13:31:04.465079+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -31,10 +31,10 @@
       "site_id": 63,
       "url": "https://www.sigrid-rausing-trust.org/jobs/",
       "method": "html",
-      "consecutive_failures": 7,
-      "total_recent_failures": 63,
+      "consecutive_failures": 8,
+      "total_recent_failures": 64,
       "first_recent_failure": "2026-05-14T16:00:59.487828+00:00",
-      "last_recent_failure": "2026-06-13T13:01:07.794425+00:00",
+      "last_recent_failure": "2026-06-13T13:31:04.465079+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -42,26 +42,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-14T13:30:48.230462+00:00",
-      "site": "Palladium Group",
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "type": "fetch_error",
-      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f1620083c50>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-14T13:30:48.230462+00:00",
-      "site": "Ceasefire Centre for Civilian Rights",
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f161dd5c0b0>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-14T13:47:06.891210+00:00",
       "site": "Centre for Information Resilience",
@@ -8320,6 +8300,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.sigrid-rausing-trust.org%2Fjobs%2F",
       "consecutive_count": 7
+    },
+    {
+      "timestamp": "2026-06-13T13:31:04.465079+00:00",
+      "site": "Sigrid Rausing Trust",
+      "site_id": 63,
+      "url": "https://www.sigrid-rausing-trust.org/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.sigrid-rausing-trust.org%2Fjobs%2F",
+      "consecutive_count": 8
     }
   ]
 }
