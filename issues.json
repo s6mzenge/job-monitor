@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T05:31:00.389762+00:00",
+  "last_updated": "2026-06-13T06:01:10.194270+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -42,46 +42,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-14T05:31:00.561706+00:00",
-      "site": "Protection Approaches",
-      "site_id": 31,
-      "url": "https://protectionapproaches.org/current-vacancies",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-14T05:31:00.561706+00:00",
-      "site": "BSR",
-      "site_id": 67,
-      "url": "https://www.bsr.org/en/careers",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-14T06:00:57.743082+00:00",
-      "site": "Protection Approaches",
-      "site_id": 31,
-      "url": "https://protectionapproaches.org/current-vacancies",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-14T06:00:57.743082+00:00",
-      "site": "BSR",
-      "site_id": 67,
-      "url": "https://www.bsr.org/en/careers",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#jobs a[href*='ats.rippling.com']\") to be visible",
-      "consecutive_count": 3
-    },
     {
       "timestamp": "2026-05-14T06:30:58.796221+00:00",
       "site": "BSR",
