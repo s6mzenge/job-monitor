@@ -1,6 +1,105 @@
 {
   "date": "2026-06-13",
-  "generated_at": "2026-06-13T05:01:12.954619+00:00",
-  "run_count": 1,
-  "jobs": []
+  "generated_at": "2026-06-13T05:31:00.389762+00:00",
+  "run_count": 2,
+  "jobs": [
+    {
+      "title": "Tutor - Freelancer",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/shanghai-Tutor-Freelancer/992523301",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "3",
+      "reason": "This is a freelance tutoring/course delivery role at LRQA (an assurance/certification firm) in Shanghai, with no connection to IR, policy, intelligence, or research. The role likely requires subject-matter expertise in LRQA's certification areas (quality, safety, compliance auditing) that the candidate does not have, and the Shanghai location likely requires Mandarin.",
+      "location": "Shanghai, China",
+      "type": "Freelance",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Verifier - Contractor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Monterey-Lead-Verifier-Contractor/970623001",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a GHG emissions verification role requiring an engineering/environmental science degree and at least 3 years of GHG verification experience — wholly outside the candidate's IR/policy field and lacking the specialist technical background. Hard mismatch across all three dimensions.",
+      "location": "Monterey, Mexico",
+      "type": "Contractor",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Mexico Aerospace Auditor - Contractor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Remote-based-Mexico-Mexico-Aerospace-Auditor-Contractor/992140101",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Pure mismatch — this is an aerospace quality management auditor role requiring specialist AS9100D/ISO 9001 certification expertise and likely Spanish fluency for Mexico-based work. None of the candidate's IR/policy research background applies, and they lack both the auditor credentials and the working Spanish required.",
+      "location": "Remote, Mexico",
+      "type": "Contractor",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Subcontractor Assessor Energy Systems",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Rotterdam-Subcontractor-Assessor-Energy-Systems/1088228001",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a technical energy management systems auditor role requiring a technical degree, 5+ years industry experience, and expertise in ISO50001/environmental management — none of which the candidate has. Also requires Dutch fluency (candidate has only A1), triggering the language hard ineligibility rule, alongside the 5-year experience requirement.",
+      "location": "Rotterdam, Netherlands",
+      "type": "Contractor On Demand",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Subcontractor IATF Auditor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Rotterdam-Subcontractor-IATF-Auditor/1112376601",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an automotive quality-management auditor role requiring IATF 16949 certification, a degree in chemistry/electronics/informatics, and 4+ years in the automotive supply industry — none of which the candidate has. Also requires Dutch fluency, which the candidate does not have (A1 only). Hard ineligibility on language and specialist qualifications.",
+      "location": "Rotterdam, Netherlands",
+      "type": "Contractor On Demand",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Freelance Auditor Food Netherlands",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Rotterdam-Freelance-Auditor-Food-Netherlands/981884901",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a food safety auditor role requiring a degree in food technology, 5+ years of experience in quality management and food safety, and Dutch fluency for the work — all hard ineligibility triggers. The role has no connection to the candidate's IR/policy/intelligence targets.",
+      "location": "Rotterdam, Netherlands",
+      "type": "Contract (Freelance)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Subcontractor Assessor Netherlands",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Rotterdam-Subcontractor-Assessor-Netherlands/1087871601",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an ISO 55001 Asset Management Lead Auditor role in energy/infrastructure/rail sectors, entirely unrelated to the candidate's IR/policy/intelligence targets. It requires Lead Auditor qualifications and sector-specific asset management experience the candidate does not have, and also requires working Dutch (candidate is only A1).",
+      "location": "Rotterdam, Netherlands",
+      "type": "Contractor On Demand",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
 }
