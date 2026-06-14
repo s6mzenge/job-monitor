@@ -1183,8 +1183,7 @@
     "seen_urls": [],
     "last_checked": "2026-06-14T12:31:11.587399+00:00",
     "listing_hash": "13e898c16be2f52e4d5225fcb383e08abdd81645e579e8cb15269409bd3e8603",
-    "consecutive_errors": 16,
-    "paused_until": "2026-06-16T12:31:11.587399+00:00"
+    "consecutive_errors": 0
   },
   "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities": {
     "seen_urls": [],
