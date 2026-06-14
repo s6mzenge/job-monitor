@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T12:31:11.587399+00:00",
+  "last_updated": "2026-06-14T13:01:20.070429+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -32,26 +32,29 @@
       "url": "https://www.sigrid-rausing-trust.org/jobs/",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 72,
-      "first_recent_failure": "2026-05-15T13:00:57.687089+00:00",
+      "total_recent_failures": 71,
+      "first_recent_failure": "2026-05-15T13:30:50.490031+00:00",
       "last_recent_failure": "2026-06-14T12:31:11.587399+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-16T12:31:11.587399+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "LRQA": {
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 95,
+      "first_recent_failure": "2026-05-23T13:30:47.046035+00:00",
+      "last_recent_failure": "2026-06-14T13:01:20.070429+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7eff080afc20>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-15T13:00:57.687089+00:00",
-      "site": "Sigrid Rausing Trust",
-      "site_id": 63,
-      "url": "https://www.sigrid-rausing-trust.org/jobs/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/",
-      "consecutive_count": 13
-    },
     {
       "timestamp": "2026-05-15T13:30:50.490031+00:00",
       "site": "Palladium Group",
@@ -8471,6 +8474,16 @@
       "message": "Site paused after 16 consecutive failures",
       "consecutive_count": 16,
       "paused_until": "2026-06-16T12:31:11.587399+00:00"
+    },
+    {
+      "timestamp": "2026-06-14T13:01:20.070429+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7eff080afc20>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
     }
   ]
 }
