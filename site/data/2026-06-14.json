@@ -1,7 +1,7 @@
 {
   "date": "2026-06-14",
-  "generated_at": "2026-06-14T17:31:14.679545+00:00",
-  "run_count": 27,
+  "generated_at": "2026-06-14T19:04:54.610312+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Lead Assessor / Senior Assessor",
@@ -72,6 +72,20 @@
       "type": "Full-time",
       "deadline": "15/06/2026",
       "salary": "£52,088 plus up to 5% employee matched pension contribution"
+    },
+    {
+      "title": "Fundraising Coordinator",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "Although Reprieve's mission aligns well with the candidate's interests, the role itself is fundraising/development work rather than research, policy or human rights analysis. The candidate has no fundraising experience and this function sits outside their target zones.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "31/05/2026",
+      "salary": "£32,696 per annum plus up to 5% employee matched pension contribution"
     }
   ]
 }

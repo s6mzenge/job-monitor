@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-06-14T17:31:14.679545+00:00",
+  "last_updated": "2026-06-14T19:04:54.610312+00:00",
   "site_summary": {
+    "Integrity Global": {
+      "site_id": 38,
+      "url": "https://www.integrityglobal.com/opportunities/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-14T19:04:54.610312+00:00",
+      "last_recent_failure": "2026-06-14T19:04:54.610312+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 523 Server Error: <none> for url: https://www.integrityglobal.com/opportunities/"
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -9,20 +22,10 @@
       "total_recent_failures": 224,
       "first_recent_failure": "2026-05-17T08:30:50.686417+00:00",
       "last_recent_failure": "2026-06-14T11:31:08.428362+00:00",
-      "currently_paused": false
-    },
-    "Uppsala UHGS": {
-      "site_id": 42,
-      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 62,
-      "first_recent_failure": "2026-05-16T08:00:56.941723+00:00",
-      "last_recent_failure": "2026-06-14T17:31:14.679545+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "currently_paused": true,
+      "paused_until": "2026-06-16T11:31:08.428362+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
     },
     "Reprieve": {
       "site_id": 58,
@@ -36,16 +39,6 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
-    },
-    "Sigrid Rausing Trust": {
-      "site_id": 63,
-      "url": "https://www.sigrid-rausing-trust.org/jobs/",
-      "method": "html",
-      "consecutive_failures": 16,
-      "total_recent_failures": 67,
-      "first_recent_failure": "2026-05-17T15:00:51.435987+00:00",
-      "last_recent_failure": "2026-06-14T12:31:11.587399+00:00",
-      "currently_paused": false
     }
   },
   "issues": [
@@ -8466,6 +8459,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-14T19:04:54.610312+00:00",
+      "site": "Integrity Global",
+      "site_id": 38,
+      "url": "https://www.integrityglobal.com/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 523 Server Error: <none> for url: https://www.integrityglobal.com/opportunities/",
       "consecutive_count": 1
     }
   ]
