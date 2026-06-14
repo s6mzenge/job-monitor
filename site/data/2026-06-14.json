@@ -1,7 +1,7 @@
 {
   "date": "2026-06-14",
-  "generated_at": "2026-06-14T11:31:08.428362+00:00",
-  "run_count": 14,
+  "generated_at": "2026-06-14T11:44:38.676957+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Lead Assessor / Senior Assessor",
@@ -16,6 +16,48 @@
       "type": "Fixed-Term Employee (Full-time)",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Advisory Board Member",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Advisory board roles require senior expert standing in international law/accountability — the candidate is an MSc student without the seniority or track record this entails. Hard ineligibility on seniority.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Finance and Organisational Support Officer",
+      "organisation": "Institute of Race Relations",
+      "url": "https://irr.org.uk/about/vacancies/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "Finance and organisational support is off-profile for an IR researcher — the role centres on bookkeeping/admin rather than policy or research work. The candidate lacks dedicated finance experience.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "23 June 2026, 11:59pm",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Administrative Volunteer (Casework Team)",
+      "organisation": "INQUEST",
+      "url": "https://inquest.org.uk/about-us/working-at-inquest/",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "Unpaid volunteer roles are excluded — the candidate is seeking genuine paid entry-level positions. The casework administration focus is also only loosely adjacent to the candidate's IR/policy profile.",
+      "location": "Not specified",
+      "type": "Volunteer",
+      "deadline": "Not specified",
+      "salary": "Unpaid"
     }
   ]
 }
