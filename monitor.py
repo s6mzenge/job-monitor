@@ -10,6 +10,11 @@ from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin, urlsplit, urlunsplit, parse_qsl, urlencode
 import cloudscraper
 from playwright.sync_api import sync_playwright
+try:
+    from curl_cffi import requests as cffi_requests
+    HAVE_CURL_CFFI = True
+except Exception:  # optional dep; only sites with tls_impersonate need it
+    HAVE_CURL_CFFI = False
 from report import save_report
 import issues
 
@@ -222,7 +227,7 @@ RETRY_STATUS_CODES = {429, 500, 502, 503, 504, 521, 522, 523, 524}
 FETCH_MAX_ATTEMPTS = 3
 FETCH_RETRY_BACKOFF = 10  # seconds between retries
 
-def fetch_page(url, extra_headers=None, proxy=None):
+def fetch_page(url, extra_headers=None, proxy=None, tls_impersonate=False):
     """Fetch a URL and return a BeautifulSoup object, or None on error.
 
     Retries up to FETCH_MAX_ATTEMPTS times on transient errors:
@@ -234,7 +239,16 @@ def fetch_page(url, extra_headers=None, proxy=None):
     last_err = None
     for attempt in range(1, FETCH_MAX_ATTEMPTS + 1):
         try:
-            if proxy == "cloudflare_worker" and CF_WORKER_URL:
+            if tls_impersonate:
+                # Some sites (SRT, Reprieve) block non-browser TLS fingerprints
+                # outright (flat 403 / handshake refusal). curl_cffi sends a real
+                # Chrome JA3 fingerprint and gets through where requests cannot.
+                if not HAVE_CURL_CFFI:
+                    raise RuntimeError(
+                        "tls_impersonate requires curl_cffi (add it to requirements.txt)"
+                    )
+                resp = cffi_requests.get(url, impersonate="chrome", timeout=30)
+            elif proxy == "cloudflare_worker" and CF_WORKER_URL:
                 resp = requests.get(
                     CF_WORKER_URL,
                     params={"url": url},
@@ -385,7 +399,7 @@ def check_html(site, seen_urls):
             print(f"    Error fetching {listing_url}: {e}")
             soup = None
     else:
-        soup = fetch_page(listing_url, proxy=site.get("proxy"))
+        soup = fetch_page(listing_url, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
     if not soup:
         return None
 
@@ -486,7 +500,7 @@ def check_html(site, seen_urls):
                     print(f"    Error fetching detail {job['url']}: {e}")
                     detail_soup = None
             else:
-                detail_soup = fetch_page(job["url"], proxy=site.get("proxy"))
+                detail_soup = fetch_page(job["url"], proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
             detail_text = extract_text(detail_soup) if detail_soup else ""
         new_jobs.append({
             "title": job["title"],
