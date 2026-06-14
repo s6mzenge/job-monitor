@@ -508,17 +508,6 @@
       "base_url": "https://www.niod.nl"
     },
     {
-      "id": 41,
-      "name": "ICTJ",
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "selector": "#block-views-block-careers-list-block-1",
-      "link_selector": "h3.resource-title a.title-link",
-      "base_url": "https://www.ictj.org",
-      "scope_links": true,
-      "proxy": "cloudflare_worker"
-    },
-    {
       "id": 42,
       "name": "Uppsala UHGS",
       "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
@@ -728,7 +717,7 @@
       "selector": "main, div.entry-content, article",
       "link_selector": "",
       "base_url": "https://reprieve.org.uk",
-      "proxy": "cloudflare_worker"
+      "tls_impersonate": true
     },
     {
       "id": 59,
@@ -798,7 +787,7 @@
       "selector": "div.content, div.article",
       "link_selector": "",
       "base_url": "https://www.sigrid-rausing-trust.org",
-      "proxy": "cloudflare_worker"
+      "tls_impersonate": true
     },
     {
       "id": 64,
