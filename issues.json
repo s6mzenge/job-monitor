@@ -9,10 +9,7 @@
       "total_recent_failures": 224,
       "first_recent_failure": "2026-05-17T08:30:50.686417+00:00",
       "last_recent_failure": "2026-06-14T11:31:08.428362+00:00",
-      "currently_paused": true,
-      "paused_until": "2026-06-16T11:31:08.428362+00:00",
-      "last_type": "site_paused",
-      "last_message": "Site paused after 16 consecutive failures"
+      "currently_paused": false
     },
     "Uppsala UHGS": {
       "site_id": 42,
@@ -48,10 +45,7 @@
       "total_recent_failures": 67,
       "first_recent_failure": "2026-05-17T15:00:51.435987+00:00",
       "last_recent_failure": "2026-06-14T12:31:11.587399+00:00",
-      "currently_paused": true,
-      "paused_until": "2026-06-16T12:31:11.587399+00:00",
-      "last_type": "site_paused",
-      "last_message": "Site paused after 16 consecutive failures"
+      "currently_paused": false
     }
   },
   "issues": [
