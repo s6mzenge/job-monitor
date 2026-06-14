@@ -1681,6 +1681,12 @@ as usual — the exclusion overrides the rating, not the scores:
      date (given at the top of the user message) — treat the role as closed.
      Apply this ONLY when a deadline is explicitly stated and has passed; many
      postings are evergreen or list no deadline, and those are NOT excluded.
+  • Speculative or open applications with no concrete advertised vacancy —
+     "speculative application", "open application", "register your interest",
+     "talent pool" / "talent community", "we are always looking for", or a
+     general "send us your CV" page. These are not live openings. A specific,
+     currently-advertised role — including a named internship — is NOT
+     covered by this and is assessed normally.
   • Requires a PhD that is awarded, near-completion, or "by the start date"
   • Requires a UK qualifying law degree, GDL, SQE, or CILEX (the candidate
      does not have one — applies to JUSTICE roles, paralegal positions, etc.)
