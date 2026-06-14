@@ -54,12 +54,16 @@ def save_report(jobs, now=None):
             existing_jobs = existing.get("jobs", [])
             run_count = existing.get("run_count", 0)
 
-    # Merge: deduplicate by URL
-    seen_urls = {j["url"] for j in existing_jobs if j.get("url")}
+    # Merge: deduplicate by (URL, title). Page-level / hash-check sites list
+    # several jobs at ONE careers-page URL, so deduping on URL alone collapses
+    # them to a single entry and hides the rest (including real matches).
+    def _dedup_key(j):
+        return (j.get("url", ""), (j.get("title", "") or "").strip().lower())
+    seen_keys = {_dedup_key(j) for j in existing_jobs if j.get("url")}
     for job in jobs:
-        if job.get("url") and job["url"] not in seen_urls:
+        if job.get("url") and _dedup_key(job) not in seen_keys:
             existing_jobs.append(job)
-            seen_urls.add(job["url"])
+            seen_keys.add(_dedup_key(job))
 
     run_count += 1
 
