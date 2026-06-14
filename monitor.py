@@ -7,11 +7,66 @@ import time
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit, urlunsplit, parse_qsl, urlencode
 import cloudscraper
 from playwright.sync_api import sync_playwright
 from report import save_report
 import issues
+
+# ─── De-duplication & hash-stability helpers ───
+# Job-board URLs often carry volatile tracking params, and hash-check pages
+# carry rotating tokens (cookie-consent IDs, CSRF nonces, timestamps). Both
+# make an unchanged posting look "new" every run, re-triggering paid LLM
+# calls. These helpers normalise away the volatile parts.
+
+_TRACKING_PARAMS = {
+    "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
+    "gclid", "fbclid", "mc_cid", "mc_eid", "ref", "referrer", "source",
+    "_ga", "igshid", "yclid", "msclkid", "cmpid", "campaign",
+}
+
+def _norm_url(u):
+    """Canonicalise a URL for dedup. Non-URL strings (e.g. job IDs used as
+    seen-keys) pass through unchanged. Drops fragments and tracking params,
+    lowercases scheme/host, strips a trailing slash, and sorts the remaining
+    query so param-order churn does not create a 'new' URL. Meaningful params
+    (gh_jid, jobId, etc.) are preserved."""
+    if not isinstance(u, str) or not u.lower().startswith(("http://", "https://")):
+        return u
+    try:
+        p = urlsplit(u.strip())
+        path = p.path.rstrip("/") or "/"
+        q = [(k, v) for (k, v) in parse_qsl(p.query, keep_blank_values=True)
+             if k.lower() not in _TRACKING_PARAMS]
+        return urlunsplit((p.scheme.lower(), p.netloc.lower(), path,
+                           urlencode(sorted(q)), ""))
+    except Exception:
+        return u
+
+class _NormSet(set):
+    """A set that normalises URLs on the way in and on every membership test,
+    so handlers' `job_url in seen_urls` checks survive tracking-param churn
+    without any change to the handlers themselves."""
+    def __contains__(self, item):
+        return super().__contains__(_norm_url(item))
+    def add(self, item):
+        super().add(_norm_url(item))
+
+_HASH_UUID = re.compile(r"[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}")
+_HASH_HEX  = re.compile(r"\b[0-9a-fA-F]{16,}\b")
+_HASH_NUM  = re.compile(r"\b\d{8,}\b")
+_HASH_WS   = re.compile(r"\s+")
+
+def _stable_hash_text(text):
+    """Strip volatile tokens (UUIDs, long hex nonces, long digit runs e.g.
+    timestamps) and collapse whitespace BEFORE hashing a page. Only the hash
+    input is normalised — the full text is still sent to the LLM if a real
+    change is detected, so this cannot hide a genuinely new posting."""
+    t = _HASH_WS.sub(" ", text)
+    t = _HASH_UUID.sub("", t)
+    t = _HASH_HEX.sub("", t)
+    t = _HASH_NUM.sub("", t)
+    return t.strip()
 try:
     from playwright_stealth import stealth_sync as _stealth_sync
     _STEALTH_MODE = "page"
@@ -338,7 +393,7 @@ def check_html(site, seen_urls):
         text = extract_text(soup, selector)
         if len(text) < 50 and not any(p in text.lower() for p in NO_VACANCY_PHRASES):
             print(f"    ⚠️ Very little content extracted ({len(text)} chars) — site may require JavaScript rendering")
-        text_hash = hashlib.sha256(text.encode()).hexdigest()
+        text_hash = hashlib.sha256(_stable_hash_text(text).encode()).hexdigest()
         titles = []
         target_el = soup.select_one(selector) if selector else soup
         if target_el:
@@ -938,7 +993,7 @@ def check_playwright(site, seen_urls):
         text = extract_text(soup, selector)
         if len(text) < 50:
             print(f"    ⚠️ Very little content ({len(text)} chars)")
-        text_hash = hashlib.sha256(text.encode()).hexdigest()
+        text_hash = hashlib.sha256(_stable_hash_text(text).encode()).hexdigest()
         titles = []
         target_el = soup.select_one(selector) if selector else soup
         if target_el:
@@ -1484,12 +1539,49 @@ core targets, not stretches. Theoretical interests on the CV are background
 context; the candidate's actual applications span all three zones.
 
 ────────────────────────────────────────
+CANDIDATE STRENGTHS & GAPS (use to score SKILLS consistently)
+────────────────────────────────────────
+
+Score SKILLS against this fixed picture rather than re-deriving it each call.
+
+Strengths the candidate can credibly offer:
+  • LSE MSc IR (in progress) + Bonn BA at 1.3 — a strong academic signal for
+    London and European policy, research and risk roles.
+  • Distinctive specialism: international law, genocide / atrocity prevention,
+    transitional justice, European foreign and security policy.
+  • Research and writing: policy and academic writing, literature review,
+    qualitative and quantitative analysis (SPSS, Python, Excel at analysis
+    level); a published author.
+  • Practical: research-assistant work, project administration, event and
+    research support, and helping allocate ~€1.7m of federal funding at the
+    German Rectors' Conference.
+  • Languages: German (native), English (C2).
+
+Hard gaps — do NOT let the strong general profile paper over these:
+  • No full-time professional experience (student-assistant / RA only).
+  • French is B1 (working, not fluent), no other working languages — roles
+    needing fluent French or another language are out (see EXCLUSIONS).
+  • Not a qualified lawyer — no UK qualifying law degree / GDL / SQE / CILEX.
+  • Python/data is analysis-level, NOT ML or software engineering. The zone-c
+    fit is the policy / governance / OSINT side; deep-technical research-
+    engineer or ML roles are a SKILLS gap (score 2 or lower).
+  • Limited dedicated communications / marketing-campaign and events-
+    management experience — comms/events-specialist roles are a partial gap.
+  • No security-operations, physical-security, GSOC, military or clearance
+    background — operational security / risk-monitoring roles are a poor fit
+    even at target firms.
+
+────────────────────────────────────────
 ASSESSMENT FRAMEWORK
 ────────────────────────────────────────
 
 You will rate each job on three dimensions, scored 1–5.
 
 FIELD alignment
+  Score FIELD on the work the role actually involves, not on the employer's
+  prestige or sector. The firms named below illustrate the KIND of work that
+  scores high — a generic operations, HR, finance, sales, marketing or
+  shift-security role at one of those firms is still scored on its function.
   5 — Core fit. Any of:
        • International law, transitional justice, genocide prevention,
          human rights research, refugee/displacement research
@@ -1536,26 +1628,59 @@ SKILLS match
        (clinical practice, accountancy software, civil engineering tools,
        qualified-lawyer drafting, hands-on lab work).
 
+  Essential vs desirable criteria: many postings (UK public-sector,
+  university and NGO roles especially) list formal "Essential" criteria and
+  state that applicants who do not meet them are not shortlisted. Identify the
+  Essential criteria. If the candidate clearly fails a HARD essential that
+  cannot be argued from transferable experience — a specific qualification or
+  licence, a named tool/method never used, or a specific number of years of a
+  specific kind of experience — cap SKILLS at 2 (which prevents a High under
+  the MATCH rule); if that failed essential is itself an EXCLUSION item, apply
+  the exclusion. Essentials a capable applicant can credibly evidence from
+  transferable work do NOT cap the score.
+
 SENIORITY fit
-  5 — Internships, working-student roles, research / admin / programme
-       assistant, junior analyst, "graduate scheme", entry-level positions
-       explicitly open to those with no full-time professional experience.
-  4 — Roles asking for ~1–2 years of experience or equivalent. The
-       candidate's substantial student-assistant experience often counts.
-  3 — Roles asking for ~3 years of post-degree experience.
-  2 — Roles asking for 4 years, or "Manager" titles where management
-       experience is preferred but not strictly required.
-  1 — Senior, Lead, Director, Head, Partner, Principal titles; roles
-       requiring 5+ years as a hard requirement; explicit PhD requirement;
-       specialist licences/registrations the candidate doesn't hold.
+  The candidate is finishing an MSc and has NO full-time professional
+  experience — only student-assistant and research-assistant work. Do NOT
+  treat that student/RA work as equivalent to required years of professional
+  experience; score by what the posting demands. If a research, analyst
+  or coordinator posting states no years requirement and is not labelled
+  senior / lead / manager, default to Seniority 5 — do not invent an
+  experience bar the posting does not state.
+  5 — Genuine entry-level professional roles open to people with no prior
+       full-time experience: graduate schemes, entry-level / junior analyst
+       or researcher, research assistant / officer as a full salaried role,
+       entry-level associate or consultant, graduate internships and named
+       graduate "associate"/"fellow" entry programmes, or roles stating "no
+       experience necessary" / "recent graduates welcome".
+  4 — Asks for roughly 1 year, "some relevant experience", or a placement
+       that explicitly counts prior student work. A strong MSc + RA profile
+       can compete, but it is not a safe bet.
+  3 — Asks for roughly 2 years of professional experience.
+  2 — Asks for roughly 3 years, or a "Manager" title where management
+       experience is expected.
+  1 — Senior / Lead / Director / Head / Principal / Partner titles; 4+ years
+       as a hard requirement; explicit PhD requirement; specialist
+       licences/registrations the candidate doesn't hold.
 
 ────────────────────────────────────────
-HARD INELIGIBILITY RULES
+EXCLUSIONS (force MATCH = Low)
 ────────────────────────────────────────
 
-If ANY of the following apply, set SENIORITY = 1 and MATCH = Low regardless
-of how strong the field or skills alignment is:
+If ANY of the following apply, set MATCH = Low regardless of how strong the
+field, skills or seniority alignment is. Score the three dimensions honestly
+as usual — the exclusion overrides the rating, not the scores:
 
+  • Working-student / student-assistant roles — e.g. "studentische
+     Hilfskraft", "working student", or part-time roles explicitly aimed at
+     people currently enrolled in a degree. The candidate wants real
+     entry-level jobs, not study-time positions.
+  • Unpaid volunteer roles, or roles offering only expenses or a stipend in
+     place of a salary.
+  • The application deadline stated in the posting is clearly before TODAY's
+     date (given at the top of the user message) — treat the role as closed.
+     Apply this ONLY when a deadline is explicitly stated and has passed; many
+     postings are evergreen or list no deadline, and those are NOT excluded.
   • Requires a PhD that is awarded, near-completion, or "by the start date"
   • Requires a UK qualifying law degree, GDL, SQE, or CILEX (the candidate
      does not have one — applies to JUSTICE roles, paralegal positions, etc.)
@@ -1566,9 +1691,9 @@ of how strong the field or skills alignment is:
      candidate has German, English, and basic French only. Roles requiring
      Spanish, Portuguese, Russian, Mandarin, Arabic, Czech, Polish, etc.
      for the actual work (not "nice to have") trigger this rule.
-  • Requires 5+ years of professional full-time experience as a HARD
-     requirement. Note carefully: "ideally 5 years", "preferably",
-     "5+ desirable" are NOT hard requirements — they are preferences. Only
+  • Requires 3+ years of professional full-time experience as a HARD
+     requirement. Note carefully: "ideally 3 years", "preferably",
+     "3+ desirable" are NOT hard requirements — they are preferences. Only
      exclude when the requirement is explicit and non-negotiable.
   • Requires a specific vocational training (e.g., German "Ausbildung" in a
      trade like Mechatronik, Sanitär-/Klimatechnik) that the candidate lacks
@@ -1577,19 +1702,33 @@ of how strong the field or skills alignment is:
 OVERALL MATCH RATING (deterministic mapping)
 ────────────────────────────────────────
 
-After scoring the three dimensions, derive MATCH using this exact rule:
+"High" must mean a role the candidate could realistically win: genuinely
+entry-level AND a credible fit for an LSE IR-research graduate. It does NOT
+require a perfect field or skills match — options are scarce, so an
+accessible, on-profile role should clear the bar even when it is not ideal.
+Apply EXCLUSIONS first (any exclusion forces Low), then derive MATCH from the
+three scores using this exact rule:
 
-  HIGH    — All three scores ≥ 4 AND no hard ineligibility triggered.
-  MEDIUM  — At least one score ≥ 4, no score = 1, no hard ineligibility.
-  LOW     — Any score = 1, OR two or more scores = 2, OR any hard
-            ineligibility rule triggered.
+  HIGH    — SENIORITY = 5 (true entry-level, no professional-experience
+            barrier) AND FIELD ≥ 4 (the kind of work an LSE IR graduate does:
+            international affairs, policy, security, human rights,
+            intelligence / geopolitical risk, OSINT, research) AND
+            SKILLS ≥ 3, and no exclusion.
+  MEDIUM  — A plausible stretch: not High and not Low. Typically an
+            entry-level role in an only-adjacent field (FIELD = 3); OR an
+            on-profile role asking for ~1–2 years (SENIORITY = 3 or 4); OR an
+            on-profile entry-level role with a real but closeable skills gap
+            (SKILLS = 2). No exclusion.
+  LOW     — Any exclusion; OR SENIORITY ≤ 2 (asks ~3+ years, or a
+            Manager / Senior / Lead / Director-type role); OR FIELD ≤ 2 (off
+            the candidate's profile); OR SKILLS = 1.
 
 Do NOT factor location into the rating. Report it for information only —
 a role in another city or country does not lower the rating.
 
-Err on the side of inclusion for genuinely relevant roles where seniority
-fits: when in doubt between Medium and Low for a plausibly relevant role,
-choose Medium.
+When genuinely unsure between two tiers for an accessible, on-profile role,
+pick the higher tier — too few roles are reaching the candidate, so the cost
+of a missed match is higher than the cost of an extra look.
 
 ────────────────────────────────────────
 OUTPUT FORMAT
@@ -1678,6 +1817,32 @@ quantitative methods or basic programming →
   focus; Python and data analysis skills meet the technical side; RA
   level matches the candidate's stage.
 
+Example 7 — working-student / volunteer (excluded)
+A "Studentische Hilfskraft" (working student, 10h/week) in a foreign-policy
+research group, or an unpaid casework volunteer post at a human-rights
+charity →
+  FIELD: 5  SKILLS: 5  SENIORITY: 5  MATCH: Low
+  REASON: Field, skills and level all fit, but working-student and unpaid
+  volunteer roles are excluded — the candidate wants genuine entry-level
+  jobs, not study-time or unpaid positions.
+
+Example 8 — strong field, but asks for experience (Medium, not High)
+A "Risk Analyst" at a geopolitical-risk consultancy doing core-field work,
+but the posting asks for ~2 years of relevant professional experience →
+  FIELD: 5  SKILLS: 3  SENIORITY: 3  MATCH: Medium
+  REASON: The field is core and the work fits, but the role asks for ~2 years
+  of professional experience the candidate does not have. Worth seeing as a
+  stretch, but not High.
+
+Example 9 — accessible and on-profile, though imperfect (High under scarcity)
+An entry-level "Research Assistant" at a human-rights NGO open to recent
+graduates, where the candidate has the research and writing but lacks one
+specific named method (e.g., a particular statistical package) →
+  FIELD: 5  SKILLS: 3  SENIORITY: 5  MATCH: High
+  REASON: Genuinely entry-level and squarely on-profile; the skills gap is
+  closeable. Flag High even though it is not flawless — accessible,
+  on-profile roles are exactly what the candidate should apply to.
+
 ────────────────────────────────────────
 CANDIDATE CV
 ────────────────────────────────────────
@@ -1691,9 +1856,11 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
 
     # Build the per-call user message. Everything that varies between calls
     # goes here; everything static lives in SYSTEM_PROMPT and is cached.
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     if is_page_level:
         user_message = (
             f"PAGE-LEVEL SCAN\n"
+            f"TODAY (for deadline checks): {today}\n"
             f"ORGANISATION: {site_name}\n"
             f"URL: {job_url}\n\n"
             f"PAGE CONTENT:\n{detail_text[:10000]}"
@@ -1701,6 +1868,7 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
     else:
         user_message = (
             f"SINGLE JOB EVALUATION\n"
+            f"TODAY (for deadline checks): {today}\n"
             f"JOB: {job_title}\n"
             f"ORGANISATION: {site_name}\n"
             f"URL: {job_url}\n\n"
@@ -1998,8 +2166,8 @@ def main():
         # parallel set (handlers use O(1) `in` checks). Order is preserved
         # so that the prune-to-last-200 step at the end correctly drops the
         # OLDEST entries rather than an arbitrary subset.
-        seen_urls_ordered = list(state[site_key].get("seen_urls", []))
-        seen_urls = set(seen_urls_ordered)
+        seen_urls_ordered = [_norm_url(u) for u in state[site_key].get("seen_urls", [])]
+        seen_urls = _NormSet(seen_urls_ordered)
         handler = METHOD_HANDLERS.get(method)
 
         if not handler:
@@ -2192,11 +2360,11 @@ def main():
             # insertion order for state persistence + prune-by-recency).
             if job["url"] not in seen_urls:
                 seen_urls.add(job["url"])
-                seen_urls_ordered.append(job["url"])
+                seen_urls_ordered.append(_norm_url(job["url"]))
             for extra in job.get("_also_track", []):
                 if extra not in seen_urls:
                     seen_urls.add(extra)
-                    seen_urls_ordered.append(extra)
+                    seen_urls_ordered.append(_norm_url(extra))
             time.sleep(1)
 
         state[site_key]["seen_urls"] = seen_urls_ordered
