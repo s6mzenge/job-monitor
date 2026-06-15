@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15T16:01:21.903578+00:00",
+  "last_updated": "2026-06-15T16:31:09.734008+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,6 +13,19 @@
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Centre for Information Resilience": {
+      "site_id": 57,
+      "url": "https://www.info-res.org/careers/current-openings/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 7,
+      "first_recent_failure": "2026-06-09T06:31:09.240545+00:00",
+      "last_recent_failure": "2026-06-15T16:31:09.734008+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.info-res.org', port=443): Read timed out. (read timeout=30)"
     },
     "Reprieve": {
       "site_id": 58,
@@ -29,16 +42,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-16T16:30:48.834955+00:00",
-      "site": "Impunity Watch",
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-16T17:00:52.383635+00:00",
       "site": "Impunity Watch",
@@ -8277,6 +8280,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fb005db7230>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-15T16:31:09.734008+00:00",
+      "site": "Centre for Information Resilience",
+      "site_id": 57,
+      "url": "https://www.info-res.org/careers/current-openings/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.info-res.org', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
     }
   ]
 }
