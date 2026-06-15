@@ -1,7 +1,7 @@
 {
   "date": "2026-06-15",
-  "generated_at": "2026-06-15T13:31:18.729215+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-15T14:01:19.635756+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Lecturer in Ethics and/or Politics",
@@ -85,6 +85,20 @@
       "location": "Mexico City, Bogota, or Rio de Janeiro",
       "type": "Full-time",
       "deadline": "2026-06-29",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Auditor - Construction",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Leamington-Lead-Auditor-Construction-B37-7ES/1404457133",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a construction industry auditor role requiring first-hand experience of infrastructure/civil projects and knowledge of ISO 9001/14001/45001 standards — entirely outside the candidate's IR/policy profile. The \"Lead\" title also implies senior experience the candidate does not have.",
+      "location": "South England / Birmingham, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
