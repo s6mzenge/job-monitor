@@ -1,7 +1,7 @@
 {
   "date": "2026-06-15",
-  "generated_at": "2026-06-15T14:01:19.635756+00:00",
-  "run_count": 19,
+  "generated_at": "2026-06-15T14:31:22.758560+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Lecturer in Ethics and/or Politics",
@@ -100,6 +100,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Managing Director, Survey Methods",
+      "organisation": "Pew Trusts",
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/job/Washington-DC-Pew-Research-Center/Managing-Director--Survey-Methods_R003204-1",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior leadership role requiring a PhD (or equivalent) and 15+ years of experience including 10+ years specialised in survey methodology — hard ineligibility on both seniority and qualifications. The candidate is finishing an MSc with only RA experience and lacks the deep survey methodology expertise required.",
+      "location": "Washington, DC",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "$250,000-275,000 annually"
     }
   ]
 }
