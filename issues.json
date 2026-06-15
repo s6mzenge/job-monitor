@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15T12:31:09.061107+00:00",
+  "last_updated": "2026-06-15T13:01:18.780602+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,19 +13,6 @@
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Uppsala UHGS": {
-      "site_id": 42,
-      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 67,
-      "first_recent_failure": "2026-05-22T11:31:04.328379+00:00",
-      "last_recent_failure": "2026-06-15T12:31:09.061107+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "Reprieve": {
       "site_id": 58,
@@ -44,37 +31,17 @@
       "site_id": 70,
       "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 106,
+      "consecutive_failures": 3,
+      "total_recent_failures": 107,
       "first_recent_failure": "2026-05-23T13:30:47.046035+00:00",
-      "last_recent_failure": "2026-06-15T12:31:09.061107+00:00",
+      "last_recent_failure": "2026-06-15T13:01:18.780602+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f76a1a963f0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f45a63582c0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-16T13:00:52.063245+00:00",
-      "site": "Global Rights Compliance",
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    14 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-16T13:00:52.063245+00:00",
-      "site": "Impunity Watch",
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
-      "consecutive_count": 2
-    },
     {
       "timestamp": "2026-05-16T14:01:03.237606+00:00",
       "site": "Global Rights Compliance",
@@ -8253,6 +8220,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f76a1a963f0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-15T13:01:18.780602+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f45a63582c0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 3
     }
   ]
 }
