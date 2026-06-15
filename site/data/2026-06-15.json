@@ -1,7 +1,7 @@
 {
   "date": "2026-06-15",
-  "generated_at": "2026-06-15T08:01:10.664304+00:00",
-  "run_count": 7,
+  "generated_at": "2026-06-15T08:31:13.116982+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Lecturer in Ethics and/or Politics",
@@ -58,6 +58,20 @@
       "type": "Full-time",
       "deadline": "31/05/2026",
       "salary": "£32,696 per annum plus up to 5% employee matched pension contribution"
+    },
+    {
+      "title": "Lecturer in International Law and Politics",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRW600/lecturer-in-international-law-and-politics",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Field alignment is excellent — international law, war crimes, atrocity legacies and peace/conflict at KCL War Studies is core to the candidate's specialism. However, this is a Lecturer post on the Academic Education Pathway requiring an emerging research track record and capacity to lead UG/PG teaching, which effectively requires a PhD (or near-completion) and prior university teaching experience — neither of which the candidate has. Hard ineligibility on seniority.",
+      "location": "London, UK",
+      "type": "Full-time, Fixed-Term (1 year)",
+      "deadline": "28 June 2026",
+      "salary": "£45,031 to £52,514 per annum including London Weighting"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15T08:01:10.664304+00:00",
+  "last_updated": "2026-06-15T08:31:13.116982+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,19 +13,6 @@
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Uppsala UHGS": {
-      "site_id": 42,
-      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 64,
-      "first_recent_failure": "2026-05-22T11:31:04.328379+00:00",
-      "last_recent_failure": "2026-06-15T08:01:10.664304+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "Reprieve": {
       "site_id": 58,
@@ -42,76 +29,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-16T08:30:50.696147+00:00",
-      "site": "Palladium Group",
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "type": "fetch_error",
-      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7fb89c75e1b0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-16T08:30:50.696147+00:00",
-      "site": "Open Society Foundations",
-      "site_id": 2,
-      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 5
-    },
-    {
-      "timestamp": "2026-05-16T08:30:50.696147+00:00",
-      "site": "Pew Trusts",
-      "site_id": 3,
-      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 5
-    },
-    {
-      "timestamp": "2026-05-16T08:30:50.696147+00:00",
-      "site": "Aegis Trust",
-      "site_id": 5,
-      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://aegistrust.online/get-involved/work-at-aegis/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-16T08:30:50.696147+00:00",
-      "site": "Ceasefire Centre for Civilian Rights",
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7fb89ad65a30>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-16T08:30:50.696147+00:00",
-      "site": "Verisk Maplecroft",
-      "site_id": 72,
-      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs?lastSelectedFacet=AttributeChar12&selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22",
-      "method": "oracle_hcm_api",
-      "type": "fetch_error",
-      "message": "Oracle HCM API: 503 Server Error: Service Unavailable for url: https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,facetsList=LOCATIONS%3BCATEGORIES%3BPOSTING_DATES%3BAttributeChar12,limit=25,selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-16T08:30:50.696147+00:00",
-      "site": "Edelman",
-      "site_id": 78,
-      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 5
-    },
     {
       "timestamp": "2026-05-16T09:00:50.234052+00:00",
       "site": "Open Society Foundations",
