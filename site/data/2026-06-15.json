@@ -1,7 +1,7 @@
 {
   "date": "2026-06-15",
-  "generated_at": "2026-06-15T11:31:07.551076+00:00",
-  "run_count": 14,
+  "generated_at": "2026-06-15T12:01:23.846606+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Lecturer in Ethics and/or Politics",
@@ -72,6 +72,20 @@
       "type": "Full-time, Fixed-Term (1 year)",
       "deadline": "28 June 2026",
       "salary": "£45,031 to £52,514 per annum including London Weighting"
+    },
+    {
+      "title": "Visual Designer",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Mexico-City/Visual-Designer_JR-0003830",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a visual/graphic design role requiring substantial portfolio experience with Adobe Creative Suite, Figma, After Effects, and UX/UI design — none of which the candidate has. It also requires fluency in the local language (Spanish or Portuguese), which the candidate does not speak. Hard mismatch on function and language.",
+      "location": "Mexico City, Bogota, or Rio de Janeiro",
+      "type": "Full-time",
+      "deadline": "2026-06-29",
+      "salary": "Not specified"
     }
   ]
 }
