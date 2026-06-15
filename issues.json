@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15T07:01:17.380359+00:00",
+  "last_updated": "2026-06-15T07:31:15.010213+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -14,19 +14,6 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Uppsala UHGS": {
-      "site_id": 42,
-      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 64,
-      "first_recent_failure": "2026-05-16T08:00:56.941723+00:00",
-      "last_recent_failure": "2026-06-15T07:01:17.380359+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
     "Reprieve": {
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
@@ -39,62 +26,9 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
-    },
-    "LRQA": {
-      "site_id": 70,
-      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 104,
-      "first_recent_failure": "2026-05-23T13:30:47.046035+00:00",
-      "last_recent_failure": "2026-06-15T07:01:17.380359+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7f2ac9cfe570>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-16T07:30:55.523141+00:00",
-      "site": "Open Society Foundations",
-      "site_id": 2,
-      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 3
-    },
-    {
-      "timestamp": "2026-05-16T07:30:55.523141+00:00",
-      "site": "Pew Trusts",
-      "site_id": 3,
-      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 3
-    },
-    {
-      "timestamp": "2026-05-16T07:30:55.523141+00:00",
-      "site": "ERM",
-      "site_id": 69,
-      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 3
-    },
-    {
-      "timestamp": "2026-05-16T07:30:55.523141+00:00",
-      "site": "Edelman",
-      "site_id": 78,
-      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
-      "method": "workday_api",
-      "type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
-      "consecutive_count": 3
-    },
     {
       "timestamp": "2026-05-16T08:00:56.941723+00:00",
       "site": "Open Society Foundations",

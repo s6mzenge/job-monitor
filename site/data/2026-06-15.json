@@ -1,7 +1,7 @@
 {
   "date": "2026-06-15",
-  "generated_at": "2026-06-15T07:01:17.380359+00:00",
-  "run_count": 5,
+  "generated_at": "2026-06-15T07:31:15.010213+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Lecturer in Ethics and/or Politics",
@@ -30,6 +30,34 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Field is core (human rights, strategic litigation) but this is a Manager-level role at the \"Project/Regional Leads/Managers\" band, requiring substantial litigation and team leadership experience the candidate (MSc in progress, RA-only background) does not have. Hard ineligibility on seniority.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% employee matched pension contribution"
+    },
+    {
+      "title": "Fundraising Coordinator",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "Although Reprieve's mission aligns with the candidate's human rights interests, fundraising/development is off-profile — it requires donor relations, fundraising-campaign and grants-management skills the candidate has not demonstrated. The role is entry-level but the functional fit is weak.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "31/05/2026",
+      "salary": "£32,696 per annum plus up to 5% employee matched pension contribution"
     }
   ]
 }
