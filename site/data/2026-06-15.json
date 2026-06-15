@@ -1,7 +1,7 @@
 {
   "date": "2026-06-15",
-  "generated_at": "2026-06-15T15:31:19.787617+00:00",
-  "run_count": 22,
+  "generated_at": "2026-06-15T16:01:21.903578+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Lecturer in Ethics and/or Politics",
@@ -114,6 +114,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "$250,000-275,000 annually"
+    },
+    {
+      "title": "Executive Assistant",
+      "organisation": "Bridgespan Group",
+      "url": "https://phh.tbe.taleo.net/phh01/ats/careers/requisition.jsp?org=THEBRIDG12&cws=40&rid=523",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "This is an administrative/executive assistant role (calendar management, travel coordination, vendor management) rather than a research or policy position — off the candidate's profile. It also requires 4-5 years of administrative support experience as a hard requirement, which the candidate does not have.",
+      "location": "Mumbai/Delhi, India",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
