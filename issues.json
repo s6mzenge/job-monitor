@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-06-14T19:04:54.610312+00:00",
+  "last_updated": "2026-06-15T05:01:15.016168+00:00",
   "site_summary": {
-    "Integrity Global": {
-      "site_id": 38,
-      "url": "https://www.integrityglobal.com/opportunities/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-06-14T19:04:54.610312+00:00",
-      "last_recent_failure": "2026-06-14T19:04:54.610312+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 523 Server Error: <none> for url: https://www.integrityglobal.com/opportunities/"
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",

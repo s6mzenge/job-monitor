@@ -1,0 +1,35 @@
+{
+  "date": "2026-06-15",
+  "generated_at": "2026-06-15T05:01:15.016168+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Lecturer in Ethics and/or Politics",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRX045/lecturer-in-ethics-and-or-politics",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the role explicitly requires a PhD in Philosophy (awarded or viva passed) at time of appointment, which the candidate (MSc in progress) does not hold. It is also a permanent academic lectureship requiring an established research programme and teaching/module-design experience.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "14th November 2026",
+      "salary": "£45,031 to £47,379 per annum"
+    },
+    {
+      "title": "Management System Lead Auditor & Verifier for Saudi Arabia",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Management-System-Lead-Auditor-&-Verifier-for-Saudi-Arabia/1276687101",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Complete mismatch: this is a senior ISO management-systems auditor role requiring an engineering degree, 5+ years of certification-audit experience, and ISO 14064 training — none of which the candidate has. Field (industrial assurance/auditing) is entirely off-profile, and native Arabic is a preferred asset the candidate also lacks.",
+      "location": "Al Khobar / Jeddah, Saudi Arabia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
