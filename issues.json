@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-06-16T12:52:45.291869+00:00",
+  "last_updated": "2026-06-16T15:36:37.802916+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 214,
-      "first_recent_failure": "2026-05-17T13:00:52.609332+00:00",
+      "total_recent_failures": 207,
+      "first_recent_failure": "2026-05-25T06:00:57.552804+00:00",
       "last_recent_failure": "2026-06-14T11:31:08.428362+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Save the Children UK": {
-      "site_id": 55,
-      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/",
-      "method": "playwright",
+    "Uppsala UHGS": {
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 19,
-      "first_recent_failure": "2026-06-03T06:01:06.824057+00:00",
-      "last_recent_failure": "2026-06-16T12:52:45.291869+00:00",
+      "total_recent_failures": 76,
+      "first_recent_failure": "2026-05-22T11:31:04.328379+00:00",
+      "last_recent_failure": "2026-06-16T15:36:37.802916+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#eaContainer\") to be visible"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "Reprieve": {
       "site_id": 58,
@@ -39,190 +39,35 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
+    },
+    "BID (Bail for Immigration Detainees)": {
+      "site_id": 82,
+      "url": "https://www.biduk.org/articles/category/35-job-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-16T15:36:37.802916+00:00",
+      "last_recent_failure": "2026-06-16T15:36:37.802916+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://www.biduk.org/articles/category/35-job-opportunities"
+    },
+    "Global Justice Now": {
+      "site_id": 98,
+      "url": "https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-16T15:36:37.802916+00:00",
+      "last_recent_failure": "2026-06-16T15:36:37.802916+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-17T13:00:52.609332+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 11
-    },
-    {
-      "timestamp": "2026-05-17T13:00:52.609332+00:00",
-      "site": "Impunity Watch",
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 401 Client Error: Unauthorized for url: https://www.impunitywatch.org/join-us/join-our-team/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-17T13:30:50.793611+00:00",
-      "site": "Palladium Group",
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "type": "fetch_error",
-      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f8bb3cc4d70>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-17T13:30:50.793611+00:00",
-      "site": "Global Rights Compliance",
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    25 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-17T13:30:50.793611+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 12
-    },
-    {
-      "timestamp": "2026-05-17T13:30:50.793611+00:00",
-      "site": "Ceasefire Centre for Civilian Rights",
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f8bb2da33b0>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-17T13:30:50.793611+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-17T14:01:17.523021+00:00",
-      "site": "Global Rights Compliance",
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    4 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-17T14:01:17.523021+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 13
-    },
-    {
-      "timestamp": "2026-05-17T14:01:17.523021+00:00",
-      "site": "Trust for London",
-      "site_id": 66,
-      "url": "https://trustforlondon.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://trustforlondon.org.uk/about/vacancies/",
-      "consecutive_count": 2
-    },
-    {
-      "timestamp": "2026-05-17T14:30:45.023263+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 14
-    },
-    {
-      "timestamp": "2026-05-17T15:00:51.435987+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 15
-    },
-    {
-      "timestamp": "2026-05-17T15:00:51.435987+00:00",
-      "site": "Sigrid Rausing Trust",
-      "site_id": 63,
-      "url": "https://www.sigrid-rausing-trust.org/jobs/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-17T15:30:48.034822+00:00",
-      "site": "Palladium Group",
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "type": "fetch_error",
-      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f068d705bb0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-17T15:30:48.034822+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.ictj.org/careers-0",
-      "consecutive_count": 16
-    },
-    {
-      "timestamp": "2026-05-17T15:30:48.034822+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "site_paused",
-      "message": "Site paused after 16 consecutive failures",
-      "consecutive_count": 16,
-      "paused_until": "2026-05-19T15:30:48.034822+00:00"
-    },
-    {
-      "timestamp": "2026-05-17T15:30:48.034822+00:00",
-      "site": "Ceasefire Centre for Civilian Rights",
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f068c5758b0>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-17T15:30:48.034822+00:00",
-      "site": "Sigrid Rausing Trust",
-      "site_id": 63,
-      "url": "https://www.sigrid-rausing-trust.org/jobs/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/",
-      "consecutive_count": 2
-    },
     {
       "timestamp": "2026-05-17T16:00:58.299452+00:00",
       "site": "Sigrid Rausing Trust",
@@ -8299,6 +8144,36 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#eaContainer\") to be visible",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-16T15:36:37.802916+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-16T15:36:37.802916+00:00",
+      "site": "BID (Bail for Immigration Detainees)",
+      "site_id": 82,
+      "url": "https://www.biduk.org/articles/category/35-job-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.biduk.org/articles/category/35-job-opportunities",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-16T15:36:37.802916+00:00",
+      "site": "Global Justice Now",
+      "site_id": 98,
+      "url": "https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
       "consecutive_count": 1
     }
   ]
