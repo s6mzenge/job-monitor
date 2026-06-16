@@ -1311,8 +1311,8 @@
       "selector": "[class*='content']",
       "link_selector": "",
       "base_url": "https://palestinecampaign.org",
-      "tls_impersonate": true,
-      "london_only": true
+      "london_only": true,
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 103,
