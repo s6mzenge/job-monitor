@@ -103,7 +103,7 @@ else:
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
-ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-opus-4-7")
+ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-opus-4-8")
 DRY_RUN_FILE = "dry_run.txt"
 if os.path.exists(DRY_RUN_FILE):
     with open(DRY_RUN_FILE, "r") as f:
@@ -115,13 +115,13 @@ CF_WORKER_TOKEN = os.environ.get("CF_WORKER_TOKEN", "")
 
 
 # ─── Anthropic rate limiter ───
-# Tier 1 limits for Claude Opus 4.7: 50 RPM, ~30K ITPM, ~8K OTPM.
+# Sized against Claude Opus 4.7 Tier 1 (50 RPM, ~30K ITPM, ~8K OTPM); now running Opus 4.8.
 # At ~3K input tokens per call the ITPM is the real bottleneck (~10 calls/min).
 # We cap at 9 RPM to stay safely under the per-minute input-token ceiling.
 _anthropic_calls = []
 
 def anthropic_rate_limit():
-    """Enforce max 9 calls per 60 seconds (staying under Opus 4.7 ITPM ceiling)."""
+    """Enforce max 9 calls per 60 seconds (staying under our Tier 1 ITPM ceiling)."""
     global _anthropic_calls
     now_ts = time.time()
     _anthropic_calls = [t for t in _anthropic_calls if now_ts - t < 60]
@@ -201,6 +201,7 @@ NO_VACANCY_PHRASES = [
     "derzeit keine",
     "do not have any vacancies",
     "not currently recruiting",
+    "not currently hiring",
     "do not accept unsolicited",
     "no posts on the list",
 ]
@@ -1550,7 +1551,7 @@ METHOD_HANDLERS = {
 #     mode. This part is dynamic and not cached.
 #   - Determinism on this scoring task comes from the rubric structure and
 #     the formula-based MATCH derivation in the system prompt. Note that
-#     Claude Opus 4.7 rejects temperature/top_p/top_k parameters outright
+#     Claude Opus 4.8 rejects temperature/top_p/top_k parameters outright
 #     (400 error) — these must be omitted.
 
 SYSTEM_PROMPT = f"""You are an expert career assistant evaluating job postings against the CV of one specific candidate. The candidate's full CV is included at the end of this prompt — refer to it whenever you assess a role.
@@ -1774,8 +1775,28 @@ three scores using this exact rule:
             Manager / Senior / Lead / Director-type role); OR FIELD ≤ 2 (off
             the candidate's profile); OR SKILLS = 1.
 
-Do NOT factor location into the rating. Report it for information only —
-a role in another city or country does not lower the rating.
+LOCATION
+Apply the "LOCATION POLICY" line provided in the user message, exactly:
+
+  • "information only" — do NOT factor location into the rating. Report it for
+    information only; a role in another city or country does not lower the
+    rating. (This is the default and applies to most sites.)
+
+  • "London only" — location is a HARD FILTER for this role. Treat it like an
+    exclusion: if the role would require being based outside London with NO
+    London option, set MATCH = Low regardless of how strong the field, skills
+    and seniority alignment is (score the three dimensions honestly as usual —
+    this overrides the rating, not the scores).
+      - EXCLUDE when the posting is tied to another UK city (e.g. Manchester,
+        Birmingham, Bristol, Leeds, Edinburgh, Glasgow, Cardiff, Belfast,
+        Oxford, Cambridge) or another country (e.g. The Hague, Geneva,
+        Brussels, Berlin, Nairobi, New York) and offers no London-based or
+        fully-remote option.
+      - DO NOT exclude when the role is in London; lists London among several
+        or "flexible" / "multiple" locations; is hybrid with a London office;
+        is fully remote and open to UK-based applicants; or states no location
+        at all. Assess those normally and report LOCATION as given (or "Not
+        specified").
 
 When genuinely unsure between two tiers for an accessible, on-profile role,
 pick the higher tier — too few roles are reaching the candidate, so the cost
@@ -1902,17 +1923,19 @@ CANDIDATE CV
 """
 
 
-def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_level=False):
+def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_level=False, london_only=False):
     anthropic_rate_limit()
 
     # Build the per-call user message. Everything that varies between calls
     # goes here; everything static lives in SYSTEM_PROMPT and is cached.
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    location_policy = "London only" if london_only else "information only"
     if is_page_level:
         user_message = (
             f"PAGE-LEVEL SCAN\n"
             f"TODAY (for deadline checks): {today}\n"
             f"ORGANISATION: {site_name}\n"
+            f"LOCATION POLICY: {location_policy}\n"
             f"URL: {job_url}\n\n"
             f"PAGE CONTENT:\n{detail_text[:10000]}"
         )
@@ -1922,6 +1945,7 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
             f"TODAY (for deadline checks): {today}\n"
             f"JOB: {job_title}\n"
             f"ORGANISATION: {site_name}\n"
+            f"LOCATION POLICY: {location_policy}\n"
             f"URL: {job_url}\n\n"
             f"JOB DESCRIPTION:\n{detail_text[:10000]}"
         )
@@ -1934,7 +1958,7 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
     payload = {
         "model": ANTHROPIC_MODEL,
         "max_tokens": 4096,
-        # NOTE: Claude Opus 4.7 rejects temperature/top_p/top_k with a 400
+        # NOTE: Claude Opus 4.8 rejects temperature/top_p/top_k with a 400
         # error. Determinism on this scoring task comes from the rubric and
         # the formula-based MATCH derivation in the system prompt, not from
         # sampling parameters. Do not re-add temperature here.
@@ -2308,7 +2332,7 @@ def main():
                     state[site_key]["listing_hash"] = result["hash"]
                 else:
                     print(f"    Page content changed! Sending full text to Anthropic...")
-                    llm_result = evaluate_with_anthropic(name, f"Page update on {name}", site["url"], result["text"], is_page_level=True)
+                    llm_result = evaluate_with_anthropic(name, f"Page update on {name}", site["url"], result["text"], is_page_level=True, london_only=site.get("london_only", False))
                     llm_err = _consume_error()
                     if llm_result:
                         parsed = parse_gemini_matches(llm_result)
@@ -2356,7 +2380,7 @@ def main():
             print(f"      → {job['title']}")
 
             if not DRY_RUN:
-                llm_result = evaluate_with_anthropic(name, job["title"], job["url"], job["detail_text"])
+                llm_result = evaluate_with_anthropic(name, job["title"], job["url"], job["detail_text"], london_only=site.get("london_only", False))
                 llm_err = _consume_error()
 
                 if llm_result is None:
