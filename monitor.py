@@ -388,18 +388,21 @@ def check_html(site, seen_urls):
     selector = site.get("selector", "")
     location_filter = site.get("location_filter", "")
 
-    if site.get("use_cloudscraper"):
-        scraper = cloudscraper.create_scraper()
-        try:
-            resp = scraper.get(listing_url, timeout=30)
-            resp.raise_for_status()
-            soup = BeautifulSoup(resp.text, "html.parser")
-        except Exception as e:
-            _record_error(f"cloudscraper listing: {e}")
-            print(f"    Error fetching {listing_url}: {e}")
-            soup = None
-    else:
-        soup = fetch_page(listing_url, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
+    scraper = cloudscraper.create_scraper() if site.get("use_cloudscraper") else None
+
+    def _fetch_listing(u):
+        if scraper is not None:
+            try:
+                resp = scraper.get(u, timeout=30)
+                resp.raise_for_status()
+                return BeautifulSoup(resp.text, "html.parser")
+            except Exception as e:
+                _record_error(f"cloudscraper listing: {e}")
+                print(f"    Error fetching {u}: {e}")
+                return None
+        return fetch_page(u, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
+
+    soup = _fetch_listing(listing_url)
     if not soup:
         return None
 
@@ -418,19 +421,47 @@ def check_html(site, seen_urls):
         return {"type": "hash_check", "text": text, "hash": text_hash, "titles": titles}
 
 
-    if location_filter:
-        anchors = []
-        for section in soup.select("section.openings-section"):
-            header = section.select_one("header, .opening-header")
-            if header and location_filter.lower() in header.get_text().lower():
-                anchors.extend(section.select(link_selector))
-        print(f"    Filtered to {len(anchors)} links in '{location_filter}' sections")
-    else:
+    def _collect_anchors(page_soup):
+        if location_filter:
+            picked = []
+            for section in page_soup.select("section.openings-section"):
+                header = section.select_one("header, .opening-header")
+                if header and location_filter.lower() in header.get_text().lower():
+                    picked.extend(section.select(link_selector))
+            return picked
         if site.get("scope_links") and selector:
-            scope_el = soup.select_one(selector.split(",")[0].strip())
-            anchors = scope_el.select(link_selector) if scope_el else []
-        else:
-            anchors = soup.select(link_selector)
+            scope_el = page_soup.select_one(selector.split(",")[0].strip())
+            return scope_el.select(link_selector) if scope_el else []
+        return page_soup.select(link_selector)
+
+    anchors = _collect_anchors(soup)
+    if location_filter:
+        print(f"    Filtered to {len(anchors)} links in '{location_filter}' sections")
+
+    # Optional pagination for sites that page results behind a query param
+    # (e.g. SuccessFactors `&startrow=20`). Gated behind the "paginate" config
+    # key, so every other site is byte-for-byte unaffected. Terminates at the
+    # first empty/duplicate page or after max_pages, whichever comes first.
+    pag = site.get("paginate")
+    if pag and not location_filter and anchors:
+        param = pag.get("param", "startrow")
+        step = int(pag.get("step", 20))
+        max_pages = int(pag.get("max_pages", 6))
+        sep = "&" if "?" in listing_url else "?"
+        seen_hrefs = {a.get("href", "") for a in anchors}
+        for i in range(1, max_pages):
+            page_url = f"{listing_url}{sep}{param}={step * i}"
+            page_soup = _fetch_listing(page_url)
+            if not page_soup:
+                break
+            new_anchors = [a for a in _collect_anchors(page_soup)
+                           if a.get("href", "") not in seen_hrefs]
+            if not new_anchors:
+                break
+            anchors.extend(new_anchors)
+            seen_hrefs.update(a.get("href", "") for a in new_anchors)
+            time.sleep(1)
+        print(f"    Paginated '{param}': {len(anchors)} link(s) collected")
     if not anchors:
         check_text = extract_text(soup, selector)
         if len(check_text) < 100 and not any(p in check_text.lower() for p in NO_VACANCY_PHRASES):
