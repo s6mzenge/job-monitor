@@ -1,7 +1,7 @@
 {
   "date": "2026-06-16",
-  "generated_at": "2026-06-16T16:01:41.368328+00:00",
-  "run_count": 19,
+  "generated_at": "2026-06-16T16:31:19.360475+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Operation Officer",
@@ -1808,6 +1808,34 @@
       "type": "Fixed-Term (Various / Full-Time/Part-Time)",
       "deadline": "30/06/2026",
       "salary": "£44,753 - £60,224"
+    },
+    {
+      "title": "Service Desk Technician",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Service-Desk-Technician/1283938201",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "3",
+      "reason": "This is an IT service-desk support role centred on Windows/Mac endpoint troubleshooting, Microsoft 365 and endpoint-management tooling — entirely off the candidate's research/policy profile. It also requires specialist IT support skills the candidate lacks and asks for 2+ years' Service Desk experience.",
+      "location": "London, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Software Engineer (front-end leaning)",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Software-Engineer-%28front-end-leaning%29/38104-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "This is a front-end software engineering role building internal web components — pure software engineering for unrelated products, off the candidate's policy/research profile. Although the CV lists HTML/CSS/JavaScript/React, this is software-engineering practice (portfolio/GitHub, UI/UX, accessibility standards) the candidate cannot credibly evidence at a professional level, and the field mismatch forces Low regardless.",
+      "location": "London (also Birmingham, Glasgow, Leeds, Newcastle, Salford, or UK Remote)",
+      "type": "Full-time",
+      "deadline": "28 June 2026",
+      "salary": "£43,000 - £50,133"
     }
   ]
 }
