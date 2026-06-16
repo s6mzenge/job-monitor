@@ -1,7 +1,7 @@
 {
   "date": "2026-06-16",
-  "generated_at": "2026-06-16T10:31:25.588195+00:00",
-  "run_count": 12,
+  "generated_at": "2026-06-16T11:01:17.101604+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Operation Officer",
@@ -156,6 +156,34 @@
       "type": "Full-time",
       "deadline": "31/05/2026",
       "salary": "£32,696 per annum plus up to 5% employer-matched pension"
+    },
+    {
+      "title": "Head of Individual Giving (MSF IE)",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/head-of-individual-giving-msf-ie-62481/en",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior fundraising leadership role requiring 5+ years of Individual Giving experience and a track record of delivering multi-million euro income targets — a hard ineligibility on seniority and on specialist fundraising skills the candidate does not have. Field is also off-profile (fundraising/donor development, not policy or research).",
+      "location": "Dublin, Ireland",
+      "type": "Full-time",
+      "deadline": "24 June 2026",
+      "salary": "€72,198"
+    },
+    {
+      "title": "Engagement Coordinator",
+      "organisation": "S-RM",
+      "url": "https://www.s-rminform.com/open-position-engagement-coordinator",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "Although S-RM is a target firm in commercial intelligence/cyber, this role is operational/administrative coordination (case onboarding, LOEs, budget tracking, billing, WIP reporting) rather than intelligence analysis or research. The work is finance/operations-adjacent and does not draw on the candidate's IR, policy, or research strengths.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
