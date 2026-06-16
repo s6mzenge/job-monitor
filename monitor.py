@@ -1016,7 +1016,14 @@ def check_playwright(site, seen_urls):
             page.goto(listing_url, timeout=30000, wait_until=wait_until)
             if wait_selector:
                 wait_timeout = site.get("wait_timeout", 15000)
-                page.wait_for_selector(wait_selector, timeout=wait_timeout)
+                try:
+                    page.wait_for_selector(wait_selector, timeout=wait_timeout)
+                except Exception:
+                    # Slow or occasionally-missing render: do not hard-fail the
+                    # site. Wait a little longer and extract whatever loaded
+                    # (mirrors fetch_detail_playwright). A bad cycle just finds
+                    # 0 links and re-checks next run instead of erroring out.
+                    page.wait_for_timeout(wait_ms)
             else:
                 page.wait_for_timeout(wait_ms)
             html = page.content()
