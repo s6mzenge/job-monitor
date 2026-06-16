@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T17:21:01.256025+00:00",
+  "last_updated": "2026-06-16T17:31:15.099491+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -14,18 +14,18 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Save the Children UK": {
-      "site_id": 55,
-      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/",
-      "method": "playwright",
+    "Uppsala UHGS": {
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 21,
-      "first_recent_failure": "2026-06-03T06:01:06.824057+00:00",
-      "last_recent_failure": "2026-06-16T17:21:01.256025+00:00",
+      "total_recent_failures": 77,
+      "first_recent_failure": "2026-05-22T11:31:04.328379+00:00",
+      "last_recent_failure": "2026-06-16T17:31:15.099491+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#eaContainer\") to be visible"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "Reprieve": {
       "site_id": 58,
@@ -40,44 +40,34 @@
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
     },
-    "Amnesty International": {
-      "site_id": 92,
-      "url": "https://careers.amnesty.org/jobs/vacancy/find/results/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-06-16T16:31:19.360475+00:00",
-      "last_recent_failure": "2026-06-16T17:21:01.256025+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='/jobs/vacancy/']\") to be visible"
-    },
     "Global Justice Now": {
       "site_id": 98,
       "url": "https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
       "method": "html",
-      "consecutive_failures": 5,
-      "total_recent_failures": 5,
+      "consecutive_failures": 6,
+      "total_recent_failures": 6,
       "first_recent_failure": "2026-06-16T15:36:37.802916+00:00",
-      "last_recent_failure": "2026-06-16T17:21:01.256025+00:00",
+      "last_recent_failure": "2026-06-16T17:31:15.099491+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.globaljustice.org.uk%2Fabout-us%2Fjobs-and-volunteering%2F"
+    },
+    "Palestine Solidarity Campaign": {
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
+      "last_recent_failure": "2026-06-16T17:31:15.099491+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTP Error 403:"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-17T17:30:48.860577+00:00",
-      "site": "Sigrid Rausing Trust",
-      "site_id": 63,
-      "url": "https://www.sigrid-rausing-trust.org/jobs/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/",
-      "consecutive_count": 6
-    },
     {
       "timestamp": "2026-05-18T05:00:52.675244+00:00",
       "site": "Sigrid Rausing Trust",
@@ -8255,6 +8245,36 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.globaljustice.org.uk%2Fabout-us%2Fjobs-and-volunteering%2F",
       "consecutive_count": 5
+    },
+    {
+      "timestamp": "2026-06-16T17:31:15.099491+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-16T17:31:15.099491+00:00",
+      "site": "Global Justice Now",
+      "site_id": 98,
+      "url": "https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.globaljustice.org.uk%2Fabout-us%2Fjobs-and-volunteering%2F",
+      "consecutive_count": 6
+    },
+    {
+      "timestamp": "2026-06-16T17:31:15.099491+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTP Error 403:",
+      "consecutive_count": 1
     }
   ]
 }
