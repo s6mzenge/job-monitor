@@ -1,7 +1,7 @@
 {
   "date": "2026-06-16",
-  "generated_at": "2026-06-16T16:31:19.360475+00:00",
-  "run_count": 20,
+  "generated_at": "2026-06-16T17:01:28.881488+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Operation Officer",
@@ -1836,6 +1836,20 @@
       "type": "Full-time",
       "deadline": "28 June 2026",
       "salary": "£43,000 - £50,133"
+    },
+    {
+      "title": "Sr Vice President / Director, Brand Marketing",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Sr-Vice-President---Director--Brand-Marketing_JR102746",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Brand marketing is off the candidate's policy/research/intelligence profile, and the SVP/Director title requires extensive senior leadership experience the candidate (student-assistant roles only) does not have. Hard ineligibility on seniority plus a field mismatch.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }

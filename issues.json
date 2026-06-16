@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T16:31:19.360475+00:00",
+  "last_updated": "2026-06-16T17:01:28.881488+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,19 +13,6 @@
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Save the Children UK": {
-      "site_id": 55,
-      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 20,
-      "first_recent_failure": "2026-06-03T06:01:06.824057+00:00",
-      "last_recent_failure": "2026-06-16T16:31:19.360475+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div#eaContainer\") to be visible"
     },
     "Reprieve": {
       "site_id": 58,
@@ -44,63 +31,43 @@
       "site_id": 82,
       "url": "https://www.biduk.org/articles/category/35-job-opportunities",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
+      "consecutive_failures": 4,
+      "total_recent_failures": 4,
       "first_recent_failure": "2026-06-16T15:36:37.802916+00:00",
-      "last_recent_failure": "2026-06-16T16:31:19.360475+00:00",
+      "last_recent_failure": "2026-06-16T17:01:28.881488+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://www.biduk.org/articles/category/35-job-opportunities"
     },
-    "Amnesty International": {
-      "site_id": 92,
-      "url": "https://careers.amnesty.org/jobs/vacancy/find/results/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-06-16T16:31:19.360475+00:00",
-      "last_recent_failure": "2026-06-16T16:31:19.360475+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"a[href*='/jobs/vacancy/']\") to be visible"
-    },
     "Global Justice Now": {
       "site_id": 98,
       "url": "https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
+      "consecutive_failures": 4,
+      "total_recent_failures": 4,
       "first_recent_failure": "2026-06-16T15:36:37.802916+00:00",
-      "last_recent_failure": "2026-06-16T16:31:19.360475+00:00",
+      "last_recent_failure": "2026-06-16T17:01:28.881488+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/"
+    },
+    "Palestine Solidarity Campaign": {
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
+      "last_recent_failure": "2026-06-16T17:01:28.881488+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTP Error 403:"
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-17T17:00:57.751215+00:00",
-      "site": "Sigrid Rausing Trust",
-      "site_id": 63,
-      "url": "https://www.sigrid-rausing-trust.org/jobs/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/",
-      "consecutive_count": 5
-    },
-    {
-      "timestamp": "2026-05-17T17:00:57.751215+00:00",
-      "site": "Paul Hamlyn Foundation",
-      "site_id": 64,
-      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 522 Server Error: <none> for url: https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-17T17:30:48.860577+00:00",
       "site": "Sigrid Rausing Trust",
@@ -8228,6 +8195,36 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
       "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-06-16T17:01:28.881488+00:00",
+      "site": "BID (Bail for Immigration Detainees)",
+      "site_id": 82,
+      "url": "https://www.biduk.org/articles/category/35-job-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.biduk.org/articles/category/35-job-opportunities",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-06-16T17:01:28.881488+00:00",
+      "site": "Global Justice Now",
+      "site_id": 98,
+      "url": "https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-06-16T17:01:28.881488+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTP Error 403:",
+      "consecutive_count": 1
     }
   ]
 }
