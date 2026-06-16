@@ -1,7 +1,7 @@
 {
   "date": "2026-06-16",
-  "generated_at": "2026-06-16T15:36:37.802916+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-16T16:01:41.368328+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Operation Officer",
@@ -1794,6 +1794,20 @@
       "type": "Contract (13-month, four-day per week)",
       "deadline": "9am Monday 9 March 2026",
       "salary": "£47,898 (£59,873 pro rata)"
+    },
+    {
+      "title": "Lecturer in Games",
+      "organisation": "Goldsmiths, University of London",
+      "url": "https://jobs.gold.ac.uk/vacancy/lecturer-in-games-613636.html",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a games-development/3D-art teaching post requiring an established track record in the games industry — entirely outside the candidate's IR/policy profile and skillset. Field and skills are a clear mismatch, and the role demands specialist industry experience the candidate does not have.",
+      "location": "London",
+      "type": "Fixed-Term (Various / Full-Time/Part-Time)",
+      "deadline": "30/06/2026",
+      "salary": "£44,753 - £60,224"
     }
   ]
 }
