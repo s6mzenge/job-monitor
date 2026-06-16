@@ -1054,6 +1054,16 @@
         }
       },
       "location_filter": "London"
+    },
+    {
+      "id": 81,
+      "name": "Fitch Group",
+      "url": "https://careers.fitch.group/search/?q=&locationsearch=London",
+      "method": "html",
+      "selector": "table#searchresults",
+      "link_selector": "a.jobTitle-link",
+      "base_url": "https://careers.fitch.group",
+      "paginate": { "param": "startrow", "step": 20, "max_pages": 6 }
     }
   ]
 }
