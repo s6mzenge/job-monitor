@@ -1202,7 +1202,8 @@
       "wait_until": "networkidle",
       "wait_selector": "a[href*='/jobs/vacancy/']",
       "wait_ms": 6000,
-      "london_only": true
+      "london_only": true,
+      "wait_timeout": 30000
     },
     {
       "id": 93,
@@ -1264,14 +1265,13 @@
     },
     {
       "id": 98,
-      "name": "Global Justice Now",
-      "url": "https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
+      "name": "Global Justice Now (CharityJob)",
+      "url": "https://www.charityjob.co.uk/organisation/global-justice-now",
       "method": "html",
-      "selector": "[class*='content']",
-      "link_selector": "",
-      "base_url": "https://www.globaljustice.org.uk",
-      "london_only": true,
-      "proxy": "cloudflare_worker"
+      "selector": "",
+      "link_selector": "a[href*='/jobs/jobdetail/']",
+      "base_url": "https://www.charityjob.co.uk",
+      "london_only": true
     },
     {
       "id": 99,
