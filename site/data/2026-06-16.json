@@ -1,0 +1,91 @@
+{
+  "date": "2026-06-16",
+  "generated_at": "2026-06-16T05:01:19.675062+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Operation Officer",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Mexico-City/Operation-Officer_JR-0003831-1",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is an operations role (facilities, vendor management, HR logistics, SHEQ) rather than policy or research work, so it sits outside the candidate's target zones despite OSF's mission. It also requires fluency in Spanish (the local language in Mexico City), which the candidate does not have — a hard exclusion — and expects prior experience in operations and change management.",
+      "location": "Mexico City",
+      "type": "Full-time",
+      "deadline": "2026-07-12",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Operations Officer",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Bogota/Operations-Officer_JR-0003829",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "The role requires fluency in the local language (Spanish), which the candidate does not speak — a hard exclusion. The function is also operations/facilities/vendor management rather than policy or research, far from the candidate's profile despite OSF being a relevant organisation.",
+      "location": "Bogota, Colombia",
+      "type": "Fixed Term",
+      "deadline": "2026-07-12",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Assessor ISO 22000 and QSE",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-ISO-22000-and-QSE-69003/1204793101",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a food-industry quality auditor role requiring a food science/technology degree, IFS/BRC Food auditing qualifications, and fluent French (C-level) — none of which the candidate has. Completely off-profile and triggers multiple exclusions (specialist qualification, French fluency, 2+ years food industry experience).",
+      "location": "Lyon, France",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Contractor on Demand (Lead auditor ISO 13485)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Gdansk-Contractor-on-Demand-%28Lead-auditor-ISO-13485%29/1265777901",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a Lead Auditor role requiring ISO 13485 (medical device quality management) certification and substantial auditing experience — none of which the candidate has. Field, skills and seniority are all mismatched with an IR research profile.",
+      "location": "Gdansk, Poland",
+      "type": "Contractor",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Auditor Food",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Rotterdam-Senior-Auditor-Food-3068-AX/1164739801",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Field is a mismatch — food industry auditing is unrelated to IR, policy or intelligence work. The role requires a food technology degree, 5+ years in food production, 3rd-party auditing qualifications, and fluent Dutch, none of which the candidate has. Multiple hard exclusions apply.",
+      "location": "Rotterdam, Netherlands",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Assessor, Responsible Sourcing",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lead-Assessor%2C-Responsible-Sourcing/1394728933",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Hard ineligibility: the role requires APSCA registration with CSCA status, minimum 3 years of social compliance auditing experience, and 100+ verifiable audit days — none of which the candidate has. It also requires fluent French (candidate is only B1) and a valid driver's licence with 80% travel. Field is also off-profile (commercial supply-chain auditing, not policy/IR research).",
+      "location": "Canada (Homebased)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
