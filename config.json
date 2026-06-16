@@ -1077,7 +1077,8 @@
       "selector": "",
       "link_selector": ".title a",
       "base_url": "https://www.biduk.org",
-      "london_only": true
+      "london_only": true,
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 83,
@@ -1269,7 +1270,8 @@
       "selector": "[class*='content']",
       "link_selector": "",
       "base_url": "https://www.globaljustice.org.uk",
-      "london_only": true
+      "london_only": true,
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 99,
