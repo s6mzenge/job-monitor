@@ -1,7 +1,7 @@
 {
   "date": "2026-06-16",
-  "generated_at": "2026-06-16T05:01:19.675062+00:00",
-  "run_count": 1,
+  "generated_at": "2026-06-16T05:31:18.505810+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Operation Officer",
@@ -86,6 +86,48 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Language Teachers in Arabic",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/896727",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "The role requires experienced Arabic language teachers — the candidate does not speak Arabic and has no language-teaching background. Also a speculative/talent-pool collection rather than a specific vacancy. Hard mismatch on language and profession.",
+      "location": "Bloomsbury, London, United Kingdom",
+      "type": "Part-time / Contract (hourly paid)",
+      "deadline": "2026-07-13",
+      "salary": "£23.46/hour basic (£58.64–£69.24 per contact hour with multiplier)"
+    },
+    {
+      "title": "Language Teachers in Hindi, Amharic, Persian, Turkish, Thai, Vietnamese, Filipino (Tagalog), Indonesian",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/896689",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a speculative pool for experienced teachers of specific Asian/African/Middle Eastern languages (Hindi, Amharic, Persian, Turkish, Thai, Vietnamese, Tagalog, Indonesian) — none of which the candidate speaks. It also falls under the speculative-applications exclusion and requires language fluency the candidate lacks.",
+      "location": "Bloomsbury, London, UK",
+      "type": "Part-time, Fixed Term (hourly paid)",
+      "deadline": "13 July 2026",
+      "salary": "£23.46 per hour basic (£58.64–£69.24 per contact hour with multiplier)"
+    },
+    {
+      "title": "Language Teachers in Urdu, Sinhala, Yoruba, Pashto",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/896596",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "3",
+      "reason": "Role requires native/near-native fluency and teaching experience in Urdu, Sinhala, Yoruba or Pashto — none of which the candidate speaks. Hard exclusion on required language fluency, and the field (language teaching) is entirely off-profile.",
+      "location": "Bloomsbury, London, UK",
+      "type": "Part-time, Fixed Term (hourly paid)",
+      "deadline": "2026-07-13",
+      "salary": "£23.46/hour basic (£58.64–£69.24/hour with multiplier)"
     }
   ]
 }
