@@ -1,7 +1,7 @@
 {
   "date": "2026-06-16",
-  "generated_at": "2026-06-16T11:01:17.101604+00:00",
-  "run_count": 13,
+  "generated_at": "2026-06-16T11:31:22.883332+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Operation Officer",
@@ -180,6 +180,20 @@
       "skills_score": "3",
       "seniority_score": "4",
       "reason": "Although S-RM is a target firm in commercial intelligence/cyber, this role is operational/administrative coordination (case onboarding, LOEs, budget tracking, billing, WIP reporting) rather than intelligence analysis or research. The work is finance/operations-adjacent and does not draw on the candidate's IR, policy, or research strengths.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Cyber Risk Advisory Consultant",
+      "organisation": "S-RM",
+      "url": "https://www.s-rminform.com/open-position-cyber-risk-advisory-consultant-london",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "S-RM is a target firm but this specific role is in technical cyber consulting (incident response, IAM, cloud security, network security), not the geopolitical/intelligence work that fits the candidate's profile. The posting requires 2+ years in information security/cyber roles plus prior consulting experience — both hard gaps for the candidate, whose technical background is policy-level Python, not cyber security.",
       "location": "London, UK",
       "type": "Full-time",
       "deadline": "Not specified",
