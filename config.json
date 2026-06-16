@@ -1063,7 +1063,325 @@
       "selector": "table#searchresults",
       "link_selector": "a.jobTitle-link",
       "base_url": "https://careers.fitch.group",
-      "paginate": { "param": "startrow", "step": 20, "max_pages": 6 }
+      "paginate": {
+        "param": "startrow",
+        "step": 20,
+        "max_pages": 6
+      }
+    },
+    {
+      "id": 82,
+      "name": "BID (Bail for Immigration Detainees)",
+      "url": "https://www.biduk.org/articles/category/35-job-opportunities",
+      "method": "html",
+      "selector": "",
+      "link_selector": ".title a",
+      "base_url": "https://www.biduk.org",
+      "london_only": true
+    },
+    {
+      "id": 83,
+      "name": "War on Want",
+      "url": "https://waronwant.org/jobs",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='waronwant.org/jobs/']",
+      "base_url": "https://waronwant.org",
+      "london_only": true
+    },
+    {
+      "id": 84,
+      "name": "Privacy International",
+      "url": "https://privacyinternational.org/about/opportunities",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/opportunities/']",
+      "base_url": "https://privacyinternational.org",
+      "london_only": true
+    },
+    {
+      "id": 85,
+      "name": "Mnemonic",
+      "url": "https://mnemonic.org/en/about/jobs/",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/en/about/jobs/']",
+      "base_url": "https://mnemonic.org",
+      "london_only": true
+    },
+    {
+      "id": 86,
+      "name": "Liberty",
+      "url": "https://www.libertyhumanrights.org.uk/work-with-us",
+      "method": "html",
+      "selector": ".block.accordion",
+      "base_url": "https://www.libertyhumanrights.org.uk",
+      "link_selector": "",
+      "london_only": true
+    },
+    {
+      "id": 87,
+      "name": "Conciliation Resources",
+      "url": "https://www.c-r.org/jobs",
+      "method": "html",
+      "selector": "[class*='job']",
+      "link_selector": "",
+      "base_url": "https://www.c-r.org",
+      "london_only": true
+    },
+    {
+      "id": 88,
+      "name": "Detention Action (CharityJob)",
+      "url": "https://www.charityjob.co.uk/organisation/detention-action",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/jobs/jobdetail/']",
+      "base_url": "https://www.charityjob.co.uk",
+      "london_only": true
+    },
+    {
+      "id": 89,
+      "name": "Amos Trust (CharityJob)",
+      "url": "https://www.charityjob.co.uk/organisation/amos-trust",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/jobs/jobdetail/']",
+      "base_url": "https://www.charityjob.co.uk",
+      "london_only": true
+    },
+    {
+      "id": 90,
+      "name": "Human Rights Watch",
+      "url": "https://job-boards.greenhouse.io/humanrightswatch",
+      "method": "greenhouse_api",
+      "base_url": "https://job-boards.greenhouse.io",
+      "api": {
+        "url": "https://boards-api.greenhouse.io/v1/boards/humanrightswatch/jobs?content=true",
+        "http_method": "GET",
+        "response_key": "jobs",
+        "job_fields": {
+          "id": "id",
+          "title": "title",
+          "url": "absolute_url",
+          "location": "location.name",
+          "updated_at": "updated_at",
+          "description_html": "content"
+        }
+      },
+      "london_only": true
+    },
+    {
+      "id": 91,
+      "name": "Medical Aid for Palestinians",
+      "url": "https://careers.map.org.uk/#js-careers-jobs-block",
+      "method": "pinpoint_api",
+      "base_url": "https://careers.map.org.uk",
+      "api": {
+        "url": "https://careers.map.org.uk/postings.json",
+        "http_method": "GET",
+        "response_key": "data",
+        "job_fields": {
+          "title": "title",
+          "url": "url",
+          "location": "locationName",
+          "department": "departmentName"
+        }
+      },
+      "use_cloudscraper": true,
+      "london_only": true
+    },
+    {
+      "id": 92,
+      "name": "Amnesty International",
+      "url": "https://careers.amnesty.org/jobs/vacancy/find/results/",
+      "method": "playwright",
+      "selector": "",
+      "link_selector": "a[href*='/jobs/vacancy/'][href*='/description']",
+      "base_url": "https://careers.amnesty.org",
+      "wait_until": "networkidle",
+      "wait_selector": "a[href*='/jobs/vacancy/']",
+      "wait_ms": 6000,
+      "london_only": true
+    },
+    {
+      "id": 93,
+      "name": "Saferworld",
+      "url": "https://saferworld-global.current-vacancies.com/Careers/Saferworld-vacancy-search-page-3345/Job%20Search",
+      "method": "playwright",
+      "selector": "",
+      "link_selector": "a[href*='/Jobs/Advert/']",
+      "base_url": "https://saferworld-global.current-vacancies.com",
+      "wait_until": "networkidle",
+      "wait_selector": "a[href*='/Jobs/Advert/']",
+      "wait_ms": 6000,
+      "london_only": true
+    },
+    {
+      "id": 94,
+      "name": "BBC",
+      "url": "https://careers.bbc.co.uk/search/?q=&searchResultView=LIST&facetFilters=%7B%22jobLocationCity%22%3A%5B%22London%22%5D%7D&pageNumber=0",
+      "method": "playwright",
+      "selector": "",
+      "link_selector": "a[href*='/job/']",
+      "base_url": "https://careers.bbc.co.uk",
+      "wait_until": "networkidle",
+      "wait_selector": "a[href*='/job/']",
+      "wait_ms": 6000,
+      "london_only": true
+    },
+    {
+      "id": 95,
+      "name": "Forensic Architecture",
+      "url": "https://forensic-architecture.org/about/jobs",
+      "method": "playwright",
+      "selector": ".block-content",
+      "link_selector": "",
+      "base_url": "https://forensic-architecture.org",
+      "wait_until": "networkidle",
+      "wait_ms": 5000,
+      "london_only": true
+    },
+    {
+      "id": 96,
+      "name": "Declassified UK",
+      "url": "https://www.declassifieduk.org/jobs/",
+      "method": "html",
+      "selector": "[class*='content']",
+      "link_selector": "",
+      "base_url": "https://www.declassifieduk.org",
+      "london_only": true
+    },
+    {
+      "id": 97,
+      "name": "Friends of the Earth",
+      "url": "https://jobs.friendsoftheearth.uk/vacancies/",
+      "method": "html",
+      "selector": "main",
+      "link_selector": "",
+      "base_url": "https://jobs.friendsoftheearth.uk",
+      "london_only": true
+    },
+    {
+      "id": 98,
+      "name": "Global Justice Now",
+      "url": "https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
+      "method": "html",
+      "selector": "[class*='content']",
+      "link_selector": "",
+      "base_url": "https://www.globaljustice.org.uk",
+      "london_only": true
+    },
+    {
+      "id": 99,
+      "name": "ICJP",
+      "url": "https://www.icjpalestine.com/about-us/careers/",
+      "method": "html",
+      "selector": "main",
+      "link_selector": "",
+      "base_url": "https://www.icjpalestine.com",
+      "london_only": true
+    },
+    {
+      "id": 100,
+      "name": "JCWI",
+      "url": "https://jcwi.org.uk/careers",
+      "method": "html",
+      "selector": "main",
+      "link_selector": "",
+      "base_url": "https://jcwi.org.uk",
+      "london_only": true
+    },
+    {
+      "id": 101,
+      "name": "New Economics Foundation",
+      "url": "https://neweconomics.org/about/work-with-us",
+      "method": "html",
+      "selector": "[class*='content']",
+      "link_selector": "",
+      "base_url": "https://neweconomics.org",
+      "london_only": true
+    },
+    {
+      "id": 102,
+      "name": "Palestine Solidarity Campaign",
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "selector": "[class*='content']",
+      "link_selector": "",
+      "base_url": "https://palestinecampaign.org",
+      "tls_impersonate": true,
+      "london_only": true
+    },
+    {
+      "id": 103,
+      "name": "Common Wealth",
+      "url": "https://www.common-wealth.org/about",
+      "method": "html",
+      "selector": ".not-hiring",
+      "link_selector": "",
+      "base_url": "https://www.common-wealth.org",
+      "london_only": true
+    },
+    {
+      "id": 104,
+      "name": "Open Rights Group",
+      "url": "https://www.openrightsgroup.org/jobs/",
+      "method": "html",
+      "selector": "main",
+      "link_selector": "",
+      "base_url": "https://www.openrightsgroup.org",
+      "london_only": true
+    },
+    {
+      "id": 105,
+      "name": "European Leadership Network",
+      "url": "https://europeanleadershipnetwork.org/about/careers/",
+      "method": "html",
+      "selector": "main",
+      "link_selector": "",
+      "base_url": "https://europeanleadershipnetwork.org",
+      "london_only": true
+    },
+    {
+      "id": 106,
+      "name": "Campaign Against Arms Trade",
+      "url": "https://caat.org.uk/about-caat/jobs-and-volunteering/",
+      "method": "html",
+      "selector": "article .content",
+      "link_selector": "a[href*='/about-caat/jobs-and-volunteering/']",
+      "base_url": "https://caat.org.uk",
+      "scope_links": true,
+      "london_only": true
+    },
+    {
+      "id": 107,
+      "name": "International Alert",
+      "url": "https://www.international-alert.org/about/jobs/",
+      "method": "html",
+      "selector": "main",
+      "link_selector": "",
+      "base_url": "https://www.international-alert.org",
+      "london_only": true
+    },
+    {
+      "id": 108,
+      "name": "Legal Action Worldwide",
+      "url": "https://legalactionworldwide.org/careers-new-page/careers/",
+      "method": "html",
+      "selector": "main",
+      "link_selector": "",
+      "base_url": "https://legalactionworldwide.org",
+      "london_only": true
+    },
+    {
+      "id": 109,
+      "name": "Novara Media",
+      "url": "https://novaramedia.com/about/jobs/",
+      "method": "html",
+      "selector": "main",
+      "link_selector": "",
+      "base_url": "https://novaramedia.com",
+      "london_only": true
     }
   ]
 }
