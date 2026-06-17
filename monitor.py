@@ -1538,24 +1538,100 @@ def check_rippling_api(site, seen_urls):
 # <button class="btn-search-results-view">, not in an <a href> — so neither the
 # plain HTML handler nor its link_selector works here. This handler POSTs
 # PageNo=1..N (reading the "Page X of N" footer to learn N), collects every
-# (title, url), then fetches each NEW detail page exactly like check_html.
-# No login / CSRF / encrypted state is needed — the channel is passed in the
-# payload as Type ("Internal"/"External"). A landing URL is fetched once only to
-# warm a session cookie (belt-and-suspenders; the POST works without it).
+# (title, url), then fetches each NEW detail page exactly like check_html — and
+# additionally pulls the linked job-description / person-specification PDFs into
+# the text sent to the API, since on LSE the real selection criteria live in
+# those attachments rather than on the page. No login / CSRF / encrypted state
+# is needed — the channel is passed in the payload as Type ("Internal"/"External").
 #
 # Config keys:
-#   api_url         : full ApplySearchFilter endpoint                    (required)
-#   vac_type        : "Internal" | "External" (the #vacancyType value)   (required)
-#   landing         : a landing URL fetched once to warm a session cookie (optional)
-#   base_url        : origin, used to absolutise links (already absolute — safety net)
-#   detail_selector : CSS scope for detail extraction (e.g. div.view-vacancy-container)
-#   max_pages       : pagination safety cap (default 25)
+#   api_url            : full ApplySearchFilter endpoint                  (required)
+#   vac_type           : "Internal" | "External" (the #vacancyType value) (required)
+#   landing            : a landing URL fetched once to warm a session cookie (optional;
+#                        falls back to url)
+#   base_url           : origin, used to absolutise links (already absolute — safety net)
+#   detail_selector    : CSS scope for detail extraction (e.g. div.view-vacancy-container)
+#   attachment_include : ordered list of attachment categories to fetch & append.
+#                        categories: "person_spec", "job_description", "how_to_apply",
+#                        "other". Default ["person_spec", "job_description"]. The order
+#                        also controls assembly order (person spec first so it survives
+#                        any eval truncation). Add "how_to_apply" to include the generic
+#                        application-notes PDF too.
+#   max_pdf_chars      : per-attachment text cap (default 25000)
+#   max_pages          : pagination safety cap (default 25)
+# NB: pair this with "eval_max_chars" on the same site (e.g. 30000) so the appended
+# attachment text isn't cut by the default 10k prompt truncation.
+
+def _engage_attach_category(title):
+    """Map an attachment's title to (category, display heading). Titles vary
+    ('job description' / 'job\xa0description', 'person specification' /
+    'the person specification'), so normalise before matching."""
+    t = re.sub(r"\s+", " ", (title or "").replace("\xa0", " ")).strip().lower()
+    t = re.sub(r"^the\s+", "", t)
+    if "person specification" in t or t == "person spec":
+        return "person_spec", "Person Specification"
+    if "job description" in t:
+        return "job_description", "Job Description"
+    if "how to apply" in t:
+        return "how_to_apply", "How to Apply"
+    return "other", (title or "Attachment").strip()
+
+
+def _engage_pdf_text(sess, href, cap):
+    """Download a ViewAttachment link and return its extracted PDF text (capped).
+    Returns '' on any failure so a bad attachment never breaks the job."""
+    try:
+        r = sess.get(href, headers=HEADERS, timeout=45)
+        r.raise_for_status()
+        data = r.content
+    except Exception as e:
+        print(f"      attachment download failed: {e}")
+        return ""
+    if data[:4] != b"%PDF":
+        return ""  # not a PDF (e.g. docx) — skip; the visible text still carries the role
+    try:
+        from pypdf import PdfReader
+        import io
+        reader = PdfReader(io.BytesIO(data))
+        txt = "\n".join((p.extract_text() or "") for p in reader.pages).strip()
+    except Exception as e:
+        print(f"      PDF parse failed: {e}")
+        return ""
+    return txt[:cap]
+
+
+def _engage_build_detail(sess, detail_soup, detail_selector, include, max_pdf_chars):
+    """Visible vacancy text plus the text of the selected linked PDF attachments,
+    ordered so the most scoring-relevant content leads."""
+    visible = extract_text(detail_soup, detail_selector)
+    scope = detail_soup.select_one(detail_selector) if detail_selector else detail_soup
+    by_cat = {}
+    if scope is not None:
+        for a in scope.select("a[href]"):
+            href = a.get("href", "")
+            if "viewattachment.aspx" not in href.lower():
+                continue
+            cat, heading = _engage_attach_category(a.get("title") or a.get_text(" ", strip=True))
+            if cat not in include:
+                continue
+            txt = _engage_pdf_text(sess, href, max_pdf_chars)
+            if txt:
+                by_cat.setdefault(cat, []).append((heading, txt))
+    parts = [visible] if visible else []
+    for cat in include:                      # include order controls assembly order
+        for heading, txt in by_cat.get(cat, []):
+            parts.append(f"=== {heading} (attachment) ===\n{txt}")
+    return "\n\n".join(parts)
+
+
 def check_engage_ats(site, seen_urls):
     api_url = site["api_url"]
     vac_type = site.get("vac_type", "External")
     landing = site.get("landing") or site.get("url", "")  # url doubles as cookie warm-up
     base_url = site.get("base_url", "")
     detail_selector = site.get("detail_selector", "")
+    attach_include = site.get("attachment_include", ["person_spec", "job_description"])
+    max_pdf_chars = int(site.get("max_pdf_chars", 25000))
     max_pages = int(site.get("max_pages", 25))
 
     sess = requests.Session()
@@ -1659,7 +1735,9 @@ def check_engage_ats(site, seen_urls):
                 detail_soup = BeautifulSoup(dr.text, "html.parser")
             except Exception as e:
                 print(f"    Error fetching detail {full_url}: {e}")
-            detail_text = extract_text(detail_soup, detail_selector) if detail_soup else ""
+            detail_text = _engage_build_detail(
+                sess, detail_soup, detail_selector, attach_include, max_pdf_chars
+            ) if detail_soup is not None else ""
         new_jobs.append({
             "title": title,
             "url": full_url,
@@ -2077,7 +2155,7 @@ CANDIDATE CV
 """
 
 
-def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_level=False, london_only=False):
+def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_level=False, london_only=False, max_chars=10000):
     anthropic_rate_limit()
 
     # Build the per-call user message. Everything that varies between calls
@@ -2091,7 +2169,7 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
             f"ORGANISATION: {site_name}\n"
             f"LOCATION POLICY: {location_policy}\n"
             f"URL: {job_url}\n\n"
-            f"PAGE CONTENT:\n{detail_text[:10000]}"
+            f"PAGE CONTENT:\n{detail_text[:max_chars]}"
         )
     else:
         user_message = (
@@ -2101,7 +2179,7 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
             f"ORGANISATION: {site_name}\n"
             f"LOCATION POLICY: {location_policy}\n"
             f"URL: {job_url}\n\n"
-            f"JOB DESCRIPTION:\n{detail_text[:10000]}"
+            f"JOB DESCRIPTION:\n{detail_text[:max_chars]}"
         )
 
     headers = {
@@ -2544,7 +2622,7 @@ def main():
             print(f"      → {job['title']}")
 
             if not DRY_RUN:
-                llm_result = evaluate_with_anthropic(name, job["title"], job["url"], job["detail_text"], london_only=site.get("london_only", False))
+                llm_result = evaluate_with_anthropic(name, job["title"], job["url"], job["detail_text"], london_only=site.get("london_only", False), max_chars=site.get("eval_max_chars", 10000))
                 llm_err = _consume_error()
 
                 if llm_result is None:
