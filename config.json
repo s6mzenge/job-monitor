@@ -1384,6 +1384,17 @@
       "link_selector": "",
       "base_url": "https://novaramedia.com",
       "london_only": true
+    },
+    {
+      "id": 110,
+      "name": "LSE (internal)",
+      "method": "engage_ats",
+      "url": "https://jobs.lse.ac.uk/V2/Vacancy/Index?enc=glU2uxu77sbA0Vjt6JCQD0plJN6KBxTggSjROblEqRK0i39EXHi3KwQ464+7Oko3O4iakm36tKYVifZl5chR1nW72+6IIACSarRLg3CoJ8g=",
+      "api_url": "https://jobs.lse.ac.uk/V2/Vacancy/ApplySearchFilter",
+      "vac_type": "Internal",
+      "base_url": "https://jobs.lse.ac.uk",
+      "detail_selector": "div.view-vacancy-container",
+      "london_only": true
     }
   ]
 }
