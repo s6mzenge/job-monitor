@@ -112,6 +112,7 @@ else:
     DRY_RUN = False
 CF_WORKER_URL = os.environ.get("CF_WORKER_URL", "")
 CF_WORKER_TOKEN = os.environ.get("CF_WORKER_TOKEN", "")
+JINA_API_KEY = os.environ.get("JINA_API_KEY", "")  # optional: higher r.jina.ai rate limit; keyless free tier works without it
 
 
 # ─── Anthropic rate limiter ───
@@ -262,17 +263,32 @@ def fetch_page(url, extra_headers=None, proxy=None, tls_impersonate=False):
                 headers={"X-Proxy-Token": CF_WORKER_TOKEN},
                 timeout=30,
             )
+        if transport == "jina":
+            # Third-party fetch-and-render (r.jina.ai): egresses from Jina's own
+            # IPs and executes JS, so it reaches sites that ASN-block every cloud
+            # IP we control (the Azure runner AND the Cloudflare edge). Returns
+            # clean page text — ideal for page-level hashing. Keyless free tier
+            # works; JINA_API_KEY just raises the rate limit.
+            jhdrs = {
+                "X-Return-Format": "text",
+                "User-Agent": HEADERS.get("User-Agent", "Mozilla/5.0"),
+            }
+            if JINA_API_KEY:
+                jhdrs["Authorization"] = f"Bearer {JINA_API_KEY}"
+            return requests.get(f"https://r.jina.ai/{url}", headers=jhdrs, timeout=60)
         return requests.get(url, headers=hdrs, timeout=30)
 
     primary = (
         "tls" if tls_impersonate
+        else "jina" if proxy == "jina"
         else "proxy" if (proxy == "cloudflare_worker" and CF_WORKER_URL)
         else "plain"
     )
     ladder = [primary]
-    # Automatic IP-reputation fallback: if the primary transport is blocked,
-    # retry once via the Cloudflare Worker proxy (clean edge IP).
-    if CF_WORKER_URL and "proxy" not in ladder:
+    # Automatic IP-reputation fallback applies only to the cloud-IP transports
+    # (plain / curl_cffi); 'jina' and 'proxy' already egress off-runner, so they
+    # get no redundant fallback.
+    if primary in ("plain", "tls") and CF_WORKER_URL:
         ladder.append("proxy")
 
     last_err = None
