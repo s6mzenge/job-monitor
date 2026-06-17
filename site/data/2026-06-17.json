@@ -1,7 +1,7 @@
 {
   "date": "2026-06-17",
-  "generated_at": "2026-06-17T06:31:17.811816+00:00",
-  "run_count": 8,
+  "generated_at": "2026-06-17T07:01:19.306408+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Administration Assistant",
@@ -506,6 +506,48 @@
       "type": "Full-time",
       "deadline": "2026-06-17",
       "salary": "£43,277–£51,714 p.a. (potential to £55,497)"
+    },
+    {
+      "title": "LECTURER.2.01 (AC.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106487&p_spid=5156836",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a clinical paediatric specialist lecturer role requiring HPCSA registration as a Medical Specialist in Paediatrics and an MBBCh medical degree — a clinical practice licence the candidate does not hold. Field, skills and seniority are all mismatched; hard ineligibility on the medical registration requirement.",
+      "location": "Johannesburg, South Africa",
+      "type": "Part-time (42%), Fixed-term one-year contract",
+      "deadline": "25 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "LECTURER.2.01 (AC.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106488&p_spid=5156837",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a clinical educator post requiring current HPCSA registration as a doctor and an MBBCH or relevant medical degree — a clinical practice licence the candidate does not hold (hard exclusion). The role is wholly outside the candidate's IR/policy profile and demands skills (clinical medicine, undergraduate medical teaching) they cannot substitute.",
+      "location": "Johannesburg, South Africa (Coronation Hospital)",
+      "type": "Part-time (50% appointment)",
+      "deadline": "25 June 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "INTERN.4.05 (AD.17.6)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106489&p_spid=5156838",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "5",
+      "reason": "This is a pre-PhD internship in quantitative epidemiology / health data science requiring a Master's in applied mathematics, statistics, epidemiology or data science, plus advanced statistical computing (R, SQL, STATA/SAS) on large health datasets — entirely outside the candidate's IR/policy profile and beyond their analysis-level Python. The field is a clear mismatch and the required quantitative-health skills are not substitutable.",
+      "location": "Johannesburg, South Africa",
+      "type": "Internship",
+      "deadline": "30 June 2026",
+      "salary": "Not specified"
     }
   ]
 }
