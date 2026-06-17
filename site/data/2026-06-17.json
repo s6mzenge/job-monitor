@@ -1,7 +1,7 @@
 {
   "date": "2026-06-17",
-  "generated_at": "2026-06-17T14:31:14.040297+00:00",
-  "run_count": 24,
+  "generated_at": "2026-06-17T15:08:20.896848+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Administration Assistant",
@@ -615,6 +615,20 @@
       "seniority_score": "1",
       "reason": "This is a deep-technical cyber/security engineering role requiring 5-7 years of professional security engineering experience, STRIDE threat modelling, security architecture and cloud/enterprise expertise — none of which the candidate possesses (their Python is analysis-level, not security engineering). Multiple hard barriers apply: off-profile field, specialist technical skills the candidate cannot substitute, and a 5-7 year experience requirement.",
       "location": "London, England, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Marketing Executive (B2C)",
+      "organisation": "The Economist Group",
+      "url": "https://job-boards.eu.greenhouse.io/theeconomistgroup/jobs/4895733101",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a B2C performance-marketing role (PPC, paid social, Salesforce CRM, email journeys) unrelated to the candidate's policy/IR research profile, and it requires at least 3 years of marketing experience as a hard requirement — a clear exclusion. The candidate lacks the named marketing tooling (Salesforce CRM, SFMC) and the dedicated marketing-campaign experience.",
+      "location": "London",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
