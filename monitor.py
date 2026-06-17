@@ -231,60 +231,86 @@ FETCH_RETRY_BACKOFF = 10  # seconds between retries
 def fetch_page(url, extra_headers=None, proxy=None, tls_impersonate=False):
     """Fetch a URL and return a BeautifulSoup object, or None on error.
 
-    Retries up to FETCH_MAX_ATTEMPTS times on transient errors:
-      - HTTP 429 (rate-limited) and 5xx (server errors, incl. Cloudflare 52x)
-      - Network timeouts and connection errors
-    Permanent errors (403, 404, etc.) fail fast on the first attempt.
+    Transport ladder: the configured transport is tried first, then — if it hits
+    a hard block (flat 403 / handshake refusal / connection reset), which on
+    GitHub Actions is almost always Azure IP/ASN reputation filtering — the
+    request is automatically retried through the Cloudflare Worker proxy, which
+    egresses from a clean Cloudflare edge IP. A site that blocks the runner's IP
+    therefore self-heals with no per-site config.
+
+    Note this only changes the egress IP; it cannot solve a Cloudflare *managed
+    JS challenge* (those need a real browser — see check_playwright + stealth).
+
+    Within each transport, retries up to FETCH_MAX_ATTEMPTS on transient errors
+    (HTTP 429 / 5xx incl. Cloudflare 52x, timeouts, connection errors).
     """
     hdrs = {**HEADERS, **(extra_headers or {})}
+
+    def _do(transport):
+        if transport == "tls":
+            # Real Chrome JA3 fingerprint — gets past non-browser-TLS blocks
+            # (e.g. SRT, Reprieve) that flat-403 or refuse the handshake.
+            if not HAVE_CURL_CFFI:
+                raise RuntimeError(
+                    "tls_impersonate requires curl_cffi (add it to requirements.txt)"
+                )
+            return cffi_requests.get(url, impersonate="chrome", timeout=30)
+        if transport == "proxy":
+            return requests.get(
+                CF_WORKER_URL,
+                params={"url": url},
+                headers={"X-Proxy-Token": CF_WORKER_TOKEN},
+                timeout=30,
+            )
+        return requests.get(url, headers=hdrs, timeout=30)
+
+    primary = (
+        "tls" if tls_impersonate
+        else "proxy" if (proxy == "cloudflare_worker" and CF_WORKER_URL)
+        else "plain"
+    )
+    ladder = [primary]
+    # Automatic IP-reputation fallback: if the primary transport is blocked,
+    # retry once via the Cloudflare Worker proxy (clean edge IP).
+    if CF_WORKER_URL and "proxy" not in ladder:
+        ladder.append("proxy")
+
     last_err = None
-    for attempt in range(1, FETCH_MAX_ATTEMPTS + 1):
-        try:
-            if tls_impersonate:
-                # Some sites (SRT, Reprieve) block non-browser TLS fingerprints
-                # outright (flat 403 / handshake refusal). curl_cffi sends a real
-                # Chrome JA3 fingerprint and gets through where requests cannot.
-                if not HAVE_CURL_CFFI:
-                    raise RuntimeError(
-                        "tls_impersonate requires curl_cffi (add it to requirements.txt)"
+    for transport in ladder:
+        for attempt in range(1, FETCH_MAX_ATTEMPTS + 1):
+            try:
+                resp = _do(transport)
+
+                # Retryable status codes: log and try again (same transport)
+                if resp.status_code in RETRY_STATUS_CODES and attempt < FETCH_MAX_ATTEMPTS:
+                    print(
+                        f"    HTTP {resp.status_code} for {url} — retry in "
+                        f"{FETCH_RETRY_BACKOFF}s (attempt {attempt}/{FETCH_MAX_ATTEMPTS})"
                     )
-                resp = cffi_requests.get(url, impersonate="chrome", timeout=30)
-            elif proxy == "cloudflare_worker" and CF_WORKER_URL:
-                resp = requests.get(
-                    CF_WORKER_URL,
-                    params={"url": url},
-                    headers={"X-Proxy-Token": CF_WORKER_TOKEN},
-                    timeout=30,
-                )
-            else:
-                resp = requests.get(url, headers=hdrs, timeout=30)
+                    last_err = f"HTTP {resp.status_code}"
+                    time.sleep(FETCH_RETRY_BACKOFF)
+                    continue
 
-            # Retryable status codes: log and try again
-            if resp.status_code in RETRY_STATUS_CODES and attempt < FETCH_MAX_ATTEMPTS:
-                print(
-                    f"    HTTP {resp.status_code} for {url} — retry in "
-                    f"{FETCH_RETRY_BACKOFF}s (attempt {attempt}/{FETCH_MAX_ATTEMPTS})"
-                )
-                last_err = f"HTTP {resp.status_code}"
-                time.sleep(FETCH_RETRY_BACKOFF)
-                continue
-
-            resp.raise_for_status()
-            return BeautifulSoup(resp.text, "html.parser")
-        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
-            last_err = e
-            if attempt < FETCH_MAX_ATTEMPTS:
-                print(
-                    f"    Network error for {url} — retry in "
-                    f"{FETCH_RETRY_BACKOFF}s (attempt {attempt}/{FETCH_MAX_ATTEMPTS}): {e}"
-                )
-                time.sleep(FETCH_RETRY_BACKOFF)
-                continue
-            break
-        except Exception as e:
-            # Permanent error (HTTPError for 4xx, parse error, etc.) — fail fast
-            last_err = e
-            break
+                resp.raise_for_status()
+                if transport == "proxy" and transport != primary:
+                    print(f"    ↻ recovered via Cloudflare Worker proxy "
+                          f"(primary '{primary}' was blocked)")
+                return BeautifulSoup(resp.text, "html.parser")
+            except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+                last_err = e
+                if attempt < FETCH_MAX_ATTEMPTS:
+                    print(
+                        f"    Network error for {url} — retry in "
+                        f"{FETCH_RETRY_BACKOFF}s (attempt {attempt}/{FETCH_MAX_ATTEMPTS}): {e}"
+                    )
+                    time.sleep(FETCH_RETRY_BACKOFF)
+                    continue
+                break  # transient retries exhausted → fall to next transport
+            except Exception as e:
+                # Hard error (4xx incl. 403, handshake refusal, parse error).
+                last_err = e
+                break  # → fall to next transport in the ladder (e.g. proxy)
+        # primary failed; loop continues to the proxy fallback if present
 
     _record_error(f"fetch_page: {last_err}")
     print(f"    Error fetching {url}: {last_err}")
