@@ -1530,6 +1530,145 @@ def check_rippling_api(site, seen_urls):
     }
 
 
+# ─── 14. ENGAGE|ats (Havas People) — POST-paginated vacancy search ───
+# Platform used by e.g. LSE (jobs.lse.ac.uk). The public vacancy list is
+# server-rendered only 5 per page and paginates ONLY via a POST to
+# <origin>/V2/Vacancy/ApplySearchFilter that returns JSON {"searchResults":
+# "<html>"}. Per-job links live in a data-param1 attribute on
+# <button class="btn-search-results-view">, not in an <a href> — so neither the
+# plain HTML handler nor its link_selector works here. This handler POSTs
+# PageNo=1..N (reading the "Page X of N" footer to learn N), collects every
+# (title, url), then fetches each NEW detail page exactly like check_html.
+# No login / CSRF / encrypted state is needed — the channel is passed in the
+# payload as Type ("Internal"/"External"). A landing URL is fetched once only to
+# warm a session cookie (belt-and-suspenders; the POST works without it).
+#
+# Config keys:
+#   api_url         : full ApplySearchFilter endpoint                    (required)
+#   vac_type        : "Internal" | "External" (the #vacancyType value)   (required)
+#   landing         : a landing URL fetched once to warm a session cookie (optional)
+#   base_url        : origin, used to absolutise links (already absolute — safety net)
+#   detail_selector : CSS scope for detail extraction (e.g. div.view-vacancy-container)
+#   max_pages       : pagination safety cap (default 25)
+def check_engage_ats(site, seen_urls):
+    api_url = site["api_url"]
+    vac_type = site.get("vac_type", "External")
+    landing = site.get("landing") or site.get("url", "")  # url doubles as cookie warm-up
+    base_url = site.get("base_url", "")
+    detail_selector = site.get("detail_selector", "")
+    max_pages = int(site.get("max_pages", 25))
+
+    sess = requests.Session()
+    if landing:
+        try:
+            sess.get(landing, headers=HEADERS, timeout=30)
+        except Exception:
+            pass  # cookie warm-up is best-effort; Type is sent explicitly anyway
+
+    ajax_headers = {
+        **HEADERS,
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "X-Requested-With": "XMLHttpRequest",
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    }
+
+    def _post_results(page):
+        """POST one page of results; return its searchResults HTML or None."""
+        body = {
+            "searchControlViewModel[Criteria]": "",
+            "searchControlViewModel[PostCode]": "",
+            "searchControlViewModel[TravelDistance]": "",
+            "searchControlViewModel[SortBy]": "",
+            "searchControlViewModel[Type]": vac_type,
+            "searchControlViewModel[PageNo]": str(page),
+        }
+        for attempt in range(1, FETCH_MAX_ATTEMPTS + 1):
+            try:
+                resp = sess.post(api_url, headers=ajax_headers, data=body, timeout=30)
+                if resp.status_code in RETRY_STATUS_CODES and attempt < FETCH_MAX_ATTEMPTS:
+                    time.sleep(FETCH_RETRY_BACKOFF)
+                    continue
+                resp.raise_for_status()
+                return (resp.json() or {}).get("searchResults", "") or ""
+            except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
+                if attempt < FETCH_MAX_ATTEMPTS:
+                    time.sleep(FETCH_RETRY_BACKOFF)
+                    continue
+                break
+            except Exception as e:
+                _record_error(f"engage_ats {vac_type} page {page}: {e}")
+                return None
+        _record_error(f"engage_ats {vac_type} page {page}: exhausted retries")
+        return None
+
+    def _parse(results_html):
+        soup = BeautifulSoup(results_html, "html.parser")
+        pairs = []
+        for b in soup.select(".btn-search-results-view"):
+            url = (b.get("data-param1") or "").strip()
+            if not url:
+                continue
+            title = "Untitled"
+            node = b
+            for _ in range(8):  # walk up to the vacancy card for its heading
+                node = node.parent
+                if node is None:
+                    break
+                h = node.select_one(".ats-heading-font")
+                if h and h.get_text(strip=True):
+                    title = h.get_text(strip=True)
+                    break
+            pairs.append((title, url))
+        m = re.search(r"Page\s+\d+\s+of\s+(\d+)", results_html)
+        return pairs, (int(m.group(1)) if m else 1)
+
+    first = _post_results(1)
+    if first is None:
+        return None  # genuine fetch failure -> counts toward pause, like other handlers
+    pairs, n_pages = _parse(first)
+    n_pages = min(n_pages, max_pages)
+
+    collected = {}  # url -> title (also dedupes the rare cross-page repeat)
+    for title, url in pairs:
+        collected.setdefault(url, title)
+    for pg in range(2, n_pages + 1):
+        time.sleep(1)
+        html = _post_results(pg)
+        if not html:
+            continue  # skip a flaky page rather than abort the whole site
+        more, _ = _parse(html)
+        for title, url in more:
+            collected.setdefault(url, title)
+
+    all_urls = set()
+    new_jobs = []
+    for url, title in collected.items():
+        full_url = urljoin(base_url + "/", url) if base_url else url
+        full_url = full_url.rstrip("/")
+        all_urls.add(full_url)
+        if full_url in seen_urls:
+            continue
+        if site.get("skip_detail_fetch"):
+            detail_text = f"Title: {title}"
+        else:
+            time.sleep(1)
+            detail_soup = None
+            try:
+                dr = sess.get(full_url, headers=HEADERS, timeout=30)
+                dr.raise_for_status()
+                detail_soup = BeautifulSoup(dr.text, "html.parser")
+            except Exception as e:
+                print(f"    Error fetching detail {full_url}: {e}")
+            detail_text = extract_text(detail_soup, detail_selector) if detail_soup else ""
+        new_jobs.append({
+            "title": title,
+            "url": full_url,
+            "detail_text": detail_text or f"Title: {title} (detail page could not be loaded)",
+        })
+
+    return {"total": len(all_urls), "new": new_jobs}
+
+
 # ═══════════════════════════════════════════════════════════════
 #  DISPATCHER — routes each site to the correct handler
 # ═══════════════════════════════════════════════════════════════
@@ -1548,6 +1687,7 @@ METHOD_HANDLERS = {
     "hireserve_api": check_hireserve,
     "plumm_api": check_plumm_api,
     "rippling_api": check_rippling_api,
+    "engage_ats": check_engage_ats,
 }
 
 
