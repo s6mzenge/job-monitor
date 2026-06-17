@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T17:36:45.683681+00:00",
+  "last_updated": "2026-06-17T21:45:32.684858+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -52,6 +52,149 @@
       "paused_until": "2026-06-19T09:01:23.531617+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "ActionAid UK": {
+      "site_id": 122,
+      "url": "https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies"
+    },
+    "Institute for War & Peace Reporting": {
+      "site_id": 123,
+      "url": "https://iwpr.net/engage/opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://iwpr.net/engage/opportunities"
+    },
+    "Minority Rights Group": {
+      "site_id": 128,
+      "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://minorityrights.org/about-us/jobs-and-opportunities/"
+    },
+    "Joseph Rowntree Foundation": {
+      "site_id": 129,
+      "url": "https://www.jrf.org.uk/careers",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+    },
+    "Article 19": {
+      "site_id": 131,
+      "url": "https://www.article19.org/careers/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://www.article19.org/careers/"
+    },
+    "Anti-Slavery International": {
+      "site_id": 132,
+      "url": "https://www.antislavery.org/about-us/jobs-and-volunteering/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://www.antislavery.org/about-us/jobs-and-volunteering/"
+    },
+    "Airwars": {
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://airwars.org/about/workwithus/"
+    },
+    "Peace Direct": {
+      "site_id": 134,
+      "url": "https://www.peacedirect.org/about-us/jobs/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://www.peacedirect.org/about-us/jobs/"
+    },
+    "Social Market Foundation": {
+      "site_id": 135,
+      "url": "https://www.smf.co.uk/work-with-us/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://www.smf.co.uk/work-with-us/"
+    },
+    "Ethical Trading Initiative": {
+      "site_id": 138,
+      "url": "https://www.ethicaltrade.org/jobs-eti",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+    },
+    "The King's Fund": {
+      "site_id": 146,
+      "url": "https://www.kingsfund.org.uk/about-us/jobs",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.kingsfund.org.uk/about-us/jobs"
     }
   },
   "issues": [
@@ -8411,6 +8554,116 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://jcwi.org.uk/careers",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T21:45:32.684858+00:00",
+      "site": "ActionAid UK",
+      "site_id": 122,
+      "url": "https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T21:45:32.684858+00:00",
+      "site": "Institute for War & Peace Reporting",
+      "site_id": 123,
+      "url": "https://iwpr.net/engage/opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://iwpr.net/engage/opportunities",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T21:45:32.684858+00:00",
+      "site": "Minority Rights Group",
+      "site_id": 128,
+      "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://minorityrights.org/about-us/jobs-and-opportunities/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T21:45:32.684858+00:00",
+      "site": "Joseph Rowntree Foundation",
+      "site_id": 129,
+      "url": "https://www.jrf.org.uk/careers",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T21:45:32.684858+00:00",
+      "site": "Article 19",
+      "site_id": 131,
+      "url": "https://www.article19.org/careers/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.article19.org/careers/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T21:45:32.684858+00:00",
+      "site": "Anti-Slavery International",
+      "site_id": 132,
+      "url": "https://www.antislavery.org/about-us/jobs-and-volunteering/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.antislavery.org/about-us/jobs-and-volunteering/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T21:45:32.684858+00:00",
+      "site": "Airwars",
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://airwars.org/about/workwithus/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T21:45:32.684858+00:00",
+      "site": "Peace Direct",
+      "site_id": 134,
+      "url": "https://www.peacedirect.org/about-us/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.peacedirect.org/about-us/jobs/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T21:45:32.684858+00:00",
+      "site": "Social Market Foundation",
+      "site_id": 135,
+      "url": "https://www.smf.co.uk/work-with-us/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.smf.co.uk/work-with-us/",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T21:45:32.684858+00:00",
+      "site": "Ethical Trading Initiative",
+      "site_id": 138,
+      "url": "https://www.ethicaltrade.org/jobs-eti",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T21:45:32.684858+00:00",
+      "site": "The King's Fund",
+      "site_id": 146,
+      "url": "https://www.kingsfund.org.uk/about-us/jobs",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "cloudscraper listing: 403 Client Error: Forbidden for url: https://www.kingsfund.org.uk/about-us/jobs",
       "consecutive_count": 1
     }
   ]
