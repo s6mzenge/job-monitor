@@ -1,7 +1,7 @@
 {
   "date": "2026-06-17",
-  "generated_at": "2026-06-17T22:21:27.558268+00:00",
-  "run_count": 31,
+  "generated_at": "2026-06-17T23:45:22.693756+00:00",
+  "run_count": 32,
   "jobs": [
     {
       "title": "Administration Assistant",
@@ -1374,6 +1374,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Cross Organisational Projects Manager",
+      "organisation": "ActionAid UK",
+      "url": "https://www.actionaid.org.uk/jobs/permanent/cross-organisational-projects-manager",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is an internal project-management/organisational-transformation role at a women's-rights NGO, not a research, policy or analysis role — only loosely adjacent to the candidate's profile. The \"Manager\" title and requirement for proven end-to-end delivery of complex cross-organisational projects implies professional experience the candidate lacks, and project-management tooling (e.g. PRINCE2) is outside their skill set.",
+      "location": "London (Hybrid)",
+      "type": "Full-time",
+      "deadline": "29 June 2026",
+      "salary": "£49,370 to £50,797 Pro-Rata"
     }
   ]
 }
