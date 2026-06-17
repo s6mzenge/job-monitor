@@ -1394,9 +1394,482 @@
       "vac_type": "Internal",
       "base_url": "https://jobs.lse.ac.uk",
       "detail_selector": "div.view-vacancy-container",
-      "attachment_include": ["person_spec", "job_description"],
+      "attachment_include": [
+        "person_spec",
+        "job_description"
+      ],
       "eval_max_chars": 30000,
       "london_only": true
+    },
+    {
+      "id": 111,
+      "name": "International Rescue Committee",
+      "url": "https://theirc.wd1.myworkdayjobs.com/en-US/External_Careers",
+      "method": "workday_api",
+      "base_url": "https://theirc.wd1.myworkdayjobs.com",
+      "london_only": true,
+      "api": {
+        "url": "https://theirc.wd1.myworkdayjobs.com/wday/cxs/theirc/External_Careers/jobs",
+        "http_method": "POST",
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "Referer": "https://theirc.wd1.myworkdayjobs.com/en-US/External_Careers"
+        },
+        "body": {
+          "appliedFacets": {
+            "locations": [
+              "21481910a4211002112c68824a710000"
+            ]
+          },
+          "limit": 20,
+          "offset": 0,
+          "searchText": ""
+        },
+        "response_key": "jobPostings",
+        "total_key": "total",
+        "job_fields": {
+          "title": "title",
+          "path": "externalPath",
+          "location": "locationsText",
+          "posted": "postedOn"
+        }
+      },
+      "job_detail_api": "https://theirc.wd1.myworkdayjobs.com/wday/cxs/theirc/External_Careers/{externalPath}"
+    },
+    {
+      "id": 112,
+      "name": "Wellcome Trust",
+      "url": "https://wellcome.wd3.myworkdayjobs.com/en-GB/Wellcome",
+      "method": "workday_api",
+      "base_url": "https://wellcome.wd3.myworkdayjobs.com",
+      "london_only": true,
+      "api": {
+        "url": "https://wellcome.wd3.myworkdayjobs.com/wday/cxs/wellcome/Wellcome/jobs",
+        "http_method": "POST",
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "Referer": "https://wellcome.wd3.myworkdayjobs.com/en-GB/Wellcome"
+        },
+        "body": {
+          "appliedFacets": {},
+          "limit": 20,
+          "offset": 0,
+          "searchText": ""
+        },
+        "response_key": "jobPostings",
+        "total_key": "total",
+        "job_fields": {
+          "title": "title",
+          "path": "externalPath",
+          "location": "locationsText",
+          "posted": "postedOn"
+        }
+      },
+      "job_detail_api": "https://wellcome.wd3.myworkdayjobs.com/wday/cxs/wellcome/Wellcome/{externalPath}"
+    },
+    {
+      "id": 113,
+      "name": "Tracker Group (The Sentry)",
+      "url": "https://apply.workable.com/tracker-group/",
+      "method": "workable_api",
+      "base_url": "https://apply.workable.com",
+      "london_only": true,
+      "api": {
+        "url": "https://apply.workable.com/api/v1/widget/accounts/tracker-group",
+        "http_method": "GET",
+        "response_key": "jobs",
+        "job_fields": {
+          "title": "title",
+          "shortcode": "shortcode",
+          "url": "url",
+          "department": "department",
+          "location_city": "location.city",
+          "location_country": "location.country",
+          "created_at": "created_at"
+        }
+      }
+    },
+    {
+      "id": 114,
+      "name": "Crisis Action",
+      "url": "https://crisisaction.bamboohr.com/careers",
+      "method": "bamboohr_api",
+      "base_url": "https://crisisaction.bamboohr.com",
+      "london_only": true,
+      "api": {
+        "company": "crisisaction"
+      }
+    },
+    {
+      "id": 115,
+      "name": "E3G",
+      "url": "https://e3g.bamboohr.com/careers",
+      "method": "bamboohr_api",
+      "base_url": "https://e3g.bamboohr.com",
+      "london_only": true,
+      "api": {
+        "company": "e3g"
+      }
+    },
+    {
+      "id": 116,
+      "name": "International Crisis Group",
+      "url": "https://jobs.crisisgroup.org/",
+      "method": "recruitee_api",
+      "base_url": "https://jobs.crisisgroup.org",
+      "london_only": true,
+      "api": {
+        "url": "https://crisisgroup.recruitee.com/api/offers/"
+      }
+    },
+    {
+      "id": 117,
+      "name": "Plan International UK",
+      "url": "https://careers.plan-uk.org/vacancies",
+      "method": "json_api",
+      "base_url": "https://careers.plan-uk.org",
+      "london_only": true,
+      "api": {
+        "url": "https://api.sitehub.io/collection/663ceae28a890d05503acf22/items?limit=9999&offset=0&paginate=false&filter%5Bcolumns.web-published%5D=1",
+        "http_method": "GET",
+        "headers": {
+          "Origin": "https://careers.plan-uk.org",
+          "Referer": "https://careers.plan-uk.org/"
+        },
+        "response_key": "collection",
+        "dump_first_item": true,
+        "job_fields": {}
+      }
+    },
+    {
+      "id": 118,
+      "name": "RSA (Royal Society of Arts)",
+      "url": "https://careers.rsa.org.uk/vacancies",
+      "method": "json_api",
+      "base_url": "https://careers.rsa.org.uk",
+      "london_only": true,
+      "api": {
+        "url": "https://api-careers-sites.talos360.com/api/careerssite/vacancies/search",
+        "http_method": "POST",
+        "headers": {
+          "Content-Type": "application/json",
+          "Origin": "https://careers.rsa.org.uk",
+          "Referer": "https://careers.rsa.org.uk/"
+        },
+        "body": {
+          "careersSiteObfuscatedId": "8170b764-eaaa-4633-8f11-1eed93b3d0a1",
+          "whereCriteria": null,
+          "metadataFilters": [],
+          "preFilters": [],
+          "siteType": "External"
+        },
+        "response_key": "careersSiteVacancies",
+        "dump_first_item": true,
+        "job_fields": {}
+      }
+    },
+    {
+      "id": 119,
+      "name": "ODI Global",
+      "url": "https://theodi.livevacancies.co.uk/",
+      "method": "json_api",
+      "base_url": "https://theodi.livevacancies.co.uk",
+      "london_only": true,
+      "api": {
+        "url": "https://api.core-easywebats.com/v1/job/all",
+        "http_method": "GET",
+        "headers": {
+          "Origin": "https://theodi.livevacancies.co.uk",
+          "Referer": "https://theodi.livevacancies.co.uk/"
+        },
+        "response_key": "",
+        "dump_first_item": true,
+        "job_fields": {}
+      }
+    },
+    {
+      "id": 120,
+      "name": "Nesta",
+      "url": "https://www.nesta.org.uk/jobs/",
+      "method": "json_api",
+      "base_url": "https://www.nesta.org.uk",
+      "london_only": true,
+      "api": {
+        "url": "https://www.nesta.org.uk/api/v2/pages/?type=jobs.JobPage&fields=*&limit=20",
+        "http_method": "GET",
+        "response_key": "items",
+        "fetch_detail_html": true,
+        "job_fields": {
+          "title": "title",
+          "url": "meta.html_url",
+          "location": "location",
+          "id": "id"
+        }
+      }
+    },
+    {
+      "id": 121,
+      "name": "Nuffield Foundation",
+      "url": "https://www.nuffieldfoundation.org/about/careers",
+      "method": "html",
+      "base_url": "https://www.nuffieldfoundation.org",
+      "link_selector": "a[href*='/apply/']",
+      "london_only": true
+    },
+    {
+      "id": 122,
+      "name": "ActionAid UK",
+      "url": "https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies",
+      "method": "html",
+      "base_url": "https://www.actionaid.org.uk",
+      "link_selector": "article.reach-job a",
+      "london_only": true
+    },
+    {
+      "id": 123,
+      "name": "Institute for War & Peace Reporting",
+      "url": "https://iwpr.net/engage/opportunities",
+      "method": "html",
+      "base_url": "https://iwpr.net",
+      "link_selector": "article.node--type-opportunities a",
+      "london_only": true,
+      "use_cloudscraper": true
+    },
+    {
+      "id": 124,
+      "name": "CARE International UK",
+      "url": "https://www.careinternational.org.uk/work-with-us/",
+      "method": "html",
+      "base_url": "https://www.careinternational.org.uk",
+      "link_selector": "li.card--standard a",
+      "london_only": true
+    },
+    {
+      "id": 125,
+      "name": "Demos",
+      "url": "https://demos.co.uk/jobs/",
+      "method": "html",
+      "base_url": "https://demos.co.uk",
+      "link_selector": "a",
+      "london_only": true,
+      "tls_impersonate": true,
+      "scope_links": true,
+      "selector": "div.content.clearfix"
+    },
+    {
+      "id": 126,
+      "name": "Esmée Fairbairn Foundation",
+      "url": "https://esmeefairbairn.org.uk/about-esmee/current-vacancies-and-opportunities/",
+      "method": "html",
+      "base_url": "https://esmeefairbairn.org.uk",
+      "link_selector": "a",
+      "london_only": true,
+      "scope_links": true,
+      "selector": "div.rich-text"
+    },
+    {
+      "id": 127,
+      "name": "Resolution Foundation",
+      "url": "https://www.resolutionfoundation.org/about-us/opportunities/",
+      "method": "html",
+      "base_url": "https://www.resolutionfoundation.org",
+      "link_selector": "a[href*='/about-us/opportunities/']",
+      "london_only": true
+    },
+    {
+      "id": 128,
+      "name": "Minority Rights Group",
+      "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
+      "method": "html",
+      "base_url": "https://minorityrights.org",
+      "link_selector": "li.job-opportunities-tabs__content-item a",
+      "london_only": true,
+      "use_cloudscraper": true
+    },
+    {
+      "id": 129,
+      "name": "Joseph Rowntree Foundation",
+      "url": "https://www.jrf.org.uk/careers",
+      "method": "html",
+      "base_url": "https://www.jrf.org.uk",
+      "link_selector": "a[href*='cadence-jrf.co.uk']",
+      "london_only": true
+    },
+    {
+      "id": 130,
+      "name": "Business & Human Rights Resource Centre",
+      "url": "https://www.business-humanrights.org/en/jobs/?location=United+Kingdom",
+      "method": "html",
+      "base_url": "https://www.business-humanrights.org",
+      "link_selector": "div.list-item__content a",
+      "london_only": false,
+      "tls_impersonate": true
+    },
+    {
+      "id": 131,
+      "name": "Article 19",
+      "url": "https://www.article19.org/careers/",
+      "method": "html",
+      "base_url": "https://www.article19.org",
+      "link_selector": "a[href*='peoplehr.net']",
+      "london_only": true
+    },
+    {
+      "id": 132,
+      "name": "Anti-Slavery International",
+      "url": "https://www.antislavery.org/about-us/jobs-and-volunteering/",
+      "method": "html",
+      "selector": "article.col-sm-8, main, article, div.entry-content",
+      "link_selector": "",
+      "base_url": "https://www.antislavery.org",
+      "london_only": true
+    },
+    {
+      "id": 133,
+      "name": "Airwars",
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "selector": "main, article, div.entry-content",
+      "link_selector": "",
+      "base_url": "https://airwars.org",
+      "london_only": true
+    },
+    {
+      "id": 134,
+      "name": "Peace Direct",
+      "url": "https://www.peacedirect.org/about-us/jobs/",
+      "method": "html",
+      "selector": "main, section, article, div.entry-content",
+      "link_selector": "",
+      "base_url": "https://www.peacedirect.org",
+      "london_only": true
+    },
+    {
+      "id": 135,
+      "name": "Social Market Foundation",
+      "url": "https://www.smf.co.uk/work-with-us/",
+      "method": "html",
+      "selector": "#content, main, article",
+      "link_selector": "",
+      "base_url": "https://www.smf.co.uk",
+      "london_only": true
+    },
+    {
+      "id": 136,
+      "name": "New Philanthropy Capital",
+      "url": "https://www.thinknpc.org/about-npc/work-at-npc/current-vacancies/",
+      "method": "html",
+      "selector": "main, article, div.entry-content",
+      "link_selector": "",
+      "base_url": "https://www.thinknpc.org",
+      "london_only": true
+    },
+    {
+      "id": 137,
+      "name": "Global Witness",
+      "url": "https://globalwitness.org/en/careers/current-vacancies/",
+      "method": "html",
+      "selector": "main, article, div.entry-content",
+      "link_selector": "",
+      "base_url": "https://globalwitness.org",
+      "london_only": true
+    },
+    {
+      "id": 138,
+      "name": "Ethical Trading Initiative",
+      "url": "https://www.ethicaltrade.org/jobs-eti",
+      "method": "html",
+      "selector": "main, article, div.field--name-body",
+      "link_selector": "",
+      "base_url": "https://www.ethicaltrade.org",
+      "london_only": true
+    },
+    {
+      "id": 139,
+      "name": "Asylum Aid",
+      "url": "https://www.asylumaid.org.uk/who-we-are/join-us",
+      "method": "html",
+      "selector": "article, main, div.entry-content",
+      "link_selector": "",
+      "base_url": "https://www.asylumaid.org.uk",
+      "london_only": true
+    },
+    {
+      "id": 140,
+      "name": "International Bar Association",
+      "url": "https://www.ibanet.org/recruitment",
+      "method": "html",
+      "selector": "div.card-body, main, article",
+      "link_selector": "",
+      "base_url": "https://www.ibanet.org",
+      "london_only": true
+    },
+    {
+      "id": 141,
+      "name": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "method": "html",
+      "selector": "main, article, div.entry-content",
+      "link_selector": "",
+      "base_url": "https://www.rightsandsecurity.org",
+      "london_only": true
+    },
+    {
+      "id": 142,
+      "name": "IIED",
+      "url": "https://jobs.iied.org/IIED/Home",
+      "method": "html",
+      "selector": "main, #content, body",
+      "link_selector": "",
+      "base_url": "https://jobs.iied.org",
+      "london_only": true,
+      "tls_impersonate": true
+    },
+    {
+      "id": 143,
+      "name": "Public Law Project",
+      "url": "https://publiclawproject.org.uk/support-us/latest-opportunities/",
+      "method": "html",
+      "selector": "main, article, div.entry-content",
+      "link_selector": "",
+      "base_url": "https://publiclawproject.org.uk",
+      "london_only": true
+    },
+    {
+      "id": 144,
+      "name": "ShareAction",
+      "url": "https://shareaction.org/about-us/careers",
+      "method": "playwright",
+      "base_url": "https://shareaction.org",
+      "london_only": true,
+      "selector": "main, article, [class*='content']",
+      "link_selector": "",
+      "wait_ms": 6000
+    },
+    {
+      "id": 145,
+      "name": "ICRC",
+      "url": "https://careers.icrc.org/search/?q=&locationsearch=London",
+      "method": "html",
+      "selector": "#content, main, body",
+      "link_selector": "",
+      "base_url": "https://careers.icrc.org",
+      "london_only": true
+    },
+    {
+      "id": 146,
+      "name": "The King's Fund",
+      "url": "https://www.kingsfund.org.uk/about-us/jobs",
+      "method": "html",
+      "selector": "main, article, div.field--name-body",
+      "link_selector": "",
+      "base_url": "https://www.kingsfund.org.uk",
+      "london_only": true,
+      "use_cloudscraper": true
     }
   ]
 }
