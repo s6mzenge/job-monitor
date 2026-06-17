@@ -1,7 +1,7 @@
 {
   "date": "2026-06-17",
-  "generated_at": "2026-06-17T15:08:20.896848+00:00",
-  "run_count": 25,
+  "generated_at": "2026-06-17T15:38:30.702021+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Administration Assistant",
@@ -629,6 +629,34 @@
       "seniority_score": "2",
       "reason": "This is a B2C performance-marketing role (PPC, paid social, Salesforce CRM, email journeys) unrelated to the candidate's policy/IR research profile, and it requires at least 3 years of marketing experience as a hard requirement — a clear exclusion. The candidate lacks the named marketing tooling (Salesforce CRM, SFMC) and the dedicated marketing-campaign experience.",
       "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "EuroFinance Client Services Lead",
+      "organisation": "The Economist Group",
+      "url": "https://job-boards.eu.greenhouse.io/theeconomistgroup/jobs/4880915101",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is an events customer-service and registration-management role focused on Cvent/CRM platforms, delegate handling and payment processing — off the candidate's policy/research/intelligence profile. It requires event-operations and CRM/Salesforce experience the candidate lacks, and the \"Lead\" framing implies prior operational experience. Field ≤ 2 forces a Low.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Associate - Chief Data Office",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Senior-Associate-Chief-Data-Office/1405670433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "This is a financial/business operations role centred on budget management, financial reporting, and programme coordination — entirely off the candidate's IR/policy/intelligence profile, and it seeks a Business/Economics/Accounting background. The function is a clear field mismatch despite the prestigious firm, so MATCH is Low.",
+      "location": "London, GB",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
