@@ -1394,6 +1394,8 @@
       "vac_type": "Internal",
       "base_url": "https://jobs.lse.ac.uk",
       "detail_selector": "div.view-vacancy-container",
+      "attachment_include": ["person_spec", "job_description"],
+      "eval_max_chars": 30000,
       "london_only": true
     }
   ]
