@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T07:31:20.291781+00:00",
+  "last_updated": "2026-06-17T08:01:30.558458+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -44,10 +44,10 @@
       "site_id": 102,
       "url": "https://palestinecampaign.org/about/opportunities/",
       "method": "html",
-      "consecutive_failures": 13,
-      "total_recent_failures": 14,
+      "consecutive_failures": 14,
+      "total_recent_failures": 15,
       "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
-      "last_recent_failure": "2026-06-17T07:31:20.291781+00:00",
+      "last_recent_failure": "2026-06-17T08:01:30.558458+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -55,16 +55,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-18T08:00:53.152309+00:00",
-      "site": "Sigrid Rausing Trust",
-      "site_id": 63,
-      "url": "https://www.sigrid-rausing-trust.org/jobs/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.sigrid-rausing-trust.org/jobs/",
-      "consecutive_count": 13
-    },
     {
       "timestamp": "2026-05-18T08:30:55.965645+00:00",
       "site": "SOAS University of London",
@@ -8362,6 +8352,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
       "consecutive_count": 13
+    },
+    {
+      "timestamp": "2026-06-17T08:01:30.558458+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
+      "consecutive_count": 14
     }
   ]
 }
