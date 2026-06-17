@@ -1628,7 +1628,7 @@
       "base_url": "https://www.actionaid.org.uk",
       "link_selector": "article.reach-job a",
       "london_only": true,
-      "tls_impersonate": true
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 123,
@@ -1638,7 +1638,7 @@
       "base_url": "https://iwpr.net",
       "link_selector": "article.node--type-opportunities a",
       "london_only": true,
-      "tls_impersonate": true
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 124,
@@ -1689,7 +1689,7 @@
       "base_url": "https://minorityrights.org",
       "link_selector": "li.job-opportunities-tabs__content-item a",
       "london_only": true,
-      "tls_impersonate": true
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 129,
@@ -1699,7 +1699,8 @@
       "base_url": "https://www.jrf.org.uk",
       "link_selector": "a[href*='cadence-jrf.co.uk']",
       "london_only": true,
-      "tls_impersonate": true
+      "tls_impersonate": true,
+      "skip_detail_fetch": true
     },
     {
       "id": 130,
@@ -1719,7 +1720,7 @@
       "base_url": "https://www.article19.org",
       "link_selector": "a[href*='peoplehr.net']",
       "london_only": true,
-      "tls_impersonate": true
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 132,
@@ -1763,7 +1764,7 @@
       "link_selector": "",
       "base_url": "https://www.smf.co.uk",
       "london_only": true,
-      "tls_impersonate": true
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 136,
@@ -1877,7 +1878,7 @@
       "link_selector": "",
       "base_url": "https://www.kingsfund.org.uk",
       "london_only": true,
-      "tls_impersonate": true
+      "proxy": "cloudflare_worker"
     }
   ]
 }
