@@ -1636,9 +1636,10 @@
       "url": "https://iwpr.net/engage/opportunities",
       "method": "html",
       "base_url": "https://iwpr.net",
-      "link_selector": "article.node--type-opportunities a",
+      "link_selector": "",
       "london_only": true,
-      "proxy": "cloudflare_worker"
+      "proxy": "jina",
+      "selector": ""
     },
     {
       "id": 124,
@@ -1687,9 +1688,10 @@
       "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
       "method": "html",
       "base_url": "https://minorityrights.org",
-      "link_selector": "li.job-opportunities-tabs__content-item a",
+      "link_selector": "",
       "london_only": true,
-      "proxy": "cloudflare_worker"
+      "proxy": "jina",
+      "selector": ""
     },
     {
       "id": 129,
@@ -1718,9 +1720,10 @@
       "url": "https://www.article19.org/careers/",
       "method": "html",
       "base_url": "https://www.article19.org",
-      "link_selector": "a[href*='peoplehr.net']",
+      "link_selector": "",
       "london_only": true,
-      "proxy": "cloudflare_worker"
+      "proxy": "jina",
+      "selector": ""
     },
     {
       "id": 132,
@@ -1760,11 +1763,11 @@
       "name": "Social Market Foundation",
       "url": "https://www.smf.co.uk/work-with-us/",
       "method": "html",
-      "selector": "#content, main, article",
+      "selector": "",
       "link_selector": "",
       "base_url": "https://www.smf.co.uk",
       "london_only": true,
-      "proxy": "cloudflare_worker"
+      "proxy": "jina"
     },
     {
       "id": 136,
@@ -1874,11 +1877,11 @@
       "name": "The King's Fund",
       "url": "https://www.kingsfund.org.uk/about-us/jobs",
       "method": "html",
-      "selector": "main, article, div.field--name-body",
+      "selector": "",
       "link_selector": "",
       "base_url": "https://www.kingsfund.org.uk",
       "london_only": true,
-      "proxy": "cloudflare_worker"
+      "proxy": "jina"
     }
   ]
 }
