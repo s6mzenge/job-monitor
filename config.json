@@ -1627,7 +1627,8 @@
       "method": "html",
       "base_url": "https://www.actionaid.org.uk",
       "link_selector": "article.reach-job a",
-      "london_only": true
+      "london_only": true,
+      "tls_impersonate": true
     },
     {
       "id": 123,
@@ -1637,7 +1638,7 @@
       "base_url": "https://iwpr.net",
       "link_selector": "article.node--type-opportunities a",
       "london_only": true,
-      "use_cloudscraper": true
+      "tls_impersonate": true
     },
     {
       "id": 124,
@@ -1664,12 +1665,12 @@
       "id": 126,
       "name": "Esmée Fairbairn Foundation",
       "url": "https://esmeefairbairn.org.uk/about-esmee/current-vacancies-and-opportunities/",
-      "method": "html",
+      "method": "playwright",
       "base_url": "https://esmeefairbairn.org.uk",
-      "link_selector": "a",
       "london_only": true,
-      "scope_links": true,
-      "selector": "div.rich-text"
+      "selector": "main, article, [class*='rich-text'], [class*='content']",
+      "link_selector": "",
+      "wait_ms": 5000
     },
     {
       "id": 127,
@@ -1688,7 +1689,7 @@
       "base_url": "https://minorityrights.org",
       "link_selector": "li.job-opportunities-tabs__content-item a",
       "london_only": true,
-      "use_cloudscraper": true
+      "tls_impersonate": true
     },
     {
       "id": 129,
@@ -1697,7 +1698,8 @@
       "method": "html",
       "base_url": "https://www.jrf.org.uk",
       "link_selector": "a[href*='cadence-jrf.co.uk']",
-      "london_only": true
+      "london_only": true,
+      "tls_impersonate": true
     },
     {
       "id": 130,
@@ -1716,7 +1718,8 @@
       "method": "html",
       "base_url": "https://www.article19.org",
       "link_selector": "a[href*='peoplehr.net']",
-      "london_only": true
+      "london_only": true,
+      "tls_impersonate": true
     },
     {
       "id": 132,
@@ -1726,7 +1729,8 @@
       "selector": "article.col-sm-8, main, article, div.entry-content",
       "link_selector": "",
       "base_url": "https://www.antislavery.org",
-      "london_only": true
+      "london_only": true,
+      "tls_impersonate": true
     },
     {
       "id": 133,
@@ -1736,7 +1740,8 @@
       "selector": "main, article, div.entry-content",
       "link_selector": "",
       "base_url": "https://airwars.org",
-      "london_only": true
+      "london_only": true,
+      "tls_impersonate": true
     },
     {
       "id": 134,
@@ -1746,7 +1751,8 @@
       "selector": "main, section, article, div.entry-content",
       "link_selector": "",
       "base_url": "https://www.peacedirect.org",
-      "london_only": true
+      "london_only": true,
+      "tls_impersonate": true
     },
     {
       "id": 135,
@@ -1756,7 +1762,8 @@
       "selector": "#content, main, article",
       "link_selector": "",
       "base_url": "https://www.smf.co.uk",
-      "london_only": true
+      "london_only": true,
+      "tls_impersonate": true
     },
     {
       "id": 136,
@@ -1786,7 +1793,8 @@
       "selector": "main, article, div.field--name-body",
       "link_selector": "",
       "base_url": "https://www.ethicaltrade.org",
-      "london_only": true
+      "london_only": true,
+      "tls_impersonate": true
     },
     {
       "id": 139,
@@ -1869,7 +1877,7 @@
       "link_selector": "",
       "base_url": "https://www.kingsfund.org.uk",
       "london_only": true,
-      "use_cloudscraper": true
+      "tls_impersonate": true
     }
   ]
 }
