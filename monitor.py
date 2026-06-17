@@ -410,7 +410,14 @@ def check_html(site, seen_urls):
     if not link_selector:
         text = extract_text(soup, selector)
         if len(text) < 50 and not any(p in text.lower() for p in NO_VACANCY_PHRASES):
-            print(f"    ⚠️ Very little content extracted ({len(text)} chars) — site may require JavaScript rendering")
+            # Sub-threshold extraction with no explicit "no vacancies" phrase is
+            # almost always a flaky/partial fetch (JS shell, or a CDN node serving
+            # an empty body), NOT a real content state. Returning it as a normal
+            # hash_check result makes a site that intermittently returns empty
+            # oscillate empty<->full and re-fire an LLM call on every run. Treat
+            # it as an inconclusive read and skip (handled in main).
+            print(f"    ⚠️ Very little content extracted ({len(text)} chars) — skipping (likely a flaky/JS render; not treating as a change)")
+            return {"type": "insufficient_content", "chars": len(text)}
         text_hash = hashlib.sha256(_stable_hash_text(text).encode()).hexdigest()
         titles = []
         target_el = soup.select_one(selector) if selector else soup
@@ -2294,6 +2301,16 @@ def main():
             continue
 
         state[site_key]["consecutive_errors"] = 0
+
+        # Inconclusive read: a sub-threshold extraction is a flaky/partial fetch,
+        # not a real "no jobs" state. Leave the stored hash untouched so a later
+        # good fetch compares against the last real content (instead of the page
+        # oscillating empty<->full and firing an LLM call every run). Not a
+        # failure, so it carries no pause pressure.
+        if isinstance(result, dict) and result.get("type") == "insufficient_content":
+            print(f"    ↷ Skipped: inconclusive fetch ({result.get('chars', 0)} chars) — keeping last known state, will retry next run.")
+            state[site_key]["last_checked"] = now.isoformat()
+            continue
 
         # Handle the hash-check case (HTML sites without link_selector)
         if isinstance(result, dict) and result.get("type") == "hash_check":
