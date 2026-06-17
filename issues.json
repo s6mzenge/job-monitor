@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T11:01:18.895228+00:00",
+  "last_updated": "2026-06-17T11:31:07.668729+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -14,6 +14,19 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
+    "Uppsala UHGS": {
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 80,
+      "first_recent_failure": "2026-05-22T11:31:04.328379+00:00",
+      "last_recent_failure": "2026-06-17T11:31:07.668729+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
     "Reprieve": {
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
@@ -26,6 +39,32 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
+    },
+    "LRQA": {
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 115,
+      "first_recent_failure": "2026-05-23T13:30:47.046035+00:00",
+      "last_recent_failure": "2026-06-17T11:31:07.668729+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fac1ddb06b0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))"
+    },
+    "Fitch Group": {
+      "site_id": 81,
+      "url": "https://careers.fitch.group/search/?q=&locationsearch=London",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-06-17T07:01:19.306408+00:00",
+      "last_recent_failure": "2026-06-17T11:31:07.668729+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='careers.fitch.group', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='careers.fitch.group', port=443) at 0x7fac1dab0b60>, 'Connection to careers.fitch.group timed out. (connect timeout=30)'))"
     },
     "Global Justice Now": {
       "site_id": 98,
@@ -55,16 +94,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-18T11:30:47.275338+00:00",
-      "site": "Impunity Watch",
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-18T12:20:42.725272+00:00",
       "site": "Impunity Watch",
@@ -8342,6 +8371,36 @@
       "message": "Site paused after 16 consecutive failures",
       "consecutive_count": 16,
       "paused_until": "2026-06-19T09:01:23.531617+00:00"
+    },
+    {
+      "timestamp": "2026-06-17T11:31:07.668729+00:00",
+      "site": "Uppsala UHGS",
+      "site_id": 42,
+      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T11:31:07.668729+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='jobs.lrqa.com', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='jobs.lrqa.com', port=443) at 0x7fac1ddb06b0>, 'Connection to jobs.lrqa.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-17T11:31:07.668729+00:00",
+      "site": "Fitch Group",
+      "site_id": 81,
+      "url": "https://careers.fitch.group/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='careers.fitch.group', port=443): Max retries exceeded with url: /search/?q=&locationsearch=London (Caused by ConnectTimeoutError(<HTTPSConnection(host='careers.fitch.group', port=443) at 0x7fac1dab0b60>, 'Connection to careers.fitch.group timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
     }
   ]
 }
