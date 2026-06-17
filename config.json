@@ -794,7 +794,7 @@
       "name": "Paul Hamlyn Foundation",
       "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
       "method": "html",
-      "selector": "div.content-group",
+      "selector": "div.content-group .inner-container",
       "link_selector": "",
       "base_url": "https://www.phf.org.uk"
     },
