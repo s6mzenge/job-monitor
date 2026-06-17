@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T12:01:10.979534+00:00",
+  "last_updated": "2026-06-17T12:31:14.453287+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,19 +13,6 @@
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Uppsala UHGS": {
-      "site_id": 42,
-      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 81,
-      "first_recent_failure": "2026-05-22T11:31:04.328379+00:00",
-      "last_recent_failure": "2026-06-17T12:01:10.979534+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     "Reprieve": {
       "site_id": 58,
@@ -68,16 +55,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-18T12:20:42.725272+00:00",
-      "site": "Impunity Watch",
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-19T09:30:54.980290+00:00",
       "site": "Impunity Watch",
