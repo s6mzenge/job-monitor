@@ -1747,6 +1747,195 @@ def check_engage_ats(site, seen_urls):
     return {"total": len(all_urls), "new": new_jobs}
 
 
+
+# ─── 15. BAMBOOHR API ───
+def check_bamboohr(site, seen_urls):
+    """BambooHR public careers JSON: /careers/list for the listing, then
+    /careers/{id}/detail for each description. Job URL is /careers/{id}."""
+    api = site["api"]
+    company = api["company"]
+    list_url = f"https://{company}.bamboohr.com/careers/list"
+    try:
+        resp = request_with_retry("GET", list_url, headers={**HEADERS, "Accept": "application/json"}, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        _record_error(f"BambooHR API ({site['name']}): {e}")
+        print(f"    BambooHR API error: {e}")
+        return None
+
+    results = data.get("result", []) if isinstance(data, dict) else (data if isinstance(data, list) else [])
+    print(f"    API returned {len(results)} job(s)")
+
+    new_jobs = []
+    for job in results:
+        jid = str(job.get("id", ""))
+        if not jid:
+            continue
+        title = job.get("jobOpeningName") or job.get("title") or "Untitled"
+        loc = job.get("location") or {}
+        if isinstance(loc, dict):
+            loc_s = ", ".join(str(loc.get(k, "")) for k in ("city", "state", "country") if loc.get(k))
+        else:
+            loc_s = str(loc)
+        dept = job.get("departmentLabel", "")
+        job_url = f"https://{company}.bamboohr.com/careers/{jid}"
+        if job_url in seen_urls:
+            continue
+        detail_text = f"Title: {title}\nLocation: {loc_s}\nDepartment: {dept}"
+        try:
+            time.sleep(1)
+            dr = requests.get(f"https://{company}.bamboohr.com/careers/{jid}/detail",
+                              headers={**HEADERS, "Accept": "application/json"}, timeout=30)
+            dr.raise_for_status()
+            dd = dr.json()
+            res = dd.get("result", dd) if isinstance(dd, dict) else {}
+            desc_html = (res.get("description") or res.get("jobDescription")
+                         or res.get("descriptionHtml") or "")
+            if desc_html:
+                desc = BeautifulSoup(desc_html, "html.parser").get_text(separator="\n", strip=True)
+                detail_text = f"Title: {title}\nLocation: {loc_s}\nDepartment: {dept}\n\n{desc}"
+        except Exception as e:
+            print(f"    Could not fetch BambooHR detail for {title}: {e}")
+        new_jobs.append({"title": title, "url": job_url, "detail_text": detail_text})
+
+    return {"total": len(results), "new": new_jobs}
+
+
+# ─── 16. RECRUITEE API ───
+def check_recruitee(site, seen_urls):
+    """Recruitee public offers JSON: /api/offers/ (descriptions are inline,
+    so no detail fetch is needed). Job URL is the offer's careers_url."""
+    api = site["api"]
+    try:
+        resp = request_with_retry("GET", api["url"], headers={**HEADERS, "Accept": "application/json"}, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        _record_error(f"Recruitee API ({site['name']}): {e}")
+        print(f"    Recruitee API error: {e}")
+        return None
+
+    offers = data.get("offers", []) if isinstance(data, dict) else []
+    print(f"    API returned {len(offers)} offer(s)")
+
+    new_jobs = []
+    for o in offers:
+        title = o.get("title", "Untitled")
+        loc = ", ".join(x for x in [o.get("city", ""), o.get("country", "") or o.get("country_code", "")] if x)
+        job_url = o.get("careers_url") or o.get("url") or o.get("careers_apply_url", "")
+        if not job_url or job_url in seen_urls:
+            continue
+        body = (o.get("description") or "") + "\n" + (o.get("requirements") or "")
+        body_text = BeautifulSoup(body, "html.parser").get_text(separator="\n", strip=True)
+        detail_text = f"Title: {title}\nLocation: {loc}"
+        if body_text.strip():
+            detail_text += "\n\n" + body_text
+        new_jobs.append({"title": title, "url": job_url, "detail_text": detail_text})
+
+    return {"total": len(offers), "new": new_jobs}
+
+
+# ─── 17. GENERIC JSON API (SiteHub / Talos360 / EasyWeb / Wagtail) ───
+def check_json_api(site, seen_urls):
+    """Configurable JSON endpoint reader with defensive field extraction.
+
+    Supports GET/POST, custom headers and POST body, a (possibly nested,
+    dot-notation) response_key, and per-item field paths with common-name
+    fallbacks. Designed to cope with ATS feeds whose item schema can't be
+    seen until a role is actually posted; set "dump_first_item": true to log
+    the first live item so the exact field names can be locked in later.
+    """
+    api = site["api"]
+    fields = api.get("job_fields", {})
+    method = api.get("http_method", "GET").upper()
+    headers = {**HEADERS, "Accept": "application/json", **api.get("headers", {})}
+    base = site.get("base_url", "")
+    listing_url = site.get("url", "")
+
+    try:
+        if method == "POST":
+            resp = request_with_retry("POST", api["url"], headers=headers, json=api.get("body", {}), timeout=30)
+        else:
+            resp = request_with_retry("GET", api["url"], headers=headers, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        _record_error(f"JSON API ({site['name']}): {e}")
+        print(f"    JSON API error: {e}")
+        return None
+
+    rk = api.get("response_key", "")
+    items = get_nested(data, rk, []) if rk else data
+    if isinstance(items, dict):
+        items = next((v for v in items.values() if isinstance(v, list)), [])
+    if not isinstance(items, list):
+        items = []
+    print(f"    API returned {len(items)} item(s)")
+    if api.get("dump_first_item") and items and isinstance(items[0], dict):
+        try:
+            print(f"    [json_api] first-item keys: {list(items[0].keys())[:30]}")
+            print(f"    [json_api] first-item sample: {json.dumps(items[0], default=str)[:800]}")
+        except Exception:
+            pass
+
+    TITLE_KEYS = ["title", "jobTitle", "name", "position", "vacancyTitle", "jobOpeningName", "job_title", "displayName"]
+    URL_KEYS = ["url", "careers_url", "applyUrl", "apply_url", "vacancyUrl", "absolute_url", "jobUrl", "link", "href", "detailUrl", "permalink"]
+    LOC_KEYS = ["location", "locationsText", "city", "town", "jobLocation", "location_name", "locationName"]
+    ID_KEYS = ["id", "jobId", "job_id", "vacancyId", "shortcode", "slug", "reference", "ref"]
+    DESC_KEYS = ["description", "jobDescription", "content", "body", "details", "summary", "descriptionHtml", "job_description"]
+
+    def pick(item, configured, common):
+        if configured:
+            v = get_nested(item, configured, "")
+            if v:
+                return v
+        for k in common:
+            v = item.get(k) if isinstance(item, dict) else None
+            if v:
+                return v
+        return ""
+
+    tmpl = api.get("job_url_template", "")
+    new_jobs = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        title = pick(item, fields.get("title"), TITLE_KEYS) or "Untitled"
+        loc = pick(item, fields.get("location"), LOC_KEYS)
+        if isinstance(loc, dict):
+            loc = ", ".join(str(loc.get(k, "")) for k in ("city", "name", "country") if loc.get(k))
+        if isinstance(loc, list):
+            loc = ", ".join(str(x) for x in loc if x)
+        url = pick(item, fields.get("url"), URL_KEYS)
+        jid = pick(item, fields.get("id"), ID_KEYS)
+        if not url and tmpl and jid:
+            url = tmpl.replace("{id}", str(jid)).replace("{slug}", str(jid))
+        if isinstance(url, str) and url.startswith("/"):
+            url = urljoin(base or listing_url, url)
+        if not url:
+            url = f"{listing_url}#{jid}" if jid else listing_url
+        if url in seen_urls:
+            continue
+        desc = pick(item, fields.get("description_html") or fields.get("description"), DESC_KEYS)
+        detail_text = f"Title: {title}\nLocation: {loc}"
+        if desc:
+            desc_text = BeautifulSoup(str(desc), "html.parser").get_text(separator="\n", strip=True)
+            if desc_text.strip():
+                detail_text += "\n\n" + desc_text[:6000]
+        elif api.get("fetch_detail_html") and isinstance(url, str) and url.startswith("http"):
+            try:
+                time.sleep(1)
+                detail_soup = fetch_page(url, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
+                if detail_soup:
+                    detail_text += "\n\n" + extract_text(detail_soup)[:6000]
+            except Exception as e:
+                print(f"    Could not fetch detail {url}: {e}")
+        new_jobs.append({"title": str(title), "url": url, "detail_text": detail_text})
+
+    return {"total": len(items), "new": new_jobs}
+
+
 # ═══════════════════════════════════════════════════════════════
 #  DISPATCHER — routes each site to the correct handler
 # ═══════════════════════════════════════════════════════════════
@@ -1766,6 +1955,9 @@ METHOD_HANDLERS = {
     "plumm_api": check_plumm_api,
     "rippling_api": check_rippling_api,
     "engage_ats": check_engage_ats,
+    "bamboohr_api": check_bamboohr,
+    "recruitee_api": check_recruitee,
+    "json_api": check_json_api,
 }
 
 
