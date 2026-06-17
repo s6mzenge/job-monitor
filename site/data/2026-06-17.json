@@ -1,7 +1,7 @@
 {
   "date": "2026-06-17",
-  "generated_at": "2026-06-17T09:31:21.383121+00:00",
-  "run_count": 14,
+  "generated_at": "2026-06-17T10:01:15.383990+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Administration Assistant",
@@ -576,6 +576,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Programme Coordinator - Asia (m/f/d)",
+      "organisation": "ECFR",
+      "url": "https://ecfr.jobs.personio.com/job/2674125",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "ECFR is a leading European foreign-policy think-tank and the role sits squarely in the candidate's policy/IR zone, though it is more coordination/events/fundraising than substantive research. The Master's-with-2-years criterion is a stated experience expectation rather than a hard non-negotiable, but it makes this a stretch for someone with only student-assistant work; events management, financial/grant monitoring and CRM are partial skills gaps. German/French are a plus, not required, so no language exclusion applies.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (fixed-term, 2 years)",
+      "deadline": "30th June 2026, 17:30 CET",
+      "salary": "€43,000 - €47,000 per year"
     }
   ]
 }
