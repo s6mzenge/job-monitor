@@ -1,0 +1,63 @@
+{
+  "date": "2026-06-17",
+  "generated_at": "2026-06-17T00:28:28.112105+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Administration Assistant",
+      "organisation": "The Economist Group",
+      "url": "https://job-boards.eu.greenhouse.io/theeconomistgroup/jobs/4895737101",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "This is a general administrative/executive-support role centred on invoice processing, travel booking, event coordination and office operations — outside the candidate's policy/research/intelligence profile despite the prestigious publisher. FIELD ≤ 2 forces Low; the work is generic admin not tied to a policy or research function.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Director, Head of Solutions",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Director%2C-Head-of-Solutions/1405281933",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior Director-level role in financial-services learning-solution design and team leadership — entirely off the candidate's IR/policy/risk profile and requiring extensive leadership experience the candidate lacks. Hard ineligibility on seniority (Director title) and field mismatch.",
+      "location": "London, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Associate Director, Solution Modeller",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Associate-Director%2C-Solution-Modeller/1405277133",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is an Associate Director role in financial-services learning-solution design and project management — off the candidate's profile entirely (no policy, IR, security or intelligence content). The senior title and required experience building customised learning solutions in financial services exclude the candidate, who has no full-time experience.",
+      "location": "London, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Tester",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Senior-Tester/46502-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior software QA/testing role requiring hands-on manual and automated testing, WCAG accessibility testing, and engineering experience the candidate does not have — far outside the policy/research profile. The \"Senior\" title and coaching/mentoring responsibilities also imply experience the candidate lacks.",
+      "location": "London / Salford / Glasgow – Hybrid",
+      "type": "Contract (12-month FTC)",
+      "deadline": "21/06/2026",
+      "salary": "£47,000 - £57,000"
+    }
+  ]
+}
