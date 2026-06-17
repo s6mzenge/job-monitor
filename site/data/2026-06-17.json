@@ -1,7 +1,7 @@
 {
   "date": "2026-06-17",
-  "generated_at": "2026-06-17T14:01:28.159097+00:00",
-  "run_count": 23,
+  "generated_at": "2026-06-17T14:31:14.040297+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Administration Assistant",
@@ -601,6 +601,20 @@
       "seniority_score": "1",
       "reason": "This is a software/data product project-management role requiring 5 years of hands-on project management experience and Agile/Jira/cloud delivery expertise — a hard experience bar and tooling the candidate lacks. The function is technical delivery management, not the policy/risk research the candidate targets, and the 5-year requirement plus leadership framing makes it senior-level and out of reach.",
       "location": "London, GB / Manchester, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Security Engineer",
+      "organisation": "Brunswick Group",
+      "url": "https://job-boards.greenhouse.io/brunswickgroup/jobs/8593698002",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a deep-technical cyber/security engineering role requiring 5-7 years of professional security engineering experience, STRIDE threat modelling, security architecture and cloud/enterprise expertise — none of which the candidate possesses (their Python is analysis-level, not security engineering). Multiple hard barriers apply: off-profile field, specialist technical skills the candidate cannot substitute, and a 5-7 year experience requirement.",
+      "location": "London, England, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
