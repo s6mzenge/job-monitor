@@ -1,7 +1,7 @@
 {
   "date": "2026-06-17",
-  "generated_at": "2026-06-17T08:01:30.558458+00:00",
-  "run_count": 11,
+  "generated_at": "2026-06-17T08:31:21.796138+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Administration Assistant",
@@ -548,6 +548,20 @@
       "type": "Internship",
       "deadline": "30 June 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Economic Consulting, Business Development Lead",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7710799003?gh_jid=7710799003",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "3",
+      "reason": "This is a business-development / sales-pipeline role (proposal writing, CRM management, opportunity pursuit) within economic consulting — not the geopolitical-risk or political-advisory work that makes Teneo a target; the function is commercial BD, which is off-profile (FIELD 2). It also asks for 2–3 years' relevant experience, beyond the candidate's student/RA background.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Competitive (dependent on experience)"
     }
   ]
 }
