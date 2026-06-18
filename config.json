@@ -1643,17 +1643,6 @@
       "proxy": "cloudflare_worker"
     },
     {
-      "id": 123,
-      "name": "Institute for War & Peace Reporting",
-      "url": "https://iwpr.net/engage/opportunities",
-      "method": "html",
-      "base_url": "https://iwpr.net",
-      "link_selector": "",
-      "london_only": true,
-      "proxy": "jina",
-      "selector": ""
-    },
-    {
       "id": 124,
       "name": "CARE International UK",
       "url": "https://www.careinternational.org.uk/work-with-us/",
@@ -1695,17 +1684,6 @@
       "london_only": true
     },
     {
-      "id": 128,
-      "name": "Minority Rights Group",
-      "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
-      "method": "html",
-      "base_url": "https://minorityrights.org",
-      "link_selector": "",
-      "london_only": true,
-      "proxy": "jina",
-      "selector": ""
-    },
-    {
       "id": 129,
       "name": "Joseph Rowntree Foundation",
       "url": "https://www.jrf.org.uk/careers",
@@ -1725,17 +1703,6 @@
       "link_selector": "div.list-item__content a",
       "london_only": false,
       "tls_impersonate": true
-    },
-    {
-      "id": 131,
-      "name": "Article 19",
-      "url": "https://www.article19.org/careers/",
-      "method": "html",
-      "base_url": "https://www.article19.org",
-      "link_selector": "",
-      "london_only": true,
-      "proxy": "jina",
-      "selector": ""
     },
     {
       "id": 132,
@@ -1769,17 +1736,6 @@
       "base_url": "https://www.peacedirect.org",
       "london_only": true,
       "tls_impersonate": true
-    },
-    {
-      "id": 135,
-      "name": "Social Market Foundation",
-      "url": "https://www.smf.co.uk/work-with-us/",
-      "method": "html",
-      "selector": "",
-      "link_selector": "",
-      "base_url": "https://www.smf.co.uk",
-      "london_only": true,
-      "proxy": "jina"
     },
     {
       "id": 136,
@@ -1883,17 +1839,6 @@
       "link_selector": "",
       "base_url": "https://careers.icrc.org",
       "london_only": true
-    },
-    {
-      "id": 146,
-      "name": "The King's Fund",
-      "url": "https://www.kingsfund.org.uk/about-us/jobs",
-      "method": "html",
-      "selector": "",
-      "link_selector": "",
-      "base_url": "https://www.kingsfund.org.uk",
-      "london_only": true,
-      "proxy": "jina"
     }
   ]
 }
