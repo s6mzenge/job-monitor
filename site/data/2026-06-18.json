@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T05:31:14.019121+00:00",
-  "run_count": 2,
+  "generated_at": "2026-06-18T06:01:20.470024+00:00",
+  "run_count": 3,
   "jobs": [
     {
       "title": "Strategic Account Manager",
@@ -128,6 +128,20 @@
       "type": "Contract",
       "deadline": "23 Jun 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Finance Officer (Grants and Compliance) – ARTICLE 19 Europe",
+      "organisation": "Article 19",
+      "url": "https://www.article19.org/careers/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a finance/accounting role requiring 5-7 years of relevant finance experience plus accounting knowledge and financial systems — a hard experience and skills barrier the candidate cannot meet. The function is off-profile (finance, not policy/research), and the Netherlands location with no London option triggers the London-only hard filter.",
+      "location": "The Netherlands (hybrid)",
+      "type": "Part-time (32 hours/week)",
+      "deadline": "Tuesday, 7 July 2026",
+      "salary": "Circa EUR 54,000 gross per annum pro-rata"
     }
   ]
 }
