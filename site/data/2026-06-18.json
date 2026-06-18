@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T12:01:26.862680+00:00",
-  "run_count": 14,
+  "generated_at": "2026-06-18T13:01:20.407958+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Strategic Account Manager",
@@ -380,6 +380,34 @@
       "type": "Full-time (Fixed term, 2 years)",
       "deadline": "2026-07-03",
       "salary": "£43,277–£51,714 pa (potential to £55,497) inclusive of London allowance"
+    },
+    {
+      "title": "Financial Reporting and Analytics Senior Associate",
+      "organisation": "Dalberg",
+      "url": "https://dalberg.hua.hrsmart.com/hr/ats/Posting/view/835",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a finance data-engineering role requiring 3–6 years building pipelines, advanced Power BI/DAX, ERP financial-systems experience and financial-statement fluency — none of which the candidate offers, and the field (financial reporting) is off-profile despite Dalberg's development context. The 3–6 year hard experience requirement is itself an exclusion, and the function is a clear mismatch.",
+      "location": "Johannesburg, ZA; London, UK; Mumbai, IN; Nairobi, KE; New Delhi, IN (multi-location)",
+      "type": "Full-time",
+      "deadline": "19/7/2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Account Executive, Creator Marketing",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Account-Executive--Creator-Marketing_JR102748",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "This is an influencer/creator marketing role with no connection to policy, IR, security, or research — it is off the candidate's profile. The work centres on social media campaign coordination and creator communications rather than analytical research or writing, so field alignment is a mismatch.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
