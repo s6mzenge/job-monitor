@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T10:01:23.846909+00:00",
-  "run_count": 11,
+  "generated_at": "2026-06-18T10:31:06.028432+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Strategic Account Manager",
@@ -268,6 +268,20 @@
       "type": "Full-time (Fixed term, 12 months)",
       "deadline": "Not specified",
       "salary": "£41,902.62 - £51,214.32 per annum"
+    },
+    {
+      "title": "Governance Manager 2026",
+      "organisation": "The King's Fund",
+      "url": "https://www.kingsfund.org.uk/about-us/jobs",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a charity-governance and compliance role in the health sector, off the candidate's IR/policy/intelligence profile, and the \"Manager\" title implies governance experience the candidate lacks. Field and seniority both fail the bar.",
+      "location": "London (West End)",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
