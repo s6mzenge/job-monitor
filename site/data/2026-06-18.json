@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T16:07:23.567168+00:00",
-  "run_count": 20,
+  "generated_at": "2026-06-18T16:36:33.390680+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Strategic Account Manager",
@@ -478,6 +478,20 @@
       "type": "Full-time (Fixed-Term, 12 months)",
       "deadline": "21 June 2026",
       "salary": "£39,297 - £42,473"
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The application deadline (15 January 2026) is clearly before today's date (18 June 2026), so the role is closed. It is also an expert advisory committee seeking established specialists, not an entry-level position, and the Spanish-language framing implies regional language needs the candidate lacks.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified"
     }
   ]
 }
