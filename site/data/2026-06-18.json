@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T07:01:22.910703+00:00",
-  "run_count": 5,
+  "generated_at": "2026-06-18T07:31:14.684157+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Strategic Account Manager",
@@ -142,6 +142,34 @@
       "type": "Part-time (32 hours/week)",
       "deadline": "Tuesday, 7 July 2026",
       "salary": "Circa EUR 54,000 gross per annum pro-rata"
+    },
+    {
+      "title": "Senior Report Reviewer",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Senior-Report-Reviewer-400-093/1405860333",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a quality-assurance / ESG audit report-reviewing role focused on responsible-sourcing compliance, not policy, IR, intelligence or research work — well off the candidate's profile. The \"Senior\" title and expected audit/ESG/HR-compliance experience also exceed the candidate's stage.",
+      "location": "Delhi or Mumbai, India (other locations possible)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Human Rights Advocacy Training (Online)",
+      "organisation": "Minority Rights Group",
+      "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is a training programme for human rights defenders working in Egypt, not a paid job opening — it is a \"Call for Applications\" for a course rather than an entry-level role. It is also not a London-based position. Both the non-vacancy nature and the London-only location filter force Low.",
+      "location": "Online / Egypt-focused",
+      "type": "Training",
+      "deadline": "30 June 2026",
+      "salary": "Not specified"
     }
   ]
 }
