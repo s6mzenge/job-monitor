@@ -703,11 +703,23 @@
     {
       "id": 57,
       "name": "Centre for Information Resilience",
-      "url": "https://www.info-res.org/careers/current-openings/",
-      "method": "html",
-      "selector": "section.section",
-      "link_selector": "section a[href*='apply.workable.com']",
-      "base_url": "https://apply.workable.com"
+      "url": "https://apply.workable.com/centre-for-information-resilience/",
+      "method": "workable_api",
+      "base_url": "https://apply.workable.com",
+      "api": {
+        "url": "https://apply.workable.com/api/v1/widget/accounts/centre-for-information-resilience",
+        "http_method": "GET",
+        "response_key": "jobs",
+        "job_fields": {
+          "title": "title",
+          "shortcode": "shortcode",
+          "url": "url",
+          "department": "department",
+          "location_city": "city",
+          "location_country": "country",
+          "created_at": "created_at"
+        }
+      }
     },
     {
       "id": 58,
