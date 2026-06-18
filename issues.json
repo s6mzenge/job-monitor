@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T23:45:22.693756+00:00",
+  "last_updated": "2026-06-17T23:59:56.105727+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -52,71 +52,6 @@
       "paused_until": "2026-06-19T09:01:23.531617+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Institute for War & Peace Reporting": {
-      "site_id": 123,
-      "url": "https://iwpr.net/engage/opportunities",
-      "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-17T23:45:22.693756+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fiwpr.net%2Fengage%2Fopportunities"
-    },
-    "Minority Rights Group": {
-      "site_id": 128,
-      "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
-      "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-17T23:45:22.693756+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fminorityrights.org%2Fabout-us%2Fjobs-and-opportunities%2F"
-    },
-    "Article 19": {
-      "site_id": 131,
-      "url": "https://www.article19.org/careers/",
-      "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-17T23:45:22.693756+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.article19.org%2Fcareers%2F"
-    },
-    "Social Market Foundation": {
-      "site_id": 135,
-      "url": "https://www.smf.co.uk/work-with-us/",
-      "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-17T23:45:22.693756+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.smf.co.uk%2Fwork-with-us%2F"
-    },
-    "The King's Fund": {
-      "site_id": 146,
-      "url": "https://www.kingsfund.org.uk/about-us/jobs",
-      "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-17T23:45:22.693756+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.kingsfund.org.uk%2Fabout-us%2Fjobs"
     }
   },
   "issues": [

@@ -1,7 +1,7 @@
 {
   "date": "2026-06-17",
-  "generated_at": "2026-06-17T23:45:22.693756+00:00",
-  "run_count": 32,
+  "generated_at": "2026-06-17T23:59:56.105727+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Administration Assistant",
@@ -1388,6 +1388,90 @@
       "type": "Full-time",
       "deadline": "29 June 2026",
       "salary": "£49,370 to £50,797 Pro-Rata"
+    },
+    {
+      "title": "Advisory Board Member",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "International law and accountability is core to the candidate's field, but an Advisory Board Member role requires senior, established expertise the candidate (MSc in progress) does not have. Hard ineligibility on seniority.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Internship - Speculative Opportunities",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Although international law/accountability is core to the candidate's profile, this is an explicitly speculative opportunity with no concrete advertised vacancy — excluded under the speculative-application rule.",
+      "location": "Remote",
+      "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "IT Officer",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "3",
+      "reason": "This is an IT support/infrastructure role despite the strong field of the organisation — function is off-profile for an IR researcher, and the candidate lacks IT-administration skills.",
+      "location": "Ukraine",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "IT Security Officer",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "3",
+      "reason": "An IT security/infrastructure role outside the candidate's research-and-policy profile, requiring technical IT-security skills the candidate does not have.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Speculative Application",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is an explicit talent-pool / speculative application with no concrete advertised vacancy — excluded under the speculative-application rule.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Operations Manager",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Lead-Operations-Manager/45872-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior portfolio operations role in media technology — entirely off the candidate's IR/policy/intelligence profile, with a \"Lead\" title requiring extensive programme/portfolio management experience and a team to manage. Off-field, senior seniority, and not entry-level; an obvious mismatch.",
+      "location": "London (also Cardiff, Glasgow, Newcastle, Salford; hybrid)",
+      "type": "Full-time",
+      "deadline": "24/06/2026",
+      "salary": "£65,400 - £87,133"
     }
   ]
 }
