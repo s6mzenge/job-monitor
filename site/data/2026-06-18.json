@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T11:05:55.978665+00:00",
-  "run_count": 13,
+  "generated_at": "2026-06-18T12:01:26.862680+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Strategic Account Manager",
@@ -310,6 +310,76 @@
       "type": "Contract",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Senior Lead Auditor (ISMS)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Leamington-Senior-Lead-Auditor-%28ISMS%29-B37-7ES/1406010233",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an information-security management-systems auditing role requiring deep practical IT/infosec experience (configuration management, disaster recovery, cloud infrastructure) — entirely off the candidate's profile. It is also a Senior Lead position expecting accomplished auditing experience and ability to develop other auditors, which the candidate (no full-time experience) does not meet.",
+      "location": "Birmingham / Leamington, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Intern | Hanover Sport | London",
+      "organisation": "Hanover",
+      "url": "https://job-boards.greenhouse.io/hanover/jobs/4426372007",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is a sports PR/marketing communications internship — media relations, social media and campaign work for sports brands, which is off the candidate's policy/IR/risk profile. While the level fits and writing skills transfer, the field is non-policy commercial comms, capping the match at Low.",
+      "location": "London, United Kingdom",
+      "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "Competitive rate (paid)"
+    },
+    {
+      "title": "Data Entry Administrator",
+      "organisation": "Medical Aid for Palestinians",
+      "url": "https://careers.map.org.uk/en/postings/cbe62155-c6ee-4396-9dab-51a1d8122d99",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is an onsite data-entry administrative role based in Gaza, not London — under the \"London only\" location policy this is a hard filter that forces Low. The function is also off-profile clerical data entry rather than IR/policy/research work.",
+      "location": "Gaza, PS",
+      "type": "Full-time",
+      "deadline": "June 22, 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "LSE Fellow in Management (Information Systems and Innovation)",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/6773/0/470523/15539/lse-fellow-in-management-information-systems-and-innovation",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "The role explicitly requires a completed or near-completed PhD in Information Systems and Innovation — a hard ineligibility (the candidate is an MSc student) and the field is management/IS teaching, off the candidate's profile. Multiple disqualifiers apply.",
+      "location": "London",
+      "type": "Full-time (fixed-term, 2 years)",
+      "deadline": "2026-07-07",
+      "salary": "£43,277 to £51,714 pa (potential to £55,497)"
+    },
+    {
+      "title": "LSE Fellow in ERHR",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/2080/0/470532/15539/lse-fellow-in-erhr",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "The role requires a completed or near-complete PhD in Employment Relations/HR or Organisational Behaviour — a hard ineligibility on both the PhD requirement and the unrelated management field. Even setting that aside, it is an academic teaching post in HR/OB, far outside the candidate's IR/international law profile.",
+      "location": "London",
+      "type": "Full-time (Fixed term, 2 years)",
+      "deadline": "2026-07-03",
+      "salary": "£43,277–£51,714 pa (potential to £55,497) inclusive of London allowance"
     }
   ]
 }
