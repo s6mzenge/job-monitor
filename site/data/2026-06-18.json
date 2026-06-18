@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T14:01:34.686558+00:00",
-  "run_count": 17,
+  "generated_at": "2026-06-18T14:31:14.219111+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Strategic Account Manager",
@@ -407,6 +407,34 @@
       "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "EMEA Regional Service Lead, Capital Project Delivery",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/EMEA-Regional-Service-Lead--Capital-Project-Delivery_R00030130-2",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a Partner-level sustainability-consulting sales/leadership role requiring at least 15 years of professional consulting experience — a hard exclusion on years and seniority. The function (commercial cross-sell, multi-million-dollar project delivery) is entirely off the candidate's IR/policy/research profile.",
+      "location": "London, United Kingdom (multiple European offices)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The human-rights and securitisation focus is on-profile, but this is an expert Advisory Committee seeking established specialists, not an entry-level role for an MSc candidate. The deadline (15 January 2026) has also passed relative to today (18 June 2026), so the role is closed.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
       "salary": "Not specified"
     }
   ]
