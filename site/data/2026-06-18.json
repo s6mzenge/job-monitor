@@ -1,0 +1,35 @@
+{
+  "date": "2026-06-18",
+  "generated_at": "2026-06-18T05:01:15.837886+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Strategic Account Manager",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/ROTTERDAM-Strategic-Account-Manager-3062-MB/1384969333",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a B2B sales / account management role requiring demonstrated success hitting sales targets and managing strategic commercial accounts — entirely off the candidate's policy/research profile. It demands proven sales experience the candidate lacks, and the substantive work (sales, pricing, margin management) is a fundamental mismatch.",
+      "location": "Rotterdam, Netherlands",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Human Rights Advocacy Training (Online) — Call for Applications",
+      "organisation": "Minority Rights Group",
+      "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is a training programme for human rights defenders working in Egypt, not a paid job vacancy; it is also aimed at community actors challenging discrimination in Egypt, not a UK-based researcher. Not a live employment opening.",
+      "location": "Online (focus on Egypt)",
+      "type": "Training",
+      "deadline": "30 June 2026",
+      "salary": "Not specified"
+    }
+  ]
+}
