@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18T13:01:20.407958+00:00",
+  "last_updated": "2026-06-18T13:31:14.585311+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -14,6 +14,19 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
+    "Institute of Race Relations": {
+      "site_id": 48,
+      "url": "https://irr.org.uk/about/vacancies/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 9,
+      "first_recent_failure": "2026-05-19T14:00:59.768467+00:00",
+      "last_recent_failure": "2026-06-18T13:31:14.585311+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Firr.org.uk%2Fabout%2Fvacancies%2F"
+    },
     "Reprieve": {
       "site_id": 58,
       "url": "https://reprieve.org/uk/work-for-reprieve/",
@@ -26,6 +39,19 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
+    },
+    "Conciliation Resources": {
+      "site_id": 87,
+      "url": "https://www.c-r.org/jobs",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-18T13:31:14.585311+00:00",
+      "last_recent_failure": "2026-06-18T13:31:14.585311+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.c-r.org%2Fjobs"
     },
     "Global Justice Now": {
       "site_id": 98,
@@ -57,10 +83,10 @@
       "site_id": 123,
       "url": "https://iwpr.net/engage/opportunities",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 6,
+      "consecutive_failures": 4,
+      "total_recent_failures": 7,
       "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-18T13:01:20.407958+00:00",
+      "last_recent_failure": "2026-06-18T13:31:14.585311+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -70,10 +96,10 @@
       "site_id": 128,
       "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 6,
+      "consecutive_failures": 4,
+      "total_recent_failures": 7,
       "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-18T13:01:20.407958+00:00",
+      "last_recent_failure": "2026-06-18T13:31:14.585311+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -83,10 +109,10 @@
       "site_id": 131,
       "url": "https://www.article19.org/careers/",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 6,
+      "consecutive_failures": 4,
+      "total_recent_failures": 7,
       "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-18T13:01:20.407958+00:00",
+      "last_recent_failure": "2026-06-18T13:31:14.585311+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -96,10 +122,10 @@
       "site_id": 135,
       "url": "https://www.smf.co.uk/work-with-us/",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 6,
+      "consecutive_failures": 4,
+      "total_recent_failures": 7,
       "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-18T13:01:20.407958+00:00",
+      "last_recent_failure": "2026-06-18T13:31:14.585311+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -109,10 +135,10 @@
       "site_id": 146,
       "url": "https://www.kingsfund.org.uk/about-us/jobs",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 6,
+      "consecutive_failures": 4,
+      "total_recent_failures": 7,
       "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-18T13:01:20.407958+00:00",
+      "last_recent_failure": "2026-06-18T13:31:14.585311+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -8837,6 +8863,76 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.kingsfund.org.uk/about-us/jobs",
       "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-06-18T13:31:14.585311+00:00",
+      "site": "Institute of Race Relations",
+      "site_id": 48,
+      "url": "https://irr.org.uk/about/vacancies/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Firr.org.uk%2Fabout%2Fvacancies%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-18T13:31:14.585311+00:00",
+      "site": "Conciliation Resources",
+      "site_id": 87,
+      "url": "https://www.c-r.org/jobs",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.c-r.org%2Fjobs",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-18T13:31:14.585311+00:00",
+      "site": "Institute for War & Peace Reporting",
+      "site_id": 123,
+      "url": "https://iwpr.net/engage/opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://iwpr.net/engage/opportunities",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-06-18T13:31:14.585311+00:00",
+      "site": "Minority Rights Group",
+      "site_id": 128,
+      "url": "https://minorityrights.org/about-us/jobs-and-opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://minorityrights.org/about-us/jobs-and-opportunities/",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-06-18T13:31:14.585311+00:00",
+      "site": "Article 19",
+      "site_id": 131,
+      "url": "https://www.article19.org/careers/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.article19.org/careers/",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-06-18T13:31:14.585311+00:00",
+      "site": "Social Market Foundation",
+      "site_id": 135,
+      "url": "https://www.smf.co.uk/work-with-us/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.smf.co.uk/work-with-us/",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-06-18T13:31:14.585311+00:00",
+      "site": "The King's Fund",
+      "site_id": 146,
+      "url": "https://www.kingsfund.org.uk/about-us/jobs",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.kingsfund.org.uk/about-us/jobs",
+      "consecutive_count": 4
     }
   ]
 }
