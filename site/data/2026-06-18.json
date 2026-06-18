@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T08:31:11.068696+00:00",
-  "run_count": 8,
+  "generated_at": "2026-06-18T09:01:21.806434+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Strategic Account Manager",
@@ -212,6 +212,48 @@
       "type": "Full-time (Fixed Term Contract, 1 Year Maternity Cover)",
       "deadline": "2 July 2026",
       "salary": "£73,440 - £91,800 per annum"
+    },
+    {
+      "title": "Learning Manager - Maternity Cover",
+      "organisation": "Esmée Fairbairn Foundation",
+      "url": "https://esmeefairbairn.org.uk/about-esmee/current-vacancies-and-opportunities/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "A \"Manager\" title implies professional experience the candidate (student/RA only) lacks, and learning/grant-foundation management sits outside the candidate's core policy/IR profile. Seniority and field both weak.",
+      "location": "Not specified",
+      "type": "Contract (Maternity Cover)",
+      "deadline": "30 June",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Trustees",
+      "organisation": "Esmée Fairbairn Foundation",
+      "url": "https://esmeefairbairn.org.uk/about-esmee/current-vacancies-and-opportunities/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Trustee roles require substantial senior experience and governance standing that an MSc-stage candidate does not have. Off-profile and far above the candidate's level.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "5pm, 20 July",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Climate Action Partner: Invitation to Tender",
+      "organisation": "Esmée Fairbairn Foundation",
+      "url": "https://esmeefairbairn.org.uk/about-esmee/current-vacancies-and-opportunities/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is an open tender for a commissioned organisation/contractor, not an individual entry-level vacancy. Off-profile and not an applicable job for the candidate.",
+      "location": "Not specified",
+      "type": "Contract (Tender)",
+      "deadline": "5pm, 29 June",
+      "salary": "Not specified"
     }
   ]
 }
