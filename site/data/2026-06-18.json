@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T10:31:06.028432+00:00",
-  "run_count": 12,
+  "generated_at": "2026-06-18T11:05:55.978665+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Strategic Account Manager",
@@ -280,6 +280,34 @@
       "reason": "This is a charity-governance and compliance role in the health sector, off the candidate's IR/policy/intelligence profile, and the \"Manager\" title implies governance experience the candidate lacks. Field and seniority both fail the bar.",
       "location": "London (West End)",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "TikTok Specialist",
+      "organisation": "Centre for Information Resilience",
+      "url": "https://apply.workable.com/centre-for-information-resilience/j/C9083780FD",
+      "match": "medium",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "The Centre for Information Resilience is a core zone-c target (OSINT/open-source investigations), and the substantive field is a strong fit. However, the job description provided is empty, so platform-specific TikTok investigation/verification skills cannot be confirmed against the CV's analysis-level digital toolkit — defaulting to Medium given the on-profile employer but uncertain skills match.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "OSINT Investigator (Arabic Speaker Talent Pool)",
+      "organisation": "Centre for Information Resilience",
+      "url": "https://apply.workable.com/centre-for-information-resilience/j/79847AC2A5",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "OSINT investigation at CIR is core to the candidate's zone-c targets, but this is both a \"talent pool\" (no concrete advertised vacancy) and requires Arabic, a language the candidate does not speak — two separate exclusions. Either alone forces Low.",
+      "location": "Not specified",
+      "type": "Contract",
       "deadline": "Not specified",
       "salary": "Not specified"
     }
