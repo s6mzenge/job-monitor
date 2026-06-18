@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18T09:31:15.419165+00:00",
+  "last_updated": "2026-06-18T10:01:23.846909+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -55,16 +55,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-19T10:00:59.570451+00:00",
-      "site": "Global Rights Compliance",
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    7 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n      - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-19T14:00:59.768467+00:00",
       "site": "Institute of Race Relations",

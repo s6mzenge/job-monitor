@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T09:31:15.419165+00:00",
-  "run_count": 10,
+  "generated_at": "2026-06-18T10:01:23.846909+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Strategic Account Manager",
@@ -254,6 +254,20 @@
       "type": "Contract (Tender)",
       "deadline": "5pm, 29 June",
       "salary": "Not specified"
+    },
+    {
+      "title": "Face to Face Fundraising Festivals and Events Manager",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/face-to-face-fundraising-festivals-and-events-manager-62515/en",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a fundraising/events delivery management role, not policy or research work — outside the candidate's profile despite MSF's humanitarian context. It requires demonstrable F2F fundraising management experience, a Manager-level remit, and a full UK driving licence the candidate lacks. The \"Manager\" title and required hands-on fundraising track record place it well above entry-level.",
+      "location": "London, United Kingdom",
+      "type": "Full-time (Fixed term, 12 months)",
+      "deadline": "Not specified",
+      "salary": "£41,902.62 - £51,214.32 per annum"
     }
   ]
 }
