@@ -2816,10 +2816,23 @@ def main():
                     print(f"    (no titles matched selector '{title_selector}')")
                     
             old_hash = state[site_key].get("listing_hash", "")
+            empty_hashes = state[site_key].get("empty_hashes", [])
             if result["hash"] != old_hash:
                 for t in result.get("titles", []):
                     print(f"      → {t}")
-                if DRY_RUN:
+                if result["hash"] in empty_hashes:
+                    # The LLM has already cleared this exact page-state as "no
+                    # jobs". An empty page served from a different runner region /
+                    # CDN node hashes differently, so without this guard the same
+                    # empty page re-fires an identical NO_JOBS_FOUND call every
+                    # time the region flips. Recognising a previously-cleared
+                    # state skips that redundant call. A genuinely new posting
+                    # changes the page text → a hash NOT in this set → still sent
+                    # to the LLM, so this can never hide a real vacancy.
+                    print(f"    ℹ️ No new content (matches a previously-cleared empty state — no LLM call).")
+                    empty_sites.append(name)
+                    state[site_key]["listing_hash"] = result["hash"]
+                elif DRY_RUN:
                     print(f"    Page content changed (dry run — skipping LLM)")
                     # In dry-run we deliberately advance the hash to seed state.
                     state[site_key]["listing_hash"] = result["hash"]
@@ -2835,6 +2848,17 @@ def main():
                                 all_matches.append(format_match_for_telegram(m))
                             # Daily report: all jobs
                             daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=site["url"]))
+                        # If the LLM explicitly found no jobs, memoise this hash so
+                        # an identical (e.g. region-variant) empty page never costs
+                        # another call. Gated on the explicit NO_JOBS_FOUND sentinel
+                        # — not merely an empty parse — so a malformed/garbled
+                        # response can't poison the set. Capped to the most recent
+                        # few states to bound state.json growth.
+                        if "NO_JOBS_FOUND" in llm_result:
+                            eh = state[site_key].get("empty_hashes", [])
+                            if result["hash"] not in eh:
+                                eh.append(result["hash"])
+                                state[site_key]["empty_hashes"] = eh[-8:]
                         # Only commit the new hash after a successful LLM call.
                         # If the call failed we leave the OLD hash in place so
                         # the next run will retry the page-level evaluation.
