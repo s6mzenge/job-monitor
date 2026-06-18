@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T08:01:18.769121+00:00",
-  "run_count": 7,
+  "generated_at": "2026-06-18T08:31:11.068696+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Strategic Account Manager",
@@ -170,6 +170,48 @@
       "type": "Training",
       "deadline": "30 June 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Lead Auditor (Aerospace)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Leamington-Lead-Auditor-%28Aerospace%29-B37-7ES/1405893433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an aerospace management-systems audit role requiring substantial aviation/defence industry experience and specialist auditor qualifications — entirely off the candidate's IR/policy profile. \"Lead Auditor\" is a senior, experience-heavy role, and the candidate lacks both the sector experience and the technical/regulatory skills.",
+      "location": "Leamington / Birmingham area (B37 7ES), UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "AKE Remote Internship Scheme — Middle East and North Africa",
+      "organisation": "AKE International",
+      "url": "https://www.akegroup.com/careers/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Political and security risk analysis is core to the candidate's targets, and the level fits well. However, this is explicitly a voluntary (unpaid) internship requiring only ~10 hours/week aimed at people studying — both the unpaid status and the working-student framing trigger exclusions.",
+      "location": "Remote",
+      "type": "Internship (Voluntary, Part-time)",
+      "deadline": "Not specified (rolling)",
+      "salary": "Not specified (voluntary/unpaid)"
+    },
+    {
+      "title": "Investment Accounting Manager, Property",
+      "organisation": "Wellcome Trust",
+      "url": "https://wellcome.wd3.myworkdayjobs.com/job/London/Investment-Accounting-Manager--Property_R-003371",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a finance/accounting management role requiring an ACA/ACCA/CIMA qualification, which the candidate does not hold — a hard exclusion. It is entirely off-profile (investment property accounting), at manager level requiring supervisory experience.",
+      "location": "London",
+      "type": "Full-time (Fixed Term Contract, 1 Year Maternity Cover)",
+      "deadline": "2 July 2026",
+      "salary": "£73,440 - £91,800 per annum"
     }
   ]
 }
