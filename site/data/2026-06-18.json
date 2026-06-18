@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T14:31:14.219111+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-18T15:01:25.486392+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Strategic Account Manager",
@@ -436,6 +436,20 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Embedded Intelligence Program Manager",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000132887711-embedded-intelligence-program-manager",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Corporate intelligence and geopolitical analysis are core-fit fields, but this is a senior management role requiring 5-7+ years of experience including 3-5 years managing intelligence teams, plus GSOC/security-operations background the candidate lacks entirely. Hard ineligibility on seniority (Manager title, 5-7+ years required).",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Up to GBP 67,000 yearly"
     }
   ]
 }
