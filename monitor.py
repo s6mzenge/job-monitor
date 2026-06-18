@@ -772,12 +772,29 @@ def check_workable(site, seen_urls):
             continue
 
         detail_text = f"Title: {title}\nLocation: {city}, {country}\nDepartment: {department}"
-        if job_url:
+        shortcode = posting.get(fields.get("shortcode", ""), "")
+        if not shortcode:
+            sc_m = re.search(r"/j/([A-Za-z0-9]+)", job_url or "")
+            shortcode = sc_m.group(1) if sc_m else ""
+        slug_m = re.search(r"/accounts/([^/?#]+)", api["url"])
+        slug = slug_m.group(1) if slug_m else ""
+        body = ""
+        if slug and shortcode:
+            time.sleep(1)
+            md_url = f"https://apply.workable.com/{slug}/jobs/view/{shortcode}.md"
+            try:
+                mr = request_with_retry("GET", md_url, headers=HEADERS, timeout=30)
+                if mr.status_code == 200 and len(mr.text) > 200:
+                    body = mr.text.strip()
+            except Exception as e:
+                print(f"    Workable .md fetch failed ({shortcode}): {e}")
+        if not body and job_url:
             time.sleep(1)
             detail_soup = fetch_page(job_url, proxy=site.get("proxy"))
             if detail_soup:
-                page_text = extract_text(detail_soup)
-                detail_text = f"Title: {title}\nLocation: {city}, {country}\n\n{page_text}"
+                body = extract_text(detail_soup)
+        if body:
+            detail_text = f"Title: {title}\nLocation: {city}, {country}\n\n{body}"
 
         new_jobs.append({"title": title, "url": job_url, "detail_text": detail_text})
 
