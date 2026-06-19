@@ -1,7 +1,7 @@
 {
   "date": "2026-06-19",
-  "generated_at": "2026-06-19T11:31:11.434056+00:00",
-  "run_count": 14,
+  "generated_at": "2026-06-19T12:01:20.702375+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Contracts Manager, EMEA",
@@ -99,6 +99,20 @@
       "location": "Global (multi-location)",
       "type": "Full-time",
       "deadline": "6/7/2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "SENIOR LECTURER.2.01 (EN.07.4) — Mechatronics Engineering",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106509&p_spid=5157838",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a Senior Lecturer post in Mechatronics Engineering requiring an earned PhD and eligibility for Professional Engineer registration — both hard ineligibilities (PhD requirement, specialist engineering licence). The field is entirely outside the candidate's IR/policy profile and the seniority is well beyond entry-level.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "20 July 2026",
       "salary": "Not specified"
     }
   ]
