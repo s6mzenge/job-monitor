@@ -1,7 +1,7 @@
 {
   "date": "2026-06-19",
-  "generated_at": "2026-06-19T12:31:11.875730+00:00",
-  "run_count": 16,
+  "generated_at": "2026-06-19T13:01:15.725813+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Contracts Manager, EMEA",
@@ -114,6 +114,34 @@
       "type": "Full-time",
       "deadline": "20 July 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Director / Principal, Geopolitical & Country Risk",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/A249F43767",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Geopolitical and political risk advisory is a core target field, but this is a Director/Principal role explicitly requiring 10 years of full-time professional experience plus business-development leadership and a client network — hard ineligibility on seniority for a candidate with only student/RA work.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Communications and Business Development Executive (CO:01)",
+      "organisation": "New Philanthropy Capital",
+      "url": "https://www.thinknpc.org/about-npc/work-at-npc/current-vacancies/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is a communications/business-development/events role focused on marketing and sponsor engagement for an impact-economy forum — outside the candidate's policy/research/intelligence profile and not a comms role tied to a relevant policy area. The candidate's limited dedicated communications and events-management experience is also a partial gap. London-based, so location is fine, but the off-profile field caps this at Low.",
+      "location": "London (Hybrid)",
+      "type": "Contract (9-month fixed term, min 30 hours/week)",
+      "deadline": "9am 6 July 2026",
+      "salary": "£30,000 pa, pro-rated"
     }
   ]
 }
