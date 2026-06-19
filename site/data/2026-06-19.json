@@ -1,7 +1,7 @@
 {
   "date": "2026-06-19",
-  "generated_at": "2026-06-19T15:31:10.241876+00:00",
-  "run_count": 22,
+  "generated_at": "2026-06-19T16:01:17.504561+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Contracts Manager, EMEA",
@@ -240,6 +240,48 @@
       "type": "Full-time",
       "deadline": "2026-07-09",
       "salary": "£51,902.57 to £61,048.57 per annum inclusive of London Allowance"
+    },
+    {
+      "title": "Immigration and Public Law Supervising Solicitor (maternity leave cover)",
+      "organisation": "Asylum Aid",
+      "url": "https://www.asylumaid.org.uk/who-we-are/join-us",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a qualified-solicitor supervisory role requiring a UK legal qualification, which the candidate does not hold — a hard exclusion. The \"Supervising\" title also implies senior experience well beyond the candidate's stage.",
+      "location": "Not specified",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Expert by Experience Board Advisor",
+      "organisation": "Asylum Aid",
+      "url": "https://www.asylumaid.org.uk/who-we-are/join-us",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This advisory role is explicitly aimed at people with lived experience of the asylum system, not a research/policy applicant, and it appears to be an unpaid/volunteer-style board position. Off-profile and not a genuine entry-level paid role.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Trustee and Chair of Finance and Fundraising Committee",
+      "organisation": "Asylum Aid",
+      "url": "https://www.asylumaid.org.uk/who-we-are/join-us",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an unpaid volunteer trustee role requiring senior finance/fundraising leadership experience — excluded on both the volunteer and seniority grounds.",
+      "location": "Not specified",
+      "type": "Volunteer",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
