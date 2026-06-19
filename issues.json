@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19T06:01:15.616709+00:00",
+  "last_updated": "2026-06-19T06:31:13.607846+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,19 +13,6 @@
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Impunity Watch": {
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 18,
-      "first_recent_failure": "2026-05-21T08:01:05.054642+00:00",
-      "last_recent_failure": "2026-06-19T06:01:15.616709+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
     },
     "Reprieve": {
       "site_id": 58,
@@ -133,16 +120,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-20T06:30:49.949188+00:00",
-      "site": "Global Rights Compliance",
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    24 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-20T13:31:08.146102+00:00",
       "site": "IISS",
