@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19T16:31:15.637319+00:00",
+  "last_updated": "2026-06-19T17:01:21.445458+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -44,14 +44,14 @@
       "site_id": 102,
       "url": "https://palestinecampaign.org/about/opportunities/",
       "method": "html",
-      "consecutive_failures": 15,
-      "total_recent_failures": 33,
+      "consecutive_failures": 16,
+      "total_recent_failures": 35,
       "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
-      "last_recent_failure": "2026-06-19T16:31:15.637319+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F"
+      "last_recent_failure": "2026-06-19T17:01:21.445458+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-06-21T17:01:21.445458+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
     },
     "Institute for War & Peace Reporting": {
       "site_id": 123,
@@ -9404,6 +9404,27 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
       "consecutive_count": 15
+    },
+    {
+      "timestamp": "2026-06-19T17:01:21.445458+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-06-19T17:01:21.445458+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-06-21T17:01:21.445458+00:00"
     }
   ]
 }
