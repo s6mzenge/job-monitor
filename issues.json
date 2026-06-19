@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-06-19T05:01:09.077912+00:00",
+  "last_updated": "2026-06-19T05:31:10.703626+00:00",
   "site_summary": {
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 66,
-      "first_recent_failure": "2026-05-20T06:30:49.949188+00:00",
-      "last_recent_failure": "2026-06-19T05:01:09.077912+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
