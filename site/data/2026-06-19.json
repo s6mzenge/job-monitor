@@ -1,0 +1,63 @@
+{
+  "date": "2026-06-19",
+  "generated_at": "2026-06-19T05:01:09.077912+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Contracts Manager, EMEA",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5264820008",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a commercial contracts/legal operations role requiring substantive knowledge of SaaS and commercial contract drafting plus 8+ years of contract management experience — entirely off the candidate's IR/policy profile. It also demands hard professional experience the candidate lacks and qualified-lawyer-level contract drafting skills.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£140,000–£180,000 GBP"
+    },
+    {
+      "title": "Examinations and Timetabling Officer x2",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/898802",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "This is a university administrative role focused on timetabling, examinations logistics and room bookings — operational registry work, not research, policy or intelligence analysis. It falls outside the candidate's profile (FIELD ≤ 2 forces Low), despite their higher-education administration background being transferable.",
+      "location": "Bloomsbury, London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "2026-07-03",
+      "salary": "£35,749.57 - £42,207 per annum"
+    },
+    {
+      "title": "Lead Auditor Food",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lead-Auditor-Food-3068-AX/1395895433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a food-industry quality-management auditing role requiring a food-technology degree, 5+ years' experience, third-party food auditing certifications, and fluent Dutch — none of which the candidate has. It is entirely off-profile (FIELD mismatch) and triggers multiple hard exclusions (5+ years' experience, Dutch fluency, specialist vocational certifications).",
+      "location": "3068 AX (Netherlands, likely Rotterdam)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Digital Communications Officer",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/2676/0/470295/15539/digital-communications-officer",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "This is a digital communications role centred on website/CMS management, SEO, UX and newsletter production — not policy, IR or research work, placing it off the candidate's profile (FIELD 2). The essential criteria require specific demonstrable experience the candidate lacks: CMS/microsite management, web analytics tools, Contensis-type platforms and producing on-brand digital content, capping skills low and triggering the Medium-blocking rule. FIELD ≤ 2 forces a Low regardless of the strong London/level fit.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "5 July 2026",
+      "salary": "£36,513–£41,565 pa (progression to £44,468) inclusive of London allowance"
+    }
+  ]
+}
