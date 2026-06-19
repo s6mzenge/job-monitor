@@ -1,7 +1,7 @@
 {
   "date": "2026-06-19",
-  "generated_at": "2026-06-19T10:31:09.644993+00:00",
-  "run_count": 12,
+  "generated_at": "2026-06-19T11:01:16.886016+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Contracts Manager, EMEA",
@@ -85,6 +85,20 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Global Learning and Development Senior Manager",
+      "organisation": "Dalberg",
+      "url": "https://dalberg.hua.hrsmart.com/hr/ats/Posting/view/879",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a Senior Manager L&D / talent-development role requiring a minimum of 3 years in a managerial role plus prior consulting experience — both hard requirements the candidate cannot meet, triggering the seniority/experience exclusion. The function (learning & development / talent) is also off the candidate's IR research and policy profile.",
+      "location": "Global (multi-location)",
+      "type": "Full-time",
+      "deadline": "6/7/2026",
       "salary": "Not specified"
     }
   ]
