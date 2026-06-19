@@ -1,7 +1,7 @@
 {
   "date": "2026-06-19",
-  "generated_at": "2026-06-19T15:01:15.556261+00:00",
-  "run_count": 21,
+  "generated_at": "2026-06-19T15:31:10.241876+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Contracts Manager, EMEA",
@@ -226,6 +226,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Disability & Neurodiversity Manager",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/899445",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a specialist disability/neurodiversity service-management role in student support — off the candidate's IR/policy/research profile and requiring specialist knowledge of disability support, SpLDs and relevant legislation the candidate lacks. It is also a Manager (Grade 8) role expecting experienced service leadership and people management, which the candidate (student-assistant only) does not have.",
+      "location": "Bloomsbury, Camden, Greater London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "2026-07-09",
+      "salary": "£51,902.57 to £61,048.57 per annum inclusive of London Allowance"
     }
   ]
 }

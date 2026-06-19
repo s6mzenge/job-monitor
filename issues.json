@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19T15:01:15.556261+00:00",
+  "last_updated": "2026-06-19T15:31:10.241876+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -44,10 +44,10 @@
       "site_id": 102,
       "url": "https://palestinecampaign.org/about/opportunities/",
       "method": "html",
-      "consecutive_failures": 12,
-      "total_recent_failures": 30,
+      "consecutive_failures": 13,
+      "total_recent_failures": 31,
       "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
-      "last_recent_failure": "2026-06-19T15:01:15.556261+00:00",
+      "last_recent_failure": "2026-06-19T15:31:10.241876+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -120,17 +120,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-20T15:30:57.667226+00:00",
-      "site": "Anthesis Group",
-      "site_id": 68,
-      "url": "https://anthesisgroup.pinpointhq.com/",
-      "method": "pinpoint_api",
-      "type": "llm_call_failed",
-      "message": "Anthropic API: HTTP 529: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CbE4ZyGsodGJDBqcHRP9q\"}",
-      "job_title": "Design Studio Manager",
-      "job_url": "https://anthesisgroup.pinpointhq.com/en/postings/601e5484-8bff-463a-b4fd-6a0d134c77ee"
-    },
     {
       "timestamp": "2026-05-20T16:01:07.964509+00:00",
       "site": "Palladium Group",
@@ -9415,6 +9404,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
       "consecutive_count": 12
+    },
+    {
+      "timestamp": "2026-06-19T15:31:10.241876+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
+      "consecutive_count": 13
     }
   ]
 }
