@@ -1,7 +1,7 @@
 {
   "date": "2026-06-19",
-  "generated_at": "2026-06-19T13:31:10.225616+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-19T14:01:56.125238+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Contracts Manager, EMEA",
@@ -142,6 +142,90 @@
       "type": "Contract (9-month fixed term, min 30 hours/week)",
       "deadline": "9am 6 July 2026",
       "salary": "£30,000 pa, pro-rated"
+    },
+    {
+      "title": "Senior Legal Adviser",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "International accountability and justice work is core to the candidate's profile, but a \"Senior Legal Adviser\" role requires a qualified lawyer with substantial senior experience — both hard ineligibilities for an MSc-stage non-lawyer.",
+      "location": "Iraq",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Advisory Board Member",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "An advisory board seat requires senior, established expertise that the candidate does not have at MSc stage. Hard ineligibility on seniority.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Internship - Speculative Opportunities",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "International law and accountability work is squarely on-profile, but this is framed as a speculative opportunity rather than a concrete advertised vacancy, which is excluded.",
+      "location": "Remote",
+      "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "IT Officer",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "3",
+      "reason": "An IT support role is off the candidate's profile and requires specialist IT skills they cannot substitute for, despite the organisation's relevant mission.",
+      "location": "Ukraine",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "IT Security Officer",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "3",
+      "reason": "IT/cyber security operations is outside the candidate's field and requires specialist technical skills they lack.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Speculative Application",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is an explicit speculative application / talent-pool entry with no concrete advertised vacancy, which is excluded.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
