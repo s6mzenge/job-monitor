@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-20",
+  "generated_at": "2026-06-20T05:01:11.404871+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Independent Trustee and Chair of the Board, BBC Pension Trust",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Independent-Trustee-and-Chair-of-the-Board%2C-BBC-Pension-Trust/47532-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior board-level Trustee and Chair appointment for a pension scheme, requiring extensive governance, pensions/financial and leadership experience the candidate does not have. It is entirely off-profile (pension fund governance, not IR/policy/research) and a Chair-of-Board seniority well beyond entry-level.",
+      "location": "London, GBR",
+      "type": "Part-time (Trustee, 20+30 days per annum)",
+      "deadline": "Monday 6 July 2026",
+      "salary": "£45,000 per annum (Trustee) + £48,000 (Chair)"
+    },
+    {
+      "title": "Brand and Cultural Research Manager",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Brand-and-Cultural-Research-Manager/45494-en_GB",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a brand/cultural insight role in market research and marketing strategy — off the candidate's policy/IR/risk profile (FIELD 2). The \"Manager\" title with essential criteria demanding proven experience shaping strategic narratives, influencing senior stakeholders, and delivering organisation-wide insight programmes points to mid-level professional experience the candidate lacks. London option exists so location is fine, but the field mismatch and seniority bar drive a Low.",
+      "location": "London or Salford",
+      "type": "Full-time (Fixed-term contract until 26 March 2027)",
+      "deadline": "23 June 2026",
+      "salary": "£45,000 - £56,850"
+    },
+    {
+      "title": "Operations Team Leader",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Operations-Team-Leader/45486-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a media-production operations and line-management role, entirely off the candidate's policy/research/intelligence profile, requiring multi-skilled content production, technical streaming knowledge and team management experience the candidate lacks. Off-field, off-skills, and the management remit puts it above entry level.",
+      "location": "London Broadcasting House",
+      "type": "Contract (12 month FTC/Attachment)",
+      "deadline": "05/07/2026",
+      "salary": "£47,800 - £65,700"
+    }
+  ]
+}
