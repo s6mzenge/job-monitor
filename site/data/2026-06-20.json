@@ -1,7 +1,7 @@
 {
   "date": "2026-06-20",
-  "generated_at": "2026-06-20T14:01:20.481024+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-20T14:31:13.016643+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Independent Trustee and Chair of the Board, BBC Pension Trust",
@@ -96,6 +96,20 @@
       "skills_score": "3",
       "seniority_score": "2",
       "reason": "The deadline of 15 January 2026 has clearly passed relative to today (20 June 2026), so the role is closed. It also seeks established \"experts\" for an advisory committee — a seniority level beyond the candidate's stage — and appears to be an unpaid advisory position.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The deadline of 15 January 2026 has passed relative to today (2026-06-20), so the role is closed. Additionally, this is an expert advisory committee seeking established specialists, not an entry-level position for an MSc candidate.",
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
