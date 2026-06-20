@@ -1,7 +1,7 @@
 {
   "date": "2026-06-20",
-  "generated_at": "2026-06-20T05:01:11.404871+00:00",
-  "run_count": 1,
+  "generated_at": "2026-06-20T05:31:04.867682+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Independent Trustee and Chair of the Board, BBC Pension Trust",
@@ -44,6 +44,20 @@
       "type": "Contract (12 month FTC/Attachment)",
       "deadline": "05/07/2026",
       "salary": "£47,800 - £65,700"
+    },
+    {
+      "title": "Senior Audience Research Executive",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Senior-Audience-Research-Executive/45119-en_GB",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "This is an audience/market research role (media measurement, survey methodology) — not international affairs, policy, security, or intelligence work, so it sits off the candidate's profile. The \"Senior\" title and essential \"proven experience managing impactful research projects\" plus deep quantitative survey-methodology expertise (CAPI/CATI) push beyond entry-level and the candidate's analysis-level skillset.",
+      "location": "London, GBR",
+      "type": "Fixed Term (until 26th March 2027)",
+      "deadline": "26 June 2026",
+      "salary": "£33,000 - £43,000"
     }
   ]
 }
