@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20T15:31:22.245014+00:00",
+  "last_updated": "2026-06-20T16:01:21.431116+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -52,6 +52,19 @@
       "paused_until": "2026-06-21T17:01:21.445458+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "LSE (internal)": {
+      "site_id": 110,
+      "url": "https://jobs.lse.ac.uk/V2/Vacancy/Index?enc=glU2uxu77sbA0Vjt6JCQD0plJN6KBxTggSjROblEqRK0i39EXHi3KwQ464+7Oko3O4iakm36tKYVifZl5chR1nW72+6IIACSarRLg3CoJ8g=",
+      "method": "engage_ats",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-20T16:01:21.431116+00:00",
+      "last_recent_failure": "2026-06-20T16:01:21.431116+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "engage_ats Internal page 1: 403 Client Error: Forbidden for url: https://jobs.lse.ac.uk/V2/Vacancy/ApplySearchFilter"
     },
     "Institute for War & Peace Reporting": {
       "site_id": 123,
@@ -9494,6 +9507,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content.",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-20T16:01:21.431116+00:00",
+      "site": "LSE (internal)",
+      "site_id": 110,
+      "url": "https://jobs.lse.ac.uk/V2/Vacancy/Index?enc=glU2uxu77sbA0Vjt6JCQD0plJN6KBxTggSjROblEqRK0i39EXHi3KwQ464+7Oko3O4iakm36tKYVifZl5chR1nW72+6IIACSarRLg3CoJ8g=",
+      "method": "engage_ats",
+      "type": "fetch_error",
+      "message": "engage_ats Internal page 1: 403 Client Error: Forbidden for url: https://jobs.lse.ac.uk/V2/Vacancy/ApplySearchFilter",
       "consecutive_count": 1
     }
   ]
