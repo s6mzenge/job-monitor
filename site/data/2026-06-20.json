@@ -1,7 +1,7 @@
 {
   "date": "2026-06-20",
-  "generated_at": "2026-06-20T06:01:13.749131+00:00",
-  "run_count": 3,
+  "generated_at": "2026-06-20T06:31:12.011286+00:00",
+  "run_count": 4,
   "jobs": [
     {
       "title": "Independent Trustee and Chair of the Board, BBC Pension Trust",
@@ -58,6 +58,20 @@
       "type": "Fixed Term (until 26th March 2027)",
       "deadline": "26 June 2026",
       "salary": "£33,000 - £43,000"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Senior-Software-Engineer/47677-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior software engineering role requiring extensive production experience in functional/statically-typed languages (Elixir, Erlang, Rust, Go), AWS infrastructure, and CI/CD — specialist technical skills the candidate's analysis-level Python cannot substitute for. It is also off-profile (pure software engineering, not policy/research) and senior-level, triggering multiple Low conditions.",
+      "location": "London/Glasgow/Salford/Cardiff/Newcastle (Hybrid)",
+      "type": "Full-time",
+      "deadline": "05/07/2026",
+      "salary": "£54,600 - £82,800 + London Weighting"
     }
   ]
 }

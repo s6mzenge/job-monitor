@@ -1,6 +1,32 @@
 {
-  "last_updated": "2026-06-20T06:01:13.749131+00:00",
+  "last_updated": "2026-06-20T06:31:12.011286+00:00",
   "site_summary": {
+    "Open Society Foundations": {
+      "site_id": 2,
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
+      "method": "workday_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 12,
+      "first_recent_failure": "2026-05-23T06:30:50.269487+00:00",
+      "last_recent_failure": "2026-06-20T06:31:12.011286+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
+    },
+    "Pew Trusts": {
+      "site_id": 3,
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
+      "method": "workday_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 12,
+      "first_recent_failure": "2026-05-23T06:30:50.269487+00:00",
+      "last_recent_failure": "2026-06-20T06:31:12.011286+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -27,6 +53,32 @@
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
     },
+    "ERM": {
+      "site_id": 69,
+      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
+      "method": "workday_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 13,
+      "first_recent_failure": "2026-05-23T06:30:50.269487+00:00",
+      "last_recent_failure": "2026-06-20T06:31:12.011286+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
+    },
+    "Edelman": {
+      "site_id": 78,
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
+      "method": "workday_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 11,
+      "first_recent_failure": "2026-05-23T06:30:50.269487+00:00",
+      "last_recent_failure": "2026-06-20T06:31:12.011286+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
+    },
     "Global Justice Now": {
       "site_id": 98,
       "url": "https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
@@ -52,6 +104,32 @@
       "paused_until": "2026-06-21T17:01:21.445458+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "International Rescue Committee": {
+      "site_id": 111,
+      "url": "https://theirc.wd1.myworkdayjobs.com/en-US/External_Careers",
+      "method": "workday_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-20T06:31:12.011286+00:00",
+      "last_recent_failure": "2026-06-20T06:31:12.011286+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
+    },
+    "Wellcome Trust": {
+      "site_id": 112,
+      "url": "https://wellcome.wd3.myworkdayjobs.com/en-GB/Wellcome",
+      "method": "workday_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-20T06:31:12.011286+00:00",
+      "last_recent_failure": "2026-06-20T06:31:12.011286+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
     },
     "Institute for War & Peace Reporting": {
       "site_id": 123,
@@ -9394,6 +9472,66 @@
       "method": "oracle_hcm_api",
       "type": "fetch_error",
       "message": "Oracle HCM API: 503 Server Error: Service Unavailable for url: https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_2001,facetsList=LOCATIONS%3BCATEGORIES%3BPOSTING_DATES,limit=25,locationId=300000049375956,radius=25,radiusUnit=MI,sortBy=POSTING_DATES_DESC",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-20T06:31:12.011286+00:00",
+      "site": "Open Society Foundations",
+      "site_id": 2,
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-20T06:31:12.011286+00:00",
+      "site": "Pew Trusts",
+      "site_id": 3,
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-20T06:31:12.011286+00:00",
+      "site": "ERM",
+      "site_id": 69,
+      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-20T06:31:12.011286+00:00",
+      "site": "Edelman",
+      "site_id": 78,
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-20T06:31:12.011286+00:00",
+      "site": "International Rescue Committee",
+      "site_id": 111,
+      "url": "https://theirc.wd1.myworkdayjobs.com/en-US/External_Careers",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-20T06:31:12.011286+00:00",
+      "site": "Wellcome Trust",
+      "site_id": 112,
+      "url": "https://wellcome.wd3.myworkdayjobs.com/en-GB/Wellcome",
+      "method": "workday_api",
+      "type": "fetch_error",
+      "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
       "consecutive_count": 1
     }
   ]
