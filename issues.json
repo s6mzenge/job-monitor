@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20T08:01:12.257185+00:00",
+  "last_updated": "2026-06-20T09:01:17.556421+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -26,19 +26,6 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
-    },
-    "Verisk Maplecroft": {
-      "site_id": 72,
-      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs?lastSelectedFacet=AttributeChar12&selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22",
-      "method": "oracle_hcm_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-06-20T08:01:12.257185+00:00",
-      "last_recent_failure": "2026-06-20T08:01:12.257185+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Oracle HCM API: 503 Server Error: Service Unavailable for url: https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,facetsList=LOCATIONS%3BCATEGORIES%3BPOSTING_DATES%3BAttributeChar12,limit=25,selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22"
     },
     "Global Justice Now": {
       "site_id": 98,
