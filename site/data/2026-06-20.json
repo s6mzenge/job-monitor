@@ -1,7 +1,7 @@
 {
   "date": "2026-06-20",
-  "generated_at": "2026-06-20T12:31:10.147810+00:00",
-  "run_count": 15,
+  "generated_at": "2026-06-20T13:01:12.734483+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Independent Trustee and Chair of the Board, BBC Pension Trust",
@@ -72,6 +72,34 @@
       "type": "Full-time",
       "deadline": "05/07/2026",
       "salary": "£54,600 - £82,800 + London Weighting"
+    },
+    {
+      "title": "Executive Assistant to the CEO and Chair",
+      "organisation": "Paul Hamlyn Foundation",
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is an executive-assistant / administrative support role with no policy, research or intelligence content, placing it off the candidate's profile (FIELD 1). The function does not draw on the candidate's IR research or analytical strengths.",
+      "location": "Not specified",
+      "type": "Full-time",
+      "deadline": "Monday 22 June",
+      "salary": "circa £36,000 per annum"
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "The deadline of 15 January 2026 has clearly passed relative to today (20 June 2026), so the role is closed. It also seeks established \"experts\" for an advisory committee — a seniority level beyond the candidate's stage — and appears to be an unpaid advisory position.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified"
     }
   ]
 }
