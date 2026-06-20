@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20T05:31:04.867682+00:00",
+  "last_updated": "2026-06-20T06:01:13.749131+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,19 +13,6 @@
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "APCO Worldwide": {
-      "site_id": 51,
-      "url": "https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/jobs?location=London%2C+United+Kingdom&locationId=300000049375956&locationLevel=city&mode=location&radius=25&radiusUnit=MI",
-      "method": "oracle_hcm_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-06-20T05:31:04.867682+00:00",
-      "last_recent_failure": "2026-06-20T05:31:04.867682+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Oracle HCM API: 503 Server Error: Service Unavailable for url: https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_2001,facetsList=LOCATIONS%3BCATEGORIES%3BPOSTING_DATES,limit=25,locationId=300000049375956,radius=25,radiusUnit=MI,sortBy=POSTING_DATES_DESC"
     },
     "Reprieve": {
       "site_id": 58,
