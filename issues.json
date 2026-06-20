@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20T07:31:07.911947+00:00",
+  "last_updated": "2026-06-20T08:01:12.257185+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -27,6 +27,19 @@
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
     },
+    "Verisk Maplecroft": {
+      "site_id": 72,
+      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs?lastSelectedFacet=AttributeChar12&selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22",
+      "method": "oracle_hcm_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-20T08:01:12.257185+00:00",
+      "last_recent_failure": "2026-06-20T08:01:12.257185+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Oracle HCM API: 503 Server Error: Service Unavailable for url: https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,facetsList=LOCATIONS%3BCATEGORIES%3BPOSTING_DATES%3BAttributeChar12,limit=25,selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22"
+    },
     "Global Justice Now": {
       "site_id": 98,
       "url": "https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
@@ -52,19 +65,6 @@
       "paused_until": "2026-06-21T17:01:21.445458+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "International Rescue Committee": {
-      "site_id": 111,
-      "url": "https://theirc.wd1.myworkdayjobs.com/en-US/External_Careers",
-      "method": "workday_api",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-06-20T06:31:12.011286+00:00",
-      "last_recent_failure": "2026-06-20T07:31:07.911947+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
     },
     "Institute for War & Peace Reporting": {
       "site_id": 123,
@@ -133,26 +133,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-21T08:01:05.054642+00:00",
-      "site": "Global Rights Compliance",
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    23 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-21T08:01:05.054642+00:00",
-      "site": "Impunity Watch",
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://www.impunitywatch.org/join-us/join-our-team/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-21T11:30:49.162687+00:00",
       "site": "Impunity Watch",
@@ -9538,6 +9518,16 @@
       "type": "fetch_error",
       "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
       "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-06-20T08:01:12.257185+00:00",
+      "site": "Verisk Maplecroft",
+      "site_id": 72,
+      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs?lastSelectedFacet=AttributeChar12&selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22",
+      "method": "oracle_hcm_api",
+      "type": "fetch_error",
+      "message": "Oracle HCM API: 503 Server Error: Service Unavailable for url: https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,facetsList=LOCATIONS%3BCATEGORIES%3BPOSTING_DATES%3BAttributeChar12,limit=25,selectedFlexFieldsFacets=%22AttributeChar12%7CVerisk+Maplecroft%22",
+      "consecutive_count": 1
     }
   ]
 }
