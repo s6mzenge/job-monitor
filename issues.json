@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-06-21T08:01:21.225132+00:00",
+  "last_updated": "2026-06-21T08:31:11.083652+00:00",
   "site_summary": {
-    "Fabian Society": {
-      "site_id": 24,
-      "url": "https://fabians.org.uk/about-us/recruitment/",
-      "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 4,
-      "first_recent_failure": "2026-06-13T06:31:01.250606+00:00",
-      "last_recent_failure": "2026-06-21T08:01:21.225132+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -65,19 +52,6 @@
       "paused_until": "2026-06-21T17:01:21.445458+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "ActionAid UK": {
-      "site_id": 122,
-      "url": "https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 4,
-      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-21T08:01:21.225132+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.actionaid.org.uk%2Fabout-us%2Fpeople-and-culture%2Factionaid-job-vacancies"
     },
     "Institute for War & Peace Reporting": {
       "site_id": 123,
