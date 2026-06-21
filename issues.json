@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T11:31:07.468646+00:00",
+  "last_updated": "2026-06-21T12:01:22.320824+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -120,46 +120,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-22T12:00:54.198184+00:00",
-      "site": "Palladium Group",
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "type": "fetch_error",
-      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f5c6d393da0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-22T12:00:54.198184+00:00",
-      "site": "Aegis Trust",
-      "site_id": 5,
-      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://aegistrust.online/get-involved/work-at-aegis/",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-22T12:00:54.198184+00:00",
-      "site": "Protection Approaches",
-      "site_id": 31,
-      "url": "https://protectionapproaches.org/current-vacancies",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='protectionapproaches.org', port=443): Max retries exceeded with url: /current-vacancies (Caused by ConnectTimeoutError(<HTTPSConnection(host='protectionapproaches.org', port=443) at 0x7f5c6ca56c00>, 'Connection to protectionapproaches.org timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-22T12:00:54.198184+00:00",
-      "site": "Ceasefire Centre for Civilian Rights",
-      "site_id": 54,
-      "url": "https://www.ceasefire.org/work-with-us/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='www.ceasefire.org', port=443): Max retries exceeded with url: /work-with-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ceasefire.org', port=443) at 0x7f5c6c191f10>, 'Connection to www.ceasefire.org timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-22T13:30:53.397624+00:00",
       "site": "Global Rights Compliance",
