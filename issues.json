@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-06-21T14:01:12.858241+00:00",
+  "last_updated": "2026-06-21T14:31:11.582829+00:00",
   "site_summary": {
+    "Global Rights Compliance": {
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 63,
+      "first_recent_failure": "2026-05-22T15:30:58.048424+00:00",
+      "last_recent_failure": "2026-06-21T14:31:11.582829+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -9494,6 +9507,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.actionaid.org.uk%2Fabout-us%2Fpeople-and-culture%2Factionaid-job-vacancies",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-21T14:31:11.582829+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content.",
       "consecutive_count": 1
     }
   ]
