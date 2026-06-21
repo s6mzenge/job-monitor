@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T15:01:19.679480+00:00",
+  "last_updated": "2026-06-21T15:31:14.328100+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -27,19 +27,6 @@
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
     },
-    "Amnesty International": {
-      "site_id": 92,
-      "url": "https://careers.amnesty.org/jobs/vacancy/find/results/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-06-16T16:31:19.360475+00:00",
-      "last_recent_failure": "2026-06-21T15:01:19.679480+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://careers.amnesty.org/jobs/vacancy/find/results/\", waiting until \"networkidle\""
-    },
     "Global Justice Now": {
       "site_id": 98,
       "url": "https://www.globaljustice.org.uk/about-us/jobs-and-volunteering/",
@@ -65,6 +52,19 @@
       "paused_until": "2026-06-21T17:01:21.445458+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "ActionAid UK": {
+      "site_id": 122,
+      "url": "https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 6,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-21T15:31:14.328100+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.actionaid.org.uk%2Fabout-us%2Fpeople-and-culture%2Factionaid-job-vacancies"
     },
     "Institute for War & Peace Reporting": {
       "site_id": 123,
@@ -133,16 +133,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-22T15:30:58.048424+00:00",
-      "site": "Global Rights Compliance",
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    24 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-23T06:30:50.269487+00:00",
       "site": "Open Society Foundations",
@@ -9527,6 +9517,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://careers.amnesty.org/jobs/vacancy/find/results/\", waiting until \"networkidle\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-21T15:31:14.328100+00:00",
+      "site": "ActionAid UK",
+      "site_id": 122,
+      "url": "https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.actionaid.org.uk%2Fabout-us%2Fpeople-and-culture%2Factionaid-job-vacancies",
       "consecutive_count": 1
     }
   ]
