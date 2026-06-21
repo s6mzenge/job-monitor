@@ -1,7 +1,7 @@
 {
   "date": "2026-06-21",
-  "generated_at": "2026-06-21T05:31:10.022552+00:00",
-  "run_count": 2,
+  "generated_at": "2026-06-21T06:01:15.630195+00:00",
+  "run_count": 3,
   "jobs": [
     {
       "title": "Executive Assistant to the CEO and Chair",
@@ -100,6 +100,20 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Content Metadata Coordinator - 6 month FTC",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Content-Metadata-Coordinator-6-month-FTC/47886-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "This is a content metadata/data-management administration role for commercial media licensing — entirely off the candidate's IR/policy/research profile. The essential criteria require demonstrable experience in data/metadata management and content/rights management systems, which the candidate lacks. Field mismatch forces Low.",
+      "location": "London, GBR (TVC - Hybrid)",
+      "type": "Contract (6 month FTC)",
+      "deadline": "3rd July 2026",
+      "salary": "£25,200–£28,500 plus £5,441 London Weighting"
     }
   ]
 }
