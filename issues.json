@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-06-21T06:31:05.683461+00:00",
+  "last_updated": "2026-06-21T07:01:19.979173+00:00",
   "site_summary": {
+    "Fabian Society": {
+      "site_id": 24,
+      "url": "https://fabians.org.uk/about-us/recruitment/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-06-13T06:31:01.250606+00:00",
+      "last_recent_failure": "2026-06-21T07:01:19.979173+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -9504,6 +9517,16 @@
       "method": "engage_ats",
       "type": "fetch_error",
       "message": "engage_ats Internal page 1: 403 Client Error: Forbidden for url: https://jobs.lse.ac.uk/V2/Vacancy/ApplySearchFilter",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-21T07:01:19.979173+00:00",
+      "site": "Fabian Society",
+      "site_id": 24,
+      "url": "https://fabians.org.uk/about-us/recruitment/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
       "consecutive_count": 1
     }
   ]
