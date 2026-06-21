@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-21T07:01:19.979173+00:00",
+  "last_updated": "2026-06-21T07:31:07.598111+00:00",
   "site_summary": {
     "Fabian Society": {
       "site_id": 24,
       "url": "https://fabians.org.uk/about-us/recruitment/",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
+      "consecutive_failures": 2,
+      "total_recent_failures": 3,
       "first_recent_failure": "2026-06-13T06:31:01.250606+00:00",
-      "last_recent_failure": "2026-06-21T07:01:19.979173+00:00",
+      "last_recent_failure": "2026-06-21T07:31:07.598111+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -133,16 +133,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-22T07:30:49.666406+00:00",
-      "site": "Global Rights Compliance",
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    25 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-22T08:01:02.880216+00:00",
       "site": "Institute of Race Relations",
@@ -9528,6 +9518,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-21T07:31:07.598111+00:00",
+      "site": "Fabian Society",
+      "site_id": 24,
+      "url": "https://fabians.org.uk/about-us/recruitment/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 2
     }
   ]
 }
