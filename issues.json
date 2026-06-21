@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T08:31:11.083652+00:00",
+  "last_updated": "2026-06-21T09:01:28.690812+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -26,6 +26,19 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
+    },
+    "BID (Bail for Immigration Detainees)": {
+      "site_id": 82,
+      "url": "https://www.biduk.org/articles/category/35-job-opportunities",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-06-16T15:36:37.802916+00:00",
+      "last_recent_failure": "2026-06-21T09:01:28.690812+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.biduk.org%2Farticles%2Fcategory%2F35-job-opportunities"
     },
     "Global Justice Now": {
       "site_id": 98,
@@ -9524,6 +9537,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.actionaid.org.uk%2Fabout-us%2Fpeople-and-culture%2Factionaid-job-vacancies",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-21T09:01:28.690812+00:00",
+      "site": "BID (Bail for Immigration Detainees)",
+      "site_id": 82,
+      "url": "https://www.biduk.org/articles/category/35-job-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.biduk.org%2Farticles%2Fcategory%2F35-job-opportunities",
       "consecutive_count": 1
     }
   ]

@@ -1,7 +1,7 @@
 {
   "date": "2026-06-21",
-  "generated_at": "2026-06-21T08:31:11.083652+00:00",
-  "run_count": 8,
+  "generated_at": "2026-06-21T09:01:28.690812+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Executive Assistant to the CEO and Chair",
@@ -114,6 +114,90 @@
       "type": "Contract (6 month FTC)",
       "deadline": "3rd July 2026",
       "salary": "£25,200–£28,500 plus £5,441 London Weighting"
+    },
+    {
+      "title": "Senior Legal Adviser",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "International accountability and justice work is core to the candidate's profile, but a \"Senior Legal Adviser\" role requires a qualified lawyer with significant experience — the candidate is not a qualified lawyer and has no full-time experience. Hard ineligibility on both seniority and legal qualification.",
+      "location": "Iraq",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Advisory Board Member",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Field aligns with the candidate's international law and accountability interests, but an advisory board position requires senior, established expertise the candidate does not have. Hard ineligibility on seniority.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Internship - Speculative Opportunities",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Though field and level fit well, this is explicitly a speculative opportunity with no concrete advertised vacancy — excluded under the speculative-application rule.",
+      "location": "Remote",
+      "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "IT Officer",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is an IT support role at an international law organisation — the function is off-profile for the candidate despite the organisation's relevant mission. Field mismatch.",
+      "location": "Ukraine",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "IT Security Officer",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "3",
+      "reason": "An IT security role requires specialist technical skills the candidate cannot substitute for; the function is unrelated to the candidate's research/policy profile despite the organisation's mission. Field and skills mismatch.",
+      "location": "Remote",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Speculative Application",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Explicitly a speculative talent-pool application with no concrete advertised vacancy — excluded under the speculative-application rule.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
