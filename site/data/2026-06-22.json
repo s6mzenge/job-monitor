@@ -1,7 +1,7 @@
 {
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T15:01:29.468928+00:00",
-  "run_count": 21,
+  "generated_at": "2026-06-22T15:31:23.494814+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Senior Learning Experience Designer",
@@ -240,6 +240,104 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Senior Legal Adviser",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "International law and accountability work is core to the candidate's profile, but \"Senior Legal Adviser\" requires a qualified lawyer with substantial experience — both a seniority barrier and a qualified-lawyer requirement the candidate (not a qualified lawyer, MSc in progress) cannot meet.",
+      "location": "Iraq",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Advisory Board Member",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "An advisory board position requires senior, established expertise far beyond the candidate's stage. Hard ineligibility on seniority.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Internship - Speculative Opportunities",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Though field and level fit well, this is explicitly a speculative opportunity with no concrete advertised vacancy, which is an excluded category.",
+      "location": "Remote",
+      "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "IT Officer",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "An IT support role is off the candidate's research/policy profile despite the organisation's relevant mission. Field mismatch.",
+      "location": "Ukraine",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "IT Security Officer",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "IT security operations is outside the candidate's research/policy profile and requires technical security skills they lack. Field mismatch.",
+      "location": "Remote",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Speculative Application",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is an explicit speculative application / talent-pool listing with no concrete advertised vacancy, which is an excluded category.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Architect",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Lead-Architect/41291-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior software/systems architecture role requiring deep distributed-systems engineering experience and a \"Lead\" title — entirely off the candidate's IR/policy profile and well beyond their stage. Field, skills and seniority all mismatch.",
+      "location": "London, GBR",
+      "type": "Full-time",
+      "deadline": "3rd July 2026",
+      "salary": "£85,000 - £100,000 plus £5,441 London Weighting and 15% bonus OTE"
     }
   ]
 }
