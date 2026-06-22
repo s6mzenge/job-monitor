@@ -1867,6 +1867,30 @@
       "link_selector": "",
       "base_url": "https://careers.icrc.org",
       "london_only": true
+    },
+    {
+      "id": 147,
+      "name": "German Historical Institute London",
+      "url": "https://www.ghil.ac.uk/opportunities/vacancies",
+      "method": "html",
+      "selector": "main"
+    },
+    {
+      "id": 148,
+      "name": "Goethe-Institut UK",
+      "url": "https://www.goethe.de/ins/gb/en/ueb/kar.html",
+      "method": "html",
+      "link_selector": "a[href*='/ueb/kar/']"
+    },
+    {
+      "id": 149,
+      "name": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "method": "playwright",
+      "link_selector": "a[href*='applytojob.com']",
+      "wait_selector": "a[href*='applytojob.com']",
+      "detail_via_playwright": true,
+      "london_only": true
     }
   ]
 }
