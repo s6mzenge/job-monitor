@@ -1,7 +1,7 @@
 {
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T08:31:09.910994+00:00",
-  "run_count": 8,
+  "generated_at": "2026-06-22T09:01:19.534603+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Senior Learning Experience Designer",
@@ -58,6 +58,20 @@
       "type": "Full-time (Permanent)",
       "deadline": "Monday, 6 July 2026",
       "salary": "£37,360 - £46,700"
+    },
+    {
+      "title": "Associate Tutor - Philosophy",
+      "organisation": "Birkbeck, University of London",
+      "url": "https://cis7.bbk.ac.uk/vacancy/associate-tutor-philosophy-614035.html",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is a philosophy teaching post (Ethics of Technology/AI, Philosophy of AI) requiring demonstrated experience teaching philosophy and qualification to the corresponding award level — neither of which the candidate has, capping SKILLS. The subject is only adjacent to the candidate's IR/critical-theory background, and university teaching is not on-profile for an MSc-in-progress with no teaching experience.",
+      "location": "London",
+      "type": "Part-time (Fixed term)",
+      "deadline": "2026-07-12",
+      "salary": "£61.39 per hour"
     }
   ]
 }
