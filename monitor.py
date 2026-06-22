@@ -17,6 +17,7 @@ except Exception:  # optional dep; only sites with tls_impersonate need it
     HAVE_CURL_CFFI = False
 from report import save_report
 import issues
+import jd_docs
 
 # ─── De-duplication & hash-stability helpers ───
 # Job-board URLs often carry volatile tracking params, and hash-check pages
@@ -384,6 +385,34 @@ def request_with_retry(method, url, **kwargs):
     return resp
 
 
+def fetch_bytes(url, proxy=None, tls_impersonate=False):
+    """Download raw bytes for a linked document (PDF/DOCX), reusing the same
+    transport ideas as fetch_page: plain -> curl_cffi TLS -> Cloudflare Worker.
+    Returns b'' on any failure so a bad attachment never breaks a job."""
+    if tls_impersonate and HAVE_CURL_CFFI:
+        try:
+            r = cffi_requests.get(url, impersonate="chrome", timeout=45)
+            if r.status_code < 400 and r.content:
+                return r.content
+        except Exception:
+            pass
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=45, allow_redirects=True)
+        if r.status_code < 400 and r.content:
+            return r.content
+    except Exception:
+        pass
+    if CF_WORKER_URL:
+        try:
+            r = requests.get(CF_WORKER_URL, params={"url": url},
+                             headers={"X-Proxy-Token": CF_WORKER_TOKEN}, timeout=45)
+            if r.status_code < 400 and r.content:
+                return r.content
+        except Exception:
+            pass
+    return b""
+
+
 def extract_text(soup, selector=""):
     """Extract cleaned text from a BeautifulSoup object, optionally within a CSS selector."""
     for tag in soup(["script", "style", "nav", "footer", "header", "noscript"]):
@@ -468,7 +497,10 @@ def check_html(site, seen_urls):
                 h_text = h.get_text(strip=True)
                 if h_text and len(h_text) < 100:
                     titles.append(h_text)
-        return {"type": "hash_check", "text": text, "hash": text_hash, "titles": titles}
+        jd_doc_links = []
+        if site.get("follow_jd_docs"):
+            jd_doc_links = jd_docs.find_doc_links(target_el or soup, listing_url)
+        return {"type": "hash_check", "text": text, "hash": text_hash, "titles": titles, "jd_doc_links": jd_doc_links}
 
 
     def _collect_anchors(page_soup):
@@ -566,9 +598,13 @@ def check_html(site, seen_urls):
             jobs.append({"title": title, "url": full_url})
             seen_in_batch.add(full_url)
 
+    follow_docs = site.get("follow_jd_docs")
+    def _doc_bytes(u):
+        return fetch_bytes(u, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
     new_jobs = []
     for job in jobs:
-        if site.get("skip_detail_fetch"):
+        detail_soup = None
+        if site.get("skip_detail_fetch") and not follow_docs:
             detail_text = f"Title: {job['title']}"
         else:
             time.sleep(1)
@@ -582,7 +618,19 @@ def check_html(site, seen_urls):
                     detail_soup = None
             else:
                 detail_soup = fetch_page(job["url"], proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
-            detail_text = extract_text(detail_soup) if detail_soup else ""
+            if site.get("skip_detail_fetch"):
+                detail_text = f"Title: {job['title']}"
+            else:
+                detail_text = extract_text(detail_soup) if detail_soup else ""
+        if follow_docs and detail_soup is not None:
+            _scope = detail_soup.select_one(site["detail_selector"].split(",")[0].strip()) if site.get("detail_selector") else detail_soup
+            _doc_text, _doc_srcs = jd_docs.gather_jd_text(
+                _scope or detail_soup, job["url"], _doc_bytes,
+                max_docs=int(site.get("jd_max_docs", 6)),
+                max_total_chars=int(site.get("jd_max_chars", 18000)))
+            if _doc_text:
+                detail_text = (detail_text or f"Title: {job['title']}") + _doc_text
+                print(f"    + {len(_doc_srcs)} JD doc(s) appended for '{job['title'][:40]}'")
         new_jobs.append({
             "title": job["title"],
             "url": job["url"],
@@ -2838,7 +2886,14 @@ def main():
                     state[site_key]["listing_hash"] = result["hash"]
                 else:
                     print(f"    Page content changed! Sending full text to Anthropic...")
-                    llm_result = evaluate_with_anthropic(name, f"Page update on {name}", site["url"], result["text"], is_page_level=True, london_only=site.get("london_only", False))
+                    page_text = result["text"]
+                    if site.get("follow_jd_docs") and result.get("jd_doc_links"):
+                        _pb = lambda u: fetch_bytes(u, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
+                        _dt, _ds = jd_docs.fetch_links_text(result["jd_doc_links"], _pb, max_docs=int(site.get("jd_max_docs", 8)), max_total_chars=int(site.get("jd_max_chars", 20000)))
+                        if _dt:
+                            page_text = page_text + _dt
+                            print(f"    + {len(_ds)} JD doc(s) appended from listing")
+                    llm_result = evaluate_with_anthropic(name, f"Page update on {name}", site["url"], page_text, is_page_level=True, london_only=site.get("london_only", False), max_chars=site.get("eval_max_chars", 10000))
                     llm_err = _consume_error()
                     if llm_result:
                         parsed = parse_gemini_matches(llm_result)
