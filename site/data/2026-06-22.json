@@ -1,7 +1,7 @@
 {
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T08:01:22.934848+00:00",
-  "run_count": 7,
+  "generated_at": "2026-06-22T08:31:09.910994+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Senior Learning Experience Designer",
@@ -16,6 +16,48 @@
       "type": "Full-time, 12-month fixed-term contract",
       "deadline": "28 June 2026",
       "salary": "Up to £70,000"
+    },
+    {
+      "title": "Senior International Safety and Compliance Officer (Maternity Cover)",
+      "organisation": "Conciliation Resources",
+      "url": "https://www.c-r.org/jobs",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "A \"Senior\" safety/compliance role requiring operational security and compliance expertise the candidate lacks, and the senior title implies substantial experience. Although the peacebuilding organisation is on-profile, this specific function is a poor fit and the seniority bar excludes it.",
+      "location": "Not specified",
+      "type": "Contract",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Chair of Trustees",
+      "organisation": "Conciliation Resources",
+      "url": "https://www.c-r.org/jobs",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "A Chair of Trustees is a senior governance/leadership position requiring extensive experience far beyond the candidate's stage. Hard ineligibility on seniority.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Funding Manager",
+      "organisation": "Wellcome Trust",
+      "url": "https://wellcome.wd3.myworkdayjobs.com/job/London/Funding-Manager_R-003369",
+      "match": "medium",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "3",
+      "reason": "Research funding administration is a strong field fit — the candidate's German Rectors' Conference experience (allocating €1.7m of funding to HEIs, managing documentation and stakeholders) maps directly onto grant-lifecycle management, and the Humanities/Social Sciences team is squarely on-profile. The \"Manager\" title and requirement for confident management of complex priorities and stakeholder trust imply a level of professional experience the candidate (student-assistant work only) cannot safely evidence, so it's a stretch rather than a clean entry-level fit. London-based, so the location filter is satisfied.",
+      "location": "London (hybrid, Euston Road)",
+      "type": "Full-time (Permanent)",
+      "deadline": "Monday, 6 July 2026",
+      "salary": "£37,360 - £46,700"
     }
   ]
 }
