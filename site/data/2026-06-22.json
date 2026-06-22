@@ -1,7 +1,7 @@
 {
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T11:01:29.211910+00:00",
-  "run_count": 13,
+  "generated_at": "2026-06-22T11:31:08.013471+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Senior Learning Experience Designer",
@@ -86,6 +86,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Research Engineer, RL Scaling Science",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5264619008",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a deep-technical ML research-engineering role requiring strong empirical reinforcement-learning research, large-scale distributed ML systems, and frontier-scale training experience — squarely the ML/software-engineering gap the candidate cannot substitute for (analysis-level Python only). It sits outside the policy/OSINT zone-c fit and far beyond the candidate's profile on both field and skills.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£375,000–£640,000 GBP"
     }
   ]
 }
