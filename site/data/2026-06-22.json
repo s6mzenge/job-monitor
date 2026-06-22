@@ -1,7 +1,7 @@
 {
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T16:31:16.133229+00:00",
-  "run_count": 24,
+  "generated_at": "2026-06-22T17:01:26.449624+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Senior Learning Experience Designer",
@@ -394,6 +394,20 @@
       "type": "Full-time",
       "deadline": "3rd July 2026",
       "salary": "£60,000 - £70,000 plus £5,441 London Weighting"
+    },
+    {
+      "title": "Policy Futures Programme",
+      "organisation": "IPPR",
+      "url": "https://www.ippr.org/jobs/policy-futures-programme",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "The stated closing date (27 June 2025) is clearly before today (22 June 2026), so the role is treated as closed — exclusion applies. The programme is otherwise a strong entry-level policy-research fit, but it also targets candidates from lower socio-economic / non-traditional backgrounds and excludes those with prior policy-sector experience, which the eligibility framing further complicates.",
+      "location": "Not specified (UK)",
+      "type": "Full-time (12-month fixed term)",
+      "deadline": "Fri 27th Jun 2025 12:30pm",
+      "salary": "£30,000 per year"
     }
   ]
 }

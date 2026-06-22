@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T16:31:16.133229+00:00",
+  "last_updated": "2026-06-22T17:01:26.449624+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -104,6 +104,19 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.smf.co.uk/work-with-us/"
+    },
+    "Asylum Aid": {
+      "site_id": 139,
+      "url": "https://www.asylumaid.org.uk/who-we-are/join-us",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-22T17:01:26.449624+00:00",
+      "last_recent_failure": "2026-06-22T17:01:26.449624+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
     },
     "The King's Fund": {
       "site_id": 146,
@@ -9597,6 +9610,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.actionaid.org.uk%2Fabout-us%2Fpeople-and-culture%2Factionaid-job-vacancies",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-22T17:01:26.449624+00:00",
+      "site": "Asylum Aid",
+      "site_id": 139,
+      "url": "https://www.asylumaid.org.uk/who-we-are/join-us",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
     }
   ]
 }
