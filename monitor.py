@@ -1282,8 +1282,12 @@ def check_playwright(site, seen_urls):
     new_jobs = []
     for job in jobs:
         time.sleep(1)
-        detail_soup = fetch_page(job["url"], proxy=site.get("proxy"))
-        detail_text = extract_text(detail_soup) if detail_soup else ""
+        detail_soup = None
+        if detail_via_pw:
+            detail_text = fetch_detail_playwright(job["url"], detail_wait_sel, wait_ms)
+        else:
+            detail_soup = fetch_page(job["url"], proxy=site.get("proxy"))
+            detail_text = extract_text(detail_soup) if detail_soup else ""
         if follow_docs and detail_soup is not None:
             _scope = detail_soup.select_one(site["detail_selector"].split(",")[0].strip()) if site.get("detail_selector") else detail_soup
             _doc_text, _doc_srcs = jd_docs.gather_jd_text(
