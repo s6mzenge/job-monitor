@@ -1,7 +1,7 @@
 {
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T16:01:23.543174+00:00",
-  "run_count": 23,
+  "generated_at": "2026-06-22T16:31:16.133229+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Senior Learning Experience Designer",
@@ -338,6 +338,62 @@
       "type": "Full-time",
       "deadline": "3rd July 2026",
       "salary": "£85,000 - £100,000 plus £5,441 London Weighting and 15% bonus OTE"
+    },
+    {
+      "title": "Media and Communications Officers (1 x Permanent, 1 x Fixed Term)",
+      "organisation": "Liberty",
+      "url": "https://www.libertyhumanrights.org.uk/work-with-us",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "Human rights is on-profile, but this is a media/comms specialist role requiring proven experience designing and executing high-impact media and digital communications plans — a partial gap for the candidate, who has limited dedicated communications experience. The \"experienced comms professionals\" framing implies established professional experience the candidate lacks.",
+      "location": "London (Westminster, hybrid)",
+      "type": "Full-time (1 Permanent, 1 Fixed Term)",
+      "deadline": "9am Wednesday 8 July 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Policy & Campaigns Officer",
+      "organisation": "Liberty",
+      "url": "https://www.libertyhumanrights.org.uk/work-with-us",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "4",
+      "reason": "Strong core fit — human rights policy and research, influencing decision-makers, producing policy materials and translating complex legal arguments aligns directly with the candidate's international law and policy-research background. No specific years requirement is stated and the role is not labelled senior; the candidate's research and policy-writing skills transfer cleanly. London-based, so location filter passes.",
+      "location": "London (Westminster, hybrid)",
+      "type": "Full-time",
+      "deadline": "9am Wednesday 15 July 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Investigative Journalist (12-Month Fixed Term)",
+      "organisation": "Liberty",
+      "url": "https://www.libertyhumanrights.org.uk/work-with-us",
+      "match": "medium",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "The focus on AI technology in UK policing and human rights accountability is on-profile and overlaps with the candidate's tech-policy and OSINT-adjacent interests, but the role demands established investigative-journalism craft (newsgathering, contact-building) the candidate has not demonstrated professionally. A plausible stretch rather than a clean fit.",
+      "location": "London (Westminster, hybrid)",
+      "type": "Contract (12-month Fixed Term)",
+      "deadline": "9am Monday 6 July 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Data Scientist",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Senior-Data-Scientist/41299-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior machine-learning engineering role requiring production ML model deployment, SQL at scale, and a maths/stats/CS degree — a deep-technical data science function entirely outside the candidate's policy/research profile and analysis-level Python. The \"Senior\" title and ML-in-production essentials are also a hard seniority and skills mismatch.",
+      "location": "London, GBR (TVC, 2 days/week in office)",
+      "type": "Full-time",
+      "deadline": "3rd July 2026",
+      "salary": "£60,000 - £70,000 plus £5,441 London Weighting"
     }
   ]
 }
