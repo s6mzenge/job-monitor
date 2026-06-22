@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T07:31:12.012570+00:00",
+  "last_updated": "2026-06-22T08:01:22.934848+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -44,10 +44,10 @@
       "site_id": 102,
       "url": "https://palestinecampaign.org/about/opportunities/",
       "method": "html",
-      "consecutive_failures": 8,
-      "total_recent_failures": 43,
+      "consecutive_failures": 9,
+      "total_recent_failures": 44,
       "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
-      "last_recent_failure": "2026-06-22T07:31:12.012570+00:00",
+      "last_recent_failure": "2026-06-22T08:01:22.934848+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -9505,6 +9505,27 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
       "consecutive_count": 8
+    },
+    {
+      "timestamp": "2026-06-22T08:01:22.934848+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
+      "consecutive_count": 9
+    },
+    {
+      "timestamp": "2026-06-22T08:01:22.934848+00:00",
+      "site": "Wellcome Trust",
+      "site_id": 112,
+      "url": "https://wellcome.wd3.myworkdayjobs.com/en-GB/Wellcome",
+      "method": "workday_api",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 529: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"Overloaded\"},\"request_id\":\"req_011CcHxCUmaZXr6yZfZfCDJ9\"}",
+      "job_title": "Funding Manager",
+      "job_url": "https://wellcome.wd3.myworkdayjobs.com/job/London/Funding-Manager_R-003369"
     }
   ]
 }
