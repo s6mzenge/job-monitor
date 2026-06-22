@@ -118,7 +118,9 @@
       "method": "html",
       "selector": "div#job-listings",
       "link_selector": "div.j-search-result__text a[href*='/job/']",
-      "base_url": "https://www.jobs.ac.uk"
+      "base_url": "https://www.jobs.ac.uk",
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 7,
@@ -346,7 +348,9 @@
       "method": "html",
       "selector": "div.entry-content, article",
       "link_selector": "div.entry-content a",
-      "base_url": "https://fabians.org.uk"
+      "base_url": "https://fabians.org.uk",
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 25,
@@ -463,7 +467,9 @@
       "method": "html",
       "selector": "main#maincontent",
       "link_selector": "div.vacancylistrow a",
-      "base_url": "https://jobs.mdx.ac.uk"
+      "base_url": "https://jobs.mdx.ac.uk",
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 36,
@@ -496,7 +502,9 @@
       "method": "html",
       "selector": "div.wpgb-grid-70",
       "link_selector": "div.wpgb-grid-70 h3.wpgb-block-3 a",
-      "base_url": "https://www.integrityglobal.com"
+      "base_url": "https://www.integrityglobal.com",
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 39,
@@ -636,7 +644,9 @@
       "method": "html",
       "selector": "div.searchresults",
       "link_selector": "div.jobpost h2 a",
-      "base_url": "https://jobs.gold.ac.uk"
+      "base_url": "https://jobs.gold.ac.uk",
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 53,
@@ -677,7 +687,9 @@
       "method": "html",
       "selector": "div.entry-content",
       "link_selector": "",
-      "base_url": "https://www.ceasefire.org"
+      "base_url": "https://www.ceasefire.org",
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 55,
@@ -1100,7 +1112,9 @@
       "selector": "",
       "link_selector": "a[href*='waronwant.org/jobs/']",
       "base_url": "https://waronwant.org",
-      "london_only": true
+      "london_only": true,
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 84,
@@ -1130,7 +1144,9 @@
       "selector": ".block.accordion",
       "base_url": "https://www.libertyhumanrights.org.uk",
       "link_selector": "",
-      "london_only": true
+      "london_only": true,
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 87,
@@ -1365,7 +1381,9 @@
       "link_selector": "a[href*='/about-caat/jobs-and-volunteering/']",
       "base_url": "https://caat.org.uk",
       "scope_links": true,
-      "london_only": true
+      "london_only": true,
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 107,
@@ -1692,7 +1710,9 @@
       "link_selector": "a[href*='cadence-jrf.co.uk']",
       "london_only": true,
       "tls_impersonate": true,
-      "skip_detail_fetch": true
+      "skip_detail_fetch": true,
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 130,
@@ -1713,7 +1733,9 @@
       "link_selector": "",
       "base_url": "https://www.antislavery.org",
       "london_only": true,
-      "tls_impersonate": true
+      "tls_impersonate": true,
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 133,
@@ -1745,7 +1767,9 @@
       "selector": "main, article, div.entry-content",
       "link_selector": "",
       "base_url": "https://www.thinknpc.org",
-      "london_only": true
+      "london_only": true,
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 137,
