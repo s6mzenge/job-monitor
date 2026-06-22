@@ -1,7 +1,7 @@
 {
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T13:01:19.182371+00:00",
-  "run_count": 17,
+  "generated_at": "2026-06-22T13:31:11.908527+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Senior Learning Experience Designer",
@@ -128,6 +128,62 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Embedded Security Intelligence Analyst - Mid Level",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/8FE8B0BB95",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "Security/geopolitical intelligence analysis at Control Risks is core to the candidate's targets, but the role requires 3–4 years of professional experience as a hard requirement, which the candidate (student-assistant work only) does not have. The mid-level seniority bar forces a Low.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Business Analyst",
+      "organisation": "The Economist Group",
+      "url": "https://job-boards.eu.greenhouse.io/theeconomistgroup/jobs/4873121101",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior finance-transformation / ERP business analyst role centred on financial workflows, billing and accounting data — entirely off the candidate's IR/policy/research profile. It also demands deep finance domain expertise the candidate lacks, and the \"Senior\" title with extensive transformation experience is far above their entry-level stage.",
+      "location": "London",
+      "type": "Contract (12-month FTC)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Social Impact Programme Coordinator",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Social-Impact-Programme-Coordinator/1370198533",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "This is a CSR / social-impact programme coordination role centred on event logistics, stakeholder management and programme administration — outside the candidate's policy/IR/intelligence profile (FIELD 2 forces Low). While the candidate's project-administration and funding-coordination experience is genuinely transferable, the work itself is not on-profile, and it leans toward events/community-engagement experience the candidate lacks.",
+      "location": "London, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Social Media Coordinator, Publishing",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Social-Media-Coordinator%2C-Publishing/46387-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "This is a social media publishing role for BBC TV entertainment accounts — pure content/comms work with no connection to policy, IR, security or research. The candidate lacks the essential social media publishing/optimisation experience, and the field is a clear mismatch for an LSE IR-research profile.",
+      "location": "London, GBR",
+      "type": "Full-time / Fixed-term until 28/01/2027",
+      "deadline": "25 June 2026",
+      "salary": "£25,700 - £29,167"
     }
   ]
 }
