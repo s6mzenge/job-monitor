@@ -1,7 +1,7 @@
 {
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T17:31:13.265594+00:00",
-  "run_count": 26,
+  "generated_at": "2026-06-22T21:49:15.363637+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Senior Learning Experience Designer",
@@ -408,6 +408,76 @@
       "type": "Full-time (12-month fixed term)",
       "deadline": "Fri 27th Jun 2025 12:30pm",
       "salary": "£30,000 per year"
+    },
+    {
+      "title": "Head of Administration (M/F/D)",
+      "organisation": "Goethe-Institut UK",
+      "url": "https://www.goethe.de/ins/gb/en/ueb/kar/lvo.html",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a \"Head of Administration\" role centred on finance, accounting (SAP/HGB), payroll and HR — an off-profile administrative leadership function with no policy/IR/research content. It requires relevant professional administration experience and management skills the candidate lacks, and a \"Head\" title implies seniority well beyond entry level.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "2026-07-09",
+      "salary": "£44,088.48 – £46,773.48 per annum"
+    },
+    {
+      "title": "Receptionist (Zero-Hours Contract, Cover Staff)",
+      "organisation": "Goethe-Institut UK",
+      "url": "https://www.goethe.de/ins/gb/en/ueb/kar/asr.html",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "This is a front-desk reception role with no policy, research or intelligence content — off the candidate's profile entirely (FIELD mismatch). It is also a zero-hours cover position explicitly aimed at students/freelancers, which functions as a study-time position rather than a genuine entry-level job.",
+      "location": "London",
+      "type": "Part-time (Zero-Hours Contract)",
+      "deadline": "3 July 2026",
+      "salary": "£15.50/hour plus 17.12% holiday pay"
+    },
+    {
+      "title": "Grünes Diplom",
+      "organisation": "Goethe-Institut UK",
+      "url": "https://www.goethe.de/ins/gb/en/ueb/kar/gdn.html",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "This is a teacher-training/certification programme for German-as-a-foreign-language instructors, not a research, policy or intelligence role — entirely off the candidate's profile. The candidate must also pay a financial contribution for the modules, so it is effectively a paid training scheme rather than an entry-level job.",
+      "location": "London / Glasgow, UK",
+      "type": "Not specified (training/certification programme)",
+      "deadline": "Not specified",
+      "salary": "Not specified (candidate pays for DLL modules)"
+    },
+    {
+      "title": "Internships in Glasgow",
+      "organisation": "Goethe-Institut UK",
+      "url": "https://www.goethe.de/ins/gb/en/ueb/kar/ing.html",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "There is no live advertised vacancy — the application procedure is being revised and applications are not being accepted, making this a non-open posting rather than a concrete role. The cultural-institute internship is also off the candidate's policy/research profile.",
+      "location": "Glasgow, UK",
+      "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Internships in London",
+      "organisation": "Goethe-Institut UK",
+      "url": "https://www.goethe.de/ins/gb/en/ueb/kar/prl.html",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This internship is explicitly restricted to students whose study programme requires a compulsory internship and offers only a small expense allowance (€450/month), not a salary — both trigger exclusions (student-aimed placement and stipend-in-lieu-of-salary). The available departments (language education, communications/marketing, cultural events, admin/finance) are also off the candidate's IR/policy/risk profile.",
+      "location": "London, United Kingdom",
+      "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "€450/month (full-time) / €225/month (part-time) expense allowance"
     }
   ]
 }
