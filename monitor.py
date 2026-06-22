@@ -1276,11 +1276,23 @@ def check_playwright(site, seen_urls):
             jobs.append({"title": title, "url": full_url})
             seen_in_batch.add(full_url)
 
+    follow_docs = site.get("follow_jd_docs")
+    def _pw_doc_bytes(u):
+        return fetch_bytes(u, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
     new_jobs = []
     for job in jobs:
         time.sleep(1)
         detail_soup = fetch_page(job["url"], proxy=site.get("proxy"))
         detail_text = extract_text(detail_soup) if detail_soup else ""
+        if follow_docs and detail_soup is not None:
+            _scope = detail_soup.select_one(site["detail_selector"].split(",")[0].strip()) if site.get("detail_selector") else detail_soup
+            _doc_text, _doc_srcs = jd_docs.gather_jd_text(
+                _scope or detail_soup, job["url"], _pw_doc_bytes,
+                max_docs=int(site.get("jd_max_docs", 6)),
+                max_total_chars=int(site.get("jd_max_chars", 20000)))
+            if _doc_text:
+                detail_text = (detail_text or f"Title: {job['title']}") + _doc_text
+                print(f"    + {len(_doc_srcs)} JD doc(s) appended for '{job['title'][:40]}'")
         new_jobs.append({
             "title": job["title"],
             "url": job["url"],
@@ -1429,6 +1441,12 @@ def check_hireserve(site, seen_urls):
                 page_text = extract_text(detail_soup)
                 if len(page_text) > len(detail_text):
                     detail_text = f"Title: {title}\nBusiness Unit: {business_unit}\nClosing: {closing}\n\n{page_text}"
+                if site.get("follow_jd_docs"):
+                    _hb = lambda u: fetch_bytes(u, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
+                    _dt, _ds = jd_docs.gather_jd_text(detail_soup, job_url, _hb, max_docs=int(site.get("jd_max_docs", 6)), max_total_chars=int(site.get("jd_max_chars", 20000)))
+                    if _dt:
+                        detail_text = detail_text + _dt
+                        print(f"    + {len(_ds)} JD doc(s) appended for '{title[:40]}'")
 
         new_jobs.append({
             "title": title,
