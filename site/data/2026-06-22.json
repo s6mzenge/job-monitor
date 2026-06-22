@@ -1,7 +1,7 @@
 {
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T14:01:24.834394+00:00",
-  "run_count": 19,
+  "generated_at": "2026-06-22T14:31:19.028723+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Senior Learning Experience Designer",
@@ -212,6 +212,34 @@
       "type": "Full-time",
       "deadline": "06 July 2026",
       "salary": "£53,949–£69,073 pa inclusive"
+    },
+    {
+      "title": "Lecturer in War and Security (Teaching & Scholarship)",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRZ531/lecturer-in-war-and-security-teaching-and-scholarship",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "War and Security is core to the candidate's IR/security profile, but the role explicitly requires a completed PhD and HE teaching experience — a hard ineligibility (candidate is MSc-in-progress). The Lecturer title and salary also signal a level well beyond entry.",
+      "location": "London",
+      "type": "Full-time (Fixed-Term/Contract)",
+      "deadline": "6th July 2026",
+      "salary": "£51,755 to £60,901 per annum"
+    },
+    {
+      "title": "Head of Research and Analysis",
+      "organisation": "IISS",
+      "url": "https://www.iiss.org/careers/jobs/2026/06/head-of-research-and-analysis",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "IISS research on security and defence is core to the candidate's profile, but a \"Head of\" title requires substantial senior leadership and management experience the candidate (student/RA roles only) does not have. Hard ineligibility on seniority.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
