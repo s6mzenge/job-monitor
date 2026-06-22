@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T10:31:13.430257+00:00",
+  "last_updated": "2026-06-22T11:01:29.211910+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -44,10 +44,10 @@
       "site_id": 102,
       "url": "https://palestinecampaign.org/about/opportunities/",
       "method": "html",
-      "consecutive_failures": 14,
-      "total_recent_failures": 49,
+      "consecutive_failures": 15,
+      "total_recent_failures": 50,
       "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
-      "last_recent_failure": "2026-06-22T10:31:13.430257+00:00",
+      "last_recent_failure": "2026-06-22T11:01:29.211910+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -92,19 +92,6 @@
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.article19.org/careers/"
     },
-    "Airwars": {
-      "site_id": 133,
-      "url": "https://airwars.org/about/workwithus/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-22T10:31:13.430257+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
-    },
     "Social Market Foundation": {
       "site_id": 135,
       "url": "https://www.smf.co.uk/work-with-us/",
@@ -133,16 +120,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-23T11:00:54.867724+00:00",
-      "site": "Global Rights Compliance",
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    23 × waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n       - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-23T13:30:47.046035+00:00",
       "site": "Aegis Trust",
@@ -9599,6 +9576,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-22T11:01:29.211910+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
+      "consecutive_count": 15
     }
   ]
 }
