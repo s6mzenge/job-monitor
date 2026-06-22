@@ -1890,7 +1890,8 @@
       "link_selector": "a[href*='applytojob.com']",
       "wait_selector": "a[href*='applytojob.com']",
       "detail_via_playwright": true,
-      "london_only": true
+      "london_only": true,
+      "wait_until": "domcontentloaded"
     }
   ]
 }
