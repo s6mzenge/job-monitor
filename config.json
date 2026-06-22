@@ -678,7 +678,9 @@
           "title": "title",
           "url": "weblink"
         }
-      }
+      },
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 54,
@@ -1231,7 +1233,9 @@
       "wait_selector": "a[href*='/jobs/vacancy/']",
       "wait_ms": 6000,
       "london_only": true,
-      "wait_timeout": 30000
+      "wait_timeout": 30000,
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
     },
     {
       "id": 93,
