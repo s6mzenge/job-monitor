@@ -1,6 +1,21 @@
 {
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T07:01:19.563386+00:00",
-  "run_count": 5,
-  "jobs": []
+  "generated_at": "2026-06-22T07:31:12.012570+00:00",
+  "run_count": 6,
+  "jobs": [
+    {
+      "title": "Senior Learning Experience Designer",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Senior-Learning-Experience-Designer/44990-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior instructional/learning experience design role requiring specialist curriculum development, educational technology and design expertise — entirely off the candidate's IR/policy/intelligence profile. It is explicitly senior, demanding leadership, mentoring and end-to-end design experience the candidate lacks. London is offered, so location is fine, but field, skills and seniority all fail.",
+      "location": "Any BBC location (London among Cardiff, Glasgow, Newcastle, Salford)",
+      "type": "Full-time, 12-month fixed-term contract",
+      "deadline": "28 June 2026",
+      "salary": "Up to £70,000"
+    }
+  ]
 }
