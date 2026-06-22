@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T05:31:15.614744+00:00",
+  "last_updated": "2026-06-22T06:01:22.136642+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -44,10 +44,10 @@
       "site_id": 102,
       "url": "https://palestinecampaign.org/about/opportunities/",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 39,
+      "consecutive_failures": 5,
+      "total_recent_failures": 40,
       "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
-      "last_recent_failure": "2026-06-22T05:31:15.614744+00:00",
+      "last_recent_failure": "2026-06-22T06:01:22.136642+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -9555,6 +9555,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
       "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-06-22T06:01:22.136642+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
+      "consecutive_count": 5
     }
   ]
 }
