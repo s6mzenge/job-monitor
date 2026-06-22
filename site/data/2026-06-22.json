@@ -1,7 +1,7 @@
 {
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T13:31:11.908527+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-22T14:01:24.834394+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Senior Learning Experience Designer",
@@ -184,6 +184,34 @@
       "type": "Full-time / Fixed-term until 28/01/2027",
       "deadline": "25 June 2026",
       "salary": "£25,700 - £29,167"
+    },
+    {
+      "title": "Associate Lecturer - Philosophy",
+      "organisation": "Birkbeck, University of London",
+      "url": "https://cis7.bbk.ac.uk/vacancy/associate-lecturer-philosophy-614092.html",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The role requires a PhD (or near-completion) in Philosophy, which the candidate does not hold — a hard ineligibility on both seniority and the PhD exclusion rule. It also demands HE teaching experience and specialist philosophy expertise (epistemology, metaphysics, philosophy of AI) outside the candidate's IR profile.",
+      "location": "London",
+      "type": "Part-time",
+      "deadline": "2026-07-12",
+      "salary": "£69.68 per hour"
+    },
+    {
+      "title": "Senior Technical Business Analyst",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/3349/0/469897/15539/senior-technical-business-analyst",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a technical business-analyst role focused on API/data integration, BPMN process design and technical system delivery — entirely off the candidate's policy/research profile. It requires a recognised BA qualification (IIBA/BCS) or at least 5 years' practical BA experience as a hard essential, which the candidate fails, and the \"Senior\" title expects management/mentoring. Multiple exclusions apply (3+ years hard requirement, off-profile field).",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "06 July 2026",
+      "salary": "£53,949–£69,073 pa inclusive"
     }
   ]
 }
