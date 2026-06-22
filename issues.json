@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T17:01:26.449624+00:00",
+  "last_updated": "2026-06-22T17:31:13.265594+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -104,19 +104,6 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.smf.co.uk/work-with-us/"
-    },
-    "Asylum Aid": {
-      "site_id": 139,
-      "url": "https://www.asylumaid.org.uk/who-we-are/join-us",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-06-22T17:01:26.449624+00:00",
-      "last_recent_failure": "2026-06-22T17:01:26.449624+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
     },
     "The King's Fund": {
       "site_id": 146,
