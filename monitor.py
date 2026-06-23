@@ -1948,6 +1948,10 @@ def check_recruitee(site, seen_urls):
     offers = data.get("offers", []) if isinstance(data, dict) else []
     print(f"    API returned {len(offers)} offer(s)")
 
+    follow_docs = site.get("follow_jd_docs")
+    def _doc_bytes(u):
+        return fetch_bytes(u, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
+
     new_jobs = []
     for o in offers:
         title = o.get("title", "Untitled")
@@ -1956,8 +1960,24 @@ def check_recruitee(site, seen_urls):
         if not job_url or job_url in seen_urls:
             continue
         body = (o.get("description") or "") + "\n" + (o.get("requirements") or "")
-        body_text = BeautifulSoup(body, "html.parser").get_text(separator="\n", strip=True)
+        body_soup = BeautifulSoup(body, "html.parser")
+        body_text = body_soup.get_text(separator="\n", strip=True)
+
+        doc_text = ""
+        if follow_docs:
+            doc_text, doc_srcs = jd_docs.gather_jd_text(
+                body_soup, job_url, _doc_bytes,
+                max_docs=int(site.get("jd_max_docs", 6)),
+                max_total_chars=int(site.get("jd_max_chars", 20000)))
+            if doc_srcs:
+                print(f"    + {len(doc_srcs)} JD doc(s) for '{title[:40]}'")
+
+        # PDF-priority: header, then the linked JD (if any), then the on-page
+        # text. The JD leads, so a downstream detail_text[:max_chars] cut can
+        # only drop the trailing on-page summary -- never the JD.
         detail_text = f"Title: {title}\nLocation: {loc}"
+        if doc_text:
+            detail_text += doc_text
         if body_text.strip():
             detail_text += "\n\n" + body_text
         new_jobs.append({"title": title, "url": job_url, "detail_text": detail_text})
