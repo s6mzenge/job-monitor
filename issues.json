@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T14:01:28.440906+00:00",
+  "last_updated": "2026-06-23T14:31:20.655922+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -9567,6 +9567,27 @@
       "type": "fetch_error",
       "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f8097b48b00>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-23T14:31:20.655922+00:00",
+      "site": "Institute for Government",
+      "site_id": 46,
+      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 500: {\"type\":\"error\",\"error\":{\"type\":\"api_error\",\"message\":\"Internal server error\"},\"request_id\":\"req_011CcLMXR2p791yK9Ar8wRyx\"}",
+      "job_title": "Director, UK Government",
+      "job_url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies/director-uk-government"
+    },
+    {
+      "timestamp": "2026-06-23T14:31:20.655922+00:00",
+      "site": "Global Witness",
+      "site_id": 137,
+      "url": "https://globalwitness.org/en/careers/current-vacancies/",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 500: {\"type\":\"error\",\"error\":{\"type\":\"api_error\",\"message\":\"Internal server error\"},\"request_id\":\"req_011CcLMgqwX5RiDNnyf6Z2ps\"}",
+      "scope": "page_level"
     }
   ]
 }
