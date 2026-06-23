@@ -1,7 +1,7 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T09:01:21.008154+00:00",
-  "run_count": 9,
+  "generated_at": "2026-06-23T09:31:12.788004+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Recruiter, G&A or GTM",
@@ -198,6 +198,20 @@
       "type": "Not specified (trustee/board, unpaid)",
       "deadline": "Friday 10 July 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Investment Manager",
+      "organisation": "Paul Hamlyn Foundation",
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior investment/finance role at a high salary band, entirely off the candidate's IR-research and policy profile and requiring specialist investment-management expertise they do not have. Field, skills and seniority all fail.",
+      "location": "Not specified",
+      "type": "Full-time",
+      "deadline": "Monday 29 June",
+      "salary": "circa £90,000-£150,000 per annum"
     }
   ]
 }
