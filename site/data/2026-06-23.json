@@ -1,7 +1,7 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T09:31:12.788004+00:00",
-  "run_count": 10,
+  "generated_at": "2026-06-23T10:31:10.753236+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Recruiter, G&A or GTM",
@@ -212,6 +212,34 @@
       "type": "Full-time",
       "deadline": "Monday 29 June",
       "salary": "circa £90,000-£150,000 per annum"
+    },
+    {
+      "title": "Postdoctoral Research Associate (EDGE)",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRX199/postdoctoral-research-associate-edge",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Field aligns with European studies and democratic support research, but this is a Postdoctoral Research Associate role that requires a completed PhD, which the candidate (currently MSc) does not hold. Hard ineligibility on seniority/qualification.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "12th July 2026",
+      "salary": "£45,031 to £52,514"
+    },
+    {
+      "title": "Global Communications Strategy Manager (4249)",
+      "organisation": "Amnesty International",
+      "url": "https://careers.amnesty.org/jobs/vacancy/global-communications-strategy-manager-4249/4277/description",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior communications/marketing strategy role requiring 6+ years in communications, advertising or creative work — a hard experience bar the candidate cannot meet, plus a Manager title with budget management and stakeholder negotiation responsibilities. The function (brand/marketing comms) is off the candidate's research/policy profile despite the human-rights mission, and the candidate lacks the dedicated comms/marketing-campaign experience required.",
+      "location": "London",
+      "type": "Fixed Term Contract (13 months)",
+      "deadline": "7 July 2026",
+      "salary": "GBP 61,369 per annum"
     }
   ]
 }
