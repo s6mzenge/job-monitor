@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-06-23T11:01:37.316970+00:00",
+  "last_updated": "2026-06-23T11:31:11.931033+00:00",
   "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 19,
-      "first_recent_failure": "2026-05-24T13:01:04.528001+00:00",
-      "last_recent_failure": "2026-06-23T11:01:37.316970+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f8097b48b00>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))"
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",

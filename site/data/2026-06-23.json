@@ -1,7 +1,7 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T11:01:37.316970+00:00",
-  "run_count": 12,
+  "generated_at": "2026-06-23T11:31:11.931033+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Recruiter, G&A or GTM",
@@ -282,6 +282,20 @@
       "type": "Full-time (fixed term, 18 months)",
       "deadline": "19 July 2026",
       "salary": "£32,890–£38,422 pa inclusive"
+    },
+    {
+      "title": "Development Manager - ASB",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/5913/0/470748/15539/development-manager-asb",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is a business-development / commercial role focused on building an academic speakers bureau — sales, client relationship management, marketing and promotional design — not policy, IR, intelligence or research work, so the field is off-profile. Several essential criteria (business-development experience, marketing/communications including social media, promotional material design) are areas where the candidate has limited or no experience, capping skills. Although graduate-accessible and London-based, the field and skills mismatches drive a Low.",
+      "location": "London",
+      "type": "Full-time (fixed-term, 3 years)",
+      "deadline": "08 July 2026",
+      "salary": "£43,277 to £51,714 pa (potential to £55,497) inclusive of London allowance"
     }
   ]
 }
