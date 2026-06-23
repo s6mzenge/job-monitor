@@ -1,7 +1,7 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T12:31:14.521082+00:00",
-  "run_count": 15,
+  "generated_at": "2026-06-23T13:01:19.702572+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Recruiter, G&A or GTM",
@@ -296,6 +296,20 @@
       "type": "Full-time (fixed-term, 3 years)",
       "deadline": "08 July 2026",
       "salary": "£43,277 to £51,714 pa (potential to £55,497) inclusive of London allowance"
+    },
+    {
+      "title": "Lecturer in Security Studies (Economic Statecraft)",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DRZ928/lecturer-in-security-studies-economic-statecraft",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Security studies and economic statecraft are core to the candidate's field, but this is a faculty Lecturer post requiring an established publication track record, PhD-level expertise, and the ability to supervise PhD students and secure external funding. The candidate is mid-MSc with no PhD — hard ineligibility on seniority and the implicit doctoral requirement.",
+      "location": "London",
+      "type": "Full-time (Fixed-Term until 31 August 2029)",
+      "deadline": "5th July 2026",
+      "salary": "£45,031 to £52,514 per annum including London Weighting"
     }
   ]
 }
