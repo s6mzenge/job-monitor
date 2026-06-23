@@ -1,7 +1,7 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T13:31:17.733825+00:00",
-  "run_count": 17,
+  "generated_at": "2026-06-23T14:01:28.440906+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Recruiter, G&A or GTM",
@@ -310,6 +310,20 @@
       "type": "Full-time (Fixed-Term until 31 August 2029)",
       "deadline": "5th July 2026",
       "salary": "£45,031 to £52,514 per annum including London Weighting"
+    },
+    {
+      "title": "Associate Tutor - Criminology",
+      "organisation": "Birkbeck, University of London",
+      "url": "https://cis7.bbk.ac.uk/vacancy/associate-tutor-criminology-614167.html",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "Criminology and social theory teaching is adjacent to the candidate's critical-theory and social-science interests but not core IR/policy/intelligence work. The essential criteria require specialist disciplinary knowledge in criminology and a qualification \"to the corresponding level of the award as required to teach\" — the candidate holds neither a criminology background nor teaching qualification, capping skills. This is part-time fixed-term hourly seminar teaching rather than an entry-level research role on profile.",
+      "location": "London (Bloomsbury)",
+      "type": "Part-time",
+      "deadline": "2026-07-12",
+      "salary": "£61.39 per hour"
     }
   ]
 }
