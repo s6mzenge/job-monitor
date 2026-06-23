@@ -1,7 +1,7 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T16:31:20.895390+00:00",
-  "run_count": 23,
+  "generated_at": "2026-06-23T17:02:25.116058+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Recruiter, G&A or GTM",
@@ -366,6 +366,20 @@
       "type": "Not specified",
       "deadline": "15 July 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Senior Research Manager, Mitigation (Climate & Health)",
+      "organisation": "Wellcome Trust",
+      "url": "https://wellcome.wd3.myworkdayjobs.com/job/London/Senior-Research-Manager--Mitigation--Climate---Health-_R-003384",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior, leadership-level role requiring significant research expertise in climate-and-health economics with energy-sector and impact-evaluation methods — none of which the candidate possesses, and the field (health/climate economics) is off-profile. The \"Senior Manager\" title and demand for significant experience are a hard seniority barrier for a candidate with only student/RA work.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Sunday, 12 July 2026",
+      "salary": "£52,160 - £65,200"
     }
   ]
 }
