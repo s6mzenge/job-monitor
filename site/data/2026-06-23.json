@@ -1,7 +1,7 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T08:31:18.637307+00:00",
-  "run_count": 8,
+  "generated_at": "2026-06-23T09:01:21.008154+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Recruiter, G&A or GTM",
@@ -141,6 +141,62 @@
       "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Media and Communications Officers (two roles)",
+      "organisation": "Liberty",
+      "url": "https://www.libertyhumanrights.org.uk/work-with-us",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "Comms role attached to a human-rights organisation is field-adjacent, but the Essential criteria require a minimum of three years' communications/PR experience plus press-office experience the candidate lacks — a hard essential the candidate fails, capping skills and triggering the 3+ years exclusion. London location is satisfied.",
+      "location": "London (Westminster, hybrid)",
+      "type": "Full-time (one permanent, one 2-year fixed term)",
+      "deadline": "9am Wednesday 8 July 2026",
+      "salary": "£43,918"
+    },
+    {
+      "title": "Policy & Campaigns Officer",
+      "organisation": "Liberty",
+      "url": "https://www.libertyhumanrights.org.uk/work-with-us",
+      "match": "medium",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "4",
+      "reason": "Strong core fit — human rights/civil liberties policy research, influencing decision-makers, and translating legal/policy arguments map directly onto the candidate's IR/international-law background and policy-writing skills. The posting asks for policy and research experience in human rights or a related field but states no hard years bar, so it is a credible stretch rather than a safe entry-level fit. London location satisfied.",
+      "location": "London (Westminster, hybrid)",
+      "type": "Full-time",
+      "deadline": "9am Wednesday 15 July 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Investigative Journalist (12-Month Fixed Term)",
+      "organisation": "Liberty",
+      "url": "https://www.libertyhumanrights.org.uk/work-with-us",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "The focus on AI in UK policing/public authorities is on-profile (tech/rights, OSINT-adjacent), but this is a dedicated investigative-journalism role requiring established newsgathering, contact-building and reporting experience the candidate does not have. The required journalism craft is a skills gap that caps the match.",
+      "location": "London (Westminster, hybrid)",
+      "type": "Contract (12-month fixed term)",
+      "deadline": "9am Monday 6 July 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Trustee positions with the Civil Liberties Trust",
+      "organisation": "Liberty",
+      "url": "https://www.libertyhumanrights.org.uk/work-with-us",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Trustee board positions are unpaid governance roles requiring senior expertise in grant-making, property management/law, philanthropy networks and not-for-profit governance — none of which the candidate has. Unpaid governance role and senior-level requirements both force Low.",
+      "location": "Not specified",
+      "type": "Not specified (trustee/board, unpaid)",
+      "deadline": "Friday 10 July 2026",
       "salary": "Not specified"
     }
   ]
