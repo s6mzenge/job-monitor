@@ -1,0 +1,91 @@
+{
+  "date": "2026-06-23",
+  "generated_at": "2026-06-23T05:01:20.802697+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Recruiter, G&A or GTM",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5270272008",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a recruiting / talent-acquisition role (HR function), which is off the candidate's profile regardless of Anthropic's AI-policy prestige. It also requires a track record of full-cycle recruiting (preferred 4+ years) that the candidate does not have. Field mismatch on the function plus a seniority gap.",
+      "location": "London, UK; Dublin, IE",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£105,000–£145,000 GBP"
+    },
+    {
+      "title": "Lead Assessor (Social Compliance Auditor)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Mumbai-Lead-Assessor-400059/1368010233",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a social-compliance auditing role requiring specialist auditor certifications (APSCA/CSCA, SA8000) and 3–4 years of audit experience with 200+ verifiable audit days — well outside the candidate's research/policy profile and experience level. The \"Lead\" title and experience expectations also place it above entry-level. Field, skills and seniority all fail.",
+      "location": "Mumbai, India",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Technical Reviewer",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Senior-Technical-Reviewer-400-093/1396936533",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a welding/engineering certification role requiring an Engineering degree, 4–6 years' experience and an International Welding Engineer qualification — entirely outside the candidate's IR/policy profile. Senior title with hard experience and specialist technical/licensing requirements the candidate cannot meet.",
+      "location": "Mumbai, India",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Strategic Program Manager, Worker Survey",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Strategic-Program-Manager%2C-Worker-Survey/1368497833",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a commercial program-management and business-development role in ESG/CSR — only adjacent to the candidate's policy profile and centred on client engagement rather than research. It also explicitly requires a minimum of 5 years' experience (a hard 3+ bar) and a \"Manager\" title, which the candidate cannot meet; hard ineligibility on seniority/experience.",
+      "location": "Hong Kong",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Report Reviewer",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Mumbai-Lead-Report-Reviewer-400-093/1386781133",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a quality-assurance role reviewing responsible-sourcing/ESG audit reports for technical completeness — not policy, IR, intelligence or research work, so it sits off the candidate's profile. The \"Lead\" title and expected audit/ESG/compliance experience also exceed the candidate's entry-level stage.",
+      "location": "Mumbai / Delhi, India",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "LGBT Rights Program (ECA) Intern",
+      "organisation": "Human Rights Watch",
+      "url": "https://job-boards.greenhouse.io/humanrightswatch/jobs/8603690002",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "Field fit is strong (human rights research and law/policy monitoring), but the role is excluded on multiple grounds: it requires an enrolled student eligible for a mandatory pflichtpraktikum (a study-time internship, not genuine entry-level), offers only a stipend rather than a salary, and is based in Berlin while the location policy is London only. Any of these forces a Low.",
+      "location": "Berlin, Germany",
+      "type": "Internship",
+      "deadline": "2 August 2026",
+      "salary": "EUR 556 gross monthly stipend"
+    }
+  ]
+}
