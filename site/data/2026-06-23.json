@@ -1,7 +1,7 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T10:31:10.753236+00:00",
-  "run_count": 11,
+  "generated_at": "2026-06-23T11:01:37.316970+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Recruiter, G&A or GTM",
@@ -240,6 +240,48 @@
       "type": "Fixed Term Contract (13 months)",
       "deadline": "7 July 2026",
       "salary": "GBP 61,369 per annum"
+    },
+    {
+      "title": "Lecturer: Counselling Psychology (AC.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106537&p_spid=5158846",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a counselling psychology academic post requiring a PhD, a Master's in counselling psychology, and HPCSA registration as a Counselling Psychologist — all hard ineligibilities the candidate lacks. The field (clinical/counselling psychology) is also entirely off the candidate's IR/policy profile.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time (permanent)",
+      "deadline": "23 July 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer: Educational Psychology (AC.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106535&p_spid=5158844",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Requires a PhD in Educational Psychology plus HPCSA registration as an Educational Psychologist and tertiary teaching experience — multiple hard ineligibilities (PhD requirement and clinical-practice registration the candidate lacks). The field (educational psychology) is also entirely off the candidate's IR/policy profile.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "23 July 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Programmes Coordinator",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/4043/0/470741/15539/programmes-coordinator",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "This is a student-services and events administration role, not policy, research or intelligence work, so it falls off the candidate's core profile (FIELD ≤ 2 forces Low). The administrative and IT skills are within reach, and the level is entry-appropriate, but the function is generic university front-line support rather than substantive research.",
+      "location": "London",
+      "type": "Full-time (fixed term, 18 months)",
+      "deadline": "19 July 2026",
+      "salary": "£32,890–£38,422 pa inclusive"
     }
   ]
 }
