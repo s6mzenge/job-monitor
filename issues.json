@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-06-23T15:31:25.187512+00:00",
+  "last_updated": "2026-06-23T16:01:36.472008+00:00",
   "site_summary": {
-    "Protection Approaches": {
-      "site_id": 31,
-      "url": "https://protectionapproaches.org/current-vacancies",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-06-14T11:44:38.676957+00:00",
-      "last_recent_failure": "2026-06-23T15:31:25.187512+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
