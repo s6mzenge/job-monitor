@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T11:31:11.931033+00:00",
+  "last_updated": "2026-06-23T12:01:22.078067+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -120,16 +120,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-24T12:00:54.321773+00:00",
-      "site": "Impunity Watch",
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://www.impunitywatch.org/join-us/join-our-team/",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-24T13:01:04.528001+00:00",
       "site": "Palladium Group",
