@@ -1,7 +1,7 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T15:01:25.399768+00:00",
-  "run_count": 20,
+  "generated_at": "2026-06-23T15:31:25.187512+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Recruiter, G&A or GTM",
@@ -324,6 +324,48 @@
       "type": "Part-time",
       "deadline": "2026-07-12",
       "salary": "£61.39 per hour"
+    },
+    {
+      "title": "Director, UK Government",
+      "organisation": "Institute for Government",
+      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies/director-uk-government",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a Director-level role leading a research team and serving as an external face of the institute, requiring extensive senior leadership experience the candidate (student-assistant roles only) does not have. Hard ineligibility on seniority despite the relevant policy/governance field.",
+      "location": "London (implied; not explicitly stated)",
+      "type": "Full-time",
+      "deadline": "2026-07-27",
+      "salary": "£100,000–£110,000 per annum"
+    },
+    {
+      "title": "Call for Expression of Interest: Communications consultant for the Better TA alliance",
+      "organisation": "Trust for London",
+      "url": "https://trustforlondon.org.uk/about/vacancies/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is a communications-consultant call for expressions of interest, which is a specialist comms role outside the candidate's policy/research profile and also reads as an open call for consultants rather than a defined entry-level vacancy. Dedicated communications/campaign work is a noted gap for the candidate.",
+      "location": "Not specified",
+      "type": "Contract",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Head of Legal",
+      "organisation": "Global Witness",
+      "url": "https://globalwitness.org/en/careers/current-vacancies/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "\"Head of Legal\" is a senior leadership role requiring extensive legal experience and almost certainly a qualifying law qualification, neither of which the candidate (MSc in progress, not a qualified lawyer) holds. Hard ineligibility on seniority and likely legal-qualification requirement.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 July 2026",
+      "salary": "Not specified"
     }
   ]
 }
