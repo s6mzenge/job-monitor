@@ -1,7 +1,7 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T07:31:08.376128+00:00",
-  "run_count": 6,
+  "generated_at": "2026-06-23T08:01:21.982691+00:00",
+  "run_count": 7,
   "jobs": [
     {
       "title": "Recruiter, G&A or GTM",
@@ -113,6 +113,34 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Digital Associate Director, Health",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Digital-Associate-Director--Health_JR102775",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior digital/social-media communications role in healthcare PR, outside the candidate's policy/IR/intelligence profile and requiring specialist healthcare-comms and regulatory expertise the candidate lacks. The \"Associate Director\" title with \"significant experience\" required is well above entry level — hard ineligibility on seniority.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Account Director - DxI - Human Intelligence",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Account-Director---DxI----Human-Intelligence_JR102758",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior \"Account Director\" role requiring deep, proven pharma and healthcare expertise plus team leadership — far beyond the candidate's MSc-in-progress and student/RA experience (hard ineligibility on seniority). The work is commercial communications intelligence for healthcare clients, off the candidate's policy/IR/geopolitical-risk profile, and demands sector-specific expertise they lack.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
