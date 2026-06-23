@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T17:02:25.116058+00:00",
+  "last_updated": "2026-06-23T17:31:30.173444+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -26,6 +26,19 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://reprieve.org.uk/who-we-are/work-for-us/"
+    },
+    "Saferworld": {
+      "site_id": 93,
+      "url": "https://saferworld-global.current-vacancies.com/Careers/Saferworld-vacancy-search-page-3345/Job%20Search",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-23T17:31:30.173444+00:00",
+      "last_recent_failure": "2026-06-23T17:31:30.173444+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://saferworld-global.current-vacancies.com/Careers/Saferworld-vacancy-search-page-3345/Job%20Search\", waiting until \"networkidle\""
     },
     "Global Justice Now": {
       "site_id": 98,
@@ -9578,6 +9591,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-23T17:31:30.173444+00:00",
+      "site": "Saferworld",
+      "site_id": 93,
+      "url": "https://saferworld-global.current-vacancies.com/Careers/Saferworld-vacancy-search-page-3345/Job%20Search",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://saferworld-global.current-vacancies.com/Careers/Saferworld-vacancy-search-page-3345/Job%20Search\", waiting until \"networkidle\"",
       "consecutive_count": 1
     }
   ]
