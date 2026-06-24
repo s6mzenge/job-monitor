@@ -1,14 +1,27 @@
 {
-  "last_updated": "2026-06-24T09:01:21.109507+00:00",
+  "last_updated": "2026-06-24T09:31:12.319332+00:00",
   "site_summary": {
+    "Wiener Holocaust Library": {
+      "site_id": 4,
+      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-06-09T14:31:13.785320+00:00",
+      "last_recent_failure": "2026-06-24T09:31:12.319332+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
+    },
     "NIOD": {
       "site_id": 39,
       "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 3,
+      "consecutive_failures": 3,
+      "total_recent_failures": 4,
       "first_recent_failure": "2026-06-16T06:31:20.947221+00:00",
-      "last_recent_failure": "2026-06-24T09:01:21.109507+00:00",
+      "last_recent_failure": "2026-06-24T09:31:12.319332+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -19,8 +32,8 @@
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 203,
-      "first_recent_failure": "2026-05-25T09:30:49.750536+00:00",
+      "total_recent_failures": 202,
+      "first_recent_failure": "2026-05-25T11:00:53.756841+00:00",
       "last_recent_failure": "2026-06-14T11:31:08.428362+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
@@ -65,19 +78,6 @@
       "paused_until": "2026-06-24T11:31:08.013471+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Plan International UK": {
-      "site_id": 117,
-      "url": "https://careers.plan-uk.org/vacancies",
-      "method": "json_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-06-24T09:01:21.109507+00:00",
-      "last_recent_failure": "2026-06-24T09:01:21.109507+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "JSON API (Plan International UK): 502 Server Error: Bad Gateway for url: https://api.sitehub.io/collection/663ceae28a890d05503acf22/items?limit=9999&offset=0&paginate=false&filter%5Bcolumns.web-published%5D=1"
     },
     "Institute for War & Peace Reporting": {
       "site_id": 123,
@@ -146,16 +146,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-25T09:30:49.750536+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-25T10:30:49.806222+00:00",
       "site": "Impunity Watch",
@@ -9655,6 +9645,26 @@
       "type": "fetch_error",
       "message": "JSON API (Plan International UK): 502 Server Error: Bad Gateway for url: https://api.sitehub.io/collection/663ceae28a890d05503acf22/items?limit=9999&offset=0&paginate=false&filter%5Bcolumns.web-published%5D=1",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-24T09:31:12.319332+00:00",
+      "site": "Wiener Holocaust Library",
+      "site_id": 4,
+      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-24T09:31:12.319332+00:00",
+      "site": "NIOD",
+      "site_id": 39,
+      "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.niod.nl%2Fen%2Fabout-niod%2Fvacancies-niod",
+      "consecutive_count": 3
     }
   ]
 }

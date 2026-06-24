@@ -1,7 +1,7 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T09:01:21.109507+00:00",
-  "run_count": 10,
+  "generated_at": "2026-06-24T09:31:12.319332+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Senior Manager, Sustainable Infrastructure - Oil and Gas",
@@ -687,6 +687,34 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Research Analyst, Conflict, Security and Development Programme (CSDP)",
+      "organisation": "IISS",
+      "url": "https://www.iiss.org/careers/jobs/2026/06/research-analyst-conflict-security-and-development-programme-csdp",
+      "match": "high",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Conflict, security and development research at IISS is core to the candidate's IR/security profile and matches their forthcoming defence-policy publication. No years requirement or senior title is stated, so the Research Analyst level fits an MSc-in-progress with substantial RA experience; research methods and policy writing transfer directly.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Consulting Senior Associate- Low Carbon Solutions – Electricity Networks & Energy Systems",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/Consulting-Senior-Associate--Low-Carbon-Solutions---Electricity-Networks---Energy-Systems_R00030500-1",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "This is an energy-systems sustainability consulting role requiring a physical science / engineering / economics degree and techno-economic modelling of electricity networks — entirely outside the candidate's IR/policy profile. Energy policy is mentioned but the role centres on technical energy-systems analysis the candidate cannot evidence; FIELD is off-profile.",
+      "location": "London, United Kingdom (4 locations)",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
