@@ -1999,6 +1999,7 @@
     {
       "id": 161,
       "name": "Berghof Foundation",
+      "url": "https://berghof-foundation.org/about/opportunities/jobs",
       "method": "personio_xml",
       "job_detail_url_template": "https://berghof-foundation-operations-ggmbh.jobs.personio.de/job/{id}",
       "api": {
