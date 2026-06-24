@@ -1,7 +1,7 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T06:31:07.979121+00:00",
-  "run_count": 5,
+  "generated_at": "2026-06-24T07:01:54.345945+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Senior Manager, Sustainable Infrastructure - Oil and Gas",
@@ -646,6 +646,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "$222,200–$232,000"
+    },
+    {
+      "title": "Commercial Partnership Manager- London",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Commercial-Partnership-Manager-London/46298-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a commercial sales / affiliate-distribution management role in TV/media, entirely off the candidate's policy/IR profile, and it requires business proficiency in Dutch or Swedish — a language the candidate does not speak — triggering the language exclusion. It is also a Manager-level role expecting established affiliate-sales experience and a relevant network.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "6th of July",
+      "salary": "Up to £55,600 + £5,441 London Weighting"
     }
   ]
 }
