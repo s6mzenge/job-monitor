@@ -203,6 +203,7 @@ NO_VACANCY_PHRASES = [
     "derzeit keine",
     "do not have any vacancies",
     "not currently recruiting",
+    "currently not recruiting",
     "not currently hiring",
     "do not accept unsolicited",
     "no posts on the list",
@@ -1972,14 +1973,17 @@ def check_recruitee(site, seen_urls):
             if doc_srcs:
                 print(f"    + {len(doc_srcs)} JD doc(s) for '{title[:40]}'")
 
-        # PDF-priority: header, then the linked JD (if any), then the on-page
-        # text. The JD leads, so a downstream detail_text[:max_chars] cut can
-        # only drop the trailing on-page summary -- never the JD.
+        # Assemble: header, body, linked JD. With jd_priority the JD leads
+        # (after the header) so a downstream detail_text[:max_chars] cut drops
+        # the trailing on-page summary, never the JD. Else JD appended last.
+        jd_first = site.get("jd_priority")
         detail_text = f"Title: {title}\nLocation: {loc}"
-        if doc_text:
+        if doc_text and jd_first:
             detail_text += doc_text
         if body_text.strip():
             detail_text += "\n\n" + body_text
+        if doc_text and not jd_first:
+            detail_text += doc_text
         new_jobs.append({"title": title, "url": job_url, "detail_text": detail_text})
 
     return {"total": len(offers), "new": new_jobs}
@@ -2933,8 +2937,10 @@ def main():
                         _pb = lambda u: fetch_bytes(u, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
                         _dt, _ds = jd_docs.fetch_links_text(result["jd_doc_links"], _pb, max_docs=int(site.get("jd_max_docs", 8)), max_total_chars=int(site.get("jd_max_chars", 20000)))
                         if _dt:
-                            page_text = page_text + _dt
-                            print(f"    + {len(_ds)} JD doc(s) appended from listing")
+                            # jd_priority: JD leads so a downstream prefix-cut drops
+                            # the trailing page text, never the JD. Else append-last.
+                            page_text = (_dt.strip() + "\n\n" + page_text) if site.get("jd_priority") else (page_text + _dt)
+                            print(f"    + {len(_ds)} JD doc(s) {'(JD-priority)' if site.get('jd_priority') else 'appended'} from listing")
                     llm_result = evaluate_with_anthropic(name, f"Page update on {name}", site["url"], page_text, is_page_level=True, london_only=site.get("london_only", False), max_chars=site.get("eval_max_chars", 10000))
                     llm_err = _consume_error()
                     if llm_result:
