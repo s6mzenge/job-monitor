@@ -603,7 +603,11 @@ def check_html(site, seen_urls):
     def _doc_bytes(u):
         return fetch_bytes(u, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
     new_jobs = []
+    loc_excl = site.get("location_exclude")
     for job in jobs:
+        if loc_excl and any(tok.lower() in job["title"].lower() for tok in loc_excl):
+            print(f"    location_exclude: skipping '{job['title'][:60]}'")
+            continue
         detail_soup = None
         if site.get("skip_detail_fetch") and not follow_docs:
             detail_text = f"Title: {job['title']}"
