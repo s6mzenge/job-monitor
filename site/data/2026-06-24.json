@@ -1,7 +1,7 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T14:01:36.530669+00:00",
-  "run_count": 20,
+  "generated_at": "2026-06-24T14:31:22.008353+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Senior Manager, Sustainable Infrastructure - Oil and Gas",
@@ -968,6 +968,62 @@
       "type": "Full-time",
       "deadline": "23 July 2026",
       "salary": "€72,198.91"
+    },
+    {
+      "title": "Applied AI Architect, Industries",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5278230008",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a technical pre-sales/solutions-architect role requiring 5+ years in customer-facing engineering roles, scalable cloud architecture design, and ML/LLM tooling expertise — far outside the candidate's policy/IR research profile and well beyond their analysis-level Python. Hard ineligibility on the 5+ years experience requirement and a fundamental field/skills mismatch.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "None (rolling basis)",
+      "salary": "£190,000–£230,000 GBP (OTE)"
+    },
+    {
+      "title": "Enterprise Sales Manager, Digital Native Business",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5276600008",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior enterprise sales leadership role requiring 10+ years of sales experience and 5+ years of sales management — a hard ineligibility on seniority. The field (commercial sales of AI products) and skills (sales pipeline/CRM/team leadership) are entirely off the candidate's research/policy profile.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£280,000–£330,000 GBP OTE"
+    },
+    {
+      "title": "Operations & Planning Manager (MSF IE)",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/operations-planning-manager-msf-ie-62579/en",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior management/operations role requiring 5+ years managing diverse teams — a hard seniority ineligibility for a candidate with only student-assistant experience. The function (operations, data management, performance/risk management, DPO) is off the candidate's research/policy profile, and required CRM/Power BI and Irish data-regulatory expertise are gaps.",
+      "location": "Dublin, Ireland",
+      "type": "Full-time",
+      "deadline": "23 July 2026",
+      "salary": "€72,198.91"
+    },
+    {
+      "title": "User Researcher",
+      "organisation": "Wellcome Trust",
+      "url": "https://wellcome.wd3.myworkdayjobs.com/job/London/User-Researcher_R-003385",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a UX/user-research role on digital products, not policy/IR research — the field is off-profile despite the candidate having general research methods. It requires demonstrable experience across all aspects of user research (recruitment, moderating UX sessions, agile product teams) which the candidate lacks, and the salary level signals an experienced practitioner rather than entry-level.",
+      "location": "London",
+      "type": "Full-time (Fixed term 12 months)",
+      "deadline": "Wednesday 8th July",
+      "salary": "£53,760 - £67,200"
     }
   ]
 }
