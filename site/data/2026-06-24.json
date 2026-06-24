@@ -1,7 +1,7 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T00:56:48.171656+00:00",
-  "run_count": 1,
+  "generated_at": "2026-06-24T05:01:31.742384+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Senior Manager, Sustainable Infrastructure - Oil and Gas",
@@ -618,6 +618,34 @@
       "type": "Part-time",
       "deadline": "2026-07-05",
       "salary": "TVöD/Bund EG 9 (part-time, 29.25 h/week)"
+    },
+    {
+      "title": "Surveyor Automatisation, Electrical and Instrumentation",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Rostock-Surveyor-Automatisation%2C-Electrical-and-Instrumentation-18069/1127000501",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is an engineering inspection/surveyor role requiring completed engineering studies, expert certification (WSW scheme), and knowledge of technical regulations (ATEX, DIN VDE, etc.) — entirely outside the candidate's IR/policy profile and qualifications. Field and skills are a complete mismatch with the candidate's research background.",
+      "location": "Rostock, Germany",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "General Counsel Americas",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/New-York-General-Counsel-Americas-NY-10019/1373875433",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior General Counsel role requiring a qualified US solicitor with 10+ years PQE — the candidate is not a qualified lawyer and has no professional experience, triggering hard exclusions on both the qualifying-law requirement and the 3+ years bar. Field is corporate commercial law, off-profile.",
+      "location": "New York / Houston, US",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "$222,200–$232,000"
     }
   ]
 }
