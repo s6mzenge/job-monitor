@@ -1,7 +1,7 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T15:31:09.992904+00:00",
-  "run_count": 23,
+  "generated_at": "2026-06-24T16:01:30.840765+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Senior Manager, Sustainable Infrastructure - Oil and Gas",
@@ -1024,6 +1024,20 @@
       "type": "Full-time (Fixed term 12 months)",
       "deadline": "Wednesday 8th July",
       "salary": "£53,760 - £67,200"
+    },
+    {
+      "title": "Chair of Trustees",
+      "organisation": "Amos Trust (CharityJob)",
+      "url": "https://www.charityjob.co.uk/jobs/jobdetail/1074161?organisationName=amos-trust&jobTitle=chair-of-trustees",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is an unpaid voluntary role, which triggers the volunteer exclusion. It is also a senior governance/leadership position (Chair of Trustees) requiring proven board and leadership experience the candidate does not have. Multiple grounds for Low.",
+      "location": "Remote / UK-based",
+      "type": "Voluntary",
+      "deadline": "13 July 2026",
+      "salary": "Unpaid role, expenses paid"
     }
   ]
 }
