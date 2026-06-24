@@ -1,13 +1,26 @@
 {
-  "last_updated": "2026-06-24T08:01:25.682062+00:00",
+  "last_updated": "2026-06-24T08:31:16.919583+00:00",
   "site_summary": {
+    "NIOD": {
+      "site_id": 39,
+      "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-06-16T06:31:20.947221+00:00",
+      "last_recent_failure": "2026-06-24T08:31:16.919583+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.niod.nl%2Fen%2Fabout-niod%2Fvacancies-niod"
+    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 204,
-      "first_recent_failure": "2026-05-25T08:30:53.733762+00:00",
+      "total_recent_failures": 203,
+      "first_recent_failure": "2026-05-25T09:30:49.750536+00:00",
       "last_recent_failure": "2026-06-14T11:31:08.428362+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
@@ -53,18 +66,18 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "ActionAid UK": {
-      "site_id": 122,
-      "url": "https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies",
-      "method": "html",
+    "LSE (internal)": {
+      "site_id": 110,
+      "url": "https://jobs.lse.ac.uk/V2/Vacancy/Index?enc=glU2uxu77sbA0Vjt6JCQD0plJN6KBxTggSjROblEqRK0i39EXHi3KwQ464+7Oko3O4iakm36tKYVifZl5chR1nW72+6IIACSarRLg3CoJ8g=",
+      "method": "engage_ats",
       "consecutive_failures": 1,
-      "total_recent_failures": 9,
-      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-24T08:01:25.682062+00:00",
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-06-20T16:01:21.431116+00:00",
+      "last_recent_failure": "2026-06-24T08:31:16.919583+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.actionaid.org.uk%2Fabout-us%2Fpeople-and-culture%2Factionaid-job-vacancies"
+      "last_message": "engage_ats Internal page 1: 403 Client Error: Forbidden for url: https://jobs.lse.ac.uk/V2/Vacancy/ApplySearchFilter"
     },
     "Institute for War & Peace Reporting": {
       "site_id": 123,
@@ -133,16 +146,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-25T08:30:53.733762+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-25T09:30:49.750536+00:00",
       "site": "ICTJ",
@@ -9611,6 +9614,26 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.actionaid.org.uk%2Fabout-us%2Fpeople-and-culture%2Factionaid-job-vacancies",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-24T08:31:16.919583+00:00",
+      "site": "NIOD",
+      "site_id": 39,
+      "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.niod.nl%2Fen%2Fabout-niod%2Fvacancies-niod",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-24T08:31:16.919583+00:00",
+      "site": "LSE (internal)",
+      "site_id": 110,
+      "url": "https://jobs.lse.ac.uk/V2/Vacancy/Index?enc=glU2uxu77sbA0Vjt6JCQD0plJN6KBxTggSjROblEqRK0i39EXHi3KwQ464+7Oko3O4iakm36tKYVifZl5chR1nW72+6IIACSarRLg3CoJ8g=",
+      "method": "engage_ats",
+      "type": "fetch_error",
+      "message": "engage_ats Internal page 1: 403 Client Error: Forbidden for url: https://jobs.lse.ac.uk/V2/Vacancy/ApplySearchFilter",
       "consecutive_count": 1
     }
   ]
