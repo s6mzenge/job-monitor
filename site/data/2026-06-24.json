@@ -1,7 +1,7 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T07:31:11.730523+00:00",
-  "run_count": 7,
+  "generated_at": "2026-06-24T08:01:25.682062+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Senior Manager, Sustainable Infrastructure - Oil and Gas",
@@ -660,6 +660,20 @@
       "type": "Full-time",
       "deadline": "6th of July",
       "salary": "Up to £55,600 + £5,441 London Weighting"
+    },
+    {
+      "title": "Assistant Account Executive",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Assistant-Account-Executive_JR102763",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "This is a PR/corporate communications role, but with a substantial policy and public affairs component — research, stakeholder mapping, policy analysis and monitoring of political developments, plus work on a major AI/technology account that touches tech-policy themes. The candidate's research, writing and analysis skills transfer cleanly and the early-career framing fits perfectly, but communications/PR is adjacent rather than core to their IR/policy profile, capping this at Medium.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
