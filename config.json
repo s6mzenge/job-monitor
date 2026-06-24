@@ -2000,20 +2000,16 @@
       "id": 161,
       "name": "Berghof Foundation",
       "url": "https://berghof-foundation.org/about/opportunities/jobs",
-      "method": "personio_xml",
-      "job_detail_url_template": "https://berghof-foundation-operations-ggmbh.jobs.personio.de/job/{id}",
+      "method": "json_api",
       "api": {
-        "url": "https://berghof-foundation-operations-ggmbh.jobs.personio.de/xml",
+        "url": "https://berghof-foundation-operations-ggmbh.jobs.personio.de/search.json?language=en",
         "http_method": "GET",
-        "format": "xml",
-        "position_element": "position",
+        "job_url_template": "https://berghof-foundation-operations-ggmbh.jobs.personio.de/job/{id}",
         "job_fields": {
           "id": "id",
           "title": "name",
           "location": "office",
-          "department": "department",
-          "employment_type": "employmentType",
-          "schedule": "schedule"
+          "description": "description"
         }
       }
     }
