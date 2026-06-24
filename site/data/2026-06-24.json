@@ -1,7 +1,7 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T12:31:13.472411+00:00",
-  "run_count": 17,
+  "generated_at": "2026-06-24T13:01:21.234758+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Senior Manager, Sustainable Infrastructure - Oil and Gas",
@@ -912,6 +912,34 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Lecturer in Political Theory (Part-time)",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DSA327/lecturer-in-political-theory-part-time",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "Political theory teaching aligns well with the candidate's interests, but the role explicitly requires a completed PhD and 2–3 years of university teaching experience. Hard ineligibility on both the PhD requirement and seniority.",
+      "location": "London",
+      "type": "Part-time",
+      "deadline": "17th July 2026",
+      "salary": "Competitive"
+    },
+    {
+      "title": "Personalreferent*in (ohne Frist)",
+      "organisation": "Deutsches Institut für Menschenrechte",
+      "url": "https://www.institut-fuer-menschenrechte.de/das-institut/jobs/personalreferentin",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "Despite the human-rights institution context, this is an HR/personnel-management role (employment law, TVöD grading, collective agreements) — outside the candidate's profile and requiring specialist labour-law and tariff-law knowledge they lack. It also asks for \"mehrjährige Berufserfahrung\" (several years of professional experience), which the candidate does not have.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (19.5h/week, fixed-term 2 years)",
+      "deadline": "Not specified",
+      "salary": "Entgeltgruppe 11 TVöD (Bund)"
     }
   ]
 }
