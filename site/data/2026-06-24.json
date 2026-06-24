@@ -1,7 +1,7 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T13:01:21.234758+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-24T13:31:11.106064+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Senior Manager, Sustainable Infrastructure - Oil and Gas",
@@ -940,6 +940,20 @@
       "type": "Part-time (19.5h/week, fixed-term 2 years)",
       "deadline": "Not specified",
       "salary": "Entgeltgruppe 11 TVöD (Bund)"
+    },
+    {
+      "title": "Account Director - Health",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Account-Director---Health_JR102773",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior healthcare marketing communications role (Account Director) requiring client management, agency experience, media relations and people management — off the candidate's policy/IR profile and well above their experience level. The Director title and demand for a proven track record of healthcare comms and team leadership make this a hard seniority mismatch.",
+      "location": "London, United Kingdom",
+      "type": "Contract (12-month fixed-term)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
