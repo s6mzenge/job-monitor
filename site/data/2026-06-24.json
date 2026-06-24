@@ -1,7 +1,7 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T12:01:19.653329+00:00",
-  "run_count": 16,
+  "generated_at": "2026-06-24T12:31:13.472411+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Senior Manager, Sustainable Infrastructure - Oil and Gas",
@@ -898,6 +898,20 @@
       "type": "Part-time (Working Student)",
       "deadline": "2026-07-13",
       "salary": "€16 per hour"
+    },
+    {
+      "title": "Director, Child Protection and Social Resilience - India",
+      "organisation": "CIFF",
+      "url": "https://apply.workable.com/j/586383F1EC",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior Director-level leadership role requiring a recognised subject-matter expert with significant experience leading teams and managing investment portfolios — far beyond the candidate's MSc-in-progress and student-assistant background. Hard ineligibility on seniority, and the social-protection/child-vulnerability development field is only loosely adjacent to the candidate's IR/security/legal profile.",
+      "location": "New Delhi, India (Hybrid)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
