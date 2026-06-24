@@ -1,7 +1,7 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T11:31:17.605299+00:00",
-  "run_count": 15,
+  "generated_at": "2026-06-24T12:01:19.653329+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Senior Manager, Sustainable Infrastructure - Oil and Gas",
@@ -842,6 +842,62 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Entgeltgruppe 9b TVöD (Bund)"
+    },
+    {
+      "title": "Business Support Advisor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Business-Support-Advisor-400-093/1407900033",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "This is a customer-facing administration/business-support role (certificate processing, onboarding, SAP) with no connection to the candidate's IR, policy, intelligence or research profile. Field is a clear mismatch and the work draws on operational admin skills rather than research or analysis.",
+      "location": "Mumbai, India",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Application for general consideration - professionals (all genders)",
+      "organisation": "Berghof Foundation",
+      "url": "https://berghof-foundation-operations-ggmbh.jobs.personio.de/job/507976",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "This is explicitly a speculative/initiative application (\"Initiativbewerbung\") with no concrete advertised vacancy, which is an exclusion. The posting even states that concrete positions are advertised separately. Although Berghof's peace and conflict transformation work is on-profile, this is not a live opening.",
+      "location": "Berlin",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Application for general consideration for undergraduate and graduate students (all genders)",
+      "organisation": "Berghof Foundation",
+      "url": "https://berghof-foundation-operations-ggmbh.jobs.personio.de/job/2558915",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "5",
+      "seniority_score": "5",
+      "reason": "Although peace and conflict studies is a core-field fit, this is an explicit speculative/initiative application (\"Initiativbewerbung\") with only an automated response and no concrete advertised vacancy — an excluded category. It also targets working-student/student-assistant positions, a separate exclusion.",
+      "location": "Berlin, Germany",
+      "type": "Internship / Working Student",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Working Student (all genders) – Conflict Transformation & Radicalisation Research",
+      "organisation": "Berghof Foundation",
+      "url": "https://berghof-foundation-operations-ggmbh.jobs.personio.de/job/2674094",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Field is core (conflict transformation, radicalisation research, qualitative methods) and the candidate fits well, but this is explicitly a working-student role requiring current enrolment — an EXCLUSION. The candidate wants genuine entry-level jobs, not study-time positions.",
+      "location": "Berlin, Germany / Remote",
+      "type": "Part-time (Working Student)",
+      "deadline": "2026-07-13",
+      "salary": "€16 per hour"
     }
   ]
 }
