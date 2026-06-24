@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T07:01:54.345945+00:00",
+  "last_updated": "2026-06-24T07:31:11.730523+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,19 +13,6 @@
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Impunity Watch": {
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 14,
-      "first_recent_failure": "2026-05-25T10:30:49.806222+00:00",
-      "last_recent_failure": "2026-06-24T07:01:54.345945+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
     },
     "Reprieve": {
       "site_id": 58,
@@ -130,19 +117,6 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.kingsfund.org.uk/about-us/jobs"
-    },
-    "Die Linke Bundestagsfraktion": {
-      "site_id": 154,
-      "url": "https://www.dielinkebt.de/service/ausschreibungen/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-06-24T07:01:54.345945+00:00",
-      "last_recent_failure": "2026-06-24T07:01:54.345945+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.dielinkebt.de%2Fservice%2Fausschreibungen%2F"
     }
   },
   "issues": [
