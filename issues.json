@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-06-24T08:31:16.919583+00:00",
+  "last_updated": "2026-06-24T09:01:21.109507+00:00",
   "site_summary": {
     "NIOD": {
       "site_id": 39,
       "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
+      "consecutive_failures": 2,
+      "total_recent_failures": 3,
       "first_recent_failure": "2026-06-16T06:31:20.947221+00:00",
-      "last_recent_failure": "2026-06-24T08:31:16.919583+00:00",
+      "last_recent_failure": "2026-06-24T09:01:21.109507+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.niod.nl%2Fen%2Fabout-niod%2Fvacancies-niod"
+      "last_message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.niod.nl%2Fen%2Fabout-niod%2Fvacancies-niod"
     },
     "ICTJ": {
       "site_id": 41,
@@ -66,18 +66,18 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "LSE (internal)": {
-      "site_id": 110,
-      "url": "https://jobs.lse.ac.uk/V2/Vacancy/Index?enc=glU2uxu77sbA0Vjt6JCQD0plJN6KBxTggSjROblEqRK0i39EXHi3KwQ464+7Oko3O4iakm36tKYVifZl5chR1nW72+6IIACSarRLg3CoJ8g=",
-      "method": "engage_ats",
+    "Plan International UK": {
+      "site_id": 117,
+      "url": "https://careers.plan-uk.org/vacancies",
+      "method": "json_api",
       "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-06-20T16:01:21.431116+00:00",
-      "last_recent_failure": "2026-06-24T08:31:16.919583+00:00",
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-24T09:01:21.109507+00:00",
+      "last_recent_failure": "2026-06-24T09:01:21.109507+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "engage_ats Internal page 1: 403 Client Error: Forbidden for url: https://jobs.lse.ac.uk/V2/Vacancy/ApplySearchFilter"
+      "last_message": "JSON API (Plan International UK): 502 Server Error: Bad Gateway for url: https://api.sitehub.io/collection/663ceae28a890d05503acf22/items?limit=9999&offset=0&paginate=false&filter%5Bcolumns.web-published%5D=1"
     },
     "Institute for War & Peace Reporting": {
       "site_id": 123,
@@ -9634,6 +9634,26 @@
       "method": "engage_ats",
       "type": "fetch_error",
       "message": "engage_ats Internal page 1: 403 Client Error: Forbidden for url: https://jobs.lse.ac.uk/V2/Vacancy/ApplySearchFilter",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-24T09:01:21.109507+00:00",
+      "site": "NIOD",
+      "site_id": 39,
+      "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.niod.nl%2Fen%2Fabout-niod%2Fvacancies-niod",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-24T09:01:21.109507+00:00",
+      "site": "Plan International UK",
+      "site_id": 117,
+      "url": "https://careers.plan-uk.org/vacancies",
+      "method": "json_api",
+      "type": "fetch_error",
+      "message": "JSON API (Plan International UK): 502 Server Error: Bad Gateway for url: https://api.sitehub.io/collection/663ceae28a890d05503acf22/items?limit=9999&offset=0&paginate=false&filter%5Bcolumns.web-published%5D=1",
       "consecutive_count": 1
     }
   ]

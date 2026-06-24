@@ -1,7 +1,7 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T08:31:16.919583+00:00",
-  "run_count": 9,
+  "generated_at": "2026-06-24T09:01:21.109507+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Senior Manager, Sustainable Infrastructure - Oil and Gas",
@@ -673,6 +673,20 @@
       "location": "London, United Kingdom",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The deadline of 15 January 2026 has passed relative to today (24 June 2026), so the role is closed. It is also an expert advisory committee seeking established specialists, not an entry-level role, and the Spanish-language scope suggests Spanish working ability the candidate lacks.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
       "salary": "Not specified"
     }
   ]
