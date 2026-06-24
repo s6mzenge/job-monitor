@@ -1892,6 +1892,56 @@
       "detail_via_playwright": true,
       "london_only": true,
       "wait_until": "domcontentloaded"
+    },
+    {
+      "id": 150,
+      "name": "Institute for Strategic Dialogue (ISD)",
+      "url": "https://isdglobal.recruitee.com/vacancies",
+      "method": "recruitee_api",
+      "base_url": "https://isdglobal.recruitee.com",
+      "api": {
+        "url": "https://isdglobal.recruitee.com/api/offers/"
+      },
+      "follow_jd_docs": true,
+      "jd_priority": true,
+      "eval_max_chars": 24000,
+      "london_only": true
+    },
+    {
+      "id": 151,
+      "name": "Focus on Labour Exploitation (FLEX)",
+      "url": "https://labourexploitation.org/about-us/opportunities/",
+      "method": "html",
+      "follow_jd_docs": true,
+      "jd_priority": true,
+      "eval_max_chars": 24000,
+      "london_only": true
+    },
+    {
+      "id": 152,
+      "name": "PEN International",
+      "url": "https://www.pen-international.org/join-our-team",
+      "method": "html",
+      "follow_jd_docs": true,
+      "jd_priority": true,
+      "eval_max_chars": 24000,
+      "london_only": true
+    },
+    {
+      "id": 153,
+      "name": "FU Berlin (wiss.)",
+      "url": "https://www.fu-berlin.de/universitaet/beruf-karriere/jobs/wiss/index.html",
+      "method": "html",
+      "base_url": "https://www.fu-berlin.de",
+      "link_selector": "#current_events a.box-job-offer-list-item-link"
+    },
+    {
+      "id": 154,
+      "name": "Die Linke Bundestagsfraktion",
+      "url": "https://www.dielinkebt.de/service/ausschreibungen/",
+      "method": "html",
+      "base_url": "https://www.dielinkebt.de",
+      "link_selector": "h2 a[href*='/service/ausschreibungen/detail/']"
     }
   ]
 }
