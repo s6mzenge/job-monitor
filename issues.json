@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T14:31:22.008353+00:00",
+  "last_updated": "2026-06-24T15:01:23.648604+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -44,10 +44,10 @@
       "site_id": 102,
       "url": "https://palestinecampaign.org/about/opportunities/",
       "method": "html",
-      "consecutive_failures": 7,
-      "total_recent_failures": 59,
+      "consecutive_failures": 8,
+      "total_recent_failures": 60,
       "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
-      "last_recent_failure": "2026-06-24T14:31:22.008353+00:00",
+      "last_recent_failure": "2026-06-24T15:01:23.648604+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -120,26 +120,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-25T15:00:58.478402+00:00",
-      "site": "Uppsala UHGS",
-      "site_id": 42,
-      "url": "https://www.uu.se/en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='www.uu.se', port=443): Max retries exceeded with url: /en/centre/uppsala-centre-for-holocaust-and-genocide-studies/about-us/employment-opportunities (Caused by NewConnectionError(\"HTTPSConnection(host='www.uu.se', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-25T15:00:58.478402+00:00",
-      "site": "Institute of Race Relations",
-      "site_id": 48,
-      "url": "https://irr.org.uk/about/vacancies/",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='irr.org.uk', port=443): Max retries exceeded with url: /about/vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='irr.org.uk', port=443) at 0x7f0eaf333e30>, 'Connection to irr.org.uk timed out. (connect timeout=30)'))",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-25T15:30:51.927752+00:00",
       "site": "Palladium Group",
@@ -9729,6 +9709,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
       "consecutive_count": 7
+    },
+    {
+      "timestamp": "2026-06-24T15:01:23.648604+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
+      "consecutive_count": 8
     }
   ]
 }
