@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T05:31:03.913562+00:00",
-  "run_count": 2,
+  "generated_at": "2026-06-25T06:01:18.477176+00:00",
+  "run_count": 3,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -16,6 +16,90 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "$167,400 annually"
+    },
+    {
+      "title": "Senior Legal Adviser",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "International law and accountability work is core to the candidate's profile, but a \"Senior\" legal adviser role requires a qualified lawyer and substantial experience, neither of which the candidate has. Hard ineligibility on seniority and likely qualifying-law-degree requirement.",
+      "location": "Iraq",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Advisory Board Member",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "An advisory board seat is a senior, expert-level appointment requiring extensive standing in international law — far beyond the candidate's MSc-in-progress stage. Hard ineligibility on seniority.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Internship - Speculative Opportunities",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "Although the field and level fit well, this is an explicitly speculative internship with no concrete advertised vacancy — excluded under the speculative/open-application rule.",
+      "location": "Remote",
+      "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "IT Officer",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "An IT support/operations role is outside the candidate's research/policy profile despite the organisation's relevant mission. Field mismatch.",
+      "location": "Ukraine",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "IT Security Officer",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "IT security operations is a technical infrastructure role unrelated to the candidate's research/policy background, and not the policy/OSINT side of zone-c. Field mismatch.",
+      "location": "Remote",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Speculative Application",
+      "organisation": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is an explicit talent-pool/speculative application with no concrete advertised vacancy — excluded under the speculative/open-application rule.",
+      "location": "Remote",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
