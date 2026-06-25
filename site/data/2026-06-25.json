@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T14:31:33.909990+00:00",
-  "run_count": 20,
+  "generated_at": "2026-06-25T15:01:20.073129+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -366,6 +366,34 @@
       "type": "Full-time",
       "deadline": "09 July 2026",
       "salary": "£53,949 to £62,160 pa (potential progression to £69,073) inclusive of London allowance"
+    },
+    {
+      "title": "Investment Manager",
+      "organisation": "Paul Hamlyn Foundation",
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior investment/finance management role, off the candidate's policy/research profile entirely, requiring specialist investment expertise and senior-level experience the candidate lacks. Mismatch on field, skills and seniority.",
+      "location": "Not specified",
+      "type": "Full-time",
+      "deadline": "Monday 29 June",
+      "salary": "circa £90,000-£150,000 per annum"
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The deadline (15 January 2026) has passed relative to today (25 June 2026), so the role is closed. Additionally this is an expert advisory committee call seeking established experts, not an entry-level position, and it appears to be an unpaid advisory role.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified"
     }
   ]
 }
