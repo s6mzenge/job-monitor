@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T14:01:13.577648+00:00",
-  "run_count": 19,
+  "generated_at": "2026-06-25T14:31:33.909990+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -324,6 +324,48 @@
       "type": "Full-time",
       "deadline": "July 10th, 2026",
       "salary": "US $102,000 – 112,000"
+    },
+    {
+      "title": "Blue Whale Growth Fund Leadership Masterclass Programme",
+      "organisation": "Chatham House",
+      "url": "https://careers.chathamhouse.org/jobs/7955919-blue-whale-growth-fund-leadership-masterclass-programme",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is not a job — it is a leadership training programme restricted to professionals currently working for UK-registered charities with £5m+ annual expenditure, requiring proven leadership experience or potential. The candidate does not work for such a charity and has no professional leadership track record, so they fail the eligibility criteria; it is also not an entry-level salaried role.",
+      "location": "London",
+      "type": "Part-time (9-month programme)",
+      "deadline": "Friday 10 July 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Customer Service Advisor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Senior-Customer-Service-Advisor-66278/1408462733",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a customer service / business support role focused on account management, scheduling and invoicing — entirely off the candidate's IR/policy/research profile. The \"Senior\" framing and operational nature also do not match an entry-level researcher's stage.",
+      "location": "Monterrey, Mexico",
+      "type": "Full-time (Fixed Term)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Agile Delivery Lead",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/5562/0/466302/15539/agile-delivery-lead",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a technical agile project-delivery / Scrum-Master role in IT services, entirely off the candidate's IR/policy/research profile. It requires essential prior agile delivery experience, Scrum/Jira/technical-integration expertise the candidate lacks, and the \"Lead\" title implies significant relevant experience. Field mismatch and a hard essential-experience gap force Low.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "09 July 2026",
+      "salary": "£53,949 to £62,160 pa (potential progression to £69,073) inclusive of London allowance"
     }
   ]
 }
