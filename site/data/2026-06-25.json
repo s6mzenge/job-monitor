@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T11:31:15.346177+00:00",
-  "run_count": 14,
+  "generated_at": "2026-06-25T12:01:16.189665+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -226,6 +226,34 @@
       "type": "Full-time (Permanent, 37.5 hours)",
       "deadline": "20 Jul 2026",
       "salary": "Circa £38,600 plus benefits"
+    },
+    {
+      "title": "Missing Maps Coordinator and GIS (Geographical Information Systems) Specialist (Maternity Cover)",
+      "organisation": "MSF UK",
+      "url": "https://cezanneondemand.intervieweb.it/msfuk/jobs/missing-maps-coordinator-and-gis-geographical-information-systems-specialist-maternity-cover-62591/en",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a specialist GIS/mapping role requiring demonstrable hands-on experience with GIS software (ArcGIS, QGIS, OpenStreetMap), spatial analysis, field mapping and volunteer-community management — named tools and methods the candidate has never used, which caps SKILLS. The high salary band and coordinator-level expectations imply substantial professional experience the candidate (student/RA only) does not have, and the humanitarian-mapping function sits outside the candidate's policy/IR research core.",
+      "location": "London, United Kingdom",
+      "type": "Full-time (Fixed Term Contract, 8 months)",
+      "deadline": "Monday 06th July 2026, 11.59pm (BST)",
+      "salary": "£61,531.29 to £75,204.91 per annum"
+    },
+    {
+      "title": "Data and AI Developer",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/5619/0/466430/15539/data-and-ai-developer",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a deep-technical data/AI engineering role requiring production-level Microsoft Fabric, Azure OpenAI, RAG engineering, SQL/Python data pipelines and secure app development — a clear software-engineering function outside the candidate's policy/research profile and beyond their analysis-level Python (deep-technical ML/engineering is a hard SKILLS gap). The salary band and breadth of essential engineering criteria also imply a senior practitioner, not an entry-level researcher.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "09 July 2026",
+      "salary": "£53,949 to £62,160 pa (potential to £69,073) inclusive of London allowance"
     }
   ]
 }
