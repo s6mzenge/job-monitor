@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T10:01:20.678139+00:00",
-  "run_count": 11,
+  "generated_at": "2026-06-25T10:31:07.295180+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -184,6 +184,20 @@
       "type": "Contract (9-month fixed term, part-time min 30 hrs/week)",
       "deadline": "9am 6 July 2026",
       "salary": "£30,000 pa, pro-rated"
+    },
+    {
+      "title": "M365 Prod & Collab Admin Expert (Senior)",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/2947/0/466386/15539/m365-prod-and-collab-admin-expert-senior",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior IT administration role requiring Microsoft certifications, SharePoint/Teams/Azure administration, PowerShell scripting and supervisory experience — entirely outside the candidate's profile. It is a \"Senior\" title with essential technical certifications the candidate cannot provide, failing on field, skills and seniority.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "09 July 2026",
+      "salary": "£53,949 to £69,073 pa inclusive"
     }
   ]
 }
