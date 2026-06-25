@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-25",
+  "generated_at": "2026-06-25T05:01:16.748272+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Associate Director, Data Labs",
+      "organisation": "Pew Trusts",
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/job/Washington-DC-Pew-Research-Center/Associate-Director--Data-Labs_R003209",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior leadership role (Associate Director managing a data science team) requiring PhD-level research experience plus deep applied-NLP expertise — transformer fine-tuning, LLM engineering, cloud compute management — none of which the candidate (analysis-level Python, no ML/engineering, MSc-in-progress, no management) possesses. The PhD requirement and senior management title are hard ineligibilities, and the substantive work is general-public behavioural data science, not the candidate's policy/IR profile.",
+      "location": "Washington, DC",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "$167,400 annually"
+    }
+  ]
+}
