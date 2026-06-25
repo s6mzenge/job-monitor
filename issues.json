@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-25T09:01:14.374260+00:00",
+  "last_updated": "2026-06-25T09:31:07.948488+00:00",
   "site_summary": {
     "NIOD": {
       "site_id": 39,
       "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 12,
+      "consecutive_failures": 2,
+      "total_recent_failures": 13,
       "first_recent_failure": "2026-06-16T06:31:20.947221+00:00",
-      "last_recent_failure": "2026-06-25T09:01:14.374260+00:00",
+      "last_recent_failure": "2026-06-25T09:31:07.948488+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -19,8 +19,8 @@
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 184,
-      "first_recent_failure": "2026-05-26T09:30:50.738942+00:00",
+      "total_recent_failures": 183,
+      "first_recent_failure": "2026-05-26T10:01:17.987112+00:00",
       "last_recent_failure": "2026-06-14T11:31:08.428362+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
@@ -133,16 +133,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-26T09:30:50.738942+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
-      "consecutive_count": 3
-    },
     {
       "timestamp": "2026-05-26T10:01:17.987112+00:00",
       "site": "ICTJ",
@@ -9663,6 +9653,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.niod.nl%2Fen%2Fabout-niod%2Fvacancies-niod",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-25T09:31:07.948488+00:00",
+      "site": "NIOD",
+      "site_id": 39,
+      "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.niod.nl%2Fen%2Fabout-niod%2Fvacancies-niod",
+      "consecutive_count": 2
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T09:01:14.374260+00:00",
-  "run_count": 9,
+  "generated_at": "2026-06-25T09:31:07.948488+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -142,6 +142,20 @@
       "type": "Full-time",
       "deadline": "10 July 2026",
       "salary": "Not specified"
+    },
+    {
+      "title": "Executive Assistant, Financial Advisory",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7779588003?gh_jid=7779588003",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is an executive-assistant / administrative support role in financial advisory, not a policy, research or intelligence function — off the candidate's profile despite Teneo's relevance in geopolitical risk. It requires extensive prior EA experience supporting senior leaders, which the candidate lacks, and the work itself is unrelated to their research strengths.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Competitive Salary"
     }
   ]
 }
