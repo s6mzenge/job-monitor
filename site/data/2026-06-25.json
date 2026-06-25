@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T07:01:16.889056+00:00",
-  "run_count": 5,
+  "generated_at": "2026-06-25T07:31:06.789860+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -100,6 +100,20 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Technical Specialist, Claude Code",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5198999008",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a customer-facing technical sales/solutions-engineering role requiring 5–7+ years of professional software-engineering and developer-relations experience — a hard ineligibility on both seniority and skills. The work (shipping production demos, live-coding, solutions architecture) is deep-technical software engineering far outside the candidate's analysis-level Python and policy-research profile.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£180,000–£225,000 GBP (OTE)"
     }
   ]
 }
