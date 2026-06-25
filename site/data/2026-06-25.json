@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T12:01:16.189665+00:00",
-  "run_count": 15,
+  "generated_at": "2026-06-25T12:31:13.406092+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -254,6 +254,48 @@
       "type": "Full-time",
       "deadline": "09 July 2026",
       "salary": "£53,949 to £62,160 pa (potential to £69,073) inclusive of London allowance"
+    },
+    {
+      "title": "Mechaniker/in für Feuerlöschanlagen/Anlagenmechaniker/in (w/m/d)",
+      "organisation": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-bg3-311-5-31072026-1167044",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a fire-suppression-system mechanic role requiring a completed German vocational training (Ausbildung as Anlagenmechaniker) plus two years' technical experience and specialist certifications — a hard exclusion (specific vocational training the candidate lacks). The field and technical skills are entirely outside the candidate's research/policy profile.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "31. Juli 2026",
+      "salary": "€3,582.38 gross/month (experience level 3) plus €220 Ministerialzulage"
+    },
+    {
+      "title": "Fachhandwerker/in (w/m/d) im Referat – Gebäudetechnik im Sachbereich Sanitär-, Küchen- und Feuerlöschtechnik",
+      "organisation": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-bg3-312-3-31072026-1167046",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a skilled-trades building-services role requiring a completed German vocational training (Ausbildung) as an electrician/HVAC/sanitary technician plus specialised certifications — a hard exclusion the candidate cannot meet. It is entirely off-profile and additionally requires 2+ years of relevant trade experience.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-07-31",
+      "salary": "~€3,582.38 gross/month (Entgeltgruppe 7) plus €220 allowance"
+    },
+    {
+      "title": "Senior Administrator (Student Services Events)",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/7108/0/470901/15539/senior-administrator-student-services-events",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "This is a student-services events administration role — an operational, customer-service function in higher education, not policy research, intelligence or international affairs, so it sits off the candidate's profile (FIELD 2 forces Low). It is London-based (passes the location filter) and the candidate has HE administration and Excel experience, but the work itself is not on-target.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "12 July 2026",
+      "salary": "£36,513–£44,468 pa inclusive"
     }
   ]
 }
