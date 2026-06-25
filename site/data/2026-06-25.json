@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T16:01:11.091723+00:00",
-  "run_count": 23,
+  "generated_at": "2026-06-25T16:31:09.186946+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -393,6 +393,34 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Digital Content Editor",
+      "organisation": "IPPR",
+      "url": "https://www.ippr.org/jobs/digital-content-editor",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "This is a digital communications/content role at a policy think tank — comms attached to a policy area scores adjacent, not core, for an IR researcher targeting research/analysis. The candidate has strong writing and some web/tech skills but lacks dedicated short-form video, social media content creation and digital comms experience, which the posting treats as essential (\"experience of working in a busy content creation or digital communications role\").",
+      "location": "London (Westminster)",
+      "type": "Full-time (Permanent, part-time/job-share possible)",
+      "deadline": "Sun 12th Jul 2026 11:59pm",
+      "salary": "£37,976 - £48,644 per year"
+    },
+    {
+      "title": "Principal Consultant - Reporting & Disclosure",
+      "organisation": "Anthesis Group",
+      "url": "https://anthesisgroup.pinpointhq.com/en/postings/d9dd00c8-efc0-45c3-b49d-83e8c7815b28",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a sustainability/ESG reporting and disclosure consultancy role, outside the candidate's IR/policy/security profile. The \"Principal Consultant\" title signals senior-level experience the candidate (student-assistant work only) does not have — hard ineligibility on seniority.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified"
     }
   ]
