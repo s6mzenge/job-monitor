@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T07:31:06.789860+00:00",
+  "last_updated": "2026-06-25T08:01:16.196195+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -120,16 +120,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-26T08:00:54.911444+00:00",
-      "site": "Global Rights Compliance",
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\") to be visible\n    - waiting for\" https://globalrightscompliance.org/work-with-us/\" navigation to finish...\n    - navigated to \"https://globalrightscompliance.org/work-with-us/\"",
-      "consecutive_count": 1
-    },
     {
       "timestamp": "2026-05-26T08:30:48.855939+00:00",
       "site": "ICTJ",
