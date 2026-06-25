@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T16:31:09.186946+00:00",
-  "run_count": 24,
+  "generated_at": "2026-06-25T17:01:16.999152+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -419,6 +419,20 @@
       "seniority_score": "1",
       "reason": "This is a sustainability/ESG reporting and disclosure consultancy role, outside the candidate's IR/policy/security profile. The \"Principal Consultant\" title signals senior-level experience the candidate (student-assistant work only) does not have — hard ineligibility on seniority.",
       "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Principal Consultant / Account Director - Strategy, Transformation & Reporting",
+      "organisation": "Anthesis Group",
+      "url": "https://anthesisgroup.pinpointhq.com/en/postings/0c5d8fc4-b552-4f6e-ab53-2dcc8d087982",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a Principal Consultant / Account Director role in sustainability strategy and reporting consulting — senior-level and off the candidate's IR/policy/intelligence profile. The \"Principal/Director\" title signals years of experience the candidate does not have, triggering hard ineligibility on seniority.",
+      "location": "UK - London",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
