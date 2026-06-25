@@ -2012,6 +2012,151 @@
           "description": "description"
         }
       }
+    },
+    {
+      "id": 162,
+      "name": "MERICS",
+      "url": "https://merics.org/en/opportunities",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/en/jobs/']",
+      "base_url": "https://merics.org"
+    },
+    {
+      "id": 163,
+      "name": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/de/vacancies",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/job/']",
+      "base_url": "https://kbbjobs.softgarden.io"
+    },
+    {
+      "id": 164,
+      "name": "Forum Transregionale Studien",
+      "url": "https://www.forum-transregionale-studien.de/news/ausschreibungen",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/news/ausschreibungen/details/']",
+      "base_url": "https://www.forum-transregionale-studien.de"
+    },
+    {
+      "id": 165,
+      "name": "WZB Berlin Social Science Center",
+      "url": "https://www.wzb.eu/de/das-wzb/arbeiten-am-wzb/stellenangebote",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/de/jobs/']",
+      "base_url": "https://www.wzb.eu",
+      "tls_impersonate": true
+    },
+    {
+      "id": 166,
+      "name": "DGAP (Deutsche Gesellschaft für Auswärtige Politik)",
+      "url": "https://dgap.org/de/karriere-in-der-dgap-jobs-stellen",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/de/dgap/jobs/']",
+      "base_url": "https://dgap.org"
+    },
+    {
+      "id": 167,
+      "name": "TU Berlin (wiss. Personal)",
+      "url": "https://www.jobs.tu-berlin.de/stellenausschreibungen?filter%5Bworktype_tub%5D%5B%5D=wiss-dauer&filter%5Bworktype_tub%5D%5B%5D=wiss-mlehr&filter%5Bworktype_tub%5D%5B%5D=wiss-olehr",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/stellenausschreibungen/']",
+      "base_url": "https://www.jobs.tu-berlin.de"
+    },
+    {
+      "id": 168,
+      "name": "Rosa-Luxemburg-Stiftung",
+      "url": "https://www.rosalux.de/service/ausschreibungen",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/ausschreibung/id/']",
+      "base_url": "https://www.rosalux.de"
+    },
+    {
+      "id": 169,
+      "name": "ZfL Berlin (Lit.- und Kulturforschung)",
+      "url": "https://www.zfl-berlin.org/stellen.html",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/meldungen-detail/items/']",
+      "base_url": "https://www.zfl-berlin.org"
+    },
+    {
+      "id": 170,
+      "name": "Uni Potsdam (akad. Personal, befristet)",
+      "url": "https://www.uni-potsdam.de/de/verwaltung/dezernat3/stellenausschreibungen/befristete-stellen-fuer-akademisches-personal",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/Ausschreibungen/']",
+      "base_url": "https://www.uni-potsdam.de"
+    },
+    {
+      "id": 171,
+      "name": "Uni Potsdam (akad. Personal, unbefristet)",
+      "url": "https://www.uni-potsdam.de/de/verwaltung/dezernat3/stellenausschreibungen/unbefristete-stellen-fuer-akademisches-personal",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/Ausschreibungen/']",
+      "base_url": "https://www.uni-potsdam.de"
+    },
+    {
+      "id": 172,
+      "name": "Alice Salomon Hochschule Berlin (wiss. Personal)",
+      "url": "https://www.ash-berlin.eu/hochschule/job-karriere/jobangebote/wissenschaftliches-personal/",
+      "method": "html",
+      "selector": "main, #content, article, .content",
+      "link_selector": "",
+      "base_url": "https://www.ash-berlin.eu"
+    },
+    {
+      "id": 173,
+      "name": "Bard College Berlin",
+      "url": "https://berlin.bard.edu/about-us/employment/",
+      "method": "html",
+      "selector": "main, #main, .content",
+      "link_selector": "",
+      "base_url": "https://berlin.bard.edu"
+    },
+    {
+      "id": 174,
+      "name": "Leibniz-Zentrum Moderner Orient (ZMO)",
+      "url": "https://www.zmo.de/ueber-uns/karriere/stellenausschreibungen",
+      "method": "html",
+      "selector": "main, #content, article, .content",
+      "link_selector": "",
+      "base_url": "https://www.zmo.de"
+    },
+    {
+      "id": 175,
+      "name": "ZZF Potsdam (Zeithistorische Forschung)",
+      "url": "https://zzf-potsdam.de/chancen/stellenangebote",
+      "method": "html",
+      "selector": "main, #content, article, .content",
+      "link_selector": "",
+      "base_url": "https://zzf-potsdam.de"
+    },
+    {
+      "id": 176,
+      "name": "ZOiS (Osteuropa- und internationale Studien)",
+      "url": "https://www.zois-berlin.de/ueber-uns/stellenausschreibungen",
+      "method": "html",
+      "selector": "main, article, #main",
+      "link_selector": "",
+      "base_url": "https://www.zois-berlin.de"
+    },
+    {
+      "id": 177,
+      "name": "Das Progressive Zentrum",
+      "url": "https://www.progressives-zentrum.org/jobs/",
+      "method": "html",
+      "selector": "main, article, #content",
+      "link_selector": "",
+      "base_url": "https://www.progressives-zentrum.org"
     }
   ]
 }
