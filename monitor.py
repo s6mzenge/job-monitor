@@ -206,6 +206,8 @@ NO_VACANCY_PHRASES = [
     "currently not recruiting",
     "not currently hiring",
     "do not accept unsolicited",
+    "keine ausschreibungen",
+    "keine stellen ausgeschrieben",
     "no posts on the list",
 ]
 
@@ -609,6 +611,21 @@ def check_html(site, seen_urls):
             print(f"    location_exclude: skipping '{job['title'][:60]}'")
             continue
         detail_soup = None
+        # If the listing links directly to a document (PDF/DOCX) instead of an
+        # HTML detail page (e.g. Uni Potsdam's PDF job ads), fetch the bytes and
+        # extract the text directly. gather_jd_text only finds docs linked *inside*
+        # a page, so it cannot handle a URL that is itself a document.
+        if job["url"].split("?")[0].lower().endswith((".pdf", ".docx", ".doc")):
+            time.sleep(1)
+            _data = _doc_bytes(job["url"])
+            _txt = jd_docs.extract_text_from_bytes(_data) if _data else ""
+            new_jobs.append({
+                "title": job["title"],
+                "url": job["url"],
+                "detail_text": (f"Title: {job['title']}\n\n{_txt}") if _txt
+                               else f"Title: {job['title']} (document could not be read)",
+            })
+            continue
         if site.get("skip_detail_fetch") and not follow_docs:
             detail_text = f"Title: {job['title']}"
         else:
