@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T09:31:07.948488+00:00",
-  "run_count": 10,
+  "generated_at": "2026-06-25T10:01:20.678139+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -156,6 +156,34 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Competitive Salary"
+    },
+    {
+      "title": "M365 & Power Platform Technical Specialist (Senior)",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/5484/0/466303/15539/m365-and-power-platform-technical-specialist-senior",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior software-developer role centred on Power Platform, Azure, Power BI and SharePoint administration — outside the candidate's policy/research profile and requiring specialist Microsoft engineering skills they cannot substitute. It is also explicitly senior with essential requirements for extensive development experience and team leadership, which the candidate lacks. Off-profile field, specialist technical skills gap, and senior level all force Low.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "09 July 2026",
+      "salary": "£53,949–£69,073 pa inclusive of London allowance"
+    },
+    {
+      "title": "Communications and Business Development Executive",
+      "organisation": "New Philanthropy Capital",
+      "url": "https://www.thinknpc.org/about-npc/work-at-npc/current-vacancies/",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is a communications, marketing and business-development role focused on event delivery and sponsorship pipelines for the impact economy — outside the candidate's policy/research/intelligence profile and squarely in the comms/events area flagged as a gap. The essential Salesforce/Google Analytics requirements are also not in the candidate's toolkit, and even at entry level the field mismatch caps this at Low.",
+      "location": "London (Hybrid)",
+      "type": "Contract (9-month fixed term, part-time min 30 hrs/week)",
+      "deadline": "9am 6 July 2026",
+      "salary": "£30,000 pa, pro-rated"
     }
   ]
 }
