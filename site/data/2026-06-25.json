@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T10:31:07.295180+00:00",
-  "run_count": 12,
+  "generated_at": "2026-06-25T11:01:22.654948+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -198,6 +198,20 @@
       "type": "Full-time",
       "deadline": "09 July 2026",
       "salary": "£53,949 to £69,073 pa inclusive"
+    },
+    {
+      "title": "Senior Supporter Database Officer",
+      "organisation": "Medical Aid for Palestinians",
+      "url": "https://careers.map.org.uk/en/postings/0b0fef15-da3d-4d27-bb5f-4b296a5adbf5",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a fundraising-database/CRM administration role, not policy, research or intelligence work — off the candidate's profile despite MAP's humanitarian mission. It also requires specialist supporter-database/CRM expertise the candidate lacks and is pitched at a \"Senior\" level implying relevant experience.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "July 09, 2026",
+      "salary": "£44,034 - £46,481 / year"
     }
   ]
 }
