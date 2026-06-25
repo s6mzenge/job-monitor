@@ -1,7 +1,7 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T11:01:22.654948+00:00",
-  "run_count": 13,
+  "generated_at": "2026-06-25T11:31:15.346177+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Associate Director, Data Labs",
@@ -212,6 +212,20 @@
       "type": "Full-time",
       "deadline": "July 09, 2026",
       "salary": "£44,034 - £46,481 / year"
+    },
+    {
+      "title": "Researcher (innovation prize design) - Challenge Works",
+      "organisation": "Nesta",
+      "url": "https://www.nesta.org.uk/jobs/researcher-innovation-prize-design-challenge-works/",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "This is a generalist innovation/design research role spanning frontier tech and social impact — adjacent to the candidate's policy-research skill set but not core IR/security/human-rights/intelligence work. The research methods (desk research, expert interviews, rapid topic learning, writing) transfer cleanly and the Researcher level fits the candidate's stage well, but the field is only adjacent. London-based, so the location filter is satisfied.",
+      "location": "Blackfriars, London - hybrid",
+      "type": "Full-time (Permanent, 37.5 hours)",
+      "deadline": "20 Jul 2026",
+      "salary": "Circa £38,600 plus benefits"
     }
   ]
 }
