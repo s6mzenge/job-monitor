@@ -6,7 +6,7 @@ on:
 jobs:
   check-jobs:
     runs-on: ubuntu-latest
-    timeout-minutes: 
+    timeout-minutes: 45
     permissions:
       contents: write
 
