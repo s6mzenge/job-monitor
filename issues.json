@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T07:31:17.175221+00:00",
+  "last_updated": "2026-06-26T08:01:22.558012+00:00",
   "site_summary": {
     "NIOD": {
       "site_id": 39,
@@ -19,8 +19,8 @@
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 167,
-      "first_recent_failure": "2026-05-27T08:01:04.854739+00:00",
+      "total_recent_failures": 166,
+      "first_recent_failure": "2026-05-27T08:30:55.202939+00:00",
       "last_recent_failure": "2026-06-14T11:31:08.428362+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
@@ -65,19 +65,6 @@
       "paused_until": "2026-06-27T06:01:18.477176+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "ActionAid UK": {
-      "site_id": 122,
-      "url": "https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 13,
-      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
-      "last_recent_failure": "2026-06-26T07:31:17.175221+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.actionaid.org.uk%2Fabout-us%2Fpeople-and-culture%2Factionaid-job-vacancies"
     },
     "Institute for War & Peace Reporting": {
       "site_id": 123,
@@ -146,16 +133,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-27T08:01:04.854739+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
-      "consecutive_count": 2
-    },
     {
       "timestamp": "2026-05-27T08:30:55.202939+00:00",
       "site": "ICTJ",
@@ -9655,6 +9632,17 @@
       "method": "playwright",
       "type": "llm_call_failed",
       "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcRVJ6wDsF2p8ifcsDTX7\"}",
+      "job_title": "Praktikum im Projekt: International Sustainable Chemistry Collaborative Centre (ISC3), Schwerpunkt Zusammenarbeit mit Privatwirtschaft und Portfolioentwicklung",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78626"
+    },
+    {
+      "timestamp": "2026-06-26T08:01:22.558012+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcRXRXTnJdaXHXunJjWJ3\"}",
       "job_title": "Praktikum im Projekt: International Sustainable Chemistry Collaborative Centre (ISC3), Schwerpunkt Zusammenarbeit mit Privatwirtschaft und Portfolioentwicklung",
       "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78626"
     }
