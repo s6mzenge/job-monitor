@@ -2157,6 +2157,26 @@
       "selector": "main, article, #content",
       "link_selector": "",
       "base_url": "https://www.progressives-zentrum.org"
+    },
+    {
+      "id": 178,
+      "name": "BAPP (Bonner Akademie für praktische Politik)",
+      "url": "https://www.bapp-bonn.de/die-akademie/stellenangebote/",
+      "method": "html",
+      "selector": "main, #content, article, .content",
+      "link_selector": "",
+      "base_url": "https://www.bapp-bonn.de"
+    },
+    {
+      "id": 179,
+      "name": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "link_selector": "a[href*='ac=jobad']",
+      "base_url": "https://jobs.giz.de",
+      "wait_selector": "a[href*='ac=jobad']",
+      "wait_until": "networkidle",
+      "wait_ms": 6000
     }
   ]
 }
