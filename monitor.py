@@ -2083,6 +2083,8 @@ def check_json_api(site, seen_urls):
         if isinstance(loc, list):
             loc = ", ".join(str(x) for x in loc if x)
         url = pick(item, fields.get("url"), URL_KEYS)
+        if not isinstance(url, str):
+            url = ""
         jid = pick(item, fields.get("id"), ID_KEYS)
         if not url and tmpl and jid:
             url = tmpl.replace("{id}", str(jid)).replace("{slug}", str(jid))
