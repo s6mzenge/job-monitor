@@ -1,7 +1,7 @@
 {
   "date": "2026-06-26",
-  "generated_at": "2026-06-26T01:48:00.677036+00:00",
-  "run_count": 2,
+  "generated_at": "2026-06-26T05:01:21.567230+00:00",
+  "run_count": 3,
   "jobs": [
     {
       "title": "Associate, Program Management, Higher Education",
@@ -1262,6 +1262,20 @@
       "type": "Internship (Full-time)",
       "deadline": "29.06.2026",
       "salary": "€2,349/month (brutto)"
+    },
+    {
+      "title": "Operations Associate, Ratings Operations, Jakarta",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Operations-Associate%2C-Ratings-Operations%2C-Jakarta/1386243133",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "4",
+      "reason": "This is a data-operations/administration role processing structured-finance surveillance data — off the candidate's policy/research profile entirely, and Chinese language proficiency is noted as helpful. Field is a mismatch (credit-ratings data operations, not IR/policy/intelligence), forcing Low.",
+      "location": "Jakarta, Indonesia (posting lists London, GB)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
