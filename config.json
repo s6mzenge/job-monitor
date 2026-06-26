@@ -1576,7 +1576,12 @@
         },
         "response_key": "collection",
         "dump_first_item": true,
-        "job_fields": {}
+        "job_url_template": "https://careers.plan-uk.org/vacancies?jobId={id}",
+        "job_fields": {
+          "title": "columns.title",
+          "id": "columns.job-id",
+          "description_html": "columns.content"
+        }
       }
     },
     {
@@ -2177,6 +2182,103 @@
       "wait_selector": "a[href*='ac=jobad']",
       "wait_until": "networkidle",
       "wait_ms": 6000
+    },
+    {
+      "id": 180,
+      "name": "IDOS (German Institute of Development and Sustainability)",
+      "url": "https://www.idos-research.de/en/about-us/career-internships/",
+      "method": "html",
+      "base_url": "https://www.idos-research.de",
+      "link_selector": "a[title*='advertisement'], a[title*='announcement'], a[title*='Stellenausschreibung']"
+    },
+    {
+      "id": 181,
+      "name": "Hertie School",
+      "url": "https://hertie-school.dvinci-easy.com/en/p/en/jobs",
+      "method": "html",
+      "base_url": "https://hertie-school.dvinci-easy.com",
+      "link_selector": "a[href*='/p/en/jobs/']"
+    },
+    {
+      "id": 182,
+      "name": "MPIL (Max Planck Institute for Comparative Public Law and International Law)",
+      "url": "https://jobs.mpil.de/",
+      "method": "json_api",
+      "api": {
+        "url": "https://jobs.b-ite.com/api/v1/postings/search",
+        "http_method": "POST",
+        "headers": {
+          "Origin": "https://www.mpil.de",
+          "Referer": "https://www.mpil.de/"
+        },
+        "body": {
+          "key": "711765319e636355035b110ee057165dda547753",
+          "channel": 0,
+          "locale": "de",
+          "sort": {
+            "by": "title",
+            "order": "asc"
+          },
+          "origin": "https://www.mpil.de/en/pub/news/job-offers.cfm",
+          "filter": {
+            "locale": {
+              "in": [
+                "en"
+              ]
+            }
+          },
+          "page": {
+            "num": 1000,
+            "offset": 0
+          }
+        },
+        "response_key": "jobPostings",
+        "dump_first_item": true,
+        "fetch_detail_html": true,
+        "job_fields": {
+          "title": "title",
+          "url": "url",
+          "id": "id",
+          "location": "address.city"
+        }
+      }
+    },
+    {
+      "id": 183,
+      "name": "DZHW (German Centre for Higher Education Research and Science Studies)",
+      "url": "https://karriere.dzhw.eu/",
+      "method": "json_api",
+      "api": {
+        "url": "https://jobs.b-ite.com/api/v1/postings/search",
+        "http_method": "POST",
+        "headers": {
+          "Origin": "https://www.dzhw.eu",
+          "Referer": "https://www.dzhw.eu/"
+        },
+        "body": {
+          "key": "858cf974b6891f2ac63e79cc474aa80b0c590bf3",
+          "channel": 0,
+          "locale": "de",
+          "sort": {
+            "by": "title",
+            "order": "asc"
+          },
+          "origin": "https://www.dzhw.eu/gmbh/karriere",
+          "page": {
+            "num": 1000,
+            "offset": 0
+          }
+        },
+        "response_key": "jobPostings",
+        "dump_first_item": true,
+        "fetch_detail_html": true,
+        "job_fields": {
+          "title": "title",
+          "url": "url",
+          "id": "id",
+          "location": "address.city"
+        }
+      }
     }
   ]
 }
