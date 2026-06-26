@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T06:01:26.712250+00:00",
+  "last_updated": "2026-06-26T06:31:12.763250+00:00",
   "site_summary": {
     "NIOD": {
       "site_id": 39,
@@ -19,8 +19,8 @@
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 169,
-      "first_recent_failure": "2026-05-27T06:30:49.802252+00:00",
+      "total_recent_failures": 168,
+      "first_recent_failure": "2026-05-27T07:30:53.994144+00:00",
       "last_recent_failure": "2026-06-14T11:31:08.428362+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
@@ -133,16 +133,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-27T06:30:49.802252+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
-      "consecutive_count": 9
-    },
     {
       "timestamp": "2026-05-27T07:30:53.994144+00:00",
       "site": "ICTJ",
