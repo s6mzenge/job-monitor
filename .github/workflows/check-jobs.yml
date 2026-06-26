@@ -6,7 +6,7 @@ on:
 jobs:
   check-jobs:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 
     permissions:
       contents: write
 
@@ -38,7 +38,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CF_WORKER_URL: ${{ secrets.CF_WORKER_URL }}
           CF_WORKER_TOKEN: ${{ secrets.CF_WORKER_TOKEN }}
-        run: python monitor.py
+        run: python -u monitor.py
 
       - name: Commit updated state and report
         run: |
