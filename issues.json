@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T00:43:31.875425+00:00",
+  "last_updated": "2026-06-26T01:48:00.677036+00:00",
   "site_summary": {
     "NIOD": {
       "site_id": 39,
@@ -65,6 +65,19 @@
       "paused_until": "2026-06-27T06:01:18.477176+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "ActionAid UK": {
+      "site_id": 122,
+      "url": "https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 12,
+      "first_recent_failure": "2026-06-17T21:45:32.684858+00:00",
+      "last_recent_failure": "2026-06-26T01:48:00.677036+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.actionaid.org.uk%2Fabout-us%2Fpeople-and-culture%2Factionaid-job-vacancies"
     },
     "Institute for War & Peace Reporting": {
       "site_id": 123,
@@ -9704,6 +9717,16 @@
       "message": "Site paused after 16 consecutive failures",
       "consecutive_count": 16,
       "paused_until": "2026-06-27T16:31:09.186946+00:00"
+    },
+    {
+      "timestamp": "2026-06-26T01:48:00.677036+00:00",
+      "site": "ActionAid UK",
+      "site_id": 122,
+      "url": "https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.actionaid.org.uk%2Fabout-us%2Fpeople-and-culture%2Factionaid-job-vacancies",
+      "consecutive_count": 1
     }
   ]
 }
