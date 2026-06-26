@@ -208,6 +208,7 @@ NO_VACANCY_PHRASES = [
     "do not accept unsolicited",
     "keine ausschreibungen",
     "keine stellen ausgeschrieben",
+    "keine stellenangebote ausgeschrieben",
     "no posts on the list",
 ]
 
