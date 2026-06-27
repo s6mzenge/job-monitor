@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-27",
+  "generated_at": "2026-06-27T12:34:31.713954+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Senior Marketing Executive",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Dachikan-Senior-Marketing-Executive-SH-200003/1398471033",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a B2B marketing role requiring 5+ years of experience (a hard exclusion) plus mandatory TIC/professional-services marketing background, marketing-automation tooling and AI content production — all off the candidate's profile. Field, skills and seniority all mismatch.",
+      "location": "Shanghai, China",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    }
+  ]
+}
