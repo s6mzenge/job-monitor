@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-27T17:01:15.398979+00:00",
+  "last_updated": "2026-06-27T17:31:05.611177+00:00",
   "site_summary": {
     "NIOD": {
       "site_id": 39,
       "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 29,
+      "consecutive_failures": 2,
+      "total_recent_failures": 30,
       "first_recent_failure": "2026-06-16T06:31:20.947221+00:00",
-      "last_recent_failure": "2026-06-27T17:01:15.398979+00:00",
+      "last_recent_failure": "2026-06-27T17:31:05.611177+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -19,8 +19,8 @@
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 128,
-      "first_recent_failure": "2026-05-28T17:30:52.409854+00:00",
+      "total_recent_failures": 127,
+      "first_recent_failure": "2026-05-29T05:00:57.943400+00:00",
       "last_recent_failure": "2026-06-14T11:31:08.428362+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
@@ -57,10 +57,10 @@
       "site_id": 102,
       "url": "https://palestinecampaign.org/about/opportunities/",
       "method": "html",
-      "consecutive_failures": 10,
-      "total_recent_failures": 79,
+      "consecutive_failures": 11,
+      "total_recent_failures": 80,
       "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
-      "last_recent_failure": "2026-06-27T17:01:15.398979+00:00",
+      "last_recent_failure": "2026-06-27T17:31:05.611177+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -135,10 +135,10 @@
       "site_id": 184,
       "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
       "method": "html",
-      "consecutive_failures": 10,
-      "total_recent_failures": 10,
+      "consecutive_failures": 11,
+      "total_recent_failures": 11,
       "first_recent_failure": "2026-06-27T12:34:31.713954+00:00",
-      "last_recent_failure": "2026-06-27T17:01:15.398979+00:00",
+      "last_recent_failure": "2026-06-27T17:31:05.611177+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -146,16 +146,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-28T17:30:52.409854+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
-      "consecutive_count": 7
-    },
     {
       "timestamp": "2026-05-29T05:00:57.943400+00:00",
       "site": "Eurasia Group",
@@ -9499,6 +9489,36 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
       "consecutive_count": 10
+    },
+    {
+      "timestamp": "2026-06-27T17:31:05.611177+00:00",
+      "site": "NIOD",
+      "site_id": 39,
+      "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.niod.nl%2Fen%2Fabout-niod%2Fvacancies-niod",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-27T17:31:05.611177+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
+      "consecutive_count": 11
+    },
+    {
+      "timestamp": "2026-06-27T17:31:05.611177+00:00",
+      "site": "Heinrich Böll Stiftung",
+      "site_id": 184,
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "consecutive_count": 11
     }
   ]
 }
