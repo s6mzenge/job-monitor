@@ -1661,13 +1661,14 @@
     },
     {
       "id": 122,
-      "name": "ActionAid UK",
-      "url": "https://www.actionaid.org.uk/about-us/people-and-culture/actionaid-job-vacancies",
-      "method": "html",
-      "base_url": "https://www.actionaid.org.uk",
-      "link_selector": "article.reach-job a",
+      "name": "ActionAid International",
+      "url": "https://actionaidinternational.bamboohr.com/careers",
+      "method": "bamboohr_api",
+      "base_url": "https://actionaidinternational.bamboohr.com",
       "london_only": true,
-      "proxy": "cloudflare_worker"
+      "api": {
+        "company": "actionaidinternational"
+      }
     },
     {
       "id": 124,
