@@ -1,7 +1,7 @@
 {
   "date": "2026-06-27",
-  "generated_at": "2026-06-27T17:31:05.611177+00:00",
-  "run_count": 11,
+  "generated_at": "2026-06-27T18:41:49.424189+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Senior Marketing Executive",
@@ -71,6 +71,48 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Studentische Teilzeitkraft Archiv Grünes Gedächtnis (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "5",
+      "reason": "This is a studentische Teilzeitkraft (working-student, 20h/week) role explicitly aimed at enrolled students — an automatic exclusion. The candidate wants genuine entry-level jobs, not study-time positions.",
+      "location": "Berlin",
+      "type": "Part-time",
+      "deadline": "2026-07-12",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Projektbearbeitung Bereich Inland – Schwerpunkt Demokratie und Gesellschaft (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "3",
+      "seniority_score": "4",
+      "reason": "A project-administration role in a political foundation's domestic democracy-and-society area — adjacent to the candidate's policy/research profile, and their funding-administration and project-coordination experience transfers. The exact experience bar is unclear but the project-officer level is plausibly accessible; treated as a stretch rather than a core fit.",
+      "location": "Berlin",
+      "type": "Full-time",
+      "deadline": "2026-07-05",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Projektbearbeitung materielle Förderung (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "4",
+      "reason": "A funding-administration role in the foundation's scholarship body (Studienwerk) — closely matching the candidate's German Rectors' Conference experience allocating federal funding to HEIs. The field is administration-adjacent rather than core IR/policy, but the practical fit on funding documentation and stakeholder management is strong; deadline (28.06) is still open as of today.",
+      "location": "Berlin",
+      "type": "Full-time",
+      "deadline": "2026-06-28",
       "salary": "Not specified"
     }
   ]
