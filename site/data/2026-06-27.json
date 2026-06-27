@@ -1,7 +1,7 @@
 {
   "date": "2026-06-27",
-  "generated_at": "2026-06-27T22:01:36.160947+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-27T22:08:18.002043+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Senior Marketing Executive",
@@ -156,6 +156,118 @@
       "type": "Full-time",
       "deadline": "31/05/2026",
       "salary": "£32,696 per annum plus up to 5% matched pension"
+    },
+    {
+      "title": "Director of Digital, Data and Technology (DDaT) (7255)",
+      "organisation": "Save the Children UK",
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/director-of-digital-data-and-technology-ddat-7255-farringdon-london-home-based/7281/description",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior Director-level technology leadership role requiring extensive DDaT executive experience, enterprise architecture and technology strategy — completely off the candidate's IR/policy profile and far beyond their student/RA experience. Hard ineligibility on seniority (Director title) and a fundamental field/skills mismatch.",
+      "location": "Farringdon, London/Home-based",
+      "type": "Full-time",
+      "deadline": "6 July 2026",
+      "salary": "Competitive"
+    },
+    {
+      "title": "Head of Investigations & Quality (Safeguarding) (7367)",
+      "organisation": "Save the Children UK",
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/head-of-investigations--quality-safeguarding-7367-farringdon-london-home-based/7393/description",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior \"Head of\" leadership role requiring significant safeguarding casework and investigations experience the candidate (student/RA only) does not have — hard ineligibility on seniority. The function (safeguarding investigations, child protection, case management) is operational rather than IR research/policy, and the candidate lacks the required specialist safeguarding expertise.",
+      "location": "Farringdon, London/Home-based",
+      "type": "Full-time (Fixed-Term, 12 months)",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Marketing Automation Specialist (7358)",
+      "organisation": "Save the Children UK",
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/marketing-automation-specialist-7358-farringdon-london-home-based/7384/description",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "3",
+      "reason": "This is a marketing-automation / CRM platform specialist role centred on Dotdigital, Salesforce Marketing Cloud, supporter journeys and lifecycle marketing — off the candidate's research/policy profile despite the NGO employer. The required tooling (CEP platforms, deliverability/segmentation, campaign automation) is not in the CV and cannot be substituted from research experience.",
+      "location": "Farringdon, London (UK home-based / hybrid)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Advocacy and Partnership Manager (Irish Government) (7364)",
+      "organisation": "Save the Children UK",
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/senior-advocacy-and-partnership-manager-irish-government-7364-belfast-northern-ireland/7390/description",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "2",
+      "reason": "The advocacy/policy area (child rights, humanitarian, conflict-affected contexts) is policy-adjacent and on-profile, but this is a \"Senior … Manager\" role requiring \"significant experience\" managing government and donor relationships, which the candidate (student/RA only) does not have — hard ineligibility on seniority. The senior-management framing forces Low.",
+      "location": "Belfast / island of Ireland (remote within Ireland)",
+      "type": "Full-time (12-month Fixed Term Contract / Secondment)",
+      "deadline": "12 July 2026",
+      "salary": "£50,100 / €57,800"
+    },
+    {
+      "title": "Senior Manager, High Value Events (7363)",
+      "organisation": "Save the Children UK",
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/senior-manager-high-value-events-7363-farringdon-london-home-based/7389/description",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is a senior events-management and fundraising leadership role requiring proven high-value events delivery, budgeting, and team leadership/mentoring — far from the candidate's research/policy profile and beyond their entry-level stage. Senior title with leadership expectations is a hard ineligibility on seniority, and the events-specialist field is a poor fit.",
+      "location": "Farringdon, London/Home-based",
+      "type": "Full-time (15-month fixed term contract)",
+      "deadline": "12 July 2026",
+      "salary": "£50,100"
+    },
+    {
+      "title": "Shop Manager - Clapham (7379)",
+      "organisation": "Save the Children UK",
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/shop-manager---clapham-7379-london-clapham/7405/description",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "This is a retail store management role focused on commercial performance, volunteer team leadership and merchandising — entirely off the candidate's research/policy profile despite the NGO employer. It also requires proven retail leadership experience and carries a Manager title with people-management expectations, none of which the candidate has.",
+      "location": "London (Clapham)",
+      "type": "Full-time",
+      "deadline": "19 July 2026",
+      "salary": "£30,256"
+    },
+    {
+      "title": "Fellow, Climate policy & development",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "A \"Fellow\" title in climate policy and development at a research institute typically requires substantial subject-matter expertise and senior research experience the candidate lacks; the climate/development focus is also only adjacent to the candidate's international law/security profile. London location is satisfied, but seniority is the deciding gap.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Senior Fellow and Director, Smart Buys Alliance",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "match": "low",
+      "field_score": "3",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "A Senior Fellow and Director role requires extensive senior leadership experience the candidate does not have, and the role is based in DC with no London option, failing the London-only location filter. Hard ineligibility on both seniority and location.",
+      "location": "Washington DC",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
