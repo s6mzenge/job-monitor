@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-06-27T15:01:14.789227+00:00",
+  "last_updated": "2026-06-27T15:31:04.100647+00:00",
   "site_summary": {
+    "Palladium Group": {
+      "site_id": 1,
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 17,
+      "first_recent_failure": "2026-05-31T15:00:57.997756+00:00",
+      "last_recent_failure": "2026-06-27T15:31:04.100647+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f00d715d2b0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))"
+    },
     "NIOD": {
       "site_id": 39,
       "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
@@ -19,26 +32,13 @@
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 132,
-      "first_recent_failure": "2026-05-28T15:30:54.725190+00:00",
+      "total_recent_failures": 131,
+      "first_recent_failure": "2026-05-28T16:01:04.125479+00:00",
       "last_recent_failure": "2026-06-14T11:31:08.428362+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Institute of Race Relations": {
-      "site_id": 48,
-      "url": "https://irr.org.uk/about/vacancies/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-06-18T13:31:14.585311+00:00",
-      "last_recent_failure": "2026-06-27T15:01:14.789227+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Firr.org.uk%2Fabout%2Fvacancies%2F"
     },
     "Reprieve": {
       "site_id": 58,
@@ -70,10 +70,10 @@
       "site_id": 102,
       "url": "https://palestinecampaign.org/about/opportunities/",
       "method": "html",
-      "consecutive_failures": 6,
-      "total_recent_failures": 75,
+      "consecutive_failures": 7,
+      "total_recent_failures": 76,
       "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
-      "last_recent_failure": "2026-06-27T15:01:14.789227+00:00",
+      "last_recent_failure": "2026-06-27T15:31:04.100647+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -148,10 +148,10 @@
       "site_id": 184,
       "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
       "method": "html",
-      "consecutive_failures": 6,
-      "total_recent_failures": 6,
+      "consecutive_failures": 7,
+      "total_recent_failures": 7,
       "first_recent_failure": "2026-06-27T12:34:31.713954+00:00",
-      "last_recent_failure": "2026-06-27T15:01:14.789227+00:00",
+      "last_recent_failure": "2026-06-27T15:31:04.100647+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -159,26 +159,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-28T15:30:54.725190+00:00",
-      "site": "SOAS University of London",
-      "site_id": 34,
-      "url": "https://vacancies.soas.ac.uk/#vacancies",
-      "method": "playwright",
-      "type": "fetch_error",
-      "message": "Playwright: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"h3 a[href*='/job/']\") to be visible",
-      "consecutive_count": 1
-    },
-    {
-      "timestamp": "2026-05-28T15:30:54.725190+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
-      "consecutive_count": 3
-    },
     {
       "timestamp": "2026-05-28T16:01:04.125479+00:00",
       "site": "ICTJ",
@@ -9462,6 +9442,36 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
       "consecutive_count": 6
+    },
+    {
+      "timestamp": "2026-06-27T15:31:04.100647+00:00",
+      "site": "Palladium Group",
+      "site_id": 1,
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "type": "fetch_error",
+      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f00d715d2b0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-27T15:31:04.100647+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
+      "consecutive_count": 7
+    },
+    {
+      "timestamp": "2026-06-27T15:31:04.100647+00:00",
+      "site": "Heinrich Böll Stiftung",
+      "site_id": 184,
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "consecutive_count": 7
     }
   ]
 }
