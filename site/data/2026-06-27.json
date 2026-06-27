@@ -1,7 +1,7 @@
 {
   "date": "2026-06-27",
-  "generated_at": "2026-06-27T14:01:12.157049+00:00",
-  "run_count": 4,
+  "generated_at": "2026-06-27T14:31:11.172493+00:00",
+  "run_count": 5,
   "jobs": [
     {
       "title": "Senior Marketing Executive",
@@ -30,6 +30,34 @@
       "type": "Contract (1 year fixed-term)",
       "deadline": "5th July 2026",
       "salary": "£40,200-£69,000"
+    },
+    {
+      "title": "Investment Manager",
+      "organisation": "Paul Hamlyn Foundation",
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior investment/finance role (£90k-£150k salary, Manager title working with an Investment Director), which is entirely off the candidate's IR/policy profile and demands specialist finance experience the candidate lacks. Mismatch on field, skills and seniority.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Monday 29 June",
+      "salary": "circa £90,000-£150,000 per annum"
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The deadline of 15 January 2026 has passed relative to today (27 June 2026), so the role is closed. It is also an expert advisory committee seeking established experts, not an entry-level position, and reads as an unpaid/volunteer call rather than a salaried job.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified"
     }
   ]
 }
