@@ -1,7 +1,7 @@
 {
   "date": "2026-06-27",
-  "generated_at": "2026-06-27T15:31:04.100647+00:00",
-  "run_count": 7,
+  "generated_at": "2026-06-27T16:01:14.805300+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Senior Marketing Executive",
@@ -54,6 +54,20 @@
       "skills_score": "3",
       "seniority_score": "1",
       "reason": "The deadline of 15 January 2026 has passed relative to today (27 June 2026), so the role is closed. It is also an expert advisory committee seeking established experts, not an entry-level position, and reads as an unpaid/volunteer call rather than a salaried job.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "The deadline (15 January 2026) is clearly before today's date (27 June 2026), so the role is closed. It is also a call for established \"experts\" for an advisory committee, not an entry-level paid position, and likely requires regional/language expertise the candidate lacks.",
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
