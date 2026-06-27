@@ -1,7 +1,7 @@
 {
   "date": "2026-06-27",
-  "generated_at": "2026-06-27T13:01:11.339923+00:00",
-  "run_count": 2,
+  "generated_at": "2026-06-27T13:31:03.456370+00:00",
+  "run_count": 3,
   "jobs": [
     {
       "title": "Senior Marketing Executive",
@@ -16,6 +16,20 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified"
+    },
+    {
+      "title": "Audio Visual Producer (Factual) - EXTEND",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Audio-Visual-Producer-%28Factual%29-EXTEND/48031-en_GB",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "This is a media production role requiring proven experience producing commercial video/podcast content and overseeing multi-camera shoots — entirely off the candidate's IR/policy/research profile and lacking the specialist production skills. It is also a senior producer role expecting demonstrated commercial production track record, and is restricted to the BBC Extend disability programme. Field mismatch alone forces Low.",
+      "location": "London (Television Centre, W12)",
+      "type": "Contract (1 year fixed-term)",
+      "deadline": "5th July 2026",
+      "salary": "£40,200-£69,000"
     }
   ]
 }

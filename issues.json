@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T13:01:11.339923+00:00",
+  "last_updated": "2026-06-27T13:31:03.456370+00:00",
   "site_summary": {
     "NIOD": {
       "site_id": 39,
@@ -57,10 +57,10 @@
       "site_id": 102,
       "url": "https://palestinecampaign.org/about/opportunities/",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 71,
+      "consecutive_failures": 3,
+      "total_recent_failures": 72,
       "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
-      "last_recent_failure": "2026-06-27T13:01:11.339923+00:00",
+      "last_recent_failure": "2026-06-27T13:31:03.456370+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -135,10 +135,10 @@
       "site_id": 184,
       "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 2,
+      "consecutive_failures": 3,
+      "total_recent_failures": 3,
       "first_recent_failure": "2026-06-27T12:34:31.713954+00:00",
-      "last_recent_failure": "2026-06-27T13:01:11.339923+00:00",
+      "last_recent_failure": "2026-06-27T13:31:03.456370+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -9389,6 +9389,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-06-27T13:31:03.456370+00:00",
+      "site": "Palestine Solidarity Campaign",
+      "site_id": 102,
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F",
+      "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-06-27T13:31:03.456370+00:00",
+      "site": "Heinrich Böll Stiftung",
+      "site_id": 184,
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "consecutive_count": 3
     }
   ]
 }
