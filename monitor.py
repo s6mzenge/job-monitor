@@ -4,6 +4,7 @@ import hashlib
 import re
 import requests
 import time
+import atexit
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
@@ -2091,7 +2092,15 @@ def check_json_api(site, seen_urls):
         if isinstance(url, str) and url.startswith("/"):
             url = urljoin(base or listing_url, url)
         if not url:
-            url = f"{listing_url}#{jid}" if jid else listing_url
+            # _norm_url strips fragments, so a "#{jid}" fallback would collapse every
+            # posting to one dedup key (silent miss). Use a query param, which survives
+            # normalisation and stays unique per id — covers empty-job_fields ATS feeds
+            # (e.g. RSA/ODI) until their real field paths can be locked in.
+            if jid:
+                _sep = "&" if "?" in listing_url else "?"
+                url = f"{listing_url}{_sep}jobId={jid}"
+            else:
+                url = listing_url
         if url in seen_urls:
             continue
         desc = pick(item, fields.get("description_html") or fields.get("description"), DESC_KEYS)
@@ -2809,6 +2818,7 @@ def main():
     print()
 
     state = load_state()
+    atexit.register(save_state, state)  # persist progress even on an unexpected crash
     issues_data = issues.load()
     all_matches = []
     daily_report_jobs = []
@@ -2855,239 +2865,256 @@ def main():
             )
             continue
 
-        result = handler(site, seen_urls)
-        last_err = _consume_error()
+        try:
+            result = handler(site, seen_urls)
+            last_err = _consume_error()
 
-        if result is None:
-            prev_errors = state[site_key].get("consecutive_errors", 0)
-            state[site_key]["consecutive_errors"] = prev_errors + 1
-            state[site_key]["last_checked"] = now.isoformat()
-            err_count = state[site_key]["consecutive_errors"]
+            if result is None:
+                prev_errors = state[site_key].get("consecutive_errors", 0)
+                state[site_key]["consecutive_errors"] = prev_errors + 1
+                state[site_key]["last_checked"] = now.isoformat()
+                err_count = state[site_key]["consecutive_errors"]
 
-            issues.add(
-                issues_data, now, site,
-                "fetch_error",
-                last_err or "Handler returned None (no error captured)",
-                consecutive_count=err_count,
-            )
-
-            if err_count >= 16:
-                pause_end = now + timedelta(days=2)
-                state[site_key]["paused_until"] = pause_end.isoformat()
-                paused_sites.append(name)
-                print(f"    ⏸️ Failed {err_count} times — pausing until {pause_end.isoformat()[:16]}.")
                 issues.add(
                     issues_data, now, site,
-                    "site_paused",
-                    f"Site paused after {err_count} consecutive failures",
+                    "fetch_error",
+                    last_err or "Handler returned None (no error captured)",
                     consecutive_count=err_count,
-                    paused_until=pause_end.isoformat(),
                 )
-            else:
-                print(f"    ⚠️ Failed ({err_count}/16 before pause).")
-            continue
 
-        state[site_key]["consecutive_errors"] = 0
+                if err_count >= 16:
+                    pause_end = now + timedelta(days=2)
+                    state[site_key]["paused_until"] = pause_end.isoformat()
+                    paused_sites.append(name)
+                    print(f"    ⏸️ Failed {err_count} times — pausing until {pause_end.isoformat()[:16]}.")
+                    issues.add(
+                        issues_data, now, site,
+                        "site_paused",
+                        f"Site paused after {err_count} consecutive failures",
+                        consecutive_count=err_count,
+                        paused_until=pause_end.isoformat(),
+                    )
+                else:
+                    print(f"    ⚠️ Failed ({err_count}/16 before pause).")
+                continue
 
-        # Inconclusive read: a sub-threshold extraction is a flaky/partial fetch,
-        # not a real "no jobs" state. Leave the stored hash untouched so a later
-        # good fetch compares against the last real content (instead of the page
-        # oscillating empty<->full and firing an LLM call every run). Not a
-        # failure, so it carries no pause pressure.
-        if isinstance(result, dict) and result.get("type") == "insufficient_content":
-            print(f"    ↷ Skipped: inconclusive fetch ({result.get('chars', 0)} chars) — keeping last known state, will retry next run.")
-            state[site_key]["last_checked"] = now.isoformat()
-            continue
+            state[site_key]["consecutive_errors"] = 0
 
-        # Handle the hash-check case (HTML sites without link_selector)
-        if isinstance(result, dict) and result.get("type") == "hash_check":
-            # Check for "no vacancies" pages
-            page_lower = result["text"].lower()
-            if not site.get("skip_no_vacancy_check", False) and any(phrase in page_lower for phrase in NO_VACANCY_PHRASES):
-                print(f"    ℹ️ No vacancies listed (page says so).")
-                empty_sites.append(name)
-                state[site_key]["listing_hash"] = result["hash"]
+            # Inconclusive read: a sub-threshold extraction is a flaky/partial fetch,
+            # not a real "no jobs" state. Leave the stored hash untouched so a later
+            # good fetch compares against the last real content (instead of the page
+            # oscillating empty<->full and firing an LLM call every run). Not a
+            # failure, so it carries no pause pressure.
+            if isinstance(result, dict) and result.get("type") == "insufficient_content":
+                print(f"    ↷ Skipped: inconclusive fetch ({result.get('chars', 0)} chars) — keeping last known state, will retry next run.")
                 state[site_key]["last_checked"] = now.isoformat()
                 continue
 
-            # Check for boilerplate-only pages (e.g. REDRESS)
-            boilerplate = site.get("no_vacancy_boilerplate", "")
-            if boilerplate:
-                stripped = page_lower.replace(boilerplate.lower(), "").strip()
-                for heading in ["current vacancies", "vacancies", "careers", "jobs"]:
-                    stripped = stripped.replace(heading, "").strip()
-                if len(stripped) < 50:
-                    print(f"    ℹ️ No vacancies listed (only boilerplate text found).")
+            # Handle the hash-check case (HTML sites without link_selector)
+            if isinstance(result, dict) and result.get("type") == "hash_check":
+                # Check for "no vacancies" pages
+                page_lower = result["text"].lower()
+                if not site.get("skip_no_vacancy_check", False) and any(phrase in page_lower for phrase in NO_VACANCY_PHRASES):
+                    print(f"    ℹ️ No vacancies listed (page says so).")
                     empty_sites.append(name)
                     state[site_key]["listing_hash"] = result["hash"]
                     state[site_key]["last_checked"] = now.isoformat()
                     continue
 
-            title_selector = site.get("job_title_selector", "")
-            if title_selector and result.get("soup"):
-                title_elements = result["soup"].select(title_selector)
-                if title_elements:
-                    titles = [el.get_text(strip=True) for el in title_elements if el.get_text(strip=True)]
-                    for t in titles:
-                        print(f"      → {t}")
-                else:
-                    print(f"    (no titles matched selector '{title_selector}')")
+                # Check for boilerplate-only pages (e.g. REDRESS)
+                boilerplate = site.get("no_vacancy_boilerplate", "")
+                if boilerplate:
+                    stripped = page_lower.replace(boilerplate.lower(), "").strip()
+                    for heading in ["current vacancies", "vacancies", "careers", "jobs"]:
+                        stripped = stripped.replace(heading, "").strip()
+                    if len(stripped) < 50:
+                        print(f"    ℹ️ No vacancies listed (only boilerplate text found).")
+                        empty_sites.append(name)
+                        state[site_key]["listing_hash"] = result["hash"]
+                        state[site_key]["last_checked"] = now.isoformat()
+                        continue
+
+                title_selector = site.get("job_title_selector", "")
+                if title_selector and result.get("soup"):
+                    title_elements = result["soup"].select(title_selector)
+                    if title_elements:
+                        titles = [el.get_text(strip=True) for el in title_elements if el.get_text(strip=True)]
+                        for t in titles:
+                            print(f"      → {t}")
+                    else:
+                        print(f"    (no titles matched selector '{title_selector}')")
                     
-            old_hash = state[site_key].get("listing_hash", "")
-            empty_hashes = state[site_key].get("empty_hashes", [])
-            if result["hash"] != old_hash:
-                for t in result.get("titles", []):
-                    print(f"      → {t}")
-                if result["hash"] in empty_hashes:
-                    # The LLM has already cleared this exact page-state as "no
-                    # jobs". An empty page served from a different runner region /
-                    # CDN node hashes differently, so without this guard the same
-                    # empty page re-fires an identical NO_JOBS_FOUND call every
-                    # time the region flips. Recognising a previously-cleared
-                    # state skips that redundant call. A genuinely new posting
-                    # changes the page text → a hash NOT in this set → still sent
-                    # to the LLM, so this can never hide a real vacancy.
-                    print(f"    ℹ️ No new content (matches a previously-cleared empty state — no LLM call).")
-                    empty_sites.append(name)
-                    state[site_key]["listing_hash"] = result["hash"]
-                elif DRY_RUN:
-                    print(f"    Page content changed (dry run — skipping LLM)")
-                    # In dry-run we deliberately advance the hash to seed state.
-                    state[site_key]["listing_hash"] = result["hash"]
-                else:
-                    print(f"    Page content changed! Sending full text to Anthropic...")
-                    page_text = result["text"]
-                    if site.get("follow_jd_docs") and result.get("jd_doc_links"):
-                        _pb = lambda u: fetch_bytes(u, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
-                        _dt, _ds = jd_docs.fetch_links_text(result["jd_doc_links"], _pb, max_docs=int(site.get("jd_max_docs", 8)), max_total_chars=int(site.get("jd_max_chars", 20000)))
-                        if _dt:
-                            # jd_priority: JD leads so a downstream prefix-cut drops
-                            # the trailing page text, never the JD. Else append-last.
-                            page_text = (_dt.strip() + "\n\n" + page_text) if site.get("jd_priority") else (page_text + _dt)
-                            print(f"    + {len(_ds)} JD doc(s) {'(JD-priority)' if site.get('jd_priority') else 'appended'} from listing")
-                    llm_result = evaluate_with_anthropic(name, f"Page update on {name}", site["url"], page_text, is_page_level=True, london_only=site.get("london_only", False), max_chars=site.get("eval_max_chars", 10000))
-                    llm_err = _consume_error()
-                    if llm_result:
-                        parsed = parse_gemini_matches(llm_result)
-                        for m in parsed:
-                            # Telegram: High/Medium only
-                            if m.get("match", "").lower() in ("high", "medium"):
-                                all_matches.append(format_match_for_telegram(m))
-                            # Daily report: all jobs
-                            daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=site["url"]))
-                        # If the LLM explicitly found no jobs, memoise this hash so
-                        # an identical (e.g. region-variant) empty page never costs
-                        # another call. Gated on the explicit NO_JOBS_FOUND sentinel
-                        # — not merely an empty parse — so a malformed/garbled
-                        # response can't poison the set. Capped to the most recent
-                        # few states to bound state.json growth.
-                        if "NO_JOBS_FOUND" in llm_result:
-                            eh = state[site_key].get("empty_hashes", [])
-                            if result["hash"] not in eh:
-                                eh.append(result["hash"])
-                                state[site_key]["empty_hashes"] = eh[-8:]
-                        # Only commit the new hash after a successful LLM call.
-                        # If the call failed we leave the OLD hash in place so
-                        # the next run will retry the page-level evaluation.
+                old_hash = state[site_key].get("listing_hash", "")
+                empty_hashes = state[site_key].get("empty_hashes", [])
+                if result["hash"] != old_hash:
+                    for t in result.get("titles", []):
+                        print(f"      → {t}")
+                    if result["hash"] in empty_hashes:
+                        # The LLM has already cleared this exact page-state as "no
+                        # jobs". An empty page served from a different runner region /
+                        # CDN node hashes differently, so without this guard the same
+                        # empty page re-fires an identical NO_JOBS_FOUND call every
+                        # time the region flips. Recognising a previously-cleared
+                        # state skips that redundant call. A genuinely new posting
+                        # changes the page text → a hash NOT in this set → still sent
+                        # to the LLM, so this can never hide a real vacancy.
+                        print(f"    ℹ️ No new content (matches a previously-cleared empty state — no LLM call).")
+                        empty_sites.append(name)
+                        state[site_key]["listing_hash"] = result["hash"]
+                    elif DRY_RUN:
+                        print(f"    Page content changed (dry run — skipping LLM)")
+                        # In dry-run we deliberately advance the hash to seed state.
                         state[site_key]["listing_hash"] = result["hash"]
                     else:
-                        print(f"    ⚠️ LLM call failed — hash NOT updated, will retry next run.")
+                        print(f"    Page content changed! Sending full text to Anthropic...")
+                        page_text = result["text"]
+                        if site.get("follow_jd_docs") and result.get("jd_doc_links"):
+                            _pb = lambda u: fetch_bytes(u, proxy=site.get("proxy"), tls_impersonate=site.get("tls_impersonate", False))
+                            _dt, _ds = jd_docs.fetch_links_text(result["jd_doc_links"], _pb, max_docs=int(site.get("jd_max_docs", 8)), max_total_chars=int(site.get("jd_max_chars", 20000)))
+                            if _dt:
+                                # jd_priority: JD leads so a downstream prefix-cut drops
+                                # the trailing page text, never the JD. Else append-last.
+                                page_text = (_dt.strip() + "\n\n" + page_text) if site.get("jd_priority") else (page_text + _dt)
+                                print(f"    + {len(_ds)} JD doc(s) {'(JD-priority)' if site.get('jd_priority') else 'appended'} from listing")
+                        llm_result = evaluate_with_anthropic(name, f"Page update on {name}", site["url"], page_text, is_page_level=True, london_only=site.get("london_only", False), max_chars=site.get("eval_max_chars", 10000))
+                        llm_err = _consume_error()
+                        if llm_result:
+                            parsed = parse_gemini_matches(llm_result)
+                            for m in parsed:
+                                # Telegram: High/Medium only
+                                if m.get("match", "").lower() in ("high", "medium"):
+                                    all_matches.append(format_match_for_telegram(m))
+                                # Daily report: all jobs
+                                daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=site["url"]))
+                            # If the LLM explicitly found no jobs, memoise this hash so
+                            # an identical (e.g. region-variant) empty page never costs
+                            # another call. Gated on the explicit NO_JOBS_FOUND sentinel
+                            # — not merely an empty parse — so a malformed/garbled
+                            # response can't poison the set. Capped to the most recent
+                            # few states to bound state.json growth.
+                            if "NO_JOBS_FOUND" in llm_result:
+                                eh = state[site_key].get("empty_hashes", [])
+                                if result["hash"] not in eh:
+                                    eh.append(result["hash"])
+                                    state[site_key]["empty_hashes"] = eh[-8:]
+                            # Only commit the new hash after a successful LLM call.
+                            # If the call failed we leave the OLD hash in place so
+                            # the next run will retry the page-level evaluation.
+                            state[site_key]["listing_hash"] = result["hash"]
+                        else:
+                            print(f"    ⚠️ LLM call failed — hash NOT updated, will retry next run.")
+                            issues.add(
+                                issues_data, now, site,
+                                "llm_call_failed",
+                                llm_err or "LLM returned no result for page-level call",
+                                scope="page_level",
+                            )
+                else:
+                    print(f"    No changes detected.")
+                state[site_key]["last_checked"] = now.isoformat()
+                continue
+
+            # Normal case: unpack total/new dict
+            total_found = result["total"]
+            new_jobs = result["new"]
+
+            if total_found == 0:
+                print(f"    ℹ️ No vacancies listed.")
+                empty_sites.append(name)
+                state[site_key]["last_checked"] = now.isoformat()
+                continue
+
+            if not new_jobs:
+                print(f"    No new jobs (of {total_found} listed).")
+                state[site_key]["last_checked"] = now.isoformat()
+                continue
+
+            print(f"    {len(new_jobs)} new job(s) of {total_found} listed! {'Saving to state (dry run)' if DRY_RUN else 'Evaluating...'}")
+
+            for job in new_jobs:
+                print(f"      → {job['title']}")
+
+                if not DRY_RUN:
+                    llm_result = evaluate_with_anthropic(name, job["title"], job["url"], job["detail_text"], london_only=site.get("london_only", False), max_chars=site.get("eval_max_chars", 10000))
+                    llm_err = _consume_error()
+
+                    if llm_result is None:
+                        # LLM call failed — do NOT mark as seen, retry next run
+                        print(f"        ⚠️ Anthropic call failed — will retry next run.")
                         issues.add(
                             issues_data, now, site,
                             "llm_call_failed",
-                            llm_err or "LLM returned no result for page-level call",
-                            scope="page_level",
+                            llm_err or "LLM returned no result",
+                            job_title=job["title"],
+                            job_url=job["url"],
                         )
-            else:
-                print(f"    No changes detected.")
-            state[site_key]["last_checked"] = now.isoformat()
-            continue
+                        continue
 
-        # Normal case: unpack total/new dict
-        total_found = result["total"]
-        new_jobs = result["new"]
+                    parsed = parse_gemini_matches(llm_result)
+                    if parsed:
+                        m = parsed[0]
+                        match_level = m.get("match", "low").lower()
 
-        if total_found == 0:
-            print(f"    ℹ️ No vacancies listed.")
-            empty_sites.append(name)
-            state[site_key]["last_checked"] = now.isoformat()
-            continue
+                        # Telegram: High/Medium only
+                        if match_level in ("high", "medium"):
+                            all_matches.append(format_match_for_telegram(m))
+                            print(f"        ✅ Match ({match_level})!")
+                        else:
+                            print(f"        No match (low).")
 
-        if not new_jobs:
-            print(f"    No new jobs (of {total_found} listed).")
-            state[site_key]["last_checked"] = now.isoformat()
-            continue
-
-        print(f"    {len(new_jobs)} new job(s) of {total_found} listed! {'Saving to state (dry run)' if DRY_RUN else 'Evaluating...'}")
-
-        for job in new_jobs:
-            print(f"      → {job['title']}")
-
-            if not DRY_RUN:
-                llm_result = evaluate_with_anthropic(name, job["title"], job["url"], job["detail_text"], london_only=site.get("london_only", False), max_chars=site.get("eval_max_chars", 10000))
-                llm_err = _consume_error()
-
-                if llm_result is None:
-                    # LLM call failed — do NOT mark as seen, retry next run
-                    print(f"        ⚠️ Anthropic call failed — will retry next run.")
-                    issues.add(
-                        issues_data, now, site,
-                        "llm_call_failed",
-                        llm_err or "LLM returned no result",
-                        job_title=job["title"],
-                        job_url=job["url"],
-                    )
-                    continue
-
-                parsed = parse_gemini_matches(llm_result)
-                if parsed:
-                    m = parsed[0]
-                    match_level = m.get("match", "low").lower()
-
-                    # Telegram: High/Medium only
-                    if match_level in ("high", "medium"):
-                        all_matches.append(format_match_for_telegram(m))
-                        print(f"        ✅ Match ({match_level})!")
+                        # Daily report: all jobs
+                        daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=job["url"]))
                     else:
-                        print(f"        No match (low).")
+                        # LLM returned something unparseable — record minimal entry
+                        print(f"        ⚠️ Could not parse LLM response.")
+                        issues.add(
+                            issues_data, now, site,
+                            "llm_parse_failed",
+                            "LLM response could not be parsed into a match block",
+                            job_title=job["title"],
+                            job_url=job["url"],
+                            raw_snippet=(llm_result or "")[:300],
+                        )
+                        daily_report_jobs.append({
+                            "title": job["title"],
+                            "organisation": name,
+                            "url": job["url"],
+                            "match": "low",
+                            "location": "", "type": "", "deadline": "", "salary": "",
+                            "field_score": "", "skills_score": "", "seniority_score": "",
+                            "reason": "",
+                        })
 
-                    # Daily report: all jobs
-                    daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=job["url"]))
-                else:
-                    # LLM returned something unparseable — record minimal entry
-                    print(f"        ⚠️ Could not parse LLM response.")
-                    issues.add(
-                        issues_data, now, site,
-                        "llm_parse_failed",
-                        "LLM response could not be parsed into a match block",
-                        job_title=job["title"],
-                        job_url=job["url"],
-                        raw_snippet=(llm_result or "")[:300],
-                    )
-                    daily_report_jobs.append({
-                        "title": job["title"],
-                        "organisation": name,
-                        "url": job["url"],
-                        "match": "low",
-                        "location": "", "type": "", "deadline": "", "salary": "",
-                        "field_score": "", "skills_score": "", "seniority_score": "",
-                        "reason": "",
-                    })
+                # Track this URL (and any aliases) in BOTH the set (O(1) lookup
+                # for the rest of this run) and the ordered list (preserves
+                # insertion order for state persistence + prune-by-recency).
+                if job["url"] not in seen_urls:
+                    seen_urls.add(job["url"])
+                    seen_urls_ordered.append(_norm_url(job["url"]))
+                for extra in job.get("_also_track", []):
+                    if extra not in seen_urls:
+                        seen_urls.add(extra)
+                        seen_urls_ordered.append(_norm_url(extra))
+                time.sleep(1)
 
-            # Track this URL (and any aliases) in BOTH the set (O(1) lookup
-            # for the rest of this run) and the ordered list (preserves
-            # insertion order for state persistence + prune-by-recency).
-            if job["url"] not in seen_urls:
-                seen_urls.add(job["url"])
-                seen_urls_ordered.append(_norm_url(job["url"]))
-            for extra in job.get("_also_track", []):
-                if extra not in seen_urls:
-                    seen_urls.add(extra)
-                    seen_urls_ordered.append(_norm_url(extra))
-            time.sleep(1)
-
-        state[site_key]["seen_urls"] = seen_urls_ordered
-        state[site_key]["last_checked"] = now.isoformat()
+            state[site_key]["seen_urls"] = seen_urls_ordered
+            state[site_key]["last_checked"] = now.isoformat()
+        except Exception as _site_err:
+            # Crash isolation: one site's unexpected failure must never abort the
+            # whole run (which would also skip save_state and re-notify next run).
+            _crash_name = site.get("name", "?")
+            _crash_key = site.get("url", "")
+            print(f"    ❌ Unhandled error on {_crash_name}: {type(_site_err).__name__}: {_site_err} — skipping to next site")
+            _record_error(f"site_crashed ({_crash_name}): {type(_site_err).__name__}: {_site_err}")
+            try:
+                issues.add(issues_data, now, site, "site_crashed", f"{type(_site_err).__name__}: {_site_err}")
+            except Exception:
+                pass
+            if _crash_key and _crash_key in state:
+                _st = state[_crash_key]
+                _st["consecutive_errors"] = _st.get("consecutive_errors", 0) + 1
+                _st["last_checked"] = now.isoformat()
+            continue
 
     # ─── Prune seen_urls to prevent state.json bloat ───
     for site_key, site_state in state.items():
