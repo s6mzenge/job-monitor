@@ -1,7 +1,7 @@
 {
   "date": "2026-06-27",
-  "generated_at": "2026-06-27T18:41:49.424189+00:00",
-  "run_count": 12,
+  "generated_at": "2026-06-27T19:44:15.021143+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Senior Marketing Executive",
@@ -114,6 +114,20 @@
       "type": "Full-time",
       "deadline": "2026-06-28",
       "salary": "Not specified"
+    },
+    {
+      "title": "Director",
+      "organisation": "Palestine Solidarity Campaign",
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Executive leadership role requiring extensive senior leadership experience and ultimate executive responsibility — a hard ineligibility on seniority for a candidate with only student-assistant experience. Although the human-rights/Palestine subject matter is adjacent to the candidate's interests, the Director title is far above their stage.",
+      "location": "London (hybrid)",
+      "type": "Full-time",
+      "deadline": "8 July 2026",
+      "salary": "£80,000 – £95,000 per annum"
     }
   ]
 }

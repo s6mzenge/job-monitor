@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-06-27T18:41:49.424189+00:00",
+  "last_updated": "2026-06-27T19:44:15.021143+00:00",
   "site_summary": {
-    "NIOD": {
-      "site_id": 39,
-      "url": "https://www.niod.nl/en/about-niod/vacancies-niod",
-      "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 31,
-      "first_recent_failure": "2026-06-16T06:31:20.947221+00:00",
-      "last_recent_failure": "2026-06-27T18:41:49.424189+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.niod.nl%2Fen%2Fabout-niod%2Fvacancies-niod"
-    },
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
@@ -52,19 +39,6 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.globaljustice.org.uk%2Fabout-us%2Fjobs-and-volunteering%2F"
-    },
-    "Palestine Solidarity Campaign": {
-      "site_id": 102,
-      "url": "https://palestinecampaign.org/about/opportunities/",
-      "method": "html",
-      "consecutive_failures": 12,
-      "total_recent_failures": 81,
-      "first_recent_failure": "2026-06-16T17:01:28.881488+00:00",
-      "last_recent_failure": "2026-06-27T18:41:49.424189+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpalestinecampaign.org%2Fabout%2Fopportunities%2F"
     },
     "Institute for War & Peace Reporting": {
       "site_id": 123,
@@ -130,19 +104,6 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.kingsfund.org.uk/about-us/jobs"
-    },
-    "TU Berlin (wiss. Personal)": {
-      "site_id": 167,
-      "url": "https://www.jobs.tu-berlin.de/stellenausschreibungen?filter%5Bworktype_tub%5D%5B%5D=wiss-dauer&filter%5Bworktype_tub%5D%5B%5D=wiss-mlehr&filter%5Bworktype_tub%5D%5B%5D=wiss-olehr",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-06-27T18:41:49.424189+00:00",
-      "last_recent_failure": "2026-06-27T18:41:49.424189+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
     }
   },
   "issues": [
