@@ -513,7 +513,8 @@
       "method": "html",
       "selector": "div#content",
       "link_selector": "",
-      "base_url": "https://www.niod.nl"
+      "base_url": "https://www.niod.nl",
+      "proxy": "jina"
     },
     {
       "id": 42,
@@ -739,11 +740,10 @@
       "id": 58,
       "name": "Reprieve",
       "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
-      "method": "html",
+      "method": "playwright",
       "selector": "main, div.entry-content, article",
       "link_selector": "",
-      "base_url": "https://reprieve.org.uk",
-      "tls_impersonate": true
+      "base_url": "https://reprieve.org.uk"
     },
     {
       "id": 59,
@@ -1344,7 +1344,7 @@
       "link_selector": "",
       "base_url": "https://palestinecampaign.org",
       "london_only": true,
-      "proxy": "cloudflare_worker"
+      "proxy": "jina"
     },
     {
       "id": 103,
@@ -1360,7 +1360,7 @@
       "id": 104,
       "name": "Open Rights Group",
       "url": "https://www.openrightsgroup.org/jobs/",
-      "method": "html",
+      "method": "playwright",
       "selector": "main",
       "link_selector": "",
       "base_url": "https://www.openrightsgroup.org",
@@ -1370,7 +1370,7 @@
       "id": 105,
       "name": "European Leadership Network",
       "url": "https://europeanleadershipnetwork.org/about/careers/",
-      "method": "html",
+      "method": "playwright",
       "selector": "main",
       "link_selector": "",
       "base_url": "https://europeanleadershipnetwork.org",
@@ -1877,7 +1877,7 @@
       "id": 147,
       "name": "German Historical Institute London",
       "url": "https://www.ghil.ac.uk/opportunities/vacancies",
-      "method": "html",
+      "method": "playwright",
       "selector": "main"
     },
     {
