@@ -2980,12 +2980,24 @@ def main():
                         llm_err = _consume_error()
                         if llm_result:
                             parsed = parse_gemini_matches(llm_result)
+                            # Page-level sites dedup by page-hash, which can flip spuriously
+                            # (e.g. non-deterministic jina text) and re-send identical matches
+                            # every run. Guard Telegram with a per-job title signature so each
+                            # posting notifies exactly once, independent of hash churn.
+                            notified = state[site_key].get("notified_titles", [])
                             for m in parsed:
                                 # Telegram: High/Medium only
                                 if m.get("match", "").lower() in ("high", "medium"):
-                                    all_matches.append(format_match_for_telegram(m))
+                                    _sig = " ".join((m.get("job") or m.get("title") or "").lower().split())
+                                    if _sig and _sig in notified:
+                                        print(f"    ⏭️  already notified, skipping Telegram: {(m.get('job') or '')[:60]}")
+                                    else:
+                                        all_matches.append(format_match_for_telegram(m))
+                                        if _sig:
+                                            notified.append(_sig)
                                 # Daily report: all jobs
                                 daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=site["url"]))
+                            state[site_key]["notified_titles"] = notified[-50:]
                             # If the LLM explicitly found no jobs, memoise this hash so
                             # an identical (e.g. region-variant) empty page never costs
                             # another call. Gated on the explicit NO_JOBS_FOUND sentinel
