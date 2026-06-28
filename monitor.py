@@ -213,6 +213,21 @@ NO_VACANCY_PHRASES = [
     "no posts on the list",
 ]
 
+# Anti-bot interstitial / challenge pages (Vercel, Cloudflare, etc.). When a fetch
+# returns one of these short challenge stubs instead of the real page, that is a
+# BLOCK, not content — and many embed a per-request nonce that would otherwise
+# churn the content hash and fire an LLM call on every run. Matched only on short
+# pages (see the length guard at the call site) so a real, full content page that
+# merely mentions "enable JavaScript" somewhere cannot trip it.
+CHALLENGE_PHRASES = [
+    "vercel security checkpoint",
+    "verifying your browser",
+    "checking your browser",
+    "enable javascript to continue",
+    "just a moment",
+    "ddos protection by cloudflare",
+]
+
 def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE, "r", encoding="utf-8") as f:
@@ -485,6 +500,14 @@ def check_html(site, seen_urls):
 
     if not link_selector:
         text = extract_text(soup, selector)
+        if len(text) < 600 and any(p in text.lower() for p in CHALLENGE_PHRASES):
+            # An anti-bot interstitial (Vercel/Cloudflare challenge), not the real
+            # page. These carry a rotating per-request nonce, so hashing them churns
+            # and fires an LLM call every run. Treat exactly like an inconclusive
+            # fetch: no LLM, keep last known state, retry next run. Never a real
+            # vacancy (and the real page, being long, won't reach this branch).
+            print(f"    🛡️ Anti-bot challenge page detected ({len(text)} chars) — treating as blocked, keeping last state (no LLM).")
+            return {"type": "insufficient_content", "chars": len(text)}
         if len(text) < 50 and not any(p in text.lower() for p in NO_VACANCY_PHRASES):
             # Sub-threshold extraction with no explicit "no vacancies" phrase is
             # almost always a flaky/partial fetch (JS shell, or a CDN node serving
