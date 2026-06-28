@@ -1,0 +1,77 @@
+{
+  "date": "2026-06-28",
+  "generated_at": "2026-06-28T00:01:17.823953+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Investment Manager",
+      "organisation": "Paul Hamlyn Foundation",
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior investment-management role in finance, entirely off the candidate's IR/policy profile and requiring specialist investment expertise the candidate lacks. The high salary band and \"Manager\" title also indicate substantial professional experience well beyond the candidate's stage.",
+      "location": "Not specified",
+      "type": "Full-time",
+      "deadline": "Monday 29 June",
+      "salary": "circa £90,000-£150,000 per annum"
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "The deadline (15 January 2026) has clearly passed relative to today (28 June 2026), so the role is closed. It is also a call for \"experts\" to join an advisory committee — a senior, likely unpaid advisory role, not an entry-level job.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Studentische Teilzeitkraft Archiv Grünes Gedächtnis (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "Although the Green Party archive (\"Grünes Gedächtnis\") aligns well with the candidate's forthcoming publications on the Greens' defence policy, this is explicitly a \"Studentische Teilzeitkraft\" (working-student) role — excluded as a study-time position rather than a genuine entry-level job.",
+      "location": "Berlin",
+      "type": "Part-time",
+      "deadline": "2026-07-12",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Projektbearbeitung Bereich Inland – Schwerpunkt Demokratie und Gesellschaft (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "match": "medium",
+      "field_score": "3",
+      "skills_score": "4",
+      "seniority_score": "4",
+      "reason": "Project work on democracy and society at a political foundation is policy-adjacent and fits the candidate's research/project-administration background (e.g. funding allocation at the HRK). The posting gives no clear years requirement, but the field is adjacent rather than core, placing it as a plausible stretch.",
+      "location": "Berlin",
+      "type": "Full-time",
+      "deadline": "2026-07-05",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Projektbearbeitung materielle Förderung (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "3",
+      "seniority_score": "5",
+      "reason": "This is a scholarship-administration (\"materielle Förderung\") role in the foundation's Studienwerk — generic funding/grant administration off the candidate's policy and research profile. FIELD ≤ 2 forces Low, and the deadline (2026-06-28) coincides with today, leaving no realistic window.",
+      "location": "Berlin",
+      "type": "Full-time",
+      "deadline": "2026-06-28",
+      "salary": "Not specified"
+    }
+  ]
+}
