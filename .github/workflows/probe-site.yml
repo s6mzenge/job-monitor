@@ -1,0 +1,74 @@
+name: Probe a single site
+
+# Manual only. Runs the real monitor.py against probe_sites.json in DRY-RUN, so:
+#   • every variant goes through the exact production check_html / fetch_page path
+#   • no Telegram, no LLM calls, no dashboard write (all skipped under dry-run)
+#   • nothing is committed (this workflow has no git push step), so state.json,
+#     the temporary config.json, and dry_run.txt vanish with the runner.
+# The live config.json on main is never modified — it is only overwritten inside
+# the throwaway checkout for the duration of this one run.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Point every variant at this URL instead of ELN (blank = ELN). e.g. ORG's careers page."
+        required: false
+        default: ""
+      include_playwright:
+        description: "Install Chromium too (only needed if you add a playwright variant to probe_sites.json)"
+        type: boolean
+        required: false
+        default: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Install Chromium (optional)
+        if: ${{ inputs.include_playwright }}
+        run: playwright install chromium --with-deps
+
+      - name: Build probe config (real qualifications + probe sites) + enable dry-run
+        env:
+          PROBE_URL: ${{ inputs.url }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from urllib.parse import urlsplit, urlunsplit
+          cfg = json.load(open("config.json", encoding="utf-8"))
+          sites = json.load(open("probe_sites.json", encoding="utf-8"))["sites"]
+          override = os.environ.get("PROBE_URL", "").strip()
+          if override:
+              parts = urlsplit(override)
+              origin = urlunsplit((parts.scheme, parts.netloc, "", "", ""))
+              for s in sites:
+                  s["url"] = override
+                  if "base_url" in s:
+                      s["base_url"] = origin
+          cfg["sites"] = sites
+          json.dump(cfg, open("config.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+          print(f"Probe config: {len(sites)} variant(s)" + (f"  url -> {override}" if override else "  (ELN default)"))
+          PY
+          echo "true" > dry_run.txt
+
+      - name: Run monitor (dry-run; no notifications, no commit)
+        env:
+          # Required for import (monitor reads these with bracket access at module load);
+          # never used in dry-run.
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Used by the transport variants.
+          CF_WORKER_URL: ${{ secrets.CF_WORKER_URL }}
+          CF_WORKER_TOKEN: ${{ secrets.CF_WORKER_TOKEN }}
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+        run: python -u monitor.py
