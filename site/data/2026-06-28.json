@@ -1,7 +1,7 @@
 {
   "date": "2026-06-28",
-  "generated_at": "2026-06-28T21:07:23.784674+00:00",
-  "run_count": 52,
+  "generated_at": "2026-06-28T21:29:06.107193+00:00",
+  "run_count": 53,
   "jobs": [
     {
       "title": "Investment Manager",
@@ -3510,6 +3510,23 @@
       "type": "Full-time (fixed-term 3 years, suitable for part-time)",
       "deadline": "2026-07-31",
       "salary": "EGR. 13 TV-L",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "6 Academic Staff Members (PhD Researchers) at the International Research Training Group Cultures of Repair (IRTG 3195)",
+      "organisation": "Uni Potsdam (akad. Personal, befristet)",
+      "url": "https://www.uni-potsdam.de/fileadmin/projects/verwaltung/docs/Dezernat3/Ausschreibungen/2_akadPersonal/332_2026_IRTG_Cultures_of_Repair.pdf",
+      "priority": 42,
+      "eligible": true,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "A fully funded TV-L E13 PhD post is exactly the kind of entry-level, salaried doctoral position the candidate is open to, and the MSc satisfies the entry requirement; English proficiency and the writing sample requirement are easily met. However, the research framing (literary studies, gender/queer/media studies, environmental humanities, postcolonial and Indigenous thought) is adjacent rather than core — it touches the candidate's interest in postcolonial theory and post-atrocity reconciliation but is not centred on international law, atrocity prevention or European security, and the proposal must fit one of these specific humanities areas. Eligible and worth a look, but the disciplinary fit is partial.",
+      "location": "Potsdam, Germany (with one year at University of Melbourne)",
+      "type": "Part-time (65%, fixed-term 3.5 years)",
+      "deadline": "2026-07-12",
+      "salary": "TV-L E13 (65%)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
