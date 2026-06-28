@@ -1,7 +1,7 @@
 {
   "date": "2026-06-28",
-  "generated_at": "2026-06-28T02:01:13.965010+00:00",
-  "run_count": 8,
+  "generated_at": "2026-06-28T02:31:22.042116+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Investment Manager",
@@ -86,6 +86,76 @@
       "type": "Full-time",
       "deadline": "8 July 2026",
       "salary": "£80,000 – £95,000 per annum"
+    },
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "2",
+      "reason": "Human rights / strategic litigation is core to the candidate's interests, but this is a Manager-level role (Project/Regional Leads/Managers band) requiring managerial and likely legal-litigation experience the candidate lacks. The Manager title triggers the seniority cap and the deadline (15/06/2026) has also passed relative to today (28/06/2026).",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% matched pension"
+    },
+    {
+      "title": "Fundraising Coordinator",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "Fundraising is off the candidate's profile (closer to development/sales than policy or research work), and the deadline (31/05/2026) has clearly passed relative to today (28/06/2026). Both the field mismatch and the expired deadline force a Low.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "31/05/2026",
+      "salary": "£32,696 per annum plus up to 5% matched pension"
+    },
+    {
+      "title": "Lead Assessor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Milan-Lead-Assessor-20126/1287488301",
+      "match": "low",
+      "field_score": "2",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "Requires fluency in Italian (explicitly mandatory), which the candidate does not speak — an exclusion. The role is a social-compliance auditor position requiring specialist auditing expertise (APSCA/CSCA/ASCA standards), labour-law specialisation and \"Lead\" level experience, all outside the candidate's profile.",
+      "location": "Milan, Italy",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Food Assessor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Milan-Food-Assessor-20126/1288310401",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "2",
+      "reason": "Food safety auditing is entirely off-profile, requiring a food-industry degree, IFS/BRC auditing qualifications, and a minimum of 3 years' food-sector experience — none of which the candidate has. Multiple hard requirements fail (specific qualifications and the 3-year experience bar), forcing a Low.",
+      "location": "Milan, Italy",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
+    },
+    {
+      "title": "Lead Auditor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Lead-Auditor-B37-7ES/1380513533",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a food-safety auditing role requiring a food science/technical degree, food safety certifications (HACCP, BRCGS, FSSC), and typically ~5 years of industry experience — entirely off the candidate's IR/policy profile. Multiple exclusions apply: Lead title with senior experience expectation, ~5 years required, and specialist technical certifications the candidate cannot substitute.",
+      "location": "Birmingham, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified"
     }
   ]
 }
