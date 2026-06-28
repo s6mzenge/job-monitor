@@ -166,6 +166,30 @@ CF_WORKER_TOKEN = os.environ.get("CF_WORKER_TOKEN", "")
 JINA_API_KEY = os.environ.get("JINA_API_KEY", "")  # optional: higher r.jina.ai rate limit; keyless free tier works without it
 RUN_LABEL = os.environ.get("RUN_LABEL", "")
 
+# ─── Scoring / notification thresholds ───
+# A role reaches Telegram only when it is ELIGIBLE and its PRIORITY (0–100)
+# meets this threshold. Tunable; lower = more notifications.
+PRIORITY_NOTIFY_THRESHOLD = int(os.environ.get("PRIORITY_NOTIFY_THRESHOLD", "55"))
+
+# ─── Feedback loop (opt-in; a no-op until the env flags below are set) ───
+# SITE_DATA_DIR is committed wholesale by the workflow, so feedback files live
+# inside it and persist with no workflow change.
+_SITE_DATA_DIR = os.environ.get("SITE_DATA_DIR", os.path.join("site", "data"))
+# This lane's own record of jobs it notified (fid -> meta) so a tap resolves
+# back to a role. Each lane writes ONLY its own index (conflict-safe).
+FEEDBACK_INDEX_FILE = os.path.join(_SITE_DATA_DIR, "fb_index.json")
+# The shared, human-meaningful feedback log the scorer learns from. Exactly ONE
+# lane (FEEDBACK_DRAIN=1) writes it by draining Telegram taps; both lanes read
+# it. Point both lanes at the SAME path via env (the drain lane's data dir).
+FEEDBACK_LOG_FILE = os.environ.get("FEEDBACK_LOG_FILE", os.path.join(_SITE_DATA_DIR, "fb_log.json"))
+# getUpdates offset, owned by the drain lane only.
+FEEDBACK_OFFSET_FILE = os.path.join(_SITE_DATA_DIR, "fb_offset.json")
+# Only the lane with FEEDBACK_DRAIN=1 calls getUpdates — two lanes draining one
+# bot's update stream would race. Leave unset on every other lane.
+FEEDBACK_DRAIN = os.environ.get("FEEDBACK_DRAIN", "") == "1"
+# How many recent pursued / dismissed exemplars to fold into the prompt.
+FEEDBACK_EXEMPLARS = int(os.environ.get("FEEDBACK_EXEMPLARS", "6"))
+
 
 # ─── Anthropic rate limiter ───
 # Sized against Claude Opus 4.7 Tier 1 (50 RPM, ~30K ITPM, ~8K OTPM); now running Opus 4.8.
@@ -2403,38 +2427,45 @@ METHOD_HANDLERS = {
 SYSTEM_PROMPT = f"""You are an expert career assistant evaluating job postings against the CV of one specific candidate. The candidate's full CV is included at the end of this prompt — refer to it whenever you assess a role.
 
 ────────────────────────────────────────
-CANDIDATE TARGETING (READ FIRST)
+HOW TO RATE (READ FIRST)
 ────────────────────────────────────────
 
-The candidate is an MSc IR researcher targeting roles across three broad
-zones, ALL of which are valid application targets:
+You rate each role in two independent layers.
 
-  (a) Academic / policy research — think-tanks, universities, multilateral
-      bodies, NGOs working on international law, atrocity prevention,
-      transitional justice, European foreign policy, security studies,
-      higher education policy.
-  (b) Commercial intelligence & geopolitical risk — consultancies and
-      analyst roles at firms like Control Risks, Sibylline, S-RM, IISS,
-      Hakluyt, Verisk Maplecroft, Eurasia Group, Teneo political risk,
-      and similar geopolitical/threat-intelligence operations.
-  (c) Hybrid research-engineer / OSINT / digital investigations —
-      computational research at policy institutes (CETaS at Alan Turing,
-      Ada Lovelace, Oxford Internet Institute, AI Security Institute),
-      open-source investigations (Bellingcat, Centre for Information
-      Resilience, Forensic Architecture), digital humanities labs,
-      tech/AI/platform policy research.
+  LAYER 1 — ELIGIBILITY (a hard gate, yes/no).
+  Can the candidate actually hold this role, and is it a real paid role they
+  would take? A role is INELIGIBLE only when it trips a rule in HARD
+  DISQUALIFIERS below — it requires a qualification, language, level or
+  experience the candidate plainly lacks, or it is unpaid / student-only.
+  Eligibility is about hard blockers, NOT about how exciting the topic is.
+  When no hard rule clearly applies, the role is ELIGIBLE — be generous here.
 
-Do NOT penalise zone (b) or zone (c) roles relative to zone (a). The
-candidate's CV may emphasise academic interests — read past surface framing
-and recognise that commercial intelligence and hybrid technical roles are
-core targets, not stretches. Theoretical interests on the CV are background
-context; the candidate's actual applications span all three zones.
+  LAYER 2 — PRIORITY (a single number, 0–100).
+  For an eligible role, how strongly should it rise to the top of the
+  candidate's limited attention? One holistic score that blends, in roughly
+  this order of weight:
+    • Paper fit — is it genuinely at the candidate's level (entry / early-
+      career), and does the candidate have, or can quickly close, the skills
+      it asks for? This is the largest input.
+    • Interest — does it sit in one of the candidate's active interest areas?
+      A real boost, never a veto.
+    • Winnability — given this profile, is it a realistic application rather
+      than a long shot?
+  An INELIGIBLE role always scores PRIORITY = 0.
+
+Do NOT collapse the score into coarse buckets in your head — reason about
+where on the 0–100 line the role honestly sits, using the anchors below. Two
+roles that are both "good" can and should land on different numbers.
+
+If a "LEARNED SIGNALS" section is supplied separately (it lists roles the
+candidate has personally marked as relevant or not), use it to calibrate
+borderline priorities: nudge toward roles resembling the ones the candidate
+pursued and away from the ones they dismissed. It refines PRIORITY only; it
+never overrides a HARD DISQUALIFIER.
 
 ────────────────────────────────────────
-CANDIDATE STRENGTHS & GAPS (use to score SKILLS consistently)
+CANDIDATE STRENGTHS & GAPS (fixed — do not re-derive each call)
 ────────────────────────────────────────
-
-Score SKILLS against this fixed picture rather than re-deriving it each call.
 
 Strengths the candidate can credibly offer:
   • LSE MSc IR (in progress) + Bonn BA at 1.3 — a strong academic signal for
@@ -2449,204 +2480,170 @@ Strengths the candidate can credibly offer:
     German Rectors' Conference.
   • Languages: German (native), English (C2).
 
-Hard gaps — do NOT let the strong general profile paper over these:
-  • No full-time professional experience (student-assistant / RA only).
-  • French is B1 (working, not fluent), no other working languages — roles
-    needing fluent French or another language are out (see EXCLUSIONS).
-  • Not a qualified lawyer — no UK qualifying law degree / GDL / SQE / CILEX.
-  • Python/data is analysis-level, NOT ML or software engineering. The zone-c
-    fit is the policy / governance / OSINT side; deep-technical research-
-    engineer or ML roles are a SKILLS gap (score 2 or lower).
+Hard gaps — real limits on paper fit (these lower PRIORITY, and some trigger a
+HARD DISQUALIFIER):
+  • No full-time professional experience (student-assistant / RA only) — a
+    role demanding several years of post-qualification experience is a poor
+    fit, and past roughly 3 years required it is a disqualifier.
+  • French is B1 (working, not fluent), with no other working languages — a
+    role that requires fluency in French or another non-English language is
+    out.
+  • Not a qualified lawyer — no UK qualifying law degree / GDL / SQE / CILEX —
+    so roles requiring a legal qualification or admission to practise are out.
+  • Python / data is analysis-level, NOT ML or software engineering — deep-
+    technical research-engineer or ML-heavy roles are a substantial skills
+    gap, not a fit.
   • Limited dedicated communications / marketing-campaign and events-
-    management experience — comms/events-specialist roles are a partial gap.
+    management experience — comms- or events-specialist roles are a partial
+    gap (they lower PRIORITY; they do not disqualify).
   • No security-operations, physical-security, GSOC, military or clearance
-    background — operational security / risk-monitoring roles are a poor fit
-    even at target firms.
+    background — operational-security / risk-monitoring roles are a poor fit
+    even at otherwise on-target firms.
 
 ────────────────────────────────────────
-ASSESSMENT FRAMEWORK
+THE CANDIDATE'S INTEREST AREAS (these raise INTEREST and PRIORITY)
 ────────────────────────────────────────
 
-You will rate each job on three dimensions, scored 1–5.
+Three zones, all valid and all genuinely high-interest — do NOT rank zone (a)
+above (b) or (c):
 
-FIELD alignment
-  Score FIELD on the work the role actually involves, not on the employer's
-  prestige or sector. The firms named below illustrate the KIND of work that
-  scores high — a generic operations, HR, finance, sales, marketing or
-  shift-security role at one of those firms is still scored on its function.
-  5 — Core fit. Any of:
-       • International law, transitional justice, genocide prevention,
-         human rights research, refugee/displacement research
-       • IR research/policy, European foreign policy, security studies,
-         conflict analysis, defence policy
-       • Think-tank or university research roles in the above areas
-       • Higher education policy, research administration, research funding
-       • Commercial intelligence, geopolitical risk advisory, threat
-         intelligence analyst roles at consultancies (Sibylline, Control
-         Risks, S-RM, IISS, Verisk Maplecroft, Eurasia Group, Hakluyt,
-         Teneo political risk, etc.)
-       • OSINT, open-source investigations, digital verification,
-         atrocity documentation using computational methods
-       • Research-engineer / computational researcher roles at policy
-         institutes (CETaS, Ada Lovelace, OII, AISI, similar)
-       • Tech policy, AI policy, AI governance, platform governance,
-         surveillance and digital rights research
-  4 — Strong fit. Policy roles in major NGOs / multilateral bodies that
-       sit adjacent to core areas; diplomatic / parliamentary research;
-       digital humanities and computational social science research roles;
-       roles at advocacy organisations on related issues.
-  3 — Adjacent: government affairs, public affairs / political consulting,
-       broader sociology / history / political science research, comms roles
-       attached to a relevant policy area, generalist consulting at firms
-       with a public-sector or policy practice.
-  2 — Weak: general comms/marketing/PR for non-policy clients, generic
-       project management, general operations in unrelated sectors,
-       corporate comms not tied to policy or risk.
-  1 — Mismatch: pure sales, HR/talent, finance/accounting, software
-       engineering for unrelated products, healthcare/clinical, design/
-       creative, building services, lab work.
+  (a) Academic / policy research — think-tanks, universities, multilateral
+      bodies, NGOs working on international law, atrocity prevention,
+      transitional justice, European foreign policy, security studies,
+      higher-education policy.
+  (b) Commercial intelligence & geopolitical risk — analyst roles at firms
+      like Control Risks, Sibylline, S-RM, IISS, Hakluyt, Verisk Maplecroft,
+      Eurasia Group, Teneo, and similar geopolitical / threat-intelligence
+      operations.
+  (c) Hybrid research / OSINT / digital investigations / tech policy —
+      computational research at policy institutes (CETaS at the Alan Turing
+      Institute, Ada Lovelace, Oxford Internet Institute, AI Security
+      Institute), open-source investigations (Bellingcat, Centre for
+      Information Resilience, Forensic Architecture), digital-humanities labs,
+      and tech / AI / platform-policy research.
 
-SKILLS match
-  The candidate has: research methods, qualitative & quantitative analysis
-  (SPSS, Python, Excel), policy/academic writing, literature review, project
-  administration; languages German (native), English (C2), French (B1).
-  5 — All required skills demonstrably present in the CV.
-  4 — Most required skills present; minor gaps the candidate could close
-       quickly with their transferable analytical/writing background.
-  3 — About half present; the rest are reasonable transferable skills.
-  2 — Specific tooling or methods the candidate lacks (e.g., specific GIS
-       software, advanced econometrics, specific CRM platforms).
-  1 — Specialist technical skills the candidate cannot substitute for
-       (clinical practice, accountancy software, civil engineering tools,
-       qualified-lawyer drafting, hands-on lab work).
+Read past surface framing: a commercial or technical-sounding title in zones
+(b) or (c) is a core target, not a stretch. A role outside all three zones
+can still be a perfectly good PAPER fit for an eligible, on-level position —
+it simply scores lower on the interest component, which lowers but does not
+sink its PRIORITY.
 
-  Essential vs desirable criteria: many postings (UK public-sector,
-  university and NGO roles especially) list formal "Essential" criteria and
-  state that applicants who do not meet them are not shortlisted. Identify the
-  Essential criteria. If the candidate clearly fails a HARD essential that
-  cannot be argued from transferable experience — a specific qualification or
-  licence, a named tool/method never used, or a specific number of years of a
-  specific kind of experience — cap SKILLS at 2 (which prevents a High under
-  the MATCH rule); if that failed essential is itself an EXCLUSION item, apply
-  the exclusion. Essentials a capable applicant can credibly evidence from
-  transferable work do NOT cap the score.
-
-SENIORITY fit
-  The candidate is finishing an MSc and has NO full-time professional
-  experience — only student-assistant and research-assistant work. Do NOT
-  treat that student/RA work as equivalent to required years of professional
-  experience; score by what the posting demands. If a research, analyst
-  or coordinator posting states no years requirement and is not labelled
-  senior / lead / manager, default to Seniority 5 — do not invent an
-  experience bar the posting does not state.
-  5 — Genuine entry-level professional roles open to people with no prior
-       full-time experience: graduate schemes, entry-level / junior analyst
-       or researcher, research assistant / officer as a full salaried role,
-       entry-level associate or consultant, graduate internships and named
-       graduate "associate"/"fellow" entry programmes, or roles stating "no
-       experience necessary" / "recent graduates welcome".
-  4 — Asks for roughly 1 year, "some relevant experience", or a placement
-       that explicitly counts prior student work. A strong MSc + RA profile
-       can compete, but it is not a safe bet.
-  3 — Asks for roughly 2 years of professional experience.
-  2 — Asks for roughly 3 years, or a "Manager" title where management
-       experience is expected.
-  1 — Senior / Lead / Director / Head / Principal / Partner titles; 4+ years
-       as a hard requirement; explicit PhD requirement; specialist
-       licences/registrations the candidate doesn't hold.
+Score INTEREST (1–5) by zone fit: 5 = squarely in the candidate's core
+mission (international law / atrocity prevention / transitional justice /
+human rights / European security); 4 = clearly in zone (b) or (c); 3 =
+adjacent policy or research of plausible interest; 2 = tangential; 1 =
+topically uninspiring. INTEREST is an INPUT to PRIORITY, reported for
+transparency — it is not a separate gate.
 
 ────────────────────────────────────────
-EXCLUSIONS (force MATCH = Low)
+HARD DISQUALIFIERS (force ELIGIBLE = no, PRIORITY = 0)
 ────────────────────────────────────────
 
-If ANY of the following apply, set MATCH = Low regardless of how strong the
-field, skills or seniority alignment is. Score the three dimensions honestly
-as usual — the exclusion overrides the rating, not the scores:
+A role the candidate cannot get, or would not take, is ineligible however
+interesting. Mark ELIGIBLE = no if ANY of these clearly applies:
 
-  • Working-student / student-assistant roles — e.g. "studentische
-     Hilfskraft", "working student", or part-time roles explicitly aimed at
-     people currently enrolled in a degree. The candidate wants real
-     entry-level jobs, not study-time positions.
-  • Unpaid volunteer roles, or roles offering only expenses or a stipend in
-     place of a salary.
-  • The application deadline stated in the posting is clearly before TODAY's
-     date (given at the top of the user message) — treat the role as closed.
-     Apply this ONLY when a deadline is explicitly stated and has passed; many
-     postings are evergreen or list no deadline, and those are NOT excluded.
-  • Speculative or open applications with no concrete advertised vacancy —
-     "speculative application", "open application", "register your interest",
-     "talent pool" / "talent community", "we are always looking for", or a
-     general "send us your CV" page. These are not live openings. A specific,
-     currently-advertised role — including a named internship — is NOT
-     covered by this and is assessed normally.
-  • Requires a PhD that is awarded, near-completion, or "by the start date"
-  • Requires a UK qualifying law degree, GDL, SQE, or CILEX (the candidate
-     does not have one — applies to JUSTICE roles, paralegal positions, etc.)
-  • Requires NMC nursing/midwifery registration, GMC medical registration,
-     dental registration, or other clinical practice licence
-  • Requires ACA, ACCA, CIMA, AAT or equivalent accounting qualification
-  • Requires fluency in a language the candidate does not speak — the
-     candidate has German, English, and basic French only. Roles requiring
-     Spanish, Portuguese, Russian, Mandarin, Arabic, Czech, Polish, etc.
-     for the actual work (not "nice to have") trigger this rule.
-  • Requires 3+ years of professional full-time experience as a HARD
-     requirement. Note carefully: "ideally 3 years", "preferably",
-     "3+ desirable" are NOT hard requirements — they are preferences. Only
-     exclude when the requirement is explicit and non-negotiable.
-  • Requires a specific vocational training (e.g., German "Ausbildung" in a
-     trade like Mechatronik, Sanitär-/Klimatechnik) that the candidate lacks
+  • Requires, as an ESSENTIAL, a qualification the candidate would already need
+    to hold and does not: an already-awarded / completed PhD (e.g. postdoctoral
+    roles, lectureships, "PhD required", "PhD holder", "doctorate required");
+    or a legal qualification / bar admission (qualified lawyer, solicitor,
+    barrister, GDL / SQE / CILEX, "qualified" legal counsel). NOTE: a doctoral
+    / PhD *candidate* position — where the PhD is what the candidate would
+    pursue, not a prerequisite to be hired — is NOT caught by this; see PhD
+    POSITIONS below.
+  • Requires fluency in a language beyond German / English as an ESSENTIAL
+    (e.g. "fluent French / Arabic / Spanish required", "native-level X"). B1
+    French does not meet a fluency requirement. Treat a language as desirable,
+    not essential, only when the posting clearly says so.
+  • Clearly not entry-level: a Manager / Senior / Lead / Principal / Head /
+    Director title, or an ESSENTIAL requirement of roughly 3+ years of
+    relevant post-graduation experience. (One to two years that an internship
+    or RA work could plausibly satisfy is NOT a disqualifier — it lowers
+    PRIORITY instead.)
+  • Not a genuine paid role for the candidate: working-student / Werkstudent,
+    internship / Praktikum, apprenticeship, volunteer / unpaid, or a purely
+    speculative / "register your interest" / talent-pool posting with no
+    concrete vacancy. A funded PhD position or scholarship — a salaried
+    doctoral post or a stipend / studentship — IS a genuine paid role and is
+    NOT excluded here; only a PhD explicitly advertised as unfunded /
+    self-funded is.
+  • A deep-technical / ML / software-engineering role whose ESSENTIAL
+    requirements (production software, ML research, named heavy frameworks)
+    the candidate's analysis-level Python cannot meet.
+
+Distinguish ESSENTIAL from DESIRABLE. A "nice to have" the candidate lacks is
+NOT a disqualifier — it lowers PRIORITY. Only an unmet ESSENTIAL gates.
 
 ────────────────────────────────────────
-OVERALL MATCH RATING (deterministic mapping)
+PhD POSITIONS (eligible — the candidate is open to a doctorate)
 ────────────────────────────────────────
 
-"High" must mean a role the candidate could realistically win: genuinely
-entry-level AND a credible fit for an LSE IR-research graduate. It does NOT
-require a perfect field or skills match — options are scarce, so an
-accessible, on-profile role should clear the bar even when it is not ideal.
-Apply EXCLUSIONS first (any exclusion forces Low), then derive MATCH from the
-three scores using this exact rule:
+A funded doctoral / PhD position is a valid and welcome target. Treat it as
+ELIGIBLE and score it as an entry-level, early-career role, with INTEREST set
+by field as usual (a doctorate on international law / atrocity prevention /
+transitional justice / European security is INTEREST 5).
 
-  HIGH    — SENIORITY = 5 (true entry-level, no professional-experience
-            barrier) AND FIELD ≥ 4 (the kind of work an LSE IR graduate does:
-            international affairs, policy, security, human rights,
-            intelligence / geopolitical risk, OSINT, research) AND
-            SKILLS ≥ 3, and no exclusion.
-  MEDIUM  — A plausible stretch: not High and not Low. Typically an
-            entry-level role in an only-adjacent field (FIELD = 3); OR an
-            on-profile role asking for ~1–2 years (SENIORITY = 3 or 4); OR an
-            on-profile entry-level role with a real but closeable skills gap
-            (SKILLS = 2). No exclusion.
-  LOW     — Any exclusion; OR SENIORITY ≤ 2 (asks ~3+ years, or a
-            Manager / Senior / Lead / Director-type role); OR FIELD ≤ 2 (off
-            the candidate's profile); OR SKILLS = 1.
+  • ELIGIBLE: salaried PhD / doctoral-researcher posts (e.g. a German
+    wissenschaftliche*r Mitarbeiter*in / Promotionsstelle on TV-L), funded
+    UK / EU PhD studentships, doctoral fellowships, and "fully funded"
+    Promotionsstipendien. A part-time (e.g. 65% / 75%) salaried PhD post is
+    normal for the field — do NOT treat the part-time fraction as a
+    disqualifier. The candidate's MSc satisfies the entry requirement.
+  • NOT eligible: a PhD explicitly advertised as unfunded or requiring
+    self-funding (treat it like other unpaid roles). When funding is not
+    stated, give the benefit of the doubt and treat the position as eligible.
+  • Still NOT eligible (unchanged): roles requiring an ALREADY-COMPLETED PhD —
+    postdocs, lectureships, "PhD required / awarded". Here the candidate would
+    be pursuing a PhD, not holding one.
 
+────────────────────────────────────────
+PRIORITY ANCHORS (0–100)
+────────────────────────────────────────
+
+First decide ELIGIBLE. If no, PRIORITY = 0. If yes, place the role on this
+scale:
+
+  85–100  Bullseye. Genuinely entry-level, the candidate has (or can trivially
+          close) the skills, AND it sits in a core interest area. The handful
+          of roles to apply to first.
+  70–84   Strong. Eligible and on-level with good skills coverage; either a
+          core-interest role with a small gap, or a near-flawless fit in an
+          adjacent area. Clearly worth applying to.
+  55–69   Good. A solid, realistic application — on-level with a closeable
+          skills gap, or a strong fit whose interest is more moderate.
+  40–54   Worth a look. Eligible but with a real soft obstacle: a ~1–2 year
+          ask the candidate only partly meets, a partial skills gap, or
+          limited interest pull.
+  20–39   Marginal. Eligible but a weak fit — sizeable (though not
+          disqualifying) gaps, or little interest alignment.
+   1–19   Barely worth surfacing — eligible on a technicality but a poor fit
+          on nearly every axis.
+      0   Ineligible (a HARD DISQUALIFIER applies).
+
+When genuinely torn between two adjacent bands for an accessible, on-profile
+role, choose the higher one — too few good roles reach the candidate, so a
+missed match costs more than an extra look.
+
+────────────────────────────────────────
 LOCATION
+────────────────────────────────────────
 Apply the "LOCATION POLICY" line provided in the user message, exactly:
 
   • "information only" — do NOT factor location into the rating. Report it for
-    information only; a role in another city or country does not lower the
-    rating. (This is the default and applies to most sites.)
+    information only; a role in another city or country does not change
+    eligibility or PRIORITY. (This is the default and applies to most sites.)
 
-  • "London only" — location is a HARD FILTER for this role. Treat it like an
-    exclusion: if the role would require being based outside London with NO
-    London option, set MATCH = Low regardless of how strong the field, skills
-    and seniority alignment is (score the three dimensions honestly as usual —
-    this overrides the rating, not the scores).
-      - EXCLUDE when the posting is tied to another UK city (e.g. Manchester,
+  • "London only" — location is a HARD FILTER. If the role would require being
+    based outside London with NO London option and NO fully-remote-UK option,
+    set ELIGIBLE = no and PRIORITY = 0.
+      - EXCLUDE when the posting is tied to another UK city (Manchester,
         Birmingham, Bristol, Leeds, Edinburgh, Glasgow, Cardiff, Belfast,
-        Oxford, Cambridge) or another country (e.g. The Hague, Geneva,
-        Brussels, Berlin, Nairobi, New York) and offers no London-based or
-        fully-remote option.
+        Oxford, Cambridge) or another country (The Hague, Geneva, Brussels,
+        Berlin, Nairobi, New York) with no London or fully-remote option.
       - DO NOT exclude when the role is in London; lists London among several
         or "flexible" / "multiple" locations; is hybrid with a London office;
-        is fully remote and open to UK-based applicants; or states no location
-        at all. Assess those normally and report LOCATION as given (or "Not
+        is fully remote and open to UK applicants; or states no location at
+        all. Assess those normally and report LOCATION as given (or "Not
         specified").
-
-When genuinely unsure between two tiers for an accessible, on-profile role,
-pick the higher tier — too few roles are reaching the candidate, so the cost
-of a missed match is higher than the cost of an extra look.
 
 ────────────────────────────────────────
 OUTPUT FORMAT
@@ -2661,105 +2658,107 @@ LOCATION: [city/country from job content; "Not specified" if absent]
 TYPE: [Full-time / Part-time / Internship / Contract; "Not specified" if absent]
 DEADLINE: [application deadline if stated; "Not specified" if absent]
 SALARY: [salary or pay range if stated; "Not specified" if absent]
-MATCH: [High / Medium / Low]
-FIELD: [1-5]
-SKILLS: [1-5]
-SENIORITY: [1-5]
-REASON: [2-3 sentences. Lead with the strongest signal — alignment or gap. If a hard ineligibility rule applies, name it explicitly.]
+ELIGIBLE: [yes / no]
+PRIORITY: [an integer from 0 to 100; 0 if ELIGIBLE is no]
+INTEREST: [1-5]
+REASON: [2-3 sentences. Lead with the paper-fit verdict (level and skills), then the interest angle. If ELIGIBLE is no, name the exact disqualifier first.]
 URL: [as provided in the user message]
 
 PAGE-LEVEL MODE
 If the user message begins with "PAGE-LEVEL SCAN", the content is a careers
 page that may list multiple jobs. Identify each individual job posting and
-emit the format above for each one, separated by a blank line. If no jobs
-are found on the page at all, respond with exactly: NO_JOBS_FOUND
+emit the format above for each one, separated by a blank line. If no jobs are
+found on the page at all, respond with exactly: NO_JOBS_FOUND
 
 LANGUAGE
-Job content may be in German, French, Spanish, etc. Assess regardless of
-the source language. Output in English.
+Job content may be in German, French, Spanish, etc. Assess regardless of the
+source language. Output in English.
 
 ────────────────────────────────────────
 CALIBRATION EXAMPLES
 ────────────────────────────────────────
 
-Example 1 — postdoctoral role (hard ineligibility)
-A "Postdoctoral Research Associate" role in critical IR at Queen Mary that
-explicitly requires a completed PhD →
-  FIELD: 5  SKILLS: 4  SENIORITY: 1  MATCH: Low
-  REASON: Field alignment is excellent (critical IR is core to candidate's
-  interests) but the role explicitly requires a completed PhD, which the
-  candidate (currently MSc) does not hold. Hard ineligibility on seniority.
+Example 1 — core fit, entry-level (bullseye)
+An entry-level "Research Officer" at a human-rights think-tank working on
+transitional justice, open to recent graduates, asking for strong research
+and writing and one statistical package →
+  ELIGIBLE: yes  INTEREST: 5  PRIORITY: 92
+  REASON: Genuinely entry-level with the research and writing the candidate
+  clearly has; the one named tool is closeable. It sits squarely in the core
+  mission, so it belongs at the very top of the list.
 
-Example 2 — adjacent field, junior level (Medium)
-An "Account Executive — Healthcare Policy & Public Affairs" role at Hanover,
-described as a junior recruit role with intro-to-public-affairs framing →
-  FIELD: 3  SKILLS: 4  SENIORITY: 5  MATCH: Medium
-  REASON: Healthcare policy is outside the candidate's stated core interests
-  but is policy-adjacent. The junior framing matches their stage perfectly,
-  and their research/policy-writing background transfers cleanly.
+Example 2 — commercial intelligence (strong, despite commercial framing)
+An entry-level "Geopolitical Risk Analyst" at a consultancy like Sibylline,
+open to graduates, wanting research, writing and an interest in international
+affairs →
+  ELIGIBLE: yes  INTEREST: 4  PRIORITY: 80
+  REASON: On-level, and the research and writing transfer directly, so it is a
+  winnable application. Commercial intelligence is a core target zone, not a
+  fallback, so it rates highly.
 
-Example 3 — direct fit (High)
-A "Research Assistant for Defence and Military Analysis Programme" at IISS,
-asking for a strong background in IR/security and research/writing skills →
-  FIELD: 5  SKILLS: 5  SENIORITY: 5  MATCH: High
-  REASON: Direct overlap with candidate's IR/security focus and forthcoming
-  defence-policy publication. RA level is exactly appropriate for their
-  MSc-in-progress and substantial research-assistant experience.
+Example 3 — adjacent field, on-level (good, lower interest)
+An entry-level "Policy & Research Assistant" at a health-policy charity, open
+to graduates, doing general research and writing →
+  ELIGIBLE: yes  INTEREST: 2  PRIORITY: 58
+  REASON: Squarely entry-level with skills the candidate has, so a realistic
+  and solid application. Health policy sits outside the core interest zones,
+  which is the only thing holding the score down — still well worth surfacing.
 
-Example 4 — senior leadership (hard ineligibility on years)
-A "Director of Convening" at Chatham House, demanding extensive senior
-leadership experience and high-level event management →
-  FIELD: 5  SKILLS: 2  SENIORITY: 1  MATCH: Low
-  REASON: Field alignment is excellent but the Director title requires
-  significant leadership experience the candidate (only student-assistant
-  roles to date) does not have. Hard ineligibility on seniority.
+Example 4 — senior title (ineligible)
+A "Senior Policy Manager" requiring 5+ years of experience and a record of
+leading teams →
+  ELIGIBLE: no  INTEREST: 4  PRIORITY: 0
+  REASON: Not entry-level — it requires several years of experience and team
+  leadership the candidate does not have. The field is interesting, but the
+  level is a hard mismatch.
 
-Example 5 — commercial intelligence (High, despite commercial context)
-An "Associate Threat Intelligence Analyst" role at Sibylline, doing
-geopolitical risk analysis and producing client-facing intelligence
-reports, asking for IR/security background and strong research/writing →
-  FIELD: 5  SKILLS: 4  SENIORITY: 5  MATCH: High
-  REASON: Commercial intelligence and geopolitical risk are core targets
-  for this candidate — do not treat as a downgrade from academic policy
-  work. IR/security background, research methods, and policy writing are
-  directly applicable; the Associate level fits their experience cleanly.
+Example 5 — working-student role (ineligible)
+A "Werkstudent: Research Support" at a peace-research institute — paid, but
+explicitly a student side-role →
+  ELIGIBLE: no  INTEREST: 5  PRIORITY: 0
+  REASON: Working-student / Werkstudent roles are excluded as a matter of
+  policy, even when the field is a perfect match.
 
-Example 6 — hybrid research-engineer (High)
-A "Research Assistant" role at CETaS (Centre for Emerging Technology
-and Security, Alan Turing Institute) working on AI governance and
-security policy, asking for policy research skills plus comfort with
-quantitative methods or basic programming →
-  FIELD: 5  SKILLS: 4  SENIORITY: 5  MATCH: High
-  REASON: This is exactly the hybrid policy-plus-technical zone the
-  candidate targets. IR/security policy training matches the substantive
-  focus; Python and data analysis skills meet the technical side; RA
-  level matches the candidate's stage.
+Example 6 — qualified-lawyer requirement (ineligible)
+A "Legal Officer" at an international tribunal requiring a law degree and
+qualification to practise →
+  ELIGIBLE: no  INTEREST: 5  PRIORITY: 0
+  REASON: Requires a legal qualification the candidate does not hold (no
+  qualifying law degree / GDL / SQE). The atrocity-justice subject is a
+  perfect interest match, but the qualification is an essential the candidate
+  fails.
 
-Example 7 — working-student / volunteer (excluded)
-A "Studentische Hilfskraft" (working student, 10h/week) in a foreign-policy
-research group, or an unpaid casework volunteer post at a human-rights
-charity →
-  FIELD: 5  SKILLS: 5  SENIORITY: 5  MATCH: Low
-  REASON: Field, skills and level all fit, but working-student and unpaid
-  volunteer roles are excluded — the candidate wants genuine entry-level
-  jobs, not study-time or unpaid positions.
+Example 7 — deep-technical ML (ineligible)
+A "Machine Learning Research Engineer" requiring production ML and strong
+software engineering →
+  ELIGIBLE: no  INTEREST: 4  PRIORITY: 0
+  REASON: The essential ML and software-engineering requirements are well
+  beyond the candidate's analysis-level Python. The tech-policy interest is
+  real, but this is the wrong side of zone (c).
 
-Example 8 — strong field, but asks for experience (Medium, not High)
-A "Risk Analyst" at a geopolitical-risk consultancy doing core-field work,
-but the posting asks for ~2 years of relevant professional experience →
-  FIELD: 5  SKILLS: 3  SENIORITY: 3  MATCH: Medium
-  REASON: The field is core and the work fits, but the role asks for ~2 years
-  of professional experience the candidate does not have. Worth seeing as a
-  stretch, but not High.
+Example 8 — soft 1–2 year ask (worth a look, not disqualified)
+An entry-to-junior "Research Analyst" in European security at a think-tank
+that lists "around 1–2 years' relevant experience" as desirable →
+  ELIGIBLE: yes  INTEREST: 5  PRIORITY: 66
+  REASON: The field is core and the work fits; the 1–2 year ask is desirable
+  rather than essential, and RA experience partly meets it, so it stays a
+  realistic eligible application rather than a disqualifier.
 
-Example 9 — accessible and on-profile, though imperfect (High under scarcity)
-An entry-level "Research Assistant" at a human-rights NGO open to recent
-graduates, where the candidate has the research and writing but lacks one
-specific named method (e.g., a particular statistical package) →
-  FIELD: 5  SKILLS: 3  SENIORITY: 5  MATCH: High
-  REASON: Genuinely entry-level and squarely on-profile; the skills gap is
-  closeable. Flag High even though it is not flawless — accessible,
-  on-profile roles are exactly what the candidate should apply to.
+Example 9 — funded PhD position (eligible; the candidate is open to a PhD)
+A "Doctoral Researcher (m/f/d)" or fully funded PhD studentship on
+international law / atrocity prevention — salaried (e.g. TV-L E13 65%) or a
+stipend — requiring a Master's →
+  ELIGIBLE: yes  INTEREST: 5  PRIORITY: 86
+  REASON: A funded doctorate in the core field is exactly what the candidate is
+  open to and is qualified for with the MSc; it is entry-level by definition.
+  Funded, so it is not an unpaid exclusion, and it is squarely on mission.
+
+Example 10 — postdoc (ineligible: requires an already-awarded PhD)
+A "Postdoctoral Research Fellow" requiring a completed PhD →
+  ELIGIBLE: no  INTEREST: 5  PRIORITY: 0
+  REASON: Requires an already-completed PhD, which the candidate does not hold
+  (they would be pursuing a doctorate, not holding one). The field is a perfect
+  match, but the qualification is an unmet essential.
 
 ────────────────────────────────────────
 CANDIDATE CV
@@ -2801,6 +2800,19 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
         "anthropic-version": "2023-06-01",
         "content-type": "application/json",
     }
+    # Static prompt stays in its own cached block. Learned feedback (which
+    # changes between runs) goes in a SECOND, uncached block appended after it,
+    # so the big prompt still gets a cache hit. Omitted entirely when empty.
+    system_blocks = [
+        {
+            "type": "text",
+            "text": SYSTEM_PROMPT,
+            "cache_control": {"type": "ephemeral"},
+        }
+    ]
+    _learned = _get_learned_block()
+    if _learned:
+        system_blocks.append({"type": "text", "text": _learned})
     payload = {
         "model": ANTHROPIC_MODEL,
         "max_tokens": 4096,
@@ -2808,13 +2820,7 @@ def evaluate_with_anthropic(site_name, job_title, job_url, detail_text, is_page_
         # error. Determinism on this scoring task comes from the rubric and
         # the formula-based MATCH derivation in the system prompt, not from
         # sampling parameters. Do not re-add temperature here.
-        "system": [
-            {
-                "type": "text",
-                "text": SYSTEM_PROMPT,
-                "cache_control": {"type": "ephemeral"},
-            }
-        ],
+        "system": system_blocks,
         "messages": [{"role": "user", "content": user_message}],
     }
 
@@ -2914,7 +2920,7 @@ def parse_gemini_matches(raw_text):
     if not raw_text or "NO_JOBS_FOUND" in raw_text:
         return matches
 
-    FIELDS = ["JOB", "ORGANISATION", "LOCATION", "TYPE", "DEADLINE", "SALARY", "MATCH", "FIELD", "SKILLS", "SENIORITY", "REASON", "URL"]
+    FIELDS = ["JOB", "ORGANISATION", "LOCATION", "TYPE", "DEADLINE", "SALARY", "ELIGIBLE", "PRIORITY", "INTEREST", "MATCH", "FIELD", "SKILLS", "SENIORITY", "REASON", "URL"]
 
     def is_field_line(line):
         """Check if a line starts with a known field label. Returns (field_name, value) or None."""
@@ -2951,47 +2957,108 @@ def parse_gemini_matches(raw_text):
             matches.append(match)
     return matches
 
+def _coerce_priority(value):
+    """Parse the model's PRIORITY into an int in [0, 100], or None if absent/unparseable."""
+    try:
+        p = int(round(float(str(value).strip())))
+    except (TypeError, ValueError):
+        return None
+    return max(0, min(100, p))
+
+
+def _is_eligible(value):
+    """Interpret the ELIGIBLE label. Defaults to True when the field is blank/missing
+    (an older response with no ELIGIBLE line is treated as eligible)."""
+    v = str(value).strip().lower()
+    if v == "":
+        return True
+    return v in ("yes", "true", "1", "y", "eligible")
+
+
+def _priority_band(priority):
+    """Cosmetic tier derived from PRIORITY — used only for report colour and
+    backward-compatible 'match' values. Ranking always uses the raw number."""
+    if priority is None:
+        return "low"
+    if priority >= 70:
+        return "high"
+    if priority >= 45:
+        return "medium"
+    return "low"
+
+
 def _match_to_report_entry(m, fallback_org="", fallback_url=""):
-    """Convert a parsed Gemini match dict into a daily report entry."""
+    """Convert a parsed match dict into a daily report entry.
+
+    New schema: PRIORITY (0–100, the ranking signal) + ELIGIBLE (hard gate) +
+    INTEREST (1–5, transparency). A derived 'match' band is kept so older
+    dashboard/report consumers still colour correctly. Legacy field/skills/
+    seniority scores are carried through when present so historical or
+    mixed-format days still render."""
+    eligible = _is_eligible(m.get("eligible", ""))
+    priority = _coerce_priority(m.get("priority"))
+    if not eligible:
+        priority = 0
+    # Prefer the band derived from PRIORITY; fall back to a legacy MATCH label
+    # if this response predates the priority format.
+    band = _priority_band(priority) if priority is not None else m.get("match", "low").lower()
     return {
         "title": m.get("job", "Untitled"),
         "organisation": m.get("organisation", fallback_org),
         "url": m.get("url", fallback_url),
-        "match": m.get("match", "low").lower(),
-        "field_score": m.get("field", ""),
-        "skills_score": m.get("skills", ""),
-        "seniority_score": m.get("seniority", ""),
+        "priority": priority if priority is not None else "",
+        "eligible": eligible,
+        "interest_score": m.get("interest", ""),
+        "match": band,
         "reason": m.get("reason", ""),
         "location": m.get("location", ""),
         "type": m.get("type", ""),
         "deadline": m.get("deadline", ""),
         "salary": m.get("salary", ""),
+        "field_score": m.get("field", ""),
+        "skills_score": m.get("skills", ""),
+        "seniority_score": m.get("seniority", ""),
     }
 
-def format_match_for_telegram(match):
-    """Format a single parsed match into a Telegram HTML message block."""
-    title = escape_html(match.get("job", "Untitled"))
-    org = escape_html(match.get("organisation", ""))
-    location = match.get("location", "")
-    job_type = match.get("type", "")
-    deadline = match.get("deadline", "")
-    salary = match.get("salary", "")
-    field_score = match.get("field", "")
-    skills_score = match.get("skills", "")
-    seniority_score = match.get("seniority", "")
-    level = match.get("match", "")
-    reason = escape_html(match.get("reason", ""))
-    url = match.get("url", "")
+def format_match_for_telegram(entry):
+    """Format a report entry into a Telegram HTML message block.
 
-    # Match level emoji
-    level_emoji = "🟢" if level.lower() == "high" else "🟡"
+    Accepts the canonical report-entry dict (see _match_to_report_entry), so it
+    works off PRIORITY/INTEREST. Falls back gracefully when those are absent."""
+    title = escape_html(entry.get("title", "Untitled"))
+    org = escape_html(entry.get("organisation", ""))
+    location = entry.get("location", "")
+    job_type = entry.get("type", "")
+    deadline = entry.get("deadline", "")
+    salary = entry.get("salary", "")
+    reason = escape_html(entry.get("reason", ""))
+    url = entry.get("url", "")
+    interest = entry.get("interest_score", "")
+    try:
+        p = int(entry.get("priority"))
+    except (TypeError, ValueError):
+        p = -1
+
+    # Emoji by priority band: ⭐ top tier, 🟢 strong, 🟡 good, ⚪ otherwise.
+    if p >= 80:
+        emoji = "⭐"
+    elif p >= 70:
+        emoji = "🟢"
+    elif p >= 45:
+        emoji = "🟡"
+    else:
+        emoji = "⚪"
 
     parts = []
-    parts.append(f"{level_emoji} <b>{title}</b>")
+    if p >= 80:
+        parts.append("⭐ <b>TOP PRIORITY</b>")
+    header = f"{emoji} <b>{title}</b>"
+    if p >= 0:
+        header += f" — {p}/100"
+    parts.append(header)
     if org:
         parts.append(f"🏢 {org}")
 
-    # Info line: location, type, deadline — only include if specified
     info_bits = []
     if location and location.lower() != "not specified":
         info_bits.append(f"📍 {escape_html(location)}")
@@ -3004,14 +3071,11 @@ def format_match_for_telegram(match):
     if info_bits:
         parts.append(" · ".join(info_bits))
 
-    # Score breakdown
     scores = []
-    if field_score:
-        scores.append(f"Field: {field_score}/5")
-    if skills_score:
-        scores.append(f"Skills: {skills_score}/5")
-    if seniority_score:
-        scores.append(f"Seniority: {seniority_score}/5")
+    if p >= 0:
+        scores.append(f"Priority: {p}/100")
+    if interest:
+        scores.append(f"Interest: {interest}/5")
     if scores:
         parts.append(f"📊 {' · '.join(scores)}")
 
@@ -3023,18 +3087,22 @@ def format_match_for_telegram(match):
 
     return "\n".join(parts)
 
-def send_telegram(message):
+def send_telegram(message, reply_markup=None):
     if RUN_LABEL:
            message = f"{RUN_LABEL}\n{message}"
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     chunks = [message[i:i + 4000] for i in range(0, len(message), 4000)]
-    for chunk in chunks:
+    for idx, chunk in enumerate(chunks):
         payload = {
             "chat_id": TELEGRAM_CHAT_ID,
             "text": chunk,
             "parse_mode": "HTML",
             "disable_web_page_preview": True
         }
+        # Attach the inline keyboard (e.g. feedback buttons) only to the final
+        # chunk, so the buttons sit beneath the complete message.
+        if reply_markup is not None and idx == len(chunks) - 1:
+            payload["reply_markup"] = reply_markup
         try:
             resp = requests.post(url, json=payload, timeout=15)
             if resp.status_code == 400:
@@ -3042,6 +3110,213 @@ def send_telegram(message):
                 requests.post(url, json=payload, timeout=15)
         except Exception as e:
             print(f"    Telegram error: {e}")
+
+
+# ═══════════════════════════════════════════════════════════════
+#  FEEDBACK LOOP
+# ═══════════════════════════════════════════════════════════════
+# Each notification carries 👍 / 👎 inline buttons. One designated lane drains
+# the taps via getUpdates at the start of every run and appends them to a shared
+# feedback log; recent pursued/dismissed roles are folded back into the scoring
+# prompt as a second (uncached) system block. The whole layer degrades to a
+# no-op when its files/flags are absent, so it can never break notifications.
+
+def _load_json(path, default):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, ValueError, OSError):
+        return default
+
+
+def _save_json(path, obj):
+    d = os.path.dirname(path)
+    if d:
+        os.makedirs(d, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, ensure_ascii=False, indent=2)
+
+
+def _feedback_id(url, title):
+    """Stable short id for a (url, title) pair — fits Telegram's 64-byte
+    callback_data limit and lets a tap resolve back to a role."""
+    raw = ((url or "").strip() + "|" + (title or "").strip().lower()).encode("utf-8")
+    return hashlib.sha1(raw).hexdigest()[:12]
+
+
+def _feedback_keyboard(entry):
+    """Inline 👍 / 👎 keyboard for one notified job."""
+    fid = _feedback_id(entry.get("url", ""), entry.get("title", ""))
+    return {
+        "inline_keyboard": [[
+            {"text": "👍 Relevant", "callback_data": f"fb:{fid}:1"},
+            {"text": "👎 Not relevant", "callback_data": f"fb:{fid}:0"},
+        ]]
+    }
+
+
+def _load_all_fb_indexes():
+    """Merge every lane's fid->meta index (read-only across lanes). The drain
+    lane needs this to resolve taps on notifications sent by either lane."""
+    import glob as _glob
+    merged = {}
+    parent = os.path.dirname(_SITE_DATA_DIR) or "."
+    for p in _glob.glob(os.path.join(parent, "*", "fb_index.json")):
+        d = _load_json(p, {})
+        if isinstance(d, dict):
+            merged.update(d)
+    own = _load_json(FEEDBACK_INDEX_FILE, {})
+    if isinstance(own, dict):
+        merged.update(own)
+    return merged
+
+
+def register_feedback_targets(entries):
+    """Record fid -> meta for the jobs THIS lane just notified, so later taps
+    resolve to a role. Writes only this lane's own index file."""
+    if not entries:
+        return
+    try:
+        idx = _load_json(FEEDBACK_INDEX_FILE, {})
+        if not isinstance(idx, dict):
+            idx = {}
+        for e in entries:
+            fid = _feedback_id(e.get("url", ""), e.get("title", ""))
+            idx[fid] = {
+                "title": e.get("title", ""),
+                "organisation": e.get("organisation", ""),
+                "url": e.get("url", ""),
+                "priority": e.get("priority", ""),
+                "interest": e.get("interest_score", ""),
+            }
+        if len(idx) > 400:  # bound growth; dicts keep insertion order
+            idx = dict(list(idx.items())[-300:])
+        _save_json(FEEDBACK_INDEX_FILE, idx)
+    except Exception as e:
+        print(f"    Feedback: could not register targets ({e}).")
+
+
+def _tg_api(method, **params):
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/{method}"
+    return requests.post(url, json=params, timeout=20)
+
+
+def drain_feedback():
+    """Drain Telegram callback taps into the feedback log. Only the lane with
+    FEEDBACK_DRAIN=1 runs the network call. Wrapped so any failure is a no-op."""
+    if not FEEDBACK_DRAIN or DRY_RUN:
+        return
+    try:
+        offset = _load_json(FEEDBACK_OFFSET_FILE, {}).get("offset", 0)
+        resp = _tg_api("getUpdates", offset=offset, timeout=0,
+                       allowed_updates=["callback_query"])
+        if resp.status_code == 409:
+            print("    Feedback: getUpdates 409 — a webhook is set on this bot, so "
+                  "polling is disabled. Remove the webhook to capture feedback.")
+            return
+        if resp.status_code != 200:
+            print(f"    Feedback: getUpdates HTTP {resp.status_code} — skipping this run.")
+            return
+        updates = resp.json().get("result", [])
+        if not updates:
+            return
+        indexes = _load_all_fb_indexes()
+        log = _load_json(FEEDBACK_LOG_FILE, [])
+        if not isinstance(log, list):
+            log = []
+        max_uid = (offset - 1) if offset else 0
+        recorded = 0
+        for upd in updates:
+            max_uid = max(max_uid, upd.get("update_id", 0))
+            cq = upd.get("callback_query")
+            if not cq:
+                continue
+            cq_id = cq.get("id", "")
+            data = cq.get("data", "")
+            verdict, fid = None, ""
+            if data.startswith("fb:"):
+                bits = data.split(":")
+                if len(bits) == 3:
+                    fid = bits[1]
+                    verdict = {"1": "up", "0": "down"}.get(bits[2])
+            if verdict is None:
+                if cq_id:
+                    _tg_api("answerCallbackQuery", callback_query_id=cq_id)
+                continue
+            meta = indexes.get(fid, {})
+            log.append({
+                "ts": datetime.now(timezone.utc).isoformat(),
+                "fid": fid,
+                "verdict": verdict,
+                "title": meta.get("title", ""),
+                "organisation": meta.get("organisation", ""),
+                "url": meta.get("url", ""),
+                "priority": meta.get("priority", ""),
+                "interest": meta.get("interest", ""),
+            })
+            recorded += 1
+            if cq_id:
+                label = "👍 noted — more like this" if verdict == "up" else "👎 noted — fewer like this"
+                _tg_api("answerCallbackQuery", callback_query_id=cq_id, text=label)
+        _save_json(FEEDBACK_LOG_FILE, log[-500:])
+        _save_json(FEEDBACK_OFFSET_FILE, {"offset": max_uid + 1})
+        if recorded:
+            print(f"    Feedback: recorded {recorded} tap(s) into the log.")
+    except Exception as e:
+        print(f"    Feedback: drain skipped ({e}).")
+
+
+def build_learned_preferences():
+    """Compact 'LEARNED SIGNALS' block from recent feedback, or '' when empty."""
+    log = _load_json(FEEDBACK_LOG_FILE, [])
+    if not isinstance(log, list) or not log:
+        return ""
+    pursued, dismissed, seen = [], [], set()
+    for e in reversed(log):  # most recent first
+        title = (e.get("title") or "").strip()
+        if not title:
+            continue
+        key = title.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        org = (e.get("organisation") or "").strip()
+        line = title + (f" — {org}" if org else "")
+        if e.get("verdict") == "up" and len(pursued) < FEEDBACK_EXEMPLARS:
+            pursued.append(line)
+        elif e.get("verdict") == "down" and len(dismissed) < FEEDBACK_EXEMPLARS:
+            dismissed.append(line)
+        if len(pursued) >= FEEDBACK_EXEMPLARS and len(dismissed) >= FEEDBACK_EXEMPLARS:
+            break
+    if not pursued and not dismissed:
+        return ""
+    out = [
+        "LEARNED SIGNALS",
+        "The candidate has personally reviewed past matches and marked the roles "
+        "below. Use them to calibrate borderline PRIORITY scores: lean toward "
+        "roles resembling the pursued ones and away from the dismissed ones. This "
+        "refines PRIORITY only — it never overrides a HARD DISQUALIFIER.",
+    ]
+    if pursued:
+        out.append("")
+        out.append("Marked RELEVANT (pursue more like these):")
+        out += [f"  • {l}" for l in pursued]
+    if dismissed:
+        out.append("")
+        out.append("Marked NOT RELEVANT (surface fewer like these):")
+        out += [f"  • {l}" for l in dismissed]
+    return "\n".join(out)
+
+
+_LEARNED_CACHE = None
+
+
+def _get_learned_block():
+    """Memoise the learned-signals block for the duration of a run."""
+    global _LEARNED_CACHE
+    if _LEARNED_CACHE is None:
+        _LEARNED_CACHE = build_learned_preferences()
+    return _LEARNED_CACHE
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -3128,6 +3403,12 @@ def main():
     state = load_state()
     atexit.register(save_state, state)  # persist progress even on an unexpected crash
     issues_data = issues.load()
+
+    # Drain any 👍/👎 feedback taps before scoring, so the learned-signals block
+    # folded into the prompt reflects the latest taps. No-op unless this lane has
+    # FEEDBACK_DRAIN=1. Never raises — a feedback failure must not stop a run.
+    drain_feedback()
+
     all_matches = []
     daily_report_jobs = []
     paused_sites = []
@@ -3370,17 +3651,19 @@ def main():
                             # posting notifies exactly once, independent of hash churn.
                             notified = state[site_key].get("notified_titles", [])
                             for m in parsed:
-                                # Telegram: High/Medium only
-                                if m.get("match", "").lower() in ("high", "medium"):
+                                entry = _match_to_report_entry(m, fallback_org=name, fallback_url=site["url"])
+                                _prio = entry.get("priority")
+                                # Telegram: eligible AND PRIORITY at/above the threshold
+                                if entry.get("eligible") and isinstance(_prio, int) and _prio >= PRIORITY_NOTIFY_THRESHOLD:
                                     _sig = " ".join((m.get("job") or m.get("title") or "").lower().split())
                                     if _sig and _sig in notified:
                                         print(f"    ⏭️  already notified, skipping Telegram: {(m.get('job') or '')[:60]}")
                                     else:
-                                        all_matches.append(format_match_for_telegram(m))
+                                        all_matches.append({"text": format_match_for_telegram(entry), "entry": entry})
                                         if _sig:
                                             notified.append(_sig)
                                 # Daily report: all jobs
-                                daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=site["url"]))
+                                daily_report_jobs.append(entry)
                             state[site_key]["notified_titles"] = notified[-50:]
                             # If the LLM explicitly found no jobs, memoise this hash so
                             # an identical (e.g. region-variant) empty page never costs
@@ -3449,17 +3732,19 @@ def main():
                     parsed = parse_gemini_matches(llm_result)
                     if parsed:
                         m = parsed[0]
-                        match_level = m.get("match", "low").lower()
+                        entry = _match_to_report_entry(m, fallback_org=name, fallback_url=job["url"])
+                        _prio = entry.get("priority")
 
-                        # Telegram: High/Medium only
-                        if match_level in ("high", "medium"):
-                            all_matches.append(format_match_for_telegram(m))
-                            print(f"        ✅ Match ({match_level})!")
+                        # Telegram: eligible AND PRIORITY at/above the threshold
+                        if entry.get("eligible") and isinstance(_prio, int) and _prio >= PRIORITY_NOTIFY_THRESHOLD:
+                            all_matches.append({"text": format_match_for_telegram(entry), "entry": entry})
+                            print(f"        ✅ Match (priority {_prio})!")
                         else:
-                            print(f"        No match (low).")
+                            _shown = _prio if isinstance(_prio, int) else "n/a"
+                            print(f"        No notify (priority {_shown}, eligible={entry.get('eligible')}).")
 
                         # Daily report: all jobs
-                        daily_report_jobs.append(_match_to_report_entry(m, fallback_org=name, fallback_url=job["url"]))
+                        daily_report_jobs.append(entry)
                     else:
                         # LLM returned something unparseable — record minimal entry
                         print(f"        ⚠️ Could not parse LLM response.")
@@ -3475,6 +3760,9 @@ def main():
                             "title": job["title"],
                             "organisation": name,
                             "url": job["url"],
+                            "priority": "",
+                            "eligible": True,
+                            "interest_score": "",
                             "match": "low",
                             "location": "", "type": "", "deadline": "", "salary": "",
                             "field_score": "", "skills_score": "", "seniority_score": "",
@@ -3534,9 +3822,11 @@ def main():
     elif all_matches:
         header = f"🔍 <b>Job Monitor Report</b>\n<i>{now.strftime('%Y-%m-%d %H:%M')} UTC</i>\n<i>{len(all_matches)} match(es) found</i>"
         send_telegram(header)
-        for match_msg in all_matches:
-            send_telegram(match_msg)
+        for item in all_matches:
+            send_telegram(item["text"], reply_markup=_feedback_keyboard(item["entry"]))
             time.sleep(0.5)
+        # Record what we notified so 👍/👎 taps resolve back to these roles.
+        register_feedback_targets([it["entry"] for it in all_matches])
         print(f"\n✅ Sent {len(all_matches)} match(es) to Telegram.")
     else:
         print("\nNo matching jobs found this run.")
