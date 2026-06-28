@@ -2098,7 +2098,8 @@
       "method": "html",
       "selector": "",
       "link_selector": "a[href*='/Ausschreibungen/']",
-      "base_url": "https://www.uni-potsdam.de"
+      "base_url": "https://www.uni-potsdam.de",
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 171,
@@ -2107,7 +2108,8 @@
       "method": "html",
       "selector": "",
       "link_selector": "a[href*='/Ausschreibungen/']",
-      "base_url": "https://www.uni-potsdam.de"
+      "base_url": "https://www.uni-potsdam.de",
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 172,
