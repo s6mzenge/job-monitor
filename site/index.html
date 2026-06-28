@@ -29,6 +29,10 @@
     .fade-in { animation: fadeIn 0.3s ease both; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
     .score-dot { width: 7px; height: 7px; border-radius: 50%; }
+    /* Ineligible roles are hidden until the user opts to show them */
+    .ineligible-card { display: none; }
+    body.show-ineligible .ineligible-card { display: block; }
+    .prio-bar-track { height: 5px; border-radius: 9999px; overflow: hidden; }
     /* Ensure tap targets are at least 44px on touch devices */
     @media (pointer: coarse) {
       button, .collapsible-toggle { min-height: 44px; }
@@ -44,10 +48,16 @@
         <h1 class="text-xl font-bold text-slate-800 dark:text-slate-100 tracking-tight">Job Monitor</h1>
         <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5">Daily Brief — Automated Intelligence</p>
       </div>
-      <button onclick="toggleDark()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 transition-colors" title="Toggle dark mode">
-        <svg id="icon-sun" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42M12 6a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>
-        <svg id="icon-moon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
+      <div class="flex items-center gap-1">
+        <label class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 cursor-pointer select-none px-2 py-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700" title="Show roles ruled ineligible">
+          <input type="checkbox" id="toggle-ineligible" class="accent-slate-500" onchange="document.body.classList.toggle('show-ineligible', this.checked)">
+          <span class="hidden sm:inline">Show ineligible</span>
+        </label>
+        <button onclick="toggleDark()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 transition-colors" title="Toggle dark mode">
+          <svg id="icon-sun" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42M12 6a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>
+          <svg id="icon-moon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -111,33 +121,41 @@
       return val && val.toLowerCase() !== 'not specified';
     }
 
+    // Parse a job's PRIORITY into a number, or NaN if absent (legacy entries).
+    function jobPriority(job) {
+      if (job.priority === '' || job.priority === null || job.priority === undefined) return NaN;
+      const p = parseInt(job.priority, 10);
+      return Number.isFinite(p) ? p : NaN;
+    }
+
+    // Ordering rank: the priority if present, else a fallback derived from the
+    // legacy match tier so historical days still sort sensibly.
+    function jobRank(job) {
+      const p = jobPriority(job);
+      if (!Number.isNaN(p)) return p;
+      const lvl = (job.match || 'low').toLowerCase();
+      return lvl === 'high' ? 72 : lvl === 'medium' ? 50 : 10;
+    }
+
     // ── Build a single job card ──
     function jobCard(job, idx) {
-      const level = (job.match || 'low').toLowerCase();
-      const isHigh = level === 'high';
-      const isMedium = level === 'medium';
-      const isLow = level === 'low' || level === 'none';
+      const p = jobPriority(job);
+      const hasPrio = !Number.isNaN(p);
+      const eligible = job.eligible !== false;  // undefined (legacy) -> eligible
 
-      let borderColor, bgColor, badgeBg, badgeText, dotColor;
-      if (isHigh) {
-        borderColor = 'border-green-200 dark:border-green-800';
-        bgColor = 'bg-green-50/60 dark:bg-green-900/20';
-        badgeBg = 'bg-green-100 dark:bg-green-900/50';
-        badgeText = 'text-green-700 dark:text-green-400';
-        dotColor = 'bg-green-500';
-      } else if (isMedium) {
-        borderColor = 'border-amber-200 dark:border-amber-800';
-        bgColor = 'bg-amber-50/60 dark:bg-amber-900/20';
-        badgeBg = 'bg-amber-100 dark:bg-amber-900/50';
-        badgeText = 'text-amber-700 dark:text-amber-400';
-        dotColor = 'bg-amber-500';
-      } else {
-        borderColor = 'border-slate-200 dark:border-slate-700';
-        bgColor = 'bg-white dark:bg-slate-800';
-        badgeBg = 'bg-slate-100 dark:bg-slate-700';
-        badgeText = 'text-slate-500 dark:text-slate-400';
-        dotColor = 'bg-slate-400';
-      }
+      let band;
+      if (!eligible) band = 'ineligible';
+      else if (hasPrio) band = p >= 80 ? 'top' : p >= 70 ? 'high' : p >= 45 ? 'medium' : 'low';
+      else { const lvl = (job.match || 'low').toLowerCase(); band = lvl === 'high' ? 'high' : lvl === 'medium' ? 'medium' : 'low'; }
+
+      const styles = {
+        top:    { border:'border-indigo-200 dark:border-indigo-800', bg:'bg-indigo-50/60 dark:bg-indigo-900/20', badgeBg:'bg-indigo-100 dark:bg-indigo-900/50', badgeText:'text-indigo-700 dark:text-indigo-300', bar:'bg-indigo-500' },
+        high:   { border:'border-green-200 dark:border-green-800', bg:'bg-green-50/60 dark:bg-green-900/20', badgeBg:'bg-green-100 dark:bg-green-900/50', badgeText:'text-green-700 dark:text-green-400', bar:'bg-green-500' },
+        medium: { border:'border-amber-200 dark:border-amber-800', bg:'bg-amber-50/60 dark:bg-amber-900/20', badgeBg:'bg-amber-100 dark:bg-amber-900/50', badgeText:'text-amber-700 dark:text-amber-400', bar:'bg-amber-500' },
+        low:    { border:'border-slate-200 dark:border-slate-700', bg:'bg-white dark:bg-slate-800', badgeBg:'bg-slate-100 dark:bg-slate-700', badgeText:'text-slate-500 dark:text-slate-400', bar:'bg-slate-400' },
+        ineligible: { border:'border-slate-200 dark:border-slate-700', bg:'bg-slate-50 dark:bg-slate-800/40', badgeBg:'bg-slate-200 dark:bg-slate-700', badgeText:'text-slate-500 dark:text-slate-400', bar:'bg-slate-300 dark:bg-slate-600' },
+      };
+      const s = styles[band];
 
       const meta = [];
       if (job.organisation) meta.push(`<span class="text-slate-600 dark:text-slate-300">${esc(job.organisation)}</span>`);
@@ -146,17 +164,32 @@
       if (metaValue(job.deadline)) meta.push(`<span>Due ${esc(job.deadline)}</span>`);
       if (metaValue(job.salary)) meta.push(`<span>${esc(job.salary)}</span>`);
 
+      // Scores: priority bar (+ interest) when present; else legacy score dots.
       let scores = '';
-      if (job.field_score || job.skills_score || job.seniority_score) {
+      if (hasPrio) {
+        const interest = job.interest_score;
+        scores = `<div class="mt-2.5 flex items-center gap-2">
+            <div class="prio-bar-track flex-1 bg-slate-100 dark:bg-slate-700"><div class="h-full ${s.bar}" style="width:${eligible ? Math.max(2, p) : 0}%"></div></div>
+            ${interest ? `<span class="text-[11px] text-slate-400 dark:text-slate-500 shrink-0">Interest ${esc(String(interest))}/5</span>` : ''}
+          </div>`;
+      } else if (job.field_score || job.skills_score || job.seniority_score) {
+        const dot = s.bar;
         scores = `<div class="flex flex-wrap items-center gap-2 sm:gap-3 mt-2 text-xs text-slate-500 dark:text-slate-400">`;
-        if (job.field_score) scores += `<div class="flex items-center gap-1.5"><span>Field</span><div class="flex gap-0.5">${scoreDots(job.field_score, dotColor)}</div></div>`;
-        if (job.skills_score) scores += `<div class="flex items-center gap-1.5"><span>Skills</span><div class="flex gap-0.5">${scoreDots(job.skills_score, dotColor)}</div></div>`;
-        if (job.seniority_score) scores += `<div class="flex items-center gap-1.5"><span>Seniority</span><div class="flex gap-0.5">${scoreDots(job.seniority_score, dotColor)}</div></div>`;
+        if (job.field_score) scores += `<div class="flex items-center gap-1.5"><span>Field</span><div class="flex gap-0.5">${scoreDots(job.field_score, dot)}</div></div>`;
+        if (job.skills_score) scores += `<div class="flex items-center gap-1.5"><span>Skills</span><div class="flex gap-0.5">${scoreDots(job.skills_score, dot)}</div></div>`;
+        if (job.seniority_score) scores += `<div class="flex items-center gap-1.5"><span>Seniority</span><div class="flex gap-0.5">${scoreDots(job.seniority_score, dot)}</div></div>`;
         scores += `</div>`;
       }
 
+      let badge;
+      if (!eligible) badge = 'ineligible';
+      else if (hasPrio) badge = band === 'top' ? `★ ${p}` : `${p}`;
+      else badge = (job.match || 'low').toLowerCase();
+
+      const cardCls = `fade-in rounded-lg border ${s.border} ${s.bg} p-3 sm:p-4` + (eligible ? '' : ' ineligible-card opacity-75');
+
       return `
-        <div class="fade-in rounded-lg border ${borderColor} ${bgColor} p-3 sm:p-4" style="animation-delay:${Math.min(idx, 12) * 40}ms">
+        <div class="${cardCls}" style="animation-delay:${Math.min(idx, 12) * 40}ms">
           <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2 sm:gap-3">
             <div class="min-w-0 flex-1">
               <h3 class="font-semibold text-slate-800 dark:text-slate-100 leading-snug">
@@ -166,7 +199,7 @@
               ${scores}
               ${job.reason ? `<p class="mt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">${esc(job.reason)}</p>` : ''}
             </div>
-            <span class="shrink-0 self-start text-xs font-medium px-2 py-1 rounded-md order-first sm:order-last ${badgeBg} ${badgeText}">${level}</span>
+            <span class="shrink-0 self-start text-xs font-semibold px-2 py-1 rounded-md order-first sm:order-last ${s.badgeBg} ${s.badgeText}">${badge}</span>
           </div>
         </div>`;
     }
@@ -176,27 +209,31 @@
       const jobs = data.jobs || [];
       if (jobs.length === 0) return '';
 
-      const high = jobs.filter(j => j.match === 'high');
-      const medium = jobs.filter(j => j.match === 'medium');
+      const visible = jobs.filter(j => j.eligible !== false);
+      const high = visible.filter(j => jobRank(j) >= 70);
+      const medium = visible.filter(j => { const r = jobRank(j); return r >= 45 && r < 70; });
+      const hidden = jobs.length - visible.length;
 
       const totalBadge = `<span class="text-xs font-medium px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400">${jobs.length} job${jobs.length === 1 ? '' : 's'}</span>`;
       const highBadge = high.length ? `<span class="text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-400">${high.length} high</span>` : '';
       const medBadge = medium.length ? `<span class="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-400">${medium.length} medium</span>` : '';
+      const ineligBadge = hidden ? `<span class="text-xs font-medium px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-400 dark:text-slate-500">${hidden} ineligible</span>` : '';
 
       let html = `
         <section class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm">
           <div class="px-3 sm:px-5 py-4 border-b border-slate-100 dark:border-slate-700">
             <div class="flex items-start sm:items-center justify-between flex-wrap gap-2">
               <h2 class="font-semibold text-sm sm:text-base text-slate-800 dark:text-slate-100">${formatDate(dateStr)}</h2>
-              <div class="flex items-center gap-1.5 flex-wrap">${totalBadge}${highBadge}${medBadge}</div>
+              <div class="flex items-center gap-1.5 flex-wrap">${totalBadge}${highBadge}${medBadge}${ineligBadge}</div>
             </div>
           </div>`;
 
-      // All jobs in chronological order (newest first)
-      const reversed = [...jobs].reverse();
+      // Ranked by PRIORITY (highest first); ineligible roles sink to the bottom
+      // and stay hidden unless the user opts to show them.
+      const ordered = [...jobs].sort((a, b) => jobRank(b) - jobRank(a));
       html += `
           <div class="px-3 sm:px-5 py-4 space-y-3">
-            ${reversed.map((j, i) => jobCard(j, i)).join('')}
+            ${ordered.map((j, i) => jobCard(j, i)).join('')}
           </div>`;
 
       html += `</section>`;
@@ -227,8 +264,9 @@
 
         // Summary bar
         const allJobs = results.filter(Boolean).flatMap(r => r.data.jobs || []);
-        const totalHigh = allJobs.filter(j => j.match === 'high').length;
-        const totalMedium = allJobs.filter(j => j.match === 'medium').length;
+        const eligibleJobs = allJobs.filter(j => j.eligible !== false);
+        const totalHigh = eligibleJobs.filter(j => jobRank(j) >= 70).length;
+        const totalMedium = eligibleJobs.filter(j => { const r = jobRank(j); return r >= 45 && r < 70; }).length;
         const totalAll = allJobs.length;
 
         if (totalAll > 0) {
