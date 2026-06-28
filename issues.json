@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T04:01:20.175832+00:00",
+  "last_updated": "2026-06-28T04:31:07.802048+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
@@ -13,6 +13,19 @@
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Institute of Race Relations": {
+      "site_id": 48,
+      "url": "https://irr.org.uk/about/vacancies/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 4,
+      "first_recent_failure": "2026-06-18T13:31:14.585311+00:00",
+      "last_recent_failure": "2026-06-28T04:31:07.802048+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Firr.org.uk%2Fabout%2Fvacancies%2F"
     },
     "Reprieve": {
       "site_id": 58,
@@ -9542,6 +9555,16 @@
       "method": "palladium_api",
       "type": "fetch_error",
       "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f7c9347cef0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=30)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-28T04:31:07.802048+00:00",
+      "site": "Institute of Race Relations",
+      "site_id": 48,
+      "url": "https://irr.org.uk/about/vacancies/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Firr.org.uk%2Fabout%2Fvacancies%2F",
       "consecutive_count": 1
     }
   ]
