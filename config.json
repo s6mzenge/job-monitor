@@ -523,7 +523,8 @@
       "method": "html",
       "selector": "div.pagecontent",
       "link_selector": "",
-      "base_url": "https://www.uu.se"
+      "base_url": "https://www.uu.se",
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 43,
