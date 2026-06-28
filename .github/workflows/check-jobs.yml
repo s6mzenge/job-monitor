@@ -19,6 +19,7 @@ jobs:
             data_dir: site/data            # keeps the existing dashboard working
             label: "🇩🇪 DE"
             max_rpm: "5"
+            pw_workers: "1"          # DE has 1 Playwright site — a single browser is plenty
           - lane: london
             config: config-london.json
             state: state-london.json
@@ -26,6 +27,7 @@ jobs:
             data_dir: site/data-london
             label: "🇬🇧 London"
             max_rpm: "4"
+            pw_workers: "2"          # London has ~12 Playwright sites — two browsers ≈ halves the render chain
     runs-on: ubuntu-latest
     timeout-minutes: 45
     permissions:
@@ -82,6 +84,7 @@ jobs:
           ISSUES_FILE: ${{ matrix.issues }}
           SITE_DATA_DIR: ${{ matrix.data_dir }}
           ANTHROPIC_MAX_RPM: ${{ matrix.max_rpm }}
+          MONITOR_PW_WORKERS: ${{ matrix.pw_workers }}
           RUN_LABEL: ${{ matrix.label }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
