@@ -1,0 +1,773 @@
+{
+  "qualifications": "MSc International Relations Research student at the London School of Economics, with a focus on International Law and Genocide. BA in Politics and Society (Minor: Economics) from the University of Bonn, final grade 1.3. Experience in policy research, data analysis, and higher education administration, including supporting the allocation of 1.7 million euros in federal funding at the German Rectors Conference. Published researcher on German higher education policy and Green Party defence policy. Fluent in German (native) and English (C2), with working French (B1). Skills in SPSS, Python, Excel, literature review, and policy writing. Interested in roles related to European foreign policy, security studies, international law, genocide prevention and transitional justice, think tank research, and higher education policy.",
+  "sites": [
+    {
+      "id": 19,
+      "name": "ECFR",
+      "url": "https://ecfr.eu/jobs/",
+      "method": "personio_xml",
+      "base_url": "https://ecfr.jobs.personio.com",
+      "job_detail_url_template": "https://ecfr.jobs.personio.com/job/{id}",
+      "api": {
+        "url": "https://ecfr.jobs.personio.com/xml",
+        "http_method": "GET",
+        "format": "xml",
+        "position_element": "position",
+        "job_fields": {
+          "id": "id",
+          "title": "name",
+          "location": "office",
+          "department": "department",
+          "employment_type": "employmentType",
+          "schedule": "schedule"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "name": "SWP Berlin",
+      "url": "https://www.swp-berlin.org/karriere",
+      "method": "html",
+      "selector": "section#c3170, div.frame-type-list",
+      "link_selector": "a[href*='/karriere/stellenangebot/']",
+      "base_url": "https://www.swp-berlin.org"
+    },
+    {
+      "id": 43,
+      "name": "HIS Hamburg",
+      "url": "https://www.his-online.de/das-institut/arbeiten-am-his/aktuelle-ausschreibungen/",
+      "method": "html",
+      "selector": "div.c-teaser-text__desc",
+      "link_selector": "",
+      "base_url": "https://www.his-online.de"
+    },
+    {
+      "id": 75,
+      "name": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen",
+      "method": "html",
+      "selector": "section.m-linkList",
+      "link_selector": "a.e-linkListItem__anchor",
+      "base_url": "https://www.bundestag.de"
+    },
+    {
+      "id": 153,
+      "name": "FU Berlin (wiss.)",
+      "url": "https://www.fu-berlin.de/universitaet/beruf-karriere/jobs/wiss/index.html",
+      "method": "html",
+      "base_url": "https://www.fu-berlin.de",
+      "link_selector": "#current_events a.box-job-offer-list-item-link"
+    },
+    {
+      "id": 154,
+      "name": "Die Linke Bundestagsfraktion",
+      "url": "https://www.dielinkebt.de/service/ausschreibungen/",
+      "method": "html",
+      "base_url": "https://www.dielinkebt.de",
+      "link_selector": "h2 a[href*='/service/ausschreibungen/detail/']"
+    },
+    {
+      "id": 155,
+      "name": "Stiftung EVZ",
+      "url": "https://www.stiftung-evz.de/wer-wir-sind/jobs/",
+      "method": "html",
+      "link_selector": "a.news-list__link",
+      "detail_selector": ".frame-type-news_newsdetail",
+      "follow_jd_docs": true,
+      "eval_max_chars": 24000
+    },
+    {
+      "id": 156,
+      "name": "Stiftung Topographie des Terrors",
+      "url": "https://topographie-des-terrors.kenjo.io/",
+      "method": "html",
+      "link_selector": "a.acb-position"
+    },
+    {
+      "id": 157,
+      "name": "Haus der Wannsee-Konferenz",
+      "url": "https://app.hrlab.de/de/jobs/gedenk-_und_bildungsstatte_hwk?channel_id=1144",
+      "method": "html",
+      "link_selector": "a[href*='/de/jobs/gedenk-_und_bildungsstatte_hwk/']"
+    },
+    {
+      "id": 158,
+      "name": "ECCHR",
+      "url": "https://www.ecchr.eu/en/ecchr/support-ecchr/",
+      "method": "html",
+      "selector": "#section-intro"
+    },
+    {
+      "id": 159,
+      "name": "Deutsches Institut für Menschenrechte",
+      "url": "https://www.institut-fuer-menschenrechte.de/das-institut/jobs",
+      "method": "html",
+      "link_selector": ".teaser--list a.icon-list__link",
+      "location_exclude": [
+        "hessen",
+        "nordrhein",
+        "nrw",
+        "rheinland-pfalz",
+        "saarland"
+      ]
+    },
+    {
+      "id": 160,
+      "name": "Global Public Policy Institute",
+      "url": "https://gppi.net/about/jobs-internships",
+      "method": "html",
+      "selector": ".wysiwyg",
+      "skip_no_vacancy_check": true
+    },
+    {
+      "id": 161,
+      "name": "Berghof Foundation",
+      "url": "https://berghof-foundation.org/about/opportunities/jobs",
+      "method": "json_api",
+      "api": {
+        "url": "https://berghof-foundation-operations-ggmbh.jobs.personio.de/search.json?language=en",
+        "http_method": "GET",
+        "job_url_template": "https://berghof-foundation-operations-ggmbh.jobs.personio.de/job/{id}",
+        "job_fields": {
+          "id": "id",
+          "title": "name",
+          "location": "office",
+          "description": "description"
+        }
+      }
+    },
+    {
+      "id": 162,
+      "name": "MERICS",
+      "url": "https://merics.org/en/opportunities",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/en/jobs/']",
+      "base_url": "https://merics.org"
+    },
+    {
+      "id": 163,
+      "name": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/de/vacancies",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/job/']",
+      "base_url": "https://kbbjobs.softgarden.io"
+    },
+    {
+      "id": 164,
+      "name": "Forum Transregionale Studien",
+      "url": "https://www.forum-transregionale-studien.de/news/ausschreibungen",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/news/ausschreibungen/details/']",
+      "base_url": "https://www.forum-transregionale-studien.de"
+    },
+    {
+      "id": 165,
+      "name": "WZB Berlin Social Science Center",
+      "url": "https://www.wzb.eu/de/das-wzb/arbeiten-am-wzb/stellenangebote",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/de/jobs/']",
+      "base_url": "https://www.wzb.eu",
+      "tls_impersonate": true
+    },
+    {
+      "id": 166,
+      "name": "DGAP (Deutsche Gesellschaft für Auswärtige Politik)",
+      "url": "https://dgap.org/de/karriere-in-der-dgap-jobs-stellen",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/de/dgap/jobs/']",
+      "base_url": "https://dgap.org"
+    },
+    {
+      "id": 167,
+      "name": "TU Berlin (wiss. Personal)",
+      "url": "https://www.jobs.tu-berlin.de/stellenausschreibungen?filter%5Bworktype_tub%5D%5B%5D=wiss-dauer&filter%5Bworktype_tub%5D%5B%5D=wiss-mlehr&filter%5Bworktype_tub%5D%5B%5D=wiss-olehr",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/stellenausschreibungen/']",
+      "base_url": "https://www.jobs.tu-berlin.de"
+    },
+    {
+      "id": 168,
+      "name": "Rosa-Luxemburg-Stiftung",
+      "url": "https://www.rosalux.de/service/ausschreibungen",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/ausschreibung/id/']",
+      "base_url": "https://www.rosalux.de"
+    },
+    {
+      "id": 169,
+      "name": "ZfL Berlin (Lit.- und Kulturforschung)",
+      "url": "https://www.zfl-berlin.org/stellen.html",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/meldungen-detail/items/']",
+      "base_url": "https://www.zfl-berlin.org"
+    },
+    {
+      "id": 170,
+      "name": "Uni Potsdam (akad. Personal, befristet)",
+      "url": "https://www.uni-potsdam.de/de/verwaltung/dezernat3/stellenausschreibungen/befristete-stellen-fuer-akademisches-personal",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/Ausschreibungen/']",
+      "base_url": "https://www.uni-potsdam.de",
+      "proxy": "cloudflare_worker"
+    },
+    {
+      "id": 171,
+      "name": "Uni Potsdam (akad. Personal, unbefristet)",
+      "url": "https://www.uni-potsdam.de/de/verwaltung/dezernat3/stellenausschreibungen/unbefristete-stellen-fuer-akademisches-personal",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/Ausschreibungen/']",
+      "base_url": "https://www.uni-potsdam.de",
+      "proxy": "cloudflare_worker"
+    },
+    {
+      "id": 172,
+      "name": "Alice Salomon Hochschule Berlin (wiss. Personal)",
+      "url": "https://www.ash-berlin.eu/hochschule/job-karriere/jobangebote/wissenschaftliches-personal/",
+      "method": "html",
+      "selector": "main, #content, article, .content",
+      "link_selector": "",
+      "base_url": "https://www.ash-berlin.eu"
+    },
+    {
+      "id": 173,
+      "name": "Bard College Berlin",
+      "url": "https://berlin.bard.edu/about-us/employment/",
+      "method": "html",
+      "selector": "main, #main, .content",
+      "link_selector": "",
+      "base_url": "https://berlin.bard.edu"
+    },
+    {
+      "id": 174,
+      "name": "Leibniz-Zentrum Moderner Orient (ZMO)",
+      "url": "https://www.zmo.de/ueber-uns/karriere/stellenausschreibungen",
+      "method": "html",
+      "selector": "main, #content, article, .content",
+      "link_selector": "",
+      "base_url": "https://www.zmo.de"
+    },
+    {
+      "id": 175,
+      "name": "ZZF Potsdam (Zeithistorische Forschung)",
+      "url": "https://zzf-potsdam.de/chancen/stellenangebote",
+      "method": "html",
+      "selector": "main, #content, article, .content",
+      "link_selector": "",
+      "base_url": "https://zzf-potsdam.de"
+    },
+    {
+      "id": 176,
+      "name": "ZOiS (Osteuropa- und internationale Studien)",
+      "url": "https://www.zois-berlin.de/ueber-uns/stellenausschreibungen",
+      "method": "html",
+      "selector": "main, article, #main",
+      "link_selector": "",
+      "base_url": "https://www.zois-berlin.de"
+    },
+    {
+      "id": 177,
+      "name": "Das Progressive Zentrum",
+      "url": "https://www.progressives-zentrum.org/jobs/",
+      "method": "html",
+      "selector": "main, article, #content",
+      "link_selector": "",
+      "base_url": "https://www.progressives-zentrum.org"
+    },
+    {
+      "id": 178,
+      "name": "BAPP (Bonner Akademie für praktische Politik)",
+      "url": "https://www.bapp-bonn.de/die-akademie/stellenangebote/",
+      "method": "html",
+      "selector": "main, #content, article, .content",
+      "link_selector": "",
+      "base_url": "https://www.bapp-bonn.de"
+    },
+    {
+      "id": 179,
+      "name": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "link_selector": "a[href*='ac=jobad']",
+      "base_url": "https://jobs.giz.de",
+      "wait_selector": "a[href*='ac=jobad']",
+      "wait_until": "networkidle",
+      "wait_ms": 6000
+    },
+    {
+      "id": 180,
+      "name": "IDOS (German Institute of Development and Sustainability)",
+      "url": "https://www.idos-research.de/en/about-us/career-internships/",
+      "method": "html",
+      "base_url": "https://www.idos-research.de",
+      "link_selector": "a[title*='advertisement'], a[title*='announcement'], a[title*='Stellenausschreibung']"
+    },
+    {
+      "id": 181,
+      "name": "Hertie School",
+      "url": "https://hertie-school.dvinci-easy.com/en/p/en/jobs",
+      "method": "html",
+      "base_url": "https://hertie-school.dvinci-easy.com",
+      "link_selector": "a[href*='/p/en/jobs/']"
+    },
+    {
+      "id": 182,
+      "name": "MPIL (Max Planck Institute for Comparative Public Law and International Law)",
+      "url": "https://jobs.mpil.de/",
+      "method": "json_api",
+      "api": {
+        "url": "https://jobs.b-ite.com/api/v1/postings/search",
+        "http_method": "POST",
+        "headers": {
+          "Origin": "https://www.mpil.de",
+          "Referer": "https://www.mpil.de/"
+        },
+        "body": {
+          "key": "711765319e636355035b110ee057165dda547753",
+          "channel": 0,
+          "locale": "de",
+          "sort": {
+            "by": "title",
+            "order": "asc"
+          },
+          "origin": "https://www.mpil.de/en/pub/news/job-offers.cfm",
+          "filter": {
+            "locale": {
+              "in": [
+                "en"
+              ]
+            }
+          },
+          "page": {
+            "num": 1000,
+            "offset": 0
+          }
+        },
+        "response_key": "jobPostings",
+        "dump_first_item": true,
+        "fetch_detail_html": true,
+        "job_fields": {
+          "title": "title",
+          "url": "url",
+          "id": "id",
+          "location": "address.city"
+        }
+      }
+    },
+    {
+      "id": 183,
+      "name": "DZHW (German Centre for Higher Education Research and Science Studies)",
+      "url": "https://karriere.dzhw.eu/",
+      "method": "json_api",
+      "api": {
+        "url": "https://jobs.b-ite.com/api/v1/postings/search",
+        "http_method": "POST",
+        "headers": {
+          "Origin": "https://www.dzhw.eu",
+          "Referer": "https://www.dzhw.eu/"
+        },
+        "body": {
+          "key": "858cf974b6891f2ac63e79cc474aa80b0c590bf3",
+          "channel": 0,
+          "locale": "de",
+          "sort": {
+            "by": "title",
+            "order": "asc"
+          },
+          "origin": "https://www.dzhw.eu/gmbh/karriere",
+          "page": {
+            "num": 1000,
+            "offset": 0
+          }
+        },
+        "response_key": "jobPostings",
+        "dump_first_item": true,
+        "fetch_detail_html": true,
+        "job_fields": {
+          "title": "title",
+          "url": "url",
+          "id": "id",
+          "location": "address.city"
+        }
+      }
+    },
+    {
+      "id": 184,
+      "name": "Heinrich Böll Stiftung",
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "method": "html",
+      "proxy": "jina"
+    },
+    {
+      "id": 185,
+      "name": "Oxfam Deutschland",
+      "method": "html",
+      "url": "https://www.oxfam.de/ueber-uns/arbeiten-bei-oxfam/jobs",
+      "base_url": "https://www.oxfam.de",
+      "selector": "main",
+      "link_selector": "h3.jobs-card__title a"
+    },
+    {
+      "id": 186,
+      "name": "WWF Deutschland",
+      "method": "html",
+      "url": "https://www.wwf.de/ueber-uns/stellenangebote",
+      "base_url": "https://www.wwf.de",
+      "selector": "main",
+      "link_selector": "a.link-list__item[href*='/stelle/']"
+    },
+    {
+      "id": 188,
+      "name": "Deutsches Historisches Museum",
+      "method": "html",
+      "url": "https://www.dhm.de/museum/stellenangebote/stellenausschreibungen/",
+      "base_url": "https://www.dhm.de",
+      "selector": "main",
+      "link_selector": "a.link--intern[href*='/stellenausschreibungen/']"
+    },
+    {
+      "id": 189,
+      "name": "DIW Berlin",
+      "method": "html",
+      "url": "https://www.diw.de/de/diw_01.c.618535.de/karriere/stellenangebote.html",
+      "selector": "ul.col-lg-8.col-sm-12, main",
+      "link_selector": "",
+      "tls_impersonate": true
+    },
+    {
+      "id": 190,
+      "name": "DeZIM-Institut",
+      "method": "html",
+      "url": "https://www.dezim-institut.de/jobs/",
+      "base_url": "https://www.dezim-institut.de",
+      "selector": "main",
+      "link_selector": "h3 a[href^='/jobs/']",
+      "follow_jd_docs": true,
+      "detail_selector": "main",
+      "jd_max_chars": 24000
+    },
+    {
+      "id": 191,
+      "name": "bpb (Bundeszentrale f. pol. Bildung)",
+      "method": "html",
+      "url": "https://www.bpb.de/die-bpb/karriere/132941/stellenangebote-der-bpb/",
+      "base_url": "https://www.bpb.de",
+      "selector": "main",
+      "link_selector": "a.teaser-text__link",
+      "follow_jd_docs": true,
+      "detail_selector": "main",
+      "jd_max_chars": 24000
+    },
+    {
+      "id": 192,
+      "name": "Stiftung Humboldt Forum",
+      "method": "html",
+      "url": "https://jobs.humboldtforum.org/stellenangebote.html",
+      "base_url": "https://jobs.humboldtforum.org",
+      "selector": "div#content, body",
+      "link_selector": "div.joboffer_title_text a"
+    },
+    {
+      "id": 193,
+      "name": "Alexander von Humboldt-Stiftung",
+      "method": "html",
+      "url": "https://recruitingapp-2649.umantis.com/Jobs/1?lang=ger&ContentOnly=",
+      "base_url": "https://recruitingapp-2649.umantis.com",
+      "selector": "body",
+      "link_selector": "a.HSTableLinkSubTitle"
+    },
+    {
+      "id": 194,
+      "name": "rbb (Rundfunk Berlin-Brandenburg)",
+      "method": "html",
+      "url": "https://www.rbb-online.de/unternehmen/karriere/jobs/",
+      "base_url": "https://www.rbb-online.de",
+      "selector": "body",
+      "link_selector": "h3 a.verknuepfung"
+    },
+    {
+      "id": 195,
+      "name": "NABU",
+      "method": "html",
+      "url": "https://www.nabu.de/wir-ueber-uns/jobboerse/index.html",
+      "base_url": "https://www.nabu.de",
+      "selector": "body",
+      "link_selector": "span.publication a"
+    },
+    {
+      "id": 196,
+      "name": "DAAD",
+      "method": "html",
+      "url": "https://karriere.daad.de/go/Alle-Stellen/8646302/",
+      "base_url": "https://karriere.daad.de",
+      "selector": "body",
+      "link_selector": "a[href*='/job/']",
+      "paginate": {
+        "param": "startrow",
+        "step": 25,
+        "max_pages": 4
+      }
+    },
+    {
+      "id": 197,
+      "name": "DFG",
+      "method": "html",
+      "url": "https://dfg.concludis.de/bewerber/index.php",
+      "base_url": "https://dfg.concludis.de",
+      "link_selector": "a[href*='landingpage.php']"
+    },
+    {
+      "id": 198,
+      "name": "Centre Marc Bloch",
+      "method": "html",
+      "url": "https://cmb.hu-berlin.de/das-centre-marc-bloch/stellenausschreibung/",
+      "base_url": "https://cmb.hu-berlin.de",
+      "selector": "section.ausschreibungs-repeater, main",
+      "link_selector": "section.ausschreibungs-repeater a.meldung-box"
+    },
+    {
+      "id": 199,
+      "name": "Transparency International DE",
+      "method": "html",
+      "url": "https://www.transparency.de/ueber-uns/stellenangebote",
+      "selector": "main",
+      "link_selector": ""
+    },
+    {
+      "id": 200,
+      "name": "Germanwatch",
+      "method": "html",
+      "url": "https://www.germanwatch.org/de/praktika-jobs",
+      "selector": "main",
+      "link_selector": ""
+    },
+    {
+      "id": 201,
+      "name": "FragDenStaat",
+      "method": "html",
+      "url": "https://fragdenstaat.de/ueber-uns/jobs/",
+      "selector": "main",
+      "link_selector": ""
+    },
+    {
+      "id": 202,
+      "name": "Verfassungsblog",
+      "method": "html",
+      "url": "https://verfassungsblog.de/jobs/",
+      "selector": "main, article",
+      "link_selector": ""
+    },
+    {
+      "id": 203,
+      "name": "DGVN",
+      "method": "html",
+      "url": "https://dgvn.de/ueber-uns/ausschreibungen-stellenangebote-und-praktika",
+      "selector": "main",
+      "link_selector": ""
+    },
+    {
+      "id": 205,
+      "name": "Suhrkamp Verlag",
+      "method": "personio_xml",
+      "url": "https://www.suhrkamp.de/service/stellenangebote-s-17",
+      "base_url": "https://suhrkamp-verlag-ag.jobs.personio.de",
+      "job_detail_url_template": "https://suhrkamp-verlag-ag.jobs.personio.de/job/{id}",
+      "api": {
+        "url": "https://suhrkamp-verlag-ag.jobs.personio.de/xml",
+        "http_method": "GET",
+        "format": "xml",
+        "position_element": "position",
+        "job_fields": {
+          "id": "id",
+          "title": "name",
+          "location": "office",
+          "department": "department",
+          "employment_type": "employmentType",
+          "schedule": "schedule"
+        }
+      }
+    },
+    {
+      "id": 206,
+      "name": "Table.Briefings",
+      "method": "personio_xml",
+      "url": "https://table.media/en/about-us/career",
+      "base_url": "https://tablemedia.jobs.personio.de",
+      "job_detail_url_template": "https://tablemedia.jobs.personio.de/job/{id}",
+      "api": {
+        "url": "https://tablemedia.jobs.personio.de/xml",
+        "http_method": "GET",
+        "format": "xml",
+        "position_element": "position",
+        "job_fields": {
+          "id": "id",
+          "title": "name",
+          "location": "office",
+          "department": "department",
+          "employment_type": "employmentType",
+          "schedule": "schedule"
+        }
+      }
+    },
+    {
+      "id": 207,
+      "name": "Save the Children DE",
+      "method": "json_api",
+      "url": "https://jobs.savethechildren.de/",
+      "base_url": "https://jobs.savethechildren.de",
+      "api": {
+        "url": "https://jobs.savethechildren.de/jobs.feed.json",
+        "http_method": "GET",
+        "dump_first_item": true,
+        "job_fields": {
+          "title": "item.title",
+          "url": "item.url",
+          "id": "item.identifier.value",
+          "description_html": "item.description"
+        }
+      }
+    },
+    {
+      "id": 208,
+      "name": "adelphi",
+      "method": "json_api",
+      "url": "https://adelphi.de/en/career",
+      "base_url": "https://careers.adelphi.de",
+      "api": {
+        "url": "https://jobs.b-ite.com/api/v1/postings/search",
+        "http_method": "POST",
+        "headers": {
+          "Origin": "https://adelphi.de",
+          "Referer": "https://adelphi.de/"
+        },
+        "body": {
+          "key": "eab44ff4d8507cd00d6f146acac1f889d2b03bc9",
+          "channel": 0,
+          "locale": "en",
+          "sort": {
+            "by": "title",
+            "order": "asc"
+          },
+          "origin": "https://adelphi.de/en/career",
+          "page": {
+            "num": 1000,
+            "offset": 0
+          }
+        },
+        "response_key": "jobPostings",
+        "dump_first_item": true,
+        "fetch_detail_html": true,
+        "job_fields": {
+          "title": "title",
+          "url": "url",
+          "id": "id",
+          "location": "address.city"
+        }
+      }
+    },
+    {
+      "id": 209,
+      "name": "Stiftung Preußischer Kulturbesitz",
+      "method": "json_api",
+      "url": "https://www.preussischer-kulturbesitz.de/ueber-uns/karriere/freie-stellen.html",
+      "base_url": "https://karriere.preussischer-kulturbesitz.de",
+      "api": {
+        "url": "https://jobs.b-ite.com/api/v1/postings/search",
+        "http_method": "POST",
+        "headers": {
+          "Origin": "https://www.preussischer-kulturbesitz.de",
+          "Referer": "https://www.preussischer-kulturbesitz.de/"
+        },
+        "body": {
+          "key": "f708f2793cc7d7b129e5e8fff8aa605eee5b1cb0",
+          "channel": 0,
+          "locale": "de",
+          "sort": {
+            "by": "title",
+            "order": "asc"
+          },
+          "origin": "https://www.preussischer-kulturbesitz.de/ueber-uns/karriere/freie-stellen.html",
+          "page": {
+            "num": 1000,
+            "offset": 0
+          }
+        },
+        "response_key": "jobPostings",
+        "dump_first_item": true,
+        "fetch_detail_html": true,
+        "job_fields": {
+          "title": "title",
+          "url": "url",
+          "id": "id",
+          "location": "address.city"
+        }
+      }
+    },
+    {
+      "id": 210,
+      "name": "Universität der Künste Berlin",
+      "method": "json_api",
+      "url": "https://www.udk-berlin.de/universitaet/stellenausschreibungen/aktuelle-jobs/",
+      "base_url": "https://jobs.udk-berlin.de",
+      "api": {
+        "url": "https://jobs.b-ite.com/api/v1/postings/search",
+        "http_method": "POST",
+        "headers": {
+          "Origin": "https://www.udk-berlin.de",
+          "Referer": "https://www.udk-berlin.de/"
+        },
+        "body": {
+          "key": "c093eb7124f4d4a1e8c6f3cdb478163c9b4045da",
+          "channel": 0,
+          "locale": "de",
+          "sort": {
+            "by": "title",
+            "order": "asc"
+          },
+          "origin": "https://www.udk-berlin.de/universitaet/stellenausschreibungen/aktuelle-jobs/",
+          "page": {
+            "num": 1000,
+            "offset": 0
+          }
+        },
+        "response_key": "jobPostings",
+        "dump_first_item": true,
+        "fetch_detail_html": true,
+        "job_fields": {
+          "title": "title",
+          "url": "url",
+          "id": "id",
+          "location": "address.city"
+        }
+      }
+    },
+    {
+      "id": 211,
+      "name": "ESMT Berlin",
+      "method": "html",
+      "url": "https://jobs.esmt.berlin/en",
+      "base_url": "https://jobs.esmt.berlin",
+      "selector": "body",
+      "link_selector": "a[href*='?id=']"
+    },
+    {
+      "id": 212,
+      "name": "Vandenhoeck & Ruprecht / De Gruyter",
+      "method": "html",
+      "url": "https://de-gruyter.onlyfy.jobs/en/",
+      "base_url": "https://de-gruyter.onlyfy.jobs",
+      "selector": "body",
+      "link_selector": "a[href*='/job/']",
+      "skip_detail_fetch": true
+    }
+  ]
+}
