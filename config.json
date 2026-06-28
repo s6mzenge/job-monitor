@@ -2681,6 +2681,178 @@
       "selector": "body",
       "link_selector": "a[href*='/job/']",
       "skip_detail_fetch": true
+    },
+    {
+      "id": 213,
+      "name": "Gesellschaft für Freiheitsrechte",
+      "url": "https://freiheitsrechte.org/jobs",
+      "method": "html",
+      "selector": "main",
+      "link_selector": "",
+      "base_url": "https://freiheitsrechte.org"
+    },
+    {
+      "id": 214,
+      "name": "Forum New Economy",
+      "url": "https://newforum.org/en/jobs/",
+      "method": "html",
+      "selector": "#content",
+      "link_selector": "",
+      "base_url": "https://newforum.org"
+    },
+    {
+      "id": 215,
+      "name": "IFSH",
+      "url": "https://www.ifsh.de/karriere",
+      "method": "html",
+      "selector": "div.job-list",
+      "link_selector": "a.job-teaser__link-wrap",
+      "base_url": "https://www.ifsh.de"
+    },
+    {
+      "id": 216,
+      "name": "Nuremberg Academy",
+      "url": "https://www.nurembergacademy.org/about-us/jobs-tenders",
+      "method": "html",
+      "selector": "div.news",
+      "link_selector": "",
+      "base_url": "https://www.nurembergacademy.org"
+    },
+    {
+      "id": 217,
+      "name": "DGB",
+      "url": "https://www.dgb.de/karriere/",
+      "method": "html",
+      "selector": "div.job-list__list-filter",
+      "link_selector": "a.list__item-link",
+      "base_url": "https://www.dgb.de"
+    },
+    {
+      "id": 218,
+      "name": "Friedrich-Ebert-Stiftung",
+      "url": "https://jobs.fes.de/",
+      "method": "html",
+      "selector": "div.ausschreibungen-container",
+      "link_selector": "a.ausschreibung-container",
+      "base_url": "https://jobs.fes.de"
+    },
+    {
+      "id": 219,
+      "name": "Stifterverband",
+      "url": "https://stifterverband.talention.com/talention/jobs",
+      "method": "playwright",
+      "selector": "div.tms-component--joblist",
+      "link_selector": "a[href*='/stellenangebote/']",
+      "base_url": "https://stifterverband.talention.com",
+      "wait_until": "networkidle",
+      "wait_selector": "a[href*='/stellenangebote/']",
+      "wait_ms": 6000,
+      "nav_timeout": 60000
+    },
+    {
+      "id": 220,
+      "name": "HWR Berlin",
+      "url": "https://www.hwr-berlin.de/hwr-berlin/stellenangebote/",
+      "method": "html",
+      "selector": "",
+      "link_selector": "a[href*='/Stellenangebote/']",
+      "base_url": "https://www.hwr-berlin.de",
+      "location_exclude": [
+        "Lehrauftr",
+        "Lehrbeauftragte",
+        "Entgelttabelle"
+      ]
+    },
+    {
+      "id": 221,
+      "name": "Wissenschaftsrat",
+      "url": "https://www.wissenschaftsrat.de/DE/Ueber-uns/Geschaeftsstelle/Stellenanzeigen",
+      "method": "html",
+      "selector": ".content",
+      "link_selector": "",
+      "base_url": "https://www.wissenschaftsrat.de"
+    },
+    {
+      "id": 222,
+      "name": "Kulturgutverluste",
+      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
+      "method": "html",
+      "selector": "main",
+      "link_selector": "",
+      "base_url": "https://kulturgutverluste.de"
+    },
+    {
+      "id": 223,
+      "name": "Die Linke",
+      "url": "https://www.die-linke.de/partei/jobs/",
+      "method": "html",
+      "selector": ".content",
+      "link_selector": "",
+      "base_url": "https://www.die-linke.de",
+      "skip_no_vacancy_check": true
+    },
+    {
+      "id": 224,
+      "name": "IEP Berlin",
+      "url": "https://iep-berlin.de/de/ueber/karriere/",
+      "method": "html",
+      "selector": "#main",
+      "link_selector": "",
+      "base_url": "https://iep-berlin.de",
+      "skip_no_vacancy_check": true
+    },
+    {
+      "id": 225,
+      "name": "Institut Solidarische Moderne",
+      "url": "https://www.solidarische-moderne.de/de/topic/194.stellenausschreibungen.html",
+      "method": "html",
+      "selector": "div.Article",
+      "link_selector": "",
+      "base_url": "https://www.solidarische-moderne.de"
+    },
+    {
+      "id": 226,
+      "name": "linksjugend solid",
+      "url": "https://www.linksjugend-solid.de/stellenausschreibungen/",
+      "method": "html",
+      "selector": "div.wp-block-ljs-container__content-wrapper--constraint",
+      "link_selector": "",
+      "base_url": "https://www.linksjugend-solid.de"
+    },
+    {
+      "id": 229,
+      "name": "Uni Marburg (wiss. Stellen)",
+      "url": "https://www.uni-marburg.de/de/universitaet/profil/universitaetskultur/karriere/stellenangebote/wissenschaftliche-stellen",
+      "method": "playwright",
+      "selector": "",
+      "link_selector": "a[href*='/jobposting/']",
+      "base_url": "https://stellenangebote.uni-marburg.de",
+      "wait_until": "networkidle",
+      "wait_selector": "a[href*='/jobposting/']",
+      "wait_ms": 7000
+    },
+    {
+      "id": 230,
+      "name": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "selector": "#uhhportal",
+      "link_selector": "a[href*='jobID=']",
+      "base_url": "https://www.uni-hamburg.de",
+      "wait_until": "networkidle",
+      "wait_selector": "a[href*='jobID=']",
+      "wait_ms": 7000,
+      "detail_via_playwright": true,
+      "detail_wait_selector": "#uhhjob"
+    },
+    {
+      "id": 231,
+      "name": "CURE (KHK Saarbrücken)",
+      "url": "https://cure.uni-saarland.de/das-kolleg/stellenausschreibungen/",
+      "method": "html",
+      "selector": ".entry-content",
+      "link_selector": "",
+      "base_url": "https://cure.uni-saarland.de"
     }
   ]
 }
