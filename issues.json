@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-28T11:01:25.611845+00:00",
+  "last_updated": "2026-06-28T11:31:06.484266+00:00",
   "site_summary": {
     "Carnegie Council": {
       "site_id": 20,
       "url": "https://www.carnegiecouncil.org/about/jobs",
       "method": "html",
-      "consecutive_failures": 9,
-      "total_recent_failures": 9,
+      "consecutive_failures": 10,
+      "total_recent_failures": 10,
       "first_recent_failure": "2026-06-28T07:01:18.888451+00:00",
-      "last_recent_failure": "2026-06-28T11:01:25.611845+00:00",
+      "last_recent_failure": "2026-06-28T11:31:06.484266+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -19,8 +19,8 @@
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 115,
-      "first_recent_failure": "2026-05-29T11:30:52.610844+00:00",
+      "total_recent_failures": 114,
+      "first_recent_failure": "2026-05-29T12:00:58.665159+00:00",
       "last_recent_failure": "2026-06-14T11:31:08.428362+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
@@ -133,26 +133,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-29T11:30:52.610844+00:00",
-      "site": "Eurasia Group",
-      "site_id": 7,
-      "url": "https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
-      "consecutive_count": 14
-    },
-    {
-      "timestamp": "2026-05-29T11:30:52.610844+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
-      "consecutive_count": 5
-    },
     {
       "timestamp": "2026-05-29T12:00:58.665159+00:00",
       "site": "Eurasia Group",
@@ -9408,6 +9388,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.carnegiecouncil.org%2Fabout%2Fjobs",
       "consecutive_count": 9
+    },
+    {
+      "timestamp": "2026-06-28T11:31:06.484266+00:00",
+      "site": "Carnegie Council",
+      "site_id": 20,
+      "url": "https://www.carnegiecouncil.org/about/jobs",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.carnegiecouncil.org%2Fabout%2Fjobs",
+      "consecutive_count": 10
     }
   ]
 }
