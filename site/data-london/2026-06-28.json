@@ -1,7 +1,7 @@
 {
   "date": "2026-06-28",
-  "generated_at": "2026-06-28T22:31:04.492371+00:00",
-  "run_count": 25,
+  "generated_at": "2026-06-28T23:01:08.306233+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Investment Manager",
@@ -86,6 +86,23 @@
       "type": "Full-time (24-month traineeship/Volontariat)",
       "deadline": "31-07-2026",
       "salary": "Per DJV collective agreement (incl. holiday and Christmas pay)"
+    },
+    {
+      "title": "Associate or Senior Editor, Nature Human Behaviour",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Shanghai/Associate-or-Senior-Editor--Nature-Human-Behaviour_JR106402",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A PhD (or equivalent) in computational or quantitative social science is listed as an essential requirement, which the candidate does not hold — this triggers the completed-doctorate disqualifier. The role also sits in scientific editorial publishing rather than the candidate's core interest zones.",
+      "location": "Shanghai, Milan or Pune (hybrid)",
+      "type": "Full-time (permanent)",
+      "deadline": "10 July 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
     }
   ]
 }
