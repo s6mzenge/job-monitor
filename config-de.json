@@ -829,7 +829,7 @@
       "url": "https://stifterverband.talention.com/talention/jobs",
       "method": "playwright",
       "selector": "div.tms-component--joblist",
-      "link_selector": "a[href*='/stellenangebote/']",
+      "link_selector": "a[href^='https'][href*='/talention/stellenangebote/']"
       "base_url": "https://stifterverband.talention.com",
       "wait_until": "networkidle",
       "wait_selector": "a[href*='/stellenangebote/']",
