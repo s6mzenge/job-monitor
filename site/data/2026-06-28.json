@@ -1,7 +1,7 @@
 {
   "date": "2026-06-28",
-  "generated_at": "2026-06-28T00:29:33.028281+00:00",
-  "run_count": 3,
+  "generated_at": "2026-06-28T00:57:37.536100+00:00",
+  "run_count": 4,
   "jobs": [
     {
       "title": "Investment Manager",
@@ -72,6 +72,20 @@
       "type": "Full-time",
       "deadline": "2026-06-28",
       "salary": "Not specified"
+    },
+    {
+      "title": "Director",
+      "organisation": "Palestine Solidarity Campaign",
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "This is an executive leadership role with ultimate organisational responsibility, leading a senior team of three Deputy Directors — far beyond the candidate's MSc-in-progress and student/RA-only experience. Hard ineligibility on seniority (Director-level title requiring extensive senior leadership).",
+      "location": "London (hybrid)",
+      "type": "Full-time",
+      "deadline": "8 July 2026",
+      "salary": "£80,000 – £95,000 per annum"
     }
   ]
 }
