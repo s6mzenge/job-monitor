@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-28T09:31:10.896032+00:00",
+  "last_updated": "2026-06-28T09:50:21.320307+00:00",
   "site_summary": {
     "Carnegie Council": {
       "site_id": 20,
       "url": "https://www.carnegiecouncil.org/about/jobs",
       "method": "html",
-      "consecutive_failures": 6,
-      "total_recent_failures": 6,
+      "consecutive_failures": 7,
+      "total_recent_failures": 7,
       "first_recent_failure": "2026-06-28T07:01:18.888451+00:00",
-      "last_recent_failure": "2026-06-28T09:31:10.896032+00:00",
+      "last_recent_failure": "2026-06-28T09:50:21.320307+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -9426,6 +9426,28 @@
       "type": "fetch_error",
       "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.carnegiecouncil.org%2Fabout%2Fjobs",
       "consecutive_count": 6
+    },
+    {
+      "timestamp": "2026-06-28T09:50:21.320307+00:00",
+      "site": "Carnegie Council",
+      "site_id": 20,
+      "url": "https://www.carnegiecouncil.org/about/jobs",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.carnegiecouncil.org%2Fabout%2Fjobs",
+      "consecutive_count": 7
+    },
+    {
+      "timestamp": "2026-06-28T09:50:21.320307+00:00",
+      "site": "bpb (Bundeszentrale f. pol. Bildung)",
+      "site_id": 191,
+      "url": "https://www.bpb.de/die-bpb/karriere/132941/stellenangebote-der-bpb/",
+      "method": "html",
+      "type": "llm_parse_failed",
+      "message": "LLM response could not be parsed into a match block",
+      "job_title": "Häufig gestellte Fragen (FAQ)",
+      "job_url": "https://www.bpb.de/die-bpb/karriere/503520/haeufig-gestellte-fragen-faq",
+      "raw_snippet": "This is not a job posting — it is a FAQ page about applying to the bpb.\n\nNO_JOBS_FOUND"
     }
   ]
 }
