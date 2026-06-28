@@ -1,7 +1,7 @@
 {
   "date": "2026-06-28",
-  "generated_at": "2026-06-28T16:31:15.937837+00:00",
-  "run_count": 3,
+  "generated_at": "2026-06-28T17:01:16.277227+00:00",
+  "run_count": 4,
   "jobs": [
     {
       "title": "Investment Manager",
@@ -44,6 +44,34 @@
       "type": "Full-time",
       "deadline": "8 July 2026",
       "salary": "£80,000 – £95,000 per annum"
+    },
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "5",
+      "skills_score": "2",
+      "seniority_score": "1",
+      "reason": "Human rights and strategic litigation are core to the candidate's interests, but this is a Manager-level role (Project/Regional Leads/Managers pay band) requiring significant leadership and likely legal experience the candidate lacks. Hard ineligibility on seniority.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% employer-matched pension"
+    },
+    {
+      "title": "Fundraising Coordinator",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "Although at a Coordinator level appropriate to the candidate's stage, fundraising is off-profile (closer to development/sales) and not aligned with research, policy or intelligence work. Field mismatch forces Low.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "31/05/2026",
+      "salary": "£32,696 per annum plus up to 5% employer-matched pension"
     }
   ]
 }
