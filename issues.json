@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-28T08:31:12.374004+00:00",
+  "last_updated": "2026-06-28T09:01:16.222208+00:00",
   "site_summary": {
     "Carnegie Council": {
       "site_id": 20,
       "url": "https://www.carnegiecouncil.org/about/jobs",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 4,
+      "consecutive_failures": 5,
+      "total_recent_failures": 5,
       "first_recent_failure": "2026-06-28T07:01:18.888451+00:00",
-      "last_recent_failure": "2026-06-28T08:31:12.374004+00:00",
+      "last_recent_failure": "2026-06-28T09:01:16.222208+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -133,16 +133,6 @@
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-29T09:01:05.131484+00:00",
-      "site": "Eurasia Group",
-      "site_id": 7,
-      "url": "https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
-      "consecutive_count": 9
-    },
     {
       "timestamp": "2026-05-29T09:30:56.834503+00:00",
       "site": "Eurasia Group",
@@ -9436,6 +9426,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.carnegiecouncil.org%2Fabout%2Fjobs",
       "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-06-28T09:01:16.222208+00:00",
+      "site": "Carnegie Council",
+      "site_id": 20,
+      "url": "https://www.carnegiecouncil.org/about/jobs",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.carnegiecouncil.org%2Fabout%2Fjobs",
+      "consecutive_count": 5
     }
   ]
 }
