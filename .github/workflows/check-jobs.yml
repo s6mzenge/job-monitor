@@ -42,12 +42,32 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: requirements.txt
 
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Install Playwright browsers
+      # The Chromium binary (~150MB download + extract) is the single biggest
+      # per-run setup cost. Cache it keyed on requirements.txt (which pins the
+      # playwright version), so it is fetched once per version bump, not every
+      # 30-minute run. On a cache hit we still install the OS libraries (those
+      # live system-wide and reset each run), which is much faster than the
+      # browser download.
+      - name: Cache Playwright browser
+        id: pw-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('requirements.txt') }}
+
+      - name: Install Playwright browser + OS deps (cache miss)
+        if: steps.pw-cache.outputs.cache-hit != 'true'
         run: playwright install chromium --with-deps
+
+      - name: Install Playwright OS deps only (cache hit)
+        if: steps.pw-cache.outputs.cache-hit == 'true'
+        run: playwright install-deps chromium
 
       - name: Write CV file from secret
         env:
