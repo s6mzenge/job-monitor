@@ -1,0 +1,25 @@
+{
+  "qualifications": "Probe run (dry-run): fetch-only test of new sites on the GitHub runner. Dry-run performs no scoring, so this text is unused here.",
+  "sites": [
+    {
+      "id": 188,
+      "name": "DFG",
+      "method": "html",
+      "url": "https://dfg.concludis.de/bewerber/index.php",
+      "base_url": "https://dfg.concludis.de",
+      "link_selector": "a[href*='landingpage.php']"
+    },
+    {
+      "id": 189,
+      "name": "Humboldt-Universität zu Berlin",
+      "method": "playwright",
+      "url": "https://www.hu-berlin.de/universitaet/arbeiten-an-der-hu/stellenangebote",
+      "base_url": "https://www.hu-berlin.de",
+      "stealth": true,
+      "wait_until": "networkidle",
+      "wait_timeout": 20000,
+      "wait_selector": "a[href*='tx_jobapplications']",
+      "link_selector": "a[href*='%5Bposting%5D']"
+    }
+  ]
+}
