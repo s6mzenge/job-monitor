@@ -201,6 +201,7 @@ NO_VACANCY_PHRASES = [
     "no jobs are available",
     "no items found",
     "keine offenen positionen",
+    "keine offenen stellen",
     "derzeit keine",
     "do not have any vacancies",
     "not currently recruiting",
