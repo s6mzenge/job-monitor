@@ -1,0 +1,105 @@
+name: Diagnose a page-level site
+
+# Manual only. Imports the REAL monitor.fetch_page + monitor.extract_text and runs
+# them against one URL several times per transport, on the Azure runner (so the IP
+# behaviour matches production — residential != runner). For each transport it reports:
+#   • char count per fetch
+#   • whether the extracted text is byte-identical across fetches (STABLE vs DIFFERS)
+#   • a unified diff of what changes between two fetches (pins the churn source)
+#   • a text sample (so you can read the empty-state wording / link structure)
+# It does NOT call the LLM, send Telegram, write state, or commit anything, and it
+# does not modify monitor.py — it only imports two pure functions from it.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Page to diagnose"
+        required: false
+        default: "https://www.niod.nl/en/about-niod/vacancies-niod"
+      selector:
+        description: "CSS selector to scope extraction (mirror the site's config; blank = whole page)"
+        required: false
+        default: "div#content"
+      fetches:
+        description: "Fetches per transport (more = better stability signal)"
+        required: false
+        default: "3"
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install -r requirements.txt
+      - name: Diagnose
+        env:
+          DIAG_URL: ${{ inputs.url }}
+          DIAG_SELECTOR: ${{ inputs.selector }}
+          DIAG_FETCHES: ${{ inputs.fetches }}
+          # required for monitor's module-level import; never exercised here
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # transports
+          CF_WORKER_URL: ${{ secrets.CF_WORKER_URL }}
+          CF_WORKER_TOKEN: ${{ secrets.CF_WORKER_TOKEN }}
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+        run: |
+          python - <<'PY'
+          import os, time, hashlib, difflib
+          import monitor as m
+
+          url = os.environ["DIAG_URL"]
+          selector = os.environ.get("DIAG_SELECTOR", "")
+          N = int(os.environ.get("DIAG_FETCHES", "3") or "3")
+          print(f"URL      = {url}")
+          print(f"selector = {selector!r}   (mirrors check_html: matched -> scoped, unmatched -> whole page)")
+          print(f"fetches  = {N} per transport\n")
+
+          def grab(**kw):
+              outs = []
+              for k in range(N):
+                  try:
+                      soup = m.fetch_page(url, **kw)
+                  except Exception as e:
+                      outs.append(("EXC", str(e)[:120])); continue
+                  if soup is None:
+                      outs.append(("NONE", None)); continue
+                  outs.append(("OK", m.extract_text(soup, selector)))
+                  time.sleep(2)
+              return outs
+
+          transports = [
+              ("plain",  {}),
+              ("tls",    {"tls_impersonate": True}),
+              ("worker", {"proxy": "cloudflare_worker"}),
+              ("jina",   {"proxy": "jina"}),
+          ]
+          for label, kw in transports:
+              print("=" * 72)
+              print(f"TRANSPORT: {label}   {kw}")
+              outs = grab(**kw)
+              texts = [t for st, t in outs if st == "OK"]
+              status = [st for st, _ in outs]
+              chars = [len(t) for st, t in outs if st == "OK"]
+              hs = [hashlib.sha256(t.encode()).hexdigest()[:10] for t in texts]
+              print(f"  fetch status: {status}")
+              if not texts:
+                  print("  -> not readable via this transport\n"); continue
+              print(f"  chars : {chars}")
+              print(f"  hashes: {hs}")
+              uniq = len(set(hs))
+              print(f"  -> {'STABLE (identical every fetch)' if uniq == 1 and len(texts) == N else f'DIFFERS ({uniq} distinct of {len(texts)})'}")
+              if uniq > 1:
+                  d = list(difflib.unified_diff(texts[0].splitlines(), texts[1].splitlines(), lineterm="", n=1))
+                  print("  --- diff fetch#1 -> fetch#2 (first 50 changed-context lines) ---")
+                  for ln in d[:50]:
+                      print("   " + ln)
+              print("  --- extracted text, fetch#1 (first 1400 chars) ---")
+              print("   " + texts[0][:1400].replace("\n", "\n   "))
+              print()
+          PY
