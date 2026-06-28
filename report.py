@@ -8,7 +8,7 @@ import os
 from datetime import datetime, timezone
 
 
-SITE_DATA_DIR = os.path.join("site", "data")
+SITE_DATA_DIR = os.environ.get("SITE_DATA_DIR", os.path.join("site", "data"))
 DATES_FILE = os.path.join(SITE_DATA_DIR, "dates.json")
 MAX_DAYS = 90  # Keep at most 90 days of reports
 
