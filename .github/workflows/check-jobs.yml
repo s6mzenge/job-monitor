@@ -3,16 +3,36 @@ name: Job Monitor
 on:
   workflow_dispatch:
 
-concurrency:
-  group: job-monitor
-  cancel-in-progress: false
-
+# Two lanes run in parallel. Each lane serialises only against itself across
+# triggers (so a slow DE run never blocks the next London run, and vice-versa).
 jobs:
   check-jobs:
+    name: check-jobs (${{ matrix.lane }})
+    strategy:
+      fail-fast: false          # one lane failing must not cancel the other
+      matrix:
+        include:
+          - lane: de
+            config: config-de.json
+            state: state-de.json
+            issues: issues-de.json
+            data_dir: site/data            # keeps the existing dashboard working
+            label: "🇩🇪 DE"
+            max_rpm: "5"
+          - lane: london
+            config: config-london.json
+            state: state-london.json
+            issues: issues-london.json
+            data_dir: site/data-london
+            label: "🇬🇧 London"
+            max_rpm: "4"
     runs-on: ubuntu-latest
     timeout-minutes: 45
     permissions:
       contents: write
+    concurrency:
+      group: job-monitor-${{ matrix.lane }}
+      cancel-in-progress: false
 
     steps:
       - name: Checkout repository
@@ -35,8 +55,14 @@ jobs:
         run: |
           printenv CV_TEXT > cv.txt
 
-      - name: Run job monitor
+      - name: Run job monitor (${{ matrix.lane }})
         env:
+          CONFIG_FILE: ${{ matrix.config }}
+          STATE_FILE: ${{ matrix.state }}
+          ISSUES_FILE: ${{ matrix.issues }}
+          SITE_DATA_DIR: ${{ matrix.data_dir }}
+          ANTHROPIC_MAX_RPM: ${{ matrix.max_rpm }}
+          RUN_LABEL: ${{ matrix.label }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -45,19 +71,22 @@ jobs:
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
         run: python -u monitor.py
 
-      - name: Commit updated state and report
+      - name: Commit updated state and report (${{ matrix.lane }})
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add state.json site/data/
-          [ -f issues.json ] && git add issues.json || true
-          git diff --staged --quiet || git commit -m "Update state"
-          # Serialised by the workflow-level concurrency guard; rebase-retry anyway
-          # so a state commit is never lost to a remote that moved ahead mid-run.
+          git add "${{ matrix.state }}" "${{ matrix.data_dir }}/"
+          [ -f "${{ matrix.issues }}" ] && git add "${{ matrix.issues }}" || true
+          git diff --staged --quiet || git commit -m "Update state (${{ matrix.lane }})"
+          # Both lanes push to main in parallel. They only ever touch their own
+          # files (state-<lane>.json / issues-<lane>.json / their data dir), so a
+          # rebase can never content-conflict — the retries just absorb the
+          # "remote moved between pull and push" timing when the other lane lands
+          # first. Jittered backoff + 5 attempts keeps it reliable.
           pushed=0
-          for attempt in 1 2 3; do
+          for attempt in 1 2 3 4 5; do
             if git pull --rebase --autostash origin main && git push; then pushed=1; break; fi
-            echo "push attempt $attempt rejected (remote moved) - rebasing and retrying..."
-            sleep 5
+            echo "push attempt $attempt rejected (remote moved) — rebasing and retrying..."
+            sleep $((RANDOM % 5 + 2))
           done
-          [ "$pushed" = 1 ] || { echo "::error::could not push state after 3 attempts"; exit 1; }
+          [ "$pushed" = 1 ] || { echo "::error::could not push state after 5 attempts"; exit 1; }
