@@ -48,7 +48,7 @@ import os
 from datetime import datetime, timedelta
 
 
-ISSUES_FILE = "issues.json"
+ISSUES_FILE = os.environ.get("ISSUES_FILE", "issues.json")
 MAX_ISSUE_AGE_DAYS = 30
 
 
