@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-06-28T05:31:38.686307+00:00",
+  "last_updated": "2026-06-28T06:01:16.609580+00:00",
   "site_summary": {
     "ICTJ": {
       "site_id": 41,
       "url": "https://www.ictj.org/careers-0",
       "method": "html",
       "consecutive_failures": 16,
-      "total_recent_failures": 125,
-      "first_recent_failure": "2026-05-29T06:00:58.768592+00:00",
+      "total_recent_failures": 124,
+      "first_recent_failure": "2026-05-29T06:30:51.243587+00:00",
       "last_recent_failure": "2026-06-14T11:31:08.428362+00:00",
       "currently_paused": true,
       "paused_until": "2026-06-16T11:31:08.428362+00:00",
@@ -117,42 +117,9 @@
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://r.jina.ai/https://www.kingsfund.org.uk/about-us/jobs"
-    },
-    "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)": {
-      "site_id": 179,
-      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 4,
-      "first_recent_failure": "2026-06-26T07:31:17.175221+00:00",
-      "last_recent_failure": "2026-06-28T05:31:38.686307+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12\", waiting until \"networkidle\""
     }
   },
   "issues": [
-    {
-      "timestamp": "2026-05-29T06:00:58.768592+00:00",
-      "site": "Eurasia Group",
-      "site_id": 7,
-      "url": "https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
-      "consecutive_count": 3
-    },
-    {
-      "timestamp": "2026-05-29T06:00:58.768592+00:00",
-      "site": "ICTJ",
-      "site_id": 41,
-      "url": "https://www.ictj.org/careers-0",
-      "method": "html",
-      "type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ictj.org%2Fcareers-0",
-      "consecutive_count": 10
-    },
     {
       "timestamp": "2026-05-29T06:30:51.243587+00:00",
       "site": "Eurasia Group",
