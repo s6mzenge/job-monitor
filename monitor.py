@@ -85,7 +85,7 @@ except ImportError:
         _STEALTH_MODE = None
 
 # ─── Load configuration ───
-with open("config.json", "r", encoding="utf-8") as f:
+with open(os.environ.get("CONFIG_FILE", "config.json"), "r", encoding="utf-8") as f:
     config = json.load(f)
 
 QUALIFICATIONS = config["qualifications"]
@@ -115,6 +115,7 @@ else:
 CF_WORKER_URL = os.environ.get("CF_WORKER_URL", "")
 CF_WORKER_TOKEN = os.environ.get("CF_WORKER_TOKEN", "")
 JINA_API_KEY = os.environ.get("JINA_API_KEY", "")  # optional: higher r.jina.ai rate limit; keyless free tier works without it
+RUN_LABEL = os.environ.get("RUN_LABEL", "")
 
 
 # ─── Anthropic rate limiter ───
@@ -122,13 +123,14 @@ JINA_API_KEY = os.environ.get("JINA_API_KEY", "")  # optional: higher r.jina.ai 
 # At ~3K input tokens per call the ITPM is the real bottleneck (~10 calls/min).
 # We cap at 9 RPM to stay safely under the per-minute input-token ceiling.
 _anthropic_calls = []
+_MAX_RPM = int(os.environ.get("ANTHROPIC_MAX_RPM", "9"))
 
 def anthropic_rate_limit():
     """Enforce max 9 calls per 60 seconds (staying under our Tier 1 ITPM ceiling)."""
     global _anthropic_calls
     now_ts = time.time()
     _anthropic_calls = [t for t in _anthropic_calls if now_ts - t < 60]
-    if len(_anthropic_calls) >= 9:
+    if len(_anthropic_calls) >= _MAX_RPM:
         wait = 60 - (now_ts - _anthropic_calls[0]) + 1
         print(f"    ⏳ Anthropic rate limit — waiting {wait:.0f}s")
         time.sleep(wait)
@@ -175,7 +177,7 @@ def _consume_error():
 
 
 # ─── State management ───
-STATE_FILE = "state.json"
+STATE_FILE = os.environ.get("STATE_FILE", "state.json")
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -2812,6 +2814,8 @@ def format_match_for_telegram(match):
     return "\n".join(parts)
 
 def send_telegram(message):
+    if RUN_LABEL:
+           message = f"{RUN_LABEL}\n{message}"
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     chunks = [message[i:i + 4000] for i in range(0, len(message), 4000)]
     for chunk in chunks:
