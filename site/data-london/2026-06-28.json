@@ -1,7 +1,7 @@
 {
   "date": "2026-06-28",
-  "generated_at": "2026-06-28T18:01:08.942619+00:00",
-  "run_count": 7,
+  "generated_at": "2026-06-28T18:31:03.701094+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Investment Manager",
@@ -72,6 +72,20 @@
       "type": "Full-time",
       "deadline": "31/05/2026",
       "salary": "£32,696 per annum plus up to 5% employer-matched pension"
+    },
+    {
+      "title": "Volontär*in im Ressort \"Innere Medizin und Hausarztmedizin\" / Springer Medizin Verlag GmbH",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Munich/Volontr-in-im-Ressort--Innere-Medizin-und-Hausarztmedizin----Springer-Medizin-Verlag-GmbH_JR106443",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "2",
+      "seniority_score": "5",
+      "reason": "This is a medical-journalism editorial traineeship requiring a medical, scientific, or journalistic degree and confidence interpreting clinical studies — entirely off the candidate's IR/policy profile. The field is a mismatch, forcing a Low rating despite the entry-level (Volontär) seniority being appropriate.",
+      "location": "Munich, Germany",
+      "type": "Full-time (24-month traineeship/Volontariat)",
+      "deadline": "31-07-2026",
+      "salary": "Per DJV collective agreement (incl. holiday and Christmas pay)"
     }
   ]
 }
