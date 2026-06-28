@@ -1581,11 +1581,23 @@ def check_playwright(site, seen_urls, browser=None):
             if _doc_text:
                 detail_text = (detail_text or f"Title: {job['title']}") + _doc_text
                 print(f"    + {len(_doc_srcs)} JD doc(s) appended for '{job['title'][:40]}'")
-        new_jobs.append({
+        _job_entry = {
             "title": job["title"],
             "url": job["url"],
             "detail_text": detail_text or f"Title: {job['title']} (detail page could not be loaded)"
-        })
+        }
+        # Optional deterministic pre-LLM filter (e.g. Marburg): only evaluate a job
+        # if its DETAIL page matches `detail_must_match` (a regex). Marburg's
+        # Fachbereich (fb03/fb06) appears only in the detail-page Ausschreibungs-ID,
+        # never in the listing link — so we read the detail (already fetched above),
+        # keep faculty matches, and mark the rest seen WITHOUT an LLM call. Fail open:
+        # a failed/empty detail fetch is never filtered, so a genuinely relevant role
+        # is never silently dropped on a transient fetch hiccup.
+        _mm = site.get("detail_must_match")
+        if _mm and detail_text and not re.search(_mm, detail_text, re.IGNORECASE):
+            _job_entry["_skip_eval"] = True
+            _job_entry["_skip_reason"] = f"detail_must_match /{_mm}/ not in detail page"
+        new_jobs.append(_job_entry)
 
     return {"total": len(all_urls), "new": new_jobs}
 
@@ -3713,7 +3725,9 @@ def main():
             for job in new_jobs:
                 print(f"      → {job['title']}")
 
-                if not DRY_RUN:
+                if job.get("_skip_eval"):
+                    print(f"        ⏭ Skipped (filtered): {job.get('_skip_reason', 'pre-filter')} — marking seen, no LLM.")
+                elif not DRY_RUN:
                     llm_result = evaluate_with_anthropic(name, job["title"], job["url"], job["detail_text"], london_only=site.get("london_only", False), max_chars=site.get("eval_max_chars", 10000))
                     llm_err = _consume_error()
 
