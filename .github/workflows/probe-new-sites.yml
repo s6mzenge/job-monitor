@@ -1,0 +1,58 @@
+name: Probe New Sites (dry-run)
+
+# Manual, throwaway test: runs ONLY the new sites (dfg + hu-berlin) on the same
+# GitHub/Azure runner the real job runs on, so you can see whether dfg fetches
+# from a datacenter IP and whether hu-berlin's Playwright clears Anubis there.
+#
+# It is deliberately READ-ONLY:
+#   - permissions: contents: read  → it physically cannot push to the repo
+#   - no "commit state" step        → nothing is written back
+#   - dry_run.txt = true            → no LLM calls, no Telegram, no report write
+# It swaps config.json for probe_new_sites.json at runtime (in the runner's
+# checkout only); your real config.json on the repo is never touched.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: probe-new-sites
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: playwright install chromium --with-deps
+
+      - name: Use the probe config (only the new sites) — runtime only, never committed
+        run: cp probe_new_sites.json config.json
+
+      - name: Enable dry-run (fetch + populate state only; no LLM, no Telegram, no commit)
+        run: echo "true" > dry_run.txt
+
+      - name: Run monitor against the probe sites
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CF_WORKER_URL: ${{ secrets.CF_WORKER_URL }}
+          CF_WORKER_TOKEN: ${{ secrets.CF_WORKER_TOKEN }}
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+        run: python -u monitor.py
