@@ -829,10 +829,10 @@
       "url": "https://stifterverband.talention.com/talention/jobs",
       "method": "playwright",
       "selector": "div.tms-component--joblist",
-      "link_selector": "a[href^='https'][href*='/talention/stellenangebote/']"
+      "link_selector": "a[href^='https'][href*='/talention/stellenangebote/']",
       "base_url": "https://stifterverband.talention.com",
       "wait_until": "networkidle",
-      "wait_selector": "a[href*='/stellenangebote/']",
+      "wait_selector": "a[href^='https'][href*='/talention/stellenangebote/']",
       "wait_ms": 6000,
       "nav_timeout": 60000
     },
@@ -916,7 +916,8 @@
       "base_url": "https://stellenangebote.uni-marburg.de",
       "wait_until": "networkidle",
       "wait_selector": "a[href*='/jobposting/']",
-      "wait_ms": 7000
+      "wait_ms": 7000,
+      "detail_must_match": "\\bfb0[36]\\b"
     },
     {
       "id": 230,
