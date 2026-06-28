@@ -703,7 +703,7 @@
       "link_selector": "div.rowLabel a",
       "base_url": "https://jobs.savethechildren.org.uk",
       "wait_until": "domcontentloaded",
-      "wait_selector": "div.rowLabel a",
+      "wait_selector": "div#eaContainer",
       "wait_ms": 5000
     },
     {
@@ -1360,17 +1360,18 @@
       "id": 104,
       "name": "Open Rights Group",
       "url": "https://www.openrightsgroup.org/jobs/",
-      "method": "html",
+      "method": "playwright",
       "selector": "main",
       "link_selector": "",
       "base_url": "https://www.openrightsgroup.org",
-      "london_only": true
+      "london_only": true,
+      "proxy": "cloudflare_worker"
     },
     {
       "id": 105,
       "name": "European Leadership Network",
       "url": "https://europeanleadershipnetwork.org/about/careers/",
-      "method": "html",
+      "method": "playwright",
       "selector": "main",
       "link_selector": "",
       "base_url": "https://europeanleadershipnetwork.org",
@@ -1879,6 +1880,7 @@
       "name": "German Historical Institute London",
       "url": "https://www.ghil.ac.uk/opportunities/vacancies",
       "method": "html",
+      "proxy": "cloudflare_worker"
       "selector": "main"
     },
     {
@@ -1892,10 +1894,12 @@
       "id": 149,
       "name": "Center for Global Development",
       "url": "https://www.cgdev.org/careers",
-      "method": "html",
-      "link_selector": "",
+      "method": "playwright",
+      "link_selector": "a[href*='applytojob.com']",
+      "wait_selector": "a[href*='applytojob.com']",
+      "detail_via_playwright": true,
       "london_only": true,
-      "proxy": "jina"
+      "wait_until": "domcontentloaded"
     },
     {
       "id": 150,
