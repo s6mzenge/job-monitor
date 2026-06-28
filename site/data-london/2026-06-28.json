@@ -1,6 +1,35 @@
 {
   "date": "2026-06-28",
-  "generated_at": "2026-06-28T15:46:14.886630+00:00",
-  "run_count": 1,
-  "jobs": []
+  "generated_at": "2026-06-28T16:01:30.142461+00:00",
+  "run_count": 2,
+  "jobs": [
+    {
+      "title": "Investment Manager",
+      "organisation": "Paul Hamlyn Foundation",
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "match": "low",
+      "field_score": "1",
+      "skills_score": "1",
+      "seniority_score": "1",
+      "reason": "This is a senior investment/finance role with a salary range and title indicating substantial professional experience, far outside the candidate's IR-research profile. Field, skills and seniority all mismatch.",
+      "location": "Not specified",
+      "type": "Full-time",
+      "deadline": "Monday 29 June",
+      "salary": "circa £90,000-£150,000 per annum"
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "match": "low",
+      "field_score": "4",
+      "skills_score": "3",
+      "seniority_score": "1",
+      "reason": "This is a call for expert advisory committee members, not a salaried entry-level role — it seeks established experts/activists from specific regions, which the candidate is not. The deadline (15 January 2026) has also passed relative to today (28 June 2026), making the role closed.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified"
+    }
+  ]
 }
