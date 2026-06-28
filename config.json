@@ -1374,7 +1374,7 @@
       "link_selector": "",
       "base_url": "https://europeanleadershipnetwork.org",
       "london_only": true,
-      "proxy": "cloudflare_worker"
+      "proxy": "jina"
     },
     {
       "id": 106,
