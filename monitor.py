@@ -5,6 +5,10 @@ import re
 import requests
 import time
 import atexit
+import io
+import random
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
@@ -19,6 +23,51 @@ except Exception:  # optional dep; only sites with tls_impersonate need it
 from report import save_report
 import issues
 import jd_docs
+
+# ─── Parallelism: per-thread stdout capture ───
+# The site loop runs sites concurrently (network-bound work), but every handler
+# logs with bare print(). If 12+ threads wrote to the real stdout at once the
+# log would be an unreadable interleave. This proxy routes each worker thread's
+# output into its OWN buffer (set via set_buffer); the main thread — which has
+# no buffer set — writes straight through. The main thread then replays each
+# site's captured buffer in site order, reproducing the exact sequential log.
+import sys as _sys
+
+class _ThreadCapStdout:
+    def __init__(self, real):
+        self._real = real
+        self._tls = threading.local()
+    def set_buffer(self, buf):
+        self._tls.buf = buf
+    def clear_buffer(self):
+        self._tls.buf = None
+    def write(self, s):
+        buf = getattr(self._tls, "buf", None)
+        (buf if buf is not None else self._real).write(s)
+        return len(s)
+    def flush(self):
+        if getattr(self._tls, "buf", None) is None:
+            self._real.flush()
+    def isatty(self):
+        return False
+    def __getattr__(self, name):
+        return getattr(self._real, name)
+
+_sys.stdout = _ThreadCapStdout(_sys.stdout)
+
+def _set_capture(buf):
+    """Begin capturing this thread's print output into buf. No-ops safely if
+    something has replaced sys.stdout (e.g. a test/logging harness) so capture
+    never crashes a run — output just falls through uncaptured in that case."""
+    s = _sys.stdout
+    if isinstance(s, _ThreadCapStdout):
+        s.set_buffer(buf)
+
+def _end_capture():
+    """Stop capturing this thread's print output."""
+    s = _sys.stdout
+    if isinstance(s, _ThreadCapStdout):
+        s.clear_buffer()
 
 # ─── De-duplication & hash-stability helpers ───
 # Job-board URLs often carry volatile tracking params, and hash-check pages
@@ -124,17 +173,22 @@ RUN_LABEL = os.environ.get("RUN_LABEL", "")
 # We cap at 9 RPM to stay safely under the per-minute input-token ceiling.
 _anthropic_calls = []
 _MAX_RPM = int(os.environ.get("ANTHROPIC_MAX_RPM", "9"))
+_anthropic_lock = threading.Lock()
 
 def anthropic_rate_limit():
-    """Enforce max 9 calls per 60 seconds (staying under our Tier 1 ITPM ceiling)."""
+    """Enforce max _MAX_RPM calls per 60 seconds (staying under our Tier 1 ITPM
+    ceiling). LLM evaluation runs in the sequential phase of main(), so in
+    practice only one thread is here at a time — but the lock keeps the sliding
+    window correct if that ever changes, at zero cost in the common case."""
     global _anthropic_calls
-    now_ts = time.time()
-    _anthropic_calls = [t for t in _anthropic_calls if now_ts - t < 60]
-    if len(_anthropic_calls) >= _MAX_RPM:
-        wait = 60 - (now_ts - _anthropic_calls[0]) + 1
-        print(f"    ⏳ Anthropic rate limit — waiting {wait:.0f}s")
-        time.sleep(wait)
-    _anthropic_calls.append(time.time())
+    with _anthropic_lock:
+        now_ts = time.time()
+        _anthropic_calls = [t for t in _anthropic_calls if now_ts - t < 60]
+        if len(_anthropic_calls) >= _MAX_RPM:
+            wait = 60 - (now_ts - _anthropic_calls[0]) + 1
+            print(f"    ⏳ Anthropic rate limit — waiting {wait:.0f}s")
+            time.sleep(wait)
+        _anthropic_calls.append(time.time())
 
 # ─── Error capture for issues log ───
 # Handlers swallow exceptions internally and return None on failure, so the
@@ -146,7 +200,11 @@ def anthropic_rate_limit():
 # full request URL, which can contain API keys as query parameters. We redact
 # common secret patterns before storing so they never reach issues.json (which
 # is committed to the public repo).
-_last_error = ""
+# Error capture is per-thread: under the parallel site loop, many handlers may
+# be recording/consuming errors at the same instant. A shared global would let
+# one thread read another thread's error. threading.local keeps each worker's
+# record→consume pair isolated; the main (sequential) phase uses its own slot.
+_err_tls = threading.local()
 
 # Patterns: key/token/secret in URL query params, Google API keys, Bearer tokens
 _REDACT_KV = re.compile(
@@ -166,13 +224,11 @@ def _redact_secrets(text):
     return out
 
 def _record_error(msg):
-    global _last_error
-    _last_error = _redact_secrets(msg)
+    _err_tls.value = _redact_secrets(str(msg))
 
 def _consume_error():
-    global _last_error
-    msg = _last_error
-    _last_error = ""
+    msg = getattr(_err_tls, "value", "")
+    _err_tls.value = ""
     return msg
 
 
@@ -251,7 +307,79 @@ def save_state(state):
 # Note: 403/404 are NOT retried — those are persistent and need a config fix.
 RETRY_STATUS_CODES = {429, 500, 502, 503, 504, 521, 522, 523, 524}
 FETCH_MAX_ATTEMPTS = 3
-FETCH_RETRY_BACKOFF = 10  # seconds between retries
+# Backoff is now short + jittered. The old flat 10s meant a dead host could burn
+# 2×10s of pure sleeping per transport before the proxy fallback even started;
+# combined with a 30s connect timeout that was ~110s for ONE unreachable site,
+# serially. We now fail fast on connect/DNS errors (see _classify_net_error) and
+# only back off for genuinely transient server-side errors (429/5xx/read-timeout).
+FETCH_RETRY_BACKOFF = 4   # base seconds; actual sleep is jittered around this
+
+# ─── Timeouts ───
+# (connect, read) tuple. The connect timeout is the important one for run speed:
+# an Azure-blocked or down host used to hang for the full 30s on connect. 8s is
+# plenty for any reachable host's TCP+TLS handshake; a slower connect almost
+# always means "blocked / dead" → fail fast and let the proxy fallback take over.
+# Read timeouts stay generous so a slow-but-alive origin is never cut off.
+CONNECT_TIMEOUT = 8
+HTTP_TIMEOUT = (CONNECT_TIMEOUT, 30)       # default for listing/detail fetches
+HTTP_TIMEOUT_DOC = (CONNECT_TIMEOUT, 45)   # JD docs / PDFs may be large
+JINA_TIMEOUT = (CONNECT_TIMEOUT, 60)       # r.jina.ai renders, so reads are slow
+
+# ─── Concurrency ───
+# The site loop is network-bound, so threads (which release the GIL during I/O)
+# give near-linear speedup. HTTP/API sites run in this pool; Playwright sites run
+# in their own thread group (the sync API is not thread-safe to share). Tunable
+# via env so the runner can be dialled up/down without a code change.
+HTTP_WORKERS = int(os.environ.get("MONITOR_HTTP_WORKERS", "12"))
+PW_WORKERS = int(os.environ.get("MONITOR_PW_WORKERS", "1"))  # 2 = 2 browsers (more CPU)
+
+# ─── Shared HTTP session (connection pooling + keep-alive) ───
+# A module-level Session reuses TCP/TLS connections instead of opening a fresh
+# one per request. The big win is the hosts we hit repeatedly — the Cloudflare
+# Worker proxy and r.jina.ai — where keep-alive removes a handshake per call.
+# urllib3's pool is thread-safe for concurrent requests; we only configure it
+# once here (single-threaded) and the workers just call .get/.post/.request.
+# max_retries=0 because our own ladder/_classify logic owns retry decisions.
+_SESSION = requests.Session()
+_pool = max(HTTP_WORKERS * 2, 20)
+_adapter = requests.adapters.HTTPAdapter(pool_connections=_pool, pool_maxsize=_pool, max_retries=0)
+_SESSION.mount("https://", _adapter)
+_SESSION.mount("http://", _adapter)
+
+
+def _backoff_sleep(attempt):
+    """Short jittered backoff for transient (server-side) retries."""
+    time.sleep(FETCH_RETRY_BACKOFF + random.uniform(0, 1.5) * attempt)
+
+
+def _classify_net_error(e):
+    """Decide what to do with a network exception:
+      'switch' — egress-level failure (connect timeout, DNS, unreachable). Retrying
+                 the SAME transport won't help; jump straight to the next transport
+                 (the proxy fallback) with no backoff sleep. This is what turns a
+                 dead host from ~110s into a few seconds.
+      'retry'  — transient server-side blip (read timeout, reset/refused mid-stream);
+                 worth another attempt on the same transport after a short backoff.
+      'fail'   — anything else (treat as permanent).
+    """
+    s = str(e).lower()
+    if isinstance(e, requests.exceptions.ConnectTimeout):
+        return "switch"
+    if isinstance(e, requests.exceptions.ReadTimeout):
+        return "retry"
+    if isinstance(e, requests.exceptions.ConnectionError):
+        if any(m in s for m in (
+            "name or service not known", "nodename nor servname",
+            "temporary failure in name resolution", "failed to resolve",
+            "no address associated", "network is unreachable",
+            "no route to host", "name resolution",
+        )):
+            return "switch"
+        return "retry"
+    if isinstance(e, requests.exceptions.Timeout):
+        return "retry"
+    return "fail"
+
 
 def fetch_page(url, extra_headers=None, proxy=None, tls_impersonate=False):
     """Fetch a URL and return a BeautifulSoup object, or None on error.
@@ -279,13 +407,15 @@ def fetch_page(url, extra_headers=None, proxy=None, tls_impersonate=False):
                 raise RuntimeError(
                     "tls_impersonate requires curl_cffi (add it to requirements.txt)"
                 )
-            return cffi_requests.get(url, impersonate="chrome", timeout=30)
+            # curl_cffi takes a single timeout value; keep it modest so a blocked
+            # TLS handshake doesn't stall the worker.
+            return cffi_requests.get(url, impersonate="chrome", timeout=25)
         if transport == "proxy":
-            return requests.get(
+            return _SESSION.get(
                 CF_WORKER_URL,
                 params={"url": url},
                 headers={"X-Proxy-Token": CF_WORKER_TOKEN},
-                timeout=30,
+                timeout=HTTP_TIMEOUT,
             )
         if transport == "jina":
             # Third-party fetch-and-render (r.jina.ai): egresses from Jina's own
@@ -299,8 +429,8 @@ def fetch_page(url, extra_headers=None, proxy=None, tls_impersonate=False):
             }
             if JINA_API_KEY:
                 jhdrs["Authorization"] = f"Bearer {JINA_API_KEY}"
-            return requests.get(f"https://r.jina.ai/{url}", headers=jhdrs, timeout=60)
-        return requests.get(url, headers=hdrs, timeout=30)
+            return _SESSION.get(f"https://r.jina.ai/{url}", headers=jhdrs, timeout=JINA_TIMEOUT)
+        return _SESSION.get(url, headers=hdrs, timeout=HTTP_TIMEOUT)
 
     primary = (
         "tls" if tls_impersonate
@@ -324,11 +454,11 @@ def fetch_page(url, extra_headers=None, proxy=None, tls_impersonate=False):
                 # Retryable status codes: log and try again (same transport)
                 if resp.status_code in RETRY_STATUS_CODES and attempt < FETCH_MAX_ATTEMPTS:
                     print(
-                        f"    HTTP {resp.status_code} for {url} — retry in "
-                        f"{FETCH_RETRY_BACKOFF}s (attempt {attempt}/{FETCH_MAX_ATTEMPTS})"
+                        f"    HTTP {resp.status_code} for {url} — retry "
+                        f"(attempt {attempt}/{FETCH_MAX_ATTEMPTS})"
                     )
                     last_err = f"HTTP {resp.status_code}"
-                    time.sleep(FETCH_RETRY_BACKOFF)
+                    _backoff_sleep(attempt)
                     continue
 
                 resp.raise_for_status()
@@ -338,12 +468,18 @@ def fetch_page(url, extra_headers=None, proxy=None, tls_impersonate=False):
                 return BeautifulSoup(resp.text, "html.parser")
             except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
                 last_err = e
+                action = _classify_net_error(e)
+                if action == "switch":
+                    # Egress-level failure (connect timeout / DNS / unreachable):
+                    # retrying the same transport is futile — go to the proxy now.
+                    print(f"    ⇥ {type(e).__name__} for {url} — switching transport (no retry)")
+                    break
                 if attempt < FETCH_MAX_ATTEMPTS:
                     print(
-                        f"    Network error for {url} — retry in "
-                        f"{FETCH_RETRY_BACKOFF}s (attempt {attempt}/{FETCH_MAX_ATTEMPTS}): {e}"
+                        f"    Network error for {url} — retry "
+                        f"(attempt {attempt}/{FETCH_MAX_ATTEMPTS}): {e}"
                     )
-                    time.sleep(FETCH_RETRY_BACKOFF)
+                    _backoff_sleep(attempt)
                     continue
                 break  # transient retries exhausted → fall to next transport
             except Exception as e:
@@ -378,25 +514,38 @@ def request_with_retry(method, url, **kwargs):
     reason.
     """
     last_exc = None
+    # Inject a fast connect timeout if the caller passed a bare number (the API
+    # handlers all pass timeout=30, meaning "30s for everything"). We keep their
+    # read budget but cap the connect phase so a blocked/dead host fails fast.
+    _t = kwargs.get("timeout")
+    if isinstance(_t, (int, float)):
+        kwargs["timeout"] = (CONNECT_TIMEOUT, _t)
+    elif _t is None:
+        kwargs["timeout"] = HTTP_TIMEOUT
     for attempt in range(1, FETCH_MAX_ATTEMPTS + 1):
         try:
-            resp = requests.request(method, url, **kwargs)
+            resp = _SESSION.request(method, url, **kwargs)
             if resp.status_code in RETRY_STATUS_CODES and attempt < FETCH_MAX_ATTEMPTS:
                 print(
-                    f"    HTTP {resp.status_code} for {url} — retry in "
-                    f"{FETCH_RETRY_BACKOFF}s (attempt {attempt}/{FETCH_MAX_ATTEMPTS})"
+                    f"    HTTP {resp.status_code} for {url} — retry "
+                    f"(attempt {attempt}/{FETCH_MAX_ATTEMPTS})"
                 )
-                time.sleep(FETCH_RETRY_BACKOFF)
+                _backoff_sleep(attempt)
                 continue
             return resp
         except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
             last_exc = e
+            # Egress-level failure won't fix on retry — surface it now so the
+            # caller (which has no proxy fallback here) fails fast instead of
+            # sleeping through doomed retries.
+            if _classify_net_error(e) == "switch":
+                raise
             if attempt < FETCH_MAX_ATTEMPTS:
                 print(
-                    f"    Network error for {url} — retry in "
-                    f"{FETCH_RETRY_BACKOFF}s (attempt {attempt}/{FETCH_MAX_ATTEMPTS}): {e}"
+                    f"    Network error for {url} — retry "
+                    f"(attempt {attempt}/{FETCH_MAX_ATTEMPTS}): {e}"
                 )
-                time.sleep(FETCH_RETRY_BACKOFF)
+                _backoff_sleep(attempt)
                 continue
             raise
         except Exception:
@@ -414,21 +563,21 @@ def fetch_bytes(url, proxy=None, tls_impersonate=False):
     Returns b'' on any failure so a bad attachment never breaks a job."""
     if tls_impersonate and HAVE_CURL_CFFI:
         try:
-            r = cffi_requests.get(url, impersonate="chrome", timeout=45)
+            r = cffi_requests.get(url, impersonate="chrome", timeout=30)
             if r.status_code < 400 and r.content:
                 return r.content
         except Exception:
             pass
     try:
-        r = requests.get(url, headers=HEADERS, timeout=45, allow_redirects=True)
+        r = _SESSION.get(url, headers=HEADERS, timeout=HTTP_TIMEOUT_DOC, allow_redirects=True)
         if r.status_code < 400 and r.content:
             return r.content
     except Exception:
         pass
     if CF_WORKER_URL:
         try:
-            r = requests.get(CF_WORKER_URL, params={"url": url},
-                             headers={"X-Proxy-Token": CF_WORKER_TOKEN}, timeout=45)
+            r = _SESSION.get(CF_WORKER_URL, params={"url": url},
+                             headers={"X-Proxy-Token": CF_WORKER_TOKEN}, timeout=HTTP_TIMEOUT_DOC)
             if r.status_code < 400 and r.content:
                 return r.content
         except Exception:
@@ -488,7 +637,7 @@ def check_html(site, seen_urls):
     def _fetch_listing(u):
         if scraper is not None:
             try:
-                resp = scraper.get(u, timeout=30)
+                resp = scraper.get(u, timeout=HTTP_TIMEOUT)
                 resp.raise_for_status()
                 return BeautifulSoup(resp.text, "html.parser")
             except Exception as e:
@@ -660,7 +809,7 @@ def check_html(site, seen_urls):
             time.sleep(1)
             if site.get("use_cloudscraper"):
                 try:
-                    dr = scraper.get(job["url"], timeout=30)
+                    dr = scraper.get(job["url"], timeout=HTTP_TIMEOUT)
                     dr.raise_for_status()
                     detail_soup = BeautifulSoup(dr.text, "html.parser")
                 except Exception as e:
@@ -739,7 +888,7 @@ def check_workday(site, seen_urls):
             detail_url = detail_api_template.replace("{externalPath}", path.lstrip("/"))
             try:
                 time.sleep(1)
-                dr = requests.get(detail_url, headers=api["headers"], timeout=30)
+                dr = _SESSION.get(detail_url, headers=api["headers"], timeout=HTTP_TIMEOUT)
                 dr.raise_for_status()
                 dd = dr.json()
                 info = dd.get("jobPostingInfo", {})
@@ -1056,7 +1205,7 @@ def check_pinpoint(site, seen_urls):
     scraper = cloudscraper.create_scraper()
 
     try:
-        resp = scraper.get(api["url"], timeout=30)
+        resp = scraper.get(api["url"], timeout=HTTP_TIMEOUT)
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
@@ -1099,7 +1248,7 @@ def check_pinpoint(site, seen_urls):
         if job_url:
             time.sleep(1)
             try:
-                detail_resp = scraper.get(job_url, timeout=30)
+                detail_resp = scraper.get(job_url, timeout=HTTP_TIMEOUT)
                 if detail_resp.status_code == 200:
                     detail_soup = BeautifulSoup(detail_resp.text, "html.parser")
                     page_text = extract_text(detail_soup)
@@ -1116,23 +1265,73 @@ def check_pinpoint(site, seen_urls):
     return {"total": total_after_filter if location_filter else len(postings), "new": new_jobs}
 
 # ─── 9. PLAYWRIGHT (headless browser for JS-rendered sites) ───
-def fetch_detail_playwright(url, wait_selector="", wait_ms=5000):
-    """Fetch a detail page using Playwright and return extracted text."""
+def _pw_launch(p):
+    """Launch a Chromium tuned for headless scraping on a CI runner. The flags
+    avoid the small /dev/shm on GitHub runners and trim startup work."""
+    return p.chromium.launch(args=[
+        "--disable-dev-shm-usage",
+        "--no-sandbox",
+        "--disable-gpu",
+        "--disable-extensions",
+        "--disable-background-networking",
+    ])
+
+
+def _pw_render(page, url, *, wait_until="networkidle", wait_selector="",
+               wait_ms=5000, wait_timeout=15000, nav_timeout=30000, idle_timeout=6000):
+    """Navigate and wait for content, then return page.content().
+
+    Key change from the old inline logic: navigation ALWAYS uses
+    'domcontentloaded' (fast, deterministic). If the site asked for
+    'networkidle' we wait for it SEPARATELY with a bounded timeout, so a page
+    that never goes idle (analytics beacons / websockets / long-polling) no
+    longer stalls for the full 30s nav timeout and no longer hard-fails the
+    site — we just proceed once the bound elapses. The wait_selector / wait_ms
+    readiness logic is otherwise identical to before, so what counts as "loaded"
+    is unchanged for every existing site.
+    """
+    page.goto(url, timeout=nav_timeout, wait_until="domcontentloaded")
+    if wait_until == "networkidle":
+        try:
+            page.wait_for_load_state("networkidle", timeout=idle_timeout)
+        except Exception:
+            pass  # never settled — fall through to selector/timeout waits
+    if wait_selector:
+        try:
+            page.wait_for_selector(wait_selector, timeout=wait_timeout)
+        except Exception:
+            # Slow or occasionally-missing render: do not hard-fail the site.
+            # Wait a little longer and extract whatever loaded. A bad cycle just
+            # finds 0 links and re-checks next run instead of erroring out.
+            page.wait_for_timeout(wait_ms)
+    else:
+        page.wait_for_timeout(wait_ms)
+    return page.content()
+
+
+def fetch_detail_playwright(url, wait_selector="", wait_ms=5000, browser=None):
+    """Fetch a detail page using Playwright and return extracted text.
+
+    If `browser` is supplied (by the shared Playwright group), a fresh context
+    is opened on it instead of launching a whole new browser per detail page.
+    """
     try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch()
-            page = browser.new_page()
-            page.goto(url, timeout=30000, wait_until="domcontentloaded")
-            if wait_selector:
-                try:
-                    page.wait_for_selector(wait_selector, timeout=15000)
-                except:
-                    page.wait_for_timeout(wait_ms)
-            else:
-                page.wait_for_timeout(wait_ms)
-            time.sleep(1)
-            html = page.content()
-            browser.close()
+        if browser is None:
+            with sync_playwright() as p:
+                _b = _pw_launch(p)
+                context = _b.new_context()
+                page = context.new_page()
+                html = _pw_render(page, url, wait_until="domcontentloaded",
+                                  wait_selector=wait_selector, wait_ms=wait_ms)
+                _b.close()
+        else:
+            context = browser.new_context()
+            try:
+                page = context.new_page()
+                html = _pw_render(page, url, wait_until="domcontentloaded",
+                                  wait_selector=wait_selector, wait_ms=wait_ms)
+            finally:
+                context.close()
         soup = BeautifulSoup(html, "html.parser")
         return extract_text(soup)
     except Exception as e:
@@ -1150,8 +1349,13 @@ def strip_query_params(url):
     return url.split("?")[0].rstrip("/")
 
 
-def check_playwright(site, seen_urls):
-    """Use headless Chromium to scrape JS-rendered job listing pages."""
+def check_playwright(site, seen_urls, browser=None):
+    """Use headless Chromium to scrape JS-rendered job listing pages.
+
+    `browser` lets the caller pass a shared Chromium so the whole Playwright
+    group reuses one process (a fresh context per site keeps cookie/cache
+    isolation). When None — standalone/diagnostic use — it launches its own.
+    """
     listing_url = site["url"]
     link_selector = site.get("link_selector", "")
     base_url = site.get("base_url", "")
@@ -1165,45 +1369,51 @@ def check_playwright(site, seen_urls):
     detail_wait_sel = site.get("detail_wait_selector", "")
 
     use_stealth = site.get("stealth", False)
-    print(f"    Launching headless Chromium{'  (stealth)' if use_stealth else ''}...")
+    wait_until = site.get("wait_until", "networkidle")
+    wait_timeout = site.get("wait_timeout", 15000)
+    nav_timeout = site.get("nav_timeout", 30000)
+    idle_timeout = site.get("networkidle_timeout", 6000)
+
+    # context-mode stealth wraps the whole sync_playwright lifecycle, so it can't
+    # share the pooled browser — fall back to launching its own in that case.
+    own_browser = (browser is None) or (use_stealth and _STEALTH_MODE == "context")
+    _render_kw = dict(wait_until=wait_until, wait_selector=wait_selector, wait_ms=wait_ms,
+                      wait_timeout=wait_timeout, nav_timeout=nav_timeout, idle_timeout=idle_timeout)
+    print(f"    {'Launching' if own_browser else 'Reusing'} headless Chromium"
+          f"{'  (stealth)' if use_stealth else ''}...")
+    html = None
     try:
-        if use_stealth and _STEALTH_MODE == "context":
-            pw_cm = Stealth().use_sync(sync_playwright())
-        else:
-            pw_cm = sync_playwright()
-        with pw_cm as p:
-            browser = p.chromium.launch()
-            page = browser.new_page()
-            if use_stealth and _STEALTH_MODE == "page":
-                _stealth_sync(page)
-            wait_until = site.get("wait_until", "networkidle")
-            page.goto(listing_url, timeout=30000, wait_until=wait_until)
-            if wait_selector:
-                wait_timeout = site.get("wait_timeout", 15000)
-                try:
-                    page.wait_for_selector(wait_selector, timeout=wait_timeout)
-                except Exception:
-                    # Slow or occasionally-missing render: do not hard-fail the
-                    # site. Wait a little longer and extract whatever loaded
-                    # (mirrors fetch_detail_playwright). A bad cycle just finds
-                    # 0 links and re-checks next run instead of erroring out.
-                    page.wait_for_timeout(wait_ms)
+        if own_browser:
+            if use_stealth and _STEALTH_MODE == "context":
+                pw_cm = Stealth().use_sync(sync_playwright())
             else:
-                page.wait_for_timeout(wait_ms)
-            html = page.content()
-            # Debug: what did we actually get?
-            if use_stealth:
-                from bs4 import BeautifulSoup as _BS
-                _dbg = _BS(html, "html.parser")
-                _h = [h.get_text(strip=True)[:50] for h in _dbg.select("h1, h2, h3")[:5]]
-                print(f"    [stealth debug] {len(html)} chars, headings: {_h}")
-            browser.close()
+                pw_cm = sync_playwright()
+            with pw_cm as p:
+                _b = _pw_launch(p)
+                context = _b.new_context()
+                page = context.new_page()
+                if use_stealth and _STEALTH_MODE == "page":
+                    _stealth_sync(page)
+                html = _pw_render(page, listing_url, **_render_kw)
+                _b.close()
+        else:
+            context = browser.new_context()
+            try:
+                page = context.new_page()
+                if use_stealth and _STEALTH_MODE == "page":
+                    _stealth_sync(page)
+                html = _pw_render(page, listing_url, **_render_kw)
+            finally:
+                context.close()
     except Exception as e:
         _record_error(f"Playwright: {e}")
         print(f"    Playwright error: {e}")
         return None
 
     soup = BeautifulSoup(html, "html.parser")
+    if use_stealth:
+        _h = [h.get_text(strip=True)[:50] for h in soup.select("h1, h2, h3")[:5]]
+        print(f"    [stealth debug] {len(html)} chars, headings: {_h}")
 
     # Hash-check mode (no link_selector)
     if not link_selector:
@@ -1257,7 +1467,7 @@ def check_playwright(site, seen_urls):
             time.sleep(1)
             if detail_via_pw:
                 detail_text = fetch_detail_playwright(
-                    job["full_url"], detail_wait_sel, wait_ms
+                    job["full_url"], detail_wait_sel, wait_ms, browser=browser
                 )
             else:
                 detail_soup = fetch_page(job["full_url"], proxy=site.get("proxy"))
@@ -1334,7 +1544,7 @@ def check_playwright(site, seen_urls):
         time.sleep(1)
         detail_soup = None
         if detail_via_pw:
-            detail_text = fetch_detail_playwright(job["url"], detail_wait_sel, wait_ms)
+            detail_text = fetch_detail_playwright(job["url"], detail_wait_sel, wait_ms, browser=browser)
         else:
             detail_soup = fetch_page(job["url"], proxy=site.get("proxy"))
             detail_text = extract_text(detail_soup) if detail_soup else ""
@@ -1406,7 +1616,7 @@ def check_oracle_hcm(site, seen_urls):
             detail_api_url = detail_template.replace("{job_id}", job_id)
             try:
                 time.sleep(1)
-                dr = requests.get(detail_api_url, headers=HEADERS, timeout=30)
+                dr = _SESSION.get(detail_api_url, headers=HEADERS, timeout=HTTP_TIMEOUT)
                 dr.raise_for_status()
                 dd = dr.json()
                 detail_items = dd.get("items", [])
@@ -1760,7 +1970,7 @@ def _engage_pdf_text(sess, href, cap):
     """Download a ViewAttachment link and return its extracted PDF text (capped).
     Returns '' on any failure so a bad attachment never breaks the job."""
     try:
-        r = sess.get(href, headers=HEADERS, timeout=45)
+        r = sess.get(href, headers=HEADERS, timeout=HTTP_TIMEOUT_DOC)
         r.raise_for_status()
         data = r.content
     except Exception as e:
@@ -1816,7 +2026,7 @@ def check_engage_ats(site, seen_urls):
     sess = requests.Session()
     if landing:
         try:
-            sess.get(landing, headers=HEADERS, timeout=30)
+            sess.get(landing, headers=HEADERS, timeout=HTTP_TIMEOUT)
         except Exception:
             pass  # cookie warm-up is best-effort; Type is sent explicitly anyway
 
@@ -1839,7 +2049,7 @@ def check_engage_ats(site, seen_urls):
         }
         for attempt in range(1, FETCH_MAX_ATTEMPTS + 1):
             try:
-                resp = sess.post(api_url, headers=ajax_headers, data=body, timeout=30)
+                resp = sess.post(api_url, headers=ajax_headers, data=body, timeout=HTTP_TIMEOUT)
                 if resp.status_code in RETRY_STATUS_CODES and attempt < FETCH_MAX_ATTEMPTS:
                     time.sleep(FETCH_RETRY_BACKOFF)
                     continue
@@ -1909,7 +2119,7 @@ def check_engage_ats(site, seen_urls):
             time.sleep(1)
             detail_soup = None
             try:
-                dr = sess.get(full_url, headers=HEADERS, timeout=30)
+                dr = sess.get(full_url, headers=HEADERS, timeout=HTTP_TIMEOUT)
                 dr.raise_for_status()
                 detail_soup = BeautifulSoup(dr.text, "html.parser")
             except Exception as e:
@@ -1964,8 +2174,8 @@ def check_bamboohr(site, seen_urls):
         detail_text = f"Title: {title}\nLocation: {loc_s}\nDepartment: {dept}"
         try:
             time.sleep(1)
-            dr = requests.get(f"https://{company}.bamboohr.com/careers/{jid}/detail",
-                              headers={**HEADERS, "Accept": "application/json"}, timeout=30)
+            dr = _SESSION.get(f"https://{company}.bamboohr.com/careers/{jid}/detail",
+                              headers={**HEADERS, "Accept": "application/json"}, timeout=HTTP_TIMEOUT)
             dr.raise_for_status()
             dd = dr.json()
             res = dd.get("result", dd) if isinstance(dd, dict) else {}
@@ -2838,6 +3048,76 @@ def send_telegram(message):
 #  MAIN PIPELINE
 # ═══════════════════════════════════════════════════════════════
 
+# ─── Parallel execution helpers (Tier 1.A) ───
+def _run_handler_capture(site, seen_urls):
+    """Phase-1 worker: run ONE site's handler with its print output captured to
+    a per-thread buffer and its (thread-local) recorded error consumed. Mutates
+    no shared state — only network I/O happens here — so it is safe to run many
+    of these at once. Returns a dict the sequential phase consumes."""
+    buf = io.StringIO()
+    _set_capture(buf)
+    result = None
+    handler_exc = None
+    captured_err = ""
+    try:
+        handler = METHOD_HANDLERS.get(site["method"])
+        result = handler(site, seen_urls)
+        captured_err = _consume_error()
+    except Exception as e:
+        handler_exc = e
+    finally:
+        _end_capture()
+    return {"result": result, "handler_exc": handler_exc,
+            "captured_err": captured_err, "log": buf.getvalue()}
+
+
+def _capture_pw_site(out, job, browser):
+    """Run check_playwright for one site (optionally on a shared browser),
+    capturing its output + error exactly like _run_handler_capture does."""
+    buf = io.StringIO()
+    _set_capture(buf)
+    result = None
+    handler_exc = None
+    captured_err = ""
+    try:
+        result = check_playwright(job["site"], job["seen_urls"], browser=browser)
+        captured_err = _consume_error()
+    except Exception as e:
+        handler_exc = e
+    finally:
+        _end_capture()
+    out[job["index"]] = {"result": result, "handler_exc": handler_exc,
+                         "captured_err": captured_err, "log": buf.getvalue()}
+
+
+def _run_pw_chunk(chunk):
+    """Phase-1 worker for a group of Playwright sites. The sync Playwright API
+    is not safe to share across threads, so an entire chunk runs in THIS single
+    thread and reuses one Chromium process (a fresh context per site preserves
+    cookie/cache isolation). Returns {site_index: phase1_dict}.
+
+    Context-mode-stealth sites wrap the whole Playwright lifecycle and so cannot
+    share the pooled browser; they run afterwards, each launching its own."""
+    out = {}
+    solo = [j for j in chunk if j["site"].get("stealth") and _STEALTH_MODE == "context"]
+    shared_jobs = [j for j in chunk if j not in solo]
+    if shared_jobs:
+        try:
+            with sync_playwright() as p:
+                shared = _pw_launch(p)
+                for job in shared_jobs:
+                    _capture_pw_site(out, job, shared)
+                shared.close()
+        except Exception as e:
+            for job in shared_jobs:
+                out.setdefault(job["index"], {"result": None, "handler_exc": e,
+                                              "captured_err": "",
+                                              "log": f"    Playwright group launch failed: {e}\n"})
+    for job in solo:
+        _capture_pw_site(out, job, None)
+    return out
+
+
 def main():
     now = datetime.now(timezone.utc)
     print(f"=== Job Monitor Run: {now.isoformat()} ===")
@@ -2853,38 +3133,103 @@ def main():
     paused_sites = []
     empty_sites = []
 
-    for site in SITES:
+    # ── Setup: build the per-site job list (single-threaded). State is mutated
+    # here — phase-1 handlers never touch state — so there are no races. ──
+    jobs = []
+    for i, site in enumerate(SITES):
         name = site["name"]
         method = site["method"]
         site_key = site["url"]
-
-        print(f"\n[{site.get('id', '?')}] {name} ({method})")
-
         if site_key not in state:
             state[site_key] = {"seen_urls": [], "last_checked": "", "listing_hash": ""}
+        job = {"index": i, "site": site, "site_key": site_key, "name": name, "method": method}
 
         # Check if site is paused due to repeated failures
         paused_until = state[site_key].get("paused_until", "")
         if paused_until:
             pause_end = datetime.fromisoformat(paused_until)
             if now < pause_end:
-                remaining = (pause_end - now).total_seconds() / 3600
-                print(f"    ⏸️ Paused until {paused_until[:16]} ({remaining:.0f}h remaining) — skipping.")
+                job["status"] = "paused"
+                job["pause_until"] = paused_until
+                job["pause_remaining_h"] = (pause_end - now).total_seconds() / 3600
+                jobs.append(job)
                 continue
             else:
-                print(f"    🔄 Pause expired — retrying...")
+                # Pause expired: reset now, before dispatch (handler ignores state).
                 state[site_key]["consecutive_errors"] = 0
                 state[site_key].pop("paused_until", None)
+                job["pause_reset"] = True
 
         # Load seen URLs as an ordered list (for state persistence) and a
         # parallel set (handlers use O(1) `in` checks). Order is preserved
         # so that the prune-to-last-200 step at the end correctly drops the
         # OLDEST entries rather than an arbitrary subset.
-        seen_urls_ordered = [_norm_url(u) for u in state[site_key].get("seen_urls", [])]
-        seen_urls = _NormSet(seen_urls_ordered)
-        handler = METHOD_HANDLERS.get(method)
+        job["seen_urls_ordered"] = [_norm_url(u) for u in state[site_key].get("seen_urls", [])]
+        job["seen_urls"] = _NormSet(job["seen_urls_ordered"])
 
-        if not handler:
+        if METHOD_HANDLERS.get(method) is None:
+            job["status"] = "unknown"
+            jobs.append(job)
+            continue
+
+        job["status"] = "dispatch"
+        job["kind"] = "pw" if method == "playwright" else "http"
+        jobs.append(job)
+
+    # ── Phase 1: run every site's fetch concurrently. HTTP/API sites go to a
+    # thread pool; Playwright sites run in their own thread group(s) sharing one
+    # browser (the sync API can't be shared across threads). This is the whole
+    # speedup — the run is bounded by the slowest site, not the sum of all. ──
+    http_jobs = [j for j in jobs if j.get("status") == "dispatch" and j["kind"] == "http"]
+    pw_jobs = [j for j in jobs if j.get("status") == "dispatch" and j["kind"] == "pw"]
+    _nw = max(1, PW_WORKERS)
+    pw_chunks = [c for c in (pw_jobs[k::_nw] for k in range(_nw)) if c]
+
+    _pw_note = f", {len(pw_chunks)} Playwright browser(s)" if pw_chunks else ""
+    print(f"\n▶ Checking {len(http_jobs) + len(pw_jobs)} site(s) in parallel "
+          f"({min(HTTP_WORKERS, len(http_jobs)) if http_jobs else 0} HTTP worker(s){_pw_note})...\n")
+
+    results = {}
+    if http_jobs or pw_chunks:
+        with ThreadPoolExecutor(max_workers=max(1, HTTP_WORKERS + len(pw_chunks))) as pool:
+            futs = {}
+            for j in http_jobs:
+                futs[pool.submit(_run_handler_capture, j["site"], j["seen_urls"])] = ("http", j["index"])
+            for chunk in pw_chunks:
+                futs[pool.submit(_run_pw_chunk, chunk)] = ("pw", None)
+            for fut in as_completed(futs):
+                kind, idx = futs[fut]
+                try:
+                    r = fut.result()
+                except Exception as _e:
+                    if kind == "http":
+                        results[idx] = {"result": None, "handler_exc": _e, "captured_err": "", "log": ""}
+                    continue
+                if kind == "http":
+                    results[idx] = r
+                else:
+                    results.update(r)
+
+    # ── Phase 2: process results in SITES order (single-threaded). Every branch
+    # below is the original per-site logic, verbatim — only the handler call was
+    # hoisted into phase 1. State mutation, LLM evaluation, Telegram and the
+    # daily report stay sequential, so the rate limiter and the shared
+    # accumulators need no locking. ──
+    for job in jobs:
+        site = job["site"]
+        name = job["name"]
+        method = job["method"]
+        site_key = job["site_key"]
+
+        print(f"\n[{site.get('id', '?')}] {name} ({method})")
+
+        if job["status"] == "paused":
+            paused_until = job["pause_until"]
+            remaining = job["pause_remaining_h"]
+            print(f"    ⏸️ Paused until {paused_until[:16]} ({remaining:.0f}h remaining) — skipping.")
+            continue
+
+        if job["status"] == "unknown":
             print(f"    Unknown method: {method}. Skipping.")
             issues.add(
                 issues_data, now, site,
@@ -2893,9 +3238,20 @@ def main():
             )
             continue
 
+        seen_urls_ordered = job["seen_urls_ordered"]
+        seen_urls = job["seen_urls"]
+        p1 = results.get(job["index"]) or {"result": None, "handler_exc": RuntimeError("no phase-1 result"), "captured_err": "", "log": ""}
+
+        if job.get("pause_reset"):
+            print(f"    🔄 Pause expired — retrying...")
+        if p1.get("log"):
+            _sys.stdout.write(p1["log"])
+
         try:
-            result = handler(site, seen_urls)
-            last_err = _consume_error()
+            if p1.get("handler_exc") is not None:
+                raise p1["handler_exc"]
+            result = p1["result"]
+            last_err = p1["captured_err"]
 
             if result is None:
                 prev_errors = state[site_key].get("consecutive_errors", 0)
