@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-06-29T07:43:04.985616+00:00",
+  "last_updated": "2026-06-29T08:01:14.120097+00:00",
   "site_summary": {
-    "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)": {
-      "site_id": 179,
-      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-06-29T07:43:04.985616+00:00",
-      "last_recent_failure": "2026-06-29T07:43:04.985616+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12\", waiting until \"domcontentloaded\""
-    },
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
