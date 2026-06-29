@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T08:31:09.410420+00:00",
-  "run_count": 19,
+  "generated_at": "2026-06-29T09:01:18.443884+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Studentische Teilzeitkraft Archiv Grünes Gedächtnis (w/m/d/k.A.)",
@@ -101,6 +101,23 @@
       "type": "Internship",
       "deadline": "2026-07-05",
       "salary": "Unpaid",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wiss. Mitarbeiter*in (Praedoc) — Öffentliches Recht / Völkerrecht (Prof. Dr. Heike Krieger)",
+      "organisation": "FU Berlin (wiss.)",
+      "url": "https://www.fu-berlin.de/universitaet/beruf-karriere/jobs/wiss/09_fb-rechtswissenschaft/RW-18_26_09930002.html",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "5",
+      "match": "low",
+      "reason": "The essential requirement is an abgeschlossenes wissenschaftliches Hochschulstudium with the Erste juristische Prüfung — a German law degree / first state law exam the candidate does not hold, which is a hard qualification disqualifier. Despite a perfect topical match (international law, humanitarian law, human rights, with a doctoral option), the legal qualification is an unmet essential.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (50%), fixed-term up to 4 years",
+      "deadline": "2026-07-20",
+      "salary": "Entgeltgruppe 13 TV-L FU (50%)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
