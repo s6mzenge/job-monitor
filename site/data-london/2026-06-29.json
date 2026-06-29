@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T13:01:11.246221+00:00",
-  "run_count": 30,
+  "generated_at": "2026-06-29T13:31:06.574494+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -475,6 +475,40 @@
       "type": "Contract (1-year fixed-term, full-time)",
       "deadline": "5th July 2026",
       "salary": "£40,200–£69,000 (Band D)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Embedded Threat Intelligence Analyst Team Leader",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000134793178-embedded-threat-intelligence-analyst-team-leader",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "This is a \"Team Leader\" role requiring 3–5 years of intelligence experience plus 1–3 years of leadership/team management, and a GSOC/SOC operational-security background — all well beyond the candidate's student-assistant experience and triggering the seniority and 3+ years disqualifiers. Although Sibylline and geopolitical risk are a core target zone, the level and operational-security requirements make it a hard mismatch.",
+      "location": "UK (client office)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate Director (Communications)",
+      "organisation": "Hanbury Strategy",
+      "url": "https://hanburystrategy.teamtailor.com/jobs/7987070-associate-director-communications",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Not entry-level — this is a Director-grade role requiring 4–6 years of professional communications experience plus team leadership and client-management responsibility, which the candidate (student-assistant/RA only) cannot meet. It also sits in a comms/media-relations specialism that is a partial gap, and outside the candidate's core interest zones.",
+      "location": "London (hybrid)",
+      "type": "Full-time",
+      "deadline": "2025-08-07",
+      "salary": "Competitive (dependent on experience)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
