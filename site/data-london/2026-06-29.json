@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T09:01:19.016391+00:00",
-  "run_count": 20,
+  "generated_at": "2026-06-29T09:31:09.061283+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -186,6 +186,23 @@
       "type": "Contract (12-month FTC, full-time)",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Leader - R&I policy/Metascience - Science and Emerging Technology",
+      "organisation": "RAND Europe",
+      "url": "https://apply.workable.com/j/35D7727A0F",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a senior leadership role requiring a proven track record of leading teams, winning bids and managing large complex evaluations — well beyond the candidate's entry-level profile with no full-time experience. The metascience / R&I policy focus is also outside the core interest zones.",
+      "location": "Cambridge, United Kingdom (Hybrid)",
+      "type": "Full-time",
+      "deadline": "26th July 2026",
+      "salary": "£53,000 per annum starting",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
