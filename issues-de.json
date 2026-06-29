@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-29T14:31:07.999251+00:00",
+  "last_updated": "2026-06-29T15:01:19.473637+00:00",
   "site_summary": {
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
-      "consecutive_failures": 6,
-      "total_recent_failures": 23,
+      "consecutive_failures": 7,
+      "total_recent_failures": 24,
       "first_recent_failure": "2026-06-28T21:07:23.784674+00:00",
-      "last_recent_failure": "2026-06-29T14:31:07.999251+00:00",
+      "last_recent_failure": "2026-06-29T15:01:19.473637+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -316,6 +316,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
       "consecutive_count": 6
+    },
+    {
+      "timestamp": "2026-06-29T15:01:19.473637+00:00",
+      "site": "Die Linke",
+      "site_id": 223,
+      "url": "https://www.die-linke.de/partei/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
+      "consecutive_count": 7
     }
   ]
 }
