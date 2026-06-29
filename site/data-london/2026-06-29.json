@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T10:31:23.026711+00:00",
-  "run_count": 23,
+  "generated_at": "2026-06-29T11:01:12.933811+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -305,6 +305,40 @@
       "type": "Contract (Two-Year Fixed-Term)",
       "deadline": "13 July 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Supporter Retention Officer – Appeals and Islamic Giving",
+      "organisation": "Medical Aid for Palestinians",
+      "url": "https://careers.map.org.uk/en/postings/ccd8bd93-ba81-4d7a-b0a7-744ad68fa0f0",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a \"Senior\" fundraising / supporter-retention role with a salary band implying several years of relevant experience the candidate lacks; the title and level are a hard mismatch. It is also a specialist fundraising/Islamic-giving function far from the candidate's research and policy profile.",
+      "location": "London, UK",
+      "type": "Full-time (Fixed Term)",
+      "deadline": "July 13, 2026",
+      "salary": "£44,034 - £46,481 / year",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Director of Operations",
+      "organisation": "Tracker Group (The Sentry)",
+      "url": "https://apply.workable.com/j/FF5857BBB4",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a Director-level Senior Leadership Team post requiring significant senior finance and operations experience, board governance and company secretary expertise — far beyond entry-level and a clear hard disqualifier on seniority. The candidate has no professional finance/operations leadership background, and the environmental-finance subject is outside the core interest zones.",
+      "location": "London, United Kingdom (Hybrid)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Up to GBP 80,000",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
