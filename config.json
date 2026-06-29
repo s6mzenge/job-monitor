@@ -2285,9 +2285,9 @@
     {
       "id": 184,
       "name": "Heinrich Böll Stiftung",
-      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
-      "method": "html",
-      "proxy": "jina"
+      "method": "interamt",
+      "partner": "556",
+      "url": "https://www.interamt.de/koop/app/trefferliste?partner=556"
     },
     {
       "id": 185,
