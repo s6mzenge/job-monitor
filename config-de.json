@@ -876,7 +876,8 @@
       "selector": ".content",
       "link_selector": "",
       "base_url": "https://www.die-linke.de",
-      "skip_no_vacancy_check": true
+      "skip_no_vacancy_check": true,
+      "tls_impersonate": true
     },
     {
       "id": 224,
