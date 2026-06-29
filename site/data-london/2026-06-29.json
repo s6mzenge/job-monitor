@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T04:31:09.291617+00:00",
-  "run_count": 10,
+  "generated_at": "2026-06-29T05:01:21.438837+00:00",
+  "run_count": 11,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -117,6 +117,23 @@
       "location": "Washington DC",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Process Analyst - Celonis",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Pune/Senior-Process-Analyst---Celonis_JR106312-1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Ineligible on multiple counts: it is a \"Senior\" role requiring 5+ years of experience, and its essential requirements (Celonis certification, data engineering, SQL/ETL pipelines, scripting-level Python) are deep-technical skills well beyond the candidate's analysis-level Python. It also sits entirely outside the candidate's interest zones.",
+      "location": "Pune, India",
+      "type": "Full-time",
+      "deadline": "2026-07-10",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
