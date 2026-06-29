@@ -326,6 +326,63 @@ a{color:inherit;text-decoration:none;}
   .toast{left:14px;right:14px;transform:translateY(16px);} .toast.show{transform:translateY(0);}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
+
+/* ---------- Sources / coverage view ---------- */
+.viewtab.alert .vt-ct{background:var(--urgent);color:#fff;}
+.alertbar{display:flex;gap:13px;align-items:flex-start;background:var(--urgent-bg);border:1px solid var(--urgent);border-radius:12px;padding:14px 16px;margin-bottom:18px;}
+.alertbar .ab-ico{flex:none;color:var(--urgent);margin-top:1px;} .alertbar .ab-ico svg{width:19px;height:19px;}
+.alertbar .ab-txt{font-size:13.5px;line-height:1.5;color:var(--ink);} .alertbar .ab-txt b{font-weight:600;}
+.alertbar .ab-txt .src{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--urgent);font-weight:600;}
+.cov{display:flex;align-items:stretch;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:8px;}
+.cov .c{flex:1;padding:16px 18px;border-right:1px solid var(--line-soft);} .cov .c:last-child{border-right:0;}
+.cov .cn{font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:600;line-height:1;color:var(--ink);}
+.cov .cn.ok{color:var(--match);} .cov .cn.pause{color:var(--urgent);} .cov .cn.err{color:var(--watch);}
+.cov .cl{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--mute);margin-top:7px;}
+.healthbar{display:flex;height:8px;border-radius:6px;overflow:hidden;margin:14px 0 24px;border:1px solid var(--line);}
+.healthbar i{height:100%;} .hb-ok{background:var(--match);} .hb-err{background:var(--watch);} .hb-pause{background:var(--urgent);}
+.healthbar-legend{display:flex;gap:16px;margin:-16px 0 24px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;color:var(--mute);text-transform:uppercase;flex-wrap:wrap;}
+.healthbar-legend span{display:flex;align-items:center;gap:6px;} .lg-dot{width:8px;height:8px;border-radius:2px;}
+.sec-head{display:flex;align-items:baseline;gap:12px;margin:0 0 12px;}
+.sec-title{font-family:'Newsreader',serif;font-weight:600;font-size:19px;color:var(--ink);}
+.sec-sub{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);}
+.sec-rule{height:1px;background:var(--line);margin-bottom:14px;}
+.srow{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:11px;padding:14px 16px;margin-bottom:9px;position:relative;}
+.srow::before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:3px;}
+.srow.paused::before{background:var(--urgent);} .srow.erroring::before{background:var(--watch);} .srow.blind::before{background:var(--mute);}
+.s-status{flex:none;width:84px;}
+.s-pill{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border-radius:5px;display:inline-block;}
+.s-pill.paused{background:var(--urgent-bg);color:var(--urgent);} .s-pill.erroring{background:var(--watch-bg);color:var(--watch);} .s-pill.blind{background:var(--line-soft);color:var(--mute);}
+.s-fail{font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:var(--mute);margin-top:6px;}
+.s-main{flex:1;min-width:0;}
+.s-name{font-size:14.5px;font-weight:600;color:var(--ink);}
+.s-name .lead-tie{font-family:'IBM Plex Mono',monospace;font-size:8.5px;font-weight:600;letter-spacing:.1em;color:var(--gold);border:1px solid var(--gold);border-radius:4px;padding:1px 5px;margin-left:8px;vertical-align:1px;text-transform:uppercase;}
+.s-meta{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--mute);margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 11px;}
+.s-meta .mid{color:var(--ink-soft);}
+.s-err{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);background:var(--paper);border:1px solid var(--line-soft);border-radius:7px;padding:7px 10px;margin-top:9px;line-height:1.45;word-break:break-word;}
+.s-err .etype{color:var(--urgent);font-weight:600;}
+.s-actions{flex:none;display:flex;flex-direction:column;gap:6px;align-items:flex-end;}
+.s-btn{font-family:'Inter';font-size:12px;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:7px 11px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;min-height:34px;white-space:nowrap;transition:.13s;}
+.s-btn:hover{border-color:var(--ink-soft);} .s-btn svg{width:13px;height:13px;}
+.healthy{margin-top:8px;border:1px solid var(--line);border-radius:11px;background:var(--card);}
+.healthy summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;align-items:center;gap:11px;}
+.healthy summary::-webkit-details-marker{display:none;}
+.healthy .h-dot{width:9px;height:9px;border-radius:50%;background:var(--match);}
+.healthy .h-lab{font-size:14px;font-weight:600;color:var(--ink);}
+.healthy .h-sub{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--mute);}
+.healthy .chev{margin-left:auto;transition:.2s;} .healthy[open] .chev{transform:rotate(90deg);}
+.healthy .h-body{padding:0 16px 16px;}
+.h-methods{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px;}
+.method-chip{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-soft);background:var(--paper);border:1px solid var(--line-soft);border-radius:20px;padding:3px 10px;}
+.method-chip b{color:var(--ink);}
+.h-names{display:flex;flex-wrap:wrap;gap:6px;}
+.name-chip{font-size:12px;color:var(--ink-soft);background:var(--paper);border:1px solid var(--line-soft);border-radius:7px;padding:4px 9px;}
+.h-more{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--mute);padding:4px 0;}
+@media (max-width:640px){
+  .cov{flex-wrap:wrap;} .cov .c{flex:1 1 50%;border-bottom:1px solid var(--line-soft);} .cov .c:nth-child(2){border-right:0;}
+  .srow{flex-wrap:wrap;} .s-status{width:auto;display:flex;align-items:center;gap:10px;} .s-fail{margin-top:0;}
+  .s-actions{flex-direction:row;width:100%;justify-content:flex-start;margin-top:4px;} .s-btn{flex:1;justify-content:center;}
+  .healthbar-legend{gap:10px;}
+}
 </style>
 </head>
 <body>
@@ -419,7 +476,7 @@ function mapJob(j,region){
 }
 
 /* ---------- state ---------- */
-let DATA={berlin:{runs:0,updated:'—',days:[]}, london:{runs:0,updated:'—',days:[]}};
+let DATA={berlin:{runs:0,updated:'—',days:[],coverage:null}, london:{runs:0,updated:'—',days:[],coverage:null}};
 let REGION='berlin', VIEW='brief', TIER='all', SORT='priority', SHOW_RULED=false, QUERY='', selKey=null;
 const userState=store.get('jm_userState')||{};
 const fb=store.get('jm_fb')||{};
@@ -471,6 +528,8 @@ const I={
   down:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 13V4h3a1 1 0 011 1v7a1 1 0 01-1 1h-3zm0 0l-4 7a2 2 0 01-3-1.7V15H5.5a2 2 0 01-2-2.3l1.2-7a2 2 0 012-1.7H17"/></svg>',
   search:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"/></svg>',
   ext:'<svg class="ext" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 4h6m0 0v6m0-6L9 15"/></svg>',
+  retry:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v6h6M5 14a7 7 0 0011.5 3M19 10a7 7 0 00-11.5-3"/></svg>',
+  warn:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg>',
   sun:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path stroke-linecap="round" d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
   moon:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/></svg>',
 };
@@ -575,11 +634,17 @@ function masthead(){
   const L=DATA[REGION];
   const trackedCt=Object.values(userState).filter(s=>s.saved||s.applied).length;
   const themeIcon=document.documentElement.dataset.theme==='dark'?I.sun:I.moon;
+  const _cb=DATA.berlin.coverage,_cl=DATA.london.coverage;
+  const problemCt=((_cb&&_cb.sites||[]).length)+((_cl&&_cl.sites||[]).length);
+  const covTotal=((_cb&&_cb.total_sites)||0)+((_cl&&_cl.total_sites)||0);
+  const _covWhen=(_cb&&_cb.generated_at)||(_cl&&_cl.generated_at)||'';
   const navRight = VIEW==='brief'
     ? `<div class="region-seg">
         <button class="${REGION==='berlin'?'on':''}" onclick="setRegion('berlin')">Berlin <span class="ct">${allJobs('berlin').filter(j=>j.elig&&tierOf(j)==='strong').length}</span></button>
         <button class="${REGION==='london'?'on':''}" onclick="setRegion('london')">London <span class="ct">${allJobs('london').filter(j=>j.elig&&tierOf(j)==='strong').length}</span></button>
       </div>`
+    : VIEW==='sources'
+    ? `<div class="region-note">${covTotal||'—'} sources${_covWhen?' · swept '+fmtUpdated(_covWhen):''}</div>`
     : `<div class="region-note">Across Berlin + London</div>`;
   return `<div class="masthead">
     <div class="mast-top">
@@ -594,6 +659,7 @@ function masthead(){
       <div class="viewtabs">
         <button class="viewtab ${VIEW==='brief'?'on':''}" onclick="setView('brief')">Brief</button>
         <button class="viewtab ${VIEW==='tracked'?'on':''}" onclick="setView('tracked')">Tracked <span class="vt-ct">${trackedCt}</span></button>
+        <button class="viewtab ${VIEW==='sources'?'on':''} ${problemCt>0?'alert':''}" onclick="setView('sources')">Sources${problemCt>0?` <span class="vt-ct">${problemCt}</span>`:''}</button>
       </div>
       ${navRight}
     </div>
@@ -729,10 +795,95 @@ function trackedView(){
   return html;
 }
 
+/* ---------- Sources / coverage view ---------- */
+function fmtDay(iso){const d=new Date(iso);if(isNaN(d))return '';return d.toLocaleDateString('en-GB',{day:'numeric',month:'short'});}
+function relWhen(iso){const d=new Date(iso);if(isNaN(d))return '';const mins=Math.round((Date.now()-d)/60000);if(mins<1)return 'just now';if(mins<60)return mins+'m ago';const h=Math.round(mins/60);if(h<24)return h+'h ago';const dd=Math.round(h/24);return dd===1?'yesterday':dd+' days ago';}
+function orgHasEligibleRole(region,siteName){
+  const norm=s=>String(s||'').toLowerCase().replace(/\(.*?\)/g,' ').replace(/[^a-z0-9]+/g,' ').trim();
+  const a=norm(siteName); if(a.length<4)return false;
+  return allJobs(region).some(j=>{ if(!j.elig)return false; const b=norm(j.o); return b.length>=4 && (a===b||a.indexOf(b)>=0||b.indexOf(a)>=0); });
+}
+function laneProblems(){
+  const out=[];
+  [['berlin','Berlin'],['london','London']].forEach(([rk,label])=>{
+    const cov=DATA[rk].coverage; if(!cov||!Array.isArray(cov.sites))return;
+    cov.sites.forEach(s=>out.push(Object.assign({},s,{lane:label,regionKey:rk,tie:orgHasEligibleRole(rk,s.name)})));
+  });
+  return out.sort((a,b)=>((a.status!=='paused')-(b.status!=='paused'))||((b.consecutive_failures||0)-(a.consecutive_failures||0)));
+}
+function srow(s){
+  const status=s.status||'erroring';
+  const failTxt = status==='paused' ? `${s.consecutive_failures||0} fails` : `${s.consecutive_failures||0}×`;
+  const since = s.last_failure?relWhen(s.last_failure):'';
+  const pausedTxt = (status==='paused'&&s.paused_until)?` · until ${fmtDay(s.paused_until)}`:'';
+  const actions = `<button class="s-btn" onclick="retryHint(${s.id||0})">${I.retry} Retry</button>`+(s.url?`<a class="s-btn" href="${s.url}" target="_blank" rel="noopener">${I.ext} Visit</a>`:'');
+  return `<div class="srow ${status}">
+    <div class="s-status"><span class="s-pill ${status}">${esc(status)}</span><div class="s-fail">${failTxt}</div></div>
+    <div class="s-main">
+      <div class="s-name">${esc(s.name)}${s.tie?'<span class="lead-tie">behind a role</span>':''}</div>
+      <div class="s-meta"><span class="mid">#${s.id}</span><span>${esc(s.lane)}</span><span>${esc(s.method||'')}</span>${since?`<span>since ${since}${pausedTxt}</span>`:''}</div>
+      ${s.message?`<div class="s-err"><span class="etype">${esc(s.last_type||'error')}</span> — ${esc(s.message)}</div>`:''}
+    </div>
+    <div class="s-actions">${actions}</div>
+  </div>`;
+}
+function retryHint(id){ toast(`Manual retry: GitHub → Actions → Run workflow → force_site_id ${id}`); }
+function sourcesView(){
+  const B=DATA.berlin.coverage, L=DATA.london.coverage;
+  if(!B&&!L){
+    return `<div class="sheet"><div class="quiet"><svg class="ico" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><h3>No coverage data yet</h3><p>Source health is written on the monitor’s next run, then published here.</p></div></div>`;
+  }
+  const b=B||{},l=L||{};
+  const total=(b.total_sites||0)+(l.total_sites||0);
+  const healthy=(b.healthy||0)+(l.healthy||0);
+  const erroring=(b.erroring||0)+(l.erroring||0);
+  const paused=(b.paused||0)+(l.paused||0);
+  const probs=laneProblems();
+  const methods={}; [b,l].forEach(c=>Object.entries(c.methods||{}).forEach(([m,n])=>methods[m]=(methods[m]||0)+n));
+  const names=[...(b.healthy_names||[]),...(l.healthy_names||[])];
+  const tied=probs.filter(p=>p.tie);
+
+  let html=`<div class="sheet">`;
+  if(tied.length){
+    const orgs=tied.map(p=>`<span class="src">${esc(p.name)}</span>`).join(', ');
+    html+=`<div class="alertbar"><span class="ab-ico">${I.warn}</span><div class="ab-txt"><b>${tied.length} source${tied.length>1?'s':''} behind your current roles ${tied.length>1?'are':'is'} down.</b> Roles from ${orgs} may be stale — ${tied.length>1?'their scrapers are':'its scraper is'} erroring or paused, so new or closed postings could be missed. Worth a manual check.</div></div>`;
+  }
+  html+=`<div class="cov">
+    <div class="c"><div class="cn">${total}</div><div class="cl">Sources tracked</div></div>
+    <div class="c"><div class="cn ok">${healthy}</div><div class="cl">Healthy</div></div>
+    <div class="c"><div class="cn err">${erroring}</div><div class="cl">Erroring</div></div>
+    <div class="c"><div class="cn pause">${paused}</div><div class="cl">Paused</div></div>
+  </div>`;
+  if(total){
+    const wOk=(healthy/total*100).toFixed(1),wErr=(erroring/total*100).toFixed(1),wP=(paused/total*100).toFixed(1);
+    html+=`<div class="healthbar"><i class="hb-ok" style="width:${wOk}%"></i><i class="hb-err" style="width:${wErr}%"></i><i class="hb-pause" style="width:${wP}%"></i></div>
+    <div class="healthbar-legend">
+      <span><span class="lg-dot" style="background:var(--match)"></span>${healthy} healthy</span>
+      <span><span class="lg-dot" style="background:var(--watch)"></span>${erroring} erroring</span>
+      <span><span class="lg-dot" style="background:var(--urgent)"></span>${paused} paused</span>
+    </div>`;
+  }
+  if(probs.length){
+    html+=`<div class="sec-head"><span class="sec-title">Needs attention</span><span class="sec-sub">${probs.length} source${probs.length>1?'s':''} · sorted by severity</span></div><div class="sec-rule"></div>`;
+    html+=probs.map(srow).join('');
+  } else {
+    html+=`<div class="sec-head"><span class="sec-title">All sources healthy</span><span class="sec-sub">no errors on the last sweep</span></div><div class="sec-rule"></div><div class="quiet" style="padding:26px 20px"><p>Every configured source responded on the last run.</p></div>`;
+  }
+  const methodChips=Object.entries(methods).sort((a,b)=>b[1]-a[1]).map(([m,n])=>`<span class="method-chip"><b>${n}</b> ${esc(m)}</span>`).join('');
+  const SHOWN=36;
+  const nameChips=names.slice(0,SHOWN).map(n=>`<span class="name-chip">${esc(n)}</span>`).join('')+(names.length>SHOWN?`<span class="h-more">+${names.length-SHOWN} more</span>`:'');
+  html+=`<details class="healthy">
+    <summary><span class="h-dot"></span><span class="h-lab">${healthy} healthy source${healthy===1?'':'s'}</span><span class="h-sub">${names.length} listed</span>
+      <svg class="chev" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></summary>
+    <div class="h-body"><div class="h-methods">${methodChips}</div><div class="h-names">${nameChips}</div></div></details>`;
+  html+=`</div>`;
+  return html;
+}
+
 /* ---------- main render ---------- */
 let VISIBLE=[],KEYMAP={};
 function render(){
-  const html=masthead()+(VIEW==='brief'?briefView():trackedView())
+  const html=masthead()+(VIEW==='brief'?briefView():VIEW==='sources'?sourcesView():trackedView())
     +`<div class="foot"><span>© 2026 Moritz Engel</span><span>Evaluated by Claude · <span class="kbd-hint" onclick="toggleHelp()">? shortcuts</span></span></div>`;
   document.getElementById('app-content').innerHTML=html;
 }
@@ -815,23 +966,24 @@ document.addEventListener('keydown',e=>{
 
 /* ---------- boot: fetch both lanes, seed "seen", render ---------- */
 async function loadLane(region, base){
+  // coverage.json (source health) — independent of the day data
+  try{ const cr=await fetch(`${base}/coverage.json?t=${Date.now()}`); if(cr.ok) DATA[region].coverage=await cr.json(); }catch(e){}
+  // day data
   try{
     const dres=await fetch(`${base}/dates.json?t=${Date.now()}`);
-    if(!dres.ok)return;
-    let dates=await dres.json();
-    dates=(Array.isArray(dates)?dates:[]).slice().sort().reverse().slice(0,DAYS_WINDOW);
-    const results=await Promise.all(dates.map(async d=>{
-      try{const r=await fetch(`${base}/${d}.json?t=${Date.now()}`); if(!r.ok)return null; return {date:d,data:await r.json()};}
-      catch(e){return null;}
-    }));
-    const ok=results.filter(Boolean);
-    const days=ok.map(r=>({date:r.date, jobs:(r.data.jobs||[]).map(j=>mapJob(j,region))}));
-    const latest=ok[0];
-    DATA[region]={
-      runs: latest&&typeof latest.data.run_count==='number'?latest.data.run_count:0,
-      updated: latest&&latest.data.generated_at?fmtUpdated(latest.data.generated_at):(days[0]?fullDate(days[0].date):'—'),
-      days
-    };
+    if(dres.ok){
+      let dates=await dres.json();
+      dates=(Array.isArray(dates)?dates:[]).slice().sort().reverse().slice(0,DAYS_WINDOW);
+      const results=await Promise.all(dates.map(async d=>{
+        try{const r=await fetch(`${base}/${d}.json?t=${Date.now()}`); if(!r.ok)return null; return {date:d,data:await r.json()};}
+        catch(e){return null;}
+      }));
+      const ok=results.filter(Boolean);
+      DATA[region].days=ok.map(r=>({date:r.date, jobs:(r.data.jobs||[]).map(j=>mapJob(j,region))}));
+      const latest=ok[0];
+      DATA[region].runs = latest&&typeof latest.data.run_count==='number'?latest.data.run_count:0;
+      DATA[region].updated = latest&&latest.data.generated_at?fmtUpdated(latest.data.generated_at):(DATA[region].days[0]?fullDate(DATA[region].days[0].date):'—');
+    }
   }catch(e){ /* leave the empty lane in place */ }
 }
 async function boot(){
