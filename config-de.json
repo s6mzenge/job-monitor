@@ -941,6 +941,112 @@
       "selector": ".entry-content",
       "link_selector": "",
       "base_url": "https://cure.uni-saarland.de"
+    },
+    {
+      "id": 232,
+      "name": "Ärzte ohne Grenzen (MSF)",
+      "url": "https://www.aerzte-ohne-grenzen.de/stellenangebote/offene-stellen",
+      "method": "playwright",
+      "link_selector": "a[href*='b-ite.com/jobposting'], a[href*='/jobposting/']",
+      "wait_until": "networkidle",
+      "wait_selector": "a[href*='jobposting']",
+      "wait_ms": 6000
+    },
+    {
+      "id": 233,
+      "name": "medico international",
+      "url": "https://www.medico.de/wir/jobs",
+      "method": "html",
+      "selector": "div.main-content",
+      "link_selector": ""
+    },
+    {
+      "id": 234,
+      "name": "Campact e.V.",
+      "url": "https://campact.recruitee.com/",
+      "method": "recruitee_api",
+      "base_url": "https://campact.recruitee.com",
+      "api": {
+        "url": "https://campact.recruitee.com/api/offers/"
+      }
+    },
+    {
+      "id": 235,
+      "name": "Counter Investigations / Forensis",
+      "url": "https://counter-investigations.org/about/jobs",
+      "method": "playwright",
+      "selector": "#app",
+      "link_selector": "",
+      "wait_until": "networkidle",
+      "wait_selector": "#app a",
+      "wait_ms": 6000
+    },
+    {
+      "id": 236,
+      "name": "CORRECTIV",
+      "url": "https://correctiv.org/stellenangebote/",
+      "method": "html",
+      "selector": "main",
+      "link_selector": ""
+    },
+    {
+      "id": 237,
+      "name": "PRO ASYL",
+      "url": "https://www.proasyl.de/jobs-bei-pro-asyl",
+      "method": "html",
+      "selector": "main",
+      "link_selector": ""
+    },
+    {
+      "id": 238,
+      "name": "LobbyControl",
+      "url": "https://www.lobbycontrol.de/ueber-uns/jobs/",
+      "method": "html",
+      "selector": "main",
+      "link_selector": ""
+    },
+    {
+      "id": 239,
+      "name": "European Legal Support Center (ELSC)",
+      "url": "https://elsc.support/join-the-elsc/",
+      "method": "html",
+      "link_selector": "h2.entry-title a"
+    },
+    {
+      "id": 240,
+      "name": "Bürgerbewegung Finanzwende",
+      "url": "https://www.finanzwende.de/ueber-uns/stellenausschreibungen/",
+      "method": "html",
+      "link_selector": "a[href*='/ueber-uns/stellenausschreibungen/']"
+    },
+    {
+      "id": 241,
+      "name": "IPPNW",
+      "url": "https://www.ippnw.de/der-verein/stellenangebote.html",
+      "method": "html",
+      "link_selector": "div.textheader a[href*='/stellenangebote/artikel/']",
+      "base_url": "https://www.ippnw.de"
+    },
+    {
+      "id": 242,
+      "name": "Pro Peace",
+      "url": "https://www.propeace.de/en/jobs",
+      "method": "html",
+      "link_selector": "h2.article-teaser__heading a"
+    },
+    {
+      "id": 243,
+      "name": "Sea-Watch e.V.",
+      "url": "https://sea-watch.org/mitmachen",
+      "method": "html",
+      "link_selector": "div.wpb_text_column ul a"
+    },
+    {
+      "id": 244,
+      "name": "Weltfriedensdienst",
+      "url": "https://wfd.de/ueber-uns/stellenangebote/",
+      "method": "html",
+      "link_selector": "div.facetwp_related_news.jobs a.facetwp_related_news_headline_container"
     }
   ]
 }
