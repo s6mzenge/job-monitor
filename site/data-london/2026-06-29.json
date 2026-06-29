@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T17:01:17.358569+00:00",
-  "run_count": 38,
+  "generated_at": "2026-06-29T17:30:10.269996+00:00",
+  "run_count": 39,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -762,6 +762,23 @@
       "reason": "Not entry-level — a \"Senior\" advisor role requiring significant advocacy/public affairs experience, team line-management across time zones, and a track record of shifting policy/legislation, all of which exceed the candidate's RA-level background. The gender-justice and international-development theme is adjacent to the candidate's interests, but the seniority is a hard mismatch.",
       "location": "London (UK)",
       "type": "Contract (12-month FTC)",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Account Director",
+      "organisation": "Edelman",
+      "url": "https://djeholdings.wd5.myworkdayjobs.com/job/London-United-Kingdom/Account-Director_JR102825",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A \"Director\" title denotes a senior, non-entry-level role typically requiring several years of communications/PR experience and team leadership, which the candidate lacks (student-assistant/RA only). It is also a communications/PR specialism outside the candidate's core research and policy zones.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
