@@ -2,12 +2,32 @@ name: Job Monitor
 
 on:
   workflow_dispatch:
+    inputs:
+      lane:
+        description: "Which lane(s) to run"
+        type: choice
+        options: [all, de, london]
+        default: all
+      force_site_id:
+        description: "Retry only this site id (blank = every site in the lane; comma-separate for several)"
+        type: string
+        default: ""
+      ignore_pause:
+        description: "Also retry sites currently paused after repeated failures"
+        type: boolean
+        default: false
 
 # Two lanes run in parallel. Each lane serialises only against itself across
 # triggers (so a slow DE run never blocks the next London run, and vice-versa).
 jobs:
   check-jobs:
     name: check-jobs (${{ matrix.lane }})
+    # Normal/scheduled dispatch runs both lanes (lane defaults to "all"). A
+    # targeted dispatch with lane=de|london runs only that lane, so retrying a
+    # single site never spends the other lane's quota. The gate reads
+    # inputs.lane, populated only on workflow_dispatch (the sole trigger here);
+    # the event_name check keeps both lanes running if a `schedule:` is ever added.
+    if: ${{ github.event_name != 'workflow_dispatch' || inputs.lane == 'all' || inputs.lane == matrix.lane }}
     strategy:
       fail-fast: false          # one lane failing must not cancel the other
       matrix:
@@ -89,6 +109,8 @@ jobs:
           FEEDBACK_DRAIN: ${{ matrix.feedback_drain }}          # only london sets "1"; de has no such key → "" → drain off
           FEEDBACK_LOG_FILE: site/data-london/fb_log.json       # shared log: london (drain lane) WRITES it, BOTH lanes READ it so feedback calibrates de + london alike
           RUN_LABEL: ${{ matrix.label }}
+          FORCE_SITE_IDS: ${{ inputs.force_site_id }}
+          IGNORE_PAUSE: ${{ inputs.ignore_pause }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
