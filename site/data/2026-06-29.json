@@ -1,0 +1,58 @@
+{
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T00:01:12.368929+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Studentische Teilzeitkraft Archiv Grünes Gedächtnis (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is explicitly a studentische Teilzeitkraft (working-student) role, which is excluded as a matter of policy. Even though the Green Party archive could touch the candidate's interest in German Green foreign-policy history, the role type is a hard disqualifier.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (working student)",
+      "deadline": "2026-07-12",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Projektbearbeitung Bereich Inland – Schwerpunkt Demokratie und Gesellschaft (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "priority": 42,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "A full-time project-administration post in domestic democracy-and-society work that plausibly fits the candidate's project-coordination and research-support experience at an entry-to-junior level, though the exact seniority and skills profile are unclear from the brief listing. The thematic area (German democracy/society) is adjacent rather than core to the candidate's international-law and atrocity-prevention focus, which holds the interest pull down.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (39 hrs/week), fixed-term to 2027-02-28",
+      "deadline": "2026-07-05",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Projektbearbeitung materielle Förderung (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.boell.de/de/jobs-der-heinrich-boell-stiftung",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "The application deadline of 2026-06-28 has passed (today is 2026-06-29), so this vacancy is closed. The funding-administration work in the scholarship body (Studienwerk) would otherwise be a plausible fit given the candidate's experience allocating federal HEI funding, but the role is no longer open.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (39 hrs/week), permanent",
+      "deadline": "2026-06-28",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
+}
