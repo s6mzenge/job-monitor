@@ -377,6 +377,16 @@ a{color:inherit;text-decoration:none;}
 .h-names{display:flex;flex-wrap:wrap;gap:6px;}
 .name-chip{font-size:12px;color:var(--ink-soft);background:var(--paper);border:1px solid var(--line-soft);border-radius:7px;padding:4px 9px;}
 .h-more{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--mute);padding:4px 0;}
+.s-btn.primary{background:var(--petrol);border-color:var(--petrol);color:#fff;} .s-btn.primary:hover{background:var(--petrol-ink);}
+.s-btn.on{background:var(--match-bg);border-color:var(--match);color:var(--match);}
+.wkr-panel{background:var(--paper);border:1px solid var(--line);border-radius:11px;padding:14px 16px;margin-bottom:13px;}
+.wkr-row{display:flex;align-items:center;gap:10px;margin-bottom:9px;}
+.wkr-row label{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);width:92px;flex:none;}
+.wkr-row input{flex:1;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px;min-width:0;}
+.wkr-row input:focus{outline:none;border-color:var(--petrol);}
+.wkr-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.wkr-hint{font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:var(--mute);letter-spacing:.04em;}
+@media (max-width:640px){ .wkr-row{flex-wrap:wrap;} .wkr-row label{width:auto;} }
 @media (max-width:640px){
   .cov{flex-wrap:wrap;} .cov .c{flex:1 1 50%;border-bottom:1px solid var(--line-soft);} .cov .c:nth-child(2){border-right:0;}
   .srow{flex-wrap:wrap;} .s-status{width:auto;display:flex;align-items:center;gap:10px;} .s-fail{margin-top:0;}
@@ -482,6 +492,7 @@ const userState=store.get('jm_userState')||{};
 const fb=store.get('jm_fb')||{};
 let seen=new Set();
 let prevVisit=null;
+let WORKER_PANEL=false;
 
 /* apply persisted view settings (theme was already applied pre-paint) */
 (function(){const s=store.get('jm_settings'); if(s){ if(s.REGION)REGION=s.REGION; if(s.VIEW)VIEW=s.VIEW;
@@ -816,7 +827,7 @@ function srow(s){
   const failTxt = status==='paused' ? `${s.consecutive_failures||0} fails` : `${s.consecutive_failures||0}×`;
   const since = s.last_failure?relWhen(s.last_failure):'';
   const pausedTxt = (status==='paused'&&s.paused_until)?` · until ${fmtDay(s.paused_until)}`:'';
-  const actions = `<button class="s-btn" onclick="retryHint(${s.id||0})">${I.retry} Retry</button>`+(s.url?`<a class="s-btn" href="${s.url}" target="_blank" rel="noopener">${I.ext} Visit</a>`:'');
+  const actions = `<button class="s-btn" onclick="retry(${s.id||0})">${I.retry} Retry</button>`+(s.url?`<a class="s-btn" href="${s.url}" target="_blank" rel="noopener">${I.ext} Visit</a>`:'');
   return `<div class="srow ${status}">
     <div class="s-status"><span class="s-pill ${status}">${esc(status)}</span><div class="s-fail">${failTxt}</div></div>
     <div class="s-main">
@@ -827,7 +838,54 @@ function srow(s){
     <div class="s-actions">${actions}</div>
   </div>`;
 }
-function retryHint(id){ toast(`Manual retry: GitHub → Actions → Run workflow → force_site_id ${id}`); }
+/* ---------- one-click retry via Cloudflare Worker ---------- */
+function getWorker(){ const w=store.get('jm_worker'); return (w&&w.url&&w.secret)?w:null; }
+function toggleWorkerPanel(){ WORKER_PANEL=!WORKER_PANEL; render(); if(WORKER_PANEL){const i=document.getElementById('wkr-url'); if(i)i.focus();} }
+function disconnectWorker(){ store.set('jm_worker',null); WORKER_PANEL=false; render(); toast('One-click retry disconnected'); }
+function saveWorkerFromPanel(){
+  const url=(document.getElementById('wkr-url').value||'').trim().replace(/\/+$/,'');
+  const secret=(document.getElementById('wkr-secret').value||'').trim();
+  if(!url||!secret){ toast('Enter both the Worker URL and passphrase'); return; }
+  store.set('jm_worker',{url,secret}); WORKER_PANEL=false; render(); toast('One-click retry connected',true);
+}
+async function testWorker(){
+  const url=(document.getElementById('wkr-url').value||'').trim().replace(/\/+$/,'');
+  const secret=(document.getElementById('wkr-secret').value||'').trim();
+  if(!url||!secret){ toast('Enter both fields first'); return; }
+  toast('Testing connection…');
+  try{
+    const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+secret},body:JSON.stringify({action:'ping'})});
+    const d=await r.json().catch(()=>({}));
+    if(r.ok&&d.ok) toast('Connection OK — authenticated',true);
+    else if(r.status===401) toast('Reached the Worker, but the passphrase was rejected');
+    else toast('Test failed: '+(d.error||('HTTP '+r.status)));
+  }catch(e){ toast('Could not reach the Worker — check the URL / CORS origin'); }
+}
+function workerPanel(){
+  const w=store.get('jm_worker')||{};
+  return `<div class="wkr-panel">
+    <div class="wkr-row"><label>Worker URL</label><input id="wkr-url" placeholder="https://jm-retry.you.workers.dev" value="${escAttr(w.url||'')}"></div>
+    <div class="wkr-row"><label>Passphrase</label><input id="wkr-secret" type="password" placeholder="the DASHBOARD_SECRET you set on the Worker" value="${escAttr(w.secret||'')}"></div>
+    <div class="wkr-actions">
+      <button class="s-btn primary" onclick="saveWorkerFromPanel()">Save</button>
+      <button class="s-btn" onclick="testWorker()">Test</button>
+      ${w.url?`<button class="s-btn" onclick="disconnectWorker()">Disconnect</button>`:''}
+      <span class="wkr-hint">Stored only in this browser — never written into the page.</span>
+    </div>
+  </div>`;
+}
+async function retry(id){
+  const w=getWorker();
+  if(!w){ toast(`Manual retry: GitHub → Actions → Run workflow → force_site_id ${id}`); WORKER_PANEL=true; render(); return; }
+  toast(`Re-queueing site #${id}…`);
+  try{
+    const r=await fetch(w.url,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+w.secret},body:JSON.stringify({action:'retry',site_id:id,ignore_pause:true})});
+    const d=await r.json().catch(()=>({}));
+    if(r.ok&&d.ok) toast(`Re-queued #${id} — a targeted sweep is starting`,true);
+    else if(r.status===401) toast('Retry rejected — reconnect with the right passphrase');
+    else toast('Retry failed: '+(d.error||('HTTP '+r.status)));
+  }catch(e){ toast('Retry failed — could not reach the Worker'); }
+}
 function sourcesView(){
   const B=DATA.berlin.coverage, L=DATA.london.coverage;
   if(!B&&!L){
@@ -864,7 +922,9 @@ function sourcesView(){
     </div>`;
   }
   if(probs.length){
-    html+=`<div class="sec-head"><span class="sec-title">Needs attention</span><span class="sec-sub">${probs.length} source${probs.length>1?'s':''} · sorted by severity</span></div><div class="sec-rule"></div>`;
+    const _conn=getWorker()?`<button class="s-btn on" onclick="toggleWorkerPanel()">One-click retry: on</button>`:`<button class="s-btn" onclick="toggleWorkerPanel()">Connect one-click retry</button>`;
+    html+=`<div class="sec-head"><span class="sec-title">Needs attention</span><span class="sec-sub">${probs.length} source${probs.length>1?'s':''} · sorted by severity</span><span style="margin-left:auto">${_conn}</span></div><div class="sec-rule"></div>`;
+    if(WORKER_PANEL) html+=workerPanel();
     html+=probs.map(srow).join('');
   } else {
     html+=`<div class="sec-head"><span class="sec-title">All sources healthy</span><span class="sec-sub">no errors on the last sweep</span></div><div class="sec-rule"></div><div class="quiet" style="padding:26px 20px"><p>Every configured source responded on the last run.</p></div>`;
