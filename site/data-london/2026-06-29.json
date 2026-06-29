@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T00:01:18.124591+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "5",
+      "match": "low",
+      "reason": "A \"Manager\" title at the Project/Regional Lead pay band, and a strategic-litigation lead role plainly requires senior experience and very likely a legal background the candidate lacks. The human-rights mission is a perfect interest match, but the level and qualification are hard mismatches.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% employee matched pension contribution",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fundraising Coordinator",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "priority": 28,
+      "eligible": true,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "Entry-level (Coordinator band) and not disqualified, but it is a fundraising role drawing on dedicated fundraising and donor-management skills the candidate does not have, so paper fit is weak. The human-rights organisation is appealing, but the function sits well outside the candidate's research and policy strengths.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "31/05/2026",
+      "salary": "£32,696 per annum plus up to 5% employee matched pension contribution",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
+}
