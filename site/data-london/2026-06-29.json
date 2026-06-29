@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T14:01:10.648973+00:00",
-  "run_count": 32,
+  "generated_at": "2026-06-29T14:31:10.931841+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -645,6 +645,40 @@
       "type": "Full-time (three-year fixed term)",
       "deadline": "12 July 2026",
       "salary": "Up to £140,000 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Public Affairs and Communications Executive",
+      "organisation": "Hanbury Strategy",
+      "url": "https://hanburystrategy.teamtailor.com/jobs/7972202-public-affairs-and-communications-executive",
+      "priority": 48,
+      "eligible": true,
+      "interest_score": "",
+      "match": "medium",
+      "reason": "Genuinely junior/entry-level with desk research, briefings and writing that the candidate's research and writing skills cover well, so it's a realistic application. The communications/media-campaign and public-affairs focus sits outside the core interest zones and leans toward an area where the candidate has limited dedicated experience, which holds the interest and fit components down.",
+      "location": "London (Hybrid)",
+      "type": "Full-time",
+      "deadline": "10th July",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Media Monitoring Executive",
+      "organisation": "Hanbury Strategy",
+      "url": "https://hanburystrategy.teamtailor.com/jobs/7956460-media-monitoring-executive",
+      "priority": 42,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Genuinely entry-level (no degree required, explicitly open to recent graduates) with writing and summarising tasks the candidate handles well, so it is a realistic and winnable application. However, the role is squarely media/PR monitoring rather than the candidate's core research/policy or intelligence zones, and leans on comms/political-news instincts more than analytical research, which holds the interest and fit moderate.",
+      "location": "London (Hybrid)",
+      "type": "Full-time",
+      "deadline": "10th July",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
