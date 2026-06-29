@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T08:01:14.120097+00:00",
-  "run_count": 18,
+  "generated_at": "2026-06-29T08:31:09.410420+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Studentische Teilzeitkraft Archiv Grünes Gedächtnis (w/m/d/k.A.)",
@@ -84,6 +84,23 @@
       "type": "Full-time (fixed-term to 28.02.2027)",
       "deadline": "2026-07-05",
       "salary": "TVöD-Bund E 9c",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Programme Support Intern - Events & Advocacy",
+      "organisation": "ECFR",
+      "url": "https://ecfr.jobs.personio.com/job/2688917",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "This is an explicitly unpaid internship requiring a university agreement, which is excluded as a matter of policy. It also requires proficiency in Bulgarian, which the candidate does not have. The EU foreign-policy think-tank context is a strong interest match, but the role fails on both hard gates.",
+      "location": "Sofia, Bulgaria",
+      "type": "Internship",
+      "deadline": "2026-07-05",
+      "salary": "Unpaid",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
