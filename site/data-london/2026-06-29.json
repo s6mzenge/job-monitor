@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T09:31:09.061283+00:00",
-  "run_count": 21,
+  "generated_at": "2026-06-29T10:01:15.365236+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -203,6 +203,40 @@
       "type": "Full-time",
       "deadline": "26th July 2026",
       "salary": "£53,000 per annum starting",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Director",
+      "organisation": "Resolution Foundation",
+      "url": "https://www.resolutionfoundation.org/about-us/opportunities/director",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Not entry-level — this is a senior Director role deputising for the CEO, requiring extensive senior leadership experience and a record of leading research teams, none of which the candidate has. The economic / living-standards policy focus also sits outside the candidate's core interest zones.",
+      "location": "London (Westminster)",
+      "type": "Full-time / Part-time (min. 4 days a week), Permanent",
+      "deadline": "14 August 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for \"experts\" to join an Advisory Committee — it seeks established subject-matter specialists with deep expertise on climate-justice securitisation and defender criminalisation, not an entry-level paid role, and it is effectively an advisory/voluntary committee rather than a genuine paid position the candidate would hold. The human-rights subject is on-mission, but the seniority and nature of the role are hard mismatches.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
