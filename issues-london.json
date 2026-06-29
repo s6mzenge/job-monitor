@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-06-29T04:01:18.166712+00:00",
-  "site_summary": {
-    "Institute of Race Relations": {
-      "site_id": 48,
-      "url": "https://irr.org.uk/about/vacancies/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-06-29T04:01:18.166712+00:00",
-      "last_recent_failure": "2026-06-29T04:01:18.166712+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Firr.org.uk%2Fabout%2Fvacancies%2F"
-    }
-  },
+  "last_updated": "2026-06-29T04:31:09.291617+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T15:46:14.886630+00:00",
