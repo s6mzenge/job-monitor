@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T15:31:04.944361+00:00",
-  "run_count": 35,
+  "generated_at": "2026-06-29T16:01:14.288325+00:00",
+  "run_count": 36,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -679,6 +679,40 @@
       "type": "Full-time",
       "deadline": "10th July",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate Director (Public Affairs - Tech Policy & Regulation)",
+      "organisation": "Hanbury Strategy",
+      "url": "https://hanburystrategy.teamtailor.com/jobs/7988679-associate-director-public-affairs-tech-policy-regulation",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "Not entry-level — the title is Associate Director and it requires 4–6 years of professional experience plus a track record of leading teams and managing client accounts, well beyond the candidate's RA-level background. The tech-policy subject is genuinely interesting, but the seniority and experience are unmet essentials.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Creative Technologist / Creative Full-Stack Developer",
+      "organisation": "Nesta",
+      "url": "https://www.nesta.org.uk/jobs/creative-technologist-fullstack-developer-arm/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a software-engineering role whose essential requirements — building and deploying full-stack web applications using frameworks like Ruby on Rails or Django, with production deployment, testing and monitoring — are well beyond the candidate's analysis-level coding. It is a deep-technical role the candidate cannot meet, triggering a hard disqualifier despite the London location.",
+      "location": "Blackfriars, London (hybrid)",
+      "type": "Full-time (Permanent and 12-month Fixed Term contract options)",
+      "deadline": "20 Jul 2026",
+      "salary": "Circa £58,500 plus benefits",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
