@@ -7,8 +7,8 @@
 <meta name="theme-color" content="#0D1316" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="icon" type="image/svg+xml" href="./favicon.svg">
-<link rel="apple-touch-icon" href="./favicon.svg">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
 <title>Job Monitor — Daily Dispatch</title>
 <script>
 /* set theme before paint to avoid a flash */
@@ -430,7 +430,7 @@ const store=(function(){
 })();
 
 /* ---------- config ---------- */
-const LANES={berlin:'./data', london:'./data-london'};
+const LANES={berlin:'/data', london:'/data-london'};
 const DAYS_WINDOW=14;
 
 /* ---------- escaping ---------- */
@@ -495,11 +495,11 @@ let prevVisit=null;
 let WORKER_PANEL=false;
 
 /* apply persisted view settings (theme was already applied pre-paint) */
-(function(){const s=store.get('jm_settings'); if(s){ if(s.REGION)REGION=s.REGION; if(s.VIEW)VIEW=s.VIEW;
+(function(){const s=store.get('jm_settings'); if(s){ if(s.REGION)REGION=s.REGION;
   if(s.TIER)TIER=s.TIER; if(s.SORT)SORT=s.SORT; if(typeof s.SHOW_RULED==='boolean')SHOW_RULED=s.SHOW_RULED; }})();
 
 function persist(){store.set('jm_userState',userState);store.set('jm_fb',fb);store.set('jm_seen',[...seen]);}
-function persistSettings(){store.set('jm_settings',{REGION,VIEW,TIER,SORT,SHOW_RULED,dark:document.documentElement.dataset.theme==='dark'});}
+function persistSettings(){store.set('jm_settings',{REGION,TIER,SORT,SHOW_RULED,dark:document.documentElement.dataset.theme==='dark'});}
 
 /* ---------- lane access ---------- */
 function keyOf(j){return j.region+'|'+j.o+'|'+j.t;}
@@ -668,9 +668,9 @@ function masthead(){
     </div>
     <div class="mast-nav">
       <div class="viewtabs">
-        <button class="viewtab ${VIEW==='brief'?'on':''}" onclick="setView('brief')">Brief</button>
-        <button class="viewtab ${VIEW==='tracked'?'on':''}" onclick="setView('tracked')">Tracked <span class="vt-ct">${trackedCt}</span></button>
-        <button class="viewtab ${VIEW==='sources'?'on':''} ${problemCt>0?'alert':''}" onclick="setView('sources')">Sources${problemCt>0?` <span class="vt-ct">${problemCt}</span>`:''}</button>
+        <a class="viewtab ${VIEW==='brief'?'on':''}" href="${pathFor('brief',REGION)}" onclick="return nav(event,'brief')">Brief</a>
+        <a class="viewtab ${VIEW==='tracked'?'on':''}" href="/tracked" onclick="return nav(event,'tracked')">Tracked <span class="vt-ct">${trackedCt}</span></a>
+        <a class="viewtab ${VIEW==='sources'?'on':''} ${problemCt>0?'alert':''}" href="/sources" onclick="return nav(event,'sources')">Sources${problemCt>0?` <span class="vt-ct">${problemCt}</span>`:''}</a>
       </div>
       ${navRight}
     </div>
@@ -957,8 +957,41 @@ function toast(msg,ok){
 }
 
 /* ---------- interactions ---------- */
-function setRegion(r){REGION=r;selKey=null;persistSettings();render();}
-function setView(v){VIEW=v;persistSettings();render();}
+/* ---------- routing: a real URL per view (+ back/forward, deep links) ---------- */
+function routeFromPath(){
+  const p=(location.pathname||'/').replace(/\/+$/,'').toLowerCase()||'/';
+  if(p==='/'||p==='/berlin')return {view:'brief',region:'berlin'};
+  if(p==='/london')return {view:'brief',region:'london'};
+  if(p==='/tracked')return {view:'tracked'};
+  if(p==='/sources')return {view:'sources'};
+  return {view:'brief',region:'berlin'};            // unknown path -> home
+}
+function pathFor(view,region){
+  if(view==='tracked')return '/tracked';
+  if(view==='sources')return '/sources';
+  return (region||REGION)==='london'?'/london':'/';
+}
+function setTitle(){
+  document.title = VIEW==='tracked' ? 'Tracked \u00b7 Job Monitor'
+    : VIEW==='sources' ? 'Sources \u00b7 Job Monitor'
+    : (REGION==='london'?'London':'Berlin')+' \u00b7 Job Monitor';
+}
+function go(view,region){
+  if(view)VIEW=view;
+  if(VIEW==='brief'&&region)REGION=region;
+  if(VIEW==='brief')selKey=null;
+  const path=pathFor(VIEW,REGION);
+  if(((location.pathname||'/').replace(/\/+$/,'')||'/')!==path) history.pushState({view:VIEW,region:REGION},'',path);
+  setTitle(); persistSettings(); render(); window.scrollTo({top:0});
+}
+function nav(e,view,region){
+  if(e&&(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button===1))return true;  // let the browser open a new tab
+  if(e&&e.preventDefault)e.preventDefault();
+  go(view,region); return false;
+}
+window.addEventListener('popstate',()=>{ const r=routeFromPath(); VIEW=r.view; if(r.region)REGION=r.region; setTitle(); render(); });
+function setRegion(r){ go('brief',r); }
+function setView(v){ go(v); }
 function setTier(t){TIER=t;persistSettings();render();}
 function setSort(s){SORT=s;persistSettings();render();}
 function setRuled(v){SHOW_RULED=v;persistSettings();render();}
@@ -1054,6 +1087,9 @@ async function boot(){
   else { const setNow=new Set(keysNow); seen=new Set(stored.filter(k=>setNow.has(k))); }  // prune to current
   store.set('jm_seen',[...seen]);
   prevVisit=store.get('jm_lastVisit'); store.set('jm_lastVisit',Date.now());
+  const r0=routeFromPath(); VIEW=r0.view; if(r0.region)REGION=r0.region;
+  history.replaceState({view:VIEW,region:REGION},'',pathFor(VIEW,REGION));   // canonicalise (e.g. /berlin -> /)
+  setTitle();
   render();
 }
 boot();
