@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T00:01:18.124591+00:00",
-  "run_count": 1,
+  "generated_at": "2026-06-29T00:31:10.821566+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -33,6 +33,40 @@
       "type": "Full-time",
       "deadline": "31/05/2026",
       "salary": "£32,696 per annum plus up to 5% employee matched pension contribution",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Investment Manager",
+      "organisation": "Paul Hamlyn Foundation",
+      "url": "https://www.phf.org.uk/about/working-for-us/current-jobs-and-opportunities",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Not entry-level — a Manager title with a £90k–£150k salary clearly signals a senior investment professional with substantial relevant experience the candidate lacks. The role is also outside the candidate's research/policy field and skill set.",
+      "location": "Not specified",
+      "type": "Full-time",
+      "deadline": "Monday 29 June",
+      "salary": "circa £90,000-£150,000 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for \"experts\" to join an advisory committee — not a genuine paid entry-level role, and it explicitly seeks experienced practitioners/activists from specific regions (East Africa, Latin America, Southeast Asia), which the candidate is not. It reads as a voluntary/advisory expert appointment rather than a salaried vacancy, so it fails the genuine-paid-role gate despite the strong human-rights subject match.",
+      "location": "Not specified",
+      "type": "Not specified (Advisory Committee membership)",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
