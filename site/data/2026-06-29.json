@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T10:01:26.390206+00:00",
-  "run_count": 22,
+  "generated_at": "2026-06-29T10:31:02.890067+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Studentische Teilzeitkraft Archiv Grünes Gedächtnis (w/m/d/k.A.)",
@@ -118,6 +118,23 @@
       "type": "Part-time (50%), fixed-term up to 4 years",
       "deadline": "2026-07-20",
       "salary": "Entgeltgruppe 13 TV-L FU (50%)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische*r Mitarbeiter*in (m/w/d) für die Bibliothek",
+      "organisation": "Stiftung Topographie des Terrors",
+      "url": "https://topographie-des-terrors.kenjo.io/studentische-n-mitarbeiter-m-w-d-fur-die-bibliothek-289204",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a studentische*r Mitarbeiter*in (working-student) role, which is excluded as a matter of policy, and it further requires enrolment in library science and a student status the candidate does not match. Although the institution's NS-history focus is adjacent to the candidate's interests, the role type and field (library cataloguing) are not a fit.",
+      "location": "Berlin-Schöneweide, Germany",
+      "type": "Part-time (working-student, 10h/week)",
+      "deadline": "2026-07-26",
+      "salary": "TV-L Egr. 3",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
