@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T07:43:01.991074+00:00",
-  "run_count": 17,
+  "generated_at": "2026-06-29T08:01:11.949487+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -152,6 +152,23 @@
       "type": "Not specified (advisory committee)",
       "deadline": "15 January 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Manager, Funding Management - Directed Activities",
+      "organisation": "Wellcome Trust",
+      "url": "https://wellcome.wd3.myworkdayjobs.com/job/London/Senior-Manager--Funding-Management---Directed-Activities_R-003414-2",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Not entry-level — this is a Senior Manager role requiring significant research-funding experience and proven team leadership, which the candidate's student-assistant background does not meet. The funding-allocation experience at the German Rectors' Conference is tangentially relevant, but the level is a hard mismatch.",
+      "location": "London",
+      "type": "Full-time (Permanent)",
+      "deadline": "Monday, 13 July 2026",
+      "salary": "£58,640 - £73,300",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
