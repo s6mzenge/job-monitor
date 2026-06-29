@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T13:31:05.571734+00:00",
-  "run_count": 31,
+  "generated_at": "2026-06-29T14:01:19.456781+00:00",
+  "run_count": 32,
   "jobs": [
     {
       "title": "Studentische Teilzeitkraft Archiv Grünes Gedächtnis (w/m/d/k.A.)",
@@ -237,6 +237,40 @@
       "type": "Full-time",
       "deadline": "2026-09-20",
       "salary": "Not specified (W3 special professorship)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Acquisitions Editor Architecture (m/w/d)",
+      "organisation": "Vandenhoeck & Ruprecht / De Gruyter",
+      "url": "https://de-gruyter.onlyfy.jobs/en/job/2o0imsp8bm9ajanvmk6nifzwyqa34dj",
+      "priority": 12,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "An acquisitions-editor role in architecture publishing sits well outside the candidate's research/policy and intelligence interest zones and asks for subject expertise and editorial/commissioning experience the candidate does not have. Nothing in the sparse description signals a hard disqualifier, so it is eligible, but it is a weak fit on both level and topic.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "(Jr.) Acquisitions Editor Humanities (f/m/d)",
+      "organisation": "Vandenhoeck & Ruprecht / De Gruyter",
+      "url": "https://de-gruyter.onlyfy.jobs/en/job/0c0m940x49g1y35pjz52xm3lth11axc",
+      "priority": 42,
+      "eligible": true,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "The \"Jr.\" framing suggests a genuinely junior, entry-level publishing role, and the candidate's academic-publishing background (two published works, editorial familiarity, strong writing) is a plausible fit, though acquisitions editing is a distinct skill set the candidate has not directly held. Academic publishing in the humanities is adjacent to the candidate's interests rather than core, and the near-empty posting limits confidence — worth a look but not a priority.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
