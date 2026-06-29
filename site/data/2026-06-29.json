@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T07:31:07.336703+00:00",
-  "run_count": 16,
+  "generated_at": "2026-06-29T07:43:04.985616+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Studentische Teilzeitkraft Archiv Grünes Gedächtnis (w/m/d/k.A.)",
@@ -50,6 +50,40 @@
       "type": "Full-time (39 hrs/week), permanent",
       "deadline": "2026-06-28",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische Teilzeitkraft Archiv Grünes Gedächtnis (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.interamt.de/koop/app/stelle?id=1462606",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a studentische Teilzeitkraft (working-student) role requiring current enrolment at a German university, which is excluded as a matter of policy. It is also archive-clerical work outside the candidate's interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Part-time",
+      "deadline": "2026-07-12",
+      "salary": "TVöD-Bund E 2",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Projektbearbeitung Bereich Inland - Schwerpunkt Demokratie und Gesellschaft (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.interamt.de/koop/app/stelle?id=1460302",
+      "priority": 42,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Genuinely entry-level (Bachelor sufficient) and the project-administration, funding-allocation and stakeholder-coordination tasks map closely to the candidate's German Rectors' Conference experience handling €1.7m of federal funding, so paper fit is solid. However, it is an administrative project-management role focused on domestic political-education programmes rather than international law, security or geopolitical research, so it sits well outside the core interest zones and leans on project-management experience the candidate only partly has.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (fixed-term to 28.02.2027)",
+      "deadline": "2026-07-05",
+      "salary": "TVöD-Bund E 9c",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
