@@ -2398,8 +2398,138 @@ def check_json_api(site, seen_urls):
 #  DISPATCHER — routes each site to the correct handler
 # ═══════════════════════════════════════════════════════════════
 
+def _interamt_detail_text(soup, fallback_title):
+    """Build an LLM-ready blob from an INTERAMT `stelle?id=...` detail page.
+
+    Pulls the title (explicit Stellenbezeichnung, else og:description), the
+    structured detail pairs we care about (Entgelt, Befristung, Teilzeit/Vollzeit,
+    Wochenarbeitszeit, Frist, ...), and the Stellenbeschreibung rich-text body.
+    Falls back to a scoped extract_text() if the rich-text block is absent.
+    """
+    title = ""
+    for dd in soup.select("dd.ia-m-desc-list__descr"):
+        dt = dd.find_previous("dt")
+        if dt and dt.get_text(strip=True) == "Stellenbezeichnung":
+            title = dd.get_text(" ", strip=True)
+            break
+    if not title:
+        og = soup.select_one('meta[property="og:description"]')
+        title = og["content"].strip() if (og and og.get("content")) else fallback_title
+
+    fields_of_interest = (
+        "Behörde", "Besoldung / Entgelt", "Dienstverhältnis", "Befristung (Monate)",
+        "Teilzeit / Vollzeit", "Wochenarbeitszeit", "Einsatzort PLZ / Ort",
+        "Dienstort", "Bewerbungsfrist", "Besetzung zum", "Kennung für Bewerbungen",
+    )
+    fields = {}
+    for item in soup.select(".ia-m-desc-list__item"):
+        dt = item.select_one("dt.ia-m-desc-list__term")
+        dd = item.select_one("dd.ia-m-desc-list__descr")
+        if dt and dd:
+            k = dt.get_text(" ", strip=True)
+            v = dd.get_text(" ", strip=True)
+            if k in fields_of_interest and v:
+                fields[k] = v
+
+    rich = soup.select_one("#ia-tab-primary .ia-e-richtext") or soup.select_one(".ia-e-richtext")
+    description = rich.get_text("\n", strip=True) if rich else ""
+    if not description:
+        description = extract_text(soup, "#ia-content-wrap")
+
+    lines = [f"Title: {title or fallback_title}"]
+    for key, label in (
+        ("Behörde", "Behörde"), ("Besoldung / Entgelt", "Entgelt"),
+        ("Dienstverhältnis", "Dienstverhältnis"), ("Befristung (Monate)", "Befristung (Monate)"),
+        ("Teilzeit / Vollzeit", "Teilzeit/Vollzeit"), ("Wochenarbeitszeit", "Wochenarbeitszeit"),
+        ("Einsatzort PLZ / Ort", "Ort"), ("Dienstort", "Dienstort"),
+        ("Bewerbungsfrist", "Bewerbungsfrist"), ("Besetzung zum", "Besetzung zum"),
+        ("Kennung für Bewerbungen", "Kennung"),
+    ):
+        if fields.get(key):
+            lines.append(f"{label}: {fields[key]}")
+    if description:
+        lines.append("")
+        lines.append(description)
+    return "\n".join(lines)
+
+
+def check_interamt(site, seen_urls):
+    """Scrape a single INTERAMT employer ("partner") feed.
+
+    INTERAMT (the public-sector careers portal) renders an employer's postings
+    server-side as a results table at trefferliste?partner=<N>. The in-page row
+    links are session-bound Wicket URLs (useless as stable identifiers), so we
+    read the numeric Stellenangebot-ID out of each row and build the bookmarkable
+    canonical detail URL  stelle?id=<ID>  ourselves. Detail pages are likewise
+    server-rendered, so plain fetch_page() (with its Worker fallback) suffices.
+
+    Config keys:
+      partner          (str/int)  INTERAMT partner id, e.g. "556" (Heinrich-Böll)
+      url              (str, opt) explicit listing URL; defaults to the partner feed
+      location_exclude (list,opt) title substrings to drop before the LLM call
+    """
+    base = "https://www.interamt.de/koop/app/"
+    partner = str(site.get("partner", "")).strip()
+    listing_url = site.get("url") or f"{base}trefferliste?partner={partner}"
+    detail_tmpl = base + "stelle?id={id}"
+
+    soup = fetch_page(listing_url, proxy=site.get("proxy"),
+                      tls_impersonate=site.get("tls_impersonate", False))
+    if not soup:
+        return None
+
+    table = (soup.select_one("table.ia-e-table--searchresults")
+             or soup.select_one("table.ia-e-table"))
+    body = table.select_one("tbody") if table else None
+    rows = body.select("tr.ia-e-table__row") if body else []
+
+    _digits = re.compile(r"^\d+$")
+    all_urls = set()
+    jobs = []
+    for tr in rows:
+        id_cell = tr.select_one('td[data-field="StellenangebotId"]')
+        if not id_cell:
+            continue
+        job_id = ""
+        for sp in id_cell.select("span"):
+            t = sp.get_text(strip=True)
+            if _digits.match(t):
+                job_id = t
+                break
+        if not job_id:
+            m = re.search(r"\d{5,}", id_cell.get_text(" ", strip=True))
+            job_id = m.group(0) if m else ""
+        if not job_id:
+            continue
+        title_cell = tr.select_one('td[data-field="Stellenbezeichnung"]')
+        title = (title_cell.get_text(" ", strip=True) if title_cell else "") or "Untitled"
+        job_url = detail_tmpl.format(id=job_id)
+        all_urls.add(job_url)
+        jobs.append({"title": title, "url": job_url})
+
+    print(f"    INTERAMT partner {partner}: {len(jobs)} listing(s)")
+
+    loc_excl = site.get("location_exclude")
+    new_jobs = []
+    for job in jobs:
+        if job["url"] in seen_urls:
+            continue
+        if loc_excl and any(tok.lower() in job["title"].lower() for tok in loc_excl):
+            print(f"    location_exclude: skipping '{job['title'][:60]}'")
+            continue
+        time.sleep(1)
+        d_soup = fetch_page(job["url"], proxy=site.get("proxy"),
+                            tls_impersonate=site.get("tls_impersonate", False))
+        detail_text = (_interamt_detail_text(d_soup, job["title"]) if d_soup
+                       else f"Title: {job['title']} (detail page could not be loaded)")
+        new_jobs.append({"title": job["title"], "url": job["url"], "detail_text": detail_text})
+
+    return {"total": len(all_urls), "new": new_jobs}
+
+
 METHOD_HANDLERS = {
     "html": check_html,
+    "interamt": check_interamt,
     "workday_api": check_workday,
     "greenhouse_api": check_greenhouse,
     "workable_api": check_workable,
