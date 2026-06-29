@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T12:31:19.584006+00:00",
-  "run_count": 29,
+  "generated_at": "2026-06-29T13:01:08.684666+00:00",
+  "run_count": 30,
   "jobs": [
     {
       "title": "Studentische Teilzeitkraft Archiv Grünes Gedächtnis (w/m/d/k.A.)",
@@ -220,6 +220,23 @@
       "type": "Full-time (39h, part-time possible)",
       "deadline": "2026-07-26",
       "salary": "EG 8 TVöD Bund",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Direktor*in (m/w/d) im (weit gefassten) Bereich Internationale Beziehungen",
+      "organisation": "WZB Berlin Social Science Center",
+      "url": "https://www.wzb.eu/de/jobs/direktorin-mwd-im-weit-gefassten-bereich-internationale-beziehungen-460-405",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "This is a director-level post for a world-recognised senior researcher who will build and lead a department, explicitly requiring an established international publication record and experience supervising doctoral candidates — far beyond entry-level and requiring an already-completed PhD/professorial standing. The international-order and security focus aligns with the candidate's interests, but the seniority and qualification bar are disqualifying.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-09-20",
+      "salary": "Not specified (W3 special professorship)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
