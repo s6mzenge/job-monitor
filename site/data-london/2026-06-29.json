@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T02:01:07.356245+00:00",
-  "run_count": 5,
+  "generated_at": "2026-06-29T02:31:19.745800+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -67,6 +67,23 @@
       "type": "Not specified (Advisory Committee membership)",
       "deadline": "15 January 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Director",
+      "organisation": "Palestine Solidarity Campaign (PSC)",
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is the most senior executive post in the organisation — a Director leading three Deputy Directors with ultimate executive responsibility — far beyond an entry-level candidate with only student-assistant experience. The level is a hard mismatch despite the London location.",
+      "location": "London-based, with hybrid working",
+      "type": "Full-time (Permanent)",
+      "deadline": "8 July 2026",
+      "salary": "£80,000 – £95,000 per annum",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
