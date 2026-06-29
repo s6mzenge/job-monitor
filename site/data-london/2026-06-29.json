@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T08:31:12.103206+00:00",
-  "run_count": 19,
+  "generated_at": "2026-06-29T09:01:19.016391+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -169,6 +169,23 @@
       "type": "Full-time (Permanent)",
       "deadline": "Monday, 13 July 2026",
       "salary": "£58,640 - £73,300",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Administrator (Maternity Cover, 12 Month FTC)",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Administrator-%28Maternity-Cover%2C-12-Month-FTC%29/1409250233",
+      "priority": 22,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A purely administrative / executive-assistant role — calendar management, travel booking, meeting logistics — which sits well outside the candidate's research and policy profile despite Fitch being a credible financial-information firm. The bachelor's-degree-OR-5-years framing keeps it eligible (a degree alone qualifies, so no hard 3+ year gate), but the work is clerical with little research substance and no interest pull, so it lands low.",
+      "location": "London, GB",
+      "type": "Contract (12-month FTC, full-time)",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
