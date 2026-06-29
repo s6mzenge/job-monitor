@@ -1,33 +1,6 @@
 {
-  "last_updated": "2026-06-29T15:01:09.333099+00:00",
-  "site_summary": {
-    "SOAS University of London": {
-      "site_id": 34,
-      "url": "https://vacancies.soas.ac.uk/#vacancies",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-06-29T07:01:15.912367+00:00",
-      "last_recent_failure": "2026-06-29T15:01:09.333099+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://vacancies.soas.ac.uk/#vacancies\", waiting until \"domcontentloaded\""
-    },
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-06-28T15:46:14.886630+00:00",
-      "last_recent_failure": "2026-06-29T15:01:09.333099+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
-    }
-  },
+  "last_updated": "2026-06-29T15:31:04.944361+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T15:46:14.886630+00:00",
