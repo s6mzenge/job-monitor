@@ -3979,6 +3979,66 @@ def main():
     # ─── Save issues log ───
     issues.finalize(issues_data, state, now)
 
+    # ─── Emit slim coverage.json for the dashboard ───
+    # issues-*.json live at the repo root, out of reach of the static site, so
+    # publish a trimmed source-health summary into the data dir. The workflow
+    # commits SITE_DATA_DIR wholesale, so this needs no workflow change.
+    try:
+        _summary = issues_data.get("site_summary", {})
+        _problem, _paused, _erroring = [], 0, 0
+        for _name, _s in _summary.items():
+            _is_paused = bool(_s.get("currently_paused"))
+            if _is_paused:
+                _paused += 1
+            else:
+                _erroring += 1
+            _msg_lines = (_s.get("last_message") or "").strip().splitlines()
+            _problem.append({
+                "id": _s.get("site_id"),
+                "name": _name,
+                "url": _s.get("url", ""),
+                "method": _s.get("method", ""),
+                "status": "paused" if _is_paused else "erroring",
+                "consecutive_failures": _s.get("consecutive_failures", 0),
+                "total_recent_failures": _s.get("total_recent_failures", 0),
+                "last_failure": _s.get("last_recent_failure", ""),
+                "paused_until": _s.get("paused_until", ""),
+                "last_type": _s.get("last_type", ""),
+                "message": (_msg_lines[0] if _msg_lines else "")[:280],
+            })
+        _problem.sort(key=lambda p: (p["status"] != "paused", -(p.get("consecutive_failures") or 0)))
+        _problem_names = set(_summary.keys())
+        _methods, _healthy_names = {}, []
+        for _site in SITES:
+            _nm = _site.get("name", "?")
+            if _nm in _problem_names:
+                continue
+            _healthy_names.append(_nm)
+            _mth = (_site.get("method") or "html")
+            _methods[_mth] = _methods.get(_mth, 0) + 1
+        _healthy_names.sort(key=str.lower)
+        _total = len(SITES)
+        _coverage = {
+            "generated_at": now.isoformat(),
+            "lane": RUN_LABEL,
+            "total_sites": _total,
+            "healthy": max(0, _total - len(_problem)),
+            "erroring": _erroring,
+            "paused": _paused,
+            "methods": _methods,
+            "healthy_names": _healthy_names,
+            "sites": _problem,
+        }
+        os.makedirs(_SITE_DATA_DIR, exist_ok=True)
+        _cov_path = os.path.join(_SITE_DATA_DIR, "coverage.json")
+        with open(_cov_path, "w", encoding="utf-8") as _f:
+            json.dump(_coverage, _f, indent=2, ensure_ascii=False)
+        print(f"  \U0001F4CA Coverage: {_coverage['healthy']}/{_total} healthy, "
+              f"{_erroring} erroring, {_paused} paused \u2192 {_cov_path}")
+    except Exception as _cov_err:
+        print(f"  \u26A0\uFE0F Could not write coverage.json: {_cov_err}")
+
+
     # ─── Send results ───
     if DRY_RUN:
         print(f"\n🏃 Dry run complete. State populated for {len(SITES)} sites.")
