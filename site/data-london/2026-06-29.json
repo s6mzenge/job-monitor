@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T02:31:19.745800+00:00",
-  "run_count": 6,
+  "generated_at": "2026-06-29T03:01:15.468917+00:00",
+  "run_count": 7,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -84,6 +84,40 @@
       "type": "Full-time (Permanent)",
       "deadline": "8 July 2026",
       "salary": "£80,000 – £95,000 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fellow, Climate policy & development",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "A \"Fellow\" role at a think-tank of CGD's standing is a senior research position requiring a strong track record (typically a PhD and/or several years of established expertise) in climate and development economics — well beyond the candidate's entry-level profile. The field is also outside the candidate's core interest zones.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Fellow and Director Smart Buys Alliance",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "A Senior Fellow and Director title is a clearly senior leadership role requiring many years of experience, and it is based in Washington DC with no London option, failing the London-only location filter. Both the level and location are hard disqualifiers.",
+      "location": "Washington DC",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
