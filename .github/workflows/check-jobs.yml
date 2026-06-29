@@ -28,6 +28,7 @@ jobs:
             label: "🇬🇧 London"
             max_rpm: "4"
             pw_workers: "2"          # London has ~12 Playwright sites — two browsers ≈ halves the render chain
+            feedback_drain: "1"      # SOLE drain lane: one bot has one getUpdates stream, so exactly one lane may poll it
     runs-on: ubuntu-latest
     timeout-minutes: 45
     permissions:
@@ -85,6 +86,8 @@ jobs:
           SITE_DATA_DIR: ${{ matrix.data_dir }}
           ANTHROPIC_MAX_RPM: ${{ matrix.max_rpm }}
           MONITOR_PW_WORKERS: ${{ matrix.pw_workers }}
+          FEEDBACK_DRAIN: ${{ matrix.feedback_drain }}          # only london sets "1"; de has no such key → "" → drain off
+          FEEDBACK_LOG_FILE: site/data-london/fb_log.json       # shared log: london (drain lane) WRITES it, BOTH lanes READ it so feedback calibrates de + london alike
           RUN_LABEL: ${{ matrix.label }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
