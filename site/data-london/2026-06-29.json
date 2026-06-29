@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T16:31:05.694988+00:00",
-  "run_count": 37,
+  "generated_at": "2026-06-29T17:01:17.358569+00:00",
+  "run_count": 38,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -746,6 +746,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 July 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Interim Senior Advocacy Advisor (12-month FTC)",
+      "organisation": "CARE International UK",
+      "url": "https://www.careinternational.org.uk/work-with-us/interim-senior-advocacy-advisor-12-month-ftc",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "Not entry-level — a \"Senior\" advisor role requiring significant advocacy/public affairs experience, team line-management across time zones, and a track record of shifting policy/legislation, all of which exceed the candidate's RA-level background. The gender-justice and international-development theme is adjacent to the candidate's interests, but the seniority is a hard mismatch.",
+      "location": "London (UK)",
+      "type": "Contract (12-month FTC)",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",

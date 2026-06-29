@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-06-29T16:31:05.694988+00:00",
-  "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-06-29T10:31:23.026711+00:00",
-      "last_recent_failure": "2026-06-29T16:31:05.694988+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7faca1bc5760>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=8)'))"
-    }
-  },
+  "last_updated": "2026-06-29T17:01:17.358569+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T15:46:14.886630+00:00",
