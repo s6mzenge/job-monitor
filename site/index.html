@@ -1,321 +1,850 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1e293b" media="(prefers-color-scheme: dark)">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-  <link rel="apple-touch-icon" href="./favicon.svg">
-  <title>Job Monitor — Daily Brief</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
-        }
-      }
-    }
-  </script>
-  <style>
-    body { font-family: 'Inter', system-ui, sans-serif; padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
-    details[open] summary ~ * { animation: slideDown 0.2s ease-out; }
-    @keyframes slideDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
-    .fade-in { animation: fadeIn 0.3s ease both; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
-    .score-dot { width: 7px; height: 7px; border-radius: 50%; }
-    /* Ineligible roles are hidden until the user opts to show them */
-    .ineligible-card { display: none; }
-    body.show-ineligible .ineligible-card { display: block; }
-    .prio-bar-track { height: 5px; border-radius: 9999px; overflow: hidden; }
-    /* Ensure tap targets are at least 44px on touch devices */
-    @media (pointer: coarse) {
-      button, .collapsible-toggle { min-height: 44px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0C4A52" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1316" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="apple-touch-icon" href="./favicon.svg">
+<title>Job Monitor — Daily Dispatch</title>
+<script>
+/* set theme before paint to avoid a flash */
+(function(){try{var s=JSON.parse(localStorage.getItem('jm_settings')||'null');
+var dark=s&&typeof s.dark==='boolean'?s.dark:(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+document.documentElement.dataset.theme=dark?'dark':'light';}catch(e){}})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DESIGN TOKENS — "Daily Dispatch"
+   Petrol chrome · cool newsprint · single ochre signal.
+   Newsreader (editorial serif) / Inter (UI) / IBM Plex Mono (data).
+   ============================================================ */
+:root{
+  --paper:#E8EAE5; --card:#FBFCFA; --line:#D6D9D1; --line-soft:#E4E7E0;
+  --ink:#14181C; --ink-soft:#4C545A; --mute:#8A918C;
+  --petrol:#0C4A52; --petrol-ink:#072F35; --link:#0E6B78;
+  --match:#1C7A4D; --match-bg:#E4F0E8;
+  --watch:#9A5B00; --watch-bg:#F4ECDD;
+  --urgent:#AE382C; --urgent-bg:#F4E3E0;
+  --gold:#B8842B;
+  --shadow:0 1px 2px rgba(20,24,28,.05), 0 8px 24px -16px rgba(20,24,28,.28);
+}
+html[data-theme="dark"]{
+  --paper:#0D1316; --card:#161D21; --line:#28312F; --line-soft:#202927;
+  --ink:#E8EBE6; --ink-soft:#A7AFAB; --mute:#727A76;
+  --petrol:#0C4A52; --petrol-ink:#0A3940; --link:#3FB4C0;
+  --match:#46C088; --match-bg:#11271E;
+  --watch:#D79A3A; --watch-bg:#2A2114;
+  --urgent:#E0796C; --urgent-bg:#2A1715;
+  --gold:#D6A552;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px -18px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box;}
+body{margin:0;background:#cfd2cb;font-family:'Inter',system-ui,sans-serif;color:var(--ink);}
+html[data-theme="dark"] body{background:#070a0c;}
+a{color:inherit;text-decoration:none;}
+
+
+/* ---------- Page shell (real site) ---------- */
+.app{max-width:1080px;margin:0 auto;background:var(--paper);min-height:100vh;position:relative;}
+@media (min-width:1120px){ .app{box-shadow:var(--shadow);} }
+.loading{padding:90px 24px;text-align:center;color:var(--mute);
+  font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;}
+.iconbtn.theme svg{width:17px;height:17px;}
+.card-prio b.ml{font-size:11px;letter-spacing:.06em;}
+.trow-prio .ml{font-size:10px;letter-spacing:.05em;}
+
+
+/* ---------- Masthead ---------- */
+.masthead{background:var(--petrol);color:#eaf4f5;padding:14px 20px 0;}
+.mast-top{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.brand{display:flex;align-items:baseline;gap:12px;min-width:0;}
+.brand h1{font-family:'Newsreader',serif;font-weight:600;font-size:25px;letter-spacing:.005em;margin:0;line-height:1;color:#fff;}
+.dateline{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:#9cc4c8;white-space:nowrap;text-transform:uppercase;}
+.mast-tools{display:flex;align-items:center;gap:8px;}
+.searchwrap{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.10);border-radius:9px;padding:7px 11px;min-width:0;}
+.searchwrap input{background:transparent;border:0;outline:0;color:#eaf4f5;font-size:13px;width:150px;}
+.searchwrap input::placeholder{color:#8fb6ba;}
+.searchwrap svg{width:15px;height:15px;color:#9cc4c8;flex:none;}
+.iconbtn{width:38px;height:38px;display:grid;place-items:center;border-radius:9px;cursor:pointer;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.10);color:#cfe6e8;}
+.iconbtn:hover{background:rgba(255,255,255,.18);}
+.iconbtn svg{width:18px;height:18px;}
+/* masthead lower row: view tabs + region */
+.mast-nav{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;margin-top:14px;border-top:1px solid rgba(255,255,255,.10);}
+.viewtabs{display:flex;gap:2px;}
+.viewtab{position:relative;font-family:'Inter';font-size:13.5px;font-weight:600;color:#a9cccf;background:transparent;border:0;cursor:pointer;
+  padding:11px 4px 12px;margin-right:20px;display:flex;align-items:center;gap:8px;}
+.viewtab .vt-ct{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;background:rgba(255,255,255,.14);padding:1px 6px;border-radius:20px;}
+.viewtab.on{color:#fff;}
+.viewtab.on::after{content:"";position:absolute;left:0;right:20px;bottom:-1px;height:2px;background:var(--gold);}
+.region-seg{display:inline-flex;background:rgba(255,255,255,.10);border-radius:9px;padding:3px;gap:2px;margin-bottom:9px;}
+.region-seg button{font-family:'Inter';font-size:12.5px;font-weight:600;border:0;cursor:pointer;background:transparent;color:#bcd9dc;padding:7px 14px;border-radius:6px;display:flex;align-items:center;gap:6px;min-height:34px;}
+.region-seg button .ct{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;background:rgba(255,255,255,.14);padding:1px 6px;border-radius:20px;}
+.region-seg button.on{background:#fff;color:var(--petrol-ink);}
+.region-seg button.on .ct{background:var(--match-bg);color:var(--match);}
+.region-note{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;color:#9cc4c8;margin-bottom:13px;text-transform:uppercase;}
+
+/* ---------- "since last check" sub-bar ---------- */
+.checkbar{display:flex;align-items:center;gap:10px;padding:9px 20px;background:var(--card);border-bottom:1px solid var(--line);
+  font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);letter-spacing:.03em;}
+.checkbar .new-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px var(--watch-bg);}
+.checkbar .nnew{color:var(--ink);font-weight:600;}
+.checkbar .seenbtn{margin-left:auto;font-family:'Inter';font-size:12px;font-weight:600;color:var(--link);background:transparent;border:0;cursor:pointer;}
+.checkbar .seenbtn:hover{text-decoration:underline;}
+
+/* ---------- Paper sheet ---------- */
+.sheet{padding:20px;}
+
+/* ---------- THE LEAD (signature) ---------- */
+.lead{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;box-shadow:var(--shadow);overflow:hidden;}
+.lead::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--match);}
+.lead.is-watch::before{background:var(--watch);}
+.lead-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:9px;margin-bottom:11px;}
+.lead-eyebrow .rule{height:1px;flex:1;background:var(--line);}
+.lead-body{display:flex;gap:24px;align-items:flex-start;}
+.lead-left{flex:1;min-width:0;}
+.lead-title{font-family:'Newsreader',serif;font-weight:600;font-size:25px;line-height:1.18;letter-spacing:.003em;margin:0 0 9px;color:var(--ink);}
+.lead-title a:hover{color:var(--link);}
+.lead-meta{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:6px 12px;margin-bottom:13px;}
+.lead-meta .org{color:var(--ink);font-weight:500;}
+.lead-reason{font-size:14.5px;line-height:1.62;color:var(--ink-soft);border-left:2px solid var(--line);padding-left:14px;font-style:italic;font-family:'Newsreader',serif;}
+.lead-right{flex:none;width:148px;display:flex;flex-direction:column;align-items:center;gap:10px;}
+.prio-dial{position:relative;width:118px;height:118px;}
+.prio-dial .num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.prio-dial .num b{font-family:'IBM Plex Mono',monospace;font-size:34px;font-weight:600;color:var(--ink);line-height:1;}
+.prio-dial .num span{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.16em;color:var(--mute);margin-top:3px;}
+.dial-arc{animation:fillArc 1s cubic-bezier(.2,.8,.2,1) both;}
+@keyframes fillArc{from{stroke-dashoffset:var(--c);}to{stroke-dashoffset:var(--off);}}
+.lead-actions{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap;}
+
+/* ---------- Buttons ---------- */
+.btn{font-family:'Inter';font-size:13px;font-weight:600;border-radius:9px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;padding:9px 15px;border:1px solid var(--line);background:var(--card);color:var(--ink);min-height:40px;transition:.14s;}
+.btn svg{width:15px;height:15px;}
+.btn:hover{border-color:var(--ink-soft);}
+.btn.primary{background:var(--petrol);border-color:var(--petrol);color:#fff;}
+.btn.primary:hover{background:var(--petrol-ink);}
+.btn.on{background:var(--match-bg);border-color:var(--match);color:var(--match);}
+.btn.gold.on{background:var(--watch-bg);border-color:var(--gold);color:var(--gold);}
+
+/* ---------- Situation summary ---------- */
+.summary{display:flex;align-items:stretch;gap:0;margin:18px 0 4px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+.stat{flex:1;padding:14px 16px;border-right:1px solid var(--line-soft);min-width:0;text-align:left;background:transparent;border-top:0;border-bottom:0;border-left:0;cursor:default;font-family:inherit;}
+.stat.clickable{cursor:pointer;transition:.12s;} .stat.clickable:hover{background:var(--paper);}
+.stat:last-child{border-right:0;flex:1.5;display:flex;align-items:center;gap:14px;cursor:default;}
+.stat .num{font-family:'IBM Plex Mono',monospace;font-size:23px;font-weight:600;line-height:1;color:var(--ink);}
+.stat .num.go{color:var(--match);} .stat .num.wa{color:var(--watch);} .stat .num.ur{color:var(--urgent);}
+.stat .lbl{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--mute);margin-top:6px;}
+.spark{flex:1;height:38px;}
+.spark-lbl{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;color:var(--mute);text-transform:uppercase;}
+
+/* ---------- Controls bar (sticky) ---------- */
+.controls{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:10px;padding:12px 20px;margin:14px -20px 4px;background:var(--paper);border-bottom:1px solid var(--line);}
+.tier-seg{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:3px;gap:2px;}
+.tier-seg button{font-family:'Inter';font-size:12.5px;font-weight:600;border:0;background:transparent;color:var(--ink-soft);padding:7px 13px;border-radius:6px;cursor:pointer;min-height:36px;display:flex;align-items:center;gap:6px;}
+.tier-seg button .dot{width:7px;height:7px;border-radius:50%;}
+.tier-seg button.on{background:var(--ink);color:var(--paper);}
+.sortwrap{display:flex;align-items:center;gap:7px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--mute);letter-spacing:.05em;}
+.sortwrap select{font-family:'Inter';font-size:12.5px;font-weight:500;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 9px;cursor:pointer;min-height:36px;}
+.controls .grow{flex:1;}
+.ruled-toggle{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-soft);cursor:pointer;font-weight:500;user-select:none;}
+.ruled-toggle input{accent-color:var(--petrol);width:15px;height:15px;}
+
+/* ---------- Day groups ---------- */
+.group{margin-top:22px;}
+.group-head{display:flex;align-items:baseline;gap:12px;margin:0 0 12px;}
+.group-date{font-family:'Newsreader',serif;font-weight:600;font-size:19px;color:var(--ink);letter-spacing:.005em;}
+.group-rel{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);}
+.group-counts{margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--mute);}
+.group-rule{height:1px;background:var(--line);margin-bottom:14px;}
+.cards{display:flex;flex-direction:column;gap:11px;}
+
+/* ---------- Job card ---------- */
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px 15px 19px;display:flex;gap:16px;transition:box-shadow .16s,transform .16s,border-color .16s;animation:rise .34s ease both;animation-delay:var(--d,0ms);}
+@keyframes rise{from{opacity:0;transform:translateY(7px);}to{opacity:1;transform:none;}}
+.card::before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:3px;background:var(--line);}
+.card.t-strong::before{background:var(--match);}
+.card.t-watch::before{background:var(--watch);}
+.card:hover{border-color:var(--ink-soft);transform:translateY(-1px);}
+.card.sel{box-shadow:0 0 0 2px var(--petrol),var(--shadow);border-color:var(--petrol);}
+.card.is-applied{background:var(--match-bg);border-color:var(--match);}
+.card.is-saved{box-shadow:inset 0 0 0 1px var(--gold);}
+.card.flash{animation:flash .6s ease;}
+@keyframes flash{0%{box-shadow:0 0 0 2px var(--gold);}100%{box-shadow:inset 0 0 0 1px var(--gold);}}
+.card-prio{flex:none;width:42px;text-align:center;padding-top:2px;}
+.card-prio b{font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:600;color:var(--ink-soft);line-height:1;}
+.card-prio.go b{color:var(--match);} .card-prio.wa b{color:var(--watch);}
+.card-prio span{display:block;font-family:'IBM Plex Mono',monospace;font-size:8px;letter-spacing:.13em;color:var(--mute);margin-top:5px;}
+.card-main{flex:1;min-width:0;}
+.card-titlerow{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;}
+.title-wrap{min-width:0;}
+.card-title{font-size:15px;font-weight:600;color:var(--ink);line-height:1.32;}
+.card-title a{display:inline;align-items:center;}
+.card-title a:hover{color:var(--link);}
+.card-title .ext{width:11px;height:11px;opacity:.4;display:inline-block;vertical-align:baseline;margin-left:3px;}
+.tag-new{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:8.5px;font-weight:600;letter-spacing:.14em;color:var(--gold);border:1px solid var(--gold);border-radius:4px;padding:1px 5px;margin-right:7px;vertical-align:1px;}
+.card-meta{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--mute);display:flex;flex-wrap:wrap;gap:4px 11px;margin-top:6px;}
+.card-meta .org{color:var(--ink-soft);font-weight:500;}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:9px;align-items:center;}
+.deadline{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.07em;font-weight:600;padding:3px 8px;border-radius:6px;background:var(--watch-bg);color:var(--watch);text-transform:uppercase;}
+.deadline.urgent{background:var(--urgent-bg);color:var(--urgent);}
+.deadline.closed{background:transparent;color:var(--mute);border:1px dashed var(--line);}
+.interest{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.12em;color:var(--mute);text-transform:uppercase;}
+.pips{display:inline-flex;gap:3px;}
+.pip{width:6px;height:6px;border-radius:1.5px;background:var(--line);}
+.pip.on{background:var(--gold);}
+.card-reason{font-size:13px;line-height:1.55;color:var(--ink-soft);margin-top:10px;}
+.card-reason b{color:var(--ink);font-weight:600;}
+.card-foot{display:flex;align-items:center;gap:14px;margin-top:11px;}
+.fb{display:flex;align-items:center;gap:2px;}
+.fb .fblabel{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;color:var(--mute);text-transform:uppercase;margin-right:5px;}
+.fbbtn{width:30px;height:30px;display:grid;place-items:center;border-radius:7px;cursor:pointer;color:var(--mute);background:transparent;border:1px solid transparent;transition:.12s;}
+.fbbtn:hover{background:var(--paper);color:var(--ink);}
+.fbbtn svg{width:15px;height:15px;}
+.fbbtn.up.on{color:var(--match);background:var(--match-bg);}
+.fbbtn.down.on{color:var(--urgent);background:var(--urgent-bg);}
+.card-actions{display:flex;gap:4px;flex:none;}
+.act{width:34px;height:34px;display:grid;place-items:center;border-radius:8px;cursor:pointer;color:var(--mute);background:transparent;border:1px solid transparent;transition:.13s;}
+.act:hover{background:var(--paper);color:var(--ink);}
+.act svg{width:16px;height:16px;}
+.act.save.on{color:var(--gold);} .act.applied.on{color:var(--match);}
+.stamp{position:absolute;right:14px;bottom:12px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.18em;color:var(--match);border:1px solid var(--match);border-radius:5px;padding:2px 7px;transform:rotate(-4deg);text-transform:uppercase;opacity:.85;}
+
+/* ---------- Ruled-out block ---------- */
+.ruled{margin-top:11px;border:1px dashed var(--line);border-radius:11px;}
+.ruled summary{list-style:none;cursor:pointer;padding:12px 16px;display:flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.05em;color:var(--mute);}
+.ruled summary::-webkit-details-marker{display:none;}
+.ruled summary .chev{margin-left:auto;transition:.2s;}
+.ruled[open] summary .chev{transform:rotate(90deg);}
+.ruled .ruled-list{padding:0 14px 12px;display:flex;flex-direction:column;gap:8px;}
+.ruled-item{display:flex;gap:11px;align-items:flex-start;padding:10px 12px;border-radius:9px;background:var(--paper);}
+.ruled-item .ri-main{flex:1;min-width:0;}
+.ruled-item .rtitle{font-size:13px;color:var(--ink-soft);font-weight:500;}
+.ruled-item .rtitle a:hover{color:var(--link);}
+.ruled-item .rorg{color:var(--mute);}
+.ruled-item .rwhy{font-size:11.5px;color:var(--mute);line-height:1.45;margin-top:3px;}
+.dq{font-family:'IBM Plex Mono',monospace;font-size:8.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:5px;background:var(--line-soft);color:var(--ink-soft);white-space:nowrap;}
+.dq.closed{background:var(--urgent-bg);color:var(--urgent);}
+.dq.interest5{background:var(--watch-bg);color:var(--gold);}
+.ruled-item .rright{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:6px;}
+
+/* ---------- Tracked view ---------- */
+.tracked-intro{font-family:'Newsreader',serif;font-style:italic;font-size:15px;color:var(--ink-soft);margin:2px 0 18px;}
+.track-group{margin-top:6px;margin-bottom:22px;}
+.track-head{display:flex;align-items:center;gap:10px;margin-bottom:11px;}
+.track-head .th-pill{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:6px;}
+.th-pill.applied{background:var(--match-bg);color:var(--match);}
+.th-pill.saved{background:var(--watch-bg);color:var(--gold);}
+.th-pill.dismissed{background:var(--line-soft);color:var(--mute);}
+.track-head .th-ct{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--mute);}
+.track-head .th-rule{flex:1;height:1px;background:var(--line);}
+.trow{display:flex;align-items:center;gap:14px;padding:13px 16px;background:var(--card);border:1px solid var(--line);border-radius:11px;margin-bottom:8px;transition:.14s;}
+.trow:hover{border-color:var(--ink-soft);}
+.trow.dismissed-row{opacity:.6;}
+.trow.dismissed-row .trow-title{text-decoration:line-through;}
+.trow-prio{font-family:'IBM Plex Mono',monospace;font-size:18px;font-weight:600;width:34px;text-align:center;flex:none;color:var(--ink-soft);}
+.trow-prio.go{color:var(--match);} .trow-prio.wa{color:var(--watch);}
+.trow-main{flex:1;min-width:0;}
+.trow-title{font-size:14px;font-weight:600;color:var(--ink);}
+.trow-title a:hover{color:var(--link);}
+.trow-meta{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--mute);margin-top:3px;display:flex;gap:9px;flex-wrap:wrap;}
+.trow-meta .reg{color:var(--link);}
+.trow-actions{display:flex;gap:5px;flex:none;}
+
+/* ---------- Empty / quiet ---------- */
+.quiet{text-align:center;padding:48px 20px;color:var(--mute);}
+.quiet .ico{width:40px;height:40px;margin:0 auto 12px;color:var(--line);}
+.quiet h3{font-family:'Newsreader',serif;font-weight:600;font-size:20px;color:var(--ink-soft);margin:0 0 5px;}
+.quiet p{font-size:13px;margin:0;}
+
+/* ---------- Keyboard help overlay ---------- */
+.kbd-overlay{position:absolute;inset:0;background:rgba(8,12,14,.55);backdrop-filter:blur(2px);z-index:70;display:none;align-items:center;justify-content:center;padding:20px;}
+.kbd-overlay.show{display:flex;}
+.kbd-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;max-width:340px;width:100%;box-shadow:var(--shadow);}
+.kbd-card h4{font-family:'Newsreader',serif;font-weight:600;font-size:18px;margin:0 0 14px;color:var(--ink);}
+.kbd-row{display:flex;align-items:center;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line-soft);font-size:13px;color:var(--ink-soft);}
+.kbd-row:last-child{border-bottom:0;}
+.keycap{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:2px 7px;min-width:20px;text-align:center;}
+.keycap+.keycap{margin-left:4px;}
+
+/* ---------- Toast ---------- */
+.toast{position:absolute;bottom:18px;left:50%;transform:translate(-50%,16px);background:var(--ink);color:var(--paper);font-size:13px;font-weight:500;padding:10px 16px;border-radius:10px;box-shadow:var(--shadow);z-index:75;opacity:0;pointer-events:none;transition:.22s;display:flex;align-items:center;gap:9px;}
+.toast.show{opacity:1;transform:translate(-50%,0);}
+.toast .t-ico{color:var(--match);display:grid;place-items:center;}
+.toast .t-ico svg{width:16px;height:16px;}
+
+/* ---------- Footer ---------- */
+.foot{padding:18px 20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:var(--mute);}
+.foot .kbd-hint{cursor:pointer;color:var(--link);}
+
+/* ============================================================
+   RESPONSIVE — container queries on .app
+   ============================================================ */
+@media (max-width:640px){
+  .masthead{padding:30px 15px 0;}
+  .brand{flex-direction:column;gap:3px;align-items:flex-start;flex:1;min-width:0;}
+  .brand h1{font-size:21px;}
+  .dateline{white-space:normal;font-size:9.5px;line-height:1.35;}
+  .searchwrap{display:none;}
+  .mast-nav{flex-direction:column;align-items:stretch;gap:0;}
+  .viewtabs{justify-content:space-around;}
+  .viewtab{margin-right:0;flex:1;justify-content:center;padding:12px 4px;}
+  .viewtab.on::after{right:0;}
+  .region-seg{margin:9px 0;} .region-seg button{flex:1;justify-content:center;}
+  .region-note{margin:9px 0;text-align:center;}
+  .checkbar{padding:9px 15px;font-size:10px;}
+  .sheet{padding:14px;}
+  .lead{padding:17px 16px;}
+  .lead-body{flex-direction:column;gap:16px;}
+  .lead-right{flex-direction:row;width:100%;align-items:center;justify-content:flex-start;gap:16px;padding-top:4px;border-top:1px solid var(--line-soft);}
+  .prio-dial{width:84px;height:84px;} .prio-dial .num b{font-size:25px;}
+  .lead-title{font-size:21px;} .lead-reason{font-size:13.5px;}
+  .lead-actions{margin-top:14px;} .lead-actions .btn{flex:1;justify-content:center;}
+  .summary{flex-wrap:wrap;}
+  .stat{flex:1 1 33%;border-right:1px solid var(--line-soft);}
+  .stat:nth-child(3){border-right:0;}
+  .stat:last-child{flex:1 1 100%;border-top:1px solid var(--line-soft);}
+  .controls{flex-wrap:wrap;gap:9px;margin:14px -14px 4px;padding:11px 14px;}
+  .controls .grow{display:none;}
+  .tier-seg{flex:1;} .tier-seg button{flex:1;justify-content:center;}
+  .sortwrap{order:3;width:100%;justify-content:space-between;}
+  .sortwrap select{flex:1;margin-left:8px;}
+  .ruled-toggle{order:4;}
+  .card{padding:13px 14px 13px 16px;gap:12px;}
+  .card-prio{width:36px;} .card-prio b{font-size:19px;}
+  .card-titlerow{flex-direction:column;gap:9px;}
+  .card-actions{align-self:stretch;} .act{flex:1;height:42px;}
+  .card-foot{flex-wrap:wrap;gap:10px;}
+  .ruled-item{flex-direction:column;gap:7px;}
+  .ruled-item .rright{flex-direction:row;align-items:center;}
+  .trow{flex-wrap:wrap;} .trow-actions{margin-left:auto;}
+  .toast{left:14px;right:14px;transform:translateY(16px);} .toast.show{transform:translateY(0);}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
+</style>
 </head>
-<body class="bg-slate-50 dark:bg-slate-900 min-h-screen flex flex-col">
+<body>
+<div class="app" id="app" tabindex="0">
+  <div id="app-content"><div class="loading">Loading your dispatch…</div></div>
+  <div class="kbd-overlay" id="kbd" onclick="if(event.target.id==='kbd')toggleHelp()">
+    <div class="kbd-card"><h4>Keyboard shortcuts</h4>
+      <div class="kbd-row"><span>Move between roles</span><span><span class="keycap">j</span><span class="keycap">k</span></span></div>
+      <div class="kbd-row"><span>Open posting</span><span><span class="keycap">o</span></span></div>
+      <div class="kbd-row"><span>Save</span><span><span class="keycap">s</span></span></div>
+      <div class="kbd-row"><span>Mark applied</span><span><span class="keycap">a</span></span></div>
+      <div class="kbd-row"><span>Dismiss</span><span><span class="keycap">x</span></span></div>
+      <div class="kbd-row"><span>Good / not a match</span><span><span class="keycap">u</span><span class="keycap">d</span></span></div>
+      <div class="kbd-row"><span>Search · Help</span><span><span class="keycap">/</span><span class="keycap">?</span></span></div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+</div>
+<script>
+/* ============================================================
+   Job Monitor — Daily Dispatch  (Phase 1: real data, both lanes)
+   Reads ./data (Berlin) + ./data-london (London). Persists the
+   user's pipeline + feedback + "seen" set in localStorage.
+   Gracefully ranks legacy days (match tier) alongside scored days.
+   ============================================================ */
 
-  <!-- Header -->
-  <header class="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 sticky top-0 z-10">
-    <div class="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
-      <div>
-        <h1 class="text-xl font-bold text-slate-800 dark:text-slate-100 tracking-tight">Job Monitor</h1>
-        <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5">Daily Brief — Automated Intelligence</p>
+/* ---------- safe storage (never throws; falls back to memory) ---------- */
+const store=(function(){
+  let ok=true; try{const k='__jm_t';localStorage.setItem(k,'1');localStorage.removeItem(k);}catch(e){ok=false;}
+  const mem={};
+  return {
+    get(k){ try{ if(ok){const v=localStorage.getItem(k);return v===null?null:JSON.parse(v);} return (k in mem)?mem[k]:null; }catch(e){ return (k in mem)?mem[k]:null; } },
+    set(k,v){ try{ if(ok)localStorage.setItem(k,JSON.stringify(v)); else mem[k]=v; }catch(e){ mem[k]=v; } }
+  };
+})();
+
+/* ---------- config ---------- */
+const LANES={berlin:'./data', london:'./data-london'};
+const DAYS_WINDOW=14;
+
+/* ---------- escaping ---------- */
+function esc(s){return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function escAttr(s){return esc(s).replace(/"/g,'&quot;');}
+
+/* ---------- dates ---------- */
+function todayMidnight(){const d=new Date();d.setHours(0,0,0,0);return d;}
+const TODAY=todayMidnight();
+const NO_DATE=/^(not specified|not given|n\/?a|none|null|ongoing|rolling|continuous|open( until filled)?|until filled|laufend|unbefristet|fortlaufend|tba|tbd|various|—|–|-)$/i;
+function parseDeadlineISO(raw){
+  const s=(raw||'').trim(); if(!s||NO_DATE.test(s))return null;
+  let y,mo,da,m;
+  if(m=s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/)){ y=+m[1]; mo=+m[2]; da=+m[3]; }
+  else if(m=s.match(/^(\d{1,2})[.\/](\d{1,2})[.\/](\d{2,4})$/)){ da=+m[1]; mo=+m[2]; y=+m[3]; if(y<100)y+=2000; }
+  else { const d=new Date(s); if(!isNaN(d)){ y=d.getFullYear(); mo=d.getMonth()+1; da=d.getDate(); } }
+  if(!y||!mo||!da)return null;
+  if(y<2024||y>2028)return null;               // clamp obviously-wrong years
+  if(mo<1||mo>12||da<1||da>31)return null;
+  return y+'-'+String(mo).padStart(2,'0')+'-'+String(da).padStart(2,'0');
+}
+function fmtUpdated(iso){const d=new Date(iso); if(isNaN(d))return '—';
+  const dd=d.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+  return dd+' · '+String(d.getUTCHours()).padStart(2,'0')+':'+String(d.getUTCMinutes()).padStart(2,'0')+' UTC';}
+
+/* ---------- map the real job schema → the card model ---------- */
+function dqOf(j){
+  const s=((j.reason||'')+' '+(j.type||'')+' '+(j.title||'')).toLowerCase();
+  if(/working.?student|werkstudent|studentische|student assistant/.test(s))return 'Working-student';
+  if(/\bintern\b|internship|praktik|trainee|volont/.test(s))return 'Internship';
+  if(/\bph\.?d\b|doctora|doctoral|promotion|promoviert/.test(s))return 'PhD/doctorate';
+  if(/\bsenior\b|\blead\b|head of|director|chief|leitung|geschäftsführ|vorstand|principal|\bmanager\b/.test(s))return 'Senior';
+  if(/years? (of )?(professional |relevant )?experience|berufserfahrung|mindestens \d+ jahre/.test(s))return 'Experience';
+  if(/software|developer|engineer|machine learning|\bml\b|data scien|programming|devops|kubernetes/.test(s))return 'Deep tech';
+  if(/bar (exam|qualification)|legal qualification|rechtsanwalt|volljurist|\bassessor\b|chartered/.test(s))return 'Qualification';
+  if(/native|mother ?tongue|muttersprache|verhandlungssicher|fluent in (?!english)/.test(s))return 'Language';
+  if(/relocat|on-?site in|based in|vor ort|outside (the |your )?(target )?regio/.test(s))return 'Region';
+  return 'Ruled out';
+}
+function mapJob(j,region){
+  const hasPrio=typeof j.priority==='number';
+  const mt=(j.match||'').toLowerCase();
+  const rank=hasPrio?j.priority:(mt==='high'?72:(mt==='medium'||mt==='med')?50:mt==='low'?10:0);
+  const elig=(typeof j.eligible==='boolean')?j.eligible:true;   // legacy days predate the gate → treat as eligible
+  const iv=j.interest_score;
+  const intNum=(typeof iv==='number'&&iv>=1&&iv<=5)?iv:null;
+  return {region,
+    t:j.title||'(untitled role)', o:j.organisation||'Unknown', url:j.url||'#',
+    prio:rank, scored:hasPrio,
+    matchLabel:mt==='high'?'HIGH':(mt==='medium'||mt==='med')?'MED':mt==='low'?'LOW':'',
+    int:intNum, elig, loc:j.location||'', type:j.type||'', sal:j.salary||'',
+    due:parseDeadlineISO(j.deadline), why:(j.reason||'').trim(), dq:elig?'':dqOf(j)};
+}
+
+/* ---------- state ---------- */
+let DATA={berlin:{runs:0,updated:'—',days:[]}, london:{runs:0,updated:'—',days:[]}};
+let REGION='berlin', VIEW='brief', TIER='all', SORT='priority', SHOW_RULED=false, QUERY='', selKey=null;
+const userState=store.get('jm_userState')||{};
+const fb=store.get('jm_fb')||{};
+let seen=new Set();
+let prevVisit=null;
+
+/* apply persisted view settings (theme was already applied pre-paint) */
+(function(){const s=store.get('jm_settings'); if(s){ if(s.REGION)REGION=s.REGION; if(s.VIEW)VIEW=s.VIEW;
+  if(s.TIER)TIER=s.TIER; if(s.SORT)SORT=s.SORT; if(typeof s.SHOW_RULED==='boolean')SHOW_RULED=s.SHOW_RULED; }})();
+
+function persist(){store.set('jm_userState',userState);store.set('jm_fb',fb);store.set('jm_seen',[...seen]);}
+function persistSettings(){store.set('jm_settings',{REGION,VIEW,TIER,SORT,SHOW_RULED,dark:document.documentElement.dataset.theme==='dark'});}
+
+/* ---------- lane access ---------- */
+function keyOf(j){return j.region+'|'+j.o+'|'+j.t;}
+function st(k){return userState[k]||{};}
+function lane(region){return DATA[region].days.map(d=>({date:d.date, jobs:d.jobs.map(j=>({...j,region}))}));}
+function allJobs(region){return lane(region).flatMap(d=>d.jobs);}
+function everyJob(){return ['berlin','london'].flatMap(allJobs);}
+function allKeys(){const ks=[];['berlin','london'].forEach(r=>DATA[r].days.forEach(d=>d.jobs.forEach(j=>ks.push(keyOf({...j,region:r})))));return ks;}
+function isNew(j){return !seen.has(keyOf(j));}
+
+/* ---------- helpers ---------- */
+function daysUntil(due){ if(!due)return null; const d=new Date(due+'T00:00:00'); if(isNaN(d))return null; return Math.round((d-TODAY)/86400000); }
+function deadlineChip(due){
+  const n=daysUntil(due); if(n===null)return '';
+  if(n<0)return `<span class="deadline closed">Closed</span>`;
+  if(n===0)return `<span class="deadline urgent">Closes today</span>`;
+  if(n<=3)return `<span class="deadline urgent">Closes in ${n}d</span>`;
+  if(n<=10)return `<span class="deadline">Closes in ${n}d</span>`;
+  const d=new Date(due+'T00:00:00'); return `<span class="deadline">Due ${d.toLocaleDateString('en-GB',{day:'numeric',month:'short'})}</span>`;
+}
+function pips(n){let h='<span class="pips">';for(let i=1;i<=5;i++)h+=`<span class="pip ${i<=n?'on':''}"></span>`;h+='</span>';return h;}
+function interestChip(j){return j.int?`<span class="interest">Interest ${pips(j.int)}</span>`:'';}
+function tierOf(j){ if(!j.elig)return 'ruled'; if(j.prio>=55)return 'strong'; if(j.prio>=30)return 'watch'; return 'low'; }
+function relDate(s){const d=new Date(s+'T00:00:00');const diff=Math.round((TODAY-d)/86400000);if(diff===0)return 'Today';if(diff===1)return 'Yesterday';if(diff<7)return diff+' days ago';return d.toLocaleDateString('en-GB',{day:'numeric',month:'short'});}
+function fullDate(s){const d=new Date(s+'T00:00:00');return d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});}
+function agoText(ts){ if(!ts)return 'your first visit'; const mins=Math.round((Date.now()-ts)/60000);
+  if(mins<2)return 'moments ago'; if(mins<60)return mins+'m ago'; const h=Math.round(mins/60);
+  if(h<24)return h+'h ago'; const d=Math.round(h/24); return d===1?'yesterday':d+' days ago'; }
+
+const I={
+  open:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 4h6m0 0v6m0-6L10 14M18 14v4a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h4"/></svg>',
+  save:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/></svg>',
+  saveOn:'<svg fill="currentColor" viewBox="0 0 24 24"><path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/></svg>',
+  applied:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>',
+  dismiss:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>',
+  up:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 11v9H4a1 1 0 01-1-1v-7a1 1 0 011-1h3zm0 0l4-7a2 2 0 013 1.7V9h4.5a2 2 0 012 2.3l-1.2 7a2 2 0 01-2 1.7H7"/></svg>',
+  down:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 13V4h3a1 1 0 011 1v7a1 1 0 01-1 1h-3zm0 0l-4 7a2 2 0 01-3-1.7V15H5.5a2 2 0 01-2-2.3l1.2-7a2 2 0 012-1.7H17"/></svg>',
+  search:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"/></svg>',
+  ext:'<svg class="ext" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 4h6m0 0v6m0-6L9 15"/></svg>',
+  sun:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path stroke-linecap="round" d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+  moon:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/></svg>',
+};
+
+/* ---------- priority dial ---------- */
+function dial(prio,tier){
+  const r=52,c=2*Math.PI*r,off=c*(1-prio/100);
+  const col=tier==='strong'?'var(--match)':tier==='watch'?'var(--watch)':'var(--ink-soft)';
+  return `<div class="prio-dial"><svg viewBox="0 0 118 118">
+    <circle cx="59" cy="59" r="${r}" fill="none" stroke="var(--line)" stroke-width="7"/>
+    <circle class="dial-arc" cx="59" cy="59" r="${r}" fill="none" stroke="${col}" stroke-width="7" stroke-linecap="round"
+      stroke-dasharray="${c}" stroke-dashoffset="${off}" style="--c:${c};--off:${off}" transform="rotate(-90 59 59)"/>
+  </svg><div class="num"><b>${prio}</b><span>PRIORITY</span></div></div>`;
+}
+
+/* ---------- job card (Brief) ---------- */
+function card(j,delay){
+  const k=keyOf(j),s=st(k); if(s.dismissed)return '';
+  const tier=tierOf(j), ek=encodeURIComponent(k);
+  const cls=['card','t-'+tier]; if(s.applied)cls.push('is-applied'); if(s.saved)cls.push('is-saved'); if(k===selKey)cls.push('sel');
+  const pc=tier==='strong'?'go':tier==='watch'?'wa':'lo';
+  const meta=[`<span class="org">${esc(j.o)}</span>`]; if(j.loc)meta.push(esc(j.loc)); if(j.type)meta.push(esc(j.type)); if(j.sal&&j.sal!=='Not specified')meta.push(esc(j.sal));
+  const fbk=fb[k];
+  const chips=[deadlineChip(j.due),interestChip(j)].filter(Boolean).join('');
+  const prioInner=j.scored?`<b>${j.prio}</b><span>PRIO</span>`:`<b class="ml">${j.matchLabel||'—'}</b><span>MATCH</span>`;
+  return `<div class="${cls.join(' ')}" data-key="${ek}" style="--d:${delay}ms">
+    <div class="card-prio ${pc}">${prioInner}</div>
+    <div class="card-main">
+      <div class="card-titlerow">
+        <div class="title-wrap"><div class="card-title">${isNew(j)?'<span class="tag-new">New</span>':''}<a href="${j.url}" target="_blank" rel="noopener">${esc(j.t)}${I.ext}</a></div></div>
+        <div class="card-actions">
+          <button class="act save ${s.saved?'on':''}" title="Save (s)" onclick="act('save',this)" data-key="${ek}">${s.saved?I.saveOn:I.save}</button>
+          <button class="act applied ${s.applied?'on':''}" title="Mark applied (a)" onclick="act('applied',this)" data-key="${ek}">${I.applied}</button>
+          <button class="act dismiss" title="Dismiss (x)" onclick="act('dismiss',this)" data-key="${ek}">${I.dismiss}</button>
+        </div>
       </div>
-      <div class="flex items-center gap-1">
-        <label class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 cursor-pointer select-none px-2 py-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700" title="Show roles ruled ineligible">
-          <input type="checkbox" id="toggle-ineligible" class="accent-slate-500" onchange="document.body.classList.toggle('show-ineligible', this.checked)">
-          <span class="hidden sm:inline">Show ineligible</span>
-        </label>
-        <button onclick="toggleDark()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 transition-colors" title="Toggle dark mode">
-          <svg id="icon-sun" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42M12 6a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>
-          <svg id="icon-moon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        </button>
+      <div class="card-meta">${meta.join('<span style="opacity:.45">·</span>')}</div>
+      ${chips?`<div class="chips">${chips}</div>`:''}
+      ${j.why?`<div class="card-reason">${esc(j.why)}</div>`:''}
+      <div class="card-foot">
+        <div class="fb"><span class="fblabel">Good match?</span>
+          <button class="fbbtn up ${fbk==='up'?'on':''}" title="Good match (u)" onclick="feedback(this,'up')" data-key="${ek}">${I.up}</button>
+          <button class="fbbtn down ${fbk==='down'?'on':''}" title="Not for me (d)" onclick="feedback(this,'down')" data-key="${ek}">${I.down}</button>
+        </div>
       </div>
     </div>
-  </header>
+    ${s.applied?'<span class="stamp">Applied</span>':''}
+  </div>`;
+}
 
-  <!-- Main content -->
-  <main class="flex-1 max-w-3xl mx-auto w-full px-3 sm:px-4 py-4 sm:py-6 space-y-4 sm:space-y-6" id="main">
-    <div id="loading" class="text-center py-16 text-slate-400 dark:text-slate-500">
-      <svg class="w-8 h-8 mx-auto mb-3 animate-spin text-slate-300 dark:text-slate-600" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
-      Loading reports…
+/* ---------- ruled-out block ---------- */
+function ruledBlock(list){
+  if(!list.length)return '';
+  const items=list.map(j=>{
+    const closed=daysUntil(j.due)!==null&&daysUntil(j.due)<0;
+    const tags=[];
+    if(j.dq)tags.push(`<span class="dq">${esc(j.dq)}</span>`);
+    if(closed)tags.push(`<span class="dq closed">Closed</span>`);
+    if(j.int&&j.int>=5)tags.push(`<span class="dq interest5">Interest 5</span>`);
+    return `<div class="ruled-item">
+      <div class="ri-main">
+        <div class="rtitle"><a href="${j.url}" target="_blank" rel="noopener">${esc(j.t)}</a> <span class="rorg">· ${esc(j.o)}</span></div>
+        <div class="rwhy">${esc(j.why)}</div>
+      </div>
+      <div class="rright">${tags.join('')}</div>
+    </div>`;
+  }).join('');
+  return `<details class="ruled" ${SHOW_RULED?'open':''}>
+    <summary>${list.length} ruled out — reason shown per role
+      <svg class="chev" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></summary>
+    <div class="ruled-list">${items}</div></details>`;
+}
+
+/* ---------- filter / sort ---------- */
+function passes(j){
+  if(QUERY){const q=QUERY.toLowerCase(); if(!(j.t.toLowerCase().includes(q)||j.o.toLowerCase().includes(q)))return false;}
+  if(TIER==='strong')return j.elig&&tierOf(j)==='strong';
+  if(TIER==='watch')return j.elig&&(tierOf(j)==='strong'||tierOf(j)==='watch');
+  return true;
+}
+function sortJobs(a,b){
+  if(SORT==='closing'){const na=daysUntil(a.due),nb=daysUntil(b.due);const va=na===null||na<0?9999:na,vb=nb===null||nb<0?9999:nb;if(va!==vb)return va-vb;}
+  if(SORT==='interest'){const ai=a.int||0,bi=b.int||0;if(bi!==ai)return bi-ai;}
+  return b.prio-a.prio;
+}
+
+/* ---------- sparkline (real per-day eligible counts) ---------- */
+function sparkline(region){
+  const days=DATA[region].days.slice().reverse();           // oldest → newest
+  const series=days.map(d=>d.jobs.filter(j=>j.elig).length);
+  if(series.length<2)return '';
+  const w=150,h=30,max=Math.max(1,...series),step=w/(series.length-1);
+  const pts=series.map((v,i)=>`${(i*step).toFixed(1)},${(h-(v/max)*(h-4)-2).toFixed(1)}`);
+  const last=series.length-1;
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+    <polyline fill="none" stroke="var(--petrol)" stroke-width="1.5" stroke-linejoin="round" points="${pts.join(' ')}" opacity=".55"/>
+    <circle cx="${(last*step).toFixed(1)}" cy="${(h-(series[last]/max)*(h-4)-2).toFixed(1)}" r="2.5" fill="var(--gold)"/></svg>`;
+}
+
+/* ---------- masthead ---------- */
+function masthead(){
+  const L=DATA[REGION];
+  const trackedCt=Object.values(userState).filter(s=>s.saved||s.applied).length;
+  const themeIcon=document.documentElement.dataset.theme==='dark'?I.sun:I.moon;
+  const navRight = VIEW==='brief'
+    ? `<div class="region-seg">
+        <button class="${REGION==='berlin'?'on':''}" onclick="setRegion('berlin')">Berlin <span class="ct">${allJobs('berlin').filter(j=>j.elig&&tierOf(j)==='strong').length}</span></button>
+        <button class="${REGION==='london'?'on':''}" onclick="setRegion('london')">London <span class="ct">${allJobs('london').filter(j=>j.elig&&tierOf(j)==='strong').length}</span></button>
+      </div>`
+    : `<div class="region-note">Across Berlin + London</div>`;
+  return `<div class="masthead">
+    <div class="mast-top">
+      <div class="brand"><h1>Job Monitor</h1><span class="dateline">Daily Dispatch · ${esc(L.updated)} · ${L.runs} runs</span></div>
+      <div class="mast-tools">
+        <div class="searchwrap">${I.search}<input id="q" placeholder="Search roles…" value="${escAttr(QUERY)}" oninput="onSearch(this.value)"></div>
+        <button class="iconbtn theme" title="Toggle theme" onclick="toggleTheme()">${themeIcon}</button>
+        <button class="iconbtn" title="Keyboard shortcuts (?)" onclick="toggleHelp()"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path stroke-linecap="round" d="M7 10h.01M11 10h.01M15 10h.01M8 14h8"/></svg></button>
+      </div>
     </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 mt-auto">
-    <div class="max-w-3xl mx-auto px-4 py-4 pb-[calc(1rem+env(safe-area-inset-bottom))] flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-slate-500 dark:text-slate-400">
-      <p>&copy; 2026 Moritz Engel</p>
-      <p>Evaluated by Claude · Updated three times daily</p>
+    <div class="mast-nav">
+      <div class="viewtabs">
+        <button class="viewtab ${VIEW==='brief'?'on':''}" onclick="setView('brief')">Brief</button>
+        <button class="viewtab ${VIEW==='tracked'?'on':''}" onclick="setView('tracked')">Tracked <span class="vt-ct">${trackedCt}</span></button>
+      </div>
+      ${navRight}
     </div>
-  </footer>
+  </div>`;
+}
 
-  <script>
-    const DATA_BASE = './data';
-    const MAX_DAYS_SHOWN = 14;
+/* ---------- Brief view ---------- */
+function briefView(){
+  const L=DATA[REGION], jobs=allJobs(REGION), elig=jobs.filter(j=>j.elig);
+  if(!L.days.length){
+    return `<div class="sheet"><div class="quiet"><svg class="ico" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><h3>No data loaded for ${REGION==='berlin'?'Berlin':'London'} yet</h3><p>Either no runs have published here, or the data couldn’t be reached. Try the other region.</p></div></div>`;
+  }
+  /* Lead prefers a genuinely scored role over a high legacy-match one */
+  const scored=elig.filter(j=>j.scored);
+  const lead=(scored.length?scored:elig).slice().sort((a,b)=>b.prio-a.prio)[0];
+  const strongN=elig.filter(j=>tierOf(j)==='strong').length;
+  const watchN=elig.filter(j=>tierOf(j)==='watch').length;
+  const closingN=jobs.filter(j=>{const n=daysUntil(j.due);return j.elig&&n!==null&&n>=0&&n<=7;}).length;
+  const newN=jobs.filter(j=>isNew(j)&&!st(keyOf(j)).dismissed&&j.elig).length;
 
-    // ── Dark mode ──
-    function toggleDark() {
-      document.documentElement.classList.toggle('dark');
-      localStorage.setItem('dark', document.documentElement.classList.contains('dark'));
-    }
-    if (localStorage.getItem('dark') === 'true' || (!localStorage.getItem('dark') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    }
+  let html='';
+  if(newN>0){
+    html+=`<div class="checkbar"><span class="new-dot"></span><span><span class="nnew">${newN} new</span> since your last check · ${agoText(prevVisit)}</span><button class="seenbtn" onclick="markSeen()">Mark all seen</button></div>`;
+  }
+  html+=`<div class="sheet">`;
 
-    // ── Helpers ──
-    function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
-
-    function formatDate(str) {
-      const [y, m, d] = str.split('-');
-      const date = new Date(+y, +m - 1, +d);
-      const now = new Date();
-      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-      const target = new Date(+y, +m - 1, +d);
-      const diff = Math.round((today - target) / 86400000);
-      let relative = '';
-      if (diff === 0) relative = 'Today';
-      else if (diff === 1) relative = 'Yesterday';
-      else if (diff < 7) relative = `${diff} days ago`;
-      const full = date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-      return relative ? `${relative} — ${full}` : full;
-    }
-
-    function scoreDots(n, colorClass) {
-      const val = parseInt(n) || 0;
-      let html = '';
-      for (let i = 1; i <= 5; i++) {
-        html += `<div class="score-dot ${i <= val ? colorClass : 'bg-slate-200 dark:bg-slate-600'}"></div>`;
-      }
-      return html;
-    }
-
-    function metaValue(val) {
-      return val && val.toLowerCase() !== 'not specified';
-    }
-
-    // Parse a job's PRIORITY into a number, or NaN if absent (legacy entries).
-    function jobPriority(job) {
-      if (job.priority === '' || job.priority === null || job.priority === undefined) return NaN;
-      const p = parseInt(job.priority, 10);
-      return Number.isFinite(p) ? p : NaN;
-    }
-
-    // Ordering rank: the priority if present, else a fallback derived from the
-    // legacy match tier so historical days still sort sensibly.
-    function jobRank(job) {
-      const p = jobPriority(job);
-      if (!Number.isNaN(p)) return p;
-      const lvl = (job.match || 'low').toLowerCase();
-      return lvl === 'high' ? 72 : lvl === 'medium' ? 50 : 10;
-    }
-
-    // ── Build a single job card ──
-    function jobCard(job, idx) {
-      const p = jobPriority(job);
-      const hasPrio = !Number.isNaN(p);
-      const eligible = job.eligible !== false;  // undefined (legacy) -> eligible
-
-      let band;
-      if (!eligible) band = 'ineligible';
-      else if (hasPrio) band = p >= 80 ? 'top' : p >= 70 ? 'high' : p >= 45 ? 'medium' : 'low';
-      else { const lvl = (job.match || 'low').toLowerCase(); band = lvl === 'high' ? 'high' : lvl === 'medium' ? 'medium' : 'low'; }
-
-      const styles = {
-        top:    { border:'border-indigo-200 dark:border-indigo-800', bg:'bg-indigo-50/60 dark:bg-indigo-900/20', badgeBg:'bg-indigo-100 dark:bg-indigo-900/50', badgeText:'text-indigo-700 dark:text-indigo-300', bar:'bg-indigo-500' },
-        high:   { border:'border-green-200 dark:border-green-800', bg:'bg-green-50/60 dark:bg-green-900/20', badgeBg:'bg-green-100 dark:bg-green-900/50', badgeText:'text-green-700 dark:text-green-400', bar:'bg-green-500' },
-        medium: { border:'border-amber-200 dark:border-amber-800', bg:'bg-amber-50/60 dark:bg-amber-900/20', badgeBg:'bg-amber-100 dark:bg-amber-900/50', badgeText:'text-amber-700 dark:text-amber-400', bar:'bg-amber-500' },
-        low:    { border:'border-slate-200 dark:border-slate-700', bg:'bg-white dark:bg-slate-800', badgeBg:'bg-slate-100 dark:bg-slate-700', badgeText:'text-slate-500 dark:text-slate-400', bar:'bg-slate-400' },
-        ineligible: { border:'border-slate-200 dark:border-slate-700', bg:'bg-slate-50 dark:bg-slate-800/40', badgeBg:'bg-slate-200 dark:bg-slate-700', badgeText:'text-slate-500 dark:text-slate-400', bar:'bg-slate-300 dark:bg-slate-600' },
-      };
-      const s = styles[band];
-
-      const meta = [];
-      if (job.organisation) meta.push(`<span class="text-slate-600 dark:text-slate-300">${esc(job.organisation)}</span>`);
-      if (metaValue(job.location)) meta.push(`<span>${esc(job.location)}</span>`);
-      if (metaValue(job.type)) meta.push(`<span>${esc(job.type)}</span>`);
-      if (metaValue(job.deadline)) meta.push(`<span>Due ${esc(job.deadline)}</span>`);
-      if (metaValue(job.salary)) meta.push(`<span>${esc(job.salary)}</span>`);
-
-      // Scores: priority bar (+ interest) when present; else legacy score dots.
-      let scores = '';
-      if (hasPrio) {
-        const interest = job.interest_score;
-        scores = `<div class="mt-2.5 flex items-center gap-2">
-            <div class="prio-bar-track flex-1 bg-slate-100 dark:bg-slate-700"><div class="h-full ${s.bar}" style="width:${eligible ? Math.max(2, p) : 0}%"></div></div>
-            ${interest ? `<span class="text-[11px] text-slate-400 dark:text-slate-500 shrink-0">Interest ${esc(String(interest))}/5</span>` : ''}
-          </div>`;
-      } else if (job.field_score || job.skills_score || job.seniority_score) {
-        const dot = s.bar;
-        scores = `<div class="flex flex-wrap items-center gap-2 sm:gap-3 mt-2 text-xs text-slate-500 dark:text-slate-400">`;
-        if (job.field_score) scores += `<div class="flex items-center gap-1.5"><span>Field</span><div class="flex gap-0.5">${scoreDots(job.field_score, dot)}</div></div>`;
-        if (job.skills_score) scores += `<div class="flex items-center gap-1.5"><span>Skills</span><div class="flex gap-0.5">${scoreDots(job.skills_score, dot)}</div></div>`;
-        if (job.seniority_score) scores += `<div class="flex items-center gap-1.5"><span>Seniority</span><div class="flex gap-0.5">${scoreDots(job.seniority_score, dot)}</div></div>`;
-        scores += `</div>`;
-      }
-
-      let badge;
-      if (!eligible) badge = 'ineligible';
-      else if (hasPrio) badge = band === 'top' ? `★ ${p}` : `${p}`;
-      else badge = (job.match || 'low').toLowerCase();
-
-      const cardCls = `fade-in rounded-lg border ${s.border} ${s.bg} p-3 sm:p-4` + (eligible ? '' : ' ineligible-card opacity-75');
-
-      return `
-        <div class="${cardCls}" style="animation-delay:${Math.min(idx, 12) * 40}ms">
-          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2 sm:gap-3">
-            <div class="min-w-0 flex-1">
-              <h3 class="font-semibold text-slate-800 dark:text-slate-100 leading-snug">
-                ${job.url ? `<a href="${esc(job.url)}" target="_blank" rel="noopener" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">${esc(job.title)}<svg class="w-3 h-3 inline ml-1 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>` : esc(job.title)}
-              </h3>
-              ${meta.length ? `<div class="flex flex-wrap gap-x-2 gap-y-0.5 mt-1.5 text-xs text-slate-500 dark:text-slate-400">${meta.join('<span class="text-slate-300 dark:text-slate-600">·</span>')}</div>` : ''}
-              ${scores}
-              ${job.reason ? `<p class="mt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">${esc(job.reason)}</p>` : ''}
-            </div>
-            <span class="shrink-0 self-start text-xs font-semibold px-2 py-1 rounded-md order-first sm:order-last ${s.badgeBg} ${s.badgeText}">${badge}</span>
+  if(lead){
+    const lt=tierOf(lead),k=keyOf(lead),s=st(k),ek=encodeURIComponent(k);
+    const meta=[`<span class="org">${esc(lead.o)}</span>`]; if(lead.loc)meta.push(esc(lead.loc)); if(lead.type)meta.push(esc(lead.type)); if(lead.sal&&lead.sal!=='Not specified')meta.push(esc(lead.sal));
+    html+=`<div class="lead ${lt==='watch'?'is-watch':''}">
+      <div class="lead-eyebrow">Today's lead<span class="rule"></span>${deadlineChip(lead.due)}</div>
+      <div class="lead-body">
+        <div class="lead-left">
+          <h2 class="lead-title"><a href="${lead.url}" target="_blank" rel="noopener">${esc(lead.t)}</a></h2>
+          <div class="lead-meta">${meta.join('<span style="opacity:.4">·</span>')}${lead.int?`<span style="opacity:.4">·</span><span class="interest">Interest ${pips(lead.int)}</span>`:''}</div>
+          ${lead.why?`<p class="lead-reason">${esc(lead.why)}</p>`:''}
+          <div class="lead-actions">
+            <a class="btn primary" href="${lead.url}" target="_blank" rel="noopener">${I.open} Open posting</a>
+            <button class="btn gold ${s.saved?'on':''}" onclick="act('save',this);render()" data-key="${ek}">${I.save} ${s.saved?'Saved':'Save'}</button>
+            <button class="btn ${s.applied?'on':''}" onclick="act('applied',this);render()" data-key="${ek}">${I.applied} ${s.applied?'Applied':'Mark applied'}</button>
           </div>
-        </div>`;
-    }
+        </div>
+        <div class="lead-right">${dial(lead.prio,lt)}</div>
+      </div></div>`;
+  }
 
-    // ── Build a day section ──
-    function daySection(dateStr, data, isFirst) {
-      const jobs = data.jobs || [];
-      if (jobs.length === 0) return '';
+  html+=`<div class="summary">
+    <button class="stat clickable" onclick="setTier('all')"><div class="num">${jobs.length}</div><div class="lbl">In window</div></button>
+    <button class="stat clickable" onclick="setTier('strong')"><div class="num go">${strongN}</div><div class="lbl">Strong ≥55</div></button>
+    <button class="stat clickable" onclick="setTier('watch')"><div class="num wa">${watchN}</div><div class="lbl">To watch</div></button>
+    <div class="stat">
+      <button class="stat clickable" style="border:0;padding:0;flex:none" onclick="setSort('closing')"><div class="num ur">${closingN}</div><div class="lbl">Closing ≤7d</div></button>
+      <div style="flex:1"><div class="spark-lbl">${L.days.length}-day activity</div>${sparkline(REGION)}</div>
+    </div>
+  </div>`;
 
-      const visible = jobs.filter(j => j.eligible !== false);
-      const high = visible.filter(j => jobRank(j) >= 70);
-      const medium = visible.filter(j => { const r = jobRank(j); return r >= 45 && r < 70; });
-      const hidden = jobs.length - visible.length;
+  html+=`<div class="controls">
+    <div class="tier-seg">
+      <button class="${TIER==='strong'?'on':''}" onclick="setTier('strong')"><span class="dot" style="background:var(--match)"></span>Strong</button>
+      <button class="${TIER==='watch'?'on':''}" onclick="setTier('watch')"><span class="dot" style="background:var(--watch)"></span>Watch</button>
+      <button class="${TIER==='all'?'on':''}" onclick="setTier('all')"><span class="dot" style="background:var(--ink-soft)"></span>All</button>
+    </div>
+    <span class="grow"></span>
+    <div class="sortwrap">Sort<select onchange="setSort(this.value)">
+      <option value="priority" ${SORT==='priority'?'selected':''}>Priority</option>
+      <option value="closing" ${SORT==='closing'?'selected':''}>Closing soon</option>
+      <option value="interest" ${SORT==='interest'?'selected':''}>Interest</option>
+    </select></div>
+    <label class="ruled-toggle"><input type="checkbox" ${SHOW_RULED?'checked':''} onchange="setRuled(this.checked)">Show ruled-out</label>
+  </div>`;
 
-      const totalBadge = `<span class="text-xs font-medium px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400">${jobs.length} job${jobs.length === 1 ? '' : 's'}</span>`;
-      const highBadge = high.length ? `<span class="text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-400">${high.length} high</span>` : '';
-      const medBadge = medium.length ? `<span class="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-400">${medium.length} medium</span>` : '';
-      const ineligBadge = hidden ? `<span class="text-xs font-medium px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-400 dark:text-slate-500">${hidden} ineligible</span>` : '';
+  VISIBLE=[]; KEYMAP={};
+  let any=false,delay=0;
+  lane(REGION).forEach(day=>{
+    const e=day.jobs.filter(j=>j.elig&&passes(j)&&!st(keyOf(j)).dismissed).sort(sortJobs);
+    const ruled=day.jobs.filter(j=>!j.elig&&passes(j)&&!st(keyOf(j)).dismissed);
+    if(e.length===0&&(!SHOW_RULED||ruled.length===0))return;
+    any=true;
+    const counts=`${e.length} shown${ruled.length?` · ${ruled.length} ruled out`:''}`;
+    let cardsHtml='';
+    e.forEach(j=>{const k=keyOf(j);VISIBLE.push(k);KEYMAP[k]=j;cardsHtml+=card(j,Math.min(delay,560));delay+=45;});
+    html+=`<div class="group">
+      <div class="group-head"><span class="group-date">${fullDate(day.date)}</span><span class="group-rel">${relDate(day.date)}</span><span class="group-counts">${counts}</span></div>
+      <div class="group-rule"></div>
+      <div class="cards">${cardsHtml}</div>
+      ${SHOW_RULED?ruledBlock(ruled):''}
+    </div>`;
+  });
+  if(!any){html+=`<div class="quiet"><svg class="ico" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"/></svg><h3>Nothing matches this filter</h3><p>Widen to “All”, clear the search, or switch region.</p></div>`;}
+  html+=`</div>`;
+  if(!VISIBLE.includes(selKey))selKey=VISIBLE[0]||null;
+  return html;
+}
 
-      let html = `
-        <section class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm">
-          <div class="px-3 sm:px-5 py-4 border-b border-slate-100 dark:border-slate-700">
-            <div class="flex items-start sm:items-center justify-between flex-wrap gap-2">
-              <h2 class="font-semibold text-sm sm:text-base text-slate-800 dark:text-slate-100">${formatDate(dateStr)}</h2>
-              <div class="flex items-center gap-1.5 flex-wrap">${totalBadge}${highBadge}${medBadge}${ineligBadge}</div>
-            </div>
-          </div>`;
+/* ---------- Tracked view (cross-region pipeline) ---------- */
+function trackedView(){
+  const jobs=everyJob();
+  const byKey={}; jobs.forEach(j=>byKey[keyOf(j)]=j);
+  const applied=[],saved=[],dismissed=[];
+  Object.keys(userState).forEach(k=>{const s=userState[k],j=byKey[k];if(!j)return;
+    if(s.applied)applied.push(j); else if(s.saved)saved.push(j); else if(s.dismissed)dismissed.push(j);});
+  const byPrio=(a,b)=>b.prio-a.prio;
+  applied.sort(byPrio);saved.sort(byPrio);dismissed.sort(byPrio);
 
-      // Ranked by PRIORITY (highest first); ineligible roles sink to the bottom
-      // and stay hidden unless the user opts to show them.
-      const ordered = [...jobs].sort((a, b) => jobRank(b) - jobRank(a));
-      html += `
-          <div class="px-3 sm:px-5 py-4 space-y-3">
-            ${ordered.map((j, i) => jobCard(j, i)).join('')}
-          </div>`;
+  let html=`<div class="sheet">
+    <p class="tracked-intro">Your pipeline across both regions — what you’ve shortlisted, applied to, and ruled out by hand.</p>`;
+  const block=(title,cls,list)=>{
+    if(!list.length)return '';
+    let rows=list.map(j=>{
+      const k=keyOf(j),ek=encodeURIComponent(k),pc=tierOf(j)==='strong'?'go':tierOf(j)==='watch'?'wa':'';
+      const meta=[`<span class="reg">${j.region==='berlin'?'Berlin':'London'}</span>`,esc(j.o)]; if(j.loc)meta.push(esc(j.loc));
+      const dl=deadlineChip(j.due);
+      const prioCell=j.scored?j.prio:`<span class="ml">${j.matchLabel||'—'}</span>`;
+      const actions = cls==='dismissed'
+        ? `<button class="act" title="Restore" onclick="reopen(this)" data-key="${ek}">${I.save}</button>`
+        : `<a class="act" title="Open" href="${j.url}" target="_blank" rel="noopener">${I.open}</a>
+           ${cls==='saved'?`<button class="act applied" title="Mark applied" onclick="act('applied',this);render()" data-key="${ek}">${I.applied}</button>`:''}
+           <button class="act" title="Remove" onclick="act('dismiss',this);render()" data-key="${ek}">${I.dismiss}</button>`;
+      return `<div class="trow ${cls==='dismissed'?'dismissed-row':''}">
+        <div class="trow-prio ${pc}">${prioCell}</div>
+        <div class="trow-main"><div class="trow-title"><a href="${j.url}" target="_blank" rel="noopener">${esc(j.t)}</a></div>
+          <div class="trow-meta">${meta.join('<span>·</span>')}${dl?'<span>·</span>'+dl:''}</div></div>
+        <div class="trow-actions">${actions}</div></div>`;
+    }).join('');
+    return `<div class="track-group"><div class="track-head"><span class="th-pill ${cls}">${title}</span><span class="th-ct">${list.length}</span><span class="th-rule"></span></div>${rows}</div>`;
+  };
+  if(!applied.length&&!saved.length&&!dismissed.length){
+    html+=`<div class="quiet"><svg class="ico" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/></svg><h3>Nothing tracked yet</h3><p>Save or mark roles as applied from the Brief, and they’ll collect here.</p></div>`;
+  } else {
+    html+=block('Applied','applied',applied)+block('Saved','saved',saved)+block('Dismissed','dismissed',dismissed);
+  }
+  html+=`</div>`;
+  return html;
+}
 
-      html += `</section>`;
-      return html;
-    }
+/* ---------- main render ---------- */
+let VISIBLE=[],KEYMAP={};
+function render(){
+  const html=masthead()+(VIEW==='brief'?briefView():trackedView())
+    +`<div class="foot"><span>© 2026 Moritz Engel</span><span>Evaluated by Claude · <span class="kbd-hint" onclick="toggleHelp()">? shortcuts</span></span></div>`;
+  document.getElementById('app-content').innerHTML=html;
+}
 
-    // ── Init ──
-    async function init() {
-      const main = document.getElementById('main');
-      const loading = document.getElementById('loading');
-      try {
-        const resp = await fetch(`${DATA_BASE}/dates.json?t=${Date.now()}`);
-        if (!resp.ok) throw new Error();
-        const dates = (await resp.json()).sort().reverse();
-        if (dates.length === 0) throw new Error();
+/* ---------- toast ---------- */
+let toastT;
+function toast(msg,ok){
+  const el=document.getElementById('toast'); if(!el)return;
+  el.innerHTML=(ok?`<span class="t-ico">${I.applied}</span>`:'')+`<span>${esc(msg)}</span>`;
+  el.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove('show'),1700);
+}
 
-        // Load up to MAX_DAYS_SHOWN days
-        const toLoad = dates.slice(0, MAX_DAYS_SHOWN);
-        const results = await Promise.all(toLoad.map(async d => {
-          try {
-            const r = await fetch(`${DATA_BASE}/${d}.json?t=${Date.now()}`);
-            if (!r.ok) return null;
-            return { date: d, data: await r.json() };
-          } catch { return null; }
-        }));
+/* ---------- interactions ---------- */
+function setRegion(r){REGION=r;selKey=null;persistSettings();render();}
+function setView(v){VIEW=v;persistSettings();render();}
+function setTier(t){TIER=t;persistSettings();render();}
+function setSort(s){SORT=s;persistSettings();render();}
+function setRuled(v){SHOW_RULED=v;persistSettings();render();}
+function toggleTheme(){const cur=document.documentElement.dataset.theme;document.documentElement.dataset.theme=cur==='dark'?'light':'dark';persistSettings();render();}
+function markSeen(){allKeys().forEach(k=>seen.add(k));persist();render();toast('Marked all as seen');}
 
-        loading.remove();
+let searchT;
+function onSearch(v){
+  QUERY=v;
+  clearTimeout(searchT);
+  searchT=setTimeout(()=>{ render(); const i=document.getElementById('q'); if(i){i.focus();i.setSelectionRange(v.length,v.length);} },170);
+}
+function act(kind,btn){
+  const k=decodeURIComponent(btn.dataset.key),s=userState[k]||(userState[k]={});
+  if(kind==='dismiss'){s.dismissed=true;s.saved=false;s.applied=false;toast('Dismissed');}
+  else if(kind==='save'){s.saved=!s.saved;if(s.saved){s.dismissed=false;}toast(s.saved?'Saved to pipeline':'Removed from saved');}
+  else if(kind==='applied'){s.applied=!s.applied;if(s.applied){s.dismissed=false;s.saved=false;}toast(s.applied?'Marked as applied':'Unmarked',s.applied);}
+  seen.add(k);
+  persist(); render();
+}
+function feedback(btn,dir){
+  const k=decodeURIComponent(btn.dataset.key);
+  fb[k]=fb[k]===dir?undefined:dir;
+  persist(); render();
+  if(fb[k])toast(dir==='up'?'Noted — more like this':'Noted — fewer like this');
+}
+function reopen(btn){const k=decodeURIComponent(btn.dataset.key);const s=userState[k];if(s){s.dismissed=false;}persist();render();toast('Restored to saved');}
+function toggleHelp(){const o=document.getElementById('kbd');if(o)o.classList.toggle('show');}
 
-        // Summary bar
-        const allJobs = results.filter(Boolean).flatMap(r => r.data.jobs || []);
-        const eligibleJobs = allJobs.filter(j => j.eligible !== false);
-        const totalHigh = eligibleJobs.filter(j => jobRank(j) >= 70).length;
-        const totalMedium = eligibleJobs.filter(j => { const r = jobRank(j); return r >= 45 && r < 70; }).length;
-        const totalAll = allJobs.length;
+/* ---------- keyboard navigation ---------- */
+function moveSel(delta){
+  if(VIEW!=='brief'||!VISIBLE.length)return;
+  let i=VISIBLE.indexOf(selKey); if(i<0)i=0; i=Math.max(0,Math.min(VISIBLE.length-1,i+delta));
+  selKey=VISIBLE[i]; render();
+  const el=document.querySelector('.card.sel'); if(el)el.scrollIntoView({block:'nearest',behavior:'smooth'});
+}
+function selJob(){return KEYMAP[selKey];}
+function doOnSel(kind){
+  if(!selKey)return; const j=selJob(); if(!j)return;
+  if(kind==='open'){ if(j.url&&j.url!=='#')window.open(j.url,'_blank'); else toast('No link for this posting'); return; }
+  const fake={dataset:{key:encodeURIComponent(selKey)}};
+  if(kind==='save'||kind==='applied'||kind==='dismiss')act(kind,fake);
+  if(kind==='up'||kind==='down')feedback(fake,kind);
+  setTimeout(()=>{const el=document.querySelector('.card.sel');if(el){el.classList.add('flash');}},10);
+}
+document.addEventListener('keydown',e=>{
+  const tag=(e.target.tagName||'').toLowerCase();
+  if(tag==='input'||tag==='select'||tag==='textarea'){ if(e.key==='Escape')e.target.blur(); return; }
+  if(e.key==='?'){e.preventDefault();toggleHelp();return;}
+  if(e.key==='Escape'){const o=document.getElementById('kbd');if(o)o.classList.remove('show');return;}
+  if(e.key==='/'){e.preventDefault();const i=document.getElementById('q');if(i)i.focus();return;}
+  if(VIEW!=='brief')return;
+  switch(e.key){
+    case 'j': case 'ArrowDown': e.preventDefault(); moveSel(1); break;
+    case 'k': case 'ArrowUp': e.preventDefault(); moveSel(-1); break;
+    case 'g': e.preventDefault(); selKey=VISIBLE[0]||null; render(); window.scrollTo({top:0,behavior:'smooth'}); break;
+    case 'o': case 'Enter': e.preventDefault(); doOnSel('open'); break;
+    case 's': e.preventDefault(); doOnSel('save'); break;
+    case 'a': e.preventDefault(); doOnSel('applied'); break;
+    case 'x': e.preventDefault(); doOnSel('dismiss'); break;
+    case 'u': e.preventDefault(); doOnSel('up'); break;
+    case 'd': e.preventDefault(); doOnSel('down'); break;
+  }
+});
 
-        if (totalAll > 0) {
-          main.insertAdjacentHTML('afterbegin', `
-            <div class="grid grid-cols-3 gap-2 sm:gap-3">
-              <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-3 sm:p-4 text-center shadow-sm">
-                <div class="text-xl sm:text-2xl font-bold text-slate-800 dark:text-slate-100">${totalAll}</div>
-                <div class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 mt-0.5">New Jobs</div>
-              </div>
-              <div class="bg-white dark:bg-slate-800 rounded-xl border border-green-200 dark:border-green-800 p-3 sm:p-4 text-center shadow-sm">
-                <div class="text-xl sm:text-2xl font-bold text-green-600 dark:text-green-400">${totalHigh}</div>
-                <div class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 mt-0.5">High Match</div>
-              </div>
-              <div class="bg-white dark:bg-slate-800 rounded-xl border border-amber-200 dark:border-amber-800 p-3 sm:p-4 text-center shadow-sm">
-                <div class="text-xl sm:text-2xl font-bold text-amber-600 dark:text-amber-400">${totalMedium}</div>
-                <div class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 mt-0.5">Medium Match</div>
-              </div>
-            </div>
-          `);
-        }
-
-        // Day sections
-        let hasContent = false;
-        for (const result of results) {
-          if (!result || (result.data.jobs || []).length === 0) continue;
-          hasContent = true;
-          main.insertAdjacentHTML('beforeend', daySection(result.date, result.data, !hasContent));
-        }
-
-        if (!hasContent) {
-          main.insertAdjacentHTML('beforeend', `
-            <div class="text-center py-16 text-slate-400 dark:text-slate-500">
-              <svg class="w-12 h-12 mx-auto mb-3 text-slate-300 dark:text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-              <p class="font-medium">No new jobs found recently</p>
-              <p class="text-sm mt-1">Check back after the next monitor run.</p>
-            </div>
-          `);
-        }
-
-      } catch (e) {
-        loading.innerHTML = `
-          <svg class="w-12 h-12 mx-auto mb-3 text-slate-300 dark:text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          <p class="font-medium text-slate-500 dark:text-slate-400">No reports available yet</p>
-          <p class="text-sm mt-1">The monitor will generate data on its next run.</p>
-        `;
-      }
-    }
-
-    init();
-  </script>
+/* ---------- boot: fetch both lanes, seed "seen", render ---------- */
+async function loadLane(region, base){
+  try{
+    const dres=await fetch(`${base}/dates.json?t=${Date.now()}`);
+    if(!dres.ok)return;
+    let dates=await dres.json();
+    dates=(Array.isArray(dates)?dates:[]).slice().sort().reverse().slice(0,DAYS_WINDOW);
+    const results=await Promise.all(dates.map(async d=>{
+      try{const r=await fetch(`${base}/${d}.json?t=${Date.now()}`); if(!r.ok)return null; return {date:d,data:await r.json()};}
+      catch(e){return null;}
+    }));
+    const ok=results.filter(Boolean);
+    const days=ok.map(r=>({date:r.date, jobs:(r.data.jobs||[]).map(j=>mapJob(j,region))}));
+    const latest=ok[0];
+    DATA[region]={
+      runs: latest&&typeof latest.data.run_count==='number'?latest.data.run_count:0,
+      updated: latest&&latest.data.generated_at?fmtUpdated(latest.data.generated_at):(days[0]?fullDate(days[0].date):'—'),
+      days
+    };
+  }catch(e){ /* leave the empty lane in place */ }
+}
+async function boot(){
+  await Promise.all([loadLane('berlin',LANES.berlin), loadLane('london',LANES.london)]);
+  const keysNow=allKeys();
+  const stored=store.get('jm_seen');
+  if(stored===null){ seen=new Set(keysNow); }                 // first visit ever → nothing is "new"
+  else { const setNow=new Set(keysNow); seen=new Set(stored.filter(k=>setNow.has(k))); }  // prune to current
+  store.set('jm_seen',[...seen]);
+  prevVisit=store.get('jm_lastVisit'); store.set('jm_lastVisit',Date.now());
+  render();
+}
+boot();
+</script>
 </body>
 </html>
