@@ -166,6 +166,20 @@ CF_WORKER_TOKEN = os.environ.get("CF_WORKER_TOKEN", "")
 JINA_API_KEY = os.environ.get("JINA_API_KEY", "")  # optional: higher r.jina.ai rate limit; keyless free tier works without it
 RUN_LABEL = os.environ.get("RUN_LABEL", "")
 
+# ─── Targeted retry (optional; set by a dispatched run) ───
+# FORCE_SITE_IDS limits this run to specific site id(s) (comma-separated);
+# empty = all sites, i.e. a normal run. IGNORE_PAUSE additionally clears the
+# failure-pause gate so a currently-paused site is retried immediately.
+def _parse_site_ids(raw):
+    out = set()
+    for tok in (raw or "").replace(";", ",").split(","):
+        tok = tok.strip()
+        if tok.isdigit():
+            out.add(int(tok))
+    return out
+FORCE_SITE_IDS = _parse_site_ids(os.environ.get("FORCE_SITE_IDS", ""))
+IGNORE_PAUSE = os.environ.get("IGNORE_PAUSE", "").strip().lower() in ("1", "true", "yes")
+
 # ─── Scoring / notification thresholds ───
 # A role reaches Telegram only when it is ELIGIBLE and its PRIORITY (0–100)
 # meets this threshold. Tunable; lower = more notifications.
@@ -3540,6 +3554,10 @@ def main():
     print(f"=== Job Monitor Run: {now.isoformat()} ===")
     if DRY_RUN:
         print("🏃 DRY RUN — populating state only, no LLM calls or notifications\n")
+    if FORCE_SITE_IDS:
+        _ids = ", ".join(str(i) for i in sorted(FORCE_SITE_IDS))
+        print(f"🎯 Targeted run — only site id(s): {_ids}"
+              + (" · ignoring pause" if IGNORE_PAUSE else ""))
     print()
 
     state = load_state()
@@ -3560,6 +3578,9 @@ def main():
     # here — phase-1 handlers never touch state — so there are no races. ──
     jobs = []
     for i, site in enumerate(SITES):
+        # Targeted retry: skip every site except the requested id(s).
+        if FORCE_SITE_IDS and site.get("id") not in FORCE_SITE_IDS:
+            continue
         name = site["name"]
         method = site["method"]
         site_key = site["url"]
@@ -3571,14 +3592,15 @@ def main():
         paused_until = state[site_key].get("paused_until", "")
         if paused_until:
             pause_end = datetime.fromisoformat(paused_until)
-            if now < pause_end:
+            if now < pause_end and not IGNORE_PAUSE:
                 job["status"] = "paused"
                 job["pause_until"] = paused_until
                 job["pause_remaining_h"] = (pause_end - now).total_seconds() / 3600
                 jobs.append(job)
                 continue
             else:
-                # Pause expired: reset now, before dispatch (handler ignores state).
+                # Pause expired (or force-cleared via IGNORE_PAUSE): reset now,
+                # before dispatch (handler ignores state).
                 state[site_key]["consecutive_errors"] = 0
                 state[site_key].pop("paused_until", None)
                 job["pause_reset"] = True
