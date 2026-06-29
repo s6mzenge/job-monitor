@@ -3,11 +3,6 @@ name: Job Monitor
 on:
   workflow_dispatch:
     inputs:
-      lane:
-        description: "Which lane(s) to run"
-        type: choice
-        options: [all, de, london]
-        default: all
       force_site_id:
         description: "Retry only this site id (blank = every site in the lane; comma-separate for several)"
         type: string
@@ -22,12 +17,6 @@ on:
 jobs:
   check-jobs:
     name: check-jobs (${{ matrix.lane }})
-    # Normal/scheduled dispatch runs both lanes (lane defaults to "all"). A
-    # targeted dispatch with lane=de|london runs only that lane, so retrying a
-    # single site never spends the other lane's quota. The gate reads
-    # inputs.lane, populated only on workflow_dispatch (the sole trigger here);
-    # the event_name check keeps both lanes running if a `schedule:` is ever added.
-    if: ${{ github.event_name != 'workflow_dispatch' || inputs.lane == 'all' || inputs.lane == matrix.lane }}
     strategy:
       fail-fast: false          # one lane failing must not cancel the other
       matrix:
