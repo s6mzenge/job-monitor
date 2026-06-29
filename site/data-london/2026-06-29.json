@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T11:01:12.933811+00:00",
-  "run_count": 24,
+  "generated_at": "2026-06-29T11:31:08.548590+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -339,6 +339,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Up to GBP 80,000",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Accountability to Affected Populations (AAP) Officer",
+      "organisation": "Medical Aid for Palestinians",
+      "url": "https://careers.map.org.uk/en/postings/277026f9-1b8c-43fd-9414-3ddd99ff0dad",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "Location policy is London only, and this role is onsite in Gaza with no London or remote option, which is a hard filter. It is also a field humanitarian-accountability post likely requiring regional/operational experience and Arabic, outside the candidate's profile.",
+      "location": "Gaza, PS",
+      "type": "Fixed Term - Full Time",
+      "deadline": "July 13, 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
