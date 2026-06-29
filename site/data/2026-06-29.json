@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T11:01:21.011664+00:00",
-  "run_count": 24,
+  "generated_at": "2026-06-29T11:31:01.782271+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Studentische Teilzeitkraft Archiv Grünes Gedächtnis (w/m/d/k.A.)",
@@ -135,6 +135,23 @@
       "type": "Part-time (working-student, 10h/week)",
       "deadline": "2026-07-26",
       "salary": "TV-L Egr. 3",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wiss. Mitarbeiter*in (w/m/d) — Zentrum für Biodiversitätsinformatik (NFDI4Biodiversity)",
+      "organisation": "FU Berlin (wiss.)",
+      "url": "https://www.fu-berlin.de/universitaet/beruf-karriere/jobs/wiss/59_ze-botanischer-garten-botanisches-museum/BG-BOBerlin_04_2026_ZBS_4Bio-2Connect.html",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The post requires a completed Master's in biology, informatics or bioinformatics as an essential entry requirement — a qualification the candidate (MSc International Relations) does not hold. The work is in biodiversity informatics and semantic data annotation, entirely outside the candidate's research field and skill set.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (75%), fixed-term until 31.12.2028",
+      "deadline": "2026-07-20",
+      "salary": "Entgeltgruppe 13 TV-L",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
