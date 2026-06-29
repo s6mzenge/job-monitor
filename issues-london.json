@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-06-29T00:31:10.821566+00:00",
-  "site_summary": {},
+  "last_updated": "2026-06-29T01:01:11.513078+00:00",
+  "site_summary": {
+    "Demos": {
+      "site_id": 125,
+      "url": "https://demos.co.uk/jobs/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-06-29T01:01:11.513078+00:00",
+      "last_recent_failure": "2026-06-29T01:01:11.513078+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fdemos.co.uk%2Fjobs%2F"
+    }
+  },
   "issues": [
     {
       "timestamp": "2026-06-28T15:46:14.886630+00:00",
@@ -10,6 +24,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content.",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-06-29T01:01:11.513078+00:00",
+      "site": "Demos",
+      "site_id": 125,
+      "url": "https://demos.co.uk/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fdemos.co.uk%2Fjobs%2F",
       "consecutive_count": 1
     }
   ]
