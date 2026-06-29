@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T12:01:08.763562+00:00",
-  "run_count": 26,
+  "generated_at": "2026-06-29T12:21:31.679078+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Studentische Teilzeitkraft Archiv Grünes Gedächtnis (w/m/d/k.A.)",
@@ -203,6 +203,23 @@
       "type": "Internship",
       "deadline": "2026-07-13",
       "salary": "€2,349/month (gross)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Bibliotheksmitarbeiter:in (w/d/m) für Erschließung kartographischer Materialien und Geschäftsstellenaufgaben",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/2750579b5b87d62485f612269fa222aa8f6da5ca0",
+      "priority": 12,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role essentially requires a completed library-services apprenticeship (Fachangestellte für Medien und Informationsdienste) or equivalent practical experience plus RDA cataloguing knowledge, none of which the candidate has — so it is a weak paper fit despite the \"equivalent abilities\" loophole. The subject matter (cataloguing maps and administrative library work) sits entirely outside the candidate's interest zones and offers no research-and-writing pull.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (39h, part-time possible)",
+      "deadline": "2026-07-26",
+      "salary": "EG 8 TVöD Bund",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
