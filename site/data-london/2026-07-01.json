@@ -1,7 +1,7 @@
 {
   "date": "2026-07-01",
-  "generated_at": "2026-07-01T19:01:20.145377+00:00",
-  "run_count": 9,
+  "generated_at": "2026-07-01T19:31:01.046558+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Professor of Rhetoric",
@@ -797,6 +797,23 @@
       "location": "London / Glasgow / Salford",
       "type": "Full-time",
       "deadline": "2026-07-08",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for expert advisory committee members, not a paid entry-level role — it seeks established experts to advise a project, which the candidate is not, and advisory committee membership is typically unpaid/voluntary. Although the human-rights and securitisation theme is close to the candidate's interests, the role is not a genuine paid vacancy at their level.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
