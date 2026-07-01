@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-01T17:31:06.281993+00:00",
+  "generated_at": "2026-07-01T18:01:03.188553+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 141,
-  "erroring": 0,
+  "healthy": 140,
+  "erroring": 1,
   "paused": 0,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 86,
+    "html": 85,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -136,7 +136,6 @@
     "Portland Communications",
     "Privacy International",
     "Protection Approaches",
-    "Public Law Project",
     "RAND Europe",
     "REDRESS",
     "Reprieve",
@@ -166,5 +165,19 @@
     "Wiener Holocaust Library",
     "Wits University"
   ],
-  "sites": []
+  "sites": [
+    {
+      "id": 143,
+      "name": "Public Law Project",
+      "url": "https://publiclawproject.org.uk/support-us/latest-opportunities/",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-01T18:01:03.188553+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpubliclawproject.org.uk%2Fsupport-us%2Flatest-opportunities%2F"
+    }
+  ]
 }
