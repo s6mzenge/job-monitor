@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-01T18:01:03.188553+00:00",
-  "site_summary": {
-    "Public Law Project": {
-      "site_id": 143,
-      "url": "https://publiclawproject.org.uk/support-us/latest-opportunities/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-07-01T18:01:03.188553+00:00",
-      "last_recent_failure": "2026-07-01T18:01:03.188553+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fpubliclawproject.org.uk%2Fsupport-us%2Flatest-opportunities%2F"
-    }
-  },
+  "last_updated": "2026-07-01T18:31:10.958453+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T15:46:14.886630+00:00",
