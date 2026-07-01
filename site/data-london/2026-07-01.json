@@ -1,7 +1,7 @@
 {
   "date": "2026-07-01",
-  "generated_at": "2026-07-01T15:39:16.599790+00:00",
-  "run_count": 1,
+  "generated_at": "2026-07-01T15:56:10.501231+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Professor of Rhetoric",
@@ -761,6 +761,23 @@
       "match": "low",
       "reason": "The role requires fluency in Spanish (the entire posting and function are in Spanish, working with Mexican schools), which the candidate does not have, plus a valid driving licence and 2+ years of field sales experience. It is a field-sales job outside all interest zones and fails multiple essentials.",
       "location": "Tijuana / Mexico City, Mexico",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior New Partnerships Manager - Corporate Partnerships",
+      "organisation": "CARE International UK",
+      "url": "https://www.careinternational.org.uk/work-with-us/senior-new-partnerships-manager-corporate-partnerships",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Ineligible — this is a senior \"Manager\" role requiring an experienced corporate-partnerships professional with a track record of securing £1m+ income and leading a team, well beyond entry-level and outside the candidate's experience. It is also a fundraising / business-development function, not research or policy, and thus far from the candidate's interest zones.",
+      "location": "Not specified (likely London, UK)",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
