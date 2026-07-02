@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T16:01:08.937790+00:00",
-  "run_count": 33,
+  "generated_at": "2026-07-02T16:31:18.177463+00:00",
+  "run_count": 34,
   "jobs": [
     {
       "title": "Director",
@@ -390,6 +390,23 @@
       "type": "Full-time (Permanent, Hybrid)",
       "deadline": "2026-07-17",
       "salary": "USD 55,000 (annualized base)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Head of Policy – Climate and Health",
+      "organisation": "Wellcome Trust",
+      "url": "https://wellcome.wd3.myworkdayjobs.com/job/London/Head-of-Policy---Climate-and-Health_R-003409",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A \"Head of Policy\" role requiring deep, long-standing expertise, senior-level influencing experience and a track record of managing matrix teams — plainly far beyond entry-level and a hard disqualifier for a candidate with only student-assistant experience. The climate-and-health policy field also sits outside the core interest zones.",
+      "location": "London",
+      "type": "Full-time (Permanent)",
+      "deadline": "12 July 2026",
+      "salary": "£84,640 - £105,800",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
