@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-02T02:01:03.547060+00:00",
+  "generated_at": "2026-07-02T02:30:57.451389+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 140,
-  "erroring": 1,
+  "healthy": 141,
+  "erroring": 0,
   "paused": 0,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 85,
+    "html": 86,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -163,21 +163,8 @@
     "Verisk Maplecroft",
     "War on Want",
     "Wellcome Trust",
+    "Wiener Holocaust Library",
     "Wits University"
   ],
-  "sites": [
-    {
-      "id": 4,
-      "name": "Wiener Holocaust Library",
-      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "last_failure": "2026-07-02T02:01:03.547060+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
-    }
-  ]
+  "sites": []
 }

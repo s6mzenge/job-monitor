@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-02T02:01:03.547060+00:00",
-  "site_summary": {
-    "Wiener Holocaust Library": {
-      "site_id": 4,
-      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-07-02T02:01:03.547060+00:00",
-      "last_recent_failure": "2026-07-02T02:01:03.547060+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
-    }
-  },
+  "last_updated": "2026-07-02T02:30:57.451389+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T15:46:14.886630+00:00",
