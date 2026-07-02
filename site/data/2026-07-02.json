@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T10:01:12.732775+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-02T10:30:58.004801+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) – 65 % Arbeitszeit (Soil Science PhD, ROOT-DECAY)",
@@ -152,6 +152,23 @@
       "type": "Part-time / Werkstudent",
       "deadline": "Not specified",
       "salary": "€15/hour",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische Hilfskraft (m/w/d) Controlling",
+      "organisation": "Stifterverband",
+      "url": "https://stifterverband.talention.com/talention/stellenangebote/Studentische-Hilfskraft-m-w-d-Controlling-Stifterverband-fuer-die-Deutsche-Wissenschaft--691139979",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a studentische Hilfskraft (working-student) role, which is excluded as a matter of policy. It is also finance/controlling-focused, well outside the candidate's research and policy interests.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (working student, 15–20 h/week)",
+      "deadline": "Not specified (rolling)",
+      "salary": "€17.00/hour",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
