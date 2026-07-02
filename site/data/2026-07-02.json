@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T08:31:02.163290+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-02T09:01:14.694140+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) – 65 % Arbeitszeit (Soil Science PhD, ROOT-DECAY)",
@@ -118,6 +118,40 @@
       "type": "Full-time",
       "deadline": "2026-08-09",
       "salary": "Not specified (basic subsistence allowance plus expatriate/family allowances)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Solution Architect Travel (w/m/d) für das IVZ",
+      "organisation": "rbb (Rundfunk Berlin-Brandenburg)",
+      "url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2084/Description/1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a specialist IT/SAP solution-architect role requiring a completed informatics degree and several years' hands-on Cytric/SAP experience, which the candidate plainly lacks. It is neither entry-level nor in any interest zone, and the essential technical experience is an unmet requirement.",
+      "location": "Potsdam or Köln (also Leipzig, Hamburg, München, Frankfurt)",
+      "type": "Full-time (permanent)",
+      "deadline": "26 July 2026",
+      "salary": "Tariff Group C (rbb salary table)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Mitarbeiter*innen im Telemarketing (d/w/m)",
+      "organisation": "Save the Children DE",
+      "url": "https://jobs.savethechildren.de/jobs/63124554/Mitarbeiter-innen-im-Telemarketing-d-w-m-/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a telemarketing / fundraising call role offered explicitly as part-time or Werkstudent, and it is a customer-service function with no research or policy content. It is neither on-level for the candidate's profile nor in any interest zone, and the Werkstudent framing plus non-research nature make it a poor fit.",
+      "location": "Berlin, Germany",
+      "type": "Part-time / Werkstudent",
+      "deadline": "Not specified",
+      "salary": "€15/hour",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
