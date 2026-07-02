@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T11:31:03.326298+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-02T12:01:19.513604+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) – 65 % Arbeitszeit (Soil Science PhD, ROOT-DECAY)",
@@ -303,6 +303,23 @@
       "reason": "Internships / Praktika are excluded as a matter of policy, even though investigative journalism at CORRECTIV is adjacent to the candidate's OSINT / digital-investigations interest.",
       "location": "Berlin, Germany",
       "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Kommunikationsmanager (m/w/d) Hochschulforum Digitalisierung",
+      "organisation": "Stifterverband",
+      "url": "https://stifterverband.talention.com/talention/stellenangebote/Kommunikationsmanager-m-w-d-Hochschulforum-Digitalisierung-gesucht---485452458",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Ineligible because it requires at least four years of relevant professional experience in communications as an essential, which the candidate does not have, and it is a dedicated comms-specialist role outside their core strengths. Higher-education policy is adjacent but this is a communications/marketing role, not a research one.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
