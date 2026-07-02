@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T14:31:11.452944+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-02T15:01:15.866876+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) – 65 % Arbeitszeit (Soil Science PhD, ROOT-DECAY)",
@@ -424,6 +424,40 @@
       "type": "Working student",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Cutter*in/Mediengestalter*in für den Bereich Schnitt",
+      "organisation": "rbb (Rundfunk Berlin-Brandenburg)",
+      "url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2086/Description/1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires \"einschlägige langjährige Berufserfahrung\" (long-standing relevant experience) plus a media-technical training/qualification and expert knowledge of editing systems (AVID Media Composer, Adobe Premiere Pro) the candidate does not have — a clear experience and skills disqualifier. The role is a video-editing/media-production job entirely outside the candidate's research and policy interests.",
+      "location": "Berlin/Potsdam, Germany",
+      "type": "Full-time (permanent)",
+      "deadline": "2026-07-19",
+      "salary": "Tariflich nach Gruppe E (rbb pay scale)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Sachbearbeiter:in (w/d/m) in der Vergabestelle",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/f271d9734954d32163d8122d143ba28f549c9ff50",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role essentially requires a completed administrative vocational training (Verwaltungsfachangestellte/r or Verwaltungslehrgang I) and specialist knowledge of German procurement law (UVgO, GWV, VgV, BHO) — an unmet essential qualification and skills gap for this candidate. It is also a public-administration procurement clerk position with no connection to the candidate's research or interest areas.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (Teilzeit möglich)",
+      "deadline": "2026-07-30",
+      "salary": "EG 9a TVöD Bund",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
