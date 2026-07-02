@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T07:31:08.550624+00:00",
-  "run_count": 16,
+  "generated_at": "2026-07-02T08:01:06.096550+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) – 65 % Arbeitszeit (Soil Science PhD, ROOT-DECAY)",
@@ -84,6 +84,23 @@
       "type": "Full-time (part-time possible), fixed-term 12 months",
       "deadline": "2026-07-17",
       "salary": "Entgeltgruppe 13 TV-L Berliner Hochschulen",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wiss. Mitarbeiter*in (d/m/w) - 1. Qualifizierungsphase (zur Promotion)",
+      "organisation": "TU Berlin (wiss. Personal)",
+      "url": "https://www.jobs.tu-berlin.de/stellenausschreibungen/205246?filter%5Bworktype_tub%5D%5B%5D=wiss-dauer&filter%5Bworktype_tub%5D%5B%5D=wiss-mlehr&filter%5Bworktype_tub%5D%5B%5D=wiss-olehr",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The essential requirements — a Master's in civil/environmental engineering or computer science, plus data science, statistical/ML modelling, and strong Python programming — are a deep-technical fit the candidate's analysis-level Python and social-science background cannot meet. It is also entirely outside the candidate's interest zones (urban water systems).",
+      "location": "Berlin, Germany",
+      "type": "Full-time (100%, part-time possible)",
+      "deadline": "2026-07-24",
+      "salary": "E13 TV-L Berliner Hochschulen",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
