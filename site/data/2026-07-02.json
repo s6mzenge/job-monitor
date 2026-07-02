@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T08:01:06.096550+00:00",
-  "run_count": 17,
+  "generated_at": "2026-07-02T08:31:02.163290+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) – 65 % Arbeitszeit (Soil Science PhD, ROOT-DECAY)",
@@ -101,6 +101,23 @@
       "type": "Full-time (100%, part-time possible)",
       "deadline": "2026-07-24",
       "salary": "E13 TV-L Berliner Hochschulen",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Civil Peace Service (CPS) Advisor (m/f/d) for Dealing with the Past and University partnerships",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78658",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Requires business-fluent French as an essential, which exceeds the candidate's B1 level, and demands at least two years of professional experience working directly with universities that RA/student-assistant work does not meet. The dealing-with-the-past and colonial-legacies focus is a strong interest match, but both the language and experience requirements are unmet essentials.",
+      "location": "Yaoundé, Cameroon",
+      "type": "Full-time",
+      "deadline": "2026-08-09",
+      "salary": "Not specified (basic subsistence allowance plus expatriate/family allowances)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
