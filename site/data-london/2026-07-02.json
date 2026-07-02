@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T13:31:14.241823+00:00",
-  "run_count": 28,
+  "generated_at": "2026-07-02T14:01:10.346913+00:00",
+  "run_count": 29,
   "jobs": [
     {
       "title": "Director",
@@ -322,6 +322,23 @@
       "type": "Full-time (Fixed Term)",
       "deadline": "July 11, 2026",
       "salary": "₪78,075 / year",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Brand Marketing Manager",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Chester/Brand-Marketing-Manager_JR106316",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The \"Manager\" title plus essential requirements for proven B2B marketing-campaign delivery and healthcare-communications experience place this clearly above entry-level and outside the candidate's limited marketing background. It is also a healthcare-marketing role with no connection to the candidate's research or interest areas.",
+      "location": "Chester, Manchester, London (Hybrid)",
+      "type": "Full-time",
+      "deadline": "2026-07-06",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
