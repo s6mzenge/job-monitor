@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-02T13:01:14.145349+00:00",
+  "generated_at": "2026-07-02T13:31:02.160193+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 92,
-  "erroring": 0,
+  "healthy": 91,
+  "erroring": 1,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
-    "html": 74,
+    "html": 73,
     "json_api": 7,
     "playwright": 6,
     "interamt": 1,
@@ -58,7 +58,6 @@
     "Heinrich Böll Stiftung",
     "Hertie School",
     "HIS Hamburg",
-    "HWR Berlin",
     "IDOS (German Institute of Development and Sustainability)",
     "IEP Berlin",
     "IFSH",
@@ -107,5 +106,19 @@
     "ZZF Potsdam (Zeithistorische Forschung)",
     "Ärzte ohne Grenzen (MSF)"
   ],
-  "sites": []
+  "sites": [
+    {
+      "id": 220,
+      "name": "HWR Berlin",
+      "url": "https://www.hwr-berlin.de/hwr-berlin/stellenangebote/",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-02T13:31:02.160193+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
+    }
+  ]
 }

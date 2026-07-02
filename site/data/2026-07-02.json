@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T13:01:14.145349+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-02T13:31:02.160193+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) – 65 % Arbeitszeit (Soil Science PhD, ROOT-DECAY)",
@@ -390,6 +390,23 @@
       "type": "Internship",
       "deadline": "2026-07-16",
       "salary": "€2,349/month (brutto)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Referent*in Institutionelle Partnerschaften Auswärtiges Amt und BMZ",
+      "organisation": "Oxfam Deutschland",
+      "url": "https://www.oxfam.de/ueber-uns/arbeiten-bei-oxfam/jobs/referentin-institutionelle-partnerschaften-auswaertiges-amt-bmz",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "Requires fluent French as an essential (\"Fließende Englisch- und Französischkenntnisse\"), which the candidate's B1 does not meet; it also demands 3 years of field-specific experience and multi-year international-cooperation/NRO expertise the candidate lacks. Even setting language aside, this is an institutional-fundraising/grant-acquisition role outside the candidate's research profile.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (fixed-term, 2 years)",
+      "deadline": "2026-08-02",
+      "salary": "Entgeltgruppe 6 (Haustarifvertrag)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
