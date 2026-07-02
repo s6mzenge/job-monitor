@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T13:31:02.160193+00:00",
+  "generated_at": "2026-07-02T14:01:14.806360+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 91,
@@ -7,9 +7,9 @@
   "paused": 0,
   "methods": {
     "personio_xml": 3,
-    "html": 73,
+    "html": 74,
     "json_api": 7,
-    "playwright": 6,
+    "playwright": 5,
     "interamt": 1,
     "recruitee_api": 1
   },
@@ -58,6 +58,7 @@
     "Heinrich Böll Stiftung",
     "Hertie School",
     "HIS Hamburg",
+    "HWR Berlin",
     "IDOS (German Institute of Development and Sustainability)",
     "IEP Berlin",
     "IFSH",
@@ -90,7 +91,6 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
-    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -108,17 +108,17 @@
   ],
   "sites": [
     {
-      "id": 220,
-      "name": "HWR Berlin",
-      "url": "https://www.hwr-berlin.de/hwr-berlin/stellenangebote/",
-      "method": "html",
+      "id": 230,
+      "name": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "last_failure": "2026-07-02T13:31:02.160193+00:00",
+      "total_recent_failures": 11,
+      "last_failure": "2026-07-02T14:01:14.806360+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
     }
   ]
 }
