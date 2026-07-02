@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T09:01:10.633271+00:00",
-  "run_count": 19,
+  "generated_at": "2026-07-02T09:31:22.281061+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Director",
@@ -118,6 +118,40 @@
       "type": "Part-time consultancy (self-employed, fixed term)",
       "deadline": "2026-07-15",
       "salary": "Daily rate, commensurate with experience (candidate to state expected day rate)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "AEP Lecturer in Public Policy and Ethics",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DSC917/aep-lecturer-in-public-policy-and-ethics",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "A Lecturer post carrying independent module planning, postgraduate supervision and subject research effectively requires a completed (or near-completed) PhD and academic teaching experience the candidate does not have — it is not an entry-level role. The public-policy/ethics area is of some interest, but the level is a hard mismatch.",
+      "location": "London",
+      "type": "Full-time (Fixed-Term, 2 years)",
+      "deadline": "2026-07-13",
+      "salary": "£45,031 to £52,514 per annum including London Allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Managing Editor",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Dordrecht/Managing-Editor_JR106370-1",
+      "priority": 28,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The role asks for \"solid experience of journal publishing workflows\" — a specific operational publishing background the candidate lacks, though it is not framed as a strict years-based bar and only a bachelor's is required, so it stays eligible but is a weak paper fit. It is an editorial/project-management position outside the candidate's research and interest zones, and comms/administration is only a partial strength. Publishing is adjacent to the candidate's academic-publication experience, giving a mild interest pull but little core alignment.",
+      "location": "Dordrecht, Netherlands",
+      "type": "Full-time (Permanent)",
+      "deadline": "2026-07-16",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""

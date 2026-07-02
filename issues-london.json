@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-02T09:01:10.633271+00:00",
+  "last_updated": "2026-07-02T09:31:22.281061+00:00",
   "site_summary": {
-    "Reprieve": {
-      "site_id": 58,
-      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
-      "method": "playwright",
+    "Airwars": {
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-07-02T09:01:10.633271+00:00",
-      "last_recent_failure": "2026-07-02T09:01:10.633271+00:00",
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-07-02T01:01:14.296954+00:00",
+      "last_recent_failure": "2026-07-02T09:31:22.281061+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
     }
   },
   "issues": [
@@ -254,6 +254,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content.",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-02T09:31:22.281061+00:00",
+      "site": "Airwars",
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
       "consecutive_count": 1
     }
   ]
