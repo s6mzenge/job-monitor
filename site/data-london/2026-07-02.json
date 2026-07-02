@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T08:01:06.722024+00:00",
-  "run_count": 17,
+  "generated_at": "2026-07-02T08:31:02.288515+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Director",
@@ -67,6 +67,23 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Head of Peer Review Management",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/London/Head-of-Peer-Review-Management_JR106377",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "\"Head of\" senior leadership role requiring proven experience leading complex projects, change initiatives and cross-functional teams — plainly not entry-level and beyond the candidate's student-assistant background. Publishing operations management also falls outside the candidate's core interest zones.",
+      "location": "London, New York or Pune (Hybrid)",
+      "type": "Full-time",
+      "deadline": "2026-07-19",
+      "salary": "US Base Salary Range: $100,000 - $120,000 (US-based only)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
