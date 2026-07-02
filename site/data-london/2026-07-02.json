@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T15:31:09.221145+00:00",
-  "run_count": 32,
+  "generated_at": "2026-07-02T16:01:08.937790+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Director",
@@ -373,6 +373,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Assistant Editor",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/New-York/Assistant-Editor_JR106590",
+      "priority": 30,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Entry-level with a bachelor's requirement met, and the candidate's writing, editorial and academic-publishing familiarity transfer partially — but the role emphasizes specific experience with manuscript-tracking systems, peer-review workflows and STEM publishing, which is a genuine skills gap. Academic publishing is only tangential to the candidate's core interest zones, so the interest pull is modest and the fit is workable but not compelling.",
+      "location": "New York, USA",
+      "type": "Full-time (Permanent, Hybrid)",
+      "deadline": "2026-07-17",
+      "salary": "USD 55,000 (annualized base)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
