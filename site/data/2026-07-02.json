@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T14:01:14.806360+00:00",
-  "run_count": 29,
+  "generated_at": "2026-07-02T14:31:11.452944+00:00",
+  "run_count": 30,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) – 65 % Arbeitszeit (Soil Science PhD, ROOT-DECAY)",
@@ -407,6 +407,23 @@
       "type": "Full-time (fixed-term, 2 years)",
       "deadline": "2026-08-02",
       "salary": "Entgeltgruppe 6 (Haustarifvertrag)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Werkstudent*in Lokalredaktion in Gelsenkirchen",
+      "organisation": "CORRECTIV",
+      "url": "https://correctiv.org/stellenangebote/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Working-student / Werkstudent roles are excluded as a matter of policy, even at an investigative-journalism outlet of some interest.",
+      "location": "Gelsenkirchen, Germany",
+      "type": "Working student",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
