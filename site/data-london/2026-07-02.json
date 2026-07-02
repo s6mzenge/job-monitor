@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T11:01:05.046769+00:00",
-  "run_count": 23,
+  "generated_at": "2026-07-02T11:31:06.353971+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Director",
@@ -186,6 +186,40 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Manager / Associate Director, Special Situations M&A",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7790050003?gh_jid=7790050003",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a senior \"Manager / Associate Director\" title requiring substantial M&A / corporate finance advisory experience gained in professional services, consultancy or investment banking — well beyond entry-level and outside the candidate's skill set. Both the seniority and the specialist finance experience are unmet essentials, and the subject sits far from the candidate's interest zones.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate Tutor in Politics",
+      "organisation": "Birkbeck, University of London",
+      "url": "https://cis7.bbk.ac.uk/vacancy/associate-tutor-in-politics-614784.html",
+      "priority": 48,
+      "eligible": true,
+      "interest_score": "",
+      "match": "medium",
+      "reason": "This is genuine paid, entry-level teaching support requiring subject knowledge in social/political science and an appropriate qualification level — the candidate's MSc (in progress) and strong grades plausibly meet the \"qualified to the corresponding level\" bar, especially for the level-four undergraduate modules, though the PG \"Global Politics, Governance and Security\" module leans on teaching experience the candidate lacks. It touches the candidate's academic/policy interest zone but is a teaching rather than research role, and the requirement for prior undergraduate teaching experience is a real soft obstacle. Worth a look as a foot-in-the-door academic role in London.",
+      "location": "London (Bloomsbury)",
+      "type": "Part-time / Fixed-term (hourly)",
+      "deadline": "2026-07-19",
+      "salary": "£61.39 per hour",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
