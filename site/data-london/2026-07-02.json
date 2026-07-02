@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T13:01:13.419066+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-02T13:31:14.241823+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Director",
@@ -288,6 +288,40 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Staff Engineer, Datacenter Server Lifecycle",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131038008",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a Staff-level engineering role requiring hands-on server hardware experience, deep datacenter operations background (8+ years preferred) and production-grade software/infrastructure skills far beyond the candidate's analysis-level Python. Both the seniority and the deep-technical essentials are hard disqualifiers, regardless of the AI-adjacent employer.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£325,000–£390,000 GBP",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "MHPSS Specialist (Team Leader)",
+      "organisation": "Medical Aid for Palestinians",
+      "url": "https://careers.map.org.uk/en/postings/15e8f387-3b27-4ff6-94a4-02c0630b9fa4",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "Location fails the London-only hard filter — the role is onsite in the West Bank with no London or remote option. It is also a \"Team Leader\" role in mental health / psychosocial support, requiring specialist MHPSS expertise the candidate lacks.",
+      "location": "West Bank, PS",
+      "type": "Full-time (Fixed Term)",
+      "deadline": "July 11, 2026",
+      "salary": "₪78,075 / year",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
