@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T00:01:16.397558+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Director",
+      "organisation": "Palestine Solidarity Campaign",
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a top-level executive Director role leading the organisation through a senior team of three Deputy Directors with ultimate executive responsibility — far beyond entry-level and requiring extensive senior leadership the candidate does not have. The subject matter is adjacent to the candidate's interests, but the seniority is a hard mismatch.",
+      "location": "London (hybrid)",
+      "type": "Full-time (Permanent)",
+      "deadline": "8 July 2026",
+      "salary": "£80,000 – £95,000 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
+}
