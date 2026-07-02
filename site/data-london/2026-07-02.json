@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T08:31:02.288515+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-02T09:01:10.633271+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Director",
@@ -84,6 +84,40 @@
       "type": "Full-time",
       "deadline": "2026-07-19",
       "salary": "US Base Salary Range: $100,000 - $120,000 (US-based only)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Freelance Podcast Director",
+      "organisation": "Nesta",
+      "url": "https://www.nesta.org.uk/jobs/freelance-podcast-director/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Not entry-level and a hard skills mismatch: the role demands an experienced content producer (broadcast journalist / Westminster researcher / think-tanker) with a track record of building podcasts and, essentially, an active trusted network across government, Whitehall and Westminster — none of which the candidate has. Although UK policy is adjacent to her interests, this is a specialist media-production freelance brief far outside her research-and-writing profile.",
+      "location": "Blackfriars, London (hybrid)",
+      "type": "Freelance / Fixed-term contract",
+      "deadline": "17 Jul 2026, 5 p.m.",
+      "salary": "Not specified (day rate to be proposed by applicant)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Communications Consultant – German Media & Strategic Communications",
+      "organisation": "Institute for Strategic Dialogue (ISD)",
+      "url": "https://isdglobal.recruitee.com/o/senior-communications-consultant-german-media-strategic-communications",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "Ineligible on level — this is a mid-level-to-senior consultancy requiring \"substantial experience in senior communications, press or public affairs roles in the German market,\" which the candidate's student-assistant background does not meet, and it also asks for a proven track record the candidate lacks. Location is also a hard fail under \"London only\" (remote-Germany / Berlin, no London option). ISD's counter-extremism and information-operations mission is genuinely interesting, but the seniority and comms-specialist essentials block it.",
+      "location": "Remote (Germany); occasional attendance at Berlin office",
+      "type": "Part-time consultancy (self-employed, fixed term)",
+      "deadline": "2026-07-15",
+      "salary": "Daily rate, commensurate with experience (candidate to state expected day rate)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
