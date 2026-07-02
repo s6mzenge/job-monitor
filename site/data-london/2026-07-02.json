@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T22:31:11.746981+00:00",
-  "run_count": 46,
+  "generated_at": "2026-07-02T23:01:14.264821+00:00",
+  "run_count": 47,
   "jobs": [
     {
       "title": "Director",
@@ -441,6 +441,23 @@
       "type": "Full-time (Regular)",
       "deadline": "2026-07-30",
       "salary": "Not specified (\"competitive rates\")",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Trainee Researcher (EastEnders) (EXTEND)",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Trainee-Researcher-%28EastEnders%29-%28EXTEND%29/46427-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This role is restricted to the BBC Extend programme, requiring applicants to identify as deaf, disabled and/or neurodivergent — an eligibility gate the CV gives no basis to meet, and the posting frames it as a hard requirement. Separately it is a TV-drama research traineeship demanding a demonstrable passion for EastEnders, far outside the candidate's interest zones.",
+      "location": "Elstree, London (WD6 1JF)",
+      "type": "Contract (2 x 6-month fixed-term)",
+      "deadline": "2026-07-07",
+      "salary": "£24,479 plus London Weighting",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
