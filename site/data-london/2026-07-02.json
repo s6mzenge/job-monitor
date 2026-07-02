@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T18:01:13.658846+00:00",
-  "run_count": 37,
+  "generated_at": "2026-07-02T18:31:08.577926+00:00",
+  "run_count": 38,
   "jobs": [
     {
       "title": "Director",
@@ -424,6 +424,23 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Project Manager – IT Governance & Outsourcing",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Mexico-City/Project-Manager_JR-0003834",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a senior IT-governance project-management role requiring a proven project manager with change management, IT vendor management, budgets up to $5m and cross-functional IT system implementations — well beyond entry-level and outside the candidate's skill set. Neither the level nor the technical IT-delivery requirements are a fit, and the topic falls outside the candidate's interest zones.",
+      "location": "London / Mexico City / Rio",
+      "type": "Full-time (Regular)",
+      "deadline": "2026-07-30",
+      "salary": "Not specified (\"competitive rates\")",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
