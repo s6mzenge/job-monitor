@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T10:30:58.004801+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-02T11:01:12.934008+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) – 65 % Arbeitszeit (Soil Science PhD, ROOT-DECAY)",
@@ -169,6 +169,40 @@
       "type": "Part-time (working student, 15–20 h/week)",
       "deadline": "Not specified (rolling)",
       "salary": "€17.00/hour",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische Hilfskraft (m/w/d) im Controlling",
+      "organisation": "Stifterverband",
+      "url": "https://stifterverband.talention.com/talention/stellenangebote/Studentische-Hilfskraft-m-w-d-Controlling--691139979",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a studentische Hilfskraft (working-student) role, which is excluded by policy regardless of fit. It is also a finance/controlling function outside the candidate's interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (Working student)",
+      "deadline": "Not specified",
+      "salary": "€17.00/hour",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Bereichsleitung (m/w/d) für den Bereich Parteientwicklung",
+      "organisation": "Die Linke",
+      "url": "https://www.die-linke.de/partei/jobs/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a \"Bereichsleitung\" (head of department / division lead) role, a clear senior management position requiring leadership experience the candidate does not have. The party-development focus also sits outside the candidate's core interest zones.",
+      "location": "Berlin",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
