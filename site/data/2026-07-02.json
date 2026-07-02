@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T12:31:00.328565+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-02T13:01:14.145349+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) – 65 % Arbeitszeit (Soil Science PhD, ROOT-DECAY)",
@@ -373,6 +373,23 @@
       "type": "Full-time (2-year fixed term, extension possible)",
       "deadline": "Not specified (no deadline; rolling)",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikum im Bereich Deutscher Nachhaltigkeitskodex (DNK)",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78672",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an internship (Praktikum) requiring current enrolment or graduation within the past 6 months, which is excluded by policy as not a genuine paid role for the candidate. The sustainability-reporting topic is also outside the candidate's core interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-16",
+      "salary": "€2,349/month (brutto)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
