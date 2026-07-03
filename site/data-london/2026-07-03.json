@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T04:01:24.131384+00:00",
-  "run_count": 9,
+  "generated_at": "2026-07-03T04:31:05.471849+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Director",
@@ -33,6 +33,40 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "5",
+      "match": "low",
+      "reason": "The \"Manager\" title and Reprieve's own pay-band placement (Project/Regional Leads/Managers) make this a management-level role well beyond entry-level, and strategic litigation strongly implies a legal qualification the candidate lacks. The human-rights mission is a perfect interest match, but the level and likely qualification are hard mismatches.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% matched pension",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fundraising Coordinator",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "priority": 28,
+      "eligible": true,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is an entry-level coordinator role at an on-mission human-rights organisation, but it is a fundraising / development function that sits outside the candidate's research and policy strengths and does not match their limited dedicated fundraising or campaigns experience. The organisation is a strong interest fit, but the functional mismatch keeps this marginal.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "31/05/2026",
+      "salary": "£32,696 per annum plus up to 5% matched pension",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
