@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T09:01:28.207932+00:00",
-  "run_count": 19,
+  "generated_at": "2026-07-03T09:31:15.685172+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Veranstaltungsmanagement",
@@ -118,6 +118,40 @@
       "type": "Part-time (75%), fixed-term (doctoral position)",
       "deadline": "2026-07-31",
       "salary": "EGR. 13 TV-L (75%)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Leitung Kommunikation / Pressesprecher:in (m/w/d) in Vollzeit (ID 408)",
+      "organisation": "WZB Berlin Social Science Center",
+      "url": "https://www.wzb.eu/de/jobs/leitung-kommunikation-pressesprecherin-mwd-in-vollzeit-id-408-466-408",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a department-head / press-spokesperson leadership role requiring several years of communications experience plus multi-year staff-leadership experience over a 13-person team — clearly not entry-level and well beyond the candidate's profile. Although it sits at a renowned social-science research institute, the seniority and dedicated communications-management requirements are unmet essentials.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-08-28 (portal also lists 2026-12-31)",
+      "salary": "Up to EG 15 TVöD Bund",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Bereich Globale Gesundheit & Telemedizin: Klinikpartnerschaften",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78680",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is explicitly a Praktikum (internship), which is excluded as a matter of policy, and it further requires current enrolment or a degree completed no more than 6 months prior. The global-health / telemedicine field also sits outside the candidate's core interest zones.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-16",
+      "salary": "€2,349/month (brutto)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
