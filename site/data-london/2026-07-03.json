@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T14:31:13.215563+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-03T15:01:13.330260+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Director",
@@ -390,6 +390,40 @@
       "type": "Full-time",
       "deadline": "2026-07-21",
       "salary": "£36,513–£44,468 pa inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Open Source Investigators - Contractor - UK",
+      "organisation": "Centre for Information Resilience",
+      "url": "https://apply.workable.com/j/2EE27AB146",
+      "priority": 52,
+      "eligible": true,
+      "interest_score": "5",
+      "match": "medium",
+      "reason": "CIR sits squarely in the candidate's core zone (c) — open-source investigations into human rights abuses and malign influence — and English is the only language essential, so no hard gate applies. However, the essentials ask for a proven OSINT track record plus due-diligence/financial-investigation experience the candidate does not yet have, making this more of a soft stretch than an on-level fit; the interest pull keeps it worth a look despite the experience gap.",
+      "location": "London, United Kingdom (Remote)",
+      "type": "Contract (Full-time)",
+      "deadline": "19th July 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Interim Data Availability Lead",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/Interim-Data-Availability-Lead_R00030845",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a senior \"Lead\" DBA role requiring 5+ years as a database administrator, plus deep SQL Server, SSIS, Power BI and MS Fabric engineering expertise — well beyond the candidate's analysis-level Python and non-existent DBA background. Both the level (Lead) and the essential technical requirements are hard disqualifiers, and the IT/database subject is outside all interest zones.",
+      "location": "London, United Kingdom",
+      "type": "Full-time (Interim/Contract)",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
