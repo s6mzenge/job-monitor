@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T09:31:15.895033+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-03T10:01:15.022373+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Director",
@@ -118,6 +118,40 @@
       "type": "Full-time",
       "deadline": "17 July 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fleming Initiative Policy Fellow",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DSD259/fleming-initiative-policy-fellow",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The role explicitly seeks \"an experienced policy professional,\" and the salary band (£57k–£69k) signals a senior, several-years-experienced fellowship well beyond the candidate's student-assistant/RA background — an unmet essential experience level. The subject (antimicrobial resistance / health policy) also sits outside the core interest zones.",
+      "location": "London, Hybrid",
+      "type": "Full-time (Fixed-Term, 12 months)",
+      "deadline": "2026-07-16",
+      "salary": "£57,785 to £69,365 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Enterprise Account Executive - Life Sciences",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5287249008",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires 8+ years of enterprise sales experience (at least 5 in life-sciences tech sales), far beyond entry-level and a hard disqualifier on both level and experience. It is also an enterprise sales role with no research or policy component, entirely outside the candidate's profile and interests.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£280,000–£330,000 GBP OTE",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
