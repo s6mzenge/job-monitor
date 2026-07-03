@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T15:01:13.330260+00:00",
-  "run_count": 31,
+  "generated_at": "2026-07-03T15:31:09.256127+00:00",
+  "run_count": 32,
   "jobs": [
     {
       "title": "Director",
@@ -424,6 +424,23 @@
       "type": "Full-time (Interim/Contract)",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Digital Marketing Manager",
+      "organisation": "Wellcome Trust",
+      "url": "https://wellcome.wd3.myworkdayjobs.com/job/London/Digital-Marketing-Manager_R-003302-1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a Manager-level role requiring proven, experienced digital marketing capability (paid media planning/buying, email programme leadership, multi-channel campaign delivery) — an area where the candidate has no dedicated experience and a level that is not entry-level. The role trips the seniority disqualifier and sits outside the candidate's interest zones.",
+      "location": "London (hybrid, Euston Road)",
+      "type": "Full-time (Permanent)",
+      "deadline": "2026-07-20",
+      "salary": "£50,480 - £63,100 per annum",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
