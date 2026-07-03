@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T22:31:07.993525+00:00",
-  "run_count": 46,
+  "generated_at": "2026-07-03T23:01:20.697035+00:00",
+  "run_count": 47,
   "jobs": [
     {
       "title": "Director",
@@ -526,6 +526,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Audio Visual Producer (Comedy & Ents)",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Audio-Visual-Producer-%28Comedy-&amp;-Ents%29/47626-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The essential criteria require proven experience producing high-quality audio and video podcast formats, established industry connections and leadership of a multidisciplinary production team — a specialist media-production role the candidate cannot meet and not entry-level. It also falls entirely outside all three interest zones.",
+      "location": "London, GBR (Television Centre)",
+      "type": "Full-time (1 year Fixed-term Contract)",
+      "deadline": "5th July 2026",
+      "salary": "£40,200-£69,000",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
