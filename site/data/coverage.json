@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-03T15:01:18.831790+00:00",
+  "generated_at": "2026-07-03T15:31:06.887648+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 91,
-  "erroring": 1,
+  "healthy": 92,
+  "erroring": 0,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
     "html": 74,
     "json_api": 7,
-    "playwright": 5,
+    "playwright": 6,
     "interamt": 1,
     "recruitee_api": 1
   },
@@ -91,6 +91,7 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
+    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -106,19 +107,5 @@
     "ZZF Potsdam (Zeithistorische Forschung)",
     "Ärzte ohne Grenzen (MSF)"
   ],
-  "sites": [
-    {
-      "id": 230,
-      "name": "Uni Hamburg (Stellenangebote)",
-      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
-      "method": "playwright",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 20,
-      "last_failure": "2026-07-03T15:01:18.831790+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
-    }
-  ]
+  "sites": []
 }

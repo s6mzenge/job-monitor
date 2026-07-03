@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T15:01:18.831790+00:00",
-  "run_count": 31,
+  "generated_at": "2026-07-03T15:31:06.887648+00:00",
+  "run_count": 32,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Veranstaltungsmanagement",
@@ -373,6 +373,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Policy Fellow (m/f/d)",
+      "organisation": "ECFR",
+      "url": "https://ecfr.jobs.personio.com/job/2674606",
+      "priority": 58,
+      "eligible": true,
+      "interest_score": "4",
+      "match": "medium",
+      "reason": "Explicitly framed as an early-career role at a leading European foreign-policy think-tank, with the Master's + 2 years / Bachelor's + 4-5 years threshold sitting at the soft, closeable edge given the candidate's RA and project-coordination experience (including €1.7m funding allocation, which maps well onto the budgeting/coordination duties). The research, writing and event-support skills transfer directly and the pan-European foreign/security-policy setting is a genuine zone (a)/(b) fit; the substantive focus on India/Indo-Pacific is outside the candidate's regional specialism, which is the main thing holding the score down. English native-level is a must but the candidate's C2 meets it, German is only an advantage, and the role is not senior — so no hard disqualifier applies.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (Fixed-term, 2 years)",
+      "deadline": "17 July 2026, 17:30 CET",
+      "salary": "€43,000 - €47,000 per year",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
