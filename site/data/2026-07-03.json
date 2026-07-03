@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T10:01:17.712460+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-03T10:31:16.247936+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Veranstaltungsmanagement",
@@ -149,6 +149,23 @@
       "match": "low",
       "reason": "This is explicitly a Praktikum (internship), which is excluded as a matter of policy, and it further requires current enrolment or a degree completed no more than 6 months prior. The global-health / telemedicine field also sits outside the candidate's core interest zones.",
       "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-16",
+      "salary": "€2,349/month (brutto)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Projekt Global Health Hub Germany",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78682",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is explicitly a Praktikum (internship) requiring current enrolment or a degree completed within the last 6 months, which is a policy exclusion regardless of pay. The global-health / comms-and-events focus also sits outside the candidate's core interest zones.",
+      "location": "Berlin, Germany",
       "type": "Internship",
       "deadline": "2026-07-16",
       "salary": "€2,349/month (brutto)",
