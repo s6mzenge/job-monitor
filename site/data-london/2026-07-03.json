@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T19:01:14.560342+00:00",
-  "run_count": 39,
+  "generated_at": "2026-07-03T19:31:09.905215+00:00",
+  "run_count": 40,
   "jobs": [
     {
       "title": "Director",
@@ -506,6 +506,23 @@
       "match": "low",
       "reason": "Requires a minimum of 3 years of proven sales experience (a hard disqualifier for the candidate's level) and is conducted in Spanish, a language the candidate does not have. It is also a commercial field-sales role entirely outside the candidate's research and policy interests.",
       "location": "Bogota / Medellin, Colombia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Representante de Ventas ELT",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Mexico-City/Representante-de-Ventas-ELT_JR105675",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a field sales role requiring fluency in Spanish (the entire job is conducted in Spanish, selling to schools in Mexico), which the candidate does not have, plus a valid driving licence and 2 years of field-sales experience. It has no connection to the candidate's research or policy profile and falls outside all interest zones.",
+      "location": "Aguascalientes / Mexico City, Mexico",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
