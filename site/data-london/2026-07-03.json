@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T18:31:16.535369+00:00",
-  "run_count": 38,
+  "generated_at": "2026-07-03T19:01:14.560342+00:00",
+  "run_count": 39,
   "jobs": [
     {
       "title": "Director",
@@ -492,6 +492,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "£70,080 - £87,600 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Sales Representative",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Bogota/Sales-Representative_JR106632",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires a minimum of 3 years of proven sales experience (a hard disqualifier for the candidate's level) and is conducted in Spanish, a language the candidate does not have. It is also a commercial field-sales role entirely outside the candidate's research and policy interests.",
+      "location": "Bogota / Medellin, Colombia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
