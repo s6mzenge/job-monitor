@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T13:01:19.039223+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-03T13:31:09.401144+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Veranstaltungsmanagement",
@@ -220,6 +220,40 @@
       "type": "Part-time (8-10h/week, student assistant)",
       "deadline": "2026-08-09",
       "salary": "€15.20-15.81 per hour",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Social Media und Content Manager*in (w/d/m)",
+      "organisation": "Die Linke Bundestagsfraktion",
+      "url": "https://www.dielinkebt.de/service/ausschreibungen/detail/social-media-und-content-managerin-w-d-m",
+      "priority": 15,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The role centres on essential skills the candidate lacks — practical social-media, photo/video production, and graphic/editing-software expertise with a media/communications background — which is a substantial paper-fit gap against a research-and-writing profile. It sits outside all three core interest zones (only a tangential \"Sicherheitspolitik/Balkan\" nice-to-have), and while it is eligible and entry-level, it is a poor overall fit worth surfacing only marginally.",
+      "location": "Berlin, Germany (partly remote)",
+      "type": "Part-time (20h/week, fixed-term)",
+      "deadline": "2026-07-31",
+      "salary": "In accordance with ver.di / Die Linke Fraktion collective agreement (not specified)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Sachbearbeiter (m/w/d) Veranstaltungen",
+      "organisation": "Stifterverband",
+      "url": "https://stifterverband.talention.com/talention/stellenangebote/Sachbearbeiter-m-w-d-Veranstaltungen-Bonn-Stifterverband-fuer-die-Deutsche-Wissenschaft--125255843",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires a completed vocational training (Ausbildung) in hospitality, event management, tourism or a commercial field — a qualification the candidate does not hold — making it an unmet essential. It is also a pure events-administration / customer-service position outside all three interest zones, with none of the candidate's research or policy strengths in play.",
+      "location": "Bonn, Germany",
+      "type": "Part-time (20 hours/week, 1-year fixed term)",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
