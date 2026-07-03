@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T12:31:09.942808+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-03T13:01:19.039223+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Veranstaltungsmanagement",
@@ -203,6 +203,23 @@
       "type": "Part-time (19.5 h/week, permanent)",
       "deadline": "2026-07-24",
       "salary": "EG 13 TVöD Bund",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische Hilfskraft (m/w/d) (ID 409)",
+      "organisation": "WZB Berlin Social Science Center",
+      "url": "https://www.wzb.eu/de/jobs/studentische-hilfskraft-mwd-id-409-467-409",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a studentische Hilfskraft (working-student) role, which is excluded by policy, and it also requires current enrolment in a social-sciences programme with C2 German (which the candidate has, but the role type is the blocker). The topic — education panel / labour-market quantitative research — is also outside the candidate's core interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (8-10h/week, student assistant)",
+      "deadline": "2026-08-09",
+      "salary": "€15.20-15.81 per hour",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
