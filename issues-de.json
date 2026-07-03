@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-03T07:31:18.418108+00:00",
-  "site_summary": {
-    "HWR Berlin": {
-      "site_id": 220,
-      "url": "https://www.hwr-berlin.de/hwr-berlin/stellenangebote/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-07-02T13:31:02.160193+00:00",
-      "last_recent_failure": "2026-07-03T07:31:18.418108+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.hwr-berlin.de%2Fhwr-berlin%2Fstellenangebote%2F"
-    }
-  },
+  "last_updated": "2026-07-03T08:01:16.503947+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T21:07:23.784674+00:00",

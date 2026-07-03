@@ -1,6 +1,41 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T07:31:18.418108+00:00",
-  "run_count": 16,
-  "jobs": []
+  "generated_at": "2026-07-03T08:01:16.503947+00:00",
+  "run_count": 17,
+  "jobs": [
+    {
+      "title": "Studentische Hilfskraft (d/m/w) im Veranstaltungsmanagement",
+      "organisation": "SWP Berlin",
+      "url": "https://www.swp-berlin.org/karriere/stellenangebot/studentische-hilfskraft-d-m-w-im-veranstaltungsmanagement",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a studentische Hilfskraft (working-student) position, which is excluded by policy regardless of field. It is also an events-management support role, a partial skills gap, though SWP is an on-target policy institute.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (working student)",
+      "deadline": "2026-07-16",
+      "salary": "TVöD Bund, Entgeltgruppe 2",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Associate for the Project \"Cluster of Excellence Understanding Written Artefacts\" (Doctoral Researcher, Arabic Studies)",
+      "organisation": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote/ausschreibung.html?jobID=ae8b38165b29f52165648681c924550af0b273c1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The post requires an excellent Master's in Arabic Studies or a closely related discipline and fluency in written and spoken Arabic as an essential — the candidate holds neither and has no working Arabic. Although it is a funded PhD position, both the disciplinary qualification and the language requirement are unmet essentials, and the manuscript-cultures topic is far outside the candidate's fields.",
+      "location": "Hamburg, Germany",
+      "type": "Part-time (75%), fixed-term doctoral post",
+      "deadline": "2026-07-17",
+      "salary": "EGR. 13 TV-L (part-time, 75%)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
