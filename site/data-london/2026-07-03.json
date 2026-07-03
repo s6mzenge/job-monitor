@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T14:01:30.191485+00:00",
-  "run_count": 29,
+  "generated_at": "2026-07-03T14:31:13.215563+00:00",
+  "run_count": 30,
   "jobs": [
     {
       "title": "Director",
@@ -373,6 +373,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Communications and Events Officer",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/4709/0/471246/15539/communications-and-events-officer",
+      "priority": 38,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "The role is at an accessible level and the candidate's strong writing and higher-education background transfer, but this is a dedicated communications-and-events specialist post whose essentials — event promotion, CMS/webpage editing, professional social-media analytics — are a real gap given the candidate's limited dedicated comms/events experience. Gender studies is adjacent to the candidate's critical-IR interests but sits outside the core mission zones, so interest pull is moderate and the skills mismatch keeps this marginal.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "2026-07-21",
+      "salary": "£36,513–£44,468 pa inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
