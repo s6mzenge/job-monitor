@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-03T11:01:13.812453+00:00",
+  "generated_at": "2026-07-03T11:31:11.303440+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 91,
-  "erroring": 1,
+  "healthy": 92,
+  "erroring": 0,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
-    "html": 73,
+    "html": 74,
     "json_api": 7,
     "playwright": 6,
     "interamt": 1,
@@ -46,6 +46,7 @@
     "ESMT Berlin",
     "European Legal Support Center (ELSC)",
     "Forum New Economy",
+    "Forum Transregionale Studien",
     "FragDenStaat",
     "Friedrich-Ebert-Stiftung",
     "FU Berlin (wiss.)",
@@ -106,19 +107,5 @@
     "ZZF Potsdam (Zeithistorische Forschung)",
     "Ärzte ohne Grenzen (MSF)"
   ],
-  "sites": [
-    {
-      "id": 164,
-      "name": "Forum Transregionale Studien",
-      "url": "https://www.forum-transregionale-studien.de/news/ausschreibungen",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 2,
-      "total_recent_failures": 3,
-      "last_failure": "2026-07-03T11:01:13.812453+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.forum-transregionale-studien.de%2Fnews%2Fausschreibungen"
-    }
-  ]
+  "sites": []
 }

@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-03T11:01:13.812453+00:00",
-  "site_summary": {
-    "Forum Transregionale Studien": {
-      "site_id": 164,
-      "url": "https://www.forum-transregionale-studien.de/news/ausschreibungen",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-07-03T09:01:28.207932+00:00",
-      "last_recent_failure": "2026-07-03T11:01:13.812453+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.forum-transregionale-studien.de%2Fnews%2Fausschreibungen"
-    }
-  },
+  "last_updated": "2026-07-03T11:31:11.303440+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T21:07:23.784674+00:00",

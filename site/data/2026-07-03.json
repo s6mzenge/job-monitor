@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T11:01:13.812453+00:00",
-  "run_count": 23,
+  "generated_at": "2026-07-03T11:31:11.303440+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Veranstaltungsmanagement",
@@ -169,6 +169,40 @@
       "type": "Internship",
       "deadline": "2026-07-16",
       "salary": "€2,349/month (brutto)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Student Assistant - Student Recruitment (gn)",
+      "organisation": "Hertie School",
+      "url": "https://hertie-school.dvinci-easy.com/en/p/en/jobs/80954/student-assistant-student-recruitment-gn-part-time-10-15-hoursweek",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a student-assistant / Werkstudent role, which is excluded by policy; it also requires enrolment at a Berlin university and very good Spanish, neither of which the candidate meets. Multiple hard disqualifiers apply regardless of the recruitment/marketing focus being off the candidate's core interests.",
+      "location": "Berlin, Germany",
+      "type": "Part-time",
+      "deadline": "2026-07-29",
+      "salary": "€14.32 per hour",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wissenschaftliche:r Mitarbeiter:in für Bildung und Vermittlung (w/d/m)",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/b7ab7291a2c8f5303e7beb5d038c690da7323eb90",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The posting requires demonstrated professional experience in museum work (preferably an art museum), a very strong background in art history / art-and-culture mediation with proven publications or project work in drawing and printmaking, and good knowledge of a third modern language beyond German and English — an essential the candidate cannot meet with B1 French/A1 Dutch. It is also not entry-level, demanding proven museum-education expertise the candidate lacks. The art-museum education field also sits well outside the candidate's interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (19.5 h/week, permanent)",
+      "deadline": "2026-07-24",
+      "salary": "EG 13 TVöD Bund",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
