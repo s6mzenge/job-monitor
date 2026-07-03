@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-03T13:01:20.942937+00:00",
+  "generated_at": "2026-07-03T13:31:10.331545+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 140,
-  "erroring": 1,
+  "healthy": 139,
+  "erroring": 2,
   "paused": 0,
   "methods": {
     "palladium_api": 1,
@@ -14,7 +14,7 @@
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 12,
+    "playwright": 11,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -27,6 +27,7 @@
     "ActionAid International",
     "Ada Lovelace Institute",
     "Aegis Trust",
+    "Airwars",
     "AKE International",
     "Alan Turing Institute",
     "Amnesty International",
@@ -91,7 +92,6 @@
     "IIED",
     "IISS",
     "Impactt",
-    "Impunity Watch",
     "INQUEST",
     "Institute for Government",
     "Institute for Strategic Dialogue (ISD)",
@@ -151,7 +151,6 @@
     "ShareAction",
     "Sibylline",
     "Sigrid Rausing Trust",
-    "SOAS University of London",
     "Springer Nature",
     "Teneo",
     "The Economist Group",
@@ -167,17 +166,30 @@
   ],
   "sites": [
     {
-      "id": 133,
-      "name": "Airwars",
-      "url": "https://airwars.org/about/workwithus/",
+      "id": 34,
+      "name": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 3,
+      "last_failure": "2026-07-03T13:31:10.331545+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
+    },
+    {
+      "id": 45,
+      "name": "Impunity Watch",
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
       "method": "html",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 20,
-      "last_failure": "2026-07-03T13:01:20.942937+00:00",
+      "total_recent_failures": 7,
+      "last_failure": "2026-07-03T13:31:10.331545+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
     }
   ]
 }
