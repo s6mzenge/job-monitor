@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T18:01:15.834110+00:00",
-  "run_count": 37,
+  "generated_at": "2026-07-03T18:31:08.848997+00:00",
+  "run_count": 38,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Veranstaltungsmanagement",
@@ -390,6 +390,23 @@
       "type": "Full-time (Fixed-term, 2 years)",
       "deadline": "17 July 2026, 17:30 CET",
       "salary": "€43,000 - €47,000 per year",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentischer Mitarbeiter (m/w/d) Team Raw Materials & Supply Chains",
+      "organisation": "WWF Deutschland",
+      "url": "https://www.wwf.de/ueber-uns/stellenangebote/stellenangebot/stelle/studentischer-mitarbeiter-m-w-d-team-raw-materials-supply-chains-0bfvaj39",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is explicitly a Werkstudent (working-student) role, which is excluded by policy regardless of fit. The topic (sustainable supply chains) is also outside the candidate's core interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Werkstudent (working-student, part-time 20h/week)",
+      "deadline": "2026-07-29",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
