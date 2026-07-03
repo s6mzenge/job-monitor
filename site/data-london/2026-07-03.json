@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T06:31:06.874941+00:00",
-  "run_count": 14,
+  "generated_at": "2026-07-03T07:01:19.126191+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Director",
@@ -83,6 +83,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate or Senior Editor, Communications Physics",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Shanghai/Associate-or-Senior-Editor--Communications-Physics_JR106522",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires an already-completed PhD in a physics discipline covered by the journal, which the candidate does not hold and which is entirely outside their field. This is a hard qualification and subject-matter mismatch on every axis.",
+      "location": "Shanghai / Beijing / Madrid / Pune (hybrid)",
+      "type": "Full-time",
+      "deadline": "26 July 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
