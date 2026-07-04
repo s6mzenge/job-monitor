@@ -1,59 +1,6 @@
 {
-  "last_updated": "2026-07-04T07:31:18.364894+00:00",
-  "site_summary": {
-    "ERM": {
-      "site_id": 69,
-      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
-      "method": "workday_api",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-07-04T06:31:08.672069+00:00",
-      "last_recent_failure": "2026-07-04T07:31:18.364894+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
-    },
-    "International Rescue Committee": {
-      "site_id": 111,
-      "url": "https://theirc.wd1.myworkdayjobs.com/en-US/External_Careers",
-      "method": "workday_api",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-07-04T06:31:08.672069+00:00",
-      "last_recent_failure": "2026-07-04T07:31:18.364894+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
-    },
-    "Airwars": {
-      "site_id": 133,
-      "url": "https://airwars.org/about/workwithus/",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 40,
-      "first_recent_failure": "2026-07-02T01:01:14.296954+00:00",
-      "last_recent_failure": "2026-07-04T07:31:18.364894+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
-    },
-    "Springer Nature": {
-      "site_id": 204,
-      "url": "https://springernature.wd3.myworkdayjobs.com/en-US/SpringerNatureCareers",
-      "method": "workday_api",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-07-04T06:31:08.672069+00:00",
-      "last_recent_failure": "2026-07-04T07:31:18.364894+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
-    }
-  },
+  "last_updated": "2026-07-04T08:01:20.943356+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T15:46:14.886630+00:00",
