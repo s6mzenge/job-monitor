@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-04T02:31:10.060232+00:00",
+  "generated_at": "2026-07-04T03:01:13.265327+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 141,
-  "erroring": 0,
+  "healthy": 139,
+  "erroring": 2,
   "paused": 0,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 86,
+    "html": 85,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 12,
+    "playwright": 11,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -38,7 +38,6 @@
     "APCO Worldwide",
     "Asylum Aid",
     "BBC",
-    "BID (Bail for Immigration Detainees)",
     "BIICL",
     "Birkbeck, University of London",
     "Bridgespan Group",
@@ -78,7 +77,6 @@
     "FTI Consulting",
     "German Historical Institute London",
     "Global Justice Now (CharityJob)",
-    "Global Rights Compliance",
     "Global Witness",
     "Goethe-Institut UK",
     "Goldsmiths, University of London",
@@ -166,5 +164,32 @@
     "Wiener Holocaust Library",
     "Wits University"
   ],
-  "sites": []
+  "sites": [
+    {
+      "id": 37,
+      "name": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 5,
+      "last_failure": "2026-07-04T03:01:13.265327+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+    },
+    {
+      "id": 82,
+      "name": "BID (Bail for Immigration Detainees)",
+      "url": "https://www.biduk.org/articles/category/35-job-opportunities",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 21,
+      "last_failure": "2026-07-04T03:01:13.265327+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.biduk.org%2Farticles%2Fcategory%2F35-job-opportunities"
+    }
+  ]
 }
