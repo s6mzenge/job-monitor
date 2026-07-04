@@ -1,7 +1,7 @@
 {
   "date": "2026-07-04",
-  "generated_at": "2026-07-04T05:31:15.357779+00:00",
-  "run_count": 12,
+  "generated_at": "2026-07-04T06:01:15.208069+00:00",
+  "run_count": 13,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -80,6 +80,23 @@
       "interest_score": "",
       "match": "low",
       "reason": "This is a call for established experts to join an advisory committee, not a paid entry-level role — it seeks seasoned specialists with standing in the field, which the candidate (a current MSc student with RA experience only) does not have, and it reads as an unpaid advisory position. Although the human-rights and securitisation subject matter is genuinely close to the candidate's interests, the seniority/expert requirement and non-role nature are hard blockers.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advisory Committee Member – Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for expert advisory committee members — a voluntary/advisory role seeking established experts and activists, not a paid entry-level position, and it appears aimed at defenders with lived experience from East Africa, Latin America and Southeast Asia. It is not a genuine paid vacancy the candidate could take, so it fails the paid-role gate despite the strong human-rights subject matter.",
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
