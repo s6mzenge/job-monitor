@@ -1,14 +1,27 @@
 {
-  "last_updated": "2026-07-05T07:01:18.454225+00:00",
+  "last_updated": "2026-07-05T07:31:12.260975+00:00",
   "site_summary": {
+    "Aegis Trust": {
+      "site_id": 5,
+      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-07-05T07:31:12.260975+00:00",
+      "last_recent_failure": "2026-07-05T07:31:12.260975+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Faegistrust.online%2Fget-involved%2Fwork-at-aegis%2F"
+    },
     "ICJP": {
       "site_id": 99,
       "url": "https://www.icjpalestine.com/about-us/careers/",
       "method": "html",
-      "consecutive_failures": 5,
-      "total_recent_failures": 5,
+      "consecutive_failures": 6,
+      "total_recent_failures": 6,
       "first_recent_failure": "2026-07-05T05:01:21.834096+00:00",
-      "last_recent_failure": "2026-07-05T07:01:18.454225+00:00",
+      "last_recent_failure": "2026-07-05T07:31:12.260975+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -1445,6 +1458,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.icjpalestine.com%2Fabout-us%2Fcareers%2F",
       "consecutive_count": 5
+    },
+    {
+      "timestamp": "2026-07-05T07:31:12.260975+00:00",
+      "site": "Aegis Trust",
+      "site_id": 5,
+      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Faegistrust.online%2Fget-involved%2Fwork-at-aegis%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-05T07:31:12.260975+00:00",
+      "site": "ICJP",
+      "site_id": 99,
+      "url": "https://www.icjpalestine.com/about-us/careers/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.icjpalestine.com%2Fabout-us%2Fcareers%2F",
+      "consecutive_count": 6
     }
   ]
 }

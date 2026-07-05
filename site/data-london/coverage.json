@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-05T07:01:18.454225+00:00",
+  "generated_at": "2026-07-05T07:31:12.260975+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 140,
-  "erroring": 1,
+  "healthy": 139,
+  "erroring": 2,
   "paused": 0,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 85,
+    "html": 84,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -26,7 +26,6 @@
   "healthy_names": [
     "ActionAid International",
     "Ada Lovelace Institute",
-    "Aegis Trust",
     "Airwars",
     "AKE International",
     "Alan Turing Institute",
@@ -172,12 +171,25 @@
       "url": "https://www.icjpalestine.com/about-us/careers/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 5,
-      "total_recent_failures": 5,
-      "last_failure": "2026-07-05T07:01:18.454225+00:00",
+      "consecutive_failures": 6,
+      "total_recent_failures": 6,
+      "last_failure": "2026-07-05T07:31:12.260975+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.icjpalestine.com%2Fabout-us%2Fcareers%2F"
+    },
+    {
+      "id": 5,
+      "name": "Aegis Trust",
+      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-05T07:31:12.260975+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Faegistrust.online%2Fget-involved%2Fwork-at-aegis%2F"
     }
   ]
 }
