@@ -1,7 +1,7 @@
 {
   "date": "2026-07-05",
-  "generated_at": "2026-07-05T22:01:32.610033+00:00",
-  "run_count": 45,
+  "generated_at": "2026-07-05T22:31:22.432326+00:00",
+  "run_count": 46,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (w/m/d) - Institut für Deutsche und Niederländische Philologie",
@@ -84,6 +84,23 @@
       "type": "Part-time (50%, fixed-term up to 4 years)",
       "deadline": "2026-07-27",
       "salary": "Entgeltgruppe 13 TV-L",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wiss. Mitarbeiter*in (Praedoc) - Computational Chemistry / ML Force Fields",
+      "organisation": "FU Berlin (wiss.)",
+      "url": "https://jobs.fu-berlin.de/job-invite/786/?locale=de_DE",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a funded PhD position, but it requires an essential Master's in chemistry, physics or a related natural science, plus computational chemistry, ML force fields and molecular simulation skills the candidate plainly lacks. It sits entirely outside the candidate's IR/international-law background and analysis-level Python — a hard field and skills mismatch.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (65%, PhD position)",
+      "deadline": "2026-08-03",
+      "salary": "E 13 TV-L FU (65%)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
