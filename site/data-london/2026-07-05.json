@@ -1,7 +1,7 @@
 {
   "date": "2026-07-05",
-  "generated_at": "2026-07-05T00:31:05.626444+00:00",
-  "run_count": 2,
+  "generated_at": "2026-07-05T01:01:10.132030+00:00",
+  "run_count": 3,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -33,6 +33,40 @@
       "type": "Full-time",
       "deadline": "31/05/2026",
       "salary": "£32,696 per annum plus up to 5% matched pension",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Director",
+      "organisation": "Palestine Solidarity Campaign",
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "This is a Director role with ultimate executive responsibility, leading a senior team and requiring extensive leadership experience — far beyond entry-level and a hard level mismatch. The subject matter is interesting, but the seniority is a clear disqualifier.",
+      "location": "London (hybrid)",
+      "type": "Full-time (Permanent)",
+      "deadline": "8 July 2026",
+      "salary": "£80,000 – £95,000 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for established \"experts\" to sit on an advisory committee, not a genuine paid entry-level role — it is a voluntary/advisory position seeking senior subject-matter authority the candidate does not yet have. Although human rights and criminalisation of defenders is a strong interest match, the level and nature of the posting are a hard mismatch.",
+      "location": "Not specified",
+      "type": "Not specified (Advisory Committee — voluntary expert body)",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
