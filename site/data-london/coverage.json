@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T03:01:26.654350+00:00",
+  "generated_at": "2026-07-05T03:31:15.131358+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 140,
@@ -8,13 +8,13 @@
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 85,
+    "html": 86,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 12,
+    "playwright": 11,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -27,6 +27,7 @@
     "ActionAid International",
     "Ada Lovelace Institute",
     "Aegis Trust",
+    "Airwars",
     "AKE International",
     "Alan Turing Institute",
     "Amnesty International",
@@ -138,7 +139,6 @@
     "Public Law Project",
     "RAND Europe",
     "REDRESS",
-    "Reprieve",
     "Resolution Foundation",
     "Rights & Security International",
     "Rights for Peace",
@@ -167,17 +167,17 @@
   ],
   "sites": [
     {
-      "id": 133,
-      "name": "Airwars",
-      "url": "https://airwars.org/about/workwithus/",
-      "method": "html",
+      "id": 58,
+      "name": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "method": "playwright",
       "status": "erroring",
-      "consecutive_failures": 2,
-      "total_recent_failures": 58,
-      "last_failure": "2026-07-05T03:01:26.654350+00:00",
+      "consecutive_failures": 1,
+      "total_recent_failures": 4,
+      "last_failure": "2026-07-05T03:31:15.131358+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
+      "message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
     }
   ]
 }
