@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-05T05:31:10.895794+00:00",
+  "last_updated": "2026-07-05T06:01:43.016786+00:00",
   "site_summary": {
-    "Heinrich Böll Stiftung": {
-      "site_id": 184,
-      "url": "https://www.interamt.de/koop/app/trefferliste?partner=556",
-      "method": "interamt",
+    "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)": {
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
       "consecutive_failures": 1,
-      "total_recent_failures": 7,
-      "first_recent_failure": "2026-07-03T01:01:18.371149+00:00",
-      "last_recent_failure": "2026-07-05T05:31:10.895794+00:00",
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-06-29T07:43:04.985616+00:00",
+      "last_recent_failure": "2026-07-05T06:01:43.016786+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556"
+      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -815,6 +815,16 @@
       "method": "interamt",
       "type": "fetch_error",
       "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-05T06:01:43.016786+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
     }
   ]
