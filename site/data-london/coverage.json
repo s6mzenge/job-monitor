@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-05T21:31:26.803487+00:00",
+  "generated_at": "2026-07-05T22:01:40.922231+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 140,
-  "erroring": 1,
+  "healthy": 141,
+  "erroring": 0,
   "paused": 0,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 85,
+    "html": 86,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -27,6 +27,7 @@
     "ActionAid International",
     "Ada Lovelace Institute",
     "Aegis Trust",
+    "Airwars",
     "AKE International",
     "Alan Turing Institute",
     "Amnesty International",
@@ -165,19 +166,5 @@
     "Wiener Holocaust Library",
     "Wits University"
   ],
-  "sites": [
-    {
-      "id": 133,
-      "name": "Airwars",
-      "url": "https://airwars.org/about/workwithus/",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 70,
-      "last_failure": "2026-07-05T21:31:26.803487+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
-    }
-  ]
+  "sites": []
 }
