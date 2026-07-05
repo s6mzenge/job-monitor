@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-05T14:31:15.117794+00:00",
+  "last_updated": "2026-07-05T15:01:20.947724+00:00",
   "site_summary": {
-    "DIW Berlin": {
-      "site_id": 189,
-      "url": "https://www.diw.de/de/diw_01.c.618535.de/karriere/stellenangebote.html",
-      "method": "html",
+    "Uni Hamburg (Stellenangebote)": {
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
       "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-07-05T13:31:15.463502+00:00",
-      "last_recent_failure": "2026-07-05T14:31:15.117794+00:00",
+      "total_recent_failures": 35,
+      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
+      "last_recent_failure": "2026-07-05T15:01:20.947724+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.diw.de%2Fde%2Fdiw_01.c.618535.de%2Fkarriere%2Fstellenangebote.html"
+      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -885,6 +885,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.diw.de%2Fde%2Fdiw_01.c.618535.de%2Fkarriere%2Fstellenangebote.html",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-05T15:01:20.947724+00:00",
+      "site": "Uni Hamburg (Stellenangebote)",
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
     }
   ]
