@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T07:31:12.260975+00:00",
+  "generated_at": "2026-07-05T08:01:25.067923+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 139,
@@ -26,7 +26,7 @@
   "healthy_names": [
     "ActionAid International",
     "Ada Lovelace Institute",
-    "Airwars",
+    "Aegis Trust",
     "AKE International",
     "Alan Turing Institute",
     "Amnesty International",
@@ -171,25 +171,25 @@
       "url": "https://www.icjpalestine.com/about-us/careers/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 6,
-      "total_recent_failures": 6,
-      "last_failure": "2026-07-05T07:31:12.260975+00:00",
+      "consecutive_failures": 7,
+      "total_recent_failures": 7,
+      "last_failure": "2026-07-05T08:01:25.067923+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.icjpalestine.com%2Fabout-us%2Fcareers%2F"
     },
     {
-      "id": 5,
-      "name": "Aegis Trust",
-      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
+      "id": 133,
+      "name": "Airwars",
+      "url": "https://airwars.org/about/workwithus/",
       "method": "html",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "last_failure": "2026-07-05T07:31:12.260975+00:00",
+      "total_recent_failures": 62,
+      "last_failure": "2026-07-05T08:01:25.067923+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Faegistrust.online%2Fget-involved%2Fwork-at-aegis%2F"
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
     }
   ]
 }
