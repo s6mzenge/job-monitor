@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-07-05T06:31:17.948178+00:00",
+  "last_updated": "2026-07-05T07:01:18.454225+00:00",
   "site_summary": {
     "ICJP": {
       "site_id": 99,
       "url": "https://www.icjpalestine.com/about-us/careers/",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 4,
+      "consecutive_failures": 5,
+      "total_recent_failures": 5,
       "first_recent_failure": "2026-07-05T05:01:21.834096+00:00",
-      "last_recent_failure": "2026-07-05T06:31:17.948178+00:00",
+      "last_recent_failure": "2026-07-05T07:01:18.454225+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -1435,6 +1435,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.icjpalestine.com%2Fabout-us%2Fcareers%2F",
       "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-07-05T07:01:18.454225+00:00",
+      "site": "ICJP",
+      "site_id": 99,
+      "url": "https://www.icjpalestine.com/about-us/careers/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.icjpalestine.com%2Fabout-us%2Fcareers%2F",
+      "consecutive_count": 5
     }
   ]
 }

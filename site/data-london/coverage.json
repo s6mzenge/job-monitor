@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T06:31:17.948178+00:00",
+  "generated_at": "2026-07-05T07:01:18.454225+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 140,
@@ -172,9 +172,9 @@
       "url": "https://www.icjpalestine.com/about-us/careers/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 4,
-      "total_recent_failures": 4,
-      "last_failure": "2026-07-05T06:31:17.948178+00:00",
+      "consecutive_failures": 5,
+      "total_recent_failures": 5,
+      "last_failure": "2026-07-05T07:01:18.454225+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.icjpalestine.com%2Fabout-us%2Fcareers%2F"
