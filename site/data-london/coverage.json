@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-05T09:01:18.027266+00:00",
+  "generated_at": "2026-07-05T09:31:19.865618+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 141,
-  "erroring": 0,
+  "healthy": 140,
+  "erroring": 1,
   "paused": 0,
   "methods": {
     "palladium_api": 1,
@@ -14,7 +14,7 @@
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 12,
+    "playwright": 11,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -152,7 +152,6 @@
     "ShareAction",
     "Sibylline",
     "Sigrid Rausing Trust",
-    "SOAS University of London",
     "Springer Nature",
     "Teneo",
     "The Economist Group",
@@ -166,5 +165,19 @@
     "Wiener Holocaust Library",
     "Wits University"
   ],
-  "sites": []
+  "sites": [
+    {
+      "id": 34,
+      "name": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 4,
+      "last_failure": "2026-07-05T09:31:19.865618+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
+    }
+  ]
 }

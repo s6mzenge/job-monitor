@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-07-05T09:01:18.027266+00:00",
-  "site_summary": {},
+  "last_updated": "2026-07-05T09:31:19.865618+00:00",
+  "site_summary": {
+    "SOAS University of London": {
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 4,
+      "first_recent_failure": "2026-06-29T07:01:15.912367+00:00",
+      "last_recent_failure": "2026-07-05T09:31:19.865618+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://vacancies.soas.ac.uk/#vacancies\", waiting until \"domcontentloaded\""
+    }
+  },
   "issues": [
     {
       "timestamp": "2026-06-28T15:46:14.886630+00:00",
@@ -1481,6 +1495,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-07-05T09:31:19.865618+00:00",
+      "site": "SOAS University of London",
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://vacancies.soas.ac.uk/#vacancies\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
     }
   ]
 }
