@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-05",
+  "generated_at": "2026-07-05T00:01:14.267336+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "5",
+      "match": "low",
+      "reason": "This is a Manager-level role at Project/Regional Lead pay band, well above entry-level, and a litigation team manager post almost certainly requires legal qualification and years of experience the candidate lacks. Despite Reprieve's human-rights mission being a perfect interest match, the level and likely legal-qualification requirement are hard mismatches.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% matched pension",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fundraising Coordinator",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "priority": 28,
+      "eligible": true,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a genuine entry-level Coordinator role, so the level fits, but it is a fundraising/development function that sits outside the candidate's research and analysis strengths and their dedicated fundraising experience is limited. Reprieve's human-rights mission is appealing, but the fundraising specialism is a poor skills match, keeping the priority low.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "31/05/2026",
+      "salary": "£32,696 per annum plus up to 5% matched pension",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
+}
