@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-06T21:31:25.334058+00:00",
+  "generated_at": "2026-07-06T22:01:45.565374+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 140,
-  "erroring": 1,
+  "healthy": 141,
+  "erroring": 0,
   "paused": 0,
   "methods": {
     "palladium_api": 1,
@@ -14,7 +14,7 @@
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 11,
+    "playwright": 12,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -139,6 +139,7 @@
     "Public Law Project",
     "RAND Europe",
     "REDRESS",
+    "Reprieve",
     "Resolution Foundation",
     "Rights & Security International",
     "Rights for Peace",
@@ -165,19 +166,5 @@
     "Wiener Holocaust Library",
     "Wits University"
   ],
-  "sites": [
-    {
-      "id": 58,
-      "name": "Reprieve",
-      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
-      "method": "playwright",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 6,
-      "last_failure": "2026-07-06T21:31:25.334058+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
-    }
-  ]
+  "sites": []
 }

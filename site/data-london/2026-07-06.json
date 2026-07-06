@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T21:31:25.334058+00:00",
-  "run_count": 44,
+  "generated_at": "2026-07-06T22:01:45.565374+00:00",
+  "run_count": 45,
   "jobs": [
     {
       "title": "Director",
@@ -557,6 +557,23 @@
       "match": "low",
       "reason": "Multiple hard disqualifiers: a \"Lead\" title with an essential requirement of 2 years' social-compliance auditing plus 100 verifiable audit days and APSCA registration the candidate lacks, and it requires fluent Spanish (candidate has none). The supply-chain assurance work is also outside the candidate's core interest zones.",
       "location": "New York, US",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Cloud Systems Engineer",
+      "organisation": "Bridgespan Group",
+      "url": "https://phh.tbe.taleo.net/phh01/ats/careers/requisition.jsp?org=THEBRIDG12&cws=40&rid=524",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a deep-technical cloud/infrastructure engineering role requiring 5–8+ years of systems administration, Azure certifications, IaC, PowerShell and identity-platform expertise — all essentials far beyond the candidate's analysis-level Python and non-technical background. It also demands US work eligibility without sponsorship. Multiple hard disqualifiers apply.",
+      "location": "Boston / New York / San Francisco (US-based)",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
