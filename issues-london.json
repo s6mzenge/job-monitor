@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-06T18:31:26.697690+00:00",
-  "site_summary": {
-    "Global Rights Compliance": {
-      "site_id": 37,
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 6,
-      "first_recent_failure": "2026-06-28T15:46:14.886630+00:00",
-      "last_recent_failure": "2026-07-06T18:31:26.697690+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
-    }
-  },
+  "last_updated": "2026-07-06T19:01:37.538060+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T15:46:14.886630+00:00",
