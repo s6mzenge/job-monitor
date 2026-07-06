@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-06T20:01:26.595392+00:00",
+  "last_updated": "2026-07-06T20:31:24.819307+00:00",
   "site_summary": {
-    "Airwars": {
-      "site_id": 133,
-      "url": "https://airwars.org/about/workwithus/",
+    "ICJP": {
+      "site_id": 99,
+      "url": "https://www.icjpalestine.com/about-us/careers/",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 87,
-      "first_recent_failure": "2026-07-02T01:01:14.296954+00:00",
-      "last_recent_failure": "2026-07-06T20:01:26.595392+00:00",
+      "consecutive_failures": 1,
+      "total_recent_failures": 8,
+      "first_recent_failure": "2026-07-05T05:01:21.834096+00:00",
+      "last_recent_failure": "2026-07-06T20:31:24.819307+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
+      "last_message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.icjpalestine.com%2Fabout-us%2Fcareers%2F"
     }
   },
   "issues": [
@@ -1855,6 +1855,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-07-06T20:31:24.819307+00:00",
+      "site": "ICJP",
+      "site_id": 99,
+      "url": "https://www.icjpalestine.com/about-us/careers/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.icjpalestine.com%2Fabout-us%2Fcareers%2F",
+      "consecutive_count": 1
     }
   ]
 }
