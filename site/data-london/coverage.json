@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-06T08:01:25.824985+00:00",
+  "generated_at": "2026-07-06T08:31:27.720153+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 141,
-  "erroring": 0,
+  "healthy": 139,
+  "erroring": 2,
   "paused": 0,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 86,
+    "html": 85,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 12,
+    "playwright": 11,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -148,7 +148,6 @@
     "RUSI",
     "S-RM",
     "Saferworld",
-    "Save the Children UK",
     "ShareAction",
     "Sibylline",
     "Sigrid Rausing Trust",
@@ -163,8 +162,34 @@
     "Verisk Maplecroft",
     "War on Want",
     "Wellcome Trust",
-    "Wiener Holocaust Library",
     "Wits University"
   ],
-  "sites": []
+  "sites": [
+    {
+      "id": 4,
+      "name": "Wiener Holocaust Library",
+      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "last_failure": "2026-07-06T08:31:27.720153+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "id": 55,
+      "name": "Save the Children UK",
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "last_failure": "2026-07-06T08:31:27.720153+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
+    }
+  ]
 }
