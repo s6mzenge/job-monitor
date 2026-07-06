@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T10:31:36.553659+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-06T11:01:38.560382+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Advocacy & Campaign Manager – Europe",
@@ -84,6 +84,23 @@
       "type": "Full-time (suitable for part-time)",
       "deadline": "17.08.2026",
       "salary": "EGR. 13 TV-L",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wissenschaftliche Museumsassistenz in Fortbildung (w/d/m)",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/aebaf0f04cd57d86e9ea77bebc120798ca8bb3f10",
+      "priority": 12,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a paid, entry-level museum-assistant traineeship that a Master's holder can take, but it clearly prefers a degree in art history with knowledge of contemporary art since 1960 — a skills domain the candidate does not have. The subject (modern/contemporary art curation) sits well outside the candidate's international-law/security interest zones, so while eligible it is a weak fit.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (part-time possible), fixed-term 24 months",
+      "deadline": "2026-08-03",
+      "salary": "Year 1: €2,450.56/month gross; Year 2: €2,639.66/month gross",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
