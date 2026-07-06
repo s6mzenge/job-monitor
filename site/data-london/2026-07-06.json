@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T05:01:30.839519+00:00",
-  "run_count": 11,
+  "generated_at": "2026-07-06T05:31:22.104938+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Director",
@@ -100,6 +100,23 @@
       "location": "Hong Kong",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for \"experts\" to join an unpaid Advisory Committee, not a genuine paid entry-level role, and it seeks established practitioners with regional expertise in East Africa, Latin America or Southeast Asia — a level and profile the candidate does not meet. The human-rights subject is on-mission, but it is neither paid nor a real vacancy for this candidate.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
