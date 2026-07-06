@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-06T11:01:34.321219+00:00",
+  "last_updated": "2026-07-06T11:31:23.031476+00:00",
   "site_summary": {
-    "Impunity Watch": {
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
+    "Reprieve": {
+      "site_id": 58,
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "method": "playwright",
       "consecutive_failures": 1,
-      "total_recent_failures": 19,
-      "first_recent_failure": "2026-07-02T10:31:03.695349+00:00",
-      "last_recent_failure": "2026-07-06T11:01:34.321219+00:00",
+      "total_recent_failures": 5,
+      "first_recent_failure": "2026-07-02T09:01:10.633271+00:00",
+      "last_recent_failure": "2026-07-06T11:31:23.031476+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
+      "last_message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
     }
   },
   "issues": [
@@ -1764,6 +1764,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-06T11:31:23.031476+00:00",
+      "site": "Reprieve",
+      "site_id": 58,
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content.",
       "consecutive_count": 1
     }
   ]

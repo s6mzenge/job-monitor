@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T11:01:34.321219+00:00",
-  "run_count": 23,
+  "generated_at": "2026-07-06T11:31:23.031476+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Director",
@@ -271,6 +271,23 @@
       "type": "Part-time",
       "deadline": "2026-07-19",
       "salary": "From £27,030 pa inclusive (pro-rata £14.80/hour)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "D365 and Power Platform Solution Architect",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/6F3F388F2C",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a senior enterprise-software architect role requiring proven, hands-on experience implementing Microsoft D365 and Power Platform solutions, ERP/CRM architecture, DevOps and data engineering — deep-technical requirements far beyond the candidate's analysis-level skills, and it is an architect (senior/lead) position, not entry-level. Although Control Risks is a core zone (b) firm, this is an internal IT function with no research or geopolitical-analysis content.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
