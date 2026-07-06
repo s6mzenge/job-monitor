@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T13:31:32.388509+00:00",
-  "run_count": 28,
+  "generated_at": "2026-07-06T14:01:46.890325+00:00",
+  "run_count": 29,
   "jobs": [
     {
       "title": "Advocacy & Campaign Manager – Europe",
@@ -271,6 +271,23 @@
       "type": "Internship",
       "deadline": "2026-10-01",
       "salary": "EUR 603/month (Praktikums-Entschädigung) + Berlin transit ticket",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in bei den Globalvorhaben \"FAST-Sustainable Public Finance for Biodiversity\" und \"Ready4Ocean Finance\"",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78693",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a Praktikum/internship, which is excluded as a matter of policy regardless of pay. It also requires an economics/political-economy background in climate and biodiversity finance, outside the candidate's profile.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-20",
+      "salary": "€2,349/month (gross)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
