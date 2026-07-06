@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T15:31:41.755840+00:00",
-  "run_count": 32,
+  "generated_at": "2026-07-06T16:01:32.125940+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Advocacy & Campaign Manager – Europe",
@@ -373,6 +373,23 @@
       "type": "Full-time (permanent)",
       "deadline": "2026-07-19",
       "salary": "E 13 TV-H / A 13 HBesG",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in in der Stabsstelle Evaluierung",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78700",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is explicitly a Praktikum / internship, which is excluded as a matter of policy regardless of pay. It also requires current enrolment or a degree completed within the last 6 months, and while the evaluation/research work is a plausible fit, the internship status is a hard disqualifier.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-20",
+      "salary": "€2,349/month (brutto)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
