@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T09:31:34.020820+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-06T10:01:30.627209+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Director",
@@ -254,6 +254,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "FM Campus Services/FM Housekeeping Services General Assistants (Cleaners)-Campus",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/4015/0/471281/15539/fm-campus-services-fm-housekeeping-services-general-assistants-cleaners-campus",
+      "priority": 3,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a cleaning / housekeeping role whose essentials (cleaning experience, BICSc training, manual handling, Health & Safety) are entirely outside the candidate's research and policy profile — a very poor paper fit despite being technically open and paid. It sits in none of the interest zones and offers no relevant skills alignment, so it barely warrants surfacing.",
+      "location": "London",
+      "type": "Part-time",
+      "deadline": "2026-07-19",
+      "salary": "From £27,030 pa inclusive (pro-rata £14.80/hour)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
