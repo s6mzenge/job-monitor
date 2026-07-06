@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T12:31:35.548681+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-06T13:01:28.434939+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Director",
@@ -355,6 +355,23 @@
       "location": "Heidelberg, Germany",
       "type": "Full-time (dual study / apprenticeship)",
       "deadline": "2026-08-30",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Communication Strategist",
+      "organisation": "Crisis Action",
+      "url": "https://crisisaction.bamboohr.com/careers/55",
+      "priority": 30,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "The provided content is minimal, but the \"Strategist\" framing and comms focus suggest a role likely above pure entry-level and centred on communications/campaigning, which is a partial skills gap for this research-oriented candidate. Crisis Action works on conflict and atrocity prevention, which is a strong interest match, but the paper fit on the comms-specialist side is weak and the level is uncertain. Location is unspecified rather than tied elsewhere, so the London-only filter does not exclude it.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
