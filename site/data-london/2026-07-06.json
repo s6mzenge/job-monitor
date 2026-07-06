@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T22:01:45.565374+00:00",
-  "run_count": 45,
+  "generated_at": "2026-07-06T22:31:28.368047+00:00",
+  "run_count": 46,
   "jobs": [
     {
       "title": "Director",
@@ -574,6 +574,23 @@
       "match": "low",
       "reason": "This is a deep-technical cloud/infrastructure engineering role requiring 5–8+ years of systems administration, Azure certifications, IaC, PowerShell and identity-platform expertise — all essentials far beyond the candidate's analysis-level Python and non-technical background. It also demands US work eligibility without sponsorship. Multiple hard disqualifiers apply.",
       "location": "Boston / New York / San Francisco (US-based)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "ELT Sales Representative",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Mexico-City/ELT-Sales-Representative_JR106310-1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a field sales role requiring at least 2 years of face-to-face sales experience, a valid driver's licence, and effectively Spanish for the Mexican education market — none of which the candidate offers, and it sits entirely outside all three interest zones. The essential sales experience and driving requirement are unmet essentials, and the role is not entry-level research.",
+      "location": "San Luis Potosí / Mexico City, Mexico",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
