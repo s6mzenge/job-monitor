@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T16:01:34.142641+00:00",
-  "run_count": 33,
+  "generated_at": "2026-07-06T16:31:30.717836+00:00",
+  "run_count": 34,
   "jobs": [
     {
       "title": "Director",
@@ -509,6 +509,40 @@
       "type": "Internship",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Officer—DigiPulse, Digital Futures for Children centre",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/2504/0/471333/15539/research-officer-digipulse-digital-futures-for-children-centre",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A completed PhD in a relevant discipline is an essential requirement, which the candidate does not hold (they are pursuing an MSc). The role also requires essential experience in longitudinal study design, EMA/experience-sampling and advanced statistical modelling (multilevel/DSEM) that exceeds the candidate's analysis-level skills, and the children's-media-wellbeing topic sits outside the core interest zones.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "22 July 2026",
+      "salary": "£43,277–£51,714 (progression to £55,497) pa inclusive",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Head of Creative Services and Events",
+      "organisation": "Wellcome Trust",
+      "url": "https://wellcome.wd3.myworkdayjobs.com/job/London/Head-of-Creative-Services-and-Events_R-003310-1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a \"Head of\" senior leadership role requiring significant senior creative leadership experience and a track record of leading multidisciplinary teams — a hard level mismatch for a candidate with no full-time experience. It also sits far outside the candidate's research and policy profile, requiring creative-services, campaign and events-management expertise they lack.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "20th July",
+      "salary": "£105,400 per annum",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
