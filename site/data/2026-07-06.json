@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T08:01:25.726212+00:00",
-  "run_count": 17,
+  "generated_at": "2026-07-06T08:31:25.251896+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Advocacy & Campaign Manager – Europe",
@@ -33,6 +33,23 @@
       "type": "Full-time / Part-time (Wahlstation for legal trainees)",
       "deadline": "2027-12-31",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Hauptsachbearbeiter (m/w/d) für die Leitung der Gruppe Haushalt im Referat Finanzen, Reisestelle",
+      "organisation": "Alexander von Humboldt-Stiftung",
+      "url": "https://recruitingapp-2649.umantis.com/Vacancies/3969/Description/1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a leadership role (\"Leitung der Gruppe Haushalt\") requiring proven relevant professional experience, management/leadership competence, comprehensive knowledge of public budget and grant law, and ERP software skills — none of which the candidate has. It is a finance/administration management post clearly above entry-level and outside the candidate's interest and skill profile.",
+      "location": "Bonn, Germany",
+      "type": "Full-time (part-time possible)",
+      "deadline": "2026-07-22",
+      "salary": "TVöD Entgeltgruppe 12",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
