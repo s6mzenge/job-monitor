@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T22:31:28.368047+00:00",
-  "run_count": 46,
+  "generated_at": "2026-07-06T23:01:24.513282+00:00",
+  "run_count": 47,
   "jobs": [
     {
       "title": "Director",
@@ -594,6 +594,40 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Team Lead, Operations Engineer",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Team-Lead/48202-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A \"Team Lead\" line-management role requiring proven experience managing teams in a 24/7 broadcast-technology operation, plus ITIL service management — a clear leadership title with essential experience the candidate does not have. It is also a technical broadcast-operations role far outside the candidate's research and policy profile and interest zones.",
+      "location": "London, GBR",
+      "type": "Contract (12 month attachment/FTC)",
+      "deadline": "8 July 2026",
+      "salary": "£65,000 - £75,000 plus London Weighting",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Software Engineer - EXTEND",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Senior-Software-Engineer-EXTEND/43659-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Deep-technical software-engineering role whose essential criteria (AWS CodeBuild/CodePipeline/EC2/Lambda/Docker, supporting production systems, quality coding practices) are well beyond the candidate's analysis-level Python. It is also a Senior role requiring mentoring and team-building experience, and is restricted to the BBC Extend disability programme — multiple hard mismatches on level, skills and scope.",
+      "location": "Glasgow / Salford / London (hybrid, 1 day/week)",
+      "type": "Full-time (Permanent)",
+      "deadline": "2026-07-15",
+      "salary": "£63,000 - £68,000",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
