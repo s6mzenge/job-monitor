@@ -1,16 +1,15 @@
 {
-  "generated_at": "2026-07-06T18:01:48.416327+00:00",
+  "generated_at": "2026-07-06T18:31:25.494131+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 92,
-  "erroring": 0,
+  "healthy": 90,
+  "erroring": 2,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
     "html": 74,
     "json_api": 7,
-    "playwright": 6,
-    "interamt": 1,
+    "playwright": 5,
     "recruitee_api": 1
   },
   "healthy_names": [
@@ -55,7 +54,6 @@
     "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
     "Global Public Policy Institute",
     "Haus der Wannsee-Konferenz",
-    "Heinrich Böll Stiftung",
     "Hertie School",
     "HIS Hamburg",
     "HWR Berlin",
@@ -91,7 +89,6 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
-    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -107,5 +104,32 @@
     "ZZF Potsdam (Zeithistorische Forschung)",
     "Ärzte ohne Grenzen (MSF)"
   ],
-  "sites": []
+  "sites": [
+    {
+      "id": 230,
+      "name": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 45,
+      "last_failure": "2026-07-06T18:31:25.494131+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
+    },
+    {
+      "id": 184,
+      "name": "Heinrich Böll Stiftung",
+      "url": "https://www.interamt.de/koop/app/trefferliste?partner=556",
+      "method": "interamt",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 10,
+      "last_failure": "2026-07-06T18:31:25.494131+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556"
+    }
+  ]
 }
