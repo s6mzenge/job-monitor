@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T03:01:22.222322+00:00",
-  "run_count": 7,
+  "generated_at": "2026-07-06T03:31:35.732086+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Director",
@@ -81,6 +81,23 @@
       "match": "low",
       "reason": "This is a deep-technical penetration-testing role whose core is hands-on offensive security testing across web, mobile and infrastructure — well beyond the candidate's analysis-level Python and with no security-operations background. It is also a \"Senior\" title, adding a seniority disqualifier; the role sits entirely outside the candidate's research/policy profile.",
       "location": "Kuala Lumpur, Malaysia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Finance Manager",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Senior-Finance-Manager/1411559133",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Senior title requiring a minimum of 12 years' experience and 8+ years in people management, plus a finance/accounting qualification (CFA/CPA preferred) — far beyond the candidate's entry-level profile and outside their field entirely. Multiple hard disqualifiers (seniority and required experience) apply.",
+      "location": "Hong Kong",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
