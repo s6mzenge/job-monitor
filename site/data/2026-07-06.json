@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T07:31:21.147407+00:00",
-  "run_count": 16,
+  "generated_at": "2026-07-06T08:01:25.726212+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Advocacy & Campaign Manager – Europe",
@@ -16,6 +16,23 @@
       "type": "Full-time (consultant contract)",
       "deadline": "4 February 2026, 09:00 CET",
       "salary": "EUR 31,000–35,000 base (+ bonuses)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Referendar*in (m/w/d) in Kambodscha",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78686",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a Wahlstation reserved exclusively for German Rechtsreferendare (legal trainees who have passed the first state law exam and are in legal clerkship), requiring a Diplom-Jurist qualification and an ongoing Referendariat — none of which the candidate holds. It is a legal-qualification gate the candidate fails, so it is ineligible despite the development-policy setting.",
+      "location": "Phnom Penh, Cambodia",
+      "type": "Full-time / Part-time (Wahlstation for legal trainees)",
+      "deadline": "2027-12-31",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
