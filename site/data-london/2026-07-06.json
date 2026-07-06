@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T09:01:28.611726+00:00",
-  "run_count": 19,
+  "generated_at": "2026-07-06T09:31:34.020820+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Director",
@@ -236,6 +236,23 @@
       "location": "Berlin or London (Hybrid)",
       "type": "Fixed Term Contract",
       "deadline": "2026-07-26",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Legal Adviser (AD.07.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106581&p_spid=5162836",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Requires an admitted attorney with a law degree and 3 years post-qualification experience — the candidate is not a qualified lawyer and lacks the required admission and experience, two independent hard disqualifiers. The work is general legal practice rather than the candidate's core interest areas.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
