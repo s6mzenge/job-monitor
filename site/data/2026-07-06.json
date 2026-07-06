@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T10:01:26.314554+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-06T10:31:36.553659+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Advocacy & Campaign Manager – Europe",
@@ -50,6 +50,40 @@
       "type": "Full-time (part-time possible)",
       "deadline": "2026-07-22",
       "salary": "TVöD Entgeltgruppe 12",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Volontariat Berlinale Shorts",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/65844981/Volontariat-Berlinale-Shorts-?jobDbPVId=277988706&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a Volontariat (traineeship/entry-level training placement), which functions as a student-style entry role rather than a substantive professional post, and it is in film-festival curation/communications — well outside the candidate's interest zones and skills. It also emphasises film-affine study and communications work the candidate does not offer. Not a fit.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (39h/week, fixed-term traineeship 28.09.2026–27.03.2027)",
+      "deadline": "2026-08-09",
+      "salary": "In line with TVöD E2",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Associate for the Project \"Developing ET Noise Budget: Reliability, Accessibility and Completeness\"",
+      "organisation": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote/ausschreibung.html?jobID=3f2e5d58b98e36e381fa593c5ea99f15bd0a436a",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires an already-completed doctorate (\"A university degree in a relevant field, plus doctorate\"; explicitly seeks an experienced postdoctoral researcher), which the candidate does not hold. It is also a deep-technical physics / scientific-software role (pygwinc, FINESSE, gravitational-wave detector physics, strong Python) far beyond the candidate's analysis-level skills and outside all interest zones.",
+      "location": "Hamburg, Germany",
+      "type": "Full-time (suitable for part-time)",
+      "deadline": "17.08.2026",
+      "salary": "EGR. 13 TV-L",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
