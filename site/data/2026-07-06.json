@@ -1,6 +1,24 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T07:01:31.786065+00:00",
-  "run_count": 15,
-  "jobs": []
+  "generated_at": "2026-07-06T07:31:21.147407+00:00",
+  "run_count": 16,
+  "jobs": [
+    {
+      "title": "Advocacy & Campaign Manager – Europe",
+      "organisation": "European Legal Support Center (ELSC)",
+      "url": "https://elsc.support/job-opening-advocacy-campaign-manager-europe",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "Two hard disqualifiers apply: a Manager title with an essential 3–5 years' experience in a similar advocacy/campaigns role, and essential proficiency in Italian, which the candidate does not hold. It is also a comms/campaigns specialist role, an area of limited experience. The international-law and human-rights subject matter is genuinely interesting, but the level, language and skills are unmet essentials.",
+      "location": "Italy (remote possible within Europe)",
+      "type": "Full-time (consultant contract)",
+      "deadline": "4 February 2026, 09:00 CET",
+      "salary": "EUR 31,000–35,000 base (+ bonuses)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
