@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-06T20:31:24.819307+00:00",
+  "generated_at": "2026-07-06T21:01:25.986157+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 140,
-  "erroring": 1,
+  "healthy": 141,
+  "erroring": 0,
   "paused": 0,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 85,
+    "html": 86,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -87,6 +87,7 @@
     "Hanbury Strategy",
     "Hanover",
     "Human Rights Watch",
+    "ICJP",
     "ICRC",
     "IIED",
     "IISS",
@@ -165,19 +166,5 @@
     "Wiener Holocaust Library",
     "Wits University"
   ],
-  "sites": [
-    {
-      "id": 99,
-      "name": "ICJP",
-      "url": "https://www.icjpalestine.com/about-us/careers/",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 8,
-      "last_failure": "2026-07-06T20:31:24.819307+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.icjpalestine.com%2Fabout-us%2Fcareers%2F"
-    }
-  ]
+  "sites": []
 }

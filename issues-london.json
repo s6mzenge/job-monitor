@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-06T20:31:24.819307+00:00",
-  "site_summary": {
-    "ICJP": {
-      "site_id": 99,
-      "url": "https://www.icjpalestine.com/about-us/careers/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 8,
-      "first_recent_failure": "2026-07-05T05:01:21.834096+00:00",
-      "last_recent_failure": "2026-07-06T20:31:24.819307+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.icjpalestine.com%2Fabout-us%2Fcareers%2F"
-    }
-  },
+  "last_updated": "2026-07-06T21:01:25.986157+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T15:46:14.886630+00:00",

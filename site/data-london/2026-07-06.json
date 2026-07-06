@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T20:31:24.819307+00:00",
-  "run_count": 42,
+  "generated_at": "2026-07-06T21:01:25.986157+00:00",
+  "run_count": 43,
   "jobs": [
     {
       "title": "Director",
@@ -543,6 +543,23 @@
       "type": "Full-time",
       "deadline": "20th July",
       "salary": "£105,400 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Lead Assessor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lead-Assessor-10019/1412013333",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Multiple hard disqualifiers: a \"Lead\" title with an essential requirement of 2 years' social-compliance auditing plus 100 verifiable audit days and APSCA registration the candidate lacks, and it requires fluent Spanish (candidate has none). The supply-chain assurance work is also outside the candidate's core interest zones.",
+      "location": "New York, US",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
