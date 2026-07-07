@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T08:01:36.228116+00:00",
-  "run_count": 17,
+  "generated_at": "2026-07-07T08:31:21.963114+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Projektreferent*in Vernetzung & Narrative",
@@ -16,6 +16,23 @@
       "type": "Part-time (32 hours), fixed-term 2 years",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Programmmanager (m/w/d) Beratung - Hochschulforum Digitalisierung",
+      "organisation": "Stifterverband",
+      "url": "https://stifterverband.talention.com/talention/stellenangebote/Programmmanager-m-w-d-Beratung-Hochschulforum-Digitalisierung-Berlin-Stifterverband-fuer-die-Deutsche-Wissenschaft--157721023",
+      "priority": 42,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Entry-adjacent with an explicit Master's requirement and only \"first professional experience\" asked, so it is not gated on level — and the candidate's German Rectors' Conference funding-allocation and higher-education research work map directly onto this HE-digital-transformation programme role. However, the job centres on consulting, stakeholder moderation, workshop design and project management (areas where the candidate is thinner) and sits in higher-education policy, adjacent to rather than inside the core international-law / security interest zones, which caps the score.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (fixed-term parental-leave cover until 31 December 2027)",
+      "deadline": "Not specified (rolling)",
+      "salary": "Not specified (13th salary, holiday pay, occupational pension mentioned)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
