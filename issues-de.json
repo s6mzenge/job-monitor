@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-07T20:31:28.571413+00:00",
-  "site_summary": {
-    "Haus der Wannsee-Konferenz": {
-      "site_id": 157,
-      "url": "https://app.hrlab.de/de/jobs/gedenk-_und_bildungsstatte_hwk?channel_id=1144",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-07-07T20:31:28.571413+00:00",
-      "last_recent_failure": "2026-07-07T20:31:28.571413+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 504 Server Error: Gateway Timeout for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fapp.hrlab.de%2Fde%2Fjobs%2Fgedenk-_und_bildungsstatte_hwk%3Fchannel_id%3D1144"
-    }
-  },
+  "last_updated": "2026-07-07T21:01:32.541619+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T21:07:23.784674+00:00",
