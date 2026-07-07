@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T16:31:29.079885+00:00",
-  "run_count": 34,
+  "generated_at": "2026-07-07T17:01:32.686477+00:00",
+  "run_count": 35,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -577,6 +577,40 @@
       "type": "Full-time",
       "deadline": "2026-07-21",
       "salary": "Associate Editor $80,000 / Senior Editor $95,000 (USD)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "MEL and TPM: Junior and Senior Analyst Pool – HRO-466",
+      "organisation": "Integrity Global",
+      "url": "https://www.integrityglobal.com/our-work/job-openings/jobs/flexible-technical-support-varying-seniority",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "Two hard disqualifiers apply: the role requires excellent spoken and written Ukrainian (an essential language the candidate lacks) and the right to work in Ukraine, and the Junior pool still requires a minimum of 2 years' MEL/TPM/research experience while demanding a strong understanding of Ukraine's political landscape. The conflict/justice/governance thematic angle is of some interest, but the essential language and work-authorisation requirements are unmet.",
+      "location": "Kyiv, Ukraine",
+      "type": "Full-time / Part-time / Contract (consultancy)",
+      "deadline": "Not specified (rolling recruitment)",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Credit Analyst (Associate Director) - International Public Finance - London",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Credit-Analyst-%28Associate-Director%29-International-Public-Finance-London/1412486433",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Multiple hard disqualifiers: the role requires professional fluency in Russian and/or Turkish as essential (the candidate has neither), demands 3–6 years of credit-analysis experience, and carries an Associate Director (senior) title. It is also outside the candidate's interest zones and requires finance/credit expertise they lack.",
+      "location": "London, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
