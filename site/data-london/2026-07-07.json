@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T10:01:23.217175+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-07T10:31:17.858427+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -235,6 +235,23 @@
       "reason": "This is a finance/controlling role requiring a background in accounting, controlling and cost structures, plus SAP and strong Excel — a skills profile the candidate (a policy/international-law researcher) does not have and which sits entirely outside their interest zones. It is nominally entry-level and does not require prior transfer-pricing experience, so it is not disqualified, but the paper fit and interest alignment are both very weak.",
       "location": "Heidelberg, Germany",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Communications Officer",
+      "organisation": "E3G",
+      "url": "https://e3g.bamboohr.com/careers/259",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "The \"Senior\" title indicates a role beyond entry-level, requiring experience the candidate lacks. It is also a communications-specialist role, an area where the candidate has only limited dedicated experience, so it fails on both level and paper fit.",
+      "location": "Not specified",
+      "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
