@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T08:31:21.963114+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-07T09:01:27.254736+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Projektreferent*in Vernetzung & Narrative",
@@ -33,6 +33,23 @@
       "type": "Full-time (fixed-term parental-leave cover until 31 December 2027)",
       "deadline": "Not specified (rolling)",
       "salary": "Not specified (13th salary, holiday pay, occupational pension mentioned)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Mitarbeiter*in (m/w/d) für Office Management und Veranstaltungsorganisation",
+      "organisation": "Centre Marc Bloch",
+      "url": "https://cmb.hu-berlin.de/meldungen/mitarbeiterin-m-w-d-fuer-office-management-und-veranstaltungsorganisation",
+      "priority": 22,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an office-management and events-organisation administrative post, not a research role; it asks for a completed commercial apprenticeship or comparable qualification and is essentially a service/logistics function that the candidate can do but which underuses their research profile and matches their limited events experience only partially. Although the Centre Marc Bloch is a Franco-German social-sciences institute (mild adjacent interest), the day-to-day work is administrative and outside the candidate's core mission, so it rates low.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (20–25 hours/week, 1-year contract)",
+      "deadline": "2026-07-31",
+      "salary": "TV-L HU EG 7",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
