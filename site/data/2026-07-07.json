@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T10:31:18.517537+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-07T11:01:30.902562+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Projektreferent*in Vernetzung & Narrative",
@@ -84,6 +84,23 @@
       "type": "Internship",
       "deadline": "2026-07-15",
       "salary": "€750/month (at 39 hours/week)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Student Assistant - Academic Affairs",
+      "organisation": "ESMT Berlin",
+      "url": "https://jobs.esmt.berlin/en?id=f87d24",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is explicitly a student-assistant / student-employee role, which is excluded as a matter of policy. It is also administrative data-entry work outside the candidate's interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (Student employee)",
+      "deadline": "Not specified",
+      "salary": "14 EUR/hr",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
