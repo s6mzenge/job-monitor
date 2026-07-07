@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T14:01:36.053857+00:00",
-  "run_count": 29,
+  "generated_at": "2026-07-07T14:31:28.523741+00:00",
+  "run_count": 30,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -424,6 +424,23 @@
       "type": "Full-time (Fixed Term Contract, ~13 weeks)",
       "deadline": "13 July 2026",
       "salary": "£61,500",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Interim (Senior) Strategy Manager",
+      "organisation": "Nesta",
+      "url": "https://www.nesta.org.uk/jobs/interim-senior-strategy-manager/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Not entry-level — it is a Manager / Senior Manager role requiring established strategy experience via a top management consultancy or internal strategy function, plus coaching and leading others, which the candidate's student-assistant background does not meet. The social-impact innovation topic also sits outside the candidate's core interest zones.",
+      "location": "Blackfriars, London (hybrid)",
+      "type": "Contract (12-month fixed-term, full-time)",
+      "deadline": "27 Jul 2026",
+      "salary": "£58,500 - £72,800",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
