@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T19:01:53.916429+00:00",
-  "run_count": 39,
+  "generated_at": "2026-07-07T19:31:25.719608+00:00",
+  "run_count": 40,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -628,6 +628,23 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Project Coordinator",
+      "organisation": "International Rescue Committee",
+      "url": "https://theirc.wd1.myworkdayjobs.com/job/New-York-NY-HQ-USA/Project-Coordinator_JR00004082",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Ineligible on experience: the posting requires 3–6 years of relevant project coordination experience plus direct IRB protocol and data-sharing agreement management, well beyond the candidate's student-assistant / RA background. It also asks for humanitarian health-settings experience and (preferred) professional French, neither of which the candidate has; the field is also outside the core interest zones. (UK is a listed work location, so the London-only filter is not the blocker here — the experience bar is.)",
+      "location": "Remote (UK / USA / Kenya)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "UK £46,988–£54,820/yr",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
