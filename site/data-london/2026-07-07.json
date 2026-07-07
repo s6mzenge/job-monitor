@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T14:31:28.523741+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-07T15:01:33.789881+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -441,6 +441,23 @@
       "type": "Contract (12-month fixed-term, full-time)",
       "deadline": "27 Jul 2026",
       "salary": "£58,500 - £72,800",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Health Data Innovation Lead – Challenge Works",
+      "organisation": "Nesta",
+      "url": "https://www.nesta.org.uk/jobs/health-data-innovation-lead-challenge-works/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A \"Lead\" role at ~£66,800 requiring an experienced health-data specialist with deep technical expertise in biomedical datasets, data harmonisation and AI/computational research applications — well beyond entry-level and beyond the candidate's analysis-level skills. Health data innovation also sits outside the core interest zones, but the seniority and technical requirements are the hard disqualifiers.",
+      "location": "Blackfriars, London (hybrid)",
+      "type": "Full-time (Permanent, 37.5 hours)",
+      "deadline": "3 Aug 2026",
+      "salary": "Circa £66,800 plus benefits",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
