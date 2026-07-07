@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T20:01:32.804902+00:00",
-  "run_count": 41,
+  "generated_at": "2026-07-07T20:31:31.870224+00:00",
+  "run_count": 42,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -659,6 +659,23 @@
       "match": "low",
       "reason": "This is a senior technical HR-systems role requiring 5+ years of hands-on Workday Core HCM configuration and a \"Senior\" title — both hard disqualifiers on level and specialist experience the candidate lacks. It is also entirely outside the candidate's research and policy interest areas.",
       "location": "Pune, Berlin, London, Warsaw",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Cloud Systems Engineer",
+      "organisation": "Bridgespan Group",
+      "url": "https://phh.tbe.taleo.net/phh01/ats/careers/requisition.jsp?org=THEBRIDG12&cws=40&rid=525",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a deep-technical cloud/systems engineering role requiring 5–8+ years of systems administration, AZ-104 certification, and hands-on Azure/Entra ID/Terraform/PowerShell expertise — all essentials far beyond the candidate's analysis-level Python and non-technical profile. It also exceeds the entry-level experience gate. Both a hard skills disqualifier and a seniority disqualifier apply.",
+      "location": "Boston / Johannesburg / Mumbai / New York / San Francisco / Singapore (not specified precisely)",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
