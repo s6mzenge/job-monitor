@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T12:01:38.178079+00:00",
-  "run_count": 25,
+  "generated_at": "2026-07-07T12:31:20.911992+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -321,6 +321,23 @@
       "location": "Johannesburg, South Africa",
       "type": "Full-time",
       "deadline": "31 July 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Designer",
+      "organisation": "Anthesis Group",
+      "url": "https://anthesisgroup.pinpointhq.com/en/postings/c1b80a4c-18e0-43e0-9c0e-2c91f02fc76f",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a design role in a Brand & Comms department requiring graphic/visual design skills the candidate does not possess and has no background in. It falls outside all interest zones and is a clear skills mismatch for a research/policy-oriented profile.",
+      "location": "UK - London",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
