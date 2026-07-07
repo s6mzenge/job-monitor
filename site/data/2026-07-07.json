@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T14:31:35.284937+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-07T15:01:34.176517+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Projektreferent*in Vernetzung & Narrative",
@@ -169,6 +169,23 @@
       "type": "Full-time (fixed-term, 01.09.2026–31.05.2027)",
       "deadline": "2026-07-19",
       "salary": "TVöD E7",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "wissenschaftliche:r Mitarbeiter:in für Bildung und Vermittlung (w/d/m)",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/88ffc2c8da5dc2518cc71bbf27466aed27c2d71d0",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires an essential completed degree specifically in Near Eastern Archaeology, Ancient Oriental Studies or a related field, plus professional experience in museum/cultural education work — none of which the candidate has. It is an educational-outreach specialist post in a discipline entirely outside the candidate's profile and interests.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (19.5 h/week), permanent",
+      "deadline": "2026-07-27",
+      "salary": "EG 13 TVöD Bund",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
