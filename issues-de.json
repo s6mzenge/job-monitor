@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-07T01:01:46.182768+00:00",
+  "last_updated": "2026-07-07T01:31:27.969388+00:00",
   "site_summary": {
-    "Uni Hamburg (Stellenangebote)": {
-      "site_id": 230,
-      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
-      "method": "playwright",
-      "consecutive_failures": 2,
-      "total_recent_failures": 50,
-      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
-      "last_recent_failure": "2026-07-07T01:01:46.182768+00:00",
+    "Heinrich Böll Stiftung": {
+      "site_id": 184,
+      "url": "https://www.interamt.de/koop/app/trefferliste?partner=556",
+      "method": "interamt",
+      "consecutive_failures": 1,
+      "total_recent_failures": 12,
+      "first_recent_failure": "2026-07-03T01:01:18.371149+00:00",
+      "last_recent_failure": "2026-07-07T01:31:27.969388+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
+      "last_message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556"
     }
   },
   "issues": [
@@ -1096,6 +1096,16 @@
       "type": "fetch_error",
       "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-07-07T01:31:27.969388+00:00",
+      "site": "Heinrich Böll Stiftung",
+      "site_id": 184,
+      "url": "https://www.interamt.de/koop/app/trefferliste?partner=556",
+      "method": "interamt",
+      "type": "fetch_error",
+      "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556",
+      "consecutive_count": 1
     }
   ]
 }
