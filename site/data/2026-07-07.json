@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T18:01:24.931603+00:00",
-  "run_count": 37,
+  "generated_at": "2026-07-07T18:31:28.940893+00:00",
+  "run_count": 38,
   "jobs": [
     {
       "title": "Projektreferent*in Vernetzung & Narrative",
@@ -220,6 +220,23 @@
       "type": "Internship",
       "deadline": "2026-07-21",
       "salary": "€2,349/month (brutto)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Globalvorhaben „Nachhaltige Aquatische Lebensmittel\" (NAL)",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78713",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a Praktikum / internship, which is excluded by policy as not a genuine paid role for the candidate. It also requires a marine biology / fisheries / aquaculture study focus the candidate lacks, making it a poor fit on subject as well.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-21",
+      "salary": "€2,349/month (gross)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
