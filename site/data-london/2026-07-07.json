@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T22:31:23.859056+00:00",
-  "run_count": 46,
+  "generated_at": "2026-07-07T23:01:27.953722+00:00",
+  "run_count": 47,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -679,6 +679,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Head of HR, News",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Head-of-HR%2C-News/48573-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A \"Head of\" role requiring a proven track record of leading large-scale HR transformation and senior HR teams — far beyond entry-level and demanding years of HR-specialist experience the candidate does not have. It is also entirely outside the candidate's research, law and policy skill set and interest areas.",
+      "location": "London, GBR",
+      "type": "Full-time (FTC/Attachment until June 2027)",
+      "deadline": "Sunday 12 July 2026",
+      "salary": "£94,000 - £120,000",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
