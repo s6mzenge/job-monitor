@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-07T16:31:18.602679+00:00",
-  "site_summary": {
-    "ZZF Potsdam (Zeithistorische Forschung)": {
-      "site_id": 175,
-      "url": "https://zzf-potsdam.de/chancen/stellenangebote",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-07-07T16:31:18.602679+00:00",
-      "last_recent_failure": "2026-07-07T16:31:18.602679+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 525 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fzzf-potsdam.de%2Fchancen%2Fstellenangebote"
-    }
-  },
+  "last_updated": "2026-07-07T17:01:26.010395+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T21:07:23.784674+00:00",
