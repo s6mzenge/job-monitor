@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T12:31:23.387407+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-07T13:01:35.991621+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Projektreferent*in Vernetzung & Narrative",
@@ -101,6 +101,23 @@
       "type": "Part-time (Student employee)",
       "deadline": "Not specified",
       "salary": "14 EUR/hr",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Mitarbeiter*in Guest Accommodation (m/w/d/k)",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/65902664/Mitarbeiter-in-Guest-Accommodation-m-w-d-k-?jobDbPVId=278126569&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires as an essential a completed vocational training (Berufsausbildung) in hospitality, tourism or event management plus professional hospitality experience, which the candidate does not hold — an unmet essential qualification. It is a hotel-booking/administrative coordination role wholly outside the candidate's research, policy and intelligence interests.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (fixed-term, 01.09.2026–31.05.2027)",
+      "deadline": "2026-07-19",
+      "salary": "TVöD E7",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
