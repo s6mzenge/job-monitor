@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T12:31:20.911992+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-07T13:01:37.105289+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -339,6 +339,40 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Accounts Payable Treasury Officer (4255)",
+      "organisation": "Amnesty International",
+      "url": "https://careers.amnesty.org/jobs/vacancy/accounts-payable-treasury-officer-4255/4283/description",
+      "priority": 8,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a finance / accounts-payable role requiring accounts-payable team experience, financial accounting and control skills, and systems like D365 and Concur — none of which the candidate's research profile provides, making paper fit very weak. Though hosted by a human-rights organisation, the function is pure back-office finance, well outside the candidate's research, policy and analysis strengths and interest zones.",
+      "location": "London",
+      "type": "Fixed Term Contract (1 year)",
+      "deadline": "13 July 2026",
+      "salary": "GBP 42,038 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Office and Finance Assistant (4256)",
+      "organisation": "Amnesty International",
+      "url": "https://careers.amnesty.org/jobs/vacancy/office-and-finance-assistant-4256/4284/description",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Location is a hard filter (London only): this role is tied to Brussels with no London or remote-UK option. It also requires professional working knowledge of French or Dutch as an essential (candidate is only B1 French), and it is an administrative/finance-support role rather than research or policy work.",
+      "location": "Brussels, Belgium",
+      "type": "Full-time",
+      "deadline": "4 August 2026",
+      "salary": "EUR 57,481 per annum",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
