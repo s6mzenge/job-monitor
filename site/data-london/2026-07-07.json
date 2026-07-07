@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T19:31:25.719608+00:00",
-  "run_count": 40,
+  "generated_at": "2026-07-07T20:01:32.804902+00:00",
+  "run_count": 41,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -645,6 +645,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "UK £46,988–£54,820/yr",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior HRIS Specialist Core HCM",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Pune/Senior-HRIS-Specialist-Core-HCM_JR105863-1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a senior technical HR-systems role requiring 5+ years of hands-on Workday Core HCM configuration and a \"Senior\" title — both hard disqualifiers on level and specialist experience the candidate lacks. It is also entirely outside the candidate's research and policy interest areas.",
+      "location": "Pune, Berlin, London, Warsaw",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
