@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-07-07T03:31:25.621869+00:00",
+  "last_updated": "2026-07-07T04:01:26.271344+00:00",
   "site_summary": {
     "Uni Marburg (wiss. Stellen)": {
       "site_id": 229,
       "url": "https://www.uni-marburg.de/de/universitaet/profil/universitaetskultur/karriere/stellenangebote/wissenschaftliche-stellen",
       "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
+      "consecutive_failures": 2,
+      "total_recent_failures": 2,
       "first_recent_failure": "2026-07-07T03:31:25.621869+00:00",
-      "last_recent_failure": "2026-07-07T03:31:25.621869+00:00",
+      "last_recent_failure": "2026-07-07T04:01:26.271344+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -1116,6 +1116,16 @@
       "type": "fetch_error",
       "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.uni-marburg.de/de/universitaet/profil/universitaetskultur/karriere/stellenangebote/wissenschaftliche-stellen\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-07T04:01:26.271344+00:00",
+      "site": "Uni Marburg (wiss. Stellen)",
+      "site_id": 229,
+      "url": "https://www.uni-marburg.de/de/universitaet/profil/universitaetskultur/karriere/stellenangebote/wissenschaftliche-stellen",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.uni-marburg.de/de/universitaet/profil/universitaetskultur/karriere/stellenangebote/wissenschaftliche-stellen\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 2
     }
   ]
 }
