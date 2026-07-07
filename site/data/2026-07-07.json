@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T13:31:22.439516+00:00",
-  "run_count": 28,
+  "generated_at": "2026-07-07T14:01:39.239188+00:00",
+  "run_count": 29,
   "jobs": [
     {
       "title": "Projektreferent*in Vernetzung & Narrative",
@@ -118,6 +118,23 @@
       "type": "Full-time (fixed-term, 01.09.2026–31.05.2027)",
       "deadline": "2026-07-19",
       "salary": "TVöD E7",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate Editor Social Sciences (f/m/d)",
+      "organisation": "Vandenhoeck & Ruprecht / De Gruyter",
+      "url": "https://de-gruyter.onlyfy.jobs/en/job/l3igk2v1ftq86m8mnxgydasiecbq32e",
+      "priority": 42,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "With only a job title and no description supplied, this is assessed on the role type: an academic-publishing editorial role in social sciences plausibly open at entry/associate level, where the candidate's research, writing, publishing experience and social-science background fit reasonably well. Academic publishing is adjacent to the candidate's interests (they are a published author engaged with academic publishing) rather than a core intelligence/atrocity-justice zone, and without detail on seniority or language requirements the fit is uncertain, so it lands mid-scale.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
