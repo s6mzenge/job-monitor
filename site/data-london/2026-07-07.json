@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T15:31:18.171018+00:00",
-  "run_count": 32,
+  "generated_at": "2026-07-07T16:01:32.635950+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -508,6 +508,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "30 July 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for established \"experts\" to join an advisory committee — a senior, expertise-based appointment rather than an entry-level paid role, and it reads as a voluntary/advisory position with no salary or genuine early-career vacancy. Although human-rights and securitisation themes are of core interest, the level and the advisory-committee nature are both disqualifying.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
