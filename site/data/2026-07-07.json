@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T09:01:27.254736+00:00",
-  "run_count": 19,
+  "generated_at": "2026-07-07T09:31:18.213722+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Projektreferent*in Vernetzung & Narrative",
@@ -50,6 +50,23 @@
       "type": "Part-time (20–25 hours/week, 1-year contract)",
       "deadline": "2026-07-31",
       "salary": "TV-L HU EG 7",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Partnermanager (m/w/d) Hochschulen im KI-Campus",
+      "organisation": "Stifterverband",
+      "url": "https://stifterverband.talention.com/talention/stellenangebote/Partnermanager-m-w-d-Hochschulen-gesucht---859488843",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "The profile makes at least three years of relevant professional experience an essential requirement, which the candidate — with only student-assistant and RA work — does not meet. The higher-education-policy field and the candidate's prior Stifterverband-adjacent experience are a genuine topical fit, but the experience bar is a hard disqualifier, and it is a partner-management/networking role rather than research.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (or part-time); fixed-term to 31.12.2027",
+      "deadline": "Not specified (no application deadline)",
+      "salary": "Not specified (13th salary, holiday pay, occupational pension mentioned)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
