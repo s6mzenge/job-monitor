@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T17:31:29.220061+00:00",
-  "run_count": 36,
+  "generated_at": "2026-07-07T18:01:24.931603+00:00",
+  "run_count": 37,
   "jobs": [
     {
       "title": "Projektreferent*in Vernetzung & Narrative",
@@ -186,6 +186,40 @@
       "type": "Part-time (19.5 h/week), permanent",
       "deadline": "2026-07-27",
       "salary": "EG 13 TVöD Bund",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Vorhaben zur Förderung des nachhaltigen, wirtschaftlichen Wiederaufbaus der Ukraine",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78711",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "This is explicitly a Praktikum (internship) requiring current enrolment or graduation within the past six months, which is an excluded role type under policy. The Ukraine reconstruction and European economic policy content is genuinely interesting, but the internship classification is a hard disqualifier.",
+      "location": "Berlin, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-21",
+      "salary": "€2,349/month (brutto)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Globalvorhaben „Verantwortungsvolle Land Governance\"",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78712",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an internship (Praktikum), which is excluded by policy, and it additionally requires current enrolment or graduation within the last 6 months plus very good written and spoken French — the candidate's B1 does not meet this fluency requirement. The land-governance / rural-development topic is also outside the candidate's core interest zones.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-21",
+      "salary": "€2,349/month (brutto)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
