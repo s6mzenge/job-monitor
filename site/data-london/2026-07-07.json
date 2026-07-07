@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T07:01:28.019305+00:00",
-  "run_count": 15,
+  "generated_at": "2026-07-07T07:31:24.112944+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -84,6 +84,23 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Postdoctoral Fellowship x2 (SARChI Chair) (AC.09.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106587&p_spid=5163836",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires an already-completed PhD in public health, health economics, or biostatistics (obtained within the past five years), which the candidate does not hold — a hard disqualifier for a postdoctoral role. The health-workforce / public-health focus is also well outside the candidate's core interest zones.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time (Fellowship, 1 year renewable)",
+      "deadline": "2026-07-20",
+      "salary": "R370,000 per annum (tax-free)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
