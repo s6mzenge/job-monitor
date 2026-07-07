@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T13:01:37.105289+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-07T13:31:23.269213+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -373,6 +373,23 @@
       "type": "Full-time",
       "deadline": "4 August 2026",
       "salary": "EUR 57,481 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate Professor (LA.06.3)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106604&p_spid=5163853",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Multiple hard disqualifiers: the role requires an already-completed PhD, enrolment as a practising Attorney of the High Court (a legal qualification the candidate lacks), and at least ten years' post-admission experience. It is also a senior professorial title far beyond entry level.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "31 July 2026",
+      "salary": "Negotiable / competitive (not specified)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
