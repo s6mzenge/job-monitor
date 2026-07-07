@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T11:31:19.586698+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-07T12:01:38.178079+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -304,6 +304,23 @@
       "location": "London, GB",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Head of Division: Research Development (AC.06.3)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106597&p_spid=5163846",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires an already-completed PhD plus at least 5 years of post-PhD research experience and a senior \"Head of Division\" leadership role — multiple hard disqualifiers the candidate does not meet. It is also restricted to South African citizens/permanent residents and lies entirely outside the candidate's field (oral health sciences).",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "31 July 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
