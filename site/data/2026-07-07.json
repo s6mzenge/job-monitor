@@ -1,6 +1,24 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T06:31:29.413684+00:00",
-  "run_count": 14,
-  "jobs": []
+  "generated_at": "2026-07-07T07:01:29.726751+00:00",
+  "run_count": 15,
+  "jobs": [
+    {
+      "title": "Projektreferent*in Vernetzung & Narrative",
+      "organisation": "NABU",
+      "url": "https://jobs.nabu.de/de?id=6fd1d6",
+      "priority": 28,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The role asks for a relevant degree (politics among them) and lists project-management and process-coordination experience as fundamental (\"fundierte Erfahrung\"), which the candidate only partly meets through RA and funding-allocation work — a real soft obstacle, though not a strict multi-year disqualifier. It centres on environmental/civil-society volunteer coordination, communications and event facilitation, which sits outside the candidate's core interest zones and taps their weaker comms/events area. Eligible but a marginal fit on both level and interest.",
+      "location": "Berlin, Germany (hybrid/mobile work)",
+      "type": "Part-time (32 hours), fixed-term 2 years",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
