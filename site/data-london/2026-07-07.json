@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T13:31:23.269213+00:00",
-  "run_count": 28,
+  "generated_at": "2026-07-07T14:01:36.053857+00:00",
+  "run_count": 29,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -390,6 +390,40 @@
       "type": "Full-time",
       "deadline": "31 July 2026",
       "salary": "Negotiable / competitive (not specified)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "SCHOOL ADMINISTRATIVE MANAGER.4.05 (AD.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106596&p_spid=5163845",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Not entry-level — it is a \"Manager\" post explicitly requiring five to seven years of relevant experience plus financial management and staff supervision, none of which the candidate has. It is also outside all core interest zones, being an administrative finance role.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "22 July 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Diversity Equity and Inclusion Partner (7368)",
+      "organisation": "Save the Children UK",
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/diversity-equity-and-inclusion-partner-7368-farringdon-london-home-based/7394/description",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a senior DEI specialist role requiring proven experience delivering and embedding diversity, equity and inclusion initiatives in a complex organisation, plus facilitation and stakeholder-influencing experience the candidate does not have — the £61,500 salary confirms it is not entry-level. Although the candidate has some diversity-programme exposure at the Rectors' Conference, this is a dedicated DEI-professional post outside their core interest zones and beyond their experience level.",
+      "location": "Farringdon, London / Home-based (UK)",
+      "type": "Full-time (Fixed Term Contract, ~13 weeks)",
+      "deadline": "13 July 2026",
+      "salary": "£61,500",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
