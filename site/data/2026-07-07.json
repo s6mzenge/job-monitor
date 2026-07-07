@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T09:31:18.213722+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-07T10:01:36.430241+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Projektreferent*in Vernetzung & Narrative",
@@ -67,6 +67,23 @@
       "type": "Full-time (or part-time); fixed-term to 31.12.2027",
       "deadline": "Not specified (no application deadline)",
       "salary": "Not specified (13th salary, holiday pay, occupational pension mentioned)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikum im Alumnireferat (Veranstaltungsorganisation und Online-Kommunikation)",
+      "organisation": "DAAD",
+      "url": "https://karriere.daad.de/job/Bonn-Praktikum-im-Alumnireferat-%28Veranstaltungsorganisation-und-Online-Kommunikation%29-53175/1365850357",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an internship (freiwilliges/Pflichtpraktikum requiring current university enrolment), which is excluded as a matter of policy. It is also an events/online-communications support role in higher-education administration — outside the core interest zones — but the internship status is the hard disqualifier.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-15",
+      "salary": "€750/month (at 39 hours/week)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
