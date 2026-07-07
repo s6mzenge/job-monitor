@@ -1,6 +1,75 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T00:31:15.992827+00:00",
-  "run_count": 2,
-  "jobs": []
+  "generated_at": "2026-07-07T01:01:30.571472+00:00",
+  "run_count": 3,
+  "jobs": [
+    {
+      "title": "Strategic Litigation Team Manager",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "5",
+      "match": "low",
+      "reason": "The \"Manager\" title and £52,088 Project/Regional Leads/Managers pay band place this well above entry-level, and a strategic litigation lead role would require senior legal and management experience the candidate lacks. Reprieve's human-rights and justice mission is a perfect interest match, but the level is a hard mismatch.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "15/06/2026",
+      "salary": "£52,088 plus up to 5% employer pension contribution",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fundraising Coordinator",
+      "organisation": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
+      "priority": 30,
+      "eligible": true,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a genuine entry-level (Coordinator band) role at a core-mission human-rights organisation, so it is eligible and winnable, but it is a fundraising function that draws on marketing/donor-development skills the candidate does not have and away from research and analysis. The Reprieve context is compelling, but the fundraising specialism sits outside the candidate's strengths and interests, holding the priority down.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "31/05/2026",
+      "salary": "£32,696 per annum plus up to 5% employer pension contribution",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Script Editor (EastEnders)",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Script-Editor-%28EastEnders%29/48583-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role's essential criteria require proven prior experience as a TV drama Script Editor and in-depth knowledge of EastEnders — professional media-production experience the candidate does not have. It is also based in Borehamwood, outside London with no London-office or fully-remote-UK option, failing the London-only filter. The subject is wholly outside the candidate's research, policy and intelligence interest zones.",
+      "location": "BBC Elstree, Borehamwood (Hybrid)",
+      "type": "Full-time (Permanent)",
+      "deadline": "2026-07-08",
+      "salary": "DOE + London Weighting £5,441",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Director",
+      "organisation": "Palestine Solidarity Campaign",
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "This is a Director role with ultimate executive responsibility, leading a senior team of three Deputy Directors — far beyond entry-level and requiring extensive senior leadership experience the candidate does not have. The £80k–£95k salary and executive scope confirm the seniority mismatch, so it is ineligible despite the relevant subject area.",
+      "location": "London (hybrid)",
+      "type": "Full-time (Permanent)",
+      "deadline": "8 July 2026",
+      "salary": "£80,000 – £95,000 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
