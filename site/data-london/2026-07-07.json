@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T08:31:23.321442+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-07T09:01:26.691759+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Strategic Litigation Team Manager",
@@ -152,6 +152,23 @@
       "type": "Full-time",
       "deadline": "2026-07-21",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "International Member Representative (4253)",
+      "organisation": "Amnesty International",
+      "url": "https://careers.amnesty.org/jobs/vacancy/international-member-representative-4253/4281/description",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "This is an explicitly volunteer role (\"BÉNÉVOLE – Représentant·e\"), unpaid apart from travel expenses, which is a hard disqualifier regardless of merit. Additionally, it requires being an active international member for over a year and is only open to members in countries without an official Amnesty section, which the candidate is not. The human-rights subject is a strong interest match, but neither the paid nor eligibility conditions are met.",
+      "location": "Not specified (remote, for international members outside official Amnesty sections)",
+      "type": "Volunteer (approximately 2 hours per month, 3-year term)",
+      "deadline": "2 August 2026",
+      "salary": "Not specified (unpaid volunteer role; travel expenses covered)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
