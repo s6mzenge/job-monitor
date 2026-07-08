@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T03:01:26.221441+00:00",
-  "run_count": 7,
+  "generated_at": "2026-07-08T03:31:26.887966+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Director",
@@ -66,6 +66,23 @@
       "location": "Shanghai, Beijing, Madrid, Milan or Pune (Hybrid)",
       "type": "Full-time",
       "deadline": "2026-08-03",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Food Safety Auditors - (Global)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Edinburgh-Food-Safety-Auditors-%28Global%29/1392193733",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires demonstrated experience delivering food-safety audits plus appropriate professional qualifications and sector experience (retail, hospitality, seafood, agriculture) — essentials the candidate does not hold. It sits entirely outside all interest zones and is a poor paper fit.",
+      "location": "Edinburgh, GB",
+      "type": "Contract (Contractor On Demand)",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
