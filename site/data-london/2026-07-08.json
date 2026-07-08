@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T16:13:26.576378+00:00",
-  "run_count": 33,
+  "generated_at": "2026-07-08T16:31:40.497739+00:00",
+  "run_count": 34,
   "jobs": [
     {
       "title": "Director",
@@ -560,6 +560,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "UK £49,000-60,000/yr (US $86,000-100,000/yr)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Director of Regular Giving and Legacies (interim)",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/2389/0/471463/15539/director-of-regular-giving-and-legacies-interim",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A Director-level senior role requiring significant senior-level fundraising experience and line management — well beyond entry-level, so a hard disqualifier applies. It is also outside all core interest zones (philanthropy / advancement fundraising).",
+      "location": "London",
+      "type": "Full-time (fixed-term, 12 months)",
+      "deadline": "2026-07-30",
+      "salary": "c.£85,000 to c.£100,000 pa inclusive",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
