@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T08:31:40.039814+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-08T09:01:30.980615+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Director",
@@ -237,6 +237,23 @@
       "type": "Full-time",
       "deadline": "31 July 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Payroll and Benefits Manager",
+      "organisation": "Dalberg",
+      "url": "https://dalberg.hua.hrsmart.com/hr/ats/Posting/view/881",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Ineligible: a Manager-level role requiring 5+ years of progressive payroll/benefits experience (including 2 years in management), plus deep US payroll-tax and benefits-compliance expertise the candidate does not have. This is an accounting/HR-operations function well outside the candidate's profile and interest zones.",
+      "location": "Washington DC, US",
+      "type": "Full-time",
+      "deadline": "7/8/2026",
+      "salary": "$105,000 per year",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
