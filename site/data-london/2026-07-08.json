@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T23:01:35.147560+00:00",
-  "run_count": 47,
+  "generated_at": "2026-07-08T23:31:33.722494+00:00",
+  "run_count": 48,
   "jobs": [
     {
       "title": "Director",
@@ -696,6 +696,23 @@
       "type": "Contract (12-month FTC, Full-time 35h)",
       "deadline": "21st July 2026",
       "salary": "£52,000 - £57,000 plus £5,441 London Weighting",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "HR Business Partner, Scripted Productions",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/HR-Business-Partner%2CScripted-Productions/48307-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Not entry-level — this is a senior HR Business Partner role requiring \"significant experience leading organisational and cultural change\" and partnering senior leaders, well beyond the candidate's student-assistant background. It also falls entirely outside the candidate's research/policy/intelligence interest areas and requires HR-specialist expertise they do not have.",
+      "location": "London, GBR (Hybrid)",
+      "type": "Full-time (Permanent)",
+      "deadline": "22 July 2026",
+      "salary": "Up to £70,000 plus £5,441 London Weighting, plus 15% on-target bonus",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
