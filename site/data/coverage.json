@@ -1,15 +1,16 @@
 {
-  "generated_at": "2026-07-08T20:31:31.331995+00:00",
+  "generated_at": "2026-07-08T21:01:38.106525+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 89,
-  "erroring": 3,
+  "healthy": 92,
+  "erroring": 0,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
-    "html": 72,
+    "html": 74,
     "json_api": 7,
     "playwright": 6,
+    "interamt": 1,
     "recruitee_api": 1
   },
   "healthy_names": [
@@ -54,6 +55,7 @@
     "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
     "Global Public Policy Institute",
     "Haus der Wannsee-Konferenz",
+    "Heinrich Böll Stiftung",
     "Hertie School",
     "HIS Hamburg",
     "HWR Berlin",
@@ -66,6 +68,7 @@
     "Kulturveranstaltungen des Bundes (KBB)",
     "Leibniz-Zentrum Moderner Orient (ZMO)",
     "linksjugend solid",
+    "LobbyControl",
     "medico international",
     "MERICS",
     "MPIL (Max Planck Institute for Comparative Public Law and International Law)",
@@ -101,47 +104,8 @@
     "WZB Berlin Social Science Center",
     "ZfL Berlin (Lit.- und Kulturforschung)",
     "ZOiS (Osteuropa- und internationale Studien)",
+    "ZZF Potsdam (Zeithistorische Forschung)",
     "Ärzte ohne Grenzen (MSF)"
   ],
-  "sites": [
-    {
-      "id": 175,
-      "name": "ZZF Potsdam (Zeithistorische Forschung)",
-      "url": "https://zzf-potsdam.de/chancen/stellenangebote",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "last_failure": "2026-07-08T20:31:31.331995+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 525 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fzzf-potsdam.de%2Fchancen%2Fstellenangebote"
-    },
-    {
-      "id": 184,
-      "name": "Heinrich Böll Stiftung",
-      "url": "https://www.interamt.de/koop/app/trefferliste?partner=556",
-      "method": "interamt",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 17,
-      "last_failure": "2026-07-08T20:31:31.331995+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556"
-    },
-    {
-      "id": 238,
-      "name": "LobbyControl",
-      "url": "https://www.lobbycontrol.de/ueber-uns/jobs/",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "last_failure": "2026-07-08T20:31:31.331995+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.lobbycontrol.de%2Fueber-uns%2Fjobs%2F"
-    }
-  ]
+  "sites": []
 }

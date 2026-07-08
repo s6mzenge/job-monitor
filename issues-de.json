@@ -1,46 +1,6 @@
 {
-  "last_updated": "2026-07-08T20:31:31.331995+00:00",
-  "site_summary": {
-    "ZZF Potsdam (Zeithistorische Forschung)": {
-      "site_id": 175,
-      "url": "https://zzf-potsdam.de/chancen/stellenangebote",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-07-07T16:31:18.602679+00:00",
-      "last_recent_failure": "2026-07-08T20:31:31.331995+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 525 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fzzf-potsdam.de%2Fchancen%2Fstellenangebote"
-    },
-    "Heinrich Böll Stiftung": {
-      "site_id": 184,
-      "url": "https://www.interamt.de/koop/app/trefferliste?partner=556",
-      "method": "interamt",
-      "consecutive_failures": 1,
-      "total_recent_failures": 17,
-      "first_recent_failure": "2026-07-03T01:01:18.371149+00:00",
-      "last_recent_failure": "2026-07-08T20:31:31.331995+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556"
-    },
-    "LobbyControl": {
-      "site_id": 238,
-      "url": "https://www.lobbycontrol.de/ueber-uns/jobs/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-07-08T20:31:31.331995+00:00",
-      "last_recent_failure": "2026-07-08T20:31:31.331995+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.lobbycontrol.de%2Fueber-uns%2Fjobs%2F"
-    }
-  },
+  "last_updated": "2026-07-08T21:01:38.106525+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T21:07:23.784674+00:00",
