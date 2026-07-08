@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-08T09:01:33.397983+00:00",
+  "generated_at": "2026-07-08T09:31:32.232749+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 92,
-  "erroring": 0,
+  "healthy": 91,
+  "erroring": 1,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
-    "html": 74,
+    "html": 73,
     "json_api": 7,
     "playwright": 6,
     "interamt": 1,
@@ -98,7 +98,6 @@
     "Universität der Künste Berlin",
     "Vandenhoeck & Ruprecht / De Gruyter",
     "Verfassungsblog",
-    "Weltfriedensdienst",
     "Wissenschaftsrat",
     "WWF Deutschland",
     "WZB Berlin Social Science Center",
@@ -107,5 +106,19 @@
     "ZZF Potsdam (Zeithistorische Forschung)",
     "Ärzte ohne Grenzen (MSF)"
   ],
-  "sites": []
+  "sites": [
+    {
+      "id": 244,
+      "name": "Weltfriedensdienst",
+      "url": "https://wfd.de/ueber-uns/stellenangebote/",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-08T09:31:32.232749+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 525 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwfd.de%2Fueber-uns%2Fstellenangebote%2F"
+    }
+  ]
 }

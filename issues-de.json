@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-07-08T09:01:33.397983+00:00",
-  "site_summary": {},
+  "last_updated": "2026-07-08T09:31:32.232749+00:00",
+  "site_summary": {
+    "Weltfriedensdienst": {
+      "site_id": 244,
+      "url": "https://wfd.de/ueber-uns/stellenangebote/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-07-08T09:31:32.232749+00:00",
+      "last_recent_failure": "2026-07-08T09:31:32.232749+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 525 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwfd.de%2Fueber-uns%2Fstellenangebote%2F"
+    }
+  },
   "issues": [
     {
       "timestamp": "2026-06-28T21:07:23.784674+00:00",
@@ -1221,6 +1235,16 @@
       "method": "interamt",
       "type": "fetch_error",
       "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-08T09:31:32.232749+00:00",
+      "site": "Weltfriedensdienst",
+      "site_id": 244,
+      "url": "https://wfd.de/ueber-uns/stellenangebote/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 525 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwfd.de%2Fueber-uns%2Fstellenangebote%2F",
       "consecutive_count": 1
     }
   ]
