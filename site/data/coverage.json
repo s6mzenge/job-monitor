@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-08T06:31:21.635645+00:00",
+  "generated_at": "2026-07-08T07:01:33.591399+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 92,
-  "erroring": 0,
+  "healthy": 91,
+  "erroring": 1,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
-    "html": 74,
+    "html": 73,
     "json_api": 7,
     "playwright": 6,
     "interamt": 1,
@@ -39,7 +39,6 @@
     "DGVN",
     "Die Linke",
     "Die Linke Bundestagsfraktion",
-    "DIW Berlin",
     "DZHW (German Centre for Higher Education Research and Science Studies)",
     "ECCHR",
     "ECFR",
@@ -107,5 +106,19 @@
     "ZZF Potsdam (Zeithistorische Forschung)",
     "Ärzte ohne Grenzen (MSF)"
   ],
-  "sites": []
+  "sites": [
+    {
+      "id": 189,
+      "name": "DIW Berlin",
+      "url": "https://www.diw.de/de/diw_01.c.618535.de/karriere/stellenangebote.html",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 3,
+      "last_failure": "2026-07-08T07:01:33.591399+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.diw.de%2Fde%2Fdiw_01.c.618535.de%2Fkarriere%2Fstellenangebote.html"
+    }
+  ]
 }
