@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T01:01:25.843037+00:00",
-  "run_count": 3,
+  "generated_at": "2026-07-08T01:31:26.443414+00:00",
+  "run_count": 4,
   "jobs": [
     {
       "title": "Director",
@@ -16,6 +16,40 @@
       "type": "Full-time (Permanent)",
       "deadline": "8 July 2026 at 23:59 BST",
       "salary": "£80,000 – £95,000 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Location is a hard filter (London only) and this role is based in Washington DC with no London or remote-UK option. It is also a Fellow / Senior Fellow level requiring substantial experience, and the development-policy topic is outside the candidate's core interest zones.",
+      "location": "Washington DC",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fellow, Climate policy & development",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A \"Fellow\" role at CGD is a senior research position requiring substantial post-qualification experience and an established record, which the candidate (student-assistant / RA background only) does not have. Climate and development policy also falls outside the candidate's core interest zones.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
