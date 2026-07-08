@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T12:01:39.081038+00:00",
-  "run_count": 25,
+  "generated_at": "2026-07-08T12:31:24.553688+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Director",
@@ -390,6 +390,23 @@
       "type": "Full-time",
       "deadline": "09 July 2026",
       "salary": "£53,949 to £62,160 pa (progressing to £69,073) inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Director of Research, Corporate, Infrastructure & Project Finance (CIPF)",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Director-of-Research%2C-Corporate%2C-Infrastructure-&-Project-Finance-%28CIPF%29-London/1412820733",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Ineligible on two hard counts: a \"Director\" title and an essential requirement of 7–10 years of relevant corporate credit analysis experience, far beyond the candidate's student-assistant/RA background. The subject matter (corporate credit and debt capital markets) is also well outside the candidate's interest zones.",
+      "location": "London, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
