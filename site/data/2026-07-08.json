@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T15:01:47.642758+00:00",
-  "run_count": 31,
+  "generated_at": "2026-07-08T15:31:35.188497+00:00",
+  "run_count": 32,
   "jobs": [
     {
       "title": "Research Associate for the Project \"Climate, Climatic Change, and Society\" (CLICCS) N4 – Scale interactions in a warming Arctic",
@@ -526,6 +526,40 @@
       "type": "Internship",
       "deadline": "2026-07-22",
       "salary": "€2,349/month (gross) stipend",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Projekt Assistenz für die Ausstellungsrealisation Keith Haring (m/w/d)",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/65946314/Projekt-Assistenz-f%C3%BCr-die-Ausstellungsrealisation-Keith-Haring-m-w-d-?jobDbPVId=278371314&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires a completed degree in art history / cultural studies / museology and at least two years of experience in exhibition realisation at a cultural institution — neither of which the candidate has, making this an unmet essential. The role is also entirely outside the candidate's international-law, security and geopolitical-research interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (fixed-term until 29.2.2028)",
+      "deadline": "2026-07-26",
+      "salary": "TVöD 8",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Brand Media Manager (m/w/d)",
+      "organisation": "WWF Deutschland",
+      "url": "https://www.wwf.de/ueber-uns/stellenangebote/stellenangebot/stelle/brand-media-manager-m-w-d-66euom2o",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "\"Manager\" role explicitly requiring several years (\"mehrjährige Erfahrung\") of media-strategy and budget-management experience — a level and experience mismatch that triggers the disqualifier. It is also a marketing/media specialism outside the candidate's core research profile and interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-08-05",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
