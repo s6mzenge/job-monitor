@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T12:31:30.503616+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-08T13:01:44.105704+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Research Associate for the Project \"Climate, Climatic Change, and Society\" (CLICCS) N4 – Scale interactions in a warming Arctic",
@@ -373,6 +373,23 @@
       "type": "Part-time (working student)",
       "deadline": "2026-07-22",
       "salary": "€15.10/hour + 13th month salary",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische Hilfskraft (w/m/d) (ID 410)",
+      "organisation": "WZB Berlin Social Science Center",
+      "url": "https://www.wzb.eu/de/jobs/studentische-hilfskraft-wmd-id-410-468-410",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a studentische Hilfskraft (working-student) role, which is excluded as a matter of policy. It also requires an ongoing law degree (laufendes Studium der Rechtswissenschaften) that the candidate does not hold, and the education-law / social-legal focus is only tangential to the core interests.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (student assistant, 10h/week)",
+      "deadline": "5 August 2026",
+      "salary": "€15.20–15.81 per hour (TdL guidelines)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
