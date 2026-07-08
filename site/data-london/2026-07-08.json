@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T13:31:25.052875+00:00",
-  "run_count": 28,
+  "generated_at": "2026-07-08T14:01:55.645349+00:00",
+  "run_count": 29,
   "jobs": [
     {
       "title": "Director",
@@ -457,6 +457,23 @@
       "location": "Heidelberg or London",
       "type": "Full-time",
       "deadline": "2026-07-22",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Programme Lead",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Leamington-Programme-Lead-B37-7ES/1412886633",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Not entry-level — this is a senior \"Lead\" role requiring proven experience leading complex multi-stream transformation programmes and line-managing Senior Project Managers, well beyond the candidate's student-assistant background. It is also a technical programme-delivery role outside the candidate's interest zones.",
+      "location": "Birmingham, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
