@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T19:01:26.983505+00:00",
-  "run_count": 39,
+  "generated_at": "2026-07-08T19:31:26.203729+00:00",
+  "run_count": 40,
   "jobs": [
     {
       "title": "Director",
@@ -594,6 +594,23 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Treasury Operations Analyst",
+      "organisation": "Wellcome Trust",
+      "url": "https://wellcome.wd3.myworkdayjobs.com/job/London/Treasury-Operations-Analyst_R-003411",
+      "priority": 12,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a finance/treasury operations role requiring experience setting up treasury or cash transactions and a background in finance, banking, accounting or investment operations — none of which the candidate has, making the paper fit weak. It also sits entirely outside all three interest zones, offering no research, policy or geopolitical-risk pull. Eligible on a technicality (London-based, no hard disqualifier), but a poor fit on nearly every axis.",
+      "location": "London",
+      "type": "Full-time (Permanent)",
+      "deadline": "22 July 2026",
+      "salary": "£38,320 - £47,900 p.a.",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
