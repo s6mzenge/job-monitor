@@ -1,6 +1,24 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T07:31:23.138636+00:00",
-  "run_count": 16,
-  "jobs": []
+  "generated_at": "2026-07-08T08:01:33.839362+00:00",
+  "run_count": 17,
+  "jobs": [
+    {
+      "title": "Research Associate for the Project \"Climate, Climatic Change, and Society\" (CLICCS) N4 – Scale interactions in a warming Arctic",
+      "organisation": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote/ausschreibung.html?jobID=e555a2f74181b01a05b26a092835012448559716",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The essential profile requires a natural-science degree (climate science, geoecology, meteorology, etc.), knowledge of biogeochemical soil processes, greenhouse-gas flux measurement, eddy covariance methods, and MATLAB/Python scientific programming — all technical essentials the candidate's IR/law background cannot meet. Although this is a funded doctoral-track post, the field is entirely outside the candidate's expertise and interests.",
+      "location": "Hamburg, Germany",
+      "type": "Part-time (65%), fixed-term to 31.08.2029",
+      "deadline": "2026-07-22",
+      "salary": "EGR. 13 TV-L",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
