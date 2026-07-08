@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T17:01:27.317128+00:00",
-  "run_count": 35,
+  "generated_at": "2026-07-08T17:31:32.516558+00:00",
+  "run_count": 36,
   "jobs": [
     {
       "title": "Director",
@@ -577,6 +577,23 @@
       "type": "Full-time (fixed-term, 12 months)",
       "deadline": "2026-07-30",
       "salary": "c.£85,000 to c.£100,000 pa inclusive",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for \"experts\" to sit on an advisory committee, not a genuine paid entry-level role — it seeks established specialists (likely on a voluntary or honorary basis) and is not a vacancy the early-career candidate would fill. Although the human-rights and securitisation subject matter is of core interest, the level and unpaid/advisory nature are hard blockers.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
