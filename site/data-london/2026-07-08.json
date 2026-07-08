@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T12:31:24.553688+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-08T13:01:35.455889+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Director",
@@ -407,6 +407,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Disability & Neurodiversity Manager",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/909278",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a Manager-level role requiring an experienced disability and neurodiversity professional with team leadership and specialist SpLD/disability-support knowledge — a clear seniority and specialist-experience disqualifier the candidate does not meet. It is also entirely outside the candidate's research, policy and geopolitical-risk interest zones.",
+      "location": "Bloomsbury, Camden, Greater London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "2026-08-02",
+      "salary": "£51,902.57–£61,048.57 per annum inclusive of London Allowance (plus £5,000 Responsibility Allowance)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
