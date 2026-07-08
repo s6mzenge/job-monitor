@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T11:01:41.976556+00:00",
-  "run_count": 23,
+  "generated_at": "2026-07-08T11:31:49.636754+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Research Associate for the Project \"Climate, Climatic Change, and Society\" (CLICCS) N4 – Scale interactions in a warming Arctic",
@@ -220,6 +220,23 @@
       "type": "Internship",
       "deadline": "2026-07-01",
       "salary": "EUR 603/month plus Berlin transport ticket",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Projektbearbeitung materielle Förderung (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.interamt.de/koop/app/stelle?id=1466859",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The essential requirement is a completed vocational / FH qualification in administration, finance or a commercial field (Ausbildung / kaufmännischer FH-Abschluss) plus professional experience in fund administration and scholarship calculation — a specific credential and background the candidate does not hold. It is an administrative finance-processing role rather than research or policy work, so it also sits well outside the candidate's interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (22 h/week), fixed-term parental-leave cover until 18.08.2027",
+      "deadline": "2026-07-22",
+      "salary": "TVöD-Bund E 9b",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
