@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T15:01:39.185578+00:00",
-  "run_count": 31,
+  "generated_at": "2026-07-08T15:31:22.967346+00:00",
+  "run_count": 32,
   "jobs": [
     {
       "title": "Director",
@@ -526,6 +526,23 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Awards and Progression Officer",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/909391",
+      "priority": 30,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "An entry-to-junior administrative role (Grade 6) in university assessment and records that the candidate could plausibly do, with transferable project-administration and Excel experience from the German Rectors' Conference and RA work. However, it is a records/registry administration post, not research or policy, and sits well outside all three core interest zones, so it is a weak fit on interest despite being eligible and accessible.",
+      "location": "Bloomsbury, London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "2026-07-22",
+      "salary": "£35,749.57 - £42,207.57 per annum inc. LA",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
