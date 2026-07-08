@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-08T00:31:26.767344+00:00",
-  "site_summary": {
-    "Heinrich Böll Stiftung": {
-      "site_id": 184,
-      "url": "https://www.interamt.de/koop/app/trefferliste?partner=556",
-      "method": "interamt",
-      "consecutive_failures": 1,
-      "total_recent_failures": 14,
-      "first_recent_failure": "2026-07-03T01:01:18.371149+00:00",
-      "last_recent_failure": "2026-07-08T00:31:26.767344+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556"
-    }
-  },
+  "last_updated": "2026-07-08T01:01:22.024581+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T21:07:23.784674+00:00",
