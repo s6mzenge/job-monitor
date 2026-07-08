@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-08T13:01:44.105704+00:00",
+  "generated_at": "2026-07-08T13:31:29.042212+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 90,
-  "erroring": 2,
+  "healthy": 92,
+  "erroring": 0,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
-    "html": 73,
+    "html": 74,
     "json_api": 7,
+    "playwright": 6,
     "interamt": 1,
-    "playwright": 5,
     "recruitee_api": 1
   },
   "healthy_names": [
@@ -39,6 +39,7 @@
     "DGVN",
     "Die Linke",
     "Die Linke Bundestagsfraktion",
+    "DIW Berlin",
     "DZHW (German Centre for Higher Education Research and Science Studies)",
     "ECCHR",
     "ECFR",
@@ -51,6 +52,7 @@
     "FU Berlin (wiss.)",
     "Germanwatch",
     "Gesellschaft für Freiheitsrechte",
+    "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
     "Global Public Policy Institute",
     "Haus der Wannsee-Konferenz",
     "Heinrich Böll Stiftung",
@@ -105,32 +107,5 @@
     "ZZF Potsdam (Zeithistorische Forschung)",
     "Ärzte ohne Grenzen (MSF)"
   ],
-  "sites": [
-    {
-      "id": 179,
-      "name": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
-      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
-      "method": "playwright",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 9,
-      "last_failure": "2026-07-08T13:01:44.105704+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
-    },
-    {
-      "id": 189,
-      "name": "DIW Berlin",
-      "url": "https://www.diw.de/de/diw_01.c.618535.de/karriere/stellenangebote.html",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 5,
-      "last_failure": "2026-07-08T13:01:44.105704+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.diw.de%2Fde%2Fdiw_01.c.618535.de%2Fkarriere%2Fstellenangebote.html"
-    }
-  ]
+  "sites": []
 }
