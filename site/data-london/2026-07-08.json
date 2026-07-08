@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T02:01:24.814584+00:00",
-  "run_count": 5,
+  "generated_at": "2026-07-08T02:31:27.292291+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Director",
@@ -49,6 +49,23 @@
       "location": "London",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate or Senior Editor, Nature Genetics",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Shanghai/Associate-or-Senior-Editor--Nature-Genetics_JR106494",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role's essential requirement is a PhD in cancer research/oncology or biomedical research — an already-completed doctorate the candidate does not hold — which is a hard disqualifier. It is also entirely outside the candidate's field (genetics/genomics editing) and skill set.",
+      "location": "Shanghai, Beijing, Madrid, Milan or Pune (Hybrid)",
+      "type": "Full-time",
+      "deadline": "2026-08-03",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
