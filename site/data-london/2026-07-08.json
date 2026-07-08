@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T09:31:33.243682+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-08T10:01:30.013178+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Director",
@@ -254,6 +254,23 @@
       "type": "Full-time",
       "deadline": "7/8/2026",
       "salary": "$105,000 per year",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Receptionist",
+      "organisation": "RUSI",
+      "url": "https://app.heyplumm.com/jobs/rusi/receptionist/894b12d7-95b5-45b8-8264-08d9cb9889de?refer=Plumm",
+      "priority": 12,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Although RUSI is a core-interest think-tank, this is a front-desk reception role with no research, writing or analysis content, so it does not use the candidate's paper strengths at all. It is eligible (entry-level, paid, London) but a poor fit on nearly every axis except the employer's name.",
+      "location": "London, United Kingdom",
+      "type": "Part-time",
+      "deadline": "Not specified",
+      "salary": "£18,500",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
