@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T15:31:22.967346+00:00",
-  "run_count": 32,
+  "generated_at": "2026-07-08T16:13:26.576378+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Director",
@@ -543,6 +543,23 @@
       "type": "Full-time",
       "deadline": "2026-07-22",
       "salary": "£35,749.57 - £42,207.57 per annum inc. LA",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "CRRD Data Analyst",
+      "organisation": "International Rescue Committee",
+      "url": "https://theirc.wd1.myworkdayjobs.com/job/New-York-NY-HQ-USA/CRRD-Data-Analyst_JR00004093",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "Ineligible on two counts: it requires an essential 3+ years in data analytics plus 2+ years professional PowerBI, and it demands a deep technical data stack (Databricks, dbt, SQL, pipeline orchestration) well beyond the candidate's analysis-level Python. Although a London option exists and the humanitarian mission is adjacent to the candidate's interests, both the experience level and technical requirements are hard blockers.",
+      "location": "London / United States / Kenya (hybrid)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "UK £49,000-60,000/yr (US $86,000-100,000/yr)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
