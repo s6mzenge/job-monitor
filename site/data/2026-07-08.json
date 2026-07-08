@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T16:31:30.147085+00:00",
-  "run_count": 34,
+  "generated_at": "2026-07-08T17:01:47.703697+00:00",
+  "run_count": 35,
   "jobs": [
     {
       "title": "Research Associate for the Project \"Climate, Climatic Change, and Society\" (CLICCS) N4 – Scale interactions in a warming Arctic",
@@ -594,6 +594,40 @@
       "type": "Full-time (35–40 hours/week; fixed-term to September 2028, with intent to make permanent)",
       "deadline": "2026-08-09",
       "salary": "€39,000/year (full-time)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Vorhaben „Strategieberatung Wiederaufbau und Transformation MENA\"",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78728",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a Praktikum (internship), which is excluded as a matter of policy regardless of pay or field. It also requires current enrolment or a degree completed within the last 6 months, and the MENA/development-cooperation subject is only adjacent to the candidate's core interests.",
+      "location": "Berlin, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-27",
+      "salary": "€2,349/month (gross)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Kompetenzcenter Gesundheit und Soziale Sicherung",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78729",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an internship (Praktikum), which is excluded as a matter of policy. It also requires a study or experience focus in health or social security, which is outside the candidate's profile.",
+      "location": "Eschborn, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-22",
+      "salary": "€2,349/month (brutto)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
