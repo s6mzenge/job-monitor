@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T11:31:55.344547+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-08T12:01:39.081038+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Director",
@@ -373,6 +373,23 @@
       "type": "Full-time",
       "deadline": "24-07-2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "M365 Prod & Collab Admin Expert (Senior)",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/2947/0/466386/15539/m365-productivity-and-collaboration-administrator-expert-senior",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a senior, deep-technical IT administration role requiring Microsoft certifications (MS-102, AZ-104, etc.), extensive SharePoint/Teams/Azure administration, PowerShell scripting and team supervision — all essential requirements far beyond the candidate's analysis-level skills. It is also explicitly senior-level with supervisory duties. The role sits entirely outside the candidate's profile and interest zones.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "09 July 2026",
+      "salary": "£53,949 to £62,160 pa (progressing to £69,073) inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
