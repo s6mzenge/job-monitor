@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T12:01:28.538933+00:00",
-  "run_count": 25,
+  "generated_at": "2026-07-08T12:31:30.503616+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Research Associate for the Project \"Climate, Climatic Change, and Society\" (CLICCS) N4 – Scale interactions in a warming Arctic",
@@ -339,6 +339,40 @@
       "type": "Full-time (Volontariat / traineeship)",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Sekretär:in (m/w/d)",
+      "organisation": "CURE (KHK Saarbrücken)",
+      "url": "https://cure.uni-saarland.de/das-kolleg/stellenausschreibungen/",
+      "priority": 18,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an administrative secretarial post (office management, budgeting, invoicing, filing) calling for a commercial office-administration training — it is not a research role and is a weak fit for the candidate's research/policy profile, though the funding-administration experience at the German Rectors' Conference partly transfers. The institute's theme of cultural reparation is tangentially adjacent to transitional justice, but the job content itself is clerical rather than substantive.",
+      "location": "Saarbrücken, Germany",
+      "type": "Part-time (50%)",
+      "deadline": "2026-07-15",
+      "salary": "TV-L E6",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische*r Mitarbeiter*in in der Abteilung Advocacy & Communications im Bereich Events & Engagement",
+      "organisation": "Ärzte ohne Grenzen (MSF)",
+      "url": "https://jobs.b-ite.com/jobposting/668661d7342834eb838706678f0ff48e876410fc0?ref=homepage",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is explicitly a studentische Mitarbeit (working-student) role requiring current student enrolment, which is excluded as a matter of policy. The humanitarian mission is of plausible interest, but the level and role type are a hard mismatch.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (working student)",
+      "deadline": "2026-07-22",
+      "salary": "€15.10/hour + 13th month salary",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
