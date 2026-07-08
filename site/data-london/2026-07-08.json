@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T13:01:35.455889+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-08T13:31:25.052875+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Director",
@@ -424,6 +424,40 @@
       "type": "Full-time",
       "deadline": "2026-08-02",
       "salary": "£51,902.57–£61,048.57 per annum inclusive of London Allowance (plus £5,000 Responsibility Allowance)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "This is a call for established \"experts\" to join an advisory committee, not an entry-level paid role — it seeks senior domain specialists and reads as advisory/voluntary rather than a genuine paid vacancy for an early-career candidate. The human-rights and securitisation theme is interesting, but the seniority and non-vacancy nature are hard blockers.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Integrity Specialist",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Heidelberg/Research-Integrity-Specialist_JR106459",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is not an entry-level role — it requires a \"proven track record as a high-performing Research Integrity Adviser (or equivalent)\" plus a strong background in statistical fraud-detection methods (GRIM, SPRITE) and specialist image-integrity/plagiarism software the candidate does not have. It sits well outside the candidate's interest zones and demands STEM-oriented data/image forensics expertise the candidate lacks, making it a hard mismatch on both level and skills.",
+      "location": "Heidelberg or London",
+      "type": "Full-time",
+      "deadline": "2026-07-22",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
