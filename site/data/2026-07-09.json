@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T08:01:51.343791+00:00",
-  "run_count": 17,
+  "generated_at": "2026-07-09T08:31:49.903207+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) - 1. Qualifizierungsphase (zur Promotion)",
@@ -84,6 +84,23 @@
       "type": "Full-time (100%, part-time possible; fixed term to 31.08.2028)",
       "deadline": "2026-07-24",
       "salary": "Entgeltgruppe 13 TV-L Berliner Hochschulen",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wissenschaftliche Museumsassistenz in Fortbildung (w/d/m)",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/899b1249e4466ea0f7ffd2214c297ed34fc2ad360",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "An essential requirement is a completed Master's in art history (Kunstgeschichte) or a closely related field plus specialist knowledge of 20th-century/contemporary art — a subject specialism the candidate plainly lacks. The role is also entirely outside the candidate's interest zones (art-museum curation), making it both ineligible on the qualification and a poor topical fit.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (part-time possible), fixed-term 24 months",
+      "deadline": "2026-08-06",
+      "salary": "Year 1: €2,450.56/month gross; Year 2: €2,639.66/month gross",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
