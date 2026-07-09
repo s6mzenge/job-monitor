@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T06:45:49.652239+00:00",
-  "run_count": 14,
+  "generated_at": "2026-07-09T07:02:07.082566+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) - 1. Qualifizierungsphase (zur Promotion)",
@@ -33,6 +33,40 @@
       "type": "Full-time (part-time possible)",
       "deadline": "2026-07-24",
       "salary": "Entgeltgruppe 14 TV-L Berliner Hochschulen",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Jurist:in / Referent:in (w/d/m)",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/bfbcef8330bc8d7537873b35a71da6458b7b1fae0",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Requires a Volljurist:in (Befähigung zum Richteramt) — full German legal qualification with both state exams — which the candidate does not hold. This is an essential the candidate fails, and the personnel-law focus is outside the core interest zones regardless.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (part-time possible), 24-month fixed term",
+      "deadline": "2026-07-30",
+      "salary": "E 13 TVöD Bund",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Jugendbildungsreferent*in (d/w/m) für die DGB-Region Südwestfalen",
+      "organisation": "DGB",
+      "url": "https://www.dgb.de/karriere/stellenanzeige/jugendbildungsreferentin-dwm-fur-die-dgb-region-sudwestfalen",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires at least 3 years of relevant professional experience plus additional training, which the candidate lacks — a hard experience disqualifier. The role is union youth-education work with campaign and events focus, well outside the candidate's interest zones and skills.",
+      "location": "Siegen, Germany",
+      "type": "Full-time",
+      "deadline": "2026-07-28",
+      "salary": "€4,633.00/month (Entgeltgruppe 05)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
