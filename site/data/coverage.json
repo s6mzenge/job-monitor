@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T15:01:42.879880+00:00",
+  "generated_at": "2026-07-09T15:31:18.351433+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 91,
@@ -7,9 +7,9 @@
   "paused": 0,
   "methods": {
     "personio_xml": 3,
-    "html": 73,
+    "html": 74,
     "json_api": 7,
-    "playwright": 6,
+    "playwright": 5,
     "interamt": 1,
     "recruitee_api": 1
   },
@@ -39,6 +39,7 @@
     "DGVN",
     "Die Linke",
     "Die Linke Bundestagsfraktion",
+    "DIW Berlin",
     "DZHW (German Centre for Higher Education Research and Science Studies)",
     "ECCHR",
     "ECFR",
@@ -90,7 +91,6 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
-    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -108,17 +108,17 @@
   ],
   "sites": [
     {
-      "id": 189,
-      "name": "DIW Berlin",
-      "url": "https://www.diw.de/de/diw_01.c.618535.de/karriere/stellenangebote.html",
-      "method": "html",
+      "id": 230,
+      "name": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 8,
-      "last_failure": "2026-07-09T15:01:42.879880+00:00",
+      "total_recent_failures": 62,
+      "last_failure": "2026-07-09T15:31:18.351433+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.diw.de%2Fde%2Fdiw_01.c.618535.de%2Fkarriere%2Fstellenangebote.html"
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
     }
   ]
 }

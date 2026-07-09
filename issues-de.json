@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-09T15:01:42.879880+00:00",
+  "last_updated": "2026-07-09T15:31:18.351433+00:00",
   "site_summary": {
-    "DIW Berlin": {
-      "site_id": 189,
-      "url": "https://www.diw.de/de/diw_01.c.618535.de/karriere/stellenangebote.html",
-      "method": "html",
+    "Uni Hamburg (Stellenangebote)": {
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
       "consecutive_failures": 1,
-      "total_recent_failures": 8,
-      "first_recent_failure": "2026-07-05T13:31:15.463502+00:00",
-      "last_recent_failure": "2026-07-09T15:01:42.879880+00:00",
+      "total_recent_failures": 62,
+      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
+      "last_recent_failure": "2026-07-09T15:31:18.351433+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.diw.de%2Fde%2Fdiw_01.c.618535.de%2Fkarriere%2Fstellenangebote.html"
+      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -2148,6 +2148,158 @@
       "type": "llm_call_failed",
       "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrgvZtLcQV3XBUWhweCi\"}",
       "scope": "page_level"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "Kulturveranstaltungen des Bundes (KBB)",
+      "site_id": 163,
+      "url": "https://kbbjobs.softgarden.io/de/vacancies",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ccrj19BfL54z8VkXE4rVY\"}",
+      "job_title": "Payroll Specialist (m/w/d/k)",
+      "job_url": "https://kbbjobs.softgarden.io/job/65195526/Payroll-Specialist-m-w-d-k-?jobDbPVId=278453708&l=de"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "Kulturveranstaltungen des Bundes (KBB)",
+      "site_id": 163,
+      "url": "https://kbbjobs.softgarden.io/de/vacancies",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ccrj1AX2k5LaWcoy27NZC\"}",
+      "job_title": "Leitung (m/w/d/k) Veranstaltungs- und Ausstellungstechnik",
+      "job_url": "https://kbbjobs.softgarden.io/job/65968968/Leitung-m-w-d-k-Veranstaltungs-und-Ausstellungstechnik-?jobDbPVId=278439633&l=de"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "Kulturveranstaltungen des Bundes (KBB)",
+      "site_id": 163,
+      "url": "https://kbbjobs.softgarden.io/de/vacancies",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ccrj1BYnwFPDFgEoMsbX7\"}",
+      "job_title": "technische Produktionsassistenz Berlinale (m/w/d/k)",
+      "job_url": "https://kbbjobs.softgarden.io/job/65962938/technische-Produktionsassistenz-Berlinale-m-w-d-k-?jobDbPVId=278422433&l=de"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ccrj1CAFYtyXj9HmaXNmb\"}",
+      "job_title": "Praktikant*in (m/w/d) im Bereich internationale Agrarpolitik im Globalvorhaben „Nachhaltige Agrarsysteme und Agrarpolitik“ mit sprachlichem Schwerpunkt Französisch und Englisch",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78735"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ccrj1CiVFsZFqQ7hbr6Y2\"}",
+      "job_title": "Praktikant*in (m/w/d) für Kommunikation & Events zu Agrar- und Ernährungssystemen",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78734"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ccrj5e1sCYdFqPp7dSwn8\"}",
+      "job_title": "Praktikant*in (m/w/d) für Klimawandel und Agrarpolitik mit Schwerpunkt auf die CompensACTION Initiative im Globalvorhaben Nachhaltige Agrarsysteme und Agrarpolitik (AgSys)",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78733"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ccrj5hL3T8ZHEm85rW8D1\"}",
+      "job_title": "Spezialist*in IT für SAP S/4 HANA Finanzen",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=77572"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ccrj5hrYXK8RXjd1nVzm7\"}",
+      "job_title": "Spezialist*in IT für SAP S/4 HANA Analytics und Finanzen",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=77546"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "Hertie School",
+      "site_id": 181,
+      "url": "https://hertie-school.dvinci-easy.com/en/p/en/jobs",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ccrj5isKAjTZSHNZgMj92\"}",
+      "job_title": "Communications Manager (gn) for CIVICA  – The European University of Social Sciences",
+      "job_url": "https://hertie-school.dvinci-easy.com/en/p/en/jobs/81056/communications-manager-gn-for-civica-the-european-university-of-social-sciences-full-time-40-hoursweek"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "rbb (Rundfunk Berlin-Brandenburg)",
+      "site_id": 194,
+      "url": "https://www.rbb-online.de/unternehmen/karriere/jobs/",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ccrj5jcxdhnQ3cN8qPcaC\"}",
+      "job_title": "Bewerbungsfrist bis zum 23. Juli 2026-100/2026: Buchhalter*in für Kreditorenkonten für die Abteilung Rechnungswesen",
+      "job_url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2088/Description/1"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "rbb (Rundfunk Berlin-Brandenburg)",
+      "site_id": 194,
+      "url": "https://www.rbb-online.de/unternehmen/karriere/jobs/",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrjA8nbvDgHciNqPRjQP\"}",
+      "job_title": "Bewerbungsfrist bis zum 23. Juli 2026-99/2026: Programmtechniker*in in Teilzeit zu 50 % für den Bereich AV-Betrieb in der Abteilung Medienbetrieb und Mobilität",
+      "job_url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2089/Description/1"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "rbb (Rundfunk Berlin-Brandenburg)",
+      "site_id": 194,
+      "url": "https://www.rbb-online.de/unternehmen/karriere/jobs/",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrjA9rLpmdbVLnxzxJKK\"}",
+      "job_title": "Bewerbungsfrist bis zum 19. Juli 2026-101/2026: Ingenieur*in vom Dienst für die Abteilung Operating",
+      "job_url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2087/Description/1"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "Transparency International DE",
+      "site_id": 199,
+      "url": "https://www.transparency.de/ueber-uns/stellenangebote",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrjAAkfji5adLYQExxJi\"}",
+      "scope": "page_level"
+    },
+    {
+      "timestamp": "2026-07-09T15:31:18.351433+00:00",
+      "site": "Uni Hamburg (Stellenangebote)",
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
     }
   ]
 }
