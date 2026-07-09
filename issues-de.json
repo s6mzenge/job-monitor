@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-09T10:01:41.746632+00:00",
+  "last_updated": "2026-07-09T10:31:33.596657+00:00",
   "site_summary": {},
   "issues": [
     {
@@ -1402,6 +1402,50 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.diw.de%2Fde%2Fdiw_01.c.618535.de%2Fkarriere%2Fstellenangebote.html",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-09T10:31:33.596657+00:00",
+      "site": "Kulturveranstaltungen des Bundes (KBB)",
+      "site_id": 163,
+      "url": "https://kbbjobs.softgarden.io/de/vacancies",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrL9DX9aoe9B42HkgRwv\"}",
+      "job_title": "technische Produktionsassistenz Berlinale (m/w/d/k)",
+      "job_url": "https://kbbjobs.softgarden.io/job/65962938/technische-Produktionsassistenz-Berlinale-m-w-d-k-?jobDbPVId=278422433&l=de"
+    },
+    {
+      "timestamp": "2026-07-09T10:31:33.596657+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrL9EGny4MYMJ5ChVp9V\"}",
+      "job_title": "Praktikant*in (m/w/d) im Bereich internationale Agrarpolitik im Globalvorhaben „Nachhaltige Agrarsysteme und Agrarpolitik“ mit sprachlichem Schwerpunkt Französisch und Englisch",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78735"
+    },
+    {
+      "timestamp": "2026-07-09T10:31:33.596657+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrL9EoYeGa1vVi4pyLqi\"}",
+      "job_title": "Praktikant*in (m/w/d) für Klimawandel und Agrarpolitik mit Schwerpunkt auf die CompensACTION Initiative im Globalvorhaben Nachhaltige Agrarsysteme und Agrarpolitik (AgSys)",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78733"
+    },
+    {
+      "timestamp": "2026-07-09T10:31:33.596657+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrL9FMHQoWVVSrWrvExj\"}",
+      "job_title": "Praktikant*in (m/w/d) für Kommunikation & Events zu Agrar- und Ernährungssystemen",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78734"
     }
   ]
 }
