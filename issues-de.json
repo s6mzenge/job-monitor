@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-09T12:01:31.435040+00:00",
-  "site_summary": {
-    "Uni Hamburg (Stellenangebote)": {
-      "site_id": 230,
-      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 61,
-      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
-      "last_recent_failure": "2026-07-09T12:01:31.435040+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
-    }
-  },
+  "last_updated": "2026-07-09T13:04:26.739854+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T21:07:23.784674+00:00",
@@ -1602,6 +1588,72 @@
       "type": "fetch_error",
       "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-09T13:04:26.739854+00:00",
+      "site": "Kulturveranstaltungen des Bundes (KBB)",
+      "site_id": 163,
+      "url": "https://kbbjobs.softgarden.io/de/vacancies",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrXoVTwY8QjaPFBRwrV8\"}",
+      "job_title": "Leitung (m/w/d/k) Veranstaltungs- und Ausstellungstechnik",
+      "job_url": "https://kbbjobs.softgarden.io/job/65968968/Leitung-m-w-d-k-Veranstaltungs-und-Ausstellungstechnik-?jobDbPVId=278439633&l=de"
+    },
+    {
+      "timestamp": "2026-07-09T13:04:26.739854+00:00",
+      "site": "Kulturveranstaltungen des Bundes (KBB)",
+      "site_id": 163,
+      "url": "https://kbbjobs.softgarden.io/de/vacancies",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrXoXrK648Ef9sCCkhAw\"}",
+      "job_title": "technische Produktionsassistenz Berlinale (m/w/d/k)",
+      "job_url": "https://kbbjobs.softgarden.io/job/65962938/technische-Produktionsassistenz-Berlinale-m-w-d-k-?jobDbPVId=278422433&l=de"
+    },
+    {
+      "timestamp": "2026-07-09T13:04:26.739854+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrXoYPoZDrd1bTTYbDDV\"}",
+      "job_title": "Praktikant*in (m/w/d) im Bereich internationale Agrarpolitik im Globalvorhaben „Nachhaltige Agrarsysteme und Agrarpolitik“ mit sprachlichem Schwerpunkt Französisch und Englisch",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78735"
+    },
+    {
+      "timestamp": "2026-07-09T13:04:26.739854+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrXoYwJ38MKG67JfHRV6\"}",
+      "job_title": "Praktikant*in (m/w/d) für Kommunikation & Events zu Agrar- und Ernährungssystemen",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78734"
+    },
+    {
+      "timestamp": "2026-07-09T13:04:26.739854+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrXoZdTukfrUvuoBAcQF\"}",
+      "job_title": "Praktikant*in (m/w/d) für Klimawandel und Agrarpolitik mit Schwerpunkt auf die CompensACTION Initiative im Globalvorhaben Nachhaltige Agrarsysteme und Agrarpolitik (AgSys)",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78733"
+    },
+    {
+      "timestamp": "2026-07-09T13:04:26.739854+00:00",
+      "site": "rbb (Rundfunk Berlin-Brandenburg)",
+      "site_id": 194,
+      "url": "https://www.rbb-online.de/unternehmen/karriere/jobs/",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrXszNri5TY2FnnvPgKw\"}",
+      "job_title": "Bewerbungsfrist bis zum 19. Juli 2026-101/2026: Ingenieur*in vom Dienst für die Abteilung Operating",
+      "job_url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2087/Description/1"
     }
   ]
 }
