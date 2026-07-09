@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T00:01:34.043662+00:00",
-  "run_count": 1,
+  "generated_at": "2026-07-09T00:31:38.665736+00:00",
+  "run_count": 2,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -118,6 +118,23 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Principal Product Manager",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Principal-Product-Manager/44096-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "\"Principal\" is a senior title requiring proven experience leading large-scale enterprise technology platforms and deep SAP / architecture / security expertise — far beyond the candidate's level and skills. The role is also entirely outside the candidate's research and policy interest zones.",
+      "location": "London (also Birmingham, Cardiff, Glasgow, Newcastle, Salford; hybrid)",
+      "type": "Full-time / Fixed-term Contract (22 months)",
+      "deadline": "21/07/2026",
+      "salary": "£90,000 - £100,000",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
