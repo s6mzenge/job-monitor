@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T18:01:23.617850+00:00",
-  "run_count": 37,
+  "generated_at": "2026-07-09T18:31:16.916853+00:00",
+  "run_count": 38,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -492,6 +492,40 @@
       "type": "Full-time",
       "deadline": "2026-07-23",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "IMS Trainer - Subcontract",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/mumbai-IMS-Trainer-Subcontract/1413498033",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires technical qualification to train and audit against ISO 9001/14001/45001 management-system standards — a specialist certification and experience the candidate does not hold. It is also a commercial ISO-training/advisory role wholly outside the candidate's policy, international-law and geopolitical-risk interests.",
+      "location": "Mumbai, India (role expects residence in Australia)",
+      "type": "Contract (Contractor On Demand)",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Product Analyst",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Senior-Product-Analyst/48240-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A \"Senior\" role explicitly asking for mentoring of other analysts and deep product-analytics experience is not entry-level, which is a hard disqualifier. It also requires product-analytics and experimentation skills well beyond the candidate's analysis-level Python, and the field sits outside all three interest zones.",
+      "location": "London or Salford (Hybrid)",
+      "type": "Full-time",
+      "deadline": "2026-07-15",
+      "salary": "Up to £59,500",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
