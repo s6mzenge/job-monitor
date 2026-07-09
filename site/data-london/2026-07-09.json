@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T08:31:34.639087+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-09T09:01:40.965225+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -202,6 +202,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Head of Digital Marketing & Performance",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Leamington-Head-of-Digital-Marketing-&-Performance-B37-7ES/1413186133",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a senior \"Head of\" leadership role requiring 10+ years of experience and deep hands-on digital-marketing expertise, which fails both the seniority and specialist-skills gates. It is entirely outside the candidate's profile and interest zones.",
+      "location": "Leamington (B37 7ES), United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
