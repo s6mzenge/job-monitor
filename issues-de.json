@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-09T13:04:26.739854+00:00",
+  "last_updated": "2026-07-09T13:31:28.899847+00:00",
   "site_summary": {},
   "issues": [
     {
@@ -1652,6 +1652,83 @@
       "method": "html",
       "type": "llm_call_failed",
       "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrXszNri5TY2FnnvPgKw\"}",
+      "job_title": "Bewerbungsfrist bis zum 19. Juli 2026-101/2026: Ingenieur*in vom Dienst für die Abteilung Operating",
+      "job_url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2087/Description/1"
+    },
+    {
+      "timestamp": "2026-07-09T13:31:28.899847+00:00",
+      "site": "Kulturveranstaltungen des Bundes (KBB)",
+      "site_id": 163,
+      "url": "https://kbbjobs.softgarden.io/de/vacancies",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrZsHPFjSmfN7wsrZMPC\"}",
+      "job_title": "Payroll Specialist (m/w/d/k)",
+      "job_url": "https://kbbjobs.softgarden.io/job/65195526/Payroll-Specialist-m-w-d-k-?jobDbPVId=278453708&l=de"
+    },
+    {
+      "timestamp": "2026-07-09T13:31:28.899847+00:00",
+      "site": "Kulturveranstaltungen des Bundes (KBB)",
+      "site_id": 163,
+      "url": "https://kbbjobs.softgarden.io/de/vacancies",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrZsJnqU3nMAsqD6aH1h\"}",
+      "job_title": "Leitung (m/w/d/k) Veranstaltungs- und Ausstellungstechnik",
+      "job_url": "https://kbbjobs.softgarden.io/job/65968968/Leitung-m-w-d-k-Veranstaltungs-und-Ausstellungstechnik-?jobDbPVId=278439633&l=de"
+    },
+    {
+      "timestamp": "2026-07-09T13:31:28.899847+00:00",
+      "site": "Kulturveranstaltungen des Bundes (KBB)",
+      "site_id": 163,
+      "url": "https://kbbjobs.softgarden.io/de/vacancies",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrZsKUmDiCtAzMmu9o39\"}",
+      "job_title": "technische Produktionsassistenz Berlinale (m/w/d/k)",
+      "job_url": "https://kbbjobs.softgarden.io/job/65962938/technische-Produktionsassistenz-Berlinale-m-w-d-k-?jobDbPVId=278422433&l=de"
+    },
+    {
+      "timestamp": "2026-07-09T13:31:28.899847+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrZsM7EnKQjTC2Vngrya\"}",
+      "job_title": "Praktikant*in (m/w/d) im Bereich internationale Agrarpolitik im Globalvorhaben „Nachhaltige Agrarsysteme und Agrarpolitik“ mit sprachlichem Schwerpunkt Französisch und Englisch",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78735"
+    },
+    {
+      "timestamp": "2026-07-09T13:31:28.899847+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrZsNsu9yyRzAbHFK5Gw\"}",
+      "job_title": "Praktikant*in (m/w/d) für Kommunikation & Events zu Agrar- und Ernährungssystemen",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78734"
+    },
+    {
+      "timestamp": "2026-07-09T13:31:28.899847+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrZwkgSYGQyQ78exAT5x\"}",
+      "job_title": "Praktikant*in (m/w/d) für Klimawandel und Agrarpolitik mit Schwerpunkt auf die CompensACTION Initiative im Globalvorhaben Nachhaltige Agrarsysteme und Agrarpolitik (AgSys)",
+      "job_url": "https://jobs.giz.de/index.php?ac=jobad&id=78733"
+    },
+    {
+      "timestamp": "2026-07-09T13:31:28.899847+00:00",
+      "site": "rbb (Rundfunk Berlin-Brandenburg)",
+      "site_id": 194,
+      "url": "https://www.rbb-online.de/unternehmen/karriere/jobs/",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrZwm8UZSBQPbAiCupVd\"}",
       "job_title": "Bewerbungsfrist bis zum 19. Juli 2026-101/2026: Ingenieur*in vom Dienst für die Abteilung Operating",
       "job_url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2087/Description/1"
     }
