@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T09:01:40.965225+00:00",
-  "run_count": 19,
+  "generated_at": "2026-07-09T09:31:54.426864+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -217,6 +217,23 @@
       "match": "low",
       "reason": "This is a senior \"Head of\" leadership role requiring 10+ years of experience and deep hands-on digital-marketing expertise, which fails both the seniority and specialist-skills gates. It is entirely outside the candidate's profile and interest zones.",
       "location": "Leamington (B37 7ES), United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Editor, Branded Content",
+      "organisation": "The Economist Group",
+      "url": "https://job-boards.eu.greenhouse.io/theeconomistgroup/jobs/4907157101",
+      "priority": 30,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a commercial content-marketing / branded-content editor role centred on client management, sales support, project delivery and content production for corporate clients — a partial fit at best, since the candidate's strengths are policy/academic research rather than editorial-agency work with senior-exec client presence and vendor management. It leans on comms/marketing and client-facing experience the candidate largely lacks, and it sits outside the three core interest zones, so it is eligible but a weak, low-priority match.",
+      "location": "London (Commercial); hybrid",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
