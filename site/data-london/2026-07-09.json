@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T09:31:54.426864+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-09T10:01:38.976559+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -236,6 +236,23 @@
       "location": "London (Commercial); hybrid",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Finance Officer-Sahel",
+      "organisation": "International Alert",
+      "url": "https://www.international-alert.org/about/jobs/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Location fails the London-only filter — the role is based in Niamey, Niger, with no London or remote-UK option. Separately, it is a senior finance role outside the candidate's skills and interest zones.",
+      "location": "Niamey, Niger",
+      "type": "Full-time",
+      "deadline": "18 July 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
