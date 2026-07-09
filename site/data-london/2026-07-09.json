@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T20:01:24.367743+00:00",
-  "run_count": 41,
+  "generated_at": "2026-07-09T20:31:28.618474+00:00",
+  "run_count": 42,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -526,6 +526,40 @@
       "type": "Full-time",
       "deadline": "2026-07-15",
       "salary": "Up to £59,500",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Location is DC with no London option, which fails the London-only hard filter. It is also a Fellow / Senior Fellow role well above entry level, so it is a mismatch on level too.",
+      "location": "Washington DC, USA",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fellow, Climate policy & development",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "priority": 22,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "A \"Fellow\" title at a research institute typically implies a senior or experienced researcher rather than an entry-level post, which is a poor level fit for a candidate with only RA experience; without a detailed spec the level ask is uncertain, so it is not an outright disqualifier. Climate and development sits outside the candidate's core interest zones, further lowering the priority.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
