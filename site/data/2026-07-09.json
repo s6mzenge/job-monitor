@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T07:02:07.082566+00:00",
-  "run_count": 15,
+  "generated_at": "2026-07-09T07:31:48.915163+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) - 1. Qualifizierungsphase (zur Promotion)",
@@ -67,6 +67,23 @@
       "type": "Full-time",
       "deadline": "2026-07-28",
       "salary": "€4,633.00/month (Entgeltgruppe 05)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wiss. Mitarbeiter*in (d/m/w) – Cyber-Physical Systems in Mechanical Engineering",
+      "organisation": "TU Berlin (wiss. Personal)",
+      "url": "https://www.jobs.tu-berlin.de/stellenausschreibungen/205320?filter%5Bworktype_tub%5D%5B%5D=wiss-dauer&filter%5Bworktype_tub%5D%5B%5D=wiss-mlehr&filter%5Bworktype_tub%5D%5B%5D=wiss-olehr",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The essential requirements demand a Master's in engineering / applied mathematics / machine learning plus proven deep-technical ML experience (CNN, LSTM, Transformer, Autoencoder architectures, PyTorch/JAX, explainable AI) that the candidate's analysis-level Python cannot meet. This is a deep-technical ML research role in turbomachinery, entirely outside the candidate's field and skill set.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (100%, part-time possible; fixed term to 31.08.2028)",
+      "deadline": "2026-07-24",
+      "salary": "Entgeltgruppe 13 TV-L Berliner Hochschulen",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
