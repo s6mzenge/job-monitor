@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-09T13:11:22.854331+00:00",
+  "last_updated": "2026-07-09T13:31:31.939896+00:00",
   "site_summary": {
-    "Impunity Watch": {
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+    "Airwars": {
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 28,
-      "first_recent_failure": "2026-07-02T10:31:03.695349+00:00",
-      "last_recent_failure": "2026-07-09T13:11:22.854331+00:00",
+      "total_recent_failures": 140,
+      "first_recent_failure": "2026-07-02T01:01:14.296954+00:00",
+      "last_recent_failure": "2026-07-09T13:31:31.939896+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
     }
   },
   "issues": [
@@ -2706,6 +2706,70 @@
       "method": "workday_api",
       "type": "llm_call_failed",
       "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrYSboikibdLnrQGZ6ZT\"}",
+      "job_title": "Data Analytics Specialist",
+      "job_url": "https://springernature.wd3.myworkdayjobs.com/job/Pune/Data-Analytics-Specialist_JR106568"
+    },
+    {
+      "timestamp": "2026-07-09T13:31:31.939896+00:00",
+      "site": "SOAS University of London",
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrZsQ9YzndWZesd7wGnA\"}",
+      "job_title": "Assessment Lead Officer (INTERNAL)",
+      "job_url": "https://vacancies.soas.ac.uk/job/909832"
+    },
+    {
+      "timestamp": "2026-07-09T13:31:31.939896+00:00",
+      "site": "Wits University",
+      "site_id": 44,
+      "url": "https://www.wits.ac.za/vacancies/",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrZsQhYG9gKBSV6DhRkM\"}",
+      "job_title": "Faculty Finance Officer (AD09) (AD.09.4)",
+      "job_url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106467&p_spid=5154836"
+    },
+    {
+      "timestamp": "2026-07-09T13:31:31.939896+00:00",
+      "site": "Save the Children UK",
+      "site_id": 55,
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/find/results/",
+      "method": "playwright",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrZsRSwRKuqMEed1YAXB\"}",
+      "job_title": "Supporter Care Advisor (7384)",
+      "job_url": "https://jobs.savethechildren.org.uk/jobs/vacancy/supporter-care-advisor-7384-farringdon-london-home-based/7410/description"
+    },
+    {
+      "timestamp": "2026-07-09T13:31:31.939896+00:00",
+      "site": "Airwars",
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-09T13:31:31.939896+00:00",
+      "site": "Asylum Aid",
+      "site_id": 139,
+      "url": "https://www.asylumaid.org.uk/who-we-are/join-us",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrZsU9f8NBzPSWEzPuuK\"}",
+      "scope": "page_level"
+    },
+    {
+      "timestamp": "2026-07-09T13:31:31.939896+00:00",
+      "site": "Springer Nature",
+      "site_id": 204,
+      "url": "https://springernature.wd3.myworkdayjobs.com/en-US/SpringerNatureCareers",
+      "method": "workday_api",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcrZwttJg4pTqLivk75D5\"}",
       "job_title": "Data Analytics Specialist",
       "job_url": "https://springernature.wd3.myworkdayjobs.com/job/Pune/Data-Analytics-Specialist_JR106568"
     }
