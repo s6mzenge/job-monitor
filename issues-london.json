@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-09T19:31:17.603285+00:00",
-  "site_summary": {
-    "Airwars": {
-      "site_id": 133,
-      "url": "https://airwars.org/about/workwithus/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 145,
-      "first_recent_failure": "2026-07-02T01:01:14.296954+00:00",
-      "last_recent_failure": "2026-07-09T19:31:17.603285+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
-    }
-  },
+  "last_updated": "2026-07-09T20:01:24.367743+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T15:46:14.886630+00:00",
