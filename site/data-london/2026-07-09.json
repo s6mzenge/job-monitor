@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T21:31:20.979995+00:00",
-  "run_count": 44,
+  "generated_at": "2026-07-09T22:01:27.652545+00:00",
+  "run_count": 45,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -560,6 +560,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Engineering Manager, Connectivity - London",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5309805008",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a senior management role (\"Engineering Manager,\" 3+ years as EM preferred) requiring experience managing software engineering teams and a deep backend/platform engineering background operating production distributed systems — far beyond the candidate's analysis-level Python and lack of both leadership and software-engineering experience. It fails multiple hard disqualifiers (non-entry-level title, deep-technical requirements).",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified (listed as £1—£1 GBP, a placeholder)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
