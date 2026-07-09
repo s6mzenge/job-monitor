@@ -1,15 +1,16 @@
 {
-  "generated_at": "2026-07-09T21:01:30.034250+00:00",
+  "generated_at": "2026-07-09T21:31:24.484952+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 90,
-  "erroring": 2,
+  "healthy": 91,
+  "erroring": 1,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
-    "html": 73,
+    "html": 74,
     "json_api": 7,
-    "playwright": 6,
+    "playwright": 5,
+    "interamt": 1,
     "recruitee_api": 1
   },
   "healthy_names": [
@@ -36,6 +37,7 @@
     "DGAP (Deutsche Gesellschaft für Auswärtige Politik)",
     "DGB",
     "DGVN",
+    "Die Linke",
     "Die Linke Bundestagsfraktion",
     "DIW Berlin",
     "DZHW (German Centre for Higher Education Research and Science Studies)",
@@ -53,6 +55,7 @@
     "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
     "Global Public Policy Institute",
     "Haus der Wannsee-Konferenz",
+    "Heinrich Böll Stiftung",
     "Hertie School",
     "HIS Hamburg",
     "HWR Berlin",
@@ -88,7 +91,6 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
-    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -106,30 +108,17 @@
   ],
   "sites": [
     {
-      "id": 223,
-      "name": "Die Linke",
-      "url": "https://www.die-linke.de/partei/jobs/",
-      "method": "html",
+      "id": 230,
+      "name": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 32,
-      "last_failure": "2026-07-09T21:01:30.034250+00:00",
+      "total_recent_failures": 65,
+      "last_failure": "2026-07-09T21:31:24.484952+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F"
-    },
-    {
-      "id": 184,
-      "name": "Heinrich Böll Stiftung",
-      "url": "https://www.interamt.de/koop/app/trefferliste?partner=556",
-      "method": "interamt",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 19,
-      "last_failure": "2026-07-09T21:01:30.034250+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556"
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
     }
   ]
 }
