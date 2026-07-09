@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T09:01:38.265049+00:00",
-  "run_count": 19,
+  "generated_at": "2026-07-09T09:31:57.598357+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (d/m/w) - 1. Qualifizierungsphase (zur Promotion)",
@@ -101,6 +101,40 @@
       "type": "Full-time (part-time possible), fixed-term 24 months",
       "deadline": "2026-08-06",
       "salary": "Year 1: €2,450.56/month gross; Year 2: €2,639.66/month gross",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Sektorvorhaben Flucht",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78731",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is an internship (Praktikum), which is excluded by policy as not a genuine paid role for the candidate; it further requires current enrolment or graduation within the past 6 months. Although the development-cooperation and forced-displacement subject is of some interest, the internship status is a hard disqualifier.",
+      "location": "Berlin (and Bonn), Germany",
+      "type": "Internship",
+      "deadline": "2026-07-23",
+      "salary": "€2,349/month (brutto)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Bibliotheksmitarbeiter:in (w/d/m) – Periodika - Katalogisierung und Abonnementsverwaltung",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/d8cb50716db5953387168d68dc243c7b3b0d270b0",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires a completed vocational training as Fachangestellte für Medien- und Informationsdienste or equivalent library-specific skills (RDA cataloguing, Pica, journal databases) that the candidate does not hold — an unmet essential. It is a specialised library-technician post entirely outside the candidate's research and policy interests.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (part-time possible)",
+      "deadline": "2026-08-02",
+      "salary": "EG 5 TVöD Bund",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
