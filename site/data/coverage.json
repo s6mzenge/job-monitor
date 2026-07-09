@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T23:31:26.380302+00:00",
+  "generated_at": "2026-07-09T00:01:31.560360+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 91,
@@ -113,9 +113,9 @@
       "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
       "method": "playwright",
       "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 57,
-      "last_failure": "2026-07-08T23:31:26.380302+00:00",
+      "consecutive_failures": 2,
+      "total_recent_failures": 58,
+      "last_failure": "2026-07-09T00:01:31.560360+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
