@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T00:31:38.665736+00:00",
-  "run_count": 2,
+  "generated_at": "2026-07-09T01:01:32.335749+00:00",
+  "run_count": 3,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -135,6 +135,40 @@
       "type": "Full-time / Fixed-term Contract (22 months)",
       "deadline": "21/07/2026",
       "salary": "£90,000 - £100,000",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Director",
+      "organisation": "Palestine Solidarity Campaign",
+      "url": "https://palestinecampaign.org/about/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "A Director role providing executive and public leadership over a senior team of three Deputy Directors — clearly a senior, top-level position requiring years of leadership experience the candidate does not have. The disqualifier is the level, not the field; the £80k–£95k salary and permanent executive remit confirm the mismatch.",
+      "location": "London-based, with hybrid working",
+      "type": "Full-time (Permanent)",
+      "deadline": "8 July 2026",
+      "salary": "£80,000 – £95,000 per annum",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for established experts to sit on an advisory committee, not a paid entry-level role — it seeks recognised specialists / activist experts (and the Spanish version implies fluency helps), which the candidate is not. It is effectively a voluntary advisory / talent-pool posting rather than a genuine paid position, so it is ineligible despite the human-rights subject matter.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
