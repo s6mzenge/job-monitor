@@ -1,27 +1,14 @@
 {
-  "last_updated": "2026-07-09T22:01:27.652545+00:00",
+  "last_updated": "2026-07-09T22:31:17.938253+00:00",
   "site_summary": {
-    "Mnemonic": {
-      "site_id": 85,
-      "url": "https://mnemonic.org/en/about/jobs/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-07-09T22:01:27.652545+00:00",
-      "last_recent_failure": "2026-07-09T22:01:27.652545+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 526 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fmnemonic.org%2Fen%2Fabout%2Fjobs%2F"
-    },
     "Airwars": {
       "site_id": 133,
       "url": "https://airwars.org/about/workwithus/",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 146,
+      "consecutive_failures": 2,
+      "total_recent_failures": 147,
       "first_recent_failure": "2026-07-02T01:01:14.296954+00:00",
-      "last_recent_failure": "2026-07-09T22:01:27.652545+00:00",
+      "last_recent_failure": "2026-07-09T22:31:17.938253+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -3735,6 +3722,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-09T22:31:17.938253+00:00",
+      "site": "Airwars",
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
+      "consecutive_count": 2
     }
   ]
 }
