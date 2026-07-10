@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T08:31:23.791256+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-10T09:01:28.285152+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Referat Forschungsförderung und wissenschaftliches Berichtswesen",
@@ -101,6 +101,40 @@
       "type": "Full-time (part-time possible)",
       "deadline": "2026-08-02",
       "salary": "EG 10–EG 11 TVöD Bund",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Facility Management Support (m/w/d) - Job-ID 0005V_2026",
+      "organisation": "Haus der Wannsee-Konferenz",
+      "url": "https://app.hrlab.de/de/jobs/gedenk-_und_bildungsstatte_hwk/11205?channel_id=1144",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Requires a completed craft/technical vocational training (Berufsausbildung) such as carpenter, electrician or building technician, which is an essential the candidate does not hold. This is a hands-on facility/building-maintenance role with no research or policy content, entirely outside the candidate's profile despite the institution's Holocaust-memory mission.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-07-16",
+      "salary": "Entgeltgruppe 5 TVöD (VKA)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Leitung Bereich Studienwerk (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.interamt.de/koop/app/stelle?id=1467941",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a senior division-head (\"Leitung\") role that essentially requires a completed doctorate (\"Promotion\") and several years of management and personnel-leadership experience at head-of-division level — three separate hard disqualifiers. Although higher-education policy overlaps with the candidate's background, the level and qualification requirements are far beyond an early-career profile.",
+      "location": "Berlin, Germany (hybrid)",
+      "type": "Full-time",
+      "deadline": "2026-07-24",
+      "salary": "Außertariflich, Besoldungsgruppe B 3 (BBesO)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
