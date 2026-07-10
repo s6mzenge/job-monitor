@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T06:31:27.602050+00:00",
-  "run_count": 14,
+  "generated_at": "2026-07-10T07:01:25.317238+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -219,6 +219,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "(Senior) Publisher",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Beijing/XMLNAME--Senior--Publisher_JR106603",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a mid-level commercial publishing-management role requiring previous experience in academic publishing and managing a portfolio of STM journals with contract negotiations and P&L responsibilities — not entry-level and outside the candidate's science-publishing background. The subject matter (chemistry, earth/environmental science journals) sits well outside the candidate's international-law and policy interest zones, and the role is China-based with no fit to the candidate's profile.",
+      "location": "Beijing or Shanghai (Hybrid)",
+      "type": "Full-time",
+      "deadline": "31st July 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
