@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T07:01:22.232255+00:00",
-  "run_count": 15,
+  "generated_at": "2026-07-10T07:31:18.802860+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Referat Forschungsförderung und wissenschaftliches Berichtswesen",
@@ -16,6 +16,23 @@
       "type": "Part-time (max. 15 hours/week)",
       "deadline": "2026-07-22",
       "salary": "TVöD Bund, Entgeltgruppe 2",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Restaurator:in (w/d/m)",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/9805b2687ae6473c06156a06ff69622fd29b8b650",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires a completed university degree in Conservation/Restoration plus professional experience as a restorer specialising in painted wooden sculptures — an essential qualification the candidate does not hold. The role is entirely outside the candidate's field and skill set.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (moving to full-time from 2028); permanent",
+      "deadline": "2026-07-24",
+      "salary": "Up to EG 12 TVöD Bund, depending on qualification and experience",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
