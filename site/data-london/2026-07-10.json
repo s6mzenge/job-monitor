@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T16:01:27.228213+00:00",
-  "run_count": 33,
+  "generated_at": "2026-07-10T16:42:34.268884+00:00",
+  "run_count": 34,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -611,6 +611,23 @@
       "type": "Apprenticeship",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Leader - Monitoring and Evaluation - Defence, Security and Justice",
+      "organisation": "RAND Europe",
+      "url": "https://apply.workable.com/j/2C521D5441",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "The \"Research Leader\" title and its essential requirements — a proven track record designing and leading M&E studies, business development, bid-leading and staff mentoring — place this well beyond entry-level and require several years of relevant experience the candidate does not have. RAND Europe's defence/security research is genuinely in-zone, but the seniority is a hard mismatch.",
+      "location": "Cambridge, United Kingdom",
+      "type": "Full-time",
+      "deadline": "2026-08-10",
+      "salary": "£53,000+ per annum",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
