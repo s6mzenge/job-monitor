@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T08:31:47.824624+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-10T09:01:34.225520+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -304,6 +304,23 @@
       "location": "Pune, India",
       "type": "Full-time",
       "deadline": "24-07-2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Finance Officer (3 Year Fixed Term Post) - READVERTISEMENT (AD.09.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106568&p_spid=5161837",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Requires a Financial Accounting Degree (NQF7) and 3–5 years of financial experience in a tertiary environment — essentials the candidate does not meet, disqualifying on both qualification and experience. It is a finance/administrative post rather than a research or policy role, so it also falls outside the interest zones.",
+      "location": "Johannesburg, South Africa (African Centre for Migration & Society)",
+      "type": "Full-time (3-year fixed term)",
+      "deadline": "14 July 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
