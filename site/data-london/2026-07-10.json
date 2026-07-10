@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T10:01:32.313949+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-10T10:31:20.164224+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -322,6 +322,40 @@
       "type": "Full-time (3-year fixed term)",
       "deadline": "14 July 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "AI Policy Advisor (FTC - maternity cover)",
+      "organisation": "JUSTICE",
+      "url": "https://justice.org.uk/job-opportunity/ai-policy-advisor-ftc---maternity-cover",
+      "priority": 68,
+      "eligible": true,
+      "interest_score": "",
+      "match": "medium",
+      "reason": "This is an on-level policy-advisor role emphasising research, analytical skills and evidence-based policy — all things the candidate can credibly offer, and no legal qualification appears to be an essential. It sits squarely in the tech/AI-policy and human-rights zone (c/a), a core interest area, though the AI-in-justice specialism is somewhat outside the candidate's demonstrated focus and the \"work autonomously\" framing hints at wanting some prior policy experience, which keeps this from scoring higher.",
+      "location": "UK (Not specified further)",
+      "type": "Full-time (Fixed-term contract, maternity cover)",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "R&I Contracts Manager",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/3457/0/471533/15539/randi-contracts-manager",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A Manager-level post whose essential requirements include demonstrable experience handling complex contracts, strong contract drafting and negotiation, and managing a high-volume professional workload — none of which the candidate's student-assistant/RA background provides. The title and experience demands place it well beyond entry-level, and contracts administration sits outside all three interest zones.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "2026-07-26",
+      "salary": "£43,277–£51,714 pa (progression to £54,730) inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
