@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T15:31:26.595654+00:00",
-  "run_count": 32,
+  "generated_at": "2026-07-10T16:01:27.228213+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -593,6 +593,23 @@
       "location": "London (Farringdon) / home-based; also referenced Belfast/Ireland",
       "type": "Full-time",
       "deadline": "2026-07-26",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Receptionist - Apprentice - Southampton",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25347?c=palladium",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Apprenticeship roles are excluded as a matter of policy. In addition, a receptionist role is entirely outside the candidate's research and policy focus.",
+      "location": "Southampton, United Kingdom",
+      "type": "Apprenticeship",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
