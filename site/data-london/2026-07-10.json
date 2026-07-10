@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T14:31:19.928131+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-10T15:01:24.191623+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -576,6 +576,23 @@
       "location": "Lisbon",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Data Analyst (7301)",
+      "organisation": "Save the Children UK",
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/senior-data-analyst-7301-farringdon-london-home-based/7327/description",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a \"Senior\" role requiring proven, commercial-context experience in advanced marketing analytics (propensity modelling, churn analysis, A/B testing) and strong R/SQL/Python for statistical work — a seniority and specialised-analytics profile the candidate does not meet. It also sits in fundraising/marketing analytics, outside the core interest zones, and the candidate's analysis-level skills fall short of the essential technical bar.",
+      "location": "London (Farringdon) / home-based; also referenced Belfast/Ireland",
+      "type": "Full-time",
+      "deadline": "2026-07-26",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
