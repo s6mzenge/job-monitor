@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T11:31:18.727676+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-10T12:01:26.315141+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -473,6 +473,23 @@
       "reason": "The \"Senior\" title plus essential requirements for proven experience delivering software in agile teams, managing stakeholder conflict and driving continuous improvement place this clearly beyond entry-level. It is also a technical business-analysis role in software product delivery, well outside the candidate's research and policy profile and interest zones.",
       "location": "Pune, India",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "P4F Global Portfolio Manager, Maternity Cover",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25312?c=palladium",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "A \"Portfolio Manager\" title indicates a managerial, non-entry-level role that would require several years of relevant experience the candidate lacks. This trips the hard disqualifier on seniority regardless of subject-area fit.",
+      "location": "United Kingdom",
+      "type": "Contract (Maternity Cover)",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
