@@ -1,6 +1,24 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T05:01:25.564469+00:00",
-  "run_count": 11,
-  "jobs": []
+  "generated_at": "2026-07-10T05:31:26.633337+00:00",
+  "run_count": 12,
+  "jobs": [
+    {
+      "title": "Studentische Hilfskraft (d/m/w) im Referat Forschungsförderung und wissenschaftliches Berichtswesen",
+      "organisation": "SWP Berlin",
+      "url": "https://www.swp-berlin.org/karriere/stellenangebot/studentische-hilfskraft-d-m-w-im-referat-forschungsfoerderung-und-wissenschaftliches-berichtswesen",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is an explicit studentische Hilfskraft (working-student) role, which is excluded by policy regardless of field. It is also a data-entry / research-information-system administrative post oriented toward information-science students, not a research role.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (max. 15 hours/week)",
+      "deadline": "2026-07-22",
+      "salary": "TVöD Bund, Entgeltgruppe 2",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
