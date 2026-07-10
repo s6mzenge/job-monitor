@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T07:01:25.317238+00:00",
-  "run_count": 15,
+  "generated_at": "2026-07-10T07:31:19.977197+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -234,6 +234,23 @@
       "match": "low",
       "reason": "This is a mid-level commercial publishing-management role requiring previous experience in academic publishing and managing a portfolio of STM journals with contract negotiations and P&L responsibilities — not entry-level and outside the candidate's science-publishing background. The subject matter (chemistry, earth/environmental science journals) sits well outside the candidate's international-law and policy interest zones, and the role is China-based with no fit to the candidate's profile.",
       "location": "Beijing or Shanghai (Hybrid)",
+      "type": "Full-time",
+      "deadline": "31st July 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate or Senior Editor (Materials science), Nature Communications",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Shanghai/Associate-or-Senior-Editor--Materials-science---Nature-Communications_JR106654",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires a completed PhD in materials science as an essential, which the candidate does not hold and which is entirely outside their field. The role also demands deep subject expertise in structural inorganic materials — a fundamental mismatch on both qualification and discipline.",
+      "location": "Shanghai, Beijing, Nanjing, Pune or New Delhi (hybrid)",
       "type": "Full-time",
       "deadline": "31st July 2026",
       "salary": "Not specified",
