@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T00:01:19.320490+00:00",
+  "generated_at": "2026-07-10T00:31:16.847435+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 140,
@@ -27,6 +27,7 @@
     "ActionAid International",
     "Ada Lovelace Institute",
     "Aegis Trust",
+    "Airwars",
     "AKE International",
     "Alan Turing Institute",
     "Amnesty International",
@@ -91,7 +92,6 @@
     "IIED",
     "IISS",
     "Impactt",
-    "Impunity Watch",
     "INQUEST",
     "Institute for Government",
     "Institute for Strategic Dialogue (ISD)",
@@ -167,17 +167,17 @@
   ],
   "sites": [
     {
-      "id": 133,
-      "name": "Airwars",
-      "url": "https://airwars.org/about/workwithus/",
+      "id": 45,
+      "name": "Impunity Watch",
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
       "method": "html",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 149,
-      "last_failure": "2026-07-10T00:01:19.320490+00:00",
+      "total_recent_failures": 29,
+      "last_failure": "2026-07-10T00:31:16.847435+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
     }
   ]
 }
