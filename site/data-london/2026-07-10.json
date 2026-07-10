@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T12:01:26.315141+00:00",
-  "run_count": 25,
+  "generated_at": "2026-07-10T12:31:19.131193+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -490,6 +490,23 @@
       "reason": "A \"Portfolio Manager\" title indicates a managerial, non-entry-level role that would require several years of relevant experience the candidate lacks. This trips the hard disqualifier on seniority regardless of subject-area fit.",
       "location": "United Kingdom",
       "type": "Contract (Maternity Cover)",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Strategy Consultant",
+      "organisation": "Anthesis Group",
+      "url": "https://anthesisgroup.pinpointhq.com/en/postings/34880ef3-7b8e-43d5-8dea-df3457666cc3",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The \"Senior\" title signals a role beyond entry-level, requiring years of consulting experience the candidate does not have, which is a hard disqualifier. It also sits in sustainability strategy consulting outside the candidate's core interest zones.",
+      "location": "UK - London",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
