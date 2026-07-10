@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T01:01:18.465536+00:00",
-  "run_count": 3,
+  "generated_at": "2026-07-10T01:31:25.523678+00:00",
+  "run_count": 4,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -100,6 +100,23 @@
       "location": "Remote",
       "type": "Not specified",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for established experts to sit on an advisory committee, not a paid entry-level role — it seeks recognised experts on climate-justice criminalisation, which the candidate is not, and there is no indication of remuneration or a genuine vacancy at the candidate's level. Although human-rights and securitisation themes align with the candidate's interests, this is an expert/volunteer advisory position rather than an eligible paid job.",
+      "location": "Not specified",
+      "type": "Not specified (advisory committee)",
+      "deadline": "15 January 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
