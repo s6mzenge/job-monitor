@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T13:31:34.031749+00:00",
-  "run_count": 28,
+  "generated_at": "2026-07-10T14:01:36.899638+00:00",
+  "run_count": 29,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Referat Forschungsförderung und wissenschaftliches Berichtswesen",
@@ -288,6 +288,23 @@
       "type": "Part-time (20 hours/week)",
       "deadline": "2026-08-07",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische Mitarbeit im Bereich HR International Administration",
+      "organisation": "Ärzte ohne Grenzen (MSF)",
+      "url": "https://jobs.b-ite.com/jobposting/e4066355754090727c0aad9dc2605d0ba6daf9a50?ref=homepage",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is explicitly a studentische Mitarbeit (working-student) role requiring current student enrolment, which is a hard-excluded category regardless of field. It is also an HR/administration function outside the candidate's interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (working-student, 20h/week)",
+      "deadline": "2026-07-26",
+      "salary": "€15.10/hour + 13th month salary + €200 start bonus",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
