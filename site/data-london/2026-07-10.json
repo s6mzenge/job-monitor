@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T01:31:25.523678+00:00",
-  "run_count": 4,
+  "generated_at": "2026-07-10T02:01:15.249861+00:00",
+  "run_count": 5,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -117,6 +117,23 @@
       "location": "Not specified",
       "type": "Not specified (advisory committee)",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Functional Safety Senior Assessor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Dachikan-Functional-Safety-Senior-Assessor-SH-200003/1413560333",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Senior title requiring 10+ years in the TIC industry and deep functional-safety standards expertise (ISO 26262/21434/21448, ASPICE) — well beyond entry-level and outside the candidate's skill set. Technically and topically unrelated to the candidate's international law and policy profile.",
+      "location": "Shanghai, China",
+      "type": "Not specified",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
