@@ -1,6 +1,46 @@
 {
-  "last_updated": "2026-07-10T04:31:19.707288+00:00",
-  "site_summary": {},
+  "last_updated": "2026-07-10T05:01:24.831392+00:00",
+  "site_summary": {
+    "Palladium Group": {
+      "site_id": 1,
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 6,
+      "first_recent_failure": "2026-06-29T10:31:23.026711+00:00",
+      "last_recent_failure": "2026-07-10T05:01:24.831392+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f99d716b3b0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=8)'))"
+    },
+    "Global Rights Compliance": {
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 8,
+      "first_recent_failure": "2026-06-28T15:46:14.886630+00:00",
+      "last_recent_failure": "2026-07-10T05:01:24.831392+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+    },
+    "Airwars": {
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 154,
+      "first_recent_failure": "2026-07-02T01:01:14.296954+00:00",
+      "last_recent_failure": "2026-07-10T05:01:24.831392+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
+    }
+  },
   "issues": [
     {
       "timestamp": "2026-06-28T15:46:14.886630+00:00",
@@ -3817,6 +3857,36 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-10T05:01:24.831392+00:00",
+      "site": "Palladium Group",
+      "site_id": 1,
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "type": "fetch_error",
+      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f99d716b3b0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=8)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-10T05:01:24.831392+00:00",
+      "site": "Global Rights Compliance",
+      "site_id": 37,
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content.",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-10T05:01:24.831392+00:00",
+      "site": "Airwars",
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
       "consecutive_count": 1
     }
   ]

@@ -1,20 +1,19 @@
 {
-  "generated_at": "2026-07-10T04:31:19.707288+00:00",
+  "generated_at": "2026-07-10T05:01:24.831392+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 141,
-  "erroring": 0,
+  "healthy": 138,
+  "erroring": 3,
   "paused": 0,
   "methods": {
-    "palladium_api": 1,
     "workday_api": 7,
-    "html": 86,
+    "html": 85,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 12,
+    "playwright": 11,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -27,7 +26,6 @@
     "ActionAid International",
     "Ada Lovelace Institute",
     "Aegis Trust",
-    "Airwars",
     "AKE International",
     "Alan Turing Institute",
     "Amnesty International",
@@ -78,7 +76,6 @@
     "FTI Consulting",
     "German Historical Institute London",
     "Global Justice Now (CharityJob)",
-    "Global Rights Compliance",
     "Global Witness",
     "Goethe-Institut UK",
     "Goldsmiths, University of London",
@@ -127,7 +124,6 @@
     "Open Rights Group",
     "Open Society Foundations",
     "Palestine Solidarity Campaign",
-    "Palladium Group",
     "Paul Hamlyn Foundation",
     "Peace Direct",
     "PEN International",
@@ -166,5 +162,45 @@
     "Wiener Holocaust Library",
     "Wits University"
   ],
-  "sites": []
+  "sites": [
+    {
+      "id": 1,
+      "name": "Palladium Group",
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 6,
+      "last_failure": "2026-07-10T05:01:24.831392+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f99d716b3b0>, 'Connection to thepalladiumgroup.com timed out. (con"
+    },
+    {
+      "id": 37,
+      "name": "Global Rights Compliance",
+      "url": "https://globalrightscompliance.org/work-with-us/",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 8,
+      "last_failure": "2026-07-10T05:01:24.831392+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+    },
+    {
+      "id": 133,
+      "name": "Airwars",
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 154,
+      "last_failure": "2026-07-10T05:01:24.831392+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
+    }
+  ]
 }
