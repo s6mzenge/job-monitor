@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T11:01:27.809290+00:00",
-  "run_count": 23,
+  "generated_at": "2026-07-10T11:31:19.855100+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Referat Forschungsförderung und wissenschaftliches Berichtswesen",
@@ -270,6 +270,23 @@
       "location": "Berlin, Germany",
       "type": "Full-time / Part-time",
       "deadline": "2026-07-23",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Referent (m/w/d) Öffentlichkeitsarbeit Blaues Band Mittlere Elbe",
+      "organisation": "WWF Deutschland",
+      "url": "https://www.wwf.de/ueber-uns/stellenangebote/stellenangebot/stelle/referent-m-w-d-oeffentlichkeitsarbeit-blaues-band-mittlere-elbe-z8oktwo8",
+      "priority": 22,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a public-relations / environmental-education officer role centred on nature-conservation communications, media relations, stakeholder dialogue and events — areas where the candidate has limited dedicated comms/events experience, so paper fit is weak. The nature-conservation subject sits well outside the candidate's international-law, atrocity-prevention and geopolitical-risk interest zones, further lowering the score; it is technically eligible (open degree requirement, German native fits) but a poor overall match.",
+      "location": "Dessau-Roßlau, Germany",
+      "type": "Part-time (20 hours/week)",
+      "deadline": "2026-08-07",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",

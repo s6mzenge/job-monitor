@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T11:01:27.809290+00:00",
+  "generated_at": "2026-07-10T11:31:19.855100+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 91,
@@ -9,8 +9,7 @@
     "personio_xml": 3,
     "html": 74,
     "json_api": 7,
-    "playwright": 5,
-    "interamt": 1,
+    "playwright": 6,
     "recruitee_api": 1
   },
   "healthy_names": [
@@ -25,6 +24,7 @@
     "Campact e.V.",
     "Centre Marc Bloch",
     "CORRECTIV",
+    "Counter Investigations / Forensis",
     "CURE (KHK Saarbrücken)",
     "DAAD",
     "Das Progressive Zentrum",
@@ -54,7 +54,6 @@
     "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
     "Global Public Policy Institute",
     "Haus der Wannsee-Konferenz",
-    "Heinrich Böll Stiftung",
     "Hertie School",
     "HIS Hamburg",
     "HWR Berlin",
@@ -108,17 +107,17 @@
   ],
   "sites": [
     {
-      "id": 235,
-      "name": "Counter Investigations / Forensis",
-      "url": "https://counter-investigations.org/about/jobs",
-      "method": "playwright",
+      "id": 184,
+      "name": "Heinrich Böll Stiftung",
+      "url": "https://www.interamt.de/koop/app/trefferliste?partner=556",
+      "method": "interamt",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "last_failure": "2026-07-10T11:01:27.809290+00:00",
+      "total_recent_failures": 20,
+      "last_failure": "2026-07-10T11:31:19.855100+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
+      "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556"
     }
   ]
 }
