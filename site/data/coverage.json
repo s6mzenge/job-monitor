@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-10T10:31:34.723819+00:00",
+  "generated_at": "2026-07-10T11:01:27.809290+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 92,
-  "erroring": 0,
+  "healthy": 91,
+  "erroring": 1,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
     "html": 74,
     "json_api": 7,
-    "playwright": 6,
+    "playwright": 5,
     "interamt": 1,
     "recruitee_api": 1
   },
@@ -25,7 +25,6 @@
     "Campact e.V.",
     "Centre Marc Bloch",
     "CORRECTIV",
-    "Counter Investigations / Forensis",
     "CURE (KHK Saarbrücken)",
     "DAAD",
     "Das Progressive Zentrum",
@@ -107,5 +106,19 @@
     "ZZF Potsdam (Zeithistorische Forschung)",
     "Ärzte ohne Grenzen (MSF)"
   ],
-  "sites": []
+  "sites": [
+    {
+      "id": 235,
+      "name": "Counter Investigations / Forensis",
+      "url": "https://counter-investigations.org/about/jobs",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-10T11:01:27.809290+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
+    }
+  ]
 }
