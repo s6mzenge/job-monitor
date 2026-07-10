@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T09:01:28.285152+00:00",
-  "run_count": 19,
+  "generated_at": "2026-07-10T09:31:18.376929+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Referat Forschungsförderung und wissenschaftliches Berichtswesen",
@@ -135,6 +135,23 @@
       "type": "Full-time",
       "deadline": "2026-07-24",
       "salary": "Außertariflich, Besoldungsgruppe B 3 (BBesO)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Associate — PhD Position \"Phase Retrieval in Imaging and Speech Enhancement\" (DASHH Graduate School)",
+      "organisation": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote/ausschreibung.html?jobID=cff3570471b9f2f9e5c039808be4356111bd7651",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a funded PhD in computer science / applied mathematics on signal processing (phase retrieval, imaging, speech enhancement), whose essential requirements — a background in natural/computer/engineering sciences or applied maths and a strong programming/software-development record — are well beyond the candidate's analysis-level Python and social-science profile. Although funded PhDs are welcome in principle, this one falls squarely in the deep-technical zone the candidate cannot meet, and it is outside all interest areas.",
+      "location": "Hamburg, Germany",
+      "type": "Full-time (fixed-term, 3 years; suitable for part-time)",
+      "deadline": "2026-08-21",
+      "salary": "EGR. 13 TV-L",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
