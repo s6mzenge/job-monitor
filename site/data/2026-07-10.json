@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T18:01:25.290175+00:00",
-  "run_count": 37,
+  "generated_at": "2026-07-10T18:31:45.905442+00:00",
+  "run_count": 38,
   "jobs": [
     {
       "title": "Studentische Hilfskraft (d/m/w) im Referat Forschungsförderung und wissenschaftliches Berichtswesen",
@@ -305,6 +305,23 @@
       "type": "Part-time (working-student, 20h/week)",
       "deadline": "2026-07-26",
       "salary": "€15.10/hour + 13th month salary + €200 start bonus",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Bürosachbearbeitung als Vorzimmerkraft",
+      "organisation": "bpb (Bundeszentrale f. pol. Bildung)",
+      "url": "https://www.bpb.de/die-bpb/karriere/579627/buerosachbearbeitung-als-vorzimmerkraft",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires as an essential a completed vocational training (Ausbildung) as an office/administration clerk, or a completed apprenticeship plus professional secretarial experience — a qualification the candidate does not hold. It is an administrative front-office/secretarial post with no research or policy content, well outside the candidate's profile and interest zones.",
+      "location": "Bonn, Germany",
+      "type": "Part-time (73.72%, permanent)",
+      "deadline": "2026-07-31",
+      "salary": "Entgeltgruppe 6 TVöD",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
