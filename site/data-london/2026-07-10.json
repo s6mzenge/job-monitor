@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T10:31:20.164224+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-10T11:01:30.226321+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Senior Legal Adviser",
@@ -356,6 +356,40 @@
       "type": "Full-time",
       "deadline": "2026-07-26",
       "salary": "£43,277–£51,714 pa (progression to £54,730) inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Lecturer in Arabic Literature -0.2 FTE",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/910524",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A Lecturer post requiring undergraduate and postgraduate teaching experience in Arabic literature, effectively demanding fluency in Arabic and academic teaching credentials the candidate does not hold — this is not an entry-level role and its essentials are unmet. The subject also sits well outside the candidate's international-law and European-policy specialisms.",
+      "location": "Bloomsbury, London, United Kingdom",
+      "type": "Part-time (Fixed-term contract to 31 Aug 2029)",
+      "deadline": "2026-07-24",
+      "salary": "£10,380.52–£12,209.71 per annum (pro rata, 0.2 FTE)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Lecturer in Arabic Literature -0.4 FTE",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/910500",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A lectureship requires an academic specialist in Arabic literature able to teach in Arabic — this presupposes a completed doctorate and fluency in Arabic, neither of which the candidate holds. It is also a senior teaching post, not an entry-level research role, and sits entirely outside the candidate's fields.",
+      "location": "Bloomsbury, London, United Kingdom",
+      "type": "Part-time",
+      "deadline": "2026-07-24",
+      "salary": "£20,761.04–£24,419.43 pro rata (0.4 FTE)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
