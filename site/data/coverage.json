@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T08:31:18.618324+00:00",
+  "generated_at": "2026-07-11T09:01:28.145640+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 91,
@@ -113,9 +113,9 @@
       "url": "https://gppi.net/about/jobs-internships",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "last_failure": "2026-07-11T08:31:18.618324+00:00",
+      "consecutive_failures": 2,
+      "total_recent_failures": 2,
+      "last_failure": "2026-07-11T09:01:28.145640+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fgppi.net%2Fabout%2Fjobs-internships"
