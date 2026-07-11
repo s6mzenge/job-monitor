@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-11T09:01:28.145640+00:00",
-  "site_summary": {
-    "Global Public Policy Institute": {
-      "site_id": 160,
-      "url": "https://gppi.net/about/jobs-internships",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-07-11T08:31:18.618324+00:00",
-      "last_recent_failure": "2026-07-11T09:01:28.145640+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fgppi.net%2Fabout%2Fjobs-internships"
-    }
-  },
+  "last_updated": "2026-07-11T09:31:25.923773+00:00",
+  "site_summary": {},
   "issues": [
     {
       "timestamp": "2026-06-28T21:07:23.784674+00:00",
