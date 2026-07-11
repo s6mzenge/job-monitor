@@ -1,6 +1,41 @@
 {
   "date": "2026-07-11",
-  "generated_at": "2026-07-11T13:01:19.306434+00:00",
-  "run_count": 27,
-  "jobs": []
+  "generated_at": "2026-07-11T13:31:22.937282+00:00",
+  "run_count": 28,
+  "jobs": [
+    {
+      "title": "Volontariat (m/w/d/k) in der Presseabteilung der Internationalen Filmfestspiele Berlin",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/65252493/Volontariat-m-w-d-k-in-der-Presseabteilung-der-Internationalen-Filmfestspiele-Berlin?jobDbPVId=278605063&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a Volontariat — a trainee / apprenticeship-style training post explicitly for learning practical skills (\"dient der Ausbildung und Erlernung praktischer Tätigkeiten\"), which falls under the excluded apprenticeship/traineeship category. It is also a press/communications role in film culture, far outside the candidate's interest zones and comms experience.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (fixed-term traineeship, 39h/week)",
+      "deadline": "2026-08-16",
+      "salary": "TVöD E2",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Ton- / Medientechniker:in (m/w/d/k) für das Haus der Kulturen der Welt",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/65262366/Ton-Medientechniker-in-m-w-d-k-f%C3%BCr-das-Haus-der-Kulturen-der-Welt?jobDbPVId=278605038&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires a completed vocational training as an event-technology specialist (Fachkraft für Veranstaltungstechnik) in sound/video engineering plus industry experience — technical qualifications the candidate does not hold. It is an audio/media-technician role entirely outside the candidate's research and policy profile and interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-08-23",
+      "salary": "TVöD 9a",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
