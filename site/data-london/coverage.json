@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-11T08:01:25.109964+00:00",
+  "generated_at": "2026-07-11T08:31:32.223047+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 139,
-  "erroring": 2,
+  "healthy": 141,
+  "erroring": 0,
   "paused": 0,
   "methods": {
     "palladium_api": 1,
-    "workday_api": 6,
-    "html": 85,
+    "workday_api": 7,
+    "html": 86,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -27,6 +27,7 @@
     "ActionAid International",
     "Ada Lovelace Institute",
     "Aegis Trust",
+    "Airwars",
     "AKE International",
     "Alan Turing Institute",
     "Amnesty International",
@@ -100,6 +101,7 @@
     "International Alert",
     "International Bar Association",
     "International Crisis Group",
+    "International Rescue Committee",
     "IPPR",
     "JCWI",
     "jobs.ac.uk",
@@ -164,32 +166,5 @@
     "Wiener Holocaust Library",
     "Wits University"
   ],
-  "sites": [
-    {
-      "id": 133,
-      "name": "Airwars",
-      "url": "https://airwars.org/about/workwithus/",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 8,
-      "total_recent_failures": 180,
-      "last_failure": "2026-07-11T08:01:25.109964+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
-    },
-    {
-      "id": 111,
-      "name": "International Rescue Committee",
-      "url": "https://theirc.wd1.myworkdayjobs.com/en-US/External_Careers",
-      "method": "workday_api",
-      "status": "erroring",
-      "consecutive_failures": 4,
-      "total_recent_failures": 7,
-      "last_failure": "2026-07-11T08:01:25.109964+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Workday API: Expecting value: line 1 column 1 (char 0)"
-    }
-  ]
+  "sites": []
 }
