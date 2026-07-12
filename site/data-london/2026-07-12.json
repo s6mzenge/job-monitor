@@ -1,7 +1,7 @@
 {
   "date": "2026-07-12",
-  "generated_at": "2026-07-12T22:01:27.962741+00:00",
-  "run_count": 45,
+  "generated_at": "2026-07-12T22:31:20.336553+00:00",
+  "run_count": 46,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -318,6 +318,23 @@
       "interest_score": "1",
       "match": "low",
       "reason": "\"Lead\" role requiring a minimum of 5 years' experience in SAP consultancy / IT project management and a systems-engineering degree — both essential requirements the candidate plainly lacks. It is also a deep-technical SAP/BI role far outside the candidate's profile and interests.",
+      "location": "Mexico City, Mexico",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Marketing coordinator",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Mexico-City/Marketing-coordinator_JR106118",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires an essential 3–5 years of marketing experience, which exceeds the candidate's student-assistant profile and constitutes a level disqualifier. It is also a marketing/events specialist role — outside the candidate's core zones and areas of skill — and Spanish-language business context makes it a poor fit besides.",
       "location": "Mexico City, Mexico",
       "type": "Full-time",
       "deadline": "Not specified",
