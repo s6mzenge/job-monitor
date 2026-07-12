@@ -1,6 +1,33 @@
 {
-  "last_updated": "2026-07-12T09:31:25.795824+00:00",
-  "site_summary": {},
+  "last_updated": "2026-07-12T10:01:40.306833+00:00",
+  "site_summary": {
+    "Alexander von Humboldt-Stiftung": {
+      "site_id": 193,
+      "url": "https://recruitingapp-2649.umantis.com/Jobs/1?lang=ger&ContentOnly=",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-07-12T10:01:40.306833+00:00",
+      "last_recent_failure": "2026-07-12T10:01:40.306833+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Frecruitingapp-2649.umantis.com%2FJobs%2F1%3Flang%3Dger%26ContentOnly%3D"
+    },
+    "Uni Hamburg (Stellenangebote)": {
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 82,
+      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
+      "last_recent_failure": "2026-07-12T10:01:40.306833+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
+    }
+  },
   "issues": [
     {
       "timestamp": "2026-06-28T21:07:23.784674+00:00",
@@ -3138,6 +3165,26 @@
     },
     {
       "timestamp": "2026-07-12T06:01:38.672350+00:00",
+      "site": "Uni Hamburg (Stellenangebote)",
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-12T10:01:40.306833+00:00",
+      "site": "Alexander von Humboldt-Stiftung",
+      "site_id": 193,
+      "url": "https://recruitingapp-2649.umantis.com/Jobs/1?lang=ger&ContentOnly=",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Frecruitingapp-2649.umantis.com%2FJobs%2F1%3Flang%3Dger%26ContentOnly%3D",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-12T10:01:40.306833+00:00",
       "site": "Uni Hamburg (Stellenangebote)",
       "site_id": 230,
       "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
