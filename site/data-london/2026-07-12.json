@@ -1,7 +1,7 @@
 {
   "date": "2026-07-12",
-  "generated_at": "2026-07-12T22:31:20.336553+00:00",
-  "run_count": 46,
+  "generated_at": "2026-07-12T23:01:41.039652+00:00",
+  "run_count": 47,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -339,6 +339,40 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Assistant to CEP Directors and Centres Manager",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/5857/0/471577/15539/assistant-to-cep-directors-and-centres-manager",
+      "priority": 34,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an administrative / executive-assistant role whose essentials — relevant experience in a busy administrative office, diary and finance/expenses administration, office and facilities management — are only partly met by the candidate's RA and project-support background, and it is squarely an operations post rather than a research one. The economics-research subject and general administrative fit sit outside the candidate's core interest zones, so despite being eligible, London-based and entry-adjacent, it is a weak fit on both level type and interest.",
+      "location": "London",
+      "type": "Full-time (3-year funding)",
+      "deadline": "2026-08-11",
+      "salary": "£36,513–£41,565 pa (progression to £44,468), inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "100x Insights Manager",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/1626/0/471609/15539/100x-insights-manager",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Not entry-level — a \"Manager\" title with essential requirements including \"significant experience\", line-managing staff, and stewarding organisational frameworks, well beyond the candidate's student-assistant/RA background. The subject (organisational learning at a social-impact initiative) also sits outside the core interest zones.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "2026-08-02",
+      "salary": "£43,277 to £51,714 pa (progressing to £55,497) inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
