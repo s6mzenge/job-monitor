@@ -1,7 +1,7 @@
 {
   "date": "2026-07-12",
-  "generated_at": "2026-07-12T22:31:22.481280+00:00",
-  "run_count": 46,
+  "generated_at": "2026-07-12T23:01:31.995888+00:00",
+  "run_count": 47,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (w/m/d) – Planetologie und Fernerkundung, AG Postberg",
@@ -33,6 +33,40 @@
       "type": "Part-time (75%), Fixed-term 3 years",
       "deadline": "2026-08-03",
       "salary": "Entgeltgruppe 13 TV-L",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wiss. Mitarbeiter*in (Praedoc) – Fachbereich Physik (DM-PHY-669)",
+      "organisation": "FU Berlin (wiss.)",
+      "url": "https://jobs.fu-berlin.de/job-invite/669/?locale=de_DE",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The essential requirement is a completed Master's in physics or a closely related field, which the candidate (MSc International Relations) plainly does not hold. This is a solid-state / molecular physics doctorate, entirely outside the candidate's field and skill set.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (75%), fixed-term to 30.06.2029",
+      "deadline": "2026-08-03",
+      "salary": "E 13 TV-L FU (75%)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Beschäftigte*r im Künstlerischen Betriebsbüro / Orchesterbüro (m/w/d)",
+      "organisation": "Universität der Künste Berlin",
+      "url": "https://jobs.udk-berlin.de/jobposting/2645531a525a0619b656cf278f8a7b3d12a942ee0",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires a degree in musicology/cultural management, familiarity with the classical music scene, several years of orchestra-organisation experience, and detailed knowledge of orchestral literature and instruments — essentials the candidate plainly lacks. It is also entirely outside all three interest zones, being an arts-administration/orchestra-office position.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (two-thirds, permanent)",
+      "deadline": "2026-08-02",
+      "salary": "Entgeltgruppe 9b TV-L Berliner Hochschulen",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
