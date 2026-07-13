@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T07:31:22.983628+00:00",
-  "run_count": 16,
+  "generated_at": "2026-07-13T08:01:53.362802+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
@@ -169,6 +169,23 @@
       "type": "Full-time",
       "deadline": "2026-08-03",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Chief Executive Officer",
+      "organisation": "Anti-Slavery International",
+      "url": "https://www.antislavery.org/about-us/jobs-and-volunteering/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "5",
+      "match": "low",
+      "reason": "This is a Chief Executive role requiring an exceptional strategic leader with extensive senior organisational, financial and team-leadership experience — far beyond entry-level and disqualified on the seniority rule. The human-rights, anti-slavery mission is a perfect interest match, but the level is a hard mismatch.",
+      "location": "Vauxhall, London (hybrid)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£93,600",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
