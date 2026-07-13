@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T09:31:16.455205+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-13T10:01:22.377283+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Praktikant*in (m/w/d) zur Unterstützung des Auftragsmanagements und der evidenzbasierten Programmierung",
@@ -84,6 +84,40 @@
       "type": "Full-time",
       "deadline": "2026-08-07",
       "salary": "€3,835/month (Entgeltgruppe 03), 13.5 monthly salaries/year",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Initiativbewerbung Sales Manager B2B (m/w/d)",
+      "organisation": "Table.Briefings",
+      "url": "https://tablemedia.jobs.personio.de/job/2707083",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The role requires several years (\"mehrjährige Erfahrung\") of B2B sales experience as an essential, which the candidate lacks entirely, and \"Manager\" signals a non-entry-level position — both hard disqualifiers. It is also a sales function well outside the candidate's research/policy profile and interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische Hilfskraft (m/w/d) – Analyse, Kommunikation & Projekte",
+      "organisation": "Stifterverband",
+      "url": "https://stifterverband.talention.com/talention/stellenangebote/Studentische-Hilfskraft-m-w-d-Analyse-Kommunikation-Projekte--854793062",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an explicit studentische Hilfskraft (working-student) role, which is excluded by policy regardless of fit. The subject (higher-education / research policy) is also only tangential to the candidate's core interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (working-student, 15–20 hrs/week)",
+      "deadline": "Not specified",
+      "salary": "€17/hour",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
