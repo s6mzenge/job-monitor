@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T10:01:22.377283+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-13T10:31:17.223310+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Praktikant*in (m/w/d) zur Unterstützung des Auftragsmanagements und der evidenzbasierten Programmierung",
@@ -118,6 +118,23 @@
       "type": "Part-time (working-student, 15–20 hrs/week)",
       "deadline": "Not specified",
       "salary": "€17/hour",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Associate — Cluster of Excellence \"CUI: Advanced Imaging of Matter\" (Quantum simulation of frustrated spin models in 3D)",
+      "organisation": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote/ausschreibung.html?jobID=3446f32909d389c4c5ebde273540e4050239aee7",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires an MSc in experimental physics with excellent grades and hands-on experience in neutral-atom / Rydberg quantum physics plus deep experimental Python control — essentials the candidate (an IR/international-law master's) plainly lacks. It is entirely outside the candidate's field and skill set.",
+      "location": "Hamburg, Germany",
+      "type": "Part-time (75%), fixed-term 3 years",
+      "deadline": "10.08.2026",
+      "salary": "EGR. 13 TV-L",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
