@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T11:31:20.144408+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-13T12:01:39.106611+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Praktikant*in (m/w/d) zur Unterstützung des Auftragsmanagements und der evidenzbasierten Programmierung",
@@ -134,6 +134,23 @@
       "location": "Hamburg, Germany",
       "type": "Part-time (75%), fixed-term 3 years",
       "deadline": "10.08.2026",
+      "salary": "EGR. 13 TV-L",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Associate for the Project \"MOMENTplus\"",
+      "organisation": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote/ausschreibung.html?jobID=abf821f2068c64b754ad8f0f44da9c254318453d",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "The essential profile requires a background in soil science, geosciences, geo-ecology or a similar field to coordinate Arctic research expeditions — a domain the candidate plainly lacks. Although German/English fit and the level is entry-appropriate, the natural-sciences specialism is an unmet essential and the topic sits entirely outside the candidate's interest zones.",
+      "location": "Hamburg, Germany",
+      "type": "Part-time (50%)",
+      "deadline": "2026-08-09",
       "salary": "EGR. 13 TV-L",
       "field_score": "",
       "skills_score": "",
