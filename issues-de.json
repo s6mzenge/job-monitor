@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-07-13T11:01:24.987507+00:00",
-  "site_summary": {},
+  "last_updated": "2026-07-13T11:31:20.144408+00:00",
+  "site_summary": {
+    "ZZF Potsdam (Zeithistorische Forschung)": {
+      "site_id": 175,
+      "url": "https://zzf-potsdam.de/chancen/stellenangebote",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 3,
+      "first_recent_failure": "2026-07-07T16:31:18.602679+00:00",
+      "last_recent_failure": "2026-07-13T11:31:20.144408+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fzzf-potsdam.de%2Fchancen%2Fstellenangebote"
+    }
+  },
   "issues": [
     {
       "timestamp": "2026-06-28T21:07:23.784674+00:00",
@@ -3274,6 +3288,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-13T11:31:20.144408+00:00",
+      "site": "ZZF Potsdam (Zeithistorische Forschung)",
+      "site_id": 175,
+      "url": "https://zzf-potsdam.de/chancen/stellenangebote",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fzzf-potsdam.de%2Fchancen%2Fstellenangebote",
       "consecutive_count": 1
     }
   ]
