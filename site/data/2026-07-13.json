@@ -1,6 +1,41 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T07:31:26.400906+00:00",
-  "run_count": 16,
-  "jobs": []
+  "generated_at": "2026-07-13T08:01:35.911063+00:00",
+  "run_count": 17,
+  "jobs": [
+    {
+      "title": "Praktikant*in (m/w/d) zur Unterstützung des Auftragsmanagements und der evidenzbasierten Programmierung",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78752",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is explicitly a Praktikum/internship, which is excluded as a matter of policy regardless of pay. It also requires current enrolment or a degree completed within six months, and the development-economics/water-management topic is outside the candidate's core interest zones.",
+      "location": "Nairobi, Kenya",
+      "type": "Internship",
+      "deadline": "2026-07-27",
+      "salary": "€2,349/month gross plus foreign-posting allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Assistent*in – Sekretariat/Sachbearbeitung (d/w/m) Region Ostbrandenburg",
+      "organisation": "DGB",
+      "url": "https://www.dgb.de/karriere/stellenanzeige/assistentin-sekretariatsachbearbeitung-dwm-region-ostbrandenburg",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires an essential 3-year vocational training (Berufsausbildung) plus at least 3 years of relevant professional experience, neither of which the candidate has — a hard level/qualification disqualifier. It is also an administrative secretarial post outside all interest zones with no research or policy-analysis substance.",
+      "location": "Eberswalde, Germany",
+      "type": "Part-time (91%)",
+      "deadline": "2026-08-16",
+      "salary": "€3,490/month starting (Entgeltgruppe 03), 13.5 monthly salaries/year",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
