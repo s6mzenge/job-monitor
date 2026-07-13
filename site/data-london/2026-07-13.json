@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T10:01:29.254732+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-13T10:31:26.113264+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
@@ -288,6 +288,40 @@
       "type": "Internship",
       "deadline": "2026-08-07",
       "salary": "Not specified (volunteer/unpaid internship)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Planner Advisor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Planner-Advisor-51373/1414246033",
+      "priority": 12,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Eligible on a technicality — it is entry-level, language requirements (fluent German, basic English) are met, and no disqualifier applies. But it is a scheduling/coordination and customer-service administrative role with no research or policy content and no connection to any of the candidate's interest zones, so it is a poor fit on nearly every axis.",
+      "location": "Leverkusen, Germany (Hybrid)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "This is a call for \"experts\" to join an advisory committee, not a genuine paid entry-level role — it seeks established specialists with a track record in the field, which the candidate (a current MSc student with RA-level experience) does not have, and it is not a concrete paid vacancy. The human-rights / securitisation subject matter is a strong interest match, but the level and nature of the posting disqualify it.",
+      "location": "Not specified",
+      "type": "Not specified (Advisory Committee)",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
