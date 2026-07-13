@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T15:31:25.525316+00:00",
-  "run_count": 32,
+  "generated_at": "2026-07-13T16:01:30.627333+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
@@ -574,6 +574,23 @@
       "match": "low",
       "reason": "Ineligible — the role requires 5–8 years' relevant experience in financial communications / IR / corporate affairs, far beyond the candidate's student-assistant background, and the \"Associate\" level implies team leadership and mentoring. It also demands specialist financial-communications and capital-markets expertise the candidate lacks, and the topic sits outside the core interest zones.",
       "location": "London, England, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Global Head of B2B Marketing, Economist Enterprise",
+      "organisation": "The Economist Group",
+      "url": "https://job-boards.eu.greenhouse.io/theeconomistgroup/jobs/4923849101",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "\"Head\" title requiring significant experience leading B2B marketing functions and sizable global teams — a senior leadership role far beyond entry-level, triggering a hard disqualifier. It is also a marketing specialism outside the candidate's skill set and interest zones.",
+      "location": "London",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
