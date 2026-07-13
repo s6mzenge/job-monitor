@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T16:01:30.627333+00:00",
-  "run_count": 33,
+  "generated_at": "2026-07-13T16:31:30.513166+00:00",
+  "run_count": 34,
   "jobs": [
     {
       "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
@@ -594,6 +594,40 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Global Head of Internal Communications",
+      "organisation": "Anthesis Group",
+      "url": "https://anthesisgroup.pinpointhq.com/en/postings/449abdf7-7547-4bd1-8100-c2a42972cbf5",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "\"Global Head\" is a senior leadership title requiring years of communications experience and team leadership the candidate lacks, and internal communications is outside the candidate's skills and interest zones. The level alone is a hard mismatch.",
+      "location": "UK - London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Staff Counsellor",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/3184/0/471664/15539/staff-counsellor",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires, as an essential, BACP Accreditation / UKCP Registration or equivalent as a qualified Counsellor / Psychotherapist / Counselling Psychologist, plus extensive counselling experience — a professional clinical qualification and background the candidate plainly does not hold. It is also outside the candidate's field and interests entirely.",
+      "location": "London",
+      "type": "Part-time (0.6 FTE)",
+      "deadline": "2026-07-26",
+      "salary": "£53,949 to £62,160 pro rata pa (potential progression to £69,073), inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
