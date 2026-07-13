@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T03:31:21.551325+00:00",
-  "run_count": 8,
+  "generated_at": "2026-07-13T04:01:26.137149+00:00",
+  "run_count": 9,
   "jobs": [
     {
       "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
@@ -134,6 +134,23 @@
       "location": "Houston, TX, US (home-based, extensive travel)",
       "type": "Contract (Contractor On Demand)",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for established \"experts\" to join an advisory committee, not an entry-level paid role — it requires senior standing and specialist experience the candidate does not have, and it is advisory rather than a genuine salaried position. The human-rights subject is on-mission, but the level is a hard mismatch.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
