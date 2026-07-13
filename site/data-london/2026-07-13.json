@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T22:31:33.190143+00:00",
-  "run_count": 46,
+  "generated_at": "2026-07-13T23:01:26.478292+00:00",
+  "run_count": 47,
   "jobs": [
     {
       "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
@@ -662,6 +662,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate HRBP, Scripted Productions",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Associate-HRBP%2C-Scripted-Productions/48304-en_GB",
+      "priority": 12,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is an HR business-partner role requiring practical HR support experience and stakeholder partnering — outside the candidate's research/policy profile and not a paper fit despite being nominally open on level. It sits wholly outside all three interest zones (international law, geopolitical risk, tech/OSINT policy), so it barely warrants surfacing.",
+      "location": "London, GBR (Hybrid)",
+      "type": "Full-time",
+      "deadline": "22 July 2026",
+      "salary": "Up to £52,000 plus £5,441 London Weighting",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
