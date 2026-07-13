@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T06:01:30.522078+00:00",
-  "run_count": 13,
+  "generated_at": "2026-07-13T06:31:26.024947+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
@@ -151,6 +151,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate or Senior Editor, BMC Health Services Research",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Shanghai/Associate-or-Senior-Editor--BMC-Health-Services-Research_JR106621-1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires an already-completed PhD in a biomedical field as an essential, which the candidate does not hold and which is far outside their discipline. The health-sciences publishing focus is also well outside the candidate's core interest zones.",
+      "location": "Shanghai or Pune (hybrid)",
+      "type": "Full-time",
+      "deadline": "2026-08-03",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
