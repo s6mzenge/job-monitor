@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13T14:01:49.395547+00:00",
+  "last_updated": "2026-07-13T14:31:25.361888+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -5107,6 +5107,18 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-13T14:31:25.361888+00:00",
+      "site": "Springer Nature",
+      "site_id": 204,
+      "url": "https://springernature.wd3.myworkdayjobs.com/en-US/SpringerNatureCareers",
+      "method": "workday_api",
+      "type": "llm_parse_failed",
+      "message": "LLM response could not be parsed into a match block",
+      "job_title": "Untitled",
+      "job_url": "",
+      "raw_snippet": "NO_JOBS_FOUND"
     }
   ]
 }
