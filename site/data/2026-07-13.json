@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T08:31:36.838767+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-13T09:01:31.829839+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Praktikant*in (m/w/d) zur Unterstützung des Auftragsmanagements und der evidenzbasierten Programmierung",
@@ -33,6 +33,40 @@
       "type": "Part-time (91%)",
       "deadline": "2026-08-16",
       "salary": "€3,490/month starting (Entgeltgruppe 03), 13.5 monthly salaries/year",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikum in den Literatur- und Oralturpraktiken für die Reihe Middle Ground (m/w/d/k)",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/66033038/Praktikum-in-den-Literatur-und-Oralturpraktiken-f%C3%BCr-die-Reihe-Middle-Ground-m-w-d-k-?jobDbPVId=278682993&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an internship (Praktikum) requiring current enrolment in a humanities/arts/cultural-management study programme, which is a policy exclusion. The literary-festival cultural focus is also outside the candidate's core interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-24",
+      "salary": "€603 gross/month",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische Hilfskraft in den Literatur- und Oralturpraktiken (w/m/d/k)",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/66032998/Studentische-Hilfskraft-in-den-Literatur-und-Oralturpraktiken-w-m-d-k-?jobDbPVId=278682783&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a Studentische Hilfskraft (working-student) role, which is excluded by policy regardless of fit. It also requires current enrolment in a literature/arts/culture programme, which is outside the candidate's field.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (20 hours/week, fixed-term)",
+      "deadline": "2026-07-24",
+      "salary": "€18.42/hour (TVöD E5)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
