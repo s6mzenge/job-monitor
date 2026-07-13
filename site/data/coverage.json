@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T23:01:27.968788+00:00",
+  "generated_at": "2026-07-13T23:31:27.033758+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 90,
@@ -125,9 +125,9 @@
       "url": "https://zzf-potsdam.de/chancen/stellenangebote",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 4,
-      "last_failure": "2026-07-13T23:01:27.968788+00:00",
+      "consecutive_failures": 2,
+      "total_recent_failures": 5,
+      "last_failure": "2026-07-13T23:31:27.033758+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fzzf-potsdam.de%2Fchancen%2Fstellenangebote"

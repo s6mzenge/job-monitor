@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-07-13T23:01:27.968788+00:00",
+  "last_updated": "2026-07-13T23:31:27.033758+00:00",
   "site_summary": {
     "ZZF Potsdam (Zeithistorische Forschung)": {
       "site_id": 175,
       "url": "https://zzf-potsdam.de/chancen/stellenangebote",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 4,
+      "consecutive_failures": 2,
+      "total_recent_failures": 5,
       "first_recent_failure": "2026-07-07T16:31:18.602679+00:00",
-      "last_recent_failure": "2026-07-13T23:01:27.968788+00:00",
+      "last_recent_failure": "2026-07-13T23:31:27.033758+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -3543,6 +3543,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fzzf-potsdam.de%2Fchancen%2Fstellenangebote",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-13T23:31:27.033758+00:00",
+      "site": "ZZF Potsdam (Zeithistorische Forschung)",
+      "site_id": 175,
+      "url": "https://zzf-potsdam.de/chancen/stellenangebote",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fzzf-potsdam.de%2Fchancen%2Fstellenangebote",
+      "consecutive_count": 2
     }
   ]
 }
