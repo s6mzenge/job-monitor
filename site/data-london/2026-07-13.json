@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T15:01:27.595150+00:00",
-  "run_count": 31,
+  "generated_at": "2026-07-13T15:31:25.525316+00:00",
+  "run_count": 32,
   "jobs": [
     {
       "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
@@ -558,6 +558,23 @@
       "reason": "A purely speculative \"talent pool\" posting with no concrete vacancy, excluded as a matter of policy. The organisation and mission fit perfectly, but there is no actual role to apply for.",
       "location": "Remote",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate, Financial Practice",
+      "organisation": "Brunswick Group",
+      "url": "https://job-boards.greenhouse.io/brunswickgroup/jobs/8535548002",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Ineligible — the role requires 5–8 years' relevant experience in financial communications / IR / corporate affairs, far beyond the candidate's student-assistant background, and the \"Associate\" level implies team leadership and mentoring. It also demands specialist financial-communications and capital-markets expertise the candidate lacks, and the topic sits outside the core interest zones.",
+      "location": "London, England, United Kingdom",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
