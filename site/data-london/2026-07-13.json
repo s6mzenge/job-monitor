@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T22:01:22.747332+00:00",
-  "run_count": 45,
+  "generated_at": "2026-07-13T22:31:33.190143+00:00",
+  "run_count": 46,
   "jobs": [
     {
       "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
@@ -642,6 +642,23 @@
       "match": "low",
       "reason": "Deep-technical software-engineering role with essential requirements (Java/Spring Boot, FastAPI, distributed systems, 3–5+ years of full-stack development) far beyond the candidate's analysis-level Python. It is also a senior title requiring years of professional experience — a double disqualifier.",
       "location": "London, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Managing Editor",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Mexico-City/Managing-Editor_JR106501",
+      "priority": 22,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an ELT publishing-production coordination role — degree-level entry with organizational and project-management skills the candidate could plausibly cover, so no hard blocker applies. However, it sits outside all three interest zones, requires no research or policy expertise, and the desirable ELT/publishing-workflow experience is a gap; the fit is weak overall despite eligibility.",
+      "location": "Mexico City / Warsaw / Spain",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
