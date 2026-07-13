@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T19:01:25.735114+00:00",
-  "run_count": 39,
+  "generated_at": "2026-07-13T19:31:31.561354+00:00",
+  "run_count": 40,
   "jobs": [
     {
       "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
@@ -628,6 +628,23 @@
       "type": "Part-time (0.6 FTE)",
       "deadline": "2026-07-26",
       "salary": "£53,949 to £62,160 pro rata pa (potential progression to £69,073), inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Software Engineer - Backend",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Senior-Software-Engineer-Backend/1414523333",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Deep-technical software-engineering role with essential requirements (Java/Spring Boot, FastAPI, distributed systems, 3–5+ years of full-stack development) far beyond the candidate's analysis-level Python. It is also a senior title requiring years of professional experience — a double disqualifier.",
+      "location": "London, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
