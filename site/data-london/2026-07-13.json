@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-13",
+  "generated_at": "2026-07-13T00:01:34.484755+00:00",
+  "run_count": 1,
+  "jobs": [
+    {
+      "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Location is DC with no London option, and under a London-only filter this is excluded. It is also a Fellow / Senior Fellow role well above entry level.",
+      "location": "Washington DC, USA",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fellow, Climate policy & development",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "A \"Fellow\" role at a policy institute is not entry-level and typically requires several years of subject expertise the candidate lacks. Climate development policy also sits outside the candidate's core interest zones.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
+}
