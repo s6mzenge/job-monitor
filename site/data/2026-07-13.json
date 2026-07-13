@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T14:31:27.724566+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-13T15:01:51.203986+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Praktikant*in (m/w/d) zur Unterstützung des Auftragsmanagements und der evidenzbasierten Programmierung",
@@ -322,6 +322,23 @@
       "type": "Internship",
       "deadline": "2026-07-27",
       "salary": "€2,349/month (gross) stipend",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Sektorvorhaben Klima zum Thema Klimafinanzierung",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78762",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an internship / Praktikum, which is excluded as a matter of policy regardless of pay. Climate finance also sits outside the candidate's core interest zones, and the required immatriculation condition confirms its student-side nature.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-27",
+      "salary": "€2,349/month (gross)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
