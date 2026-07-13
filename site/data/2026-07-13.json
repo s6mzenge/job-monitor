@@ -1,7 +1,7 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T13:01:35.917103+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-13T13:31:17.679485+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Praktikant*in (m/w/d) zur Unterstützung des Auftragsmanagements und der evidenzbasierten Programmierung",
@@ -220,6 +220,23 @@
       "type": "Not specified (short course / summer school)",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Bereich Korruptionsprävention und Integrität in der Allianz für Integrität",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78757",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is explicitly an internship (Praktikum), which is excluded by policy regardless of pay, and it further requires current enrolment or graduation within the past six months. The anti-corruption / integrity subject is adjacent policy of some interest, but the role type is a hard disqualifier.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-27",
+      "salary": "€2,349/month (brutto)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
