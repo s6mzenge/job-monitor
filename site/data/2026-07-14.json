@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T11:01:27.068529+00:00",
-  "run_count": 23,
+  "generated_at": "2026-07-14T11:31:20.607845+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
@@ -134,6 +134,23 @@
       "location": "Berlin, Germany",
       "type": "Full-time",
       "deadline": "2026-08-15",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Projektleitung (m/w/d) Standortverlagerung",
+      "organisation": "WWF Deutschland",
+      "url": "https://www.wwf.de/ueber-uns/stellenangebote/stellenangebot/stelle/projektleitung-m-w-d-standortverlagerung-4z5m17me",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a project-lead role requiring demonstrable project-management leadership experience (\"Nachweisliche Projektleitungserfahrungen\"), a leadership-level title, and relevant vocational training — none of which the candidate's student-assistant background meets. It is an office-relocation logistics role entirely outside the candidate's research and policy interests.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (fixed-term, 12 months)",
+      "deadline": "2026-08-12",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
