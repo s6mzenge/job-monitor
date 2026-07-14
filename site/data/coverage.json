@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T06:31:37.566783+00:00",
+  "generated_at": "2026-07-14T07:01:38.619520+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 89,
@@ -137,9 +137,9 @@
       "url": "https://wfd.de/ueber-uns/stellenangebote/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 14,
-      "total_recent_failures": 15,
-      "last_failure": "2026-07-14T06:31:37.566783+00:00",
+      "consecutive_failures": 15,
+      "total_recent_failures": 16,
+      "last_failure": "2026-07-14T07:01:38.619520+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 526 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwfd.de%2Fueber-uns%2Fstellenangebote%2F"

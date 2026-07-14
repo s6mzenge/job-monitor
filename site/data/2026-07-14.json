@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T06:31:37.566783+00:00",
-  "run_count": 14,
+  "generated_at": "2026-07-14T07:01:38.619520+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
@@ -16,6 +16,23 @@
       "type": "Part-time (student freelance)",
       "deadline": "Not specified",
       "salary": "€15.00 gross per hour",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Zwei Studentische Teilzeitkräfte Internet (w/m/d/k.A.)",
+      "organisation": "Heinrich Böll Stiftung",
+      "url": "https://www.interamt.de/koop/app/stelle?id=1468817",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is an explicitly student side-role (Studentische Teilzeitkraft) requiring current enrolment at a German university, which is excluded by policy. It is also a communications/web-editing role that requires ongoing German enrolment the candidate (at LSE) does not hold.",
+      "location": "Berlin, Germany",
+      "type": "Part-time",
+      "deadline": "2026-07-28",
+      "salary": "TVöD-Bund E 2",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
