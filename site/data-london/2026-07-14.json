@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T15:31:19.998348+00:00",
-  "run_count": 32,
+  "generated_at": "2026-07-14T16:01:21.586966+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Food Safety Trainer",
@@ -305,6 +305,23 @@
       "type": "Full-time",
       "deadline": "22 July 2026",
       "salary": "£43,277 to £51,714 pa inclusive, progressing to £55,497 pa",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Global People Operations Specialist",
+      "organisation": "The Economist Group",
+      "url": "https://job-boards.eu.greenhouse.io/theeconomistgroup/jobs/4925059101",
+      "priority": 18,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is an entry-level HR operations administrative role that the candidate could technically hold, but it demands HR-specific interest and systems (HiBob, HRIS, service-desk tools) rather than the candidate's research and policy strengths. It sits well outside all three interest zones, so while eligible, it is a poor fit on both skills alignment and interest and barely worth surfacing.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
