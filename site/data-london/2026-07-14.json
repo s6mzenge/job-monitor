@@ -1,6 +1,58 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T02:01:17.367767+00:00",
-  "run_count": 5,
-  "jobs": []
+  "generated_at": "2026-07-14T02:31:15.207272+00:00",
+  "run_count": 6,
+  "jobs": [
+    {
+      "title": "Food Safety Trainer",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Madrid-Food-Safety-Trainer/1287171201",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires essential QSR (Quick Service Restaurant) industry experience and food-safety/store-operations expertise the candidate does not have, plus a background delivering technical training — none of which fits the profile. It also almost certainly requires working Spanish for in-store training in Spain, and it falls entirely outside the candidate's interest zones.",
+      "location": "Madrid, Spain",
+      "type": "Contract (Contractor On Demand)",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Location policy is London only; this role is based in Washington DC with no London or fully-remote-UK option, so it is a hard location exclusion. It is also a Fellow / Senior Fellow level role beyond entry-level.",
+      "location": "Washington DC",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fellow, Climate policy & development",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A \"Fellow\" title at a think-tank typically denotes a senior, experienced researcher rather than an entry-level post, placing it beyond the candidate's student-assistant/RA level. Climate and development policy also sits outside the candidate's core interest zones.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
