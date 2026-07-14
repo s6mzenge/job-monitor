@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-14T03:01:33.598482+00:00",
+  "generated_at": "2026-07-14T03:31:51.340669+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 89,
-  "erroring": 2,
+  "healthy": 88,
+  "erroring": 3,
   "paused": 1,
   "methods": {
     "personio_xml": 3,
     "html": 71,
     "json_api": 7,
-    "playwright": 6,
+    "playwright": 5,
     "interamt": 1,
     "recruitee_api": 1
   },
@@ -90,7 +90,6 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
-    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -124,9 +123,9 @@
       "url": "https://zzf-potsdam.de/chancen/stellenangebote",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 9,
-      "total_recent_failures": 12,
-      "last_failure": "2026-07-14T03:01:33.598482+00:00",
+      "consecutive_failures": 10,
+      "total_recent_failures": 13,
+      "last_failure": "2026-07-14T03:31:51.340669+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fzzf-potsdam.de%2Fchancen%2Fstellenangebote"
@@ -137,12 +136,25 @@
       "url": "https://wfd.de/ueber-uns/stellenangebote/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 7,
-      "total_recent_failures": 8,
-      "last_failure": "2026-07-14T03:01:33.598482+00:00",
+      "consecutive_failures": 8,
+      "total_recent_failures": 9,
+      "last_failure": "2026-07-14T03:31:51.340669+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 526 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwfd.de%2Fueber-uns%2Fstellenangebote%2F"
+    },
+    {
+      "id": 230,
+      "name": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 95,
+      "last_failure": "2026-07-14T03:31:51.340669+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
     }
   ]
 }
