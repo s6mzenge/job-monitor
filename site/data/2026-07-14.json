@@ -1,6 +1,24 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T05:01:37.358858+00:00",
-  "run_count": 11,
-  "jobs": []
+  "generated_at": "2026-07-14T05:31:28.283583+00:00",
+  "run_count": 12,
+  "jobs": [
+    {
+      "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
+      "organisation": "rbb (Rundfunk Berlin-Brandenburg)",
+      "url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2083/Description/1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a studentische Aushilfe / freie Mitarbeit — a student side-role explicitly requiring current enrolment, which is excluded by policy. It is also unrelated to the candidate's research and policy interests.",
+      "location": "Potsdam / Berlin, Germany",
+      "type": "Part-time (student freelance)",
+      "deadline": "Not specified",
+      "salary": "€15.00 gross per hour",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
