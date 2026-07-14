@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T07:31:32.844326+00:00",
-  "run_count": 16,
+  "generated_at": "2026-07-14T08:01:27.209395+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
@@ -67,6 +67,23 @@
       "type": "Full-time",
       "deadline": "2026-08-11",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Bote/Botin, Pförtner:in, Postverteiler:in (w/d/m)",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/d6a0f8174ef67b138ce512a86a7595ca9ebd60630",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a mailroom / porter / courier service role requiring prior experience in a post-room and a Class B driving licence, with duties entirely clerical-logistical. It has no research, policy, or analytical content and does not match the candidate's profile or interest zones on any axis.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (part-time possible)",
+      "deadline": "2026-08-04",
+      "salary": "EG 3 TVöD Bund",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
