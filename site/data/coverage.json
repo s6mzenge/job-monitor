@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-14T21:01:40.369987+00:00",
+  "generated_at": "2026-07-14T21:20:52.535403+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 89,
+  "healthy": 90,
   "erroring": 0,
-  "paused": 3,
+  "paused": 2,
   "methods": {
     "personio_xml": 3,
-    "html": 71,
+    "html": 72,
     "json_api": 7,
     "playwright": 6,
     "interamt": 1,
@@ -102,22 +102,10 @@
     "WZB Berlin Social Science Center",
     "ZfL Berlin (Lit.- und Kulturforschung)",
     "ZOiS (Osteuropa- und internationale Studien)",
+    "ZZF Potsdam (Zeithistorische Forschung)",
     "Ärzte ohne Grenzen (MSF)"
   ],
   "sites": [
-    {
-      "id": 175,
-      "name": "ZZF Potsdam (Zeithistorische Forschung)",
-      "url": "https://zzf-potsdam.de/chancen/stellenangebote",
-      "method": "html",
-      "status": "paused",
-      "consecutive_failures": 16,
-      "total_recent_failures": 20,
-      "last_failure": "2026-07-14T06:31:37.566783+00:00",
-      "paused_until": "2026-07-16T06:31:37.566783+00:00",
-      "last_type": "site_paused",
-      "message": "Site paused after 16 consecutive failures"
-    },
     {
       "id": 223,
       "name": "Die Linke",

@@ -427,10 +427,9 @@
   },
   "https://zzf-potsdam.de/chancen/stellenangebote": {
     "seen_urls": [],
-    "last_checked": "2026-07-14T06:31:37.566783+00:00",
+    "last_checked": "2026-07-14T21:20:52.535403+00:00",
     "listing_hash": "22478b3d4814d4a593a83460337f490609861c8b0830603bf2b8138641e4dcd0",
-    "consecutive_errors": 16,
-    "paused_until": "2026-07-16T06:31:37.566783+00:00"
+    "consecutive_errors": 0
   },
   "https://www.zois-berlin.de/ueber-uns/stellenausschreibungen": {
     "seen_urls": [],
