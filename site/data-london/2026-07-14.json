@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T21:31:26.630431+00:00",
-  "run_count": 45,
+  "generated_at": "2026-07-14T22:01:33.893157+00:00",
+  "run_count": 46,
   "jobs": [
     {
       "title": "Food Safety Trainer",
@@ -356,6 +356,23 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Applied AI Engineer, Beneficial Deployments",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5343697008",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a deep-technical software-engineering role whose essential requirements — 4+ years as a Software Engineer / Forward Deployed Engineer and production experience building LLM-powered applications, agent architectures and evaluation frameworks — are well beyond the candidate's analysis-level Python and lack of professional engineering experience. Both the seniority (4+ years) and the ML/software-engineering essentials are hard disqualifiers.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£240,000–£255,000 GBP",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
