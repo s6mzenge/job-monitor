@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T10:01:28.062560+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-14T10:31:18.497219+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
@@ -101,6 +101,23 @@
       "type": "Internship",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Initiativbewerbung Volontariat - Redaktion (m/w/d)",
+      "organisation": "Table.Briefings",
+      "url": "https://tablemedia.jobs.personio.de/job/1926383",
+      "priority": 34,
+      "eligible": true,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a paid 18-month journalism traineeship (Volontariat, not an internship or Werkstelle), so it is eligible and genuinely entry-level, and the candidate's research and writing skills plus published work transfer reasonably. However, it is a dedicated journalism-training path outside the candidate's three core zones, and the emphasis on prior publicistic work, podcasts and social-media editing is only a partial fit, keeping interest and priority modest.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (temporary, 18-month traineeship)",
+      "deadline": "Not specified",
+      "salary": "Not specified (paid Volontariat)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
