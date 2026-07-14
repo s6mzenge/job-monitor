@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T10:31:18.497219+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-14T11:01:27.068529+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
@@ -118,6 +118,23 @@
       "type": "Full-time (temporary, 18-month traineeship)",
       "deadline": "Not specified",
       "salary": "Not specified (paid Volontariat)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Event Manager (gn)",
+      "organisation": "Hertie School",
+      "url": "https://hertie-school.dvinci-easy.com/en/p/en/jobs/81057/event-manager-gn-full-time-40-hoursweek",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Ineligible on two hard grounds: it requires three or more years of professional event-management experience (well beyond the candidate's student-assistant background) and it is a Manager-level role with team leadership. It also demands a professional qualification in event management, which the candidate lacks.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-08-15",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
