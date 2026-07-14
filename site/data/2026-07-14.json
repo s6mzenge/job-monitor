@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T15:01:51.885935+00:00",
-  "run_count": 31,
+  "generated_at": "2026-07-14T15:31:17.593013+00:00",
+  "run_count": 32,
   "jobs": [
     {
       "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
@@ -203,6 +203,23 @@
       "type": "Part-time (Werkstudent, 20h/week)",
       "deadline": "2026-07-28",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikum im Unterstützungsvorhaben für die Umsetzung des Pariser Klimaschutzabkommens (SPA)",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78771",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is explicitly an internship (Praktikum) requiring current enrolment or a degree completed no more than 6 months prior, which is a policy-excluded role type regardless of pay. The climate-policy subject is adjacent to the candidate's interests but the internship classification is a hard disqualifier.",
+      "location": "Berlin, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-28",
+      "salary": "€2,349/month (brutto)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""

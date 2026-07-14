@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-14T15:01:51.885935+00:00",
+  "generated_at": "2026-07-14T15:31:17.593013+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 89,
-  "erroring": 0,
+  "healthy": 88,
+  "erroring": 1,
   "paused": 3,
   "methods": {
     "personio_xml": 3,
     "html": 71,
     "json_api": 7,
-    "playwright": 6,
+    "playwright": 5,
     "interamt": 1,
     "recruitee_api": 1
   },
@@ -90,7 +90,6 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
-    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -143,6 +142,19 @@
       "paused_until": "2026-07-16T07:31:32.844326+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
+    },
+    {
+      "id": 230,
+      "name": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 96,
+      "last_failure": "2026-07-14T15:31:17.593013+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
     }
   ]
 }
