@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T09:31:20.688582+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-14T10:01:28.062560+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
@@ -84,6 +84,23 @@
       "type": "Full-time (part-time possible)",
       "deadline": "2026-08-04",
       "salary": "EG 3 TVöD Bund",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Initiativbewerbung Praktikum Redaktion (Pflicht- & freiwilliges Praktikum) (m/w/d)",
+      "organisation": "Table.Briefings",
+      "url": "https://tablemedia.jobs.personio.de/job/2707077",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is an internship (Praktikum), and moreover a speculative Initiativbewerbung with no concrete vacancy — excluded as a matter of policy. The editorial research work would otherwise be of moderate interest, but the internship framing is a hard disqualifier.",
+      "location": "Berlin, Germany",
+      "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
