@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T12:31:19.628345+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-14T13:01:28.662816+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
@@ -169,6 +169,23 @@
       "type": "Part-time / Youth programme",
       "deadline": "15 September 2026",
       "salary": "Not specified (initial phase unpaid; later work honoured)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Auftragsarbeit für die ökonomische Modellierung von Waldprojekten",
+      "organisation": "NABU",
+      "url": "https://www.nabu.de/imperia/md/content/nabude/jobs/260625_ausschreibung_werkvertrag_waldexpert_in.pdf",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a specialist consultancy contract requiring deep forestry economics, forest carbon MRV expertise, and knowledge of specific certification standards (EU CRCF, Verra, WKS, ISO 14064-2) plus cost-benefit and break-even financial modelling — an essential expert competency the candidate plainly lacks. It is a niche environmental/carbon-market commission entirely outside the candidate's academic and skills profile.",
+      "location": "Berlin, Germany (mobile working possible)",
+      "type": "Contract (Werkvertrag, 3–6 months)",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
