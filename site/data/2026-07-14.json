@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T15:31:17.593013+00:00",
-  "run_count": 32,
+  "generated_at": "2026-07-14T16:01:28.423898+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
@@ -220,6 +220,23 @@
       "type": "Internship",
       "deadline": "2026-07-28",
       "salary": "€2,349/month (brutto)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Sachbearbeiter*in (w/m/d) für den Arbeitskreis III „Gesundheit, Bildung & Lebensweise\" in Teilzeit",
+      "organisation": "Die Linke Bundestagsfraktion",
+      "url": "https://www.dielinkebt.de/service/ausschreibungen/detail/sachbearbeiterin-w-m-d-fuer-den-arbeitskreis-iii-gesundheit-bildung-lebensweise-in-teilzeit",
+      "priority": 34,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "The role is an entry-to-junior administrative/project-support post the candidate could plausibly hold (research, event organisation, funding administration — the latter mirroring the German Rectors' Conference work), so it is a real paper fit though heavily weighted toward finance/controlling and public-relations tasks that are only a partial match. The subject area (health, education, lifestyle policy) sits outside the candidate's core interest zones, and the role is administrative rather than research-driven, which holds the score down. It is eligible and winnable but not a compelling target.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (29.25 hrs/week)",
+      "deadline": "2026-08-09",
+      "salary": "TVöD/Bund, comparable to EG 9c",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
