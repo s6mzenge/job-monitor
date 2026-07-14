@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T08:31:22.711740+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-14T09:01:35.766706+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Food Safety Trainer",
@@ -66,6 +66,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate or Senior Editor - Nature Progress Oncology",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Pune-SNTPS-Kharadi/Associate-or-Senior-Editor---Nature-Progress-Oncology_JR106515",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires an already-completed PhD in Oncology/Biology as an essential qualification, which the candidate does not hold, and the subject-matter expertise in cancer research is entirely outside their field. This is a hard mismatch on both qualification and domain.",
+      "location": "Pune (India) / Madrid (Spain)",
+      "type": "Full-time",
+      "deadline": "2026-07-29",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
