@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T14:31:29.490039+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-14T15:01:41.325167+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Food Safety Trainer",
@@ -254,6 +254,23 @@
       "type": "Full-time",
       "deadline": "26 July 2026",
       "salary": "£43,277–£51,714 pa (progression to £55,497) inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Emergency Response Manager",
+      "organisation": "Plan International UK",
+      "url": "https://careers.plan-uk.org/vacancies?jobId=253",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Manager-level role requiring significant professional experience in emergency response and a track record of securing and overseeing Start Network / DEC programmes — well beyond the candidate's student-assistant / RA background. The seniority and operational humanitarian experience are unmet essentials.",
+      "location": "UK-based (London)",
+      "type": "Full-time (fixed term to May 2027, maternity cover)",
+      "deadline": "26 July 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
