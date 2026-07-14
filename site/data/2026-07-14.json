@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T12:01:28.214821+00:00",
-  "run_count": 25,
+  "generated_at": "2026-07-14T12:31:19.628345+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
@@ -152,6 +152,23 @@
       "type": "Full-time (fixed-term, 12 months)",
       "deadline": "2026-08-12",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "rbb young reporter 2026",
+      "organisation": "rbb (Rundfunk Berlin-Brandenburg)",
+      "url": "https://www.rbb-online.de/youngreporter/beitraege/werde-young-reporter.html",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a youth-trainee programme for people who have completed year 10 and are no older than 19, essentially a student/apprentice scheme with an unpaid initial phase — it is not a genuine paid professional role for the candidate. It also sits far outside the candidate's academic and policy-research profile.",
+      "location": "Berlin / Brandenburg, Germany",
+      "type": "Part-time / Youth programme",
+      "deadline": "15 September 2026",
+      "salary": "Not specified (initial phase unpaid; later work honoured)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
