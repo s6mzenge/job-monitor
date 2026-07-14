@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T23:01:35.274428+00:00",
-  "run_count": 48,
+  "generated_at": "2026-07-14T23:31:30.439570+00:00",
+  "run_count": 49,
   "jobs": [
     {
       "title": "Food Safety Trainer",
@@ -390,6 +390,23 @@
       "type": "Full-time",
       "deadline": "July 28, 2026",
       "salary": "$80,000 - $90,000 (US annualized base)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Digital Video Manager, Bluey",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Digital-Video-Manager%2C-Bluey/45474-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Manager-level role with essential \"proven experience leading high-volume digital content production and publishing teams\" — not entry-level and requiring team-leadership experience the candidate lacks. It is also a digital-video / brand-marketing role entirely outside the candidate's research and policy skill set and interest zones.",
+      "location": "London, GBR (Television Centre, W12 7FA)",
+      "type": "Full-time",
+      "deadline": "26 July 2026",
+      "salary": "£44,000 plus £5,441 London Weighting",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
