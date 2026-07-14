@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T00:31:23.918975+00:00",
+  "generated_at": "2026-07-14T01:01:25.653605+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 89,
@@ -124,9 +124,9 @@
       "url": "https://zzf-potsdam.de/chancen/stellenangebote",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 4,
-      "total_recent_failures": 7,
-      "last_failure": "2026-07-14T00:31:23.918975+00:00",
+      "consecutive_failures": 5,
+      "total_recent_failures": 8,
+      "last_failure": "2026-07-14T01:01:25.653605+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fzzf-potsdam.de%2Fchancen%2Fstellenangebote"
@@ -137,9 +137,9 @@
       "url": "https://wfd.de/ueber-uns/stellenangebote/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 2,
-      "total_recent_failures": 3,
-      "last_failure": "2026-07-14T00:31:23.918975+00:00",
+      "consecutive_failures": 3,
+      "total_recent_failures": 4,
+      "last_failure": "2026-07-14T01:01:25.653605+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 526 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwfd.de%2Fueber-uns%2Fstellenangebote%2F"
