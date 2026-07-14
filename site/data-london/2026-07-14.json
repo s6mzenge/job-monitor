@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T08:01:40.691494+00:00",
-  "run_count": 17,
+  "generated_at": "2026-07-14T08:31:22.711740+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Food Safety Trainer",
@@ -49,6 +49,23 @@
       "location": "London",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for established \"experts\" to join an advisory committee, not an entry-level paid role — it seeks senior specialists with a track record on defender criminalisation, which the candidate does not have, and it reads as an advisory/voluntary position rather than a genuine paid vacancy. The human-rights subject is a strong interest match, but the level and nature of the role are hard mismatches.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
