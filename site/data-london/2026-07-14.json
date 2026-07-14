@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T22:01:33.893157+00:00",
-  "run_count": 46,
+  "generated_at": "2026-07-14T22:31:34.778647+00:00",
+  "run_count": 47,
   "jobs": [
     {
       "title": "Food Safety Trainer",
@@ -373,6 +373,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "£240,000–£255,000 GBP",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Publisher",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/New-York/Publisher_JR106582",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The role requires an essential 3–5 years of experience in a similar publishing role, which exceeds the candidate's student-assistant / RA background and triggers the experience disqualifier. It is also not entry-level and sits outside the candidate's core interest zones despite the academic-publishing framing.",
+      "location": "New York, Jersey City or Philadelphia (Hybrid)",
+      "type": "Full-time",
+      "deadline": "July 28, 2026",
+      "salary": "$80,000 - $90,000 (US annualized base)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
