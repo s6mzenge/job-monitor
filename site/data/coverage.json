@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-14T07:01:38.619520+00:00",
+  "generated_at": "2026-07-14T07:31:32.844326+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 89,
-  "erroring": 1,
-  "paused": 2,
+  "erroring": 0,
+  "paused": 3,
   "methods": {
     "personio_xml": 3,
     "html": 71,
@@ -136,13 +136,13 @@
       "name": "Weltfriedensdienst",
       "url": "https://wfd.de/ueber-uns/stellenangebote/",
       "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 15,
-      "total_recent_failures": 16,
-      "last_failure": "2026-07-14T07:01:38.619520+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 526 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwfd.de%2Fueber-uns%2Fstellenangebote%2F"
+      "status": "paused",
+      "consecutive_failures": 16,
+      "total_recent_failures": 18,
+      "last_failure": "2026-07-14T07:31:32.844326+00:00",
+      "paused_until": "2026-07-16T07:31:32.844326+00:00",
+      "last_type": "site_paused",
+      "message": "Site paused after 16 consecutive failures"
     }
   ]
 }

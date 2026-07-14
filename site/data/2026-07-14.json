@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T07:01:38.619520+00:00",
-  "run_count": 15,
+  "generated_at": "2026-07-14T07:31:32.844326+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
@@ -33,6 +33,40 @@
       "type": "Part-time",
       "deadline": "2026-07-28",
       "salary": "TVöD-Bund E 2",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Policy Fellow Klima (m/w/d)",
+      "organisation": "DGAP (Deutsche Gesellschaft für Auswärtige Politik)",
+      "url": "https://dgap.org/de/dgap/jobs/policy-fellow-klima-m-w-d",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "The posting requires at least five years of relevant professional experience as an essential, plus an established political network and policy-advisory track record — well beyond the candidate's student-assistant profile. Although DGAP and the climate/foreign-policy focus are in a strong interest zone, the experience requirement is a hard disqualifier.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (fixed-term, 1 year)",
+      "deadline": "2026-07-30",
+      "salary": "TVöD Bund E13 (approx.)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fundraising Manager (m/w/d) für Testamentsspenden",
+      "organisation": "WWF Deutschland",
+      "url": "https://www.wwf.de/ueber-uns/stellenangebote/stellenangebot/stelle/fundraising-manager-m-w-d-fuer-testamentsspenden-pi7ggemr",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Ineligible — a Manager title requiring 3–5 years of professional experience in fundraising and marketing, which the candidate (student-assistant experience only) clearly lacks. The role is also a fundraising/marketing specialism outside the candidate's research and policy focus.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-08-11",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
