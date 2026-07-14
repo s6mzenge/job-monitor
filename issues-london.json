@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14T00:31:21.379517+00:00",
+  "last_updated": "2026-07-14T01:01:46.584289+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -14,18 +14,18 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Impunity Watch": {
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+    "Demos": {
+      "site_id": 125,
+      "url": "https://demos.co.uk/jobs/",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 54,
-      "first_recent_failure": "2026-07-02T10:31:03.695349+00:00",
-      "last_recent_failure": "2026-07-14T00:31:21.379517+00:00",
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-06-29T01:01:11.513078+00:00",
+      "last_recent_failure": "2026-07-14T01:01:46.584289+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fdemos.co.uk%2Fjobs%2F"
     },
     "Airwars": {
       "site_id": 133,
@@ -5141,6 +5141,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-14T01:01:46.584289+00:00",
+      "site": "Demos",
+      "site_id": 125,
+      "url": "https://demos.co.uk/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fdemos.co.uk%2Fjobs%2F",
       "consecutive_count": 1
     }
   ]
