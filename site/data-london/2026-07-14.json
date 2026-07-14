@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T16:31:37.924437+00:00",
-  "run_count": 34,
+  "generated_at": "2026-07-14T17:01:25.726831+00:00",
+  "run_count": 35,
   "jobs": [
     {
       "title": "Food Safety Trainer",
@@ -322,6 +322,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Events Officer",
+      "organisation": "Institute for Government",
+      "url": "https://www.instituteforgovernment.org.uk/about-us/careers/current-vacancies/events-officer",
+      "priority": 34,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Genuinely entry-level and open to varied backgrounds, but it is a dedicated events-and-marketing specialist role (logistics, CRM, event campaigns) — an area where the candidate has only limited experience and no core research component. The Institute for Government sits in adjacent policy territory rather than the candidate's core mission zones, so interest pull is modest.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "2026-08-07",
+      "salary": "£34,000 per annum",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
