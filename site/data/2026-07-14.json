@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T14:31:24.351158+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-14T15:01:51.885935+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Studentische Aushilfe in freier Mitarbeit – Redaktion DER TAG",
@@ -185,6 +185,23 @@
       "location": "Berlin, Germany (mobile working possible)",
       "type": "Contract (Werkvertrag, 3–6 months)",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentischer Mitarbeiter (m/w/d) Klimaschutz & Energiepolitik",
+      "organisation": "WWF Deutschland",
+      "url": "https://www.wwf.de/ueber-uns/stellenangebote/stellenangebot/stelle/studentischer-mitarbeiter-m-w-d-klimaschutz-energiepolitik-kp1fxkpe",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a Werkstudent (working-student) position, which is excluded by policy regardless of fit. The climate/energy-policy topic also sits outside the candidate's core interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (Werkstudent, 20h/week)",
+      "deadline": "2026-07-28",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
