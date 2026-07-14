@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T15:01:41.325167+00:00",
-  "run_count": 31,
+  "generated_at": "2026-07-14T15:31:19.998348+00:00",
+  "run_count": 32,
   "jobs": [
     {
       "title": "Food Safety Trainer",
@@ -271,6 +271,40 @@
       "type": "Full-time (fixed term to May 2027, maternity cover)",
       "deadline": "26 July 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Insight Manager",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/6453/0/471718/15539/insight-manager",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Not entry-level — a Manager role requiring \"significant experience\" of designing/delivering insight and evaluation, acting as an authority, and demonstrable experience of leading cross-functional teams, none of which the candidate has. It is also internal-applicants-only and a communications/insight specialism far from the candidate's research and policy profile.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "26 July 2026",
+      "salary": "£43,277 to £51,714 pa (up to £55,497 pa) inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Brand Manager",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/6405/0/471717/15539/brand-manager",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A \"Manager\" role with essential requirements including proven brand-management and digital-asset-management expertise plus line-management experience — none of which the candidate has; it is also internal-applicants-only. It is a communications/brand specialist post well outside the candidate's research and policy profile and interest zones.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "22 July 2026",
+      "salary": "£43,277 to £51,714 pa inclusive, progressing to £55,497 pa",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
