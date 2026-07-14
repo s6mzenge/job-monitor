@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T12:01:25.581606+00:00",
-  "run_count": 25,
+  "generated_at": "2026-07-14T12:31:39.843619+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Food Safety Trainer",
@@ -220,6 +220,40 @@
       "type": "Full-time",
       "deadline": "29 July 2026",
       "salary": "£53,949–£69,073 pa inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Management Consulting, Executive Assistant",
+      "organisation": "Teneo",
+      "url": "https://www.teneo.com/careers/open-positions/7799728003?gh_jid=7799728003",
+      "priority": 24,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an administrative executive-support role — calendar, travel and inbox management — not a research or analyst position, so despite Teneo being a target firm in zone (b), the paper fit is weak against the candidate's research and policy profile. It is entry-level and eligible, and the candidate's project-administration experience is relevant, but the role offers little of the analytical work the candidate is aiming for, and dedicated EA experience is limited. Interest is low as this sits outside the candidate's core research zones.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Communications Planning Manager",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/6272/0/471686/15539/communications-planning-manager",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a Manager-level role with essential requirements of proven communications-planning experience across a complex organisation and a track record of leading campaigns and managing stakeholders — well beyond the candidate's student-assistant experience and outside their limited comms/campaign background. The level and essential experience are hard mismatches, and communications planning is not a core interest zone.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "26 July 2026",
+      "salary": "£43,277–£51,714 pa (progression to £55,497) inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
