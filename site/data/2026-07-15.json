@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T06:31:17.337346+00:00",
-  "run_count": 14,
+  "generated_at": "2026-07-15T07:01:24.756084+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Policy Fellow Klimamigration (m/w/d)",
@@ -16,6 +16,23 @@
       "type": "Full-time",
       "deadline": "2026-07-30",
       "salary": "TVöD Bund E13 (approx.)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische Hilfskraft in den Literatur- und Oralturpraktiken (w/m/d/k)",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/66032998/Studentische-Hilfskraft-in-den-Literatur-und-Oralturpraktiken-w-m-d-k-?jobDbPVId=278914218&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a Studentische Hilfskraft (working-student) role, which is excluded as a matter of policy regardless of fit. It also requires current enrolment in a literature/art/culture programme and cultural-management experience, which sit outside the candidate's profile.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (20 hrs/week)",
+      "deadline": "2026-07-21",
+      "salary": "€18.42/hour (TVöD E5)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
