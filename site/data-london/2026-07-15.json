@@ -1,6 +1,58 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T00:31:26.960515+00:00",
-  "run_count": 2,
-  "jobs": []
+  "generated_at": "2026-07-15T01:01:29.640018+00:00",
+  "run_count": 3,
+  "jobs": [
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "This is a call for \"experts\" to join an advisory committee, not a paid entry-level role — it seeks established specialists with a track record protecting defenders across specific regions, which the candidate lacks, and it is not a genuine salaried vacancy. The human-rights/securitisation subject is genuinely interesting, but the advisory-expert framing is a hard mismatch for an early-career applicant.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Policy Fellow or Senior Policy Fellow, US Development Policy Program",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Location is a hard filter (London only) and this role is based in Washington, DC with no London option. It is also a Fellow / Senior Fellow role well above entry level.",
+      "location": "Washington, DC",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fellow, Climate policy & development",
+      "organisation": "Center for Global Development",
+      "url": "https://www.cgdev.org/careers",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A \"Fellow\" role at a think-tank is a senior, experienced research position well above entry level, requiring an established policy track record the candidate lacks. The climate-development topic also sits outside the candidate's core interest zones.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
