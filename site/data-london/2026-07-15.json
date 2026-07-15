@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T08:01:26.453890+00:00",
-  "run_count": 17,
+  "generated_at": "2026-07-15T08:31:27.131307+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -185,6 +185,23 @@
       "location": "Singapore",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "OSINT Investigator - Contractor - Arabic speaker - Sudan",
+      "organisation": "Centre for Information Resilience",
+      "url": "https://apply.workable.com/j/52BDE88913",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "5",
+      "match": "low",
+      "reason": "Ineligible: Arabic at C1/Professional level is an essential requirement the candidate does not meet (working languages are German/English, French only B1). The role also requires a proven OSINT investigation track record the candidate lacks. Although CIR and atrocity documentation are a perfect interest match, the language and experience essentials are hard blockers.",
+      "location": "London / Remote",
+      "type": "Contract (Full-time or part-time)",
+      "deadline": "30 July 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
