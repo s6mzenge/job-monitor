@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T10:31:27.928376+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-15T11:01:35.672165+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Policy Fellow Klimamigration (m/w/d)",
@@ -220,6 +220,40 @@
       "type": "Full-time (part-time possible)",
       "deadline": "2026-08-12",
       "salary": "EG 9b–9c TVöD Bund",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Technische Produktionsassistenz Berlinale (m/w/d/k)",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/65962938/technische-Produktionsassistenz-Berlinale-m-w-d-k-?jobDbPVId=278956123&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires a completed degree in event/culture management plus several years of professional experience in event safety and technical production planning, alongside specialist knowledge of occupational/fire safety and procurement law — essentials the candidate plainly lacks (multi-year experience is a hard disqualifier). The role is also entirely outside the candidate's research and policy interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (fixed-term 01.09.2026–31.08.2028, 39h/week)",
+      "deadline": "2026-08-09",
+      "salary": "TVöD E9c",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Office Manager:in (w/d/m)",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/d0343f8b05f7af9b356dbdfd1c08143a848fa0930",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires a completed administrative vocational training (Verwaltungsfachangestellte/r) or equivalent plus several years of office-management/administrative experience, neither of which the candidate holds. It is an administrative office-management post with no research or policy content, entirely outside the candidate's interest zones and profile.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (39h, part-time possible), permanent",
+      "deadline": "2026-08-12",
+      "salary": "EG 8 TVöD Bund",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
