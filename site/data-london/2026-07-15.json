@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T19:31:17.915563+00:00",
-  "run_count": 40,
+  "generated_at": "2026-07-15T20:01:23.847887+00:00",
+  "run_count": 41,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -526,6 +526,23 @@
       "type": "Full-time",
       "deadline": "19 July 2026",
       "salary": "Up to £75,000 plus £5,441 London Weighting and 15% bonus",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Delivery Manager, UK PACT",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25353?c=palladium",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "A \"Delivery Manager\" title signals a managerial, non-entry-level role that typically requires several years of programme-delivery experience the candidate lacks. It also sits outside the candidate's core interest zones (climate programme delivery rather than international law / security / geopolitical risk).",
+      "location": "United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
