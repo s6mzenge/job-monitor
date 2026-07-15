@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T14:31:47.922455+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-15T15:01:38.920251+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -474,6 +474,23 @@
       "location": "London and Berlin",
       "type": "Full-time",
       "deadline": "29 July 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Embedded Cyber Detection and Response Deputy Team Lead",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/AE28EA4E37",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Requires 7+ years of cybersecurity experience and a \"Deputy Team Lead\" leadership title, both hard disqualifiers on level and experience. It is also a deep-technical security-operations role (SIEM/EDR/SOAR, forensics, threat hunting) far outside the candidate's analysis-level skills and with no security-ops background.",
+      "location": "London, United Kingdom",
+      "type": "Contract",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
