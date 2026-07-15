@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T10:31:34.539987+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-15T11:01:27.334515+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -254,6 +254,23 @@
       "type": "Full-time",
       "deadline": "26 June 2026 (posting end date 17-07-2026)",
       "salary": "Market Related",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Assistant Property Asset Manager",
+      "organisation": "Wellcome Trust",
+      "url": "https://wellcome.wd3.myworkdayjobs.com/job/London/Assistant-Property-Asset-Manager_R-003413-1",
+      "priority": 8,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Eligible on a technicality — the role is London-based, entry-to-junior, and does not require an unmet essential qualification (property qualification is only desirable). But it demands property-investment knowledge and asset-management experience the candidate does not have, and it sits entirely outside all three interest zones; it is a poor fit on nearly every axis.",
+      "location": "London",
+      "type": "Full-time (Permanent)",
+      "deadline": "29 July 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
