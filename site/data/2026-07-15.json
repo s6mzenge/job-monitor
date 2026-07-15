@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T13:01:24.972003+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-15T13:31:20.901516+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Policy Fellow Klimamigration (m/w/d)",
@@ -254,6 +254,23 @@
       "type": "Full-time (39h, part-time possible), permanent",
       "deadline": "2026-08-12",
       "salary": "EG 8 TVöD Bund",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Volontär:in für Fundraising / Marketing (w/d/m)",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/ed32c04be3f0c97ef60ab643333df911a1ec9a160",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a post-graduate Volontariat (traineeship) explicitly focused on fundraising and marketing, and it requires demonstrated knowledge of fundraising and cultural management plus editorial experience — a comms/culture-management specialism the candidate lacks. Even setting the training-role framing aside, it sits fully outside the candidate's interest zones and demands skills that are a clear gap.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (part-time possible), 24-month fixed term",
+      "deadline": "2026-08-05",
+      "salary": "€2,450.56/month gross (year 1), €2,639.66/month (year 2)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
