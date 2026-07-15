@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T13:01:27.234323+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-15T13:31:30.309944+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -339,6 +339,23 @@
       "type": "Full-time",
       "deadline": "2026-07-31",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Trusts & Grants Manager",
+      "organisation": "Friends of the Earth",
+      "url": "https://jobs.friendsoftheearth.uk/vacancies/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Not entry-level — this is a Manager role requiring strategic direction and \"dynamic leadership\" of a team and portfolio, which the candidate's student-assistant background cannot meet. Fundraising/trusts work is also outside the core interest zones.",
+      "location": "Flexible across England, Wales and Northern Ireland (London option)",
+      "type": "Full-time (Permanent)",
+      "deadline": "10 August 2026",
+      "salary": "Regional £43,804–£45,905, or London £47,279–£49,380 per annum",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
