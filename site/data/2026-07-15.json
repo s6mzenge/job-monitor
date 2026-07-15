@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T07:01:24.756084+00:00",
-  "run_count": 15,
+  "generated_at": "2026-07-15T07:31:16.955245+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Policy Fellow Klimamigration (m/w/d)",
@@ -33,6 +33,40 @@
       "type": "Part-time (20 hrs/week)",
       "deadline": "2026-07-21",
       "salary": "€18.42/hour (TVöD E5)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikum in den Literatur- und Oralturpraktiken für die Reihe Middle Ground (m/w/d/k)",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/66033038/Praktikum-in-den-Literatur-und-Oralturpraktiken-f%C3%BCr-die-Reihe-Middle-Ground-m-w-d-k-?jobDbPVId=278915418&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an internship (Praktikum) requiring current enrolment in a humanities / arts / cultural-management programme, which is excluded as a matter of policy. It also sits outside the candidate's core interest zones, focusing on literary/cultural festival production rather than international law, security or policy research.",
+      "location": "Berlin, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-21",
+      "salary": "€603 gross per month",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Power4Just Transition Programm",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78775",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is an internship (Praktikum), which is excluded as a matter of policy regardless of fit. It also requires current enrolment or graduation within the last 6 months, further underlining the student-only nature of the post.",
+      "location": "Berlin, Eschborn (Germany)",
+      "type": "Internship",
+      "deadline": "2026-07-29",
+      "salary": "€2,349/month (brutto)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
