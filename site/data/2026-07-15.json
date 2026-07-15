@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T09:31:19.049252+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-15T10:01:33.965512+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Policy Fellow Klimamigration (m/w/d)",
@@ -152,6 +152,23 @@
       "type": "Full-time (doctoral program)",
       "deadline": "30 September 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische:r Angestellte:r im Projekt CBWNet",
+      "organisation": "IFSH",
+      "url": "https://www.ifsh.de/karriere/details/job/studentischer-angestellter-im-projekt-cbwnet-2490761",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "5",
+      "match": "low",
+      "reason": "This is explicitly a Werkstudent (working-student) role, which is excluded by policy, and it further requires enrolment at a German university, which the candidate (now at LSE) does not meet. The arms-control / peace-research subject is a perfect interest match, but the role type is a hard disqualifier.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (Werkstudent)",
+      "deadline": "2026-08-05",
+      "salary": "TV-AVH EG 2, up to 10 hours/week",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
