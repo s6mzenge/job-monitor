@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-15T22:01:36.586738+00:00",
+  "generated_at": "2026-07-15T22:31:17.828020+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 90,
-  "erroring": 1,
+  "healthy": 89,
+  "erroring": 2,
   "paused": 1,
   "methods": {
     "personio_xml": 3,
-    "html": 72,
+    "html": 71,
     "json_api": 7,
     "playwright": 6,
     "interamt": 1,
@@ -37,7 +37,6 @@
     "DGAP (Deutsche Gesellschaft für Auswärtige Politik)",
     "DGB",
     "DGVN",
-    "Die Linke Bundestagsfraktion",
     "DIW Berlin",
     "DZHW (German Centre for Higher Education Research and Science Studies)",
     "ECCHR",
@@ -125,12 +124,25 @@
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 50,
-      "last_failure": "2026-07-15T22:01:36.586738+00:00",
+      "consecutive_failures": 2,
+      "total_recent_failures": 51,
+      "last_failure": "2026-07-15T22:31:17.828020+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F"
+    },
+    {
+      "id": 154,
+      "name": "Die Linke Bundestagsfraktion",
+      "url": "https://www.dielinkebt.de/service/ausschreibungen/",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-15T22:31:17.828020+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.dielinkebt.de%2Fservice%2Fausschreibungen%2F"
     }
   ]
 }
