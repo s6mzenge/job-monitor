@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T11:01:27.334515+00:00",
-  "run_count": 23,
+  "generated_at": "2026-07-15T11:31:25.137491+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -270,6 +270,23 @@
       "location": "London",
       "type": "Full-time (Permanent)",
       "deadline": "29 July 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Policy Advisor, Trade Diplomacy, Japan",
+      "organisation": "E3G",
+      "url": "https://e3g.bamboohr.com/careers/260",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The \"Senior Policy Advisor\" title indicates a seniority level requiring several years of relevant experience the candidate does not have, which is a hard disqualifier. The focus on Japan trade diplomacy also sits outside the candidate's core interest zones and would likely favour Japan-focused expertise.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
