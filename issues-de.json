@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T13:31:20.901516+00:00",
+  "last_updated": "2026-07-15T14:01:59.814116+00:00",
   "site_summary": {
     "Die Linke": {
       "site_id": 223,
@@ -13,19 +13,6 @@
       "paused_until": "2026-07-15T21:31:24.660885+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Heinrich Böll Stiftung": {
-      "site_id": 184,
-      "url": "https://www.interamt.de/koop/app/trefferliste?partner=556",
-      "method": "interamt",
-      "consecutive_failures": 1,
-      "total_recent_failures": 21,
-      "first_recent_failure": "2026-07-03T01:01:18.371149+00:00",
-      "last_recent_failure": "2026-07-15T13:31:20.901516+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556"
     },
     "Weltfriedensdienst": {
       "site_id": 244,
