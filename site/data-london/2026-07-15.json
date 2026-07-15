@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T07:01:22.186317+00:00",
-  "run_count": 15,
+  "generated_at": "2026-07-15T07:31:24.603949+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -151,6 +151,23 @@
       "location": "Wuxi, China",
       "type": "Contract (Contractor On Demand)",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for expert Advisory Committee members, not a paid entry-level role — it seeks established experts to advise the project, which the candidate (a student without professional expertise) does not qualify as, and it appears to be a voluntary/speculative advisory position rather than a concrete paid vacancy. The human-rights subject is interesting, but the seniority/expert framing and lack of a paid role gate it out.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
