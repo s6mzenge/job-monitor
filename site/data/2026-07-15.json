@@ -1,6 +1,24 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T06:01:39.779503+00:00",
-  "run_count": 13,
-  "jobs": []
+  "generated_at": "2026-07-15T06:31:17.337346+00:00",
+  "run_count": 14,
+  "jobs": [
+    {
+      "title": "Policy Fellow Klimamigration (m/w/d)",
+      "organisation": "DGAP (Deutsche Gesellschaft für Auswärtige Politik)",
+      "url": "https://dgap.org/de/dgap/jobs/policy-fellow-klimamigration-m-w-d",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "The posting requires at least five years of relevant experience (\"Mindestens fünf Jahre einschlägige Arbeitserfahrung werden vorausgesetzt\") plus an established policy network and fundraising track record — well beyond the candidate's student-assistant background, a hard disqualifier. Although DGAP and the climate/foreign-policy security angle sit in a genuinely interesting zone, the seniority is an unmet essential.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-07-30",
+      "salary": "TVöD Bund E13 (approx.)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
