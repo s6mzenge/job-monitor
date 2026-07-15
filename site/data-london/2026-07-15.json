@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T18:01:24.543856+00:00",
-  "run_count": 37,
+  "generated_at": "2026-07-15T18:31:17.131136+00:00",
+  "run_count": 38,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -509,6 +509,23 @@
       "type": "Full-time (Fixed-term contract until 31 August 2028)",
       "deadline": "9 August 2026",
       "salary": "£43,297.57 to £50,562.57 per annum inclusive of London Allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Finance Business Partner",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Finance-Business-Partner/48722-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role names a professional accounting qualification (ACA/ACCA/CIMA or equivalent) as an essential criterion, which the candidate does not hold, and it demands technical accounting and financial-modelling expertise well outside their profile. It also sits entirely outside the candidate's research, policy and geopolitical-risk interest zones.",
+      "location": "London, GBR (Television Centre, W12 7FA)",
+      "type": "Full-time",
+      "deadline": "19 July 2026",
+      "salary": "Up to £75,000 plus £5,441 London Weighting and 15% bonus",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
