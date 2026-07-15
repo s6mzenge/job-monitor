@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T15:31:28.413247+00:00",
-  "run_count": 32,
+  "generated_at": "2026-07-15T16:01:46.484576+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -492,6 +492,23 @@
       "type": "Contract",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Fellow / Postdoctoral Researcher in Political Economy of Structural Transformation",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/913521",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The role requires a completed or near-completed PhD (\"will have, or be close to completing, a PhD\"), which the candidate does not hold — a hard disqualifier for postdoctoral positions. The subject matter (development economics, structural transformation) also sits outside the candidate's core international-law and security interests.",
+      "location": "Bloomsbury, London, United Kingdom",
+      "type": "Full-time (Fixed-term contract until 31 August 2028)",
+      "deadline": "9 August 2026",
+      "salary": "£43,297.57 to £50,562.57 per annum inclusive of London Allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
