@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T12:31:30.835691+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-15T13:01:27.234323+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -305,6 +305,40 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "68,000 - 78,000 GBP",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Process Intelligence Analyst",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Dordrecht/Process-Intelligence-Analyst_JR106663-1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role's essential requirements — expertise in BI tooling (Looker, BigQuery, Tableau/PowerBI), process mining, BPM frameworks, and Agile/Lean/Six Sigma — plus demonstrable years of experience in data science/process intelligence, are a substantial skills gap beyond the candidate's analysis-level Python/SPSS. It also sits well outside all three interest zones as an internal publishing-operations optimisation role.",
+      "location": "Dordrecht or Berlin (Hybrid)",
+      "type": "Full-time (Permanent)",
+      "deadline": "2026-08-02",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate or Senior Editor, Discover Journals",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Nanjing/Associate-or-Senior-Editor--Discover-Journals_JR106279",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The role's essential requirement is a PhD (or MS with research/publishing experience) in medicine and life science, and it is framed as a scientific/medical editorial post in a field wholly outside the candidate's background. It is a poor paper fit and sits outside all three interest zones; the level and subject-matter mismatch make it unwinnable.",
+      "location": "Nanjing, Shanghai, Beijing or Pune (Hybrid)",
+      "type": "Full-time",
+      "deadline": "2026-07-31",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
