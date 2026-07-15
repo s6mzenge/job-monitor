@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T01:31:23.465102+00:00",
-  "run_count": 4,
+  "generated_at": "2026-07-15T02:01:21.868407+00:00",
+  "run_count": 5,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -47,6 +47,23 @@
       "match": "low",
       "reason": "A \"Fellow\" role at a think-tank is a senior, experienced research position well above entry level, requiring an established policy track record the candidate lacks. The climate-development topic also sits outside the candidate's core interest zones.",
       "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Lead Auditor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Shanghai-Lead-Auditor-SH-200003/1415064233",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The \"Lead\" title signals a non-entry-level role, and it requires ISO-standards auditing qualifications and technical experience the candidate does not have. It is also entirely outside the candidate's research, policy and intelligence interest areas.",
+      "location": "Shanghai, China",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
