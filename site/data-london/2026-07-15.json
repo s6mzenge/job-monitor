@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T12:01:35.472801+00:00",
-  "run_count": 25,
+  "generated_at": "2026-07-15T12:31:30.835691+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -288,6 +288,23 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Research Fellow & Head of Organised Crime & Policing",
+      "organisation": "RUSI",
+      "url": "https://app.heyplumm.com/jobs/rusi/senior-research-fellow--head-of-organised-crime--policing/3816d3c0-7e36-4709-ba88-8405634aeb97?refer=Plumm",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "Not entry-level — a \"Senior Research Fellow & Head of\" role requiring 9 years of experience far exceeds the candidate's student-assistant background. RUSI and security research are of genuine interest, but the seniority is a hard mismatch.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "68,000 - 78,000 GBP",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
