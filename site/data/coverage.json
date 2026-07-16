@@ -1,16 +1,15 @@
 {
-  "generated_at": "2026-07-16T09:31:26.561201+00:00",
+  "generated_at": "2026-07-16T10:01:25.115507+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 91,
-  "erroring": 0,
+  "healthy": 90,
+  "erroring": 1,
   "paused": 1,
   "methods": {
     "personio_xml": 3,
     "html": 73,
     "json_api": 7,
     "playwright": 6,
-    "interamt": 1,
     "recruitee_api": 1
   },
   "healthy_names": [
@@ -54,7 +53,6 @@
     "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
     "Global Public Policy Institute",
     "Haus der Wannsee-Konferenz",
-    "Heinrich Böll Stiftung",
     "Hertie School",
     "HIS Hamburg",
     "HWR Berlin",
@@ -119,6 +117,19 @@
       "paused_until": "2026-07-18T05:31:26.538087+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
+    },
+    {
+      "id": 184,
+      "name": "Heinrich Böll Stiftung",
+      "url": "https://www.interamt.de/koop/app/trefferliste?partner=556",
+      "method": "interamt",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 22,
+      "last_failure": "2026-07-16T10:01:25.115507+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 502 Server Error: Bad Gateway for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.interamt.de%2Fkoop%2Fapp%2Ftrefferliste%3Fpartner%3D556"
     }
   ]
 }
