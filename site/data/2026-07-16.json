@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T08:31:30.185741+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-16T09:01:28.981498+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Associate Administration - Plattform #Staatsmodernisierung (gn)",
@@ -101,6 +101,40 @@
       "type": "Part-time (29.25 hours/week)",
       "deadline": "2026-08-09",
       "salary": "TVöD Entgeltgruppe 9a",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Beschäftigte/Beschäftigten in der Informationstechnik (w/m/d) im Referat Kommunikationstechnik",
+      "organisation": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/services/karriere/stellenausschreibungen/stellen/stellen/stelle-di3-613-14082026-1100690",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires as an essential a completed IT vocational qualification (Fachinformatiker/IT-Systemelektroniker or equivalent) plus at least two years' relevant network-technology experience, neither of which the candidate holds. This is a hands-on communications-technology / network-infrastructure role entirely outside the candidate's research and policy profile.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (permanent; limited part-time possible)",
+      "deadline": "2026-08-14",
+      "salary": "TVöD Entgeltgruppe 9a / Besoldungsgruppe A 9m",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Bereich Gesundheitssystemstärkung",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78784",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is explicitly an internship (Praktikum), which is excluded as a matter of policy, and it also requires current enrolment or a very recent graduation. It further seeks a public-health / pharmacy background outside the candidate's field, so it is a poor topical fit as well.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-29",
+      "salary": "€2,349/month (brutto)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
