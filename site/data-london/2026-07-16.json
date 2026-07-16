@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T15:01:34.585496+00:00",
-  "run_count": 31,
+  "generated_at": "2026-07-16T15:31:18.193502+00:00",
+  "run_count": 32,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -424,6 +424,40 @@
       "type": "Full-time",
       "deadline": "2026-08-02",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Associate, Science",
+      "organisation": "Pew Trusts",
+      "url": "https://pewtrusts.wd5.myworkdayjobs.com/job/Washington-DC-Pew-Research-Center/Research-Associate--Science_R003231",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Not entry-level — it requires 5-9 years of research experience with 3-5 years of specialized survey research, well beyond the candidate's student-assistant background, so a hard experience disqualifier applies. It also demands specialized quantitative survey/polling expertise (regression, R) and sits outside the candidate's core interest zones.",
+      "location": "Washington, DC, USA",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "$95,370 annually",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Content Producer - EXTEND",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Senior-Content-Producer-EXTEND/43722-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a \"Senior\" role whose essential criteria require proven experience as a radio producer and strong audio craft skills, none of which the candidate has — a hard mismatch on both level and skills. It is also part of the BBC Extend programme restricted to disabled applicants, and the topic falls outside all three interest zones.",
+      "location": "London, GBR (Hybrid)",
+      "type": "Fixed-term Contract, Full-time",
+      "deadline": "28 July 2026",
+      "salary": "£45,000 - £65,000",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
