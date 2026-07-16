@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T11:01:29.867939+00:00",
-  "run_count": 23,
+  "generated_at": "2026-07-16T11:31:17.879204+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -254,6 +254,23 @@
       "type": "Fixed-term Contract, Full-time (12 months)",
       "deadline": "21/07/2026",
       "salary": "Up to £60,000",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Post-doctoral Research Associate",
+      "organisation": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/job/DSG935/post-doctoral-research-associate",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "The essential Criteria 1 requires an already-completed PhD in infrastructure studies, data science or a related field, which the candidate does not hold. It also requires data-science methods (web scraping, database creation, visualisation) beyond the candidate's analysis-level Python, so the qualification and technical requirements are both unmet essentials.",
+      "location": "London (New Cross)",
+      "type": "Full-time (Fixed-Term, 36 months)",
+      "deadline": "5th August 2026",
+      "salary": "£44,753 to £49,738 per annum (advert); Grade 7 £43,036–£47,952 (PDF)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
