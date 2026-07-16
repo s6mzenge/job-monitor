@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T01:01:31.369668+00:00",
+  "generated_at": "2026-07-16T01:31:14.374049+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 90,
@@ -125,9 +125,9 @@
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 7,
-      "total_recent_failures": 56,
-      "last_failure": "2026-07-16T01:01:31.369668+00:00",
+      "consecutive_failures": 8,
+      "total_recent_failures": 57,
+      "last_failure": "2026-07-16T01:31:14.374049+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F"
