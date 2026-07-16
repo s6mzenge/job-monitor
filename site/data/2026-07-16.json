@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T07:31:26.164919+00:00",
-  "run_count": 16,
+  "generated_at": "2026-07-16T08:01:45.810397+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Associate Administration - Plattform #Staatsmodernisierung (gn)",
@@ -67,6 +67,40 @@
       "type": "Internship",
       "deadline": "2026-07-21",
       "salary": "€603 gross/month",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Bürosachbearbeitung",
+      "organisation": "bpb (Bundeszentrale f. pol. Bildung)",
+      "url": "https://www.bpb.de/die-bpb/karriere/579757/buerosachbearbeitung",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The role requires, as an essential, a completed vocational training (Berufsausbildung) as an office/administrative or events clerk, or an equivalent qualification — the candidate does not hold this and it is an administrative clerk position, not a research or policy role. The work (invoice checking, ERP payment processing, filing) is clerical and outside the candidate's interest zones.",
+      "location": "Bonn, Germany",
+      "type": "Full-time (fixed-term 1 year, part-time possible)",
+      "deadline": "2026-08-05",
+      "salary": "Entgeltgruppe 6 TVöD",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Bürosachbearbeiter (m/w/d) in der Vergabestelle in Teilzeit",
+      "organisation": "Alexander von Humboldt-Stiftung",
+      "url": "https://recruitingapp-2649.umantis.com/Vacancies/3898/Description/1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires a completed vocational training (Ausbildung) in office management / administration and specific knowledge of public procurement law (Vergaberecht) plus procurement software — essential qualifications the candidate does not hold. This is a clerical procurement administrator role with no research or policy content and no interest alignment.",
+      "location": "Bonn, Germany",
+      "type": "Part-time (29.25 hours/week)",
+      "deadline": "2026-08-09",
+      "salary": "TVöD Entgeltgruppe 9a",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
