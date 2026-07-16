@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-16T01:01:31.445207+00:00",
+  "last_updated": "2026-07-16T01:31:23.039802+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -14,18 +14,18 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "twentyfifty": {
-      "site_id": 73,
-      "url": "https://twentyfifty.co.uk/contact/opportunities/",
+    "BID (Bail for Immigration Detainees)": {
+      "site_id": 82,
+      "url": "https://www.biduk.org/articles/category/35-job-opportunities",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-07-16T01:01:31.445207+00:00",
-      "last_recent_failure": "2026-07-16T01:01:31.445207+00:00",
+      "total_recent_failures": 40,
+      "first_recent_failure": "2026-07-01T15:39:16.599790+00:00",
+      "last_recent_failure": "2026-07-16T01:31:23.039802+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.biduk.org%2Farticles%2Fcategory%2F35-job-opportunities"
     },
     "Airwars": {
       "site_id": 133,
@@ -5853,6 +5853,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-16T01:31:23.039802+00:00",
+      "site": "BID (Bail for Immigration Detainees)",
+      "site_id": 82,
+      "url": "https://www.biduk.org/articles/category/35-job-opportunities",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.biduk.org%2Farticles%2Fcategory%2F35-job-opportunities",
       "consecutive_count": 1
     }
   ]
