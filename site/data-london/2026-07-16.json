@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T14:01:54.344252+00:00",
-  "run_count": 29,
+  "generated_at": "2026-07-16T14:31:33.596208+00:00",
+  "run_count": 30,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -339,6 +339,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Policy Fellow in Sustainable Structural Transformation",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/914134",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a Grade 7 Fellow post requiring \"a proven track-record of policy work in government, think tanks, policy-focused research centres\" — a level of established professional experience the candidate, with only student-assistant/RA work, plainly lacks. It also sits outside the candidate's core zones, centring on development economics, industrial policy, energy transition and value chains rather than international law, atrocity prevention or European security.",
+      "location": "Bloomsbury, Camden, Greater London, United Kingdom",
+      "type": "Full-time (Fixed-term contract until 31 August 2029)",
+      "deadline": "2026-08-09",
+      "salary": "£43,297.57 to £50,562.57 per annum inclusive of London Allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
