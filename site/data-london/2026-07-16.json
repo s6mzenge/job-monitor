@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T09:31:39.240283+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-16T10:01:33.981025+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -186,6 +186,40 @@
       "type": "Full-time",
       "deadline": "2026-07-28",
       "salary": "£43,500–£54,500",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate or Senior Editor (Materials science and inorganic materials chemistry), Nature Communications",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Shanghai/Associate-or-Senior-Editor--Materials-science-and-inorganic-materials-chemistry---Nature-Communications_JR106710",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires a PhD in inorganic materials chemistry or materials science as an essential — a qualification and technical field the candidate does not hold and is entirely outside their expertise. Both the discipline and the doctoral requirement are hard mismatches.",
+      "location": "Shanghai, Beijing, Nanjing, Pune or New Delhi (hybrid)",
+      "type": "Full-time",
+      "deadline": "9th August 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Finance Analyst Iberia & WE",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Madrid/Finance-Analyst-Iberia---WE_JR106616",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires fluency in Spanish as an essential, which the candidate does not have, and it also asks for 2–5 years of finance/accounting experience plus GAAP/IFRS and ERP knowledge the candidate lacks. This is a specialist finance role well outside the candidate's research/policy profile and interest zones.",
+      "location": "Madrid, Spain",
+      "type": "Full-time (Permanent)",
+      "deadline": "2026-08-02",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
