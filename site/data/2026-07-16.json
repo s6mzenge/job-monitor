@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T12:31:37.211807+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-16T13:01:26.268999+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Associate Administration - Plattform #Staatsmodernisierung (gn)",
@@ -373,6 +373,23 @@
       "type": "Full-time (Teilzeit möglich)",
       "deadline": "2026-08-20",
       "salary": "EG 11 TVöD Bund",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate Student Recruitment (gn)",
+      "organisation": "Hertie School",
+      "url": "https://hertie-school.dvinci-easy.com/en/p/en/jobs/81049/associate-student-recruitment-gn-full-time-40-hoursweek",
+      "priority": 22,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "English fluency is mandatory (met) and German is only a plus, so no hard language gate, and the 2–3 years asked is framed loosely enough not to disqualify — but this is a recruitment/marketing role in the candidate's weakest area (comms, campaigns, events) with limited direct experience. It also sits outside all three core interest zones, being higher-education recruitment rather than research or policy, so it is a marginal fit worth surfacing only weakly.",
+      "location": "Berlin, Germany (implied)",
+      "type": "Full-time (12-month parental leave cover)",
+      "deadline": "31 July 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
