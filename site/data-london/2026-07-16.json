@@ -1,6 +1,24 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T01:31:23.039802+00:00",
-  "run_count": 4,
-  "jobs": []
+  "generated_at": "2026-07-16T02:01:29.943371+00:00",
+  "run_count": 5,
+  "jobs": [
+    {
+      "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for experts to join an advisory committee, not a paid entry-level role — it seeks established specialists/activists with regional expertise, not a recent graduate, and reads as a voluntary/advisory position with no vacancy for the candidate. The human-rights and securitisation subject is a strong interest match, but the level and nature of the position are a hard mismatch.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
