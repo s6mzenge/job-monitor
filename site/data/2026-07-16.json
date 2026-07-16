@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T09:01:28.981498+00:00",
-  "run_count": 19,
+  "generated_at": "2026-07-16T09:31:26.561201+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Associate Administration - Plattform #Staatsmodernisierung (gn)",
@@ -135,6 +135,23 @@
       "type": "Internship",
       "deadline": "2026-07-29",
       "salary": "€2,349/month (brutto)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Trainee Data & Information Specialist (Wissenschaftlicher Dokumentar/Informationsspezialist) (w/m/d)",
+      "organisation": "rbb (Rundfunk Berlin-Brandenburg)",
+      "url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2093/Description/1",
+      "priority": 24,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a genuine paid postgraduate traineeship (not a Werkstudent/internship exclusion) requiring a recent Master's, which the candidate will hold — level fits and the profile asks only basic Python. However, it is a library/media-documentation and archiving qualification track (MAS) that sits well outside the candidate's core interest zones and does not build on their international-law/policy research strengths, so interest and paper fit are weak.",
+      "location": "Berlin/Potsdam, Germany",
+      "type": "Full-time (2-year traineeship)",
+      "deadline": "2026-08-16",
+      "salary": "Tariff group G/Stufe 1 (plus holiday pay, family allowance, pension, transit subsidy)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
