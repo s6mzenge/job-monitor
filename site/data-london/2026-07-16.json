@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T10:31:20.176833+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-16T11:01:29.867939+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -220,6 +220,40 @@
       "type": "Full-time (Permanent)",
       "deadline": "2026-08-02",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "REACH Regulatory Manager",
+      "organisation": "ERM",
+      "url": "https://erm.wd3.myworkdayjobs.com/job/London-United-Kingdom/REACH-Regulatory-Manager_R00030859-1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Manager-level role requiring proven experience managing complex programmes and a scientific degree in chemistry/toxicology/environmental science — both essential requirements the candidate does not meet. The subject (chemicals regulatory compliance) is also outside all three interest zones.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Change Manager",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Senior-Change-Manager/48317-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Disqualified on level and qualification: it is a \"Senior\" role requiring a formal change-management certification (Prosci/APMG/CMI) and having led at least five significant change programmes — none of which the candidate has. It also sits entirely outside the candidate's research/policy interest zones.",
+      "location": "London (also Salford, Cardiff, Bristol, Edinburgh, Glasgow, Newcastle, Birmingham) – Hybrid",
+      "type": "Fixed-term Contract, Full-time (12 months)",
+      "deadline": "21/07/2026",
+      "salary": "Up to £60,000",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
