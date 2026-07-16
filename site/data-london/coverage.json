@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T00:31:44.299308+00:00",
+  "generated_at": "2026-07-16T01:01:31.445207+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 138,
@@ -90,6 +90,7 @@
     "IIED",
     "IISS",
     "Impactt",
+    "Impunity Watch",
     "INQUEST",
     "Institute for Government",
     "Institute for Strategic Dialogue (ISD)",
@@ -155,7 +156,6 @@
     "The Economist Group",
     "Tracker Group (The Sentry)",
     "Trust for London",
-    "twentyfifty",
     "Uppsala UHGS",
     "Verisk Maplecroft",
     "War on Want",
@@ -191,17 +191,17 @@
       "message": "Site paused after 16 consecutive failures"
     },
     {
-      "id": 45,
-      "name": "Impunity Watch",
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "id": 73,
+      "name": "twentyfifty",
+      "url": "https://twentyfifty.co.uk/contact/opportunities/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 2,
-      "total_recent_failures": 65,
-      "last_failure": "2026-07-16T00:31:44.299308+00:00",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-16T01:01:31.445207+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
     }
   ]
 }
