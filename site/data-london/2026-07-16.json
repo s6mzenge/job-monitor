@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T08:01:25.146720+00:00",
-  "run_count": 17,
+  "generated_at": "2026-07-16T08:31:21.109757+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -65,6 +65,23 @@
       "reason": "This is an internship, which is excluded by policy, and it additionally requires excellent written and verbal Chinese as an essential — a language the candidate does not have. The academic-publishing focus is only tangentially interesting.",
       "location": "Beijing, China",
       "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Director, Regulatory Solutions Business Analyst",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Director%2C-Regulatory-Solutions-Business-Analyst/1415632133",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Director-level title requiring deep subject-matter expertise in global financial regulation and substantial senior experience — well beyond entry-level and a hard mismatch. The role also demands specialised financial-regulatory and strong data-science/coding skills the candidate does not possess, and it sits outside the core interest zones.",
+      "location": "London, GB",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",

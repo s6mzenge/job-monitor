@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T08:01:25.146720+00:00",
+  "generated_at": "2026-07-16T08:31:21.109757+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 138,
@@ -196,9 +196,9 @@
       "url": "https://www.business-humanrights.org/en/jobs/?location=United+Kingdom",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "last_failure": "2026-07-16T08:01:25.146720+00:00",
+      "consecutive_failures": 2,
+      "total_recent_failures": 2,
+      "last_failure": "2026-07-16T08:31:21.109757+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.business-humanrights.org%2Fen%2Fjobs%2F%3Flocation%3DUnited%2BKingdom"
