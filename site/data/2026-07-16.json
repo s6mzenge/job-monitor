@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T07:01:46.792640+00:00",
-  "run_count": 15,
+  "generated_at": "2026-07-16T07:31:26.164919+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Associate Administration - Plattform #Staatsmodernisierung (gn)",
@@ -50,6 +50,23 @@
       "type": "Internship",
       "deadline": "2026-03-23",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikum in den Literatur- und Oralturpraktiken für die Reihe Middle Ground (m/w/d/k)",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/66033038/Praktikum-in-den-Literatur-und-Oralturpraktiken-f%C3%BCr-die-Reihe-Middle-Ground-m-w-d-k-?jobDbPVId=279024538&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is an internship (Praktikum) requiring current enrolment in a humanities/arts/cultural-management programme, which is excluded as a matter of policy. The literature-festival cultural-management focus also sits well outside the candidate's interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Internship",
+      "deadline": "2026-07-21",
+      "salary": "€603 gross/month",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
