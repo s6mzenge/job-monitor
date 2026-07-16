@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T11:31:17.879204+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-16T12:01:22.810133+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -271,6 +271,23 @@
       "type": "Full-time (Fixed-Term, 36 months)",
       "deadline": "5th August 2026",
       "salary": "£44,753 to £49,738 per annum (advert); Grade 7 £43,036–£47,952 (PDF)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate Director/Director, Business Relationship Management (BRM) Financial Institutions, EMEA",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Associate-DirectorDirector%2C-Business-Relationship-Management-%28BRM%29-Financial-Institutions%2C-EMEA/1415731133",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The title is Associate Director/Director — a senior, non-entry-level role requiring an established track record in debt capital markets, corporate finance or ratings, which the candidate lacks. It is also a business-development/sales function outside the candidate's research and policy focus.",
+      "location": "London, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
