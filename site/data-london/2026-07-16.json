@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T06:31:18.632668+00:00",
-  "run_count": 14,
+  "generated_at": "2026-07-16T07:01:34.604103+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -48,6 +48,23 @@
       "reason": "Requires a registered IRCA (or equivalent) Lead Auditor qualification, substantial third-party ISO auditing experience, and at least two years managing environmental/safety compliance — essentials the candidate does not meet. It is also an environmental/safety compliance auditing role wholly outside the candidate's research and policy profile and interest zones.",
       "location": "Houston, TX, US",
       "type": "Contractor On Demand",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Policy Research Intern",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Beijing/Policy-Research-Intern_JR106640-1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an internship, which is excluded by policy, and it additionally requires excellent written and verbal Chinese as an essential — a language the candidate does not have. The academic-publishing focus is only tangentially interesting.",
+      "location": "Beijing, China",
+      "type": "Internship",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
