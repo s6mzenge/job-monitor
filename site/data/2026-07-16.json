@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T10:31:17.586759+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-16T11:01:30.733099+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Associate Administration - Plattform #Staatsmodernisierung (gn)",
@@ -152,6 +152,23 @@
       "type": "Full-time (2-year traineeship)",
       "deadline": "2026-08-16",
       "salary": "Tariff group G/Stufe 1 (plus holiday pay, family allowance, pension, transit subsidy)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische*r Mitarbeiter*in im Bereich Nachlassabwicklung",
+      "organisation": "Ärzte ohne Grenzen (MSF)",
+      "url": "https://jobs.b-ite.com/jobposting/da8bdd5b88091cb1da886014311d8b6f450146d10?ref=homepage",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a studentische*r Mitarbeiter*in (working-student) role, which is excluded as a matter of policy. It is also purely administrative estate-processing work with no research or policy content aligned to the candidate's interests.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (working-student, 12-16h/week)",
+      "deadline": "2026-08-09",
+      "salary": "€15.10/hour + 13th month salary",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
