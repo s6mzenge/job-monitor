@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-16T05:01:23.444024+00:00",
+  "generated_at": "2026-07-16T05:31:26.538087+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 90,
-  "erroring": 1,
-  "paused": 1,
+  "erroring": 0,
+  "paused": 2,
   "methods": {
     "personio_xml": 3,
     "html": 72,
@@ -107,6 +107,19 @@
   ],
   "sites": [
     {
+      "id": 223,
+      "name": "Die Linke",
+      "url": "https://www.die-linke.de/partei/jobs/",
+      "method": "html",
+      "status": "paused",
+      "consecutive_failures": 16,
+      "total_recent_failures": 66,
+      "last_failure": "2026-07-16T05:31:26.538087+00:00",
+      "paused_until": "2026-07-18T05:31:26.538087+00:00",
+      "last_type": "site_paused",
+      "message": "Site paused after 16 consecutive failures"
+    },
+    {
       "id": 244,
       "name": "Weltfriedensdienst",
       "url": "https://wfd.de/ueber-uns/stellenangebote/",
@@ -118,19 +131,6 @@
       "paused_until": "2026-07-16T07:31:32.844326+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
-    },
-    {
-      "id": 223,
-      "name": "Die Linke",
-      "url": "https://www.die-linke.de/partei/jobs/",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 15,
-      "total_recent_failures": 64,
-      "last_failure": "2026-07-16T05:01:23.444024+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F"
     }
   ]
 }
