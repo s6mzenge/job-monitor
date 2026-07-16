@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T15:31:06.544246+00:00",
-  "run_count": 32,
+  "generated_at": "2026-07-16T16:01:36.020856+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Associate Administration - Plattform #Staatsmodernisierung (gn)",
@@ -424,6 +424,23 @@
       "type": "Part-time (20 hours/week, fixed-term to Nov 2027)",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Referent*in Gewerkschaftspolitik",
+      "organisation": "Rosa-Luxemburg-Stiftung",
+      "url": "https://www.rosalux.de/ausschreibung/id/55015/referentin-gewerkschaftspolitik",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The role requires solid, established knowledge of the German trade-union movement plus personal engagement/practical experience in a workplace or union and existing union contacts as essentials — a specific substantive expertise the candidate lacks, and the EG13 \"Referent*in\" profile expects experience in political education, project management and public relations beyond a student-assistant record. The topic (trade-union politics, socio-ecological transformation) also sits outside the candidate's core interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (part-time possible), fixed-term to 30.09.2028",
+      "deadline": "2026-08-10",
+      "salary": "TVöD Bund, Entgeltgruppe 13",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
