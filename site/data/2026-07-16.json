@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T11:31:26.932027+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-16T12:01:21.110508+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Associate Administration - Plattform #Staatsmodernisierung (gn)",
@@ -271,6 +271,23 @@
       "type": "Full-time (part-time possible)",
       "deadline": "2026-07-31",
       "salary": "Entgeltgruppe 13 TV-L Berliner Hochschulen",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Projektleitung (m/w/d) - ID 0002BF_2026",
+      "organisation": "Haus der Wannsee-Konferenz",
+      "url": "https://app.hrlab.de/de/jobs/gedenk-_und_bildungsstatte_hwk/11207?channel_id=1144",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "5",
+      "match": "low",
+      "reason": "This is a \"Projektleitung\" (project lead) role requiring proven experience in leading/coordinating third-party-funded projects, established knowledge of historical-political education and antisemitism-critical pedagogy, and workshop-development experience — a management-level position beyond an entry-level candidate with only student-assistant experience. Although the subject matter (Shoah education, memory politics, AI reflection tool) sits squarely in the candidate's core interests, the leadership title and multiple essential experience requirements are a hard mismatch.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (29.25h/week), fixed-term until 31.07.2028",
+      "deadline": "2026-08-10",
+      "salary": "Entgeltgruppe 13 TVöD (VKA)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
