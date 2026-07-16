@@ -1,6 +1,24 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T06:01:22.983402+00:00",
-  "run_count": 13,
-  "jobs": []
+  "generated_at": "2026-07-16T06:31:40.656760+00:00",
+  "run_count": 14,
+  "jobs": [
+    {
+      "title": "Associate Administration - Plattform #Staatsmodernisierung (gn)",
+      "organisation": "Hertie School",
+      "url": "https://hertie-school.dvinci-easy.com/en/p/en/jobs/81050/associate-administration-plattform-staatsmodernisierung-gn-part-time-20-hoursweek",
+      "priority": 33,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "An entry-accessible administrative/finance-coordination role at a reputable policy school, and the candidate's project-administration and funding-allocation experience at the German Rectors' Conference maps reasonably well; German and English requirements are met. However, this is an administrative/financial-coordination post rather than research or policy analysis, sitting outside the candidate's core interest zones, which holds the score down.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (20 hours/week), 3-year contract",
+      "deadline": "14 August 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
