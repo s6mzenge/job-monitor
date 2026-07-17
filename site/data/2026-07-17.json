@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T12:31:07.226076+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-17T13:01:12.051764+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Praktikum im Bereich Kommunikation - European Film Market",
@@ -322,6 +322,23 @@
       "type": "Full-time (part-time possible), fixed-term until 31.12.2026",
       "deadline": "2026-07-31",
       "salary": "Entgeltgruppe 13 TV-L Berliner Hochschulen",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Leitung (m/w/d/k) der Abteilung Beleuchtung",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/66166923/Leitung-m-w-d-k-der-Abteilung-Beleuchtung?jobDbPVId=279169328&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Ineligible: a department-head (\"Leitung\") role requiring a qualification as Beleuchtungsmeister*in (master lighting technician), several years in theatre lighting, and personnel-management experience — none of which the candidate has. It is also plainly senior, not entry-level, and entirely outside the candidate's research and policy field.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-09-27",
+      "salary": "TVöD 11",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
