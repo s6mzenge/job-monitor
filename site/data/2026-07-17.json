@@ -1,6 +1,41 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T06:31:05.773723+00:00",
-  "run_count": 14,
-  "jobs": []
+  "generated_at": "2026-07-17T07:01:25.618431+00:00",
+  "run_count": 15,
+  "jobs": [
+    {
+      "title": "Praktikum im Bereich Kommunikation - European Film Market",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/66146518/Praktikum-im-Bereich-Kommunikation-European-Film-Market?jobDbPVId=279107338&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is an internship (Praktikum), which is excluded by policy; it is also explicitly a mandatory/study-accompanying placement requiring current enrolment in a digital-marketing programme, neither of which the candidate meets. The comms/social-media film-market focus is also outside all core interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Internship",
+      "deadline": "2026-08-23",
+      "salary": "€603.00 gross/month",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Projektmanager:in Quartiersentwicklung (w/d/m)",
+      "organisation": "Stiftung Preußischer Kulturbesitz",
+      "url": "https://karriere.preussischer-kulturbesitz.de/jobposting/14d4aea62feacb96402246a7a34ddd36c71545f20",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires project-management experience from at least three projects or five years of relevant work, which the candidate's student-assistant background does not meet — an unmet essential experience threshold. It is also cultural/museum quarter-development work well outside the candidate's interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (Teilzeit möglich), 24-month fixed term",
+      "deadline": "2026-08-14",
+      "salary": "EG 11 TVöD Bund",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
