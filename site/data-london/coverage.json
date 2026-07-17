@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-07-17T05:31:15.628221+00:00",
+  "generated_at": "2026-07-17T06:01:11.256936+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 137,
-  "erroring": 2,
+  "healthy": 139,
+  "erroring": 0,
   "paused": 2,
   "methods": {
+    "palladium_api": 1,
     "workday_api": 7,
-    "html": 83,
+    "html": 84,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -34,6 +35,7 @@
     "Anthropic",
     "Anti-Slavery International",
     "APCO Worldwide",
+    "Asylum Aid",
     "BBC",
     "BID (Bail for Immigration Detainees)",
     "BIICL",
@@ -123,6 +125,7 @@
     "Open Rights Group",
     "Open Society Foundations",
     "Palestine Solidarity Campaign",
+    "Palladium Group",
     "Paul Hamlyn Foundation",
     "Peace Direct",
     "PEN International",
@@ -187,32 +190,6 @@
       "paused_until": "2026-07-19T01:01:09.795150+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
-    },
-    {
-      "id": 139,
-      "name": "Asylum Aid",
-      "url": "https://www.asylumaid.org.uk/who-we-are/join-us",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 8,
-      "total_recent_failures": 22,
-      "last_failure": "2026-07-17T05:31:15.628221+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.asylumaid.org.uk%2Fwho-we-are%2Fjoin-us"
-    },
-    {
-      "id": 1,
-      "name": "Palladium Group",
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 10,
-      "last_failure": "2026-07-17T05:31:15.628221+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f1028f92cc0>, 'Connection to thepalladiumgroup.com timed out. (con"
     }
   ]
 }
