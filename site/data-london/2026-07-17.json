@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T12:31:19.098537+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-17T13:01:10.879474+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Tutor",
@@ -390,6 +390,40 @@
       "type": "Full-time (Fixed-term contract until 5 April 2028)",
       "deadline": "2026-07-26",
       "salary": "£51,248.57–£60,264.57 per annum inclusive of London Allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate Lecturer in the History of Art",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/914753",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A lectureship convening MA modules and supervising dissertations effectively requires an already-completed PhD and specialist expertise in Asian/Middle Eastern art history — a field entirely outside the candidate's profile. The teaching-lead level and the art-history specialism are both hard mismatches.",
+      "location": "Bloomsbury, London, United Kingdom",
+      "type": "Part-time (0.8 FTE), Fixed term",
+      "deadline": "2026-08-02",
+      "salary": "£34,638.06 - £40,450.06 pro rata (based on 0.8 FTE)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Commissioning Editor, ELT pre-primary & primary",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Madrid/Senior-Commissioning-Editor--ELT-pre-primary---primary_JR106712",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Not entry-level — a Senior title requiring demonstrable ELT publishing experience at project leadership level and staff management (recruiting and mentoring Commissioning Editors), which the candidate lacks. The English-language-teaching publishing focus is also entirely outside the candidate's international-law and policy interests.",
+      "location": "London or Madrid (hybrid)",
+      "type": "Full-time",
+      "deadline": "2026-08-06",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
