@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-17T15:01:14.078121+00:00",
+  "generated_at": "2026-07-17T15:31:03.761850+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 138,
-  "erroring": 2,
+  "healthy": 139,
+  "erroring": 1,
   "paused": 1,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 83,
+    "html": 84,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -156,6 +156,7 @@
     "The Economist Group",
     "Tracker Group (The Sentry)",
     "Trust for London",
+    "twentyfifty",
     "Uppsala UHGS",
     "Verisk Maplecroft",
     "War on Want",
@@ -183,25 +184,12 @@
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 8,
-      "total_recent_failures": 48,
-      "last_failure": "2026-07-17T15:01:14.078121+00:00",
+      "consecutive_failures": 9,
+      "total_recent_failures": 49,
+      "last_failure": "2026-07-17T15:31:03.761850+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607"
-    },
-    {
-      "id": 73,
-      "name": "twentyfifty",
-      "url": "https://twentyfifty.co.uk/contact/opportunities/",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "last_failure": "2026-07-17T15:01:14.078121+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 520 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ftwentyfifty.co.uk%2Fcontact%2Fopportunities%2F"
     }
   ]
 }
