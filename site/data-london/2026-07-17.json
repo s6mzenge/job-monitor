@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T05:01:20.466897+00:00",
-  "run_count": 11,
+  "generated_at": "2026-07-17T05:31:15.628221+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Tutor",
@@ -64,6 +64,23 @@
       "match": "low",
       "reason": "Ineligible on multiple hard grounds: it is a \"Manager\"-level B2B sales role requiring at least 2 years of demonstrable sales-target experience the candidate lacks, and it requires fluency in a business language of the base region (Chinese) beyond German/English. Account management and revenue-driven sales are also outside the candidate's research/policy profile and interests.",
       "location": "Shenzhen, China",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Junior Assessor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Junior-Assessor-400-093/1416033133",
+      "priority": 8,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a junior compliance auditor / assessor role (training toward CSCA certification) in supply-chain assurance — it does not require prior qualifications the candidate lacks, so it clears the eligibility gate, but it is a poor paper fit for a research- and policy-oriented profile with no auditing background. The field sits entirely outside the candidate's three interest zones, and the certification-and-retention structure signals an operational assurance career, not policy or intelligence research.",
+      "location": "Mumbai, India",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
