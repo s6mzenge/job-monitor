@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T03:31:31.389295+00:00",
+  "generated_at": "2026-07-17T04:01:24.682658+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 137,
@@ -195,9 +195,9 @@
       "url": "https://www.asylumaid.org.uk/who-we-are/join-us",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 4,
-      "total_recent_failures": 18,
-      "last_failure": "2026-07-17T03:31:31.389295+00:00",
+      "consecutive_failures": 5,
+      "total_recent_failures": 19,
+      "last_failure": "2026-07-17T04:01:24.682658+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.asylumaid.org.uk%2Fwho-we-are%2Fjoin-us"
@@ -208,9 +208,9 @@
       "url": "https://www.impunitywatch.org/join-us/join-our-team/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 69,
-      "last_failure": "2026-07-17T03:31:31.389295+00:00",
+      "consecutive_failures": 2,
+      "total_recent_failures": 70,
+      "last_failure": "2026-07-17T04:01:24.682658+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
