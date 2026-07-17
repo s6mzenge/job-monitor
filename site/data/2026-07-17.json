@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T14:31:10.893832+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-17T15:01:21.314076+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Praktikum im Bereich Kommunikation - European Film Market",
@@ -356,6 +356,23 @@
       "type": "Part-time (Student Assistant)",
       "deadline": "2026-07-30",
       "salary": "€15.10/hour + 13th monthly salary",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentischer Mitarbeiter (m/w/d) Brand & Insights",
+      "organisation": "WWF Deutschland",
+      "url": "https://www.wwf.de/ueber-uns/stellenangebote/stellenangebot/stelle/studentischer-mitarbeiter-m-w-d-brand-insights-qs0ur0m1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is explicitly a Werkstudent (working-student) role, which is excluded as a matter of policy. It is also a marketing/brand-insights role outside the candidate's interest zones and requires current enrolment in a marketing-related programme.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (Werkstudent, 20h/week)",
+      "deadline": "2026-06-09",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
