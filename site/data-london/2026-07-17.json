@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T12:01:23.953204+00:00",
-  "run_count": 25,
+  "generated_at": "2026-07-17T12:31:19.098537+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Tutor",
@@ -373,6 +373,23 @@
       "type": "Full-time (Fixed-term contract)",
       "deadline": "2026-08-02",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Lecturer in History of Art (Ed Route) – INTERNAL",
+      "organisation": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/job/914679",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a Lecturer post that requires teaching, convening modules and supervising MA dissertations in Asian and Middle Eastern art history — a specialist academic teaching role that effectively requires a completed PhD and subject expertise the candidate does not have. It is also explicitly INTERNAL and not entry-level, and the subject falls entirely outside the candidate's interest zones.",
+      "location": "Bloomsbury, London, United Kingdom",
+      "type": "Full-time (Fixed-term contract until 5 April 2028)",
+      "deadline": "2026-07-26",
+      "salary": "£51,248.57–£60,264.57 per annum inclusive of London Allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
