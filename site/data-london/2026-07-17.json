@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T13:31:12.611107+00:00",
-  "run_count": 28,
+  "generated_at": "2026-07-17T14:01:50.342805+00:00",
+  "run_count": 29,
   "jobs": [
     {
       "title": "Tutor",
@@ -474,6 +474,23 @@
       "location": "London",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Publishing Intern",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Madrid/Publishing-Intern_JR106677",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is explicitly an internship for a current student (\"estudiante en prácticas\"), which is excluded as a matter of policy. It also targets philology/design/education profiles with editorial and InDesign/graphic-production skills outside the candidate's focus.",
+      "location": "Madrid, Spain",
+      "type": "Internship",
+      "deadline": "29th July 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
