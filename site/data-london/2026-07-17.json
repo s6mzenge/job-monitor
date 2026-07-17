@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T03:01:23.466132+00:00",
-  "run_count": 7,
+  "generated_at": "2026-07-17T03:31:31.389295+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Tutor",
@@ -49,6 +49,23 @@
       "location": "Not specified",
       "type": "Not specified (Advisory Committee / expert appointment)",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Strategic Account Manager",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Strategic-Account-Manager-511464/1395337133",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Ineligible on multiple hard grounds: it is a \"Manager\"-level B2B sales role requiring at least 2 years of demonstrable sales-target experience the candidate lacks, and it requires fluency in a business language of the base region (Chinese) beyond German/English. Account management and revenue-driven sales are also outside the candidate's research/policy profile and interests.",
+      "location": "Shenzhen, China",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
