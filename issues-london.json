@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-17T02:01:26.187647+00:00",
+  "last_updated": "2026-07-17T02:31:03.510527+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -13,19 +13,6 @@
       "paused_until": "2026-07-17T11:01:27.334515+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Impunity Watch": {
-      "site_id": 45,
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 68,
-      "first_recent_failure": "2026-07-02T10:31:03.695349+00:00",
-      "last_recent_failure": "2026-07-17T02:01:26.187647+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
     },
     "Airwars": {
       "site_id": 133,
@@ -44,10 +31,10 @@
       "site_id": 139,
       "url": "https://www.asylumaid.org.uk/who-we-are/join-us",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 15,
+      "consecutive_failures": 2,
+      "total_recent_failures": 16,
       "first_recent_failure": "2026-07-07T20:31:31.870224+00:00",
-      "last_recent_failure": "2026-07-17T02:01:26.187647+00:00",
+      "last_recent_failure": "2026-07-17T02:31:03.510527+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -6148,6 +6135,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.asylumaid.org.uk%2Fwho-we-are%2Fjoin-us",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-17T02:31:03.510527+00:00",
+      "site": "Asylum Aid",
+      "site_id": 139,
+      "url": "https://www.asylumaid.org.uk/who-we-are/join-us",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.asylumaid.org.uk%2Fwho-we-are%2Fjoin-us",
+      "consecutive_count": 2
     }
   ]
 }
