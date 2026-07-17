@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T06:31:16.831029+00:00",
-  "run_count": 14,
+  "generated_at": "2026-07-17T07:01:24.840396+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Tutor",
@@ -84,6 +84,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Software Engineer",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Senior-Software-Engineer/47558-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a senior, deep-technical software-engineering role whose essential requirements (extensive experience building scalable systems, AWS cloud architecture, IaC, CI/CD, production data pipelines) are far beyond the candidate's analysis-level Python — a hard ML/software-engineering disqualifier. The \"Senior\" title and demand for extensive experience also fail the entry-level gate. Location is London, but that is irrelevant given the hard mismatch.",
+      "location": "London, GBR",
+      "type": "Full-time",
+      "deadline": "29 July 2026",
+      "salary": "£60,200 - £73,365 plus London Weighting",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
