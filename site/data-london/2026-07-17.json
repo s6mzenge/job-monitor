@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T17:01:18.916121+00:00",
-  "run_count": 35,
+  "generated_at": "2026-07-17T17:31:06.067692+00:00",
+  "run_count": 36,
   "jobs": [
     {
       "title": "Tutor",
@@ -577,6 +577,23 @@
       "type": "Full-time (Permanent)",
       "deadline": "2026-08-18",
       "salary": "£65,600–£82,000",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Program Manager, MENA",
+      "organisation": "Open Society Foundations",
+      "url": "https://osfglobal.wd5.myworkdayjobs.com/job/Amman/Program-Manager_JR-0003835",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "Two hard disqualifiers apply: the role requires excellent Arabic (spoken and written) as an essential, which the candidate does not have, and it is a \"Manager\" role requiring multiple years of subject-matter and grantmaking experience the candidate lacks. The human-rights/civil-society field is of some interest, but the qualification and level are unmet essentials.",
+      "location": "Amman, Jordan",
+      "type": "Full-time (Indefinite Term)",
+      "deadline": "2026-08-14",
+      "salary": "Not specified (\"Competitive rates of pay apply\")",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
