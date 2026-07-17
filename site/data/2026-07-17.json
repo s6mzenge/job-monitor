@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T07:01:25.618431+00:00",
-  "run_count": 15,
+  "generated_at": "2026-07-17T07:31:08.846116+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Praktikum im Bereich Kommunikation - European Film Market",
@@ -33,6 +33,23 @@
       "type": "Full-time (Teilzeit möglich), 24-month fixed term",
       "deadline": "2026-08-14",
       "salary": "EG 11 TVöD Bund",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikum im Bereich Screening - European Film Market",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/66148213/Praktikum-im-Bereich-Screening-European-Film-Market?jobDbPVId=279112023&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is an internship (Praktikum) explicitly restricted to currently enrolled students completing a mandatory/study-accompanying placement in film/media studies or cultural management — excluded by policy as an internship and outside the candidate's field. The subject matter is unrelated to any of the candidate's interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Internship",
+      "deadline": "2026-08-23",
+      "salary": "€603.00 gross/month",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
