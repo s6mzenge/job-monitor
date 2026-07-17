@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T13:01:12.051764+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-17T13:31:17.570447+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Praktikum im Bereich Kommunikation - European Film Market",
@@ -339,6 +339,23 @@
       "type": "Full-time",
       "deadline": "2026-09-27",
       "salary": "TVöD 11",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Student Assistant - AI & Data Solutions",
+      "organisation": "Ärzte ohne Grenzen (MSF)",
+      "url": "https://jobs.b-ite.com/jobposting/eedab702f2a8ae3f95d801689ede9fe9451966410?ref=homepage",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a student-assistant role explicitly requiring ongoing enrolment, which is an excluded working-student-type position under policy. It also asks for a technical/analytical field of study with hands-on AI and ETL experience beyond the candidate's analysis-level Python, but the student-assistant status alone is the hard disqualifier.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (Student Assistant)",
+      "deadline": "2026-07-30",
+      "salary": "€15.10/hour + 13th monthly salary",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
