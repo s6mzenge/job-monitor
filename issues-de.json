@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-17T23:01:09.578118+00:00",
+  "last_updated": "2026-07-17T23:31:04.654204+00:00",
   "site_summary": {
     "Die Linke": {
       "site_id": 223,
@@ -13,19 +13,6 @@
       "paused_until": "2026-07-18T05:31:26.538087+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Uni Hamburg (Stellenangebote)": {
-      "site_id": 230,
-      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 111,
-      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
-      "last_recent_failure": "2026-07-17T23:01:09.578118+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
