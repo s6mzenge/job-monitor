@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T09:01:24.372461+00:00",
-  "run_count": 19,
+  "generated_at": "2026-07-17T09:31:18.004811+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Tutor",
@@ -101,6 +101,23 @@
       "type": "Full-time",
       "deadline": "29 July 2026",
       "salary": "£60,200 - £73,365 plus London Weighting",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Assistant Programme Manager - A Fairer Start",
+      "organisation": "Nesta",
+      "url": "https://www.nesta.org.uk/jobs/assistant-programme-manager-a-fairer-start-afs/",
+      "priority": 34,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an administrative / project-coordination role rather than a research or analysis post; the candidate's project-administration experience at the German Rectors' Conference is relevant, but the emphasis on programme-management skills and coordinating others is a partial fit and not the candidate's strongest offering. The child-disadvantage / social-innovation subject sits outside all three core interest zones, so interest pull is low. Eligible and London-based, but a weak overall match.",
+      "location": "Blackfriars, London (hybrid)",
+      "type": "Full-time (Permanent, 37.5 hours)",
+      "deadline": "3 Aug 2026",
+      "salary": "Circa £40,000 plus benefits",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
