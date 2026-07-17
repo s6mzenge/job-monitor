@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T09:31:22.958872+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-17T10:01:15.767623+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Praktikum im Bereich Kommunikation - European Film Market",
@@ -220,6 +220,23 @@
       "type": "Internship",
       "deadline": "Not specified (apply ~6 months ahead; batches from 10 Dec and 10 Jun)",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Sachbearbeiter*in (w/m/d) für den Arbeitskreis IV „Recht, Demokratie & Antifaschismus\" (29,25 Wochenstunden)",
+      "organisation": "Die Linke Bundestagsfraktion",
+      "url": "https://www.dielinkebt.de/service/ausschreibungen/detail/sachbearbeiterin-w-m-d-fuer-den-arbeitskreis-iv-recht-demokratie-antifaschismus-2925-wochen",
+      "priority": 34,
+      "eligible": true,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is largely an administrative/organisational officer role — meeting preparation, budget administration, financial documentation, event organisation and public-relations support — rather than a research or policy-analysis post, so it only partly matches the candidate's research-writing strengths and leans on comms/events/finance-admin experience they have limited exposure to. The \"Recht, Demokratie & Antifaschismus\" thematic angle is adjacent to the candidate's interests but the work itself is coordination-heavy, and identification with Die Linke's political goals is a required condition. Eligible and entry-level, but a modest fit.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (29.25 hours/week; fixed-term for the 21st legislative period)",
+      "deadline": "2026-08-09",
+      "salary": "TVöD/Bund, comparable to EG 9c",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
