@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T17:31:06.067692+00:00",
-  "run_count": 36,
+  "generated_at": "2026-07-17T18:01:15.858954+00:00",
+  "run_count": 37,
   "jobs": [
     {
       "title": "Tutor",
@@ -594,6 +594,23 @@
       "type": "Full-time (Indefinite Term)",
       "deadline": "2026-08-14",
       "salary": "Not specified (\"Competitive rates of pay apply\")",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Sales Representative",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Bogota/Senior-Sales-Representative_JR106630-1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Ineligible on multiple hard grounds: a \"Senior\" sales title requiring an essential minimum of 3 years' proven sales experience and team supervision/leadership, plus the role is conducted in Spanish (which the candidate does not speak). It also demands residence in Bogotá with a personal car and full commercial sales skills — none of which match the candidate's research profile.",
+      "location": "Bogotá, Colombia",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
