@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T11:31:24.014075+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-17T12:01:23.953204+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Tutor",
@@ -339,6 +339,40 @@
       "type": "Full-time",
       "deadline": "2026-08-05",
       "salary": "£43,277 to £51,714 pa inclusive (progression to £55,497)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wellbeing Adviser",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/1111/0/471872/15539/wellbeing-adviser",
+      "priority": 12,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Eligible on a technicality — the role asks for roughly two years in a relevant role plus experience with mental-health support and delivering workshops/trainings, none of which the candidate has (student-assistant and research work do not fit a non-therapeutic wellbeing/triage role). It also sits entirely outside the candidate's research/policy/intelligence interest zones, so it is a poor fit on nearly every axis despite being London-based and paid.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "2nd August 2026",
+      "salary": "£36,513 to £41,565 pa (progression to £44,468) inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Finance Manager (MRPA) - Education (FTC)",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/London/Senior-Finance-Manager--MRPA----Education--FTC-_JR106683",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires a qualified accountant (ACA/ACMA/ACCA/CIMA) plus significant post-qualification finance experience and a Senior Manager level — all essentials the candidate does not hold. The role is also outside every interest zone.",
+      "location": "London",
+      "type": "Full-time (Fixed-term contract)",
+      "deadline": "2026-08-02",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
