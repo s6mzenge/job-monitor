@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T08:01:10.790150+00:00",
-  "run_count": 17,
+  "generated_at": "2026-07-17T08:31:16.173860+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Praktikum im Bereich Kommunikation - European Film Market",
@@ -82,6 +82,23 @@
       "reason": "The role is an internal customer-service / administrative position in academic publishing rather than a research or policy role, so it offers weak paper fit against the candidate's research and analytical strengths. Academic publishing is tangentially adjacent to the candidate's interest in scholarly work, but this operational function sits well outside all three core interest zones and offers little to draw on.",
       "location": "Not specified",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Grafikdesigner (m/w/d) mit Schwerpunkt Infografiken & Datenvisualisierung",
+      "organisation": "Table.Briefings",
+      "url": "https://tablemedia.jobs.personio.de/job/2715417",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a graphic-design role requiring a degree in communication/graphic/media design, a portfolio of design work, and strong Adobe Creative Suite skills — all essential requirements the candidate plainly lacks. It falls entirely outside the candidate's research/policy profile and interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
