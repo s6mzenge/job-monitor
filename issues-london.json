@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18T05:31:19.021812+00:00",
+  "last_updated": "2026-07-18T06:01:14.792393+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -13,19 +13,6 @@
       "paused_until": "2026-07-19T19:01:08.849204+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "APCO Worldwide": {
-      "site_id": 51,
-      "url": "https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/jobs?location=London%2C+United+Kingdom&locationId=300000049375956&locationLevel=city&mode=location&radius=25&radiusUnit=MI",
-      "method": "oracle_hcm_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-07-18T05:31:19.021812+00:00",
-      "last_recent_failure": "2026-07-18T05:31:19.021812+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Oracle HCM API: 503 Server Error: Service Unavailable for url: https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_2001,facetsList=LOCATIONS%3BCATEGORIES%3BPOSTING_DATES,limit=25,locationId=300000049375956,radius=25,radiusUnit=MI,sortBy=POSTING_DATES_DESC"
     },
     "Airwars": {
       "site_id": 133,
@@ -6665,6 +6652,38 @@
       "method": "html",
       "type": "llm_call_failed",
       "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd8yYpgWYqHdfTJHDwyU1\"}",
+      "scope": "page_level"
+    },
+    {
+      "timestamp": "2026-07-18T06:01:14.792393+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd91q5DJjTtUVnQebTYmn\"}",
+      "job_title": "Nuclear Equipment Surveyor - Contractor",
+      "job_url": "https://jobs.lrqa.com/job/Birmingham-Nuclear-Equipment-Surveyor-Contractor/1240668901"
+    },
+    {
+      "timestamp": "2026-07-18T06:01:14.792393+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd91q5wD3Xd6fuw8gEsBG\"}",
+      "job_title": "Auditor Information Security Netherlands",
+      "job_url": "https://jobs.lrqa.com/job/Rotterdam-Auditor-Information-Security-Netherlands-3068-AX/1376824433"
+    },
+    {
+      "timestamp": "2026-07-18T06:01:14.792393+00:00",
+      "site": "Rights & Security International",
+      "site_id": 141,
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd91q6g7Gr89d3CCT4eRq\"}",
       "scope": "page_level"
     }
   ]
