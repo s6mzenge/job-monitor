@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-07-18T05:01:12.266716+00:00",
+  "last_updated": "2026-07-18T05:31:05.961514+00:00",
   "site_summary": {
-    "Kulturgutverluste": {
-      "site_id": 222,
-      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-07-02T16:31:06.772012+00:00",
-      "last_recent_failure": "2026-07-18T05:01:12.266716+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
-    },
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
@@ -26,19 +13,6 @@
       "paused_until": "2026-07-18T05:31:26.538087+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Uni Hamburg (Stellenangebote)": {
-      "site_id": 230,
-      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 112,
-      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
-      "last_recent_failure": "2026-07-18T05:01:12.266716+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
