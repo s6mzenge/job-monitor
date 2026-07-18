@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-07-18T21:31:07.276350+00:00",
+  "generated_at": "2026-07-18T22:01:22.307567+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 138,
   "erroring": 1,
   "paused": 2,
   "methods": {
+    "palladium_api": 1,
     "workday_api": 7,
-    "html": 84,
+    "html": 83,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -89,7 +90,6 @@
     "IIED",
     "IISS",
     "Impactt",
-    "Impunity Watch",
     "INQUEST",
     "Institute for Government",
     "Institute for Strategic Dialogue (ISD)",
@@ -124,6 +124,7 @@
     "Open Rights Group",
     "Open Society Foundations",
     "Palestine Solidarity Campaign",
+    "Palladium Group",
     "Paul Hamlyn Foundation",
     "Peace Direct",
     "PEN International",
@@ -190,17 +191,17 @@
       "message": "Site paused after 16 consecutive failures"
     },
     {
-      "id": 1,
-      "name": "Palladium Group",
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
+      "id": 45,
+      "name": "Impunity Watch",
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 12,
-      "last_failure": "2026-07-18T21:31:07.276350+00:00",
+      "total_recent_failures": 79,
+      "last_failure": "2026-07-18T22:01:22.307567+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f5981ec8e90>, 'Connection to thepalladiumgroup.com timed out. (con"
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
     }
   ]
 }
