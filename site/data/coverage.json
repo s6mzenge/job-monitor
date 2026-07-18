@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-18T08:01:04.975214+00:00",
+  "generated_at": "2026-07-18T08:31:05.584237+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 90,
-  "erroring": 2,
+  "healthy": 91,
+  "erroring": 1,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
-    "html": 72,
+    "html": 73,
     "json_api": 7,
     "playwright": 6,
     "interamt": 1,
@@ -63,6 +63,7 @@
     "IFSH",
     "Institut Solidarische Moderne",
     "IPPNW",
+    "Kulturgutverluste",
     "Kulturveranstaltungen des Bundes (KBB)",
     "Leibniz-Zentrum Moderner Orient (ZMO)",
     "linksjugend solid",
@@ -112,25 +113,12 @@
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 5,
-      "total_recent_failures": 71,
-      "last_failure": "2026-07-18T08:01:04.975214+00:00",
+      "consecutive_failures": 6,
+      "total_recent_failures": 72,
+      "last_failure": "2026-07-18T08:31:05.584237+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F"
-    },
-    {
-      "id": 222,
-      "name": "Kulturgutverluste",
-      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 4,
-      "last_failure": "2026-07-18T08:01:04.975214+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
     }
   ]
 }

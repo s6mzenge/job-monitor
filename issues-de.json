@@ -1,27 +1,14 @@
 {
-  "last_updated": "2026-07-18T08:01:04.975214+00:00",
+  "last_updated": "2026-07-18T08:31:05.584237+00:00",
   "site_summary": {
-    "Kulturgutverluste": {
-      "site_id": 222,
-      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 4,
-      "first_recent_failure": "2026-07-02T16:31:06.772012+00:00",
-      "last_recent_failure": "2026-07-18T08:01:04.975214+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
-    },
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
-      "consecutive_failures": 5,
-      "total_recent_failures": 71,
+      "consecutive_failures": 6,
+      "total_recent_failures": 72,
       "first_recent_failure": "2026-06-28T21:07:23.784674+00:00",
-      "last_recent_failure": "2026-07-18T08:01:04.975214+00:00",
+      "last_recent_failure": "2026-07-18T08:31:05.584237+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -4396,6 +4383,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
       "consecutive_count": 5
+    },
+    {
+      "timestamp": "2026-07-18T08:31:05.584237+00:00",
+      "site": "Die Linke",
+      "site_id": 223,
+      "url": "https://www.die-linke.de/partei/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
+      "consecutive_count": 6
     }
   ]
 }
