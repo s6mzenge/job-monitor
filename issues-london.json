@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18T12:31:05.070210+00:00",
+  "last_updated": "2026-07-18T13:01:10.363111+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -13,6 +13,19 @@
       "paused_until": "2026-07-19T19:01:08.849204+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "SOAS University of London": {
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 20,
+      "first_recent_failure": "2026-06-29T07:01:15.912367+00:00",
+      "last_recent_failure": "2026-07-18T13:01:10.363111+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://vacancies.soas.ac.uk/#vacancies\", waiting until \"domcontentloaded\""
     },
     "Airwars": {
       "site_id": 133,
@@ -7496,6 +7509,59 @@
       "method": "html",
       "type": "llm_call_failed",
       "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd9XZN4NNcwBbQvvcJrZD\"}",
+      "scope": "page_level"
+    },
+    {
+      "timestamp": "2026-07-18T13:01:10.363111+00:00",
+      "site": "SOAS University of London",
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://vacancies.soas.ac.uk/#vacancies\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-18T13:01:10.363111+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd9ZrwKKoAmMYPjJsrBHL\"}",
+      "job_title": "Nuclear Equipment Surveyor - Contractor",
+      "job_url": "https://jobs.lrqa.com/job/Birmingham-Nuclear-Equipment-Surveyor-Contractor/1240668901"
+    },
+    {
+      "timestamp": "2026-07-18T13:01:10.363111+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd9ZrwuoAiM64vtHtbAmP\"}",
+      "job_title": "Auditor Information Security Netherlands",
+      "job_url": "https://jobs.lrqa.com/job/Rotterdam-Auditor-Information-Security-Netherlands-3068-AX/1376824433"
+    },
+    {
+      "timestamp": "2026-07-18T13:01:10.363111+00:00",
+      "site": "LSE (internal)",
+      "site_id": 110,
+      "url": "https://jobs.lse.ac.uk/V2/Vacancy/Index?enc=glU2uxu77sbA0Vjt6JCQD0plJN6KBxTggSjROblEqRK0i39EXHi3KwQ464+7Oko3O4iakm36tKYVifZl5chR1nW72+6IIACSarRLg3CoJ8g=",
+      "method": "engage_ats",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd9ZrxVGf4m1FYgpab8Q5\"}",
+      "job_title": "Finance and Operations Manager",
+      "job_url": "https://jobs.lse.ac.uk/Vacancies/I/3671/0/471927/15539/finance-and-operations-manager"
+    },
+    {
+      "timestamp": "2026-07-18T13:01:10.363111+00:00",
+      "site": "Rights & Security International",
+      "site_id": 141,
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd9ZryRKuoZ8mrRK9rkji\"}",
       "scope": "page_level"
     }
   ]
