@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-18T05:01:11.332425+00:00",
+  "generated_at": "2026-07-18T05:31:19.021812+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 139,
-  "erroring": 0,
+  "healthy": 138,
+  "erroring": 1,
   "paused": 2,
   "methods": {
     "palladium_api": 1,
@@ -15,9 +15,9 @@
     "taleo_rss": 1,
     "pinpoint_api": 3,
     "playwright": 12,
-    "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
+    "oracle_hcm_api": 1,
     "engage_ats": 1,
     "bamboohr_api": 3,
     "recruitee_api": 2,
@@ -34,7 +34,6 @@
     "Anthesis Group",
     "Anthropic",
     "Anti-Slavery International",
-    "APCO Worldwide",
     "Asylum Aid",
     "BBC",
     "BID (Bail for Immigration Detainees)",
@@ -190,6 +189,19 @@
       "paused_until": "2026-07-19T01:01:09.795150+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
+    },
+    {
+      "id": 51,
+      "name": "APCO Worldwide",
+      "url": "https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/jobs?location=London%2C+United+Kingdom&locationId=300000049375956&locationLevel=city&mode=location&radius=25&radiusUnit=MI",
+      "method": "oracle_hcm_api",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-18T05:31:19.021812+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Oracle HCM API: 503 Server Error: Service Unavailable for url: https://fa-evxv-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumbe"
     }
   ]
 }
