@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T13:01:10.363111+00:00",
+  "generated_at": "2026-07-18T13:31:02.484039+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 138,
@@ -137,7 +137,6 @@
     "Public Law Project",
     "RAND Europe",
     "REDRESS",
-    "Reprieve",
     "Resolution Foundation",
     "Rights & Security International",
     "Rights for Peace",
@@ -150,6 +149,7 @@
     "ShareAction",
     "Sibylline",
     "Sigrid Rausing Trust",
+    "SOAS University of London",
     "Springer Nature",
     "Teneo",
     "The Economist Group",
@@ -191,14 +191,14 @@
       "message": "Site paused after 16 consecutive failures"
     },
     {
-      "id": 34,
-      "name": "SOAS University of London",
-      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "id": 58,
+      "name": "Reprieve",
+      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
       "method": "playwright",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 20,
-      "last_failure": "2026-07-18T13:01:10.363111+00:00",
+      "total_recent_failures": 9,
+      "last_failure": "2026-07-18T13:31:02.484039+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
