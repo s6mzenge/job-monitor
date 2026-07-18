@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-07-18T04:31:02.679944+00:00",
+  "last_updated": "2026-07-18T05:01:11.332425+00:00",
   "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 11,
-      "first_recent_failure": "2026-06-29T10:31:23.026711+00:00",
-      "last_recent_failure": "2026-07-18T04:31:02.679944+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7fdfa2897b60>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=8)'))"
-    },
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
@@ -6602,6 +6589,28 @@
       "type": "llm_call_failed",
       "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd8txEeTn5ccjfJFomWXM\"}",
       "scope": "page_level"
+    },
+    {
+      "timestamp": "2026-07-18T05:01:11.332425+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd8wFEvHu6TFT54DCD549\"}",
+      "job_title": "Nuclear Equipment Surveyor - Contractor",
+      "job_url": "https://jobs.lrqa.com/job/Birmingham-Nuclear-Equipment-Surveyor-Contractor/1240668901"
+    },
+    {
+      "timestamp": "2026-07-18T05:01:11.332425+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd8wFFSJGZBqdZ8U5gqvQ\"}",
+      "job_title": "Auditor Information Security Netherlands",
+      "job_url": "https://jobs.lrqa.com/job/Rotterdam-Auditor-Information-Security-Netherlands-3068-AX/1376824433"
     }
   ]
 }
