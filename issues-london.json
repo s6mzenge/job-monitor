@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18T03:31:11.101597+00:00",
+  "last_updated": "2026-07-18T04:01:04.250671+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -6523,6 +6523,28 @@
       "method": "html",
       "type": "llm_call_failed",
       "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd8pPWaHRwYrwYZB8Rp5R\"}",
+      "job_title": "Auditor Information Security Netherlands",
+      "job_url": "https://jobs.lrqa.com/job/Rotterdam-Auditor-Information-Security-Netherlands-3068-AX/1376824433"
+    },
+    {
+      "timestamp": "2026-07-18T04:01:04.250671+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd8rehZEUmHdqB72sBGc2\"}",
+      "job_title": "Nuclear Equipment Surveyor - Contractor",
+      "job_url": "https://jobs.lrqa.com/job/Birmingham-Nuclear-Equipment-Surveyor-Contractor/1240668901"
+    },
+    {
+      "timestamp": "2026-07-18T04:01:04.250671+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd8rei5z7v3YnCyUnyam1\"}",
       "job_title": "Auditor Information Security Netherlands",
       "job_url": "https://jobs.lrqa.com/job/Rotterdam-Auditor-Information-Security-Netherlands-3068-AX/1376824433"
     }
