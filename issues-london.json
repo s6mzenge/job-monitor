@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18T14:31:02.170423+00:00",
+  "last_updated": "2026-07-18T15:01:04.610627+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -7678,6 +7678,49 @@
       "method": "html",
       "type": "llm_call_failed",
       "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd9ghswz1PTEJaynzVURW\"}",
+      "scope": "page_level"
+    },
+    {
+      "timestamp": "2026-07-18T15:01:04.610627+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd9izi8qcQT9386YbUEF7\"}",
+      "job_title": "Nuclear Equipment Surveyor - Contractor",
+      "job_url": "https://jobs.lrqa.com/job/Birmingham-Nuclear-Equipment-Surveyor-Contractor/1240668901"
+    },
+    {
+      "timestamp": "2026-07-18T15:01:04.610627+00:00",
+      "site": "LRQA",
+      "site_id": 70,
+      "url": "https://jobs.lrqa.com/search/?q=&locationsearch=London",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd9iziq1S3BpJCaKoQKDR\"}",
+      "job_title": "Auditor Information Security Netherlands",
+      "job_url": "https://jobs.lrqa.com/job/Rotterdam-Auditor-Information-Security-Netherlands-3068-AX/1376824433"
+    },
+    {
+      "timestamp": "2026-07-18T15:01:04.610627+00:00",
+      "site": "LSE (internal)",
+      "site_id": 110,
+      "url": "https://jobs.lse.ac.uk/V2/Vacancy/Index?enc=glU2uxu77sbA0Vjt6JCQD0plJN6KBxTggSjROblEqRK0i39EXHi3KwQ464+7Oko3O4iakm36tKYVifZl5chR1nW72+6IIACSarRLg3CoJ8g=",
+      "method": "engage_ats",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd9izjYBHfyYACvVyXfLo\"}",
+      "job_title": "Finance and Operations Manager",
+      "job_url": "https://jobs.lse.ac.uk/Vacancies/I/3671/0/471927/15539/finance-and-operations-manager"
+    },
+    {
+      "timestamp": "2026-07-18T15:01:04.610627+00:00",
+      "site": "Rights & Security International",
+      "site_id": 141,
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "method": "html",
+      "type": "llm_call_failed",
+      "message": "Anthropic API: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cd9izkCcDL1MCYgkJBFRS\"}",
       "scope": "page_level"
     }
   ]
