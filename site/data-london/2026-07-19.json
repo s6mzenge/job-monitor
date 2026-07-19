@@ -1,7 +1,7 @@
 {
   "date": "2026-07-19",
-  "generated_at": "2026-07-19T06:31:02.047287+00:00",
-  "run_count": 14,
+  "generated_at": "2026-07-19T07:01:21.481385+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -49,6 +49,23 @@
       "location": "Not specified",
       "type": "Not specified (Advisory Committee / expert appointment)",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Programme Officer- Maternity Cover",
+      "organisation": "Medical Aid for Palestinians",
+      "url": "https://careers.map.org.uk/en/postings/650c51e5-2010-411a-8a7c-815ef4fefca5",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "Location policy is London only, and this role is onsite in Gaza with no London or remote option, which is a hard filter. The disability-inclusion healthcare programme work also sits outside the candidate's core zones.",
+      "location": "Gaza, PS",
+      "type": "Fixed Term - Full Time",
+      "deadline": "July 24, 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
