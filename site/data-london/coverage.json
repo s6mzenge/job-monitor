@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-19T01:01:12.636042+00:00",
+  "generated_at": "2026-07-19T01:31:03.770487+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 139,
-  "erroring": 1,
+  "healthy": 138,
+  "erroring": 2,
   "paused": 1,
   "methods": {
     "palladium_api": 1,
@@ -13,7 +13,7 @@
     "workable_api": 6,
     "greenhouse_api": 9,
     "taleo_rss": 1,
-    "pinpoint_api": 3,
+    "pinpoint_api": 2,
     "playwright": 12,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
@@ -110,7 +110,6 @@
     "Liberty",
     "LRQA",
     "LSE (internal)",
-    "Medical Aid for Palestinians",
     "Middlesex University",
     "Mnemonic",
     "MSF UK",
@@ -184,12 +183,25 @@
       "url": "https://airwars.org/about/workwithus/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 251,
-      "last_failure": "2026-07-19T01:01:12.636042+00:00",
+      "consecutive_failures": 2,
+      "total_recent_failures": 252,
+      "last_failure": "2026-07-19T01:31:03.770487+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
+    },
+    {
+      "id": 91,
+      "name": "Medical Aid for Palestinians",
+      "url": "https://careers.map.org.uk/#js-careers-jobs-block",
+      "method": "pinpoint_api",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-19T01:31:03.770487+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Pinpoint API: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
     }
   ]
 }
