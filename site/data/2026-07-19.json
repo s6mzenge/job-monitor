@@ -1,6 +1,24 @@
 {
   "date": "2026-07-19",
-  "generated_at": "2026-07-19T14:01:11.156384+00:00",
-  "run_count": 29,
-  "jobs": []
+  "generated_at": "2026-07-19T14:30:56.523537+00:00",
+  "run_count": 30,
+  "jobs": [
+    {
+      "title": "Junior-Berater*in im Sektorvorhaben „Antikorruption und Integrität\"",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78798",
+      "priority": 55,
+      "eligible": true,
+      "interest_score": "",
+      "match": "medium",
+      "reason": "A genuine entry-level (\"Junior\") role whose research, policy-drafting (Sachstände, Stellungnahmen) and stakeholder work fit the candidate's strengths, and the required degree in political science and German/English fluency are met; the human-rights angle is a plus. It sits in adjacent governance/development policy rather than the core mission, and the essential subject knowledge in anti-corruption, climate and first practical experience in international cooperation is a partial gap that the candidate only weakly covers, holding the score to the middle of the \"good\" band.",
+      "location": "Bonn, Germany",
+      "type": "Full-time / Part-time (fixed term 01.10.2026 – 31.05.2028)",
+      "deadline": "2026-08-02",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
