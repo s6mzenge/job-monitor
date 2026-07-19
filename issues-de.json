@@ -1,6 +1,32 @@
 {
-  "last_updated": "2026-07-19T01:31:00.789102+00:00",
+  "last_updated": "2026-07-19T02:01:29.075449+00:00",
   "site_summary": {
+    "TU Berlin (wiss. Personal)": {
+      "site_id": 167,
+      "url": "https://www.jobs.tu-berlin.de/stellenausschreibungen?filter%5Bworktype_tub%5D%5B%5D=wiss-dauer&filter%5Bworktype_tub%5D%5B%5D=wiss-mlehr&filter%5Bworktype_tub%5D%5B%5D=wiss-olehr",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-07-19T02:01:29.075449+00:00",
+      "last_recent_failure": "2026-07-19T02:01:29.075449+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.jobs.tu-berlin.de%2Fstellenausschreibungen%3Ffilter%255Bworktype_tub%255D%255B%255D%3Dwiss-dauer%26filter%255Bworktype_tub%255D%255B%255D%3Dwiss-mlehr%26filter%255Bworktype_tub%255D%255B%255D%3Dwiss-olehr"
+    },
+    "Kulturgutverluste": {
+      "site_id": 222,
+      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 6,
+      "first_recent_failure": "2026-07-02T16:31:06.772012+00:00",
+      "last_recent_failure": "2026-07-19T02:01:29.075449+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
+    },
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
@@ -4557,6 +4583,26 @@
     },
     {
       "timestamp": "2026-07-19T01:01:14.001150+00:00",
+      "site": "Kulturgutverluste",
+      "site_id": 222,
+      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-19T02:01:29.075449+00:00",
+      "site": "TU Berlin (wiss. Personal)",
+      "site_id": 167,
+      "url": "https://www.jobs.tu-berlin.de/stellenausschreibungen?filter%5Bworktype_tub%5D%5B%5D=wiss-dauer&filter%5Bworktype_tub%5D%5B%5D=wiss-mlehr&filter%5Bworktype_tub%5D%5B%5D=wiss-olehr",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.jobs.tu-berlin.de%2Fstellenausschreibungen%3Ffilter%255Bworktype_tub%255D%255B%255D%3Dwiss-dauer%26filter%255Bworktype_tub%255D%255B%255D%3Dwiss-mlehr%26filter%255Bworktype_tub%255D%255B%255D%3Dwiss-olehr",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-19T02:01:29.075449+00:00",
       "site": "Kulturgutverluste",
       "site_id": 222,
       "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
