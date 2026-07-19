@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-19T01:01:14.001150+00:00",
+  "generated_at": "2026-07-19T01:31:00.789102+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 90,
-  "erroring": 1,
+  "healthy": 91,
+  "erroring": 0,
   "paused": 1,
   "methods": {
     "personio_xml": 3,
-    "html": 72,
+    "html": 73,
     "json_api": 7,
     "playwright": 6,
     "interamt": 1,
@@ -63,6 +63,7 @@
     "IFSH",
     "Institut Solidarische Moderne",
     "IPPNW",
+    "Kulturgutverluste",
     "Kulturveranstaltungen des Bundes (KBB)",
     "Leibniz-Zentrum Moderner Orient (ZMO)",
     "linksjugend solid",
@@ -118,19 +119,6 @@
       "paused_until": "2026-07-20T13:30:57.824826+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
-    },
-    {
-      "id": 222,
-      "name": "Kulturgutverluste",
-      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 5,
-      "last_failure": "2026-07-19T01:01:14.001150+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
     }
   ]
 }
