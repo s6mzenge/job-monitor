@@ -1,7 +1,7 @@
 {
   "date": "2026-07-19",
-  "generated_at": "2026-07-19T06:01:19.877034+00:00",
-  "run_count": 13,
+  "generated_at": "2026-07-19T06:31:02.047287+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -32,6 +32,23 @@
       "location": "Milan, Italy",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for established experts to sit on an Advisory Committee, not a paid entry-level role — it seeks recognised expertise in criminalisation of defenders and regional advocacy, which is a senior/specialist appointment the candidate does not meet. It is also effectively a speculative expert-panel posting rather than a concrete paid vacancy, and the Spanish-language track implies working proficiency in Spanish the candidate lacks.",
+      "location": "Not specified",
+      "type": "Not specified (Advisory Committee / expert appointment)",
+      "deadline": "15 January 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
