@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T02:31:00.038534+00:00",
+  "generated_at": "2026-07-19T03:01:09.968492+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 90,
@@ -125,9 +125,9 @@
       "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 2,
-      "total_recent_failures": 7,
-      "last_failure": "2026-07-19T02:31:00.038534+00:00",
+      "consecutive_failures": 3,
+      "total_recent_failures": 8,
+      "last_failure": "2026-07-19T03:01:09.968492+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
