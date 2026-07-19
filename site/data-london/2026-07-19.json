@@ -1,6 +1,24 @@
 {
   "date": "2026-07-19",
-  "generated_at": "2026-07-19T00:01:18.479080+00:00",
-  "run_count": 1,
-  "jobs": []
+  "generated_at": "2026-07-19T00:31:12.600360+00:00",
+  "run_count": 2,
+  "jobs": [
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for established \"experts\" to join an advisory committee, not an entry-level paid role — it seeks senior specialists on climate-justice securitisation and defender criminalisation, well beyond the candidate's early-career profile, and is effectively an advisory (likely unpaid/voluntary) capacity rather than a genuine paid vacancy. The human-rights/security subject is interesting, but the seniority mismatch is a hard blocker.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
