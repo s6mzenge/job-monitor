@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T08:01:13.104368+00:00",
-  "run_count": 15,
+  "generated_at": "2026-07-20T08:30:59.149489+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -67,6 +67,23 @@
       "type": "Full-time (Permanent)",
       "deadline": "2026-08-03",
       "salary": "£36,080 - £45,100",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Lead Analyst, Technology and Geopolitics",
+      "organisation": "Sibylline",
+      "url": "https://jobs.smartrecruiters.com/SibyllineLtd/744000138579219-lead-analyst-technology-and-geopolitics-",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "\"Lead\" title with an explicit essential requirement of experience managing a team places this above entry-level, which is a hard disqualifier given the candidate has no full-time or management experience. Sibylline and tech-geopolitics analysis are squarely in the candidate's zone (b)/(c) interest, but the seniority is a hard mismatch.",
+      "location": "London (hybrid, 2 days/week)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
