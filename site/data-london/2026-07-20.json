@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T10:01:13.180065+00:00",
-  "run_count": 19,
+  "generated_at": "2026-07-20T10:31:01.537484+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -167,6 +167,23 @@
       "reason": "Ineligible on experience: the role requires 3–5 years' work experience including food-industry/supply-chain/traceability work plus a recognised Lead Auditor certification the candidate does not hold. It also sits entirely outside the candidate's interest zones and skill set.",
       "location": "Seoul, South Korea",
       "type": "Contract (Contractor On Demand)",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Lead Assessor (Auditeur Principal Senior - Automobile)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Lyon-Lead-Assessor-69003/1189425901",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Multiple hard disqualifiers: a \"Senior/Lead\" role requiring a minimum of 4 years' automotive-industry experience, an engineering degree and IRCA/IATF audit qualifications the candidate lacks, plus French fluency (C-level) beyond the candidate's B1. This is a technical quality-audit role entirely outside the candidate's profile and interests.",
+      "location": "Lyon / Paris / northern France",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
