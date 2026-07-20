@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20T06:01:10.460643+00:00",
+  "last_updated": "2026-07-20T06:31:19.711229+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -26,19 +26,6 @@
       "paused_until": "2026-07-21T08:31:05.883529+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "International Bar Association": {
-      "site_id": 140,
-      "url": "https://www.ibanet.org/recruitment",
-      "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-07-20T05:30:57.358756+00:00",
-      "last_recent_failure": "2026-07-20T06:01:10.460643+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ibanet.org%2Frecruitment"
     }
   },
   "issues": [

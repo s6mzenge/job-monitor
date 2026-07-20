@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-20T06:01:10.460643+00:00",
+  "generated_at": "2026-07-20T06:31:19.711229+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 138,
-  "erroring": 1,
+  "healthy": 139,
+  "erroring": 0,
   "paused": 2,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 83,
+    "html": 84,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -97,6 +97,7 @@
     "Institute of Race Relations",
     "Integrity Global",
     "International Alert",
+    "International Bar Association",
     "International Crisis Group",
     "International Rescue Committee",
     "IPPR",
@@ -189,19 +190,6 @@
       "paused_until": "2026-07-21T08:31:05.883529+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
-    },
-    {
-      "id": 140,
-      "name": "International Bar Association",
-      "url": "https://www.ibanet.org/recruitment",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 2,
-      "total_recent_failures": 2,
-      "last_failure": "2026-07-20T06:01:10.460643+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ibanet.org%2Frecruitment"
     }
   ]
 }
