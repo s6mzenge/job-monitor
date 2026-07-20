@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T15:31:09.908378+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-20T16:01:05.636699+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Oman Research Grant 2027",
@@ -169,6 +169,40 @@
       "type": "Part-time (50%)",
       "deadline": "9 August 2026",
       "salary": "Tariflich geregeltes Gehalt nach Gruppe D",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Systemingenieur*in für den Bereich Crossmediale Systeme",
+      "organisation": "rbb (Rundfunk Berlin-Brandenburg)",
+      "url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2096/Description/1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a deep-technical systems-engineering role requiring a degree in media technology/informatics, server administration (SQL, Windows, Linux), scripting, and expertise in the OpenMedia broadcast system — essentials well beyond the candidate's analysis-level Python and non-technical profile. It also sits entirely outside the candidate's policy/research interest zones.",
+      "location": "Berlin/Potsdam, Germany",
+      "type": "Full-time (permanent/unbefristet)",
+      "deadline": "2026-08-09",
+      "salary": "Tariflich (Gruppe D), not specified in figures",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate Sales Support – DACH (M/W/D)",
+      "organisation": "Vandenhoeck & Ruprecht / De Gruyter",
+      "url": "https://de-gruyter.onlyfy.jobs/en/job/k07sm0v5te5g11iv0uckpl7n8x76buy",
+      "priority": 12,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "A sales-support role in academic publishing is likely entry-level and does not trip a hard disqualifier, so it is eligible, but it draws on sales/commercial-support skills the candidate does not particularly have. It sits well outside all three interest zones, offering little pull beyond a loose academic-publishing connection.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
