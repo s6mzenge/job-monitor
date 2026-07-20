@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T11:31:09.429982+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-20T12:01:08.999838+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -202,6 +202,23 @@
       "location": "Birmingham, UK",
       "type": "Full-time (Fixed Term)",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Becario/Prácticas",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Madrid/Becario-Prcticas_JR106680",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is an internship (prácticas/becario), which is excluded by policy as not a genuine paid role for the candidate. It also targets vocational-training students in administration/IT for CRM data-cleaning, well outside the candidate's profile and interests.",
+      "location": "Madrid, Spain",
+      "type": "Internship",
+      "deadline": "2026-08-03",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
