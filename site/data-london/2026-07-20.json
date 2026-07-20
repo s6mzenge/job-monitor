@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T14:01:24.699634+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-20T14:31:13.090008+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -389,6 +389,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Commissioning Editor",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/London/Commissioning-Editor_JR106716",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires demonstrable ELT publishing experience at project leadership level plus English language teaching experience — both essential requirements the candidate plainly lacks, and it is a leadership-level position beyond entry-level. The subject (English-language teaching content) also sits well outside the candidate's interest zones.",
+      "location": "London or Madrid (hybrid)",
+      "type": "Fixed-term contract",
+      "deadline": "2026-08-06",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
