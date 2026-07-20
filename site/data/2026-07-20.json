@@ -1,6 +1,58 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T10:31:04.098151+00:00",
-  "run_count": 20,
-  "jobs": []
+  "generated_at": "2026-07-20T11:01:00.939921+00:00",
+  "run_count": 21,
+  "jobs": [
+    {
+      "title": "Oman Research Grant 2027",
+      "organisation": "Leibniz-Zentrum Moderner Orient (ZMO)",
+      "url": "https://www.zmo.de/ueber-uns/karriere/stellenausschreibungen",
+      "priority": 32,
+      "eligible": true,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "A research grant is a genuine funded opportunity and entry-level-appropriate, and the candidate's research and writing skills transfer. However, the regional focus on Oman / Middle East studies sits well outside the candidate's core specialisms (international law, atrocity prevention, European security), and grants of this kind often assume relevant regional expertise the candidate lacks — modest fit and interest.",
+      "location": "Berlin, Germany",
+      "type": "Contract (research grant)",
+      "deadline": "10 September 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Doctoral Program in Peace and Conflict Resolution",
+      "organisation": "European Wasatia Graduate School for Peace and Conflict Resolution, Europa-Universität Flensburg",
+      "url": "https://www.zmo.de/ueber-uns/karriere/stellenausschreibungen",
+      "priority": 60,
+      "eligible": true,
+      "interest_score": "4",
+      "match": "medium",
+      "reason": "A doctoral program in peace and conflict resolution is entry-level by definition and the candidate's MSc satisfies the entry requirement; funding is not stated, so eligibility is given the benefit of the doubt. Peace and conflict / post-atrocity reconciliation is adjacent to the candidate's core interests, but the program's explicit orientation toward Middle East/West Asia candidates and its unclear funding hold the score to solid-but-not-top.",
+      "location": "Flensburg, Germany",
+      "type": "Full-time (doctoral program)",
+      "deadline": "30 September 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wissenschaftliche*r Mitarbeiter*in (m/w/d) mit dem Schwerpunkt Fotografiegeschichte",
+      "organisation": "Deutsches Historisches Museum",
+      "url": "https://www.dhm.de/museum/stellenangebote/stellenausschreibungen/wissenschaftlicher-mitarbeiterin-fotografiegeschichte",
+      "priority": 42,
+      "eligible": true,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "This is an entry-level research post (Master's required, not a completed PhD) that the candidate's degree satisfies, and the subject — critically framing photographs of German atrocities in occupied Europe, contrasting perpetrator and victim perspectives — sits close to the candidate's memory/post-atrocity interests. However, the essential requirements for demonstrated expertise in the photographic history of National Socialism and hands-on experience working with historical image sources and archival/documentary methods are a real skills gap the candidate cannot clearly evidence, which holds the score down. Languages are met (German native, English C2), so the \"further European language\" is only desirable.",
+      "location": "Berlin-Mitte, Germany",
+      "type": "Part-time (19.5h/week), fixed-term until 29.02.2028",
+      "deadline": "2026-07-31",
+      "salary": "Entgeltgruppe 13 TVöD-Bund (part-time)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
