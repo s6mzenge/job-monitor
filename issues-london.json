@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20T05:30:57.358756+00:00",
+  "last_updated": "2026-07-20T06:01:10.460643+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -31,10 +31,10 @@
       "site_id": 140,
       "url": "https://www.ibanet.org/recruitment",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
+      "consecutive_failures": 2,
+      "total_recent_failures": 2,
       "first_recent_failure": "2026-07-20T05:30:57.358756+00:00",
-      "last_recent_failure": "2026-07-20T05:30:57.358756+00:00",
+      "last_recent_failure": "2026-07-20T06:01:10.460643+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -8257,6 +8257,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ibanet.org%2Frecruitment",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-20T06:01:10.460643+00:00",
+      "site": "International Bar Association",
+      "site_id": 140,
+      "url": "https://www.ibanet.org/recruitment",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ibanet.org%2Frecruitment",
+      "consecutive_count": 2
     }
   ]
 }
