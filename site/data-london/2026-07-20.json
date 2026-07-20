@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T17:01:04.835031+00:00",
-  "run_count": 33,
+  "generated_at": "2026-07-20T17:31:05.855345+00:00",
+  "run_count": 34,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -440,6 +440,23 @@
       "location": "Paris, France (home-based)",
       "type": "Contract (fixed-term CDD, up to 4 months, maternity/parental cover)",
       "deadline": "Not specified (rolling)",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Business Development Manager - Events",
+      "organisation": "The Economist Group",
+      "url": "https://job-boards.eu.greenhouse.io/theeconomistgroup/jobs/4923924101",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A Manager-level sales role requiring proven commercial event sales experience, account management and a record of negotiating with senior corporate decision-makers — well beyond entry-level and outside the candidate's profile. It is fundamentally a business-development/sales function, not research or policy, so it fails both the level gate and paper fit.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
