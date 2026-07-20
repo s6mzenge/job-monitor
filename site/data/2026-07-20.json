@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T13:30:59.139207+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-20T14:01:31.869024+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Oman Research Grant 2027",
@@ -118,6 +118,40 @@
       "type": "Internship",
       "deadline": "2026-08-03",
       "salary": "€2,349/month (brutto)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wiss. Mitarbeiter*in (Postdoc) - Romanische Philologie / Sprachwissenschaft des Spanischen",
+      "organisation": "FU Berlin (wiss.)",
+      "url": "https://www.fu-berlin.de/universitaet/beruf-karriere/jobs/wiss/16_fb-philosophie-und-geisteswissenschaften/PG--PD_Ros_2026.html",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a postdoc position requiring a completed doctorate (Promotion) with a linguistic focus, which the candidate does not hold. It also requires C2 Spanish, which the candidate lacks. The field (Spanish sociolinguistics) is entirely outside the candidate's areas.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-08-10",
+      "salary": "Entgeltgruppe 13 TV-L",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wiss. Mitarbeiter*in (w/m/d) - Institut für Pharmazie, AG Molekulares Wirkstoffdesign",
+      "organisation": "FU Berlin (wiss.)",
+      "url": "https://www.fu-berlin.de/universitaet/beruf-karriere/jobs/wiss/21_fb-biologie-chemie-pharmazie/BC-Wolber_2026_1.html",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires an already-completed doctorate (Promotion in Pharmazie, Schwerpunkt Molecular Modeling) plus at least three years of post-degree professional experience — both unmet essentials. It is also a deep-technical computational pharmacy / molecular-modelling role far outside the candidate's field and skills.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-08-10",
+      "salary": "Entgeltgruppe 13 TV-L",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""

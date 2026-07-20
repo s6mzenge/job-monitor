@@ -1,27 +1,27 @@
 {
-  "last_updated": "2026-07-20T13:30:59.139207+00:00",
+  "last_updated": "2026-07-20T14:01:31.869024+00:00",
   "site_summary": {
-    "DIW Berlin": {
-      "site_id": 189,
-      "url": "https://www.diw.de/de/diw_01.c.618535.de/karriere/stellenangebote.html",
+    "Kulturgutverluste": {
+      "site_id": 222,
+      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
       "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 9,
-      "first_recent_failure": "2026-07-05T13:31:15.463502+00:00",
-      "last_recent_failure": "2026-07-20T13:30:59.139207+00:00",
+      "total_recent_failures": 17,
+      "first_recent_failure": "2026-07-02T16:31:06.772012+00:00",
+      "last_recent_failure": "2026-07-20T14:01:31.869024+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.diw.de%2Fde%2Fdiw_01.c.618535.de%2Fkarriere%2Fstellenangebote.html"
+      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
     },
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 84,
+      "consecutive_failures": 2,
+      "total_recent_failures": 85,
       "first_recent_failure": "2026-06-28T21:07:23.784674+00:00",
-      "last_recent_failure": "2026-07-20T13:30:59.139207+00:00",
+      "last_recent_failure": "2026-07-20T14:01:31.869024+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -4867,6 +4867,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-20T14:01:31.869024+00:00",
+      "site": "Kulturgutverluste",
+      "site_id": 222,
+      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-20T14:01:31.869024+00:00",
+      "site": "Die Linke",
+      "site_id": 223,
+      "url": "https://www.die-linke.de/partei/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
+      "consecutive_count": 2
     }
   ]
 }
