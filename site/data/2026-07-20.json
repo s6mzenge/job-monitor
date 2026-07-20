@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T11:01:00.939921+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-20T11:30:53.987088+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Oman Research Grant 2027",
@@ -50,6 +50,40 @@
       "type": "Part-time (19.5h/week), fixed-term until 29.02.2028",
       "deadline": "2026-07-31",
       "salary": "Entgeltgruppe 13 TVöD-Bund (part-time)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Associate in International and European Law, Behavioural Science, and Sustainable Development (2 positions)",
+      "organisation": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote/ausschreibung.html?jobID=c07363b6ed7bb3c72252747d4e05b0c2cb24e9fa",
+      "priority": 62,
+      "eligible": true,
+      "interest_score": "3",
+      "match": "medium",
+      "reason": "This is a salaried doctoral-track research-associate post (TV-L E13, PhD-pursuing not PhD-required), entry-level and open to social-science candidates with an affinity for legal/regulatory issues — a plausible fit given the candidate's critical international law focus and MSc. The topic (international/European law with sustainable development, climate and behavioural science) is adjacent rather than core to atrocity prevention/transitional justice, and teaching duties plus the law-and-economics emphasis create some distance; German is only an advantage, so language is not a blocker.",
+      "location": "Hamburg, Germany",
+      "type": "Part-time (50%), fixed-term 3 years",
+      "deadline": "2026-08-17",
+      "salary": "EGR. 13 TV-L (part-time 50%)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische Hilfskraft für Kommunikation (w/d/m)",
+      "organisation": "Bürgerbewegung Finanzwende",
+      "url": "https://www.finanzwende.de/ueber-uns/stellenausschreibungen/studentische-hilfskraft-kommunikation-w/d/m",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is explicitly a studentische Hilfskraft (working-student) role, which is excluded as a matter of policy. It is also a communications / social-media role — a partial skills gap — and finance-market advocacy sits outside the candidate's core interest zones.",
+      "location": "Berlin, Germany (hybrid / home-office possible)",
+      "type": "Part-time (student assistant, 15–20 hrs/week)",
+      "deadline": "2 August 2026",
+      "salary": "€21/hour",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
