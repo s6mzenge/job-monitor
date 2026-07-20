@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T11:30:53.987088+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-20T12:01:16.704581+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Oman Research Grant 2027",
@@ -84,6 +84,40 @@
       "type": "Part-time (student assistant, 15–20 hrs/week)",
       "deadline": "2 August 2026",
       "salary": "€21/hour",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikum im Globalvorhaben „Investing in Resilient and Sustainable Global Supply Chains\"",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78812",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is explicitly a Praktikum / internship, which is excluded as a matter of policy, and it also requires current enrolment or graduation within the last 6 months. The supply-chain / due-diligence topic is only tangential to the candidate's core interests in any case.",
+      "location": "Bonn, Eschborn (Germany)",
+      "type": "Internship",
+      "deadline": "2026-08-03",
+      "salary": "€2,349/month (brutto)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in – Agentur für Wirtschaft & Entwicklung / develoPPP-Programmkommunikation",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78813",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an internship (Praktikum) that also requires current enrolment or graduation within the last 6 months — an excluded role type per policy. It is additionally a communications/marketing-focused role, a partial skills gap, and development-cooperation communications sits outside the candidate's core interest zones.",
+      "location": "Eschborn, Germany",
+      "type": "Internship",
+      "deadline": "2026-08-03",
+      "salary": "€2,349/month (brutto)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
