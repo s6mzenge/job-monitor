@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T15:31:31.177263+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-20T16:01:11.877313+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -424,6 +424,23 @@
       "type": "Full-time",
       "deadline": "2026-08-24",
       "salary": "US$115,000–135,000",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Partnership Manager - France (Partnership Officer / Chargé(e) de partenariats)",
+      "organisation": "Save the Children UK",
+      "url": "https://jobs.savethechildren.org.uk/jobs/vacancy/partnership-manager---france-job-title-may-change-7385-paris-france-home-based/7411/description",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "The posting lists \"maîtrise courante du français\" (fluent French, written and spoken) as an essential criterion, and the candidate's French is only B1 — an unmet language essential. It also requires established experience in the French development/humanitarian sector, which is a further mismatch. The humanitarian topic is adjacent, but the fluency requirement is a hard gate.",
+      "location": "Paris, France (home-based)",
+      "type": "Contract (fixed-term CDD, up to 4 months, maternity/parental cover)",
+      "deadline": "Not specified (rolling)",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
