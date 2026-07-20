@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T13:01:29.250100+00:00",
-  "run_count": 25,
+  "generated_at": "2026-07-20T13:30:56.504991+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -237,6 +237,23 @@
       "type": "Full-time (Fixed-term, 12 months maternity cover)",
       "deadline": "9 August 2026",
       "salary": "£43,277–£51,714 pa (progression to £55,497), inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Events Manager",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/5351/0/471970/15539/events-manager",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A Manager-level role that lists as essential the experience of organising large-scale events start to finish and having supervised and line-managed staff — level and experience the candidate plainly lacks; it is also internal-applicants-only. The salary band further confirms this is not an entry-level post, and events management is a partial skills gap rather than a strength.",
+      "location": "London",
+      "type": "Contract (maternity cover, ~3 months, full-time)",
+      "deadline": "2026-08-04",
+      "salary": "£43,277–£51,714 pa inclusive (potential to £55,497)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
