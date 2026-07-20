@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-20T19:01:14.113044+00:00",
+  "generated_at": "2026-07-20T19:30:59.029954+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 138,
-  "erroring": 1,
+  "healthy": 139,
+  "erroring": 0,
   "paused": 2,
   "methods": {
     "palladium_api": 1,
@@ -16,6 +16,7 @@
     "pinpoint_api": 3,
     "playwright": 12,
     "oracle_hcm_api": 2,
+    "hireserve_api": 1,
     "plumm_api": 1,
     "engage_ats": 1,
     "bamboohr_api": 3,
@@ -38,6 +39,7 @@
     "BBC",
     "BID (Bail for Immigration Detainees)",
     "BIICL",
+    "Birkbeck, University of London",
     "Bridgespan Group",
     "Brunswick Group",
     "BSR",
@@ -188,19 +190,6 @@
       "paused_until": "2026-07-21T08:31:05.883529+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
-    },
-    {
-      "id": 53,
-      "name": "Birkbeck, University of London",
-      "url": "https://cis7.bbk.ac.uk/home.html",
-      "method": "hireserve_api",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "last_failure": "2026-07-20T19:01:14.113044+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Hireserve API: Expecting value: line 1 column 1 (char 0)"
     }
   ]
 }
