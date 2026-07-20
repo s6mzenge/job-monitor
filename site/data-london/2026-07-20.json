@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T12:31:09.407499+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-20T13:01:29.250100+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -220,6 +220,23 @@
       "type": "Internship",
       "deadline": "2026-08-03",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Student Communications Manager (maternity cover)",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/5735/0/471967/15539/student-communications-manager-maternity-cover",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a Manager-level post that line-manages a Student Communications Officer and lists as essential requirements devising and delivering communications strategies, creative-communicator experience, communications project management and budget oversight — a clear step above entry-level and beyond the candidate's limited comms experience. It is not entry-level and the essential communications-specialist requirements are an unmet bar, so it is disqualified. The topic also sits outside the core interest zones.",
+      "location": "London (hybrid, min 2 days on campus)",
+      "type": "Full-time (Fixed-term, 12 months maternity cover)",
+      "deadline": "9 August 2026",
+      "salary": "£43,277–£51,714 pa (progression to £55,497), inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
