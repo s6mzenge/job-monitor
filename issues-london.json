@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20T05:01:09.102983+00:00",
+  "last_updated": "2026-07-20T05:30:57.358756+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -26,6 +26,19 @@
       "paused_until": "2026-07-21T08:31:05.883529+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "International Bar Association": {
+      "site_id": 140,
+      "url": "https://www.ibanet.org/recruitment",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-07-20T05:30:57.358756+00:00",
+      "last_recent_failure": "2026-07-20T05:30:57.358756+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ibanet.org%2Frecruitment"
     }
   },
   "issues": [
@@ -8233,6 +8246,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.carnegiecouncil.org%2Fabout%2Fjobs",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-20T05:30:57.358756+00:00",
+      "site": "International Bar Association",
+      "site_id": 140,
+      "url": "https://www.ibanet.org/recruitment",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.ibanet.org%2Frecruitment",
       "consecutive_count": 1
     }
   ]
