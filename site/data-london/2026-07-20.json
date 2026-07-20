@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T07:31:03.709380+00:00",
-  "run_count": 14,
+  "generated_at": "2026-07-20T08:01:13.104368+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -33,6 +33,40 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Media Client Partner",
+      "organisation": "The Economist Group",
+      "url": "https://job-boards.eu.greenhouse.io/theeconomistgroup/jobs/4923958101",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a consultative media-sales role requiring a proven track record of meeting commercial targets, established agency relationships and B2B/advertising sales experience — a sales specialism the candidate lacks entirely and which represents an unmet essential. It is also not entry-level in the research/policy sense and sits outside all three interest zones.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Competitive salary plus commission (not specified)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Procurement Officer",
+      "organisation": "Wellcome Trust",
+      "url": "https://wellcome.wd3.myworkdayjobs.com/job/London/Procurement-Officer_R-003426",
+      "priority": 8,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Not a research or policy role — it is a specialist procurement post whose minimum criteria demand demonstrated experience delivering end-to-end procurement, contract negotiation and private-sector procurement work, none of which the candidate has. It sits entirely outside all three interest zones and offers no meaningful skills overlap, so it barely warrants surfacing despite being technically eligible and London-based.",
+      "location": "London",
+      "type": "Full-time (Permanent)",
+      "deadline": "2026-08-03",
+      "salary": "£36,080 - £45,100",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
