@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T09:30:59.802995+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-20T10:01:13.180065+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -150,6 +150,23 @@
       "reason": "Ineligible on two counts: a \"Senior\" title requiring substantial product-management experience the candidate lacks, and it demands hands-on digital product ownership and AI-assisted engineering well outside her research/policy profile. The role also sits entirely outside her interest zones.",
       "location": "Birmingham, United Kingdom",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "MSC Chain Of Custody Auditor (Korea)",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Seoul-MSC-Chain-Of-Custody-Auditor-%28Korea%29/1207101201",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Ineligible on experience: the role requires 3–5 years' work experience including food-industry/supply-chain/traceability work plus a recognised Lead Auditor certification the candidate does not hold. It also sits entirely outside the candidate's interest zones and skill set.",
+      "location": "Seoul, South Korea",
+      "type": "Contract (Contractor On Demand)",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
