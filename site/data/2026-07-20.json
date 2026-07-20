@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T15:01:15.373068+00:00",
-  "run_count": 29,
+  "generated_at": "2026-07-20T15:31:09.908378+00:00",
+  "run_count": 30,
   "jobs": [
     {
       "title": "Oman Research Grant 2027",
@@ -152,6 +152,23 @@
       "type": "Full-time",
       "deadline": "2026-08-10",
       "salary": "Entgeltgruppe 13 TV-L",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Systemingenieur*in zu 50% der tariflich festgelegten Arbeitszeit",
+      "organisation": "rbb (Rundfunk Berlin-Brandenburg)",
+      "url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2095/Description/1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a technical systems-engineering role requiring a completed degree in media technology / media informatics and specific expertise in broadcast radio systems (Digas, MusicMaster, WeConnect) — essential technical requirements far beyond the candidate's analysis-level Python. It also sits entirely outside the candidate's research and policy interest zones.",
+      "location": "Berlin/Potsdam, Germany",
+      "type": "Part-time (50%)",
+      "deadline": "9 August 2026",
+      "salary": "Tariflich geregeltes Gehalt nach Gruppe D",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
