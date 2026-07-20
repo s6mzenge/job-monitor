@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T14:31:13.090008+00:00",
-  "run_count": 28,
+  "generated_at": "2026-07-20T15:01:35.770339+00:00",
+  "run_count": 29,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -407,6 +407,23 @@
       "type": "Fixed-term contract",
       "deadline": "2026-08-06",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Executive Publisher, Springer Journals",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/New-York/Executive-Publisher_JR105343",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Ineligible — this is a senior, \"Executive Publisher\" role requiring 5+ years of publishing-portfolio management and 2+ years of team leadership, far beyond the candidate's entry-level profile. It also sits in medical/life-sciences publishing, outside all core interest zones.",
+      "location": "New York or Philadelphia, USA (Hybrid)",
+      "type": "Full-time",
+      "deadline": "2026-08-24",
+      "salary": "US$115,000–135,000",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
