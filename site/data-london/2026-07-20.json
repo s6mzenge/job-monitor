@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T20:30:52.067444+00:00",
-  "run_count": 40,
+  "generated_at": "2026-07-20T21:01:05.451103+00:00",
+  "run_count": 41,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -456,6 +456,23 @@
       "reason": "A Manager-level sales role requiring proven commercial event sales experience, account management and a record of negotiating with senior corporate decision-makers — well beyond entry-level and outside the candidate's profile. It is fundamentally a business-development/sales function, not research or policy, so it fails both the level gate and paper fit.",
       "location": "London",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "UK PACT Communications: Editorial and Digital Content Lead",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25362?c=palladium",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "The \"Lead\" title plus a specialist editorial and digital-content brief indicates a senior communications role requiring several years of dedicated comms experience, which the candidate lacks. Communications is also a partial skills gap for this profile, and the level is a hard mismatch even setting the topic aside.",
+      "location": "United Kingdom",
+      "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
