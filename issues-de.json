@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-07-20T22:01:02.789560+00:00",
+  "last_updated": "2026-07-20T22:31:05.028847+00:00",
   "site_summary": {
-    "Deutsches Institut für Menschenrechte": {
-      "site_id": 159,
-      "url": "https://www.institut-fuer-menschenrechte.de/das-institut/jobs",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "first_recent_failure": "2026-07-18T22:01:03.584449+00:00",
-      "last_recent_failure": "2026-07-20T22:01:02.789560+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 525 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.institut-fuer-menschenrechte.de%2Fdas-institut%2Fjobs"
-    },
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",

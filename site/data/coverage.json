@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-20T22:01:02.789560+00:00",
+  "generated_at": "2026-07-20T22:31:05.028847+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 90,
-  "erroring": 1,
+  "healthy": 91,
+  "erroring": 0,
   "paused": 1,
   "methods": {
     "personio_xml": 3,
-    "html": 72,
+    "html": 73,
     "json_api": 7,
     "playwright": 6,
     "interamt": 1,
@@ -31,6 +31,7 @@
     "Das Progressive Zentrum",
     "Deutscher Bundestag",
     "Deutsches Historisches Museum",
+    "Deutsches Institut für Menschenrechte",
     "DeZIM-Institut",
     "DFG",
     "DGAP (Deutsche Gesellschaft für Auswärtige Politik)",
@@ -118,19 +119,6 @@
       "paused_until": "2026-07-22T21:01:11.397506+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
-    },
-    {
-      "id": 159,
-      "name": "Deutsches Institut für Menschenrechte",
-      "url": "https://www.institut-fuer-menschenrechte.de/das-institut/jobs",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 2,
-      "last_failure": "2026-07-20T22:01:02.789560+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 525 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.institut-fuer-menschenrechte.de%2Fdas-institut%2Fjobs"
     }
   ]
 }
