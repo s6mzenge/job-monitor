@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-20T03:31:07.595136+00:00",
+  "generated_at": "2026-07-20T04:01:00.990546+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 139,
+  "healthy": 138,
   "erroring": 1,
-  "paused": 1,
+  "paused": 2,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 84,
+    "html": 83,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -47,7 +47,6 @@
     "Cambridge Human Movement Centre",
     "Campaign Against Arms Trade",
     "CARE International UK",
-    "Carnegie Council",
     "Ceasefire Centre for Civilian Rights",
     "Center for Global Development",
     "Centre for Information Resilience",
@@ -166,6 +165,19 @@
   ],
   "sites": [
     {
+      "id": 11,
+      "name": "FTI Consulting",
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "status": "paused",
+      "consecutive_failures": 16,
+      "total_recent_failures": 74,
+      "last_failure": "2026-07-20T04:01:00.990546+00:00",
+      "paused_until": "2026-07-22T04:01:00.990546+00:00",
+      "last_type": "site_paused",
+      "message": "Site paused after 16 consecutive failures"
+    },
+    {
       "id": 133,
       "name": "Airwars",
       "url": "https://airwars.org/about/workwithus/",
@@ -179,17 +191,17 @@
       "message": "Site paused after 16 consecutive failures"
     },
     {
-      "id": 11,
-      "name": "FTI Consulting",
-      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "id": 20,
+      "name": "Carnegie Council",
+      "url": "https://www.carnegiecouncil.org/about/jobs",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 15,
-      "total_recent_failures": 72,
-      "last_failure": "2026-07-20T03:31:07.595136+00:00",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-20T04:01:00.990546+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607"
+      "message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.carnegiecouncil.org%2Fabout%2Fjobs"
     }
   ]
 }
