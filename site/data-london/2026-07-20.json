@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T10:31:01.537484+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-20T11:01:12.637529+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -184,6 +184,23 @@
       "reason": "Multiple hard disqualifiers: a \"Senior/Lead\" role requiring a minimum of 4 years' automotive-industry experience, an engineering degree and IRCA/IATF audit qualifications the candidate lacks, plus French fluency (C-level) beyond the candidate's B1. This is a technical quality-audit role entirely outside the candidate's profile and interests.",
       "location": "Lyon / Paris / northern France",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Project Support Coordinator",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Project-Support-Coordinator-B37-7ES/1377075733",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires \"a significant number of years of relevant work experience as a project coordinator\" plus practical project-management experience — well beyond the candidate's student-assistant background, triggering the experience disqualifier. It is also entirely outside all interest zones (nuclear/pressure-equipment conformity assessment).",
+      "location": "Birmingham, UK",
+      "type": "Full-time (Fixed Term)",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
