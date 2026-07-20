@@ -1,7 +1,7 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T21:31:13.871944+00:00",
-  "run_count": 42,
+  "generated_at": "2026-07-20T22:01:07.513034+00:00",
+  "run_count": 43,
   "jobs": [
     {
       "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -473,6 +473,23 @@
       "reason": "The \"Lead\" title plus a specialist editorial and digital-content brief indicates a senior communications role requiring several years of dedicated comms experience, which the candidate lacks. Communications is also a partial skills gap for this profile, and the level is a hard mismatch even setting the topic aside.",
       "location": "United Kingdom",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate, Global Markets Advisory",
+      "organisation": "Eurasia Group",
+      "url": "https://ats.rippling.com/eurasia-group/jobs/af5077bf-947d-44f1-b780-326fead90974",
+      "priority": 52,
+      "eligible": true,
+      "interest_score": "4",
+      "match": "medium",
+      "reason": "Eligible and pitched at up to 1-3 years with recent graduates encouraged, and Eurasia Group is a core zone (b) geopolitical-risk firm — a strong interest match. However, this is heavily a business-development/institutional-sales role (email campaigns, prospecting, pipeline, financial-markets familiarity, Bloomberg) rather than the research/analysis work the candidate is strongest in, so paper fit for the sales-and-logistics core is only partial, which holds the score in the \"worth a look\" band.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
