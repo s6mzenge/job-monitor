@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20T04:01:00.990546+00:00",
+  "last_updated": "2026-07-20T04:31:04.948984+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -13,19 +13,6 @@
       "paused_until": "2026-07-22T04:01:00.990546+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Carnegie Council": {
-      "site_id": 20,
-      "url": "https://www.carnegiecouncil.org/about/jobs",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-07-20T04:01:00.990546+00:00",
-      "last_recent_failure": "2026-07-20T04:01:00.990546+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.carnegiecouncil.org%2Fabout%2Fjobs"
     },
     "Airwars": {
       "site_id": 133,
