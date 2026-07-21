@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T11:01:09.044808+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-21T11:31:04.802532+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -169,6 +169,40 @@
       "type": "Full-time (fixed-term 12 months)",
       "deadline": "5 August 2026",
       "salary": "£36,513 to £41,565 pa (potential to progress to £44,468), inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Software Developer",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/1488/0/472012/15539/senior-software-developer",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a deep-technical, senior full-stack software-engineering role whose essential requirements — production-grade Java (Spring Boot), front-end frameworks, AWS/Kubernetes, CI/CD, secure coding — are far beyond the candidate's analysis-level Python and web-scripting familiarity. It is also explicitly senior and internal-applicants-only, so it fails on level and access as well.",
+      "location": "London, UK",
+      "type": "Full-time (fixed-term until 31 March 2027)",
+      "deadline": "2026-07-29",
+      "salary": "£53,949–£62,160 pa (potential to £69,073) inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Procurement Manager - Print",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/London/Senior-Procurement-Manager---Print_JR106750",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Not entry-level — it is a Senior Manager role requiring extensive print/paper procurement, category-management and supplier-management experience the candidate lacks. It is also entirely outside the candidate's research/policy interests and skill set.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "27 July (posting end date 28-07-2026)",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
