@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T15:31:14.268377+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-21T16:01:04.485478+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -455,6 +455,23 @@
       "match": "low",
       "reason": "A \"Fellow\" position at CGD is a senior research role requiring an established track record and typically a PhD or substantial policy experience the candidate lacks. Climate and development policy also sits outside the core interest zones.",
       "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Finance Business Partner - UK RAI Programmes",
+      "organisation": "International Rescue Committee",
+      "url": "https://theirc.wd1.myworkdayjobs.com/job/London-UK/Finance-Business-Partner---UK-RAI-Programmes_JR00004266",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Essential requirement is a Qualified Accountant (CCAB or equivalent), which the candidate does not hold, and the role is a managerial \"Business Partner\" with line-management and multi-year experience requirements well beyond entry level. Neither the finance qualification nor the seniority can be met, so it is a hard mismatch despite the humanitarian organisation.",
+      "location": "London, UK",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
