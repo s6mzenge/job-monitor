@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-07-21T09:01:03.863635+00:00",
+  "last_updated": "2026-07-21T09:30:53.945882+00:00",
   "site_summary": {
+    "DIW Berlin": {
+      "site_id": 189,
+      "url": "https://www.diw.de/de/diw_01.c.618535.de/karriere/stellenangebote.html",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 10,
+      "first_recent_failure": "2026-07-05T13:31:15.463502+00:00",
+      "last_recent_failure": "2026-07-21T09:30:53.945882+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.diw.de%2Fde%2Fdiw_01.c.618535.de%2Fkarriere%2Fstellenangebote.html"
+    },
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
@@ -13,6 +26,19 @@
       "paused_until": "2026-07-22T21:01:11.397506+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Weltfriedensdienst": {
+      "site_id": 244,
+      "url": "https://wfd.de/ueber-uns/stellenangebote/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 19,
+      "first_recent_failure": "2026-07-08T09:31:32.232749+00:00",
+      "last_recent_failure": "2026-07-21T09:30:53.945882+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwfd.de%2Fueber-uns%2Fstellenangebote%2F"
     }
   },
   "issues": [
@@ -5074,6 +5100,26 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.dielinkebt.de%2Fservice%2Fausschreibungen%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-21T09:30:53.945882+00:00",
+      "site": "DIW Berlin",
+      "site_id": 189,
+      "url": "https://www.diw.de/de/diw_01.c.618535.de/karriere/stellenangebote.html",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.diw.de%2Fde%2Fdiw_01.c.618535.de%2Fkarriere%2Fstellenangebote.html",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-21T09:30:53.945882+00:00",
+      "site": "Weltfriedensdienst",
+      "site_id": 244,
+      "url": "https://wfd.de/ueber-uns/stellenangebote/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 521 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwfd.de%2Fueber-uns%2Fstellenangebote%2F",
       "consecutive_count": 1
     }
   ]
