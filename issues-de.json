@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T15:30:51.703929+00:00",
+  "last_updated": "2026-07-21T16:01:06.227162+00:00",
   "site_summary": {
     "Die Linke": {
       "site_id": 223,
@@ -13,6 +13,19 @@
       "paused_until": "2026-07-22T21:01:11.397506+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uni Hamburg (Stellenangebote)": {
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 132,
+      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
+      "last_recent_failure": "2026-07-21T16:01:06.227162+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -5114,6 +5127,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.diw.de%2Fde%2Fdiw_01.c.618535.de%2Fkarriere%2Fstellenangebote.html",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-21T16:01:06.227162+00:00",
+      "site": "Uni Hamburg (Stellenangebote)",
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
     }
   ]

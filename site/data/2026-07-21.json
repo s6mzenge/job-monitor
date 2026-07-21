@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T15:30:51.703929+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-21T16:01:06.227162+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Associate Accounting (m/w/d)",
@@ -322,6 +322,23 @@
       "type": "Full-time (fixed-term, 2 years)",
       "deadline": "2026-08-18",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Intern (m/f/d) Partnership for Energy Efficiency in Buildings (PEEB)",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78824",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an internship, which is excluded as a matter of policy regardless of the paid stipend. The topic (energy efficiency in buildings, climate finance) also sits well outside the candidate's core interest zones.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-08-03",
+      "salary": "€2,349/month (gross) stipend",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
