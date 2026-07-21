@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T15:02:21.958949+00:00",
-  "run_count": 29,
+  "generated_at": "2026-07-21T15:30:51.703929+00:00",
+  "run_count": 30,
   "jobs": [
     {
       "title": "Associate Accounting (m/w/d)",
@@ -305,6 +305,23 @@
       "type": "Internship-style legal-clerkship placement (Referendariat station)",
       "deadline": "2026-10-01",
       "salary": "€350/month allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advisor (m/w/d) EU Fisheries",
+      "organisation": "WWF Deutschland",
+      "url": "https://www.wwf.de/ueber-uns/stellenangebote/stellenangebot/stelle/advisor-m-w-d-eu-fisheries-7i3ltt0y",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Requires a degree in fisheries biology/management (or equivalent) plus at least 5 years of professional experience in fisheries and marine policy — both well beyond the candidate's profile and level. This is a mid-to-senior specialist advisory role in a field outside the candidate's interest zones.",
+      "location": "Hamburg, Germany",
+      "type": "Full-time (fixed-term, 2 years)",
+      "deadline": "2026-08-18",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
