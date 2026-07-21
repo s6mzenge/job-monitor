@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T07:01:05.016552+00:00",
-  "run_count": 15,
+  "generated_at": "2026-07-21T08:30:56.138658+00:00",
+  "run_count": 16,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -50,6 +50,40 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "£49,598–£60,040 (London); $88,277–$102,451 (New York)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Analyst - Research and Innovation Ecosystems",
+      "organisation": "RAND Europe",
+      "url": "https://apply.workable.com/j/617B313B2B",
+      "priority": 46,
+      "eligible": true,
+      "interest_score": "",
+      "match": "medium",
+      "reason": "On-level for a postgraduate with strong research and writing, which the candidate has, though the posting leans on \"work experience beyond university\" and a \"proven track record delivering projects\" that the candidate meets only partly through RA work. The topic — research and innovation policy, metascience and higher-education systems — aligns closely with the candidate's HRK/higher-education background, but it sits outside the core international-law and security interest zones, holding interest moderate. English fluency is essential and other languages only an asset, so no language gate applies.",
+      "location": "Cambridge, United Kingdom (Hybrid)",
+      "type": "Full-time",
+      "deadline": "2026-08-31",
+      "salary": "From GBP 33,000",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Journals and Digital Content Coordinator",
+      "organisation": "ODI Global",
+      "url": "https://careers.odi.org/en/postings/bf66111a-4f68-4a1a-8375-27e7e5412670",
+      "priority": 47,
+      "eligible": true,
+      "interest_score": "",
+      "match": "medium",
+      "reason": "An entry-level coordinator role at a leading global affairs think tank; the candidate's academic publishing experience and research background transfer, though this is more a publications/digital-content administration post than a research role, and dedicated digital-content and publishing-workflow experience is a partial gap. ODI is a respected policy institution, giving it adjacent interest, but the coordinator function sits outside the candidate's core research and analysis mission, which holds the score in the \"worth a look\" band.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "August 16, 2026",
+      "salary": "£32,860 / year",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
