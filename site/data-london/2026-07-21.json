@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T16:30:51.070898+00:00",
-  "run_count": 32,
+  "generated_at": "2026-07-21T17:01:02.173401+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -475,6 +475,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Researcher – Demos Digital Team",
+      "organisation": "Demos",
+      "url": "https://demos.co.uk/senior-researcher",
+      "priority": 58,
+      "eligible": true,
+      "interest_score": "",
+      "match": "medium",
+      "reason": "The \"Senior\" title here signals independent project management and building senior policy networks, but the posting expressly welcomes applicants meeting only \"some\" of the attributes and frames experience as demonstrable rather than a fixed multi-year post-qualification bar, so it does not clearly trip the level disqualifier — the core research, literature-review and qualitative/quantitative skills fit well and the London hybrid base satisfies the location filter. The subject (mis/disinformation, foreign interference, AI and information ecosystems, epistemic security) sits squarely in zone (c) tech/OSINT-adjacent policy research, a real interest boost. Score is held down by the seniority framing (independently managing projects and nurturing senior stakeholder networks) that leans beyond a first graduate role.",
+      "location": "Whitehall, Greater London (Hybrid)",
+      "type": "Full-time",
+      "deadline": "10th August, 9am",
+      "salary": "£36,093 – £40,166",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
