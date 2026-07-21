@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T14:31:06.758551+00:00",
-  "run_count": 28,
+  "generated_at": "2026-07-21T15:01:19.886763+00:00",
+  "run_count": 29,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -355,6 +355,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "30 July 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "NL Inspection Service Delivery Manager",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Rotterdam-NL-Inspection-Service-Delivery-Manager-3068-AX/1417370633",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Multiple hard disqualifiers: it is a Manager-level leadership role requiring significant TIC-industry experience and team management, it demands fluency in Dutch (candidate is A1), and it requires an engineering degree. None of these essentials are met, and the field is entirely outside the candidate's interests.",
+      "location": "Rotterdam, Netherlands",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
