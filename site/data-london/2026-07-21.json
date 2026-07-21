@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T04:01:04.421340+00:00",
-  "run_count": 9,
+  "generated_at": "2026-07-21T04:30:48.807600+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -33,6 +33,23 @@
       "type": "Not specified",
       "deadline": "15 January 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Technical Program Manager, Enterprise Applications",
+      "organisation": "International Rescue Committee",
+      "url": "https://theirc.wd1.myworkdayjobs.com/job/New-York-NY-HQ-USA/Technical-Program-Manager--Enterprise-Applications_JR00004257",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A \"Manager\"-level role requiring 3–6 years of demonstrable technical project-management experience and Scrum Master / ServiceNow / enterprise-integration expertise the candidate does not have — both a level and a deep-technical disqualifier. Although a London option exists, the essential experience and technical requirements are far beyond an early-career research profile.",
+      "location": "London, UK (also New York; 3 locations)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£49,598–£60,040 (London); $88,277–$102,451 (New York)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
