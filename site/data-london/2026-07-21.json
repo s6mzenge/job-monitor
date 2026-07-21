@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T22:30:53.479300+00:00",
-  "run_count": 44,
+  "generated_at": "2026-07-21T23:00:56.291078+00:00",
+  "run_count": 45,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -526,6 +526,23 @@
       "type": "Full-time (Permanent)",
       "deadline": "2026-08-11",
       "salary": "US$45,000–50,000",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Integrations Specialist",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/3991/0/471932/15539/integrations-specialist",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a deep-technical software/data-integration role whose essential requirements — strong SQL and database development, ETL/API development, enterprise integration patterns, Mulesoft — are far beyond the candidate's analysis-level Python and squarely a software-engineering skills gap. The salary band and \"technical lead\"/mentoring framing also signal a senior, experienced hire, not an entry-level position, and the subject matter sits entirely outside the candidate's interest zones.",
+      "location": "London",
+      "type": "Full-time (Fixed term, 3 years)",
+      "deadline": "05 August 2026",
+      "salary": "£53,949 to £62,160 pa (potential to £69,073) inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
