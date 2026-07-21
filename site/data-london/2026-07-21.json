@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T20:01:00.678991+00:00",
-  "run_count": 39,
+  "generated_at": "2026-07-21T20:30:49.978660+00:00",
+  "run_count": 40,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -509,6 +509,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Publishing Assistant",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/New-York/Publishing-Assistant_JR106696",
+      "priority": 38,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Genuinely entry-level with essential requirements the candidate meets — a Bachelor's, strong English writing, analytical ability and MS Office — and the academic-publishing environment aligns with the candidate's publication experience and interest in scholarly work. However, this is an administrative / project-support publishing role rather than research on the candidate's core mission, and the behavioral/social-sciences journals focus is only tangentially related to their international-law and security interests, which caps the interest pull.",
+      "location": "New York / Jersey City (Hybrid), USA",
+      "type": "Full-time (Permanent)",
+      "deadline": "2026-08-11",
+      "salary": "US$45,000–50,000",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
