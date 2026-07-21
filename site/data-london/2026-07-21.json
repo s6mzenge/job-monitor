@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T08:30:56.138658+00:00",
-  "run_count": 16,
+  "generated_at": "2026-07-21T09:01:03.574830+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -84,6 +84,23 @@
       "type": "Full-time",
       "deadline": "August 16, 2026",
       "salary": "£32,860 / year",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Finance Officer - Sahel",
+      "organisation": "International Alert",
+      "url": "https://www.international-alert.org/about/jobs/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Excluded by the London-only location filter — the role is based in Niamey, Niger with no London or remote option. It is also a \"Senior\" finance role requiring finance experience the candidate lacks, so it fails on multiple counts.",
+      "location": "Niamey, Niger",
+      "type": "Full-time",
+      "deadline": "18 July 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
