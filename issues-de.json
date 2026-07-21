@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T18:31:17.768796+00:00",
+  "last_updated": "2026-07-21T19:00:58.115943+00:00",
   "site_summary": {
     "Die Linke": {
       "site_id": 223,
@@ -13,6 +13,19 @@
       "paused_until": "2026-07-22T21:01:11.397506+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uni Hamburg (Stellenangebote)": {
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 134,
+      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
+      "last_recent_failure": "2026-07-21T19:00:58.115943+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -5128,6 +5141,16 @@
     },
     {
       "timestamp": "2026-07-21T18:01:05.319639+00:00",
+      "site": "Uni Hamburg (Stellenangebote)",
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-21T19:00:58.115943+00:00",
       "site": "Uni Hamburg (Stellenangebote)",
       "site_id": 230,
       "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
