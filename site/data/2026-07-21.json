@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T09:30:53.945882+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-21T10:01:04.068740+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Associate Accounting (m/w/d)",
@@ -14,6 +14,23 @@
       "reason": "An accounting role is well outside the candidate's research/policy profile and skill set — bookkeeping and finance are not areas of demonstrated competence. Nothing hard disqualifies it, but the paper fit and interest alignment are both minimal, so it barely warrants surfacing.",
       "location": "Not specified",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Intern (m/f/d) Carbon Markets & Pricing / International Carbon Action Partnership (ICAP) Secretariat",
+      "organisation": "adelphi",
+      "url": "https://careers.adelphi.de/jobposting/1395695c774cabf37ea682e6f85a7bb8cc3595040",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is explicitly an internship for current students, which is excluded as a matter of policy. The topic (carbon markets / climate policy) also sits outside the candidate's core interest zones, but the internship status is the decisive disqualifier.",
+      "location": "Berlin, Germany",
+      "type": "Internship",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
