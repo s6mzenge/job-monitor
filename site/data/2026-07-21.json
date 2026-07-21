@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T12:01:16.238033+00:00",
-  "run_count": 23,
+  "generated_at": "2026-07-21T12:31:04.036433+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Associate Accounting (m/w/d)",
@@ -135,6 +135,23 @@
       "type": "Internship",
       "deadline": "2026-08-03",
       "salary": "€2,349/month (gross)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Associate for the Project \"Cluster of Excellence Understanding Written Artefacts\"",
+      "organisation": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote/ausschreibung.html?jobID=04599969edbaf2f61ddeed320722ab292a9f739c",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a postdoctoral position requiring an already-obtained (or submitted) PhD, which the candidate does not hold — a hard disqualifier. It also requires fluency in Spanish and expertise in precolonial Mesoamerican studies, neither of which the candidate has.",
+      "location": "Hamburg, Germany",
+      "type": "Full-time (fixed-term to 31.12.2029)",
+      "deadline": "2026-08-30",
+      "salary": "EGR. 13 TV-L",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
