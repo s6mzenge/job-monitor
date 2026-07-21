@@ -1,6 +1,24 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T07:01:03.126790+00:00",
-  "run_count": 15,
-  "jobs": []
+  "generated_at": "2026-07-21T08:31:48.312872+00:00",
+  "run_count": 16,
+  "jobs": [
+    {
+      "title": "Associate Accounting (m/w/d)",
+      "organisation": "Vandenhoeck & Ruprecht / De Gruyter",
+      "url": "https://de-gruyter.onlyfy.jobs/en/job/zeq2cgp4ebioreut5plgh3yzb6c3fkz",
+      "priority": 8,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "An accounting role is well outside the candidate's research/policy profile and skill set — bookkeeping and finance are not areas of demonstrated competence. Nothing hard disqualifies it, but the paper fit and interest alignment are both minimal, so it barely warrants surfacing.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
