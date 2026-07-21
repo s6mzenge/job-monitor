@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T13:11:04.975896+00:00",
-  "run_count": 25,
+  "generated_at": "2026-07-21T13:30:58.296029+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Associate Accounting (m/w/d)",
@@ -152,6 +152,23 @@
       "type": "Full-time (fixed-term to 31.12.2029)",
       "deadline": "2026-08-30",
       "salary": "EGR. 13 TV-L",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Projektassistenz Organisation & Kommunikation (m/w/d)",
+      "organisation": "NABU",
+      "url": "https://jobs.nabu.de/de?id=ea7607",
+      "priority": 24,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Entry-level and open to a Bachelor's graduate, so eligible on paper, but the role is centred on project administration, event management, social media, and graphic design (Adobe Creative Cloud) — areas that are a partial gap for the candidate and outside their research/writing strengths. Environmental/agricultural project coordination sits outside all three core interest zones, and the comms/design emphasis pulls it further from fit, so it is only marginally worth surfacing.",
+      "location": "Berlin, Germany (hybrid)",
+      "type": "Full-time / Part-time (34–40 hours)",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
