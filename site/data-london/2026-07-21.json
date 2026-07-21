@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T11:31:04.802532+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-21T12:01:09.587209+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -202,6 +202,23 @@
       "location": "London",
       "type": "Full-time",
       "deadline": "27 July (posting end date 28-07-2026)",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for established \"experts\" to join an advisory committee — not an entry-level paid role, and it seeks seniority and specialist regional expertise the candidate does not have; it also reads as an unpaid advisory/volunteer position. The human-rights and securitisation subject matter is genuinely on-mission, but the level and nature of the posting are hard mismatches.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
