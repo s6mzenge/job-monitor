@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T09:01:03.574830+00:00",
-  "run_count": 17,
+  "generated_at": "2026-07-21T09:30:53.537043+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -100,6 +100,23 @@
       "location": "Niamey, Niger",
       "type": "Full-time",
       "deadline": "18 July 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Associate Publisher – SN Journals",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/New-Delhi/Associate-Publisher_JR106634",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Requires 5–7 years of direct journal-management experience as an essential, which the candidate plainly lacks — a hard level/experience disqualifier. It is also a commercial publishing-operations role outside the candidate's interest zones.",
+      "location": "New Delhi, India",
+      "type": "Full-time",
+      "deadline": "2026-08-04",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
