@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T19:00:58.860088+00:00",
-  "run_count": 37,
+  "generated_at": "2026-07-21T19:41:22.124313+00:00",
+  "run_count": 38,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -492,6 +492,23 @@
       "type": "Full-time",
       "deadline": "10th August, 9am",
       "salary": "£36,093 – £40,166",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Researcher, Special Risk Analysis",
+      "organisation": "Control Risks",
+      "url": "https://apply.workable.com/j/CE0D5CD3B9",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "\"Ability to carry out research in French\" is listed as an essential, and the candidate's French is only B1 (working, not research-fluent), which fails this essential requirement. Otherwise this would be a strong entry-level fit at a core zone-(b) firm with excellent research/writing alignment — but the French requirement gates it.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
