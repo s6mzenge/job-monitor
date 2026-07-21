@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
-  "generated_at": "2026-07-21T12:31:00.059671+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-21T13:01:06.346983+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Primary Spanish Editor",
@@ -254,6 +254,40 @@
       "type": "Internship",
       "deadline": "27 July 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Talent Pool Project Coordinator- Contractor - London",
+      "organisation": "Centre for Information Resilience",
+      "url": "https://apply.workable.com/j/58DBB411CE",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "This is explicitly not an active vacancy — it is a talent-pool / \"register your interest\" posting with no concrete role, which is a hard disqualifier. CIR's open-source-investigations mission sits squarely in the candidate's zone (c), but the posting also requires experience on UK Gov funded projects and demonstrable grant/project-coordination experience the candidate only partly meets.",
+      "location": "London, United Kingdom (Hybrid)",
+      "type": "Contract (Full-time, Aug 2026 – Mar 2027)",
+      "deadline": "Tuesday 28th July 2026, 23:55",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Operations Administrator",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/1216/0/472018/15539/operations-administrator",
+      "priority": 24,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Genuinely entry-level and eligible — the candidate meets the degree, MS Office and administrative requirements, and their funding-allocation and project-admin experience transfers. However, this is a front-facing customer-service and operations-admin role with no research, policy or analytical substance, so it sits well outside all three interest zones and offers little career-building pull toward the candidate's mission.",
+      "location": "London",
+      "type": "Part-time (0.8 FTE, 28 hours/week), Fixed-term to 31 July 2027",
+      "deadline": "2026-08-04",
+      "salary": "£29,110–£32,468 pa inclusive (potential progression to £34,107)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
