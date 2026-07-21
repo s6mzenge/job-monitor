@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-07-21T21:01:00.835770+00:00",
+  "last_updated": "2026-07-21T21:30:59.375312+00:00",
   "site_summary": {
+    "Aegis Trust": {
+      "site_id": 5,
+      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 2,
+      "first_recent_failure": "2026-07-05T07:31:12.260975+00:00",
+      "last_recent_failure": "2026-07-21T21:30:59.375312+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Faegistrust.online%2Fget-involved%2Fwork-at-aegis%2F"
+    },
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
@@ -8644,6 +8657,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-21T21:30:59.375312+00:00",
+      "site": "Aegis Trust",
+      "site_id": 5,
+      "url": "https://aegistrust.online/get-involved/work-at-aegis/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Faegistrust.online%2Fget-involved%2Fwork-at-aegis%2F",
       "consecutive_count": 1
     }
   ]
