@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T17:01:00.412136+00:00",
-  "run_count": 35,
+  "generated_at": "2026-07-22T17:30:59.422787+00:00",
+  "run_count": 36,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -441,6 +441,23 @@
       "type": "Contract (Freelance, ~8 days/month, 6-month initial)",
       "deadline": "September 1st",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Manager, Programme Analytics - SRHR",
+      "organisation": "CIFF",
+      "url": "https://apply.workable.com/j/25FC65AE69",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A \"Senior Manager\" title with a £82k salary and essential requirements for substantial quantitative analysis, epidemiological/econometric/cost-effectiveness modelling and mentoring — clearly well beyond entry-level and requiring years of specialist experience the candidate lacks. It is also outside the core interest zones (SRHR programme analytics) and demands technical modelling far past the candidate's analysis-level Python.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "From GBP 82,000",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
