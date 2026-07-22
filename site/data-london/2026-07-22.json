@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T07:30:58.858078+00:00",
-  "run_count": 16,
+  "generated_at": "2026-07-22T08:01:07.057892+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -100,6 +100,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Finance Officer-Sahel",
+      "organisation": "International Alert",
+      "url": "https://www.international-alert.org/about/jobs/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Location fails the London-only filter — the role is based in Niamey, Niger with no London or remote-UK option. It is also a senior finance-specialist role outside the candidate's profile.",
+      "location": "Niamey, Niger",
+      "type": "Full-time",
+      "deadline": "18 July 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
