@@ -1,40 +1,27 @@
 {
-  "last_updated": "2026-07-22T22:01:03.491126+00:00",
+  "last_updated": "2026-07-22T22:31:09.797357+00:00",
   "site_summary": {
-    "Deutsches Institut für Menschenrechte": {
-      "site_id": 159,
-      "url": "https://www.institut-fuer-menschenrechte.de/das-institut/jobs",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-07-18T22:01:03.584449+00:00",
-      "last_recent_failure": "2026-07-22T22:01:03.491126+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 525 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.institut-fuer-menschenrechte.de%2Fdas-institut%2Fjobs"
-    },
     "WZB Berlin Social Science Center": {
       "site_id": 165,
       "url": "https://www.wzb.eu/de/das-wzb/arbeiten-am-wzb/stellenangebote",
       "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
+      "consecutive_failures": 2,
+      "total_recent_failures": 2,
       "first_recent_failure": "2026-07-22T22:01:03.491126+00:00",
-      "last_recent_failure": "2026-07-22T22:01:03.491126+00:00",
+      "last_recent_failure": "2026-07-22T22:31:09.797357+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.wzb.eu%2Fde%2Fdas-wzb%2Farbeiten-am-wzb%2Fstellenangebote"
+      "last_message": "fetch_page: 523 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.wzb.eu%2Fde%2Fdas-wzb%2Farbeiten-am-wzb%2Fstellenangebote"
     },
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 103,
+      "consecutive_failures": 4,
+      "total_recent_failures": 104,
       "first_recent_failure": "2026-06-28T21:07:23.784674+00:00",
-      "last_recent_failure": "2026-07-22T22:01:03.491126+00:00",
+      "last_recent_failure": "2026-07-22T22:31:09.797357+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -5311,6 +5298,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
       "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-07-22T22:31:09.797357+00:00",
+      "site": "WZB Berlin Social Science Center",
+      "site_id": 165,
+      "url": "https://www.wzb.eu/de/das-wzb/arbeiten-am-wzb/stellenangebote",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 523 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.wzb.eu%2Fde%2Fdas-wzb%2Farbeiten-am-wzb%2Fstellenangebote",
+      "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-07-22T22:31:09.797357+00:00",
+      "site": "Die Linke",
+      "site_id": 223,
+      "url": "https://www.die-linke.de/partei/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
+      "consecutive_count": 4
     }
   ]
 }
