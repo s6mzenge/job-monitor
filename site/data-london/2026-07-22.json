@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T13:01:05.441785+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-22T13:30:52.448338+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -201,6 +201,23 @@
       "reason": "A \"Team Leader\" title indicates a senior role requiring substantial leadership and post-qualification experience the candidate does not have — not entry-level. The level mismatch is a hard disqualifier regardless of field.",
       "location": "United Kingdom",
       "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Corporate Intelligence Experienced Case Manager - Former Soviet Union, London",
+      "organisation": "S-RM",
+      "url": "https://www.s-rminform.com/open-position-corporate-intelligence-experienced-case-manager-former-soviet-union-london",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "Requires a minimum of 5 years of corporate intelligence experience plus team management/mentoring — a clear senior \"Case Manager\" role, not entry-level, so it fails the level gate. It also requires high-standard Russian research proficiency as essential, which the candidate does not have. S-RM and commercial intelligence are core-target, but both the experience and language requirements are unmet essentials.",
+      "location": "London, UK",
+      "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
