@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T23:01:02.323612+00:00",
+  "generated_at": "2026-07-22T23:30:57.312696+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 90,
@@ -112,9 +112,9 @@
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 5,
-      "total_recent_failures": 105,
-      "last_failure": "2026-07-22T23:01:02.323612+00:00",
+      "consecutive_failures": 6,
+      "total_recent_failures": 106,
+      "last_failure": "2026-07-22T23:30:57.312696+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F"
@@ -125,9 +125,9 @@
       "url": "https://www.wzb.eu/de/das-wzb/arbeiten-am-wzb/stellenangebote",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
-      "last_failure": "2026-07-22T23:01:02.323612+00:00",
+      "consecutive_failures": 4,
+      "total_recent_failures": 4,
+      "last_failure": "2026-07-22T23:30:57.312696+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 523 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.wzb.eu%2Fde%2Fdas-wzb%2Farbeiten-am-wzb%2Fstellenangebote"
