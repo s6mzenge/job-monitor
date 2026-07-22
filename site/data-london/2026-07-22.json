@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T06:01:15.030843+00:00",
-  "run_count": 13,
+  "generated_at": "2026-07-22T06:30:50.636274+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -84,6 +84,23 @@
       "type": "Full-time",
       "deadline": "4 August 2026",
       "salary": "£80,000 - £90,000 plus £5,441 London Weighting",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for established \"experts\" to join an advisory committee — not an entry-level paid role, and it explicitly seeks seasoned specialists (effectively senior-level). It also reads as an advisory/voluntary appointment rather than a genuine paid vacancy, so it fails the entry-level and paid-role gates despite the strong human-rights subject match.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
