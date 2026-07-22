@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T14:01:13.818549+00:00",
-  "run_count": 29,
+  "generated_at": "2026-07-22T14:31:06.139424+00:00",
+  "run_count": 30,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -271,6 +271,40 @@
       "type": "Full-time",
       "deadline": "23-07-2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Turkish-Speaking Due Diligence Practitioner",
+      "organisation": "S-RM",
+      "url": "https://www.s-rminform.com/open-position-turkish-speaking-due-diligence-practitioner",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "Two hard disqualifiers apply: the posting explicitly states \"this is not an entry level position\" and requires prior Corporate Intelligence industry experience, and it demands high working proficiency in Turkish as a minimum requirement, which the candidate does not have. Although S-RM and commercial intelligence sit squarely in a core target zone, the level and language requirements are unmet essentials.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Operations Engineer",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Operations-Engineer/43275-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a deep-technical broadcast-engineering role whose essential criteria — proven broadcast systems engineering, diagnosing complex hardware faults, and electrical safety competence — are entirely outside the candidate's skill set. It bears no relation to the candidate's research, policy or analysis background and sits in none of the interest zones.",
+      "location": "London, Broadcasting House",
+      "type": "Contract (12-month fixed term)",
+      "deadline": "04/08/2026",
+      "salary": "£45,000 - £55,000",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""

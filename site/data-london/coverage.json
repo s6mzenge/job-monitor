@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T14:01:13.818549+00:00",
+  "generated_at": "2026-07-22T14:31:06.139424+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 138,
@@ -8,13 +8,13 @@
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 84,
+    "html": 83,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 11,
+    "playwright": 12,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -71,6 +71,7 @@
     "Fabian Society",
     "Fitch Group",
     "Focus on Labour Exploitation (FLEX)",
+    "Forensic Architecture",
     "Friends of the Earth",
     "FSG",
     "German Historical Institute London",
@@ -93,7 +94,6 @@
     "INQUEST",
     "Institute for Government",
     "Institute for Strategic Dialogue (ISD)",
-    "Institute of Race Relations",
     "Integrity Global",
     "International Alert",
     "International Bar Association",
@@ -191,17 +191,17 @@
       "message": "Site paused after 16 consecutive failures"
     },
     {
-      "id": 95,
-      "name": "Forensic Architecture",
-      "url": "https://forensic-architecture.org/about/jobs",
-      "method": "playwright",
+      "id": 48,
+      "name": "Institute of Race Relations",
+      "url": "https://irr.org.uk/about/vacancies/",
+      "method": "html",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 5,
-      "last_failure": "2026-07-22T14:01:13.818549+00:00",
+      "total_recent_failures": 3,
+      "last_failure": "2026-07-22T14:31:06.139424+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
+      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Firr.org.uk%2Fabout%2Fvacancies%2F"
     }
   ]
 }
