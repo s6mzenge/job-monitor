@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T07:31:17.581571+00:00",
-  "run_count": 16,
+  "generated_at": "2026-07-22T08:01:07.375715+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Project Officer (all genders) - Negotiation Support to Resistance and Liberation Movements",
@@ -16,6 +16,23 @@
       "type": "Part-time (50%)",
       "deadline": "2026-08-02",
       "salary": "TVöD Bund (not specified in figures)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Ranking Manager (m/f/x)",
+      "organisation": "ESMT Berlin",
+      "url": "https://jobs.esmt.berlin/en?id=8000ef",
+      "priority": 22,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The \"Manager\" title and requirements point to an operational, CRM/process-management role rather than an entry-level research post, and the essentials (hands-on Salesforce/CRM experience, process automation, predictive analytics modelling, stakeholder management) sit largely outside the candidate's research-and-writing profile — though the candidate's higher-education-policy RA experience gives a partial thematic link. The role is not squarely a Senior/Lead level despite the title and doesn't demand years of experience as an essential, so it stays eligible, but it is a weak fit on both skills and interest.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (20 hrs/week)",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
