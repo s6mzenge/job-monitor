@@ -1,6 +1,24 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T07:01:20.976979+00:00",
-  "run_count": 15,
-  "jobs": []
+  "generated_at": "2026-07-22T07:31:17.581571+00:00",
+  "run_count": 16,
+  "jobs": [
+    {
+      "title": "Project Officer (all genders) - Negotiation Support to Resistance and Liberation Movements",
+      "organisation": "Berghof Foundation",
+      "url": "https://berghof-foundation-operations-ggmbh.jobs.personio.de/job/2723145",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "5",
+      "match": "low",
+      "reason": "The role requires C1-level French as an essential (\"Excellent verbal and written language skills in English and in French (at least C1-level)\"), which the candidate's B1 French does not meet — a hard disqualifier. This is a shame, as peacebuilding, negotiation support and transitional processes sit squarely in the candidate's core interest zone.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (50%)",
+      "deadline": "2026-08-02",
+      "salary": "TVöD Bund (not specified in figures)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
