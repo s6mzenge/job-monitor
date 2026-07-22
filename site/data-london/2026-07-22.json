@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T11:30:50.665529+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-22T12:01:05.186721+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -185,6 +185,23 @@
       "location": "Johannesburg, South Africa",
       "type": "Full-time",
       "deadline": "2026-08-07",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Team Leader - CASA 3",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25360?c=palladium",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "A \"Team Leader\" title indicates a senior role requiring substantial leadership and post-qualification experience the candidate does not have — not entry-level. The level mismatch is a hard disqualifier regardless of field.",
+      "location": "United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
