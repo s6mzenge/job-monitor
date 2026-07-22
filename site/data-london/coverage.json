@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-22T13:30:52.448338+00:00",
+  "generated_at": "2026-07-22T14:01:13.818549+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 139,
-  "erroring": 0,
+  "healthy": 138,
+  "erroring": 1,
   "paused": 2,
   "methods": {
     "palladium_api": 1,
@@ -14,7 +14,7 @@
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 12,
+    "playwright": 11,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -71,7 +71,6 @@
     "Fabian Society",
     "Fitch Group",
     "Focus on Labour Exploitation (FLEX)",
-    "Forensic Architecture",
     "Friends of the Earth",
     "FSG",
     "German Historical Institute London",
@@ -190,6 +189,19 @@
       "paused_until": "2026-07-23T16:30:51.070898+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
+    },
+    {
+      "id": 95,
+      "name": "Forensic Architecture",
+      "url": "https://forensic-architecture.org/about/jobs",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 5,
+      "last_failure": "2026-07-22T14:01:13.818549+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
     }
   ]
 }
