@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T10:01:23.463276+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-22T10:31:05.886375+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -168,6 +168,23 @@
       "location": "Kampala, Uganda (Hybrid)",
       "type": "Contract (Contractor, ~15-18 days/month)",
       "deadline": "5 August (23:55)",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Residence Cluster Manager (AD07)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106670&p_spid=5166839",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a \"Manager\" role requiring at least 5 years of managerial experience including staff management and budgeting — well beyond the candidate's entry-level profile and a clear disqualifier. It is also an operational student-housing role with no research or policy relevance to the candidate's interests.",
+      "location": "Johannesburg, South Africa",
+      "type": "Full-time",
+      "deadline": "2026-08-07",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
