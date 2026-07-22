@@ -1,18 +1,31 @@
 {
-  "last_updated": "2026-07-22T09:01:10.515143+00:00",
+  "last_updated": "2026-07-22T09:31:18.096384+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
-      "consecutive_failures": 10,
-      "total_recent_failures": 84,
+      "consecutive_failures": 11,
+      "total_recent_failures": 85,
       "first_recent_failure": "2026-07-11T23:01:29.984592+00:00",
-      "last_recent_failure": "2026-07-22T09:01:10.515143+00:00",
+      "last_recent_failure": "2026-07-22T09:31:18.096384+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607"
+    },
+    "Conciliation Resources": {
+      "site_id": 87,
+      "url": "https://www.c-r.org/jobs",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-07-22T09:31:18.096384+00:00",
+      "last_recent_failure": "2026-07-22T09:31:18.096384+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.c-r.org%2Fjobs"
     },
     "Airwars": {
       "site_id": 133,
@@ -8815,6 +8828,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607",
       "consecutive_count": 10
+    },
+    {
+      "timestamp": "2026-07-22T09:31:18.096384+00:00",
+      "site": "FTI Consulting",
+      "site_id": 11,
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607",
+      "consecutive_count": 11
+    },
+    {
+      "timestamp": "2026-07-22T09:31:18.096384+00:00",
+      "site": "Conciliation Resources",
+      "site_id": 87,
+      "url": "https://www.c-r.org/jobs",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 500 Server Error: Internal Server Error for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.c-r.org%2Fjobs",
+      "consecutive_count": 1
     }
   ]
 }

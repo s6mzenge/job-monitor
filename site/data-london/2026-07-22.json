@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T09:01:10.515143+00:00",
-  "run_count": 19,
+  "generated_at": "2026-07-22T09:31:18.096384+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -151,6 +151,23 @@
       "location": "Not specified",
       "type": "Not specified (Advisory Committee)",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Project Coordinator, Sudan Witness - Contractor",
+      "organisation": "Centre for Information Resilience",
+      "url": "https://apply.workable.com/j/36C34C2DD9",
+      "priority": 48,
+      "eligible": true,
+      "interest_score": "4",
+      "match": "medium",
+      "reason": "This is a project-coordination / grant-management and administrative role rather than a research post; the candidate's project-administration and funding-allocation experience at the German Rectors' Conference is a reasonable partial fit, though the role leans heavily on grant-management and logistics coordination the candidate has only touched. CIR is a core zone (c) OSINT / human-rights investigations organisation, which lifts interest, but the fit is administrative rather than analytical and Arabic / Sudan experience (desirable, not essential) would help — nothing here disqualifies.",
+      "location": "Kampala, Uganda (Hybrid)",
+      "type": "Contract (Contractor, ~15-18 days/month)",
+      "deadline": "5 August (23:55)",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
