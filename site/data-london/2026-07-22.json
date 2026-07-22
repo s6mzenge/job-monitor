@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T22:01:04.934600+00:00",
-  "run_count": 45,
+  "generated_at": "2026-07-22T22:30:51.184538+00:00",
+  "run_count": 46,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -472,6 +472,23 @@
       "match": "low",
       "reason": "\"Lead Auditor\" is a senior, non-entry-level title, and the role requires substantial practical IT and information-security workplace experience (configuration management, disaster recovery, cloud infrastructure) that the candidate plainly lacks. This is a technical assurance/audit role well outside the candidate's research and policy profile.",
       "location": "Birmingham, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Director, Fund & Asset Manager Ratings - London",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Senior-Director%2C-Fund-&-Asset-Manager-Ratings-London/1254143201",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A Senior Director role requiring proven team-leadership and extensive credit-analysis experience — far above entry-level and outside the candidate's skill set. The financial-ratings domain is also outside the candidate's interest zones and specialism.",
+      "location": "London, GB",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
