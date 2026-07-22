@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T15:31:00.011341+00:00",
-  "run_count": 32,
+  "generated_at": "2026-07-22T16:01:19.317964+00:00",
+  "run_count": 33,
   "jobs": [
     {
       "title": "Project Officer (all genders) - Negotiation Support to Resistance and Liberation Movements",
@@ -237,6 +237,23 @@
       "type": "Internship (Pflichtpraktikum, full-time, 6 months)",
       "deadline": "Not specified (rolling)",
       "salary": "€520/month",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Referent:in Social Media und digitale Kommunikation (m/w/d)",
+      "organisation": "Transparency International DE",
+      "url": "https://www.transparency.de/ueber-uns/stellenangebote",
+      "priority": 18,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The role does not state a hard multi-year experience requirement, so it stays eligible, but it is a dedicated social-media / content-creation specialist post (Reels, video, community management) — squarely in the candidate's limited comms area with no research component. Interest and fit are both weak, so it barely warrants surfacing.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (20 hours/week)",
+      "deadline": "2026-08-20",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
