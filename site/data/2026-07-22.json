@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T14:30:52.528919+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-22T15:01:13.697292+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Project Officer (all genders) - Negotiation Support to Resistance and Liberation Movements",
@@ -135,6 +135,23 @@
       "type": "Part-time (Werkstudent)",
       "deadline": "2026-08-16",
       "salary": "TV-AVH EG 2, 10 hours/week",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in Interne Kommunikation und Beratung",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78490",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is an internship / Praktikum, which is excluded as a matter of policy. It is also a communications-specialist role (editorial, community management, video editing) outside the candidate's core interest zones and skills.",
+      "location": "Eschborn, Germany",
+      "type": "Internship",
+      "deadline": "2026-08-05",
+      "salary": "€2,349/month (gross)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
