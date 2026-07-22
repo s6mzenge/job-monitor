@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T15:01:09.580939+00:00",
-  "run_count": 31,
+  "generated_at": "2026-07-22T15:31:01.190189+00:00",
+  "run_count": 32,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -322,6 +322,40 @@
       "type": "Contract (fixed-term)",
       "deadline": "12 August 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Internship in the South and Central Asian Defence Strategy and Diplomacy Programme",
+      "organisation": "IISS",
+      "url": "https://www.iiss.org/careers/jobs/2026/07/internship-in-the-south-and-central-asian-defence-strategy-and-diplomacy-programme",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "4",
+      "match": "low",
+      "reason": "Internships are excluded as a matter of policy, regardless of fit. IISS and its security-strategy work sit squarely in the candidate's zone (b), but the role's status disqualifies it.",
+      "location": "Not specified",
+      "type": "Internship",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Programme Coordinator, Huth Initiative for a New Political Economy",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/6064/0/472106/15539/programme-coordinator-huth-initiative-for-a-new-political-economy",
+      "priority": 46,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "medium",
+      "reason": "This is an administrative / executive-assistant coordinator role — the essentials (admin, financial, events and diary support, MS Office) are met by the candidate's RA and German Rectors' Conference funding-administration work, so it is a realistic on-level application, though it leans more coordinator than research. It sits in higher-education / research administration and political economy, which is only adjacent to the candidate's core interests, and the emphasis on events, digital comms and executive assistance is a partial gap that limits the pull. (Note: the attachment bundles a separate Research Assistant spec requiring Stata / RCTs / development economics, which is a different, less-fitting role.)",
+      "location": "London (onsite three days a week)",
+      "type": "Full-time (fixed-term, two years)",
+      "deadline": "2026-08-10",
+      "salary": "£36,513–£41,565 p.a. (progressing to £44,468), inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
