@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T11:01:01.617554+00:00",
-  "run_count": 23,
+  "generated_at": "2026-07-22T11:30:58.269893+00:00",
+  "run_count": 24,
   "jobs": [
     {
       "title": "Project Officer (all genders) - Negotiation Support to Resistance and Liberation Movements",
@@ -33,6 +33,40 @@
       "type": "Part-time (20 hrs/week)",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Project Officer (all genders) - Servicestelle Friedensbildung / Service Center Peace Education",
+      "organisation": "Berghof Foundation",
+      "url": "https://berghof-foundation-operations-ggmbh.jobs.personio.de/job/2723147",
+      "priority": 42,
+      "eligible": true,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "The role appears to be an entry-to-junior project/administrative post at a respected peace-research foundation, and the candidate's project-administration and event-support experience (German Rectors' Conference) transfer well. The description is minimal, so paper-fit is uncertain, and peace education is adjacent rather than core to the candidate's international-law/atrocity focus; a German-language pedagogy service center may also lean toward education-specialist skills the candidate lacks. Native German is an asset if required.",
+      "location": "Tübingen, Germany",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Roving Grants and Compliance Advisor*in",
+      "organisation": "Oxfam Deutschland",
+      "url": "https://www.oxfam.de/ueber-uns/arbeiten-bei-oxfam/jobs/roving-grants-compliance-advisorin",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Fails multiple hard essentials: it requires fluent French alongside German and English (candidate is only B1 French), and it demands roughly three years of relevant professional experience plus multi-year project-finance-management experience the candidate lacks. It is also a grant-compliance and financial-management role rather than the candidate's research/policy focus, so interest is low even setting aside the disqualifiers.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (37.5h/week), fixed-term one year",
+      "deadline": "2026-08-23",
+      "salary": "Entgeltgruppe 6 (house collective agreement)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
