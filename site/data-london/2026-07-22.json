@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T17:30:59.422787+00:00",
-  "run_count": 36,
+  "generated_at": "2026-07-22T18:01:14.051984+00:00",
+  "run_count": 37,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -458,6 +458,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "From GBP 82,000",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Lead Auditor - Information Security",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Lead-Auditor-Information-Security-B37-7ES/1417959933",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "\"Lead Auditor\" is a senior, non-entry-level title, and the role requires substantial practical IT and information-security workplace experience (configuration management, disaster recovery, cloud infrastructure) that the candidate plainly lacks. This is a technical assurance/audit role well outside the candidate's research and policy profile.",
+      "location": "Birmingham, United Kingdom",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
