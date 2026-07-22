@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T23:01:01.581355+00:00",
-  "run_count": 47,
+  "generated_at": "2026-07-22T23:30:56.164699+00:00",
+  "run_count": 48,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -492,6 +492,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Program Development Advisor, East Africa",
+      "organisation": "International Rescue Committee",
+      "url": "https://theirc.wd1.myworkdayjobs.com/job/London-UK/Program-Development-Advisor--East-Africa_JR00004276",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a mid-level advisor role requiring a strong track record of humanitarian/development proposal development, donor process expertise, proposal budgeting and team leadership — well beyond the candidate's student-assistant experience, so it fails the entry-level test. Although remote and open to UK applicants (satisfying the London filter), the required professional business-development experience is an unmet essential.",
+      "location": "Remote (UK, Germany, or Kenya)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£52,000 - £58,736 annually",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
