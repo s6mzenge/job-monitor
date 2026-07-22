@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-22T04:00:56.531618+00:00",
+  "last_updated": "2026-07-22T04:31:00.660836+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
-      "consecutive_failures": 16,
-      "total_recent_failures": 74,
+      "consecutive_failures": 1,
+      "total_recent_failures": 75,
       "first_recent_failure": "2026-07-11T23:01:29.984592+00:00",
-      "last_recent_failure": "2026-07-20T04:01:00.990546+00:00",
-      "currently_paused": true,
-      "paused_until": "2026-07-22T04:01:00.990546+00:00",
-      "last_type": "site_paused",
-      "last_message": "Site paused after 16 consecutive failures"
+      "last_recent_failure": "2026-07-22T04:31:00.660836+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607"
     },
     "Airwars": {
       "site_id": 133,
@@ -8714,6 +8714,16 @@
       "method": "palladium_api",
       "type": "fetch_error",
       "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f7f98dc9d90>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=8)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-22T04:31:00.660836+00:00",
+      "site": "FTI Consulting",
+      "site_id": 11,
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607",
       "consecutive_count": 1
     }
   ]
