@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-22T14:31:06.139424+00:00",
+  "generated_at": "2026-07-22T15:01:09.580939+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 138,
-  "erroring": 1,
+  "healthy": 139,
+  "erroring": 0,
   "paused": 2,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 83,
+    "html": 84,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -94,6 +94,7 @@
     "INQUEST",
     "Institute for Government",
     "Institute for Strategic Dialogue (ISD)",
+    "Institute of Race Relations",
     "Integrity Global",
     "International Alert",
     "International Bar Association",
@@ -189,19 +190,6 @@
       "paused_until": "2026-07-23T16:30:51.070898+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
-    },
-    {
-      "id": 48,
-      "name": "Institute of Race Relations",
-      "url": "https://irr.org.uk/about/vacancies/",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 3,
-      "last_failure": "2026-07-22T14:31:06.139424+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Firr.org.uk%2Fabout%2Fvacancies%2F"
     }
   ]
 }

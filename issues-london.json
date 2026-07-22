@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-22T14:31:06.139424+00:00",
+  "last_updated": "2026-07-22T15:01:09.580939+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -13,19 +13,6 @@
       "paused_until": "2026-07-24T12:01:05.186721+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Institute of Race Relations": {
-      "site_id": 48,
-      "url": "https://irr.org.uk/about/vacancies/",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-06-29T04:01:18.166712+00:00",
-      "last_recent_failure": "2026-07-22T14:31:06.139424+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Firr.org.uk%2Fabout%2Fvacancies%2F"
     },
     "Airwars": {
       "site_id": 133,

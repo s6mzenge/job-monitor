@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T14:31:06.139424+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-22T15:01:09.580939+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Digital Producer",
@@ -305,6 +305,23 @@
       "type": "Contract (12-month fixed term)",
       "deadline": "04/08/2026",
       "salary": "£45,000 - £55,000",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Portfolio Manager",
+      "organisation": "Plan International UK",
+      "url": "https://careers.plan-uk.org/vacancies?jobId=254",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Two hard disqualifiers apply: it is a \"Manager\" role requiring an experienced programme-management professional with strong donor-funded experience the candidate lacks, and fluency in French is essential (candidate is only B1). The humanitarian development topic is adjacent, but the level and language requirements are unmet essentials.",
+      "location": "London (UK-based)",
+      "type": "Contract (fixed-term)",
+      "deadline": "12 August 2026",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
