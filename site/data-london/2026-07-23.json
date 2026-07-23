@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T12:01:07.508049+00:00",
-  "run_count": 25,
+  "generated_at": "2026-07-23T12:30:52.692708+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -271,6 +271,40 @@
       "type": "Full-time (fixed term, 10 months)",
       "deadline": "6 August 2026",
       "salary": "£36,513–£41,565 pa (potential to £44,468) inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Head of International Customer Success",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5218458008",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a \"Head of\" senior leadership role requiring extensive experience building and managing multi-region CS organisations and managing managers — far beyond entry-level and disqualified on level. It is also a commercial customer-success function with no research or policy content, outside the candidate's skills and interest zones.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£220,000–£385,000 GBP",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Video Producer",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/1897/0/472170/15539/video-producer",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role's essential requirements — strong professional experience producing corporate video, filmmaking with Sony A7 and broadcast cameras, and expertise in Adobe Premiere Pro / After Effects — are specialist technical film-production skills the candidate does not possess. This is a dedicated video-production specialist post entirely outside the candidate's research/policy profile and interest zones.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "07 August 2026",
+      "salary": "£43,277–£51,714 pa (progression to £55,497) inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
