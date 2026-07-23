@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T06:00:57.656639+00:00",
+  "last_updated": "2026-07-23T06:31:01.705978+00:00",
   "site_summary": {
     "WZB Berlin Social Science Center": {
       "site_id": 165,
@@ -26,19 +26,6 @@
       "paused_until": "2026-07-25T04:30:47.215287+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Uni Marburg (wiss. Stellen)": {
-      "site_id": 229,
-      "url": "https://www.uni-marburg.de/de/universitaet/profil/universitaetskultur/karriere/stellenangebote/wissenschaftliche-stellen",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 4,
-      "first_recent_failure": "2026-07-07T03:31:25.621869+00:00",
-      "last_recent_failure": "2026-07-23T06:00:57.656639+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.uni-marburg.de/de/universitaet/profil/universitaetskultur/karriere/stellenangebote/wissenschaftliche-stellen\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
