@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T09:01:06.660024+00:00",
+  "last_updated": "2026-07-23T09:31:05.515894+00:00",
   "site_summary": {
     "WZB Berlin Social Science Center": {
       "site_id": 165,
@@ -18,10 +18,10 @@
       "site_id": 222,
       "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 21,
+      "consecutive_failures": 5,
+      "total_recent_failures": 22,
       "first_recent_failure": "2026-07-02T16:31:06.772012+00:00",
-      "last_recent_failure": "2026-07-23T09:01:06.660024+00:00",
+      "last_recent_failure": "2026-07-23T09:31:05.515894+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -39,19 +39,6 @@
       "paused_until": "2026-07-25T04:30:47.215287+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Uni Hamburg (Stellenangebote)": {
-      "site_id": 230,
-      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 144,
-      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
-      "last_recent_failure": "2026-07-23T09:01:06.660024+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -5726,6 +5713,16 @@
       "type": "fetch_error",
       "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-23T09:31:05.515894+00:00",
+      "site": "Kulturgutverluste",
+      "site_id": 222,
+      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 5
     }
   ]
 }
