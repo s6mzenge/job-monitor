@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T04:01:03.129085+00:00",
-  "run_count": 9,
+  "generated_at": "2026-07-23T04:30:57.026940+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -50,6 +50,40 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Performance & Capability Consultant FTC",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Performance-&amp;-Capability-Consultant-FTC/49552-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Not entry-level — this is a senior consultant role (Band E, £80k+) requiring a proven track record of delivering organisational development and leadership outcomes, experience coaching senior stakeholders, and SAP/Centre of Expertise experience the candidate does not have. It is also an HR/organisational-development function well outside the candidate's research and policy interest zones.",
+      "location": "London, GBR (London Television Centre – Hybrid)",
+      "type": "Full-time (Fixed-Term Contract until March 2027)",
+      "deadline": "4 August 2026",
+      "salary": "£80,000 - £90,000 plus £5,441 London Weighting",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Director of FP&A",
+      "organisation": "BBC",
+      "url": "https://careers.bbc.co.uk/job/Director-of-FP&amp;A/48518-en_GB",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A Director-level finance role requiring significant FP&A leadership experience and a professional accounting qualification (ACA/ACCA/CIMA) — none of which the candidate holds. It is far above entry-level, in a wholly unrelated finance domain, and fails multiple hard disqualifiers.",
+      "location": "London, GBR",
+      "type": "Full-time",
+      "deadline": "5 August 2026",
+      "salary": "£140,000 - £170,000 plus 50% on-target bonus",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
