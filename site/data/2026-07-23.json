@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T10:01:07.297169+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-23T10:30:51.008123+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Systemadministrator*in KI & Netzwerktechnik für das ARD-Hauptstadtstudio",
@@ -135,6 +135,23 @@
       "type": "Internship",
       "deadline": "Not specified",
       "salary": "992 Euro monthly allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Co-Leitung Generation (w/m/d/k)",
+      "organisation": "Kulturveranstaltungen des Bundes (KBB)",
+      "url": "https://kbbjobs.softgarden.io/job/66276498/Co-Leitung-Generation-w-m-d-k-?jobDbPVId=279691303&l=de",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a leadership (\"Co-Leitung\") role with personnel and budget responsibility that explicitly requires several years of management and change experience (\"mehrjährige Führungs- und Veränderungserfahrung\"), plus a film-studies/media background — both essentials the candidate lacks, disqualifying the role on level and qualification grounds. The film-festival curation field is also entirely outside the candidate's interest zones.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (39h/week), fixed-term",
+      "deadline": "2026-08-16",
+      "salary": "TVöD E11",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
