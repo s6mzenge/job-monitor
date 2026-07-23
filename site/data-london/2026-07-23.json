@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T08:01:11.161108+00:00",
-  "run_count": 17,
+  "generated_at": "2026-07-23T08:31:01.167987+00:00",
+  "run_count": 18,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -135,6 +135,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Undergraduate Programme Administrator",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/6944/0/472130/15539/undergraduate-programme-administrator",
+      "priority": 33,
+      "eligible": true,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Eligible and entry-level-accessible — the essentials (Microsoft Office, accuracy, communication, degree level) are within reach and the candidate has HEI administrative experience from the German Rectors' Conference, though it lacks the LSE-specific systems (SITS, Moodle, Akari) and dedicated student-facing pastoral experience. It is a London-based higher-education administration role, which is only tangential to the candidate's core research and policy interests, so despite being a solid winnable application, the interest pull is low.",
+      "location": "London, UK",
+      "type": "Full-time (Fixed-term secondment cover until 30 June 2027)",
+      "deadline": "06 August 2026",
+      "salary": "£36,513–£41,565 pa inclusive, progressing to £44,468 pa inclusive",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
