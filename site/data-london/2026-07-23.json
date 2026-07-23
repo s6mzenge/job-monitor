@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T10:01:00.164124+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-23T10:30:49.923888+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -203,6 +203,23 @@
       "type": "Full-time (fixed-term, two years)",
       "deadline": "11 August 2026",
       "salary": "£53,949–£62,160 pa (progression to £69,073), inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Officer (NeST project)",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/1641/0/472154/15539/research-officer-nest-project",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Essential requirements include a completed (or near-submission) PhD in statistics or a related subject, a solid background in mathematical statistics or ML theory, and advanced programming — none of which the candidate holds; their Python is analysis-level, not high-dimensional statistical inference. This is a deep-technical statistics research post far outside the candidate's field and skills.",
+      "location": "London, UK",
+      "type": "Full-time (fixed-term, 23 months)",
+      "deadline": "2026-08-21",
+      "salary": "£43,277 to £51,714 pa (potential to £55,497), inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
