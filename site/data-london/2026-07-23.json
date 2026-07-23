@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T09:30:59.941198+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-23T10:01:00.164124+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -186,6 +186,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Policy Fellow (Economic and Fiscal Policy)",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/1193/0/472142/15539/policy-fellow-economic-and-fiscal-policy",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a senior \"Fellow\" role with salary and duties well above entry level — it requires leading projects, supervising Policy Analysts, and demonstrated experience working with government bodies and senior policymakers, none of which the candidate has. It also demands substantive fiscal/economic and climate-policy expertise plus advanced quantitative modelling (Stata/R/Python at data-analysis level for financial data) that fall outside the candidate's skill set and interests, and it sits outside all three interest zones.",
+      "location": "London",
+      "type": "Full-time (fixed-term, two years)",
+      "deadline": "11 August 2026",
+      "salary": "£53,949–£62,160 pa (progression to £69,073), inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
