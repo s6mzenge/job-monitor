@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T02:01:01.158723+00:00",
-  "run_count": 5,
+  "generated_at": "2026-07-23T02:31:01.190928+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -15,6 +15,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Auditor Integrated Systems and AS9100",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Leverkusen-Auditor-Integrated-Systems-and-AS9100-51373/1238535601",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires at least 5 years of relevant industry experience plus a recognised auditor qualification/accreditation for AS9100, both essential requirements the candidate plainly lacks. The role is a technical quality-management auditing position wholly outside the candidate's research and policy background and interests.",
+      "location": "Leverkusen, Germany",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
