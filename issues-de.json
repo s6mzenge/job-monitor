@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T14:01:02.380737+00:00",
+  "last_updated": "2026-07-23T14:30:57.937254+00:00",
   "site_summary": {
     "WZB Berlin Social Science Center": {
       "site_id": 165,
@@ -18,10 +18,10 @@
       "site_id": 222,
       "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 28,
+      "consecutive_failures": 5,
+      "total_recent_failures": 29,
       "first_recent_failure": "2026-07-02T16:31:06.772012+00:00",
-      "last_recent_failure": "2026-07-23T14:01:02.380737+00:00",
+      "last_recent_failure": "2026-07-23T14:30:57.937254+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -5793,6 +5793,16 @@
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
       "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-07-23T14:30:57.937254+00:00",
+      "site": "Kulturgutverluste",
+      "site_id": 222,
+      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 5
     }
   ]
 }
