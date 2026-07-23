@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T15:01:06.760900+00:00",
+  "last_updated": "2026-07-23T15:34:10.309502+00:00",
   "site_summary": {
     "WZB Berlin Social Science Center": {
       "site_id": 165,
@@ -14,19 +14,6 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "Kulturgutverluste": {
-      "site_id": 222,
-      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
-      "method": "html",
-      "consecutive_failures": 6,
-      "total_recent_failures": 30,
-      "first_recent_failure": "2026-07-02T16:31:06.772012+00:00",
-      "last_recent_failure": "2026-07-23T15:01:06.760900+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
-    },
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
@@ -39,19 +26,6 @@
       "paused_until": "2026-07-25T04:30:47.215287+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "PRO ASYL": {
-      "site_id": 237,
-      "url": "https://www.proasyl.de/jobs-bei-pro-asyl",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-07-23T15:01:06.760900+00:00",
-      "last_recent_failure": "2026-07-23T15:01:06.760900+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.proasyl.de%2Fjobs-bei-pro-asyl"
     }
   },
   "issues": [
