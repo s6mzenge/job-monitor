@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T13:01:04.807925+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-23T13:31:03.152298+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Systemadministrator*in KI & Netzwerktechnik für das ARD-Hauptstadtstudio",
@@ -152,6 +152,23 @@
       "type": "Full-time (39h/week), fixed-term",
       "deadline": "2026-08-16",
       "salary": "TVöD E11",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Studentische Aushilfen in freier Mitarbeit für das Projekt Neue Zusammenarbeit",
+      "organisation": "rbb (Rundfunk Berlin-Brandenburg)",
+      "url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2094/Description/1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is an explicit student-assistant / studentische Aushilfe role restricted to enrolled media/communications students, which is excluded by policy. It is also outside the candidate's interest zones and requires media-specific skills (SharePoint, video production) the candidate lacks.",
+      "location": "Berlin/Potsdam, Germany",
+      "type": "Part-time (freelance student help)",
+      "deadline": "Not specified",
+      "salary": "€15.00 gross per hour",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
