@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T11:30:52.994660+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-23T12:01:07.508049+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -237,6 +237,40 @@
       "type": "Full-time",
       "deadline": "30 July 2026",
       "salary": "£36,513 to £41,565 (potential to £44,468) pa inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Employment Adviser - Southampton",
+      "organisation": "Palladium Group",
+      "url": "https://palladium.csod.com/ux/ats/careersite/2/home/requisition/25369?c=palladium",
+      "priority": 8,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "The role appears to be a frontline employment-advice / caseworker position, which does not match the candidate's research, policy and analytical profile — the skills fit is weak. It sits entirely outside all three interest zones, so it is barely worth surfacing despite being nominally eligible and entry-level.",
+      "location": "Southampton, United Kingdom",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Administrator (Student Regulations)",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/1913/0/472168/15539/senior-administrator-student-regulations",
+      "priority": 34,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "The role is degree-level administrative work and the candidate's HE-administration experience (Rectors' Conference, funding allocation) partly meets the \"relevant HE administration in a student-facing environment\" essential, though direct student-regulations/casework experience is thin. It sits well outside all three interest zones — this is university administration, not research or policy — so despite being in London and technically eligible, its priority is limited by weak paper alignment and low interest pull.",
+      "location": "London, UK",
+      "type": "Full-time (fixed term, 10 months)",
+      "deadline": "6 August 2026",
+      "salary": "£36,513–£41,565 pa (potential to £44,468) inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
