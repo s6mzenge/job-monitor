@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T19:01:05.132076+00:00",
-  "run_count": 39,
+  "generated_at": "2026-07-23T19:30:51.866505+00:00",
+  "run_count": 40,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -526,6 +526,23 @@
       "type": "Full-time",
       "deadline": "Monday 3rd August 2026, 23.59 BST",
       "salary": "£52,000–£60,000/yr",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Reliability Engineer",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Senior-Reliability-Engineer/1418445233",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Senior title with essential requirements of 5+ years of AWS/Kubernetes experience and deep infrastructure/software engineering skills that the candidate's analysis-level Python cannot meet. Both the seniority and the deep-technical demands are hard disqualifiers, and the field is outside the candidate's interest zones.",
+      "location": "London, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
