@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-23T14:30:57.937254+00:00",
+  "generated_at": "2026-07-23T15:01:06.760900+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 89,
-  "erroring": 1,
+  "healthy": 88,
+  "erroring": 2,
   "paused": 2,
   "methods": {
     "personio_xml": 3,
-    "html": 71,
+    "html": 70,
     "json_api": 7,
     "playwright": 6,
     "interamt": 1,
@@ -73,7 +73,6 @@
     "NABU",
     "Nuremberg Academy",
     "Oxfam Deutschland",
-    "PRO ASYL",
     "Pro Peace",
     "rbb (Rundfunk Berlin-Brandenburg)",
     "Rosa-Luxemburg-Stiftung",
@@ -137,12 +136,25 @@
       "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 5,
-      "total_recent_failures": 29,
-      "last_failure": "2026-07-23T14:30:57.937254+00:00",
+      "consecutive_failures": 6,
+      "total_recent_failures": 30,
+      "last_failure": "2026-07-23T15:01:06.760900+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "id": 237,
+      "name": "PRO ASYL",
+      "url": "https://www.proasyl.de/jobs-bei-pro-asyl",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-23T15:01:06.760900+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 503 Server Error: Service Unavailable for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.proasyl.de%2Fjobs-bei-pro-asyl"
     }
   ]
 }
