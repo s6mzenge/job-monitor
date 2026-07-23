@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-07-23T12:30:52.692708+00:00",
+  "generated_at": "2026-07-23T13:01:08.403996+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 137,
-  "erroring": 2,
+  "healthy": 138,
+  "erroring": 1,
   "paused": 2,
   "methods": {
+    "palladium_api": 1,
     "workday_api": 7,
     "html": 83,
     "rippling_api": 2,
@@ -89,7 +90,6 @@
     "IIED",
     "IISS",
     "Impactt",
-    "Impunity Watch",
     "INQUEST",
     "Institute for Government",
     "Institute for Strategic Dialogue (ISD)",
@@ -124,6 +124,7 @@
     "Open Rights Group",
     "Open Society Foundations",
     "Palestine Solidarity Campaign",
+    "Palladium Group",
     "Paul Hamlyn Foundation",
     "Peace Direct",
     "PEN International",
@@ -159,6 +160,7 @@
     "Verisk Maplecroft",
     "War on Want",
     "Wellcome Trust",
+    "Wiener Holocaust Library",
     "Wits University"
   ],
   "sites": [
@@ -189,30 +191,17 @@
       "message": "Site paused after 16 consecutive failures"
     },
     {
-      "id": 1,
-      "name": "Palladium Group",
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 17,
-      "last_failure": "2026-07-23T12:30:52.692708+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f8f842da3f0>, 'Connection to thepalladiumgroup.com timed out. (con"
-    },
-    {
-      "id": 4,
-      "name": "Wiener Holocaust Library",
-      "url": "https://wienerholocaustlibrary.org/what-we-do/support-our-work/work-with-us/",
+      "id": 45,
+      "name": "Impunity Watch",
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
       "method": "html",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 11,
-      "last_failure": "2026-07-23T12:30:52.692708+00:00",
+      "total_recent_failures": 110,
+      "last_failure": "2026-07-23T13:01:08.403996+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
     }
   ]
 }

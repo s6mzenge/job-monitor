@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T12:30:52.692708+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-23T13:01:08.403996+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -305,6 +305,40 @@
       "type": "Full-time",
       "deadline": "07 August 2026",
       "salary": "£43,277–£51,714 pa (progression to £55,497) inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Manager, Researcher Engagement",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/London/Manager--Researcher-Engagement_JR106646",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The \"Manager\" title, combined with essential requirements for experience delivering digital events, running scalable engagement programmes, and developing playbooks and processes, places this beyond entry-level and outside the candidate's limited dedicated events/comms experience. It is also a specialist engagement/events role in academic publishing that sits outside the core interest zones.",
+      "location": "London",
+      "type": "Fixed Term Contract (Full-time)",
+      "deadline": "2026-08-07",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Betriebsratsassistenz (m/w/d)",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Heidelberg/Betriebsratsassistenz--m-w-d-_JR106691",
+      "priority": 8,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is an administrative assistant role supporting a works council — organisational, secretarial and coordination work that the candidate could technically perform, so it clears the eligibility gate. However, it sits entirely outside all three interest zones, has no research or policy content, and asks for assistance/administration experience in a personnel-relations context; it is a poor fit on nearly every axis.",
+      "location": "Heidelberg, Germany",
+      "type": "Not specified",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
