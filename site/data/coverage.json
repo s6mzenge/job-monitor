@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-23T07:01:06.086537+00:00",
+  "generated_at": "2026-07-23T07:30:55.501765+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 90,
-  "erroring": 0,
+  "healthy": 87,
+  "erroring": 3,
   "paused": 2,
   "methods": {
     "personio_xml": 3,
-    "html": 72,
+    "html": 71,
     "json_api": 7,
-    "playwright": 6,
+    "playwright": 4,
     "interamt": 1,
     "recruitee_api": 1
   },
@@ -63,7 +63,6 @@
     "IFSH",
     "Institut Solidarische Moderne",
     "IPPNW",
-    "Kulturgutverluste",
     "Kulturveranstaltungen des Bundes (KBB)",
     "Leibniz-Zentrum Moderner Orient (ZMO)",
     "linksjugend solid",
@@ -90,8 +89,6 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
-    "Uni Hamburg (Stellenangebote)",
-    "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
     "Universität der Künste Berlin",
@@ -131,6 +128,45 @@
       "paused_until": "2026-07-25T04:30:47.215287+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
+    },
+    {
+      "id": 222,
+      "name": "Kulturgutverluste",
+      "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 18,
+      "last_failure": "2026-07-23T07:30:55.501765+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "id": 229,
+      "name": "Uni Marburg (wiss. Stellen)",
+      "url": "https://www.uni-marburg.de/de/universitaet/profil/universitaetskultur/karriere/stellenangebote/wissenschaftliche-stellen",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 5,
+      "last_failure": "2026-07-23T07:30:55.501765+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
+    },
+    {
+      "id": 230,
+      "name": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 143,
+      "last_failure": "2026-07-23T07:30:55.501765+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
     }
   ]
 }
