@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T05:00:59.691759+00:00",
-  "run_count": 11,
+  "generated_at": "2026-07-23T05:31:00.252278+00:00",
+  "run_count": 12,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -100,6 +100,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Assistant/Associate Editor",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Auckland/Assistant-Associate-Editor_JR106751",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires an essential life-science degree (preferably pharmacy/pharmacology) plus clinical or medical-writing experience, and preferably a PhD — qualifications the candidate, whose background is IR and international law, plainly lacks. The subject matter (pharmaceutical/clinical publishing) also sits entirely outside the candidate's interest zones.",
+      "location": "Auckland, New Zealand (Hybrid)",
+      "type": "Full-time",
+      "deadline": "2026-08-16",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
