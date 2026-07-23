@@ -1,6 +1,24 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T06:31:01.705978+00:00",
-  "run_count": 14,
-  "jobs": []
+  "generated_at": "2026-07-23T07:01:06.086537+00:00",
+  "run_count": 15,
+  "jobs": [
+    {
+      "title": "Systemadministrator*in KI & Netzwerktechnik für das ARD-Hauptstadtstudio",
+      "organisation": "rbb (Rundfunk Berlin-Brandenburg)",
+      "url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2099/Description/1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a deep-technical IT/network-administration role requiring hands-on experience with network technology, AI applications and Linux, plus \"langjährige einschlägige Berufserfahrung\" (many years of relevant experience) — well beyond the candidate's analysis-level Python and non-technical profile. It is neither entry-level nor in any interest zone.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (permanent)",
+      "deadline": "13 August 2026",
+      "salary": "Per rbb tariff pay group (not specified)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
