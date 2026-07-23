@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-23T05:00:55.058864+00:00",
+  "last_updated": "2026-07-23T05:31:02.388101+00:00",
   "site_summary": {
     "WZB Berlin Social Science Center": {
       "site_id": 165,
       "url": "https://www.wzb.eu/de/das-wzb/arbeiten-am-wzb/stellenangebote",
       "method": "html",
-      "consecutive_failures": 15,
-      "total_recent_failures": 15,
+      "consecutive_failures": 16,
+      "total_recent_failures": 17,
       "first_recent_failure": "2026-07-22T22:01:03.491126+00:00",
-      "last_recent_failure": "2026-07-23T05:00:55.058864+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 523 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.wzb.eu%2Fde%2Fdas-wzb%2Farbeiten-am-wzb%2Fstellenangebote"
+      "last_recent_failure": "2026-07-23T05:31:02.388101+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-07-25T05:31:02.388101+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
     },
     "Die Linke": {
       "site_id": 223,
@@ -26,19 +26,6 @@
       "paused_until": "2026-07-25T04:30:47.215287+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Uni Hamburg (Stellenangebote)": {
-      "site_id": 230,
-      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 142,
-      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
-      "last_recent_failure": "2026-07-23T05:00:55.058864+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -5612,6 +5599,27 @@
       "type": "fetch_error",
       "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-23T05:31:02.388101+00:00",
+      "site": "WZB Berlin Social Science Center",
+      "site_id": 165,
+      "url": "https://www.wzb.eu/de/das-wzb/arbeiten-am-wzb/stellenangebote",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 523 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.wzb.eu%2Fde%2Fdas-wzb%2Farbeiten-am-wzb%2Fstellenangebote",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-07-23T05:31:02.388101+00:00",
+      "site": "WZB Berlin Social Science Center",
+      "site_id": 165,
+      "url": "https://www.wzb.eu/de/das-wzb/arbeiten-am-wzb/stellenangebote",
+      "method": "html",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-07-25T05:31:02.388101+00:00"
     }
   ]
 }
