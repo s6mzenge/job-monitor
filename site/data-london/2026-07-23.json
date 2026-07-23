@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T06:30:49.344586+00:00",
-  "run_count": 14,
+  "generated_at": "2026-07-23T07:01:44.724094+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -117,6 +117,23 @@
       "location": "Auckland, New Zealand (Hybrid)",
       "type": "Full-time",
       "deadline": "2026-08-16",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Security Consultant - Governance Risk and Compliance",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Singapore-Security-Consultant-Governance-Risk-and-Compliance-Sing-119963/1418077233",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a deep-technical cybersecurity GRC consulting role requiring practical experience delivering security engagements across IT/OT/ICS environments, working knowledge of networking, operating systems and cybersecurity technologies, plus stakeholder-facing client delivery — essentials the candidate's profile does not meet. It is also framed as an experienced consultant expected to lead full engagement lifecycles and mentor others, not an entry-level post. The subject sits well outside the candidate's international-law and policy focus.",
+      "location": "Singapore",
+      "type": "Full-time",
+      "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
