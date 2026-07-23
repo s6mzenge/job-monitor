@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T08:31:01.167987+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-23T09:01:13.259079+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -152,6 +152,40 @@
       "type": "Full-time (Fixed-term secondment cover until 30 June 2027)",
       "deadline": "06 August 2026",
       "salary": "£36,513–£41,565 pa inclusive, progressing to £44,468 pa inclusive",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Intercompany controller",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Mumbai-Intercompany-controller-400-093/1418145233",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a specialist finance / accounting role requiring intercompany reconciliations, journal postings and R2R accounting expertise the candidate does not have — a clear skills mismatch and outside all interest zones. It is neither a research/policy role nor within the candidate's competencies.",
+      "location": "Mumbai, India",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Quantitative Analyst - Model Development Team",
+      "organisation": "Fitch Group",
+      "url": "https://careers.fitch.group/job/London-Quantitative-Analyst-Model-Development-Team/1418147433",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The essential requirements — a Master's in a quantitative discipline like Financial Engineering plus programming and model-development experience in VBA/Python/R for credit-risk and statistical modelling — are well beyond the candidate's analysis-level Python and non-quantitative IR background. This is a deep-technical quantitative-modelling role, not a fit, and it sits outside the candidate's interest zones.",
+      "location": "London, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
