@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T17:30:52.847750+00:00",
-  "run_count": 36,
+  "generated_at": "2026-07-23T18:01:01.287323+00:00",
+  "run_count": 37,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -509,6 +509,23 @@
       "type": "Not specified",
       "deadline": "30 July 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Analyst Fundraising Operations",
+      "organisation": "International Rescue Committee",
+      "url": "https://theirc.wd1.myworkdayjobs.com/job/London-UK/Senior-Analyst-Fundraising-Operations_JR00004295",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Not entry-level — the \"Senior Analyst\" title and essential requirements (strong non-profit fundraising-operations experience, demonstrated Salesforce reporting, payment-gateway and gift-processing expertise) call for several years of specialist experience the candidate lacks. The work is fundraising-operations and data-integrity focused, well outside the candidate's research/policy profile and interest zones, and requires named technical skills (Salesforce, SQL) they do not hold.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Monday 3rd August 2026, 23.59 BST",
+      "salary": "£52,000–£60,000/yr",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
