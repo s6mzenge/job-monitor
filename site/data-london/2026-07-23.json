@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T10:30:49.923888+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-23T11:01:20.330305+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -220,6 +220,23 @@
       "type": "Full-time (fixed-term, 23 months)",
       "deadline": "2026-08-21",
       "salary": "£43,277 to £51,714 pa (potential to £55,497), inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Engagement & Experience Officer",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/1401/0/472157/15539/engagement-and-experience-officer",
+      "priority": 22,
+      "eligible": true,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is an events / client-experience / engagement role whose essential criteria centre on managing executive-client relationships, planning event lifecycles with budgets and suppliers, and CRM systems — precisely the dedicated events/comms area where the candidate has limited experience, so paper fit is weak even though it is a broadly junior \"Officer\" post. It sits outside all three interest zones and offers no research or policy substance. Eligible on a technicality but a poor fit on nearly every axis.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "30 July 2026",
+      "salary": "£36,513 to £41,565 (potential to £44,468) pa inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
