@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T03:01:32.175233+00:00",
-  "run_count": 7,
+  "generated_at": "2026-07-23T03:31:12.520346+00:00",
+  "run_count": 8,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -30,6 +30,23 @@
       "match": "low",
       "reason": "Requires at least 5 years of relevant industry experience plus a recognised auditor qualification/accreditation for AS9100, both essential requirements the candidate plainly lacks. The role is a technical quality-management auditing position wholly outside the candidate's research and policy background and interests.",
       "location": "Leverkusen, Germany",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Assessment Client Operations Team Lead",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Shanghai-Assessment-Client-Operations-Team-Lead-SH-200003/1418045533",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A \"Team Lead\" role requiring proven cross-regional team management, succession planning and performance management — well beyond entry-level and far past what RA/student-assistant work supports. The certification-operations subject also sits outside all three interest zones.",
+      "location": "Shanghai, China",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
