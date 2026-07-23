@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-23T12:30:49.876525+00:00",
+  "generated_at": "2026-07-23T13:01:04.807925+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 88,
-  "erroring": 2,
+  "healthy": 89,
+  "erroring": 1,
   "paused": 2,
   "methods": {
     "personio_xml": 3,
     "html": 71,
     "json_api": 7,
-    "playwright": 5,
+    "playwright": 6,
     "interamt": 1,
     "recruitee_api": 1
   },
@@ -89,6 +89,7 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
+    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -136,25 +137,12 @@
       "url": "https://kulturgutverluste.de/stiftung/stellenausschreibungen",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 25,
-      "last_failure": "2026-07-23T12:30:49.876525+00:00",
+      "consecutive_failures": 2,
+      "total_recent_failures": 26,
+      "last_failure": "2026-07-23T13:01:04.807925+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
-    },
-    {
-      "id": 230,
-      "name": "Uni Hamburg (Stellenangebote)",
-      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
-      "method": "playwright",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 145,
-      "last_failure": "2026-07-23T12:30:49.876525+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
     }
   ]
 }
