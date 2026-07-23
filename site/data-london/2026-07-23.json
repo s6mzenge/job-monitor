@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "generated_at": "2026-07-23T13:01:08.403996+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-23T13:31:04.164524+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -339,6 +339,23 @@
       "type": "Not specified",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Special Assistant",
+      "organisation": "CIFF",
+      "url": "https://apply.workable.com/j/80F72F6520",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a senior CEO-office role: the £63,790 salary and essential requirements for demonstrable experience managing senior government stakeholders, delivering advocacy strategies and briefing a CEO indicate several years of relevant post-graduation experience the candidate lacks. It functions as a de facto senior/experienced position, not an entry-level one, so it fails the level gate.",
+      "location": "London, United Kingdom",
+      "type": "Full-time",
+      "deadline": "2026-08-02",
+      "salary": "£63,790 starting",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
