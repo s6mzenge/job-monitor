@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T08:30:51.207371+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-24T09:01:01.585664+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Consultant Network Manager",
@@ -135,6 +135,23 @@
       "type": "Full-time (5-year fixed term)",
       "deadline": "14 August 2026",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Fellow (Economic and Fiscal Policy)",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/7184/0/472147/15539/research-fellow-economic-and-fiscal-policy",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Multiple essential requirements are unmet: a track record of high-quality peer-reviewed climate-policy publications, advanced quantitative economics skills (Stata/R/MatLab), and demonstrated experience researching fiscal/industrial climate policy while working with economic policymakers — none of which the candidate has. The salary and \"Research Fellow\" framing also signal a post-PhD, post-doctoral-level role well beyond entry level, and the subject (environmental/fiscal economics) sits outside the candidate's core interests.",
+      "location": "London",
+      "type": "Full-time (fixed-term, two years)",
+      "deadline": "18 August 2026",
+      "salary": "£53,949–£62,160 pa (progressing to £69,073) inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
