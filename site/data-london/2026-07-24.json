@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T09:30:55.322160+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-24T10:01:00.855566+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Consultant Network Manager",
@@ -152,6 +152,23 @@
       "type": "Full-time (fixed-term, two years)",
       "deadline": "18 August 2026",
       "salary": "£53,949–£62,160 pa (progressing to £69,073) inclusive of London allowance",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Staff+ Software Engineer, Account Compromise",
+      "organisation": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5368642008",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Disqualified on two counts: it is a Staff+ role requiring 10+ years of experience (well beyond entry-level), and it is a deep-technical software-engineering position demanding production security systems, strong software fundamentals, and hands-on coding the candidate's analysis-level Python cannot meet. The AI-safety context is tangential to the candidate's core interests and does not offset these hard mismatches.",
+      "location": "London, UK",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified (posted range appears to be a placeholder of £1)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""

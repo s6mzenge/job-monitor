@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-24T09:30:55.322160+00:00",
+  "generated_at": "2026-07-24T10:01:00.855566+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 139,
-  "erroring": 0,
+  "healthy": 138,
+  "erroring": 1,
   "paused": 2,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 84,
+    "html": 83,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -65,7 +65,6 @@
     "Edelman",
     "ERM",
     "Esmée Fairbairn Foundation",
-    "Ethical Trading Initiative",
     "Eurasia Group",
     "European Leadership Network",
     "Fabian Society",
@@ -190,6 +189,19 @@
       "paused_until": "2026-07-26T00:01:04.032246+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
+    },
+    {
+      "id": 138,
+      "name": "Ethical Trading Initiative",
+      "url": "https://www.ethicaltrade.org/jobs-eti",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 3,
+      "last_failure": "2026-07-24T10:01:00.855566+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
     }
   ]
 }
