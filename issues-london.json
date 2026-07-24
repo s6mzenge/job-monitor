@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-24T19:01:05.666291+00:00",
+  "last_updated": "2026-07-24T19:30:57.568819+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
-      "consecutive_failures": 15,
-      "total_recent_failures": 106,
+      "consecutive_failures": 16,
+      "total_recent_failures": 108,
       "first_recent_failure": "2026-07-11T23:01:29.984592+00:00",
-      "last_recent_failure": "2026-07-24T19:01:05.666291+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607"
+      "last_recent_failure": "2026-07-24T19:30:57.568819+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-07-26T19:30:57.568819+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
     },
     "Airwars": {
       "site_id": 133,
@@ -9607,6 +9607,27 @@
       "type": "fetch_error",
       "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607",
       "consecutive_count": 15
+    },
+    {
+      "timestamp": "2026-07-24T19:30:57.568819+00:00",
+      "site": "FTI Consulting",
+      "site_id": 11,
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-07-24T19:30:57.568819+00:00",
+      "site": "FTI Consulting",
+      "site_id": 11,
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-07-26T19:30:57.568819+00:00"
     }
   ]
 }
