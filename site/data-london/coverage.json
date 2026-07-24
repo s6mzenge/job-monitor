@@ -1,15 +1,14 @@
 {
-  "generated_at": "2026-07-24T10:30:51.783614+00:00",
+  "generated_at": "2026-07-24T11:01:13.605074+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 139,
-  "erroring": 0,
+  "healthy": 137,
+  "erroring": 2,
   "paused": 2,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
     "html": 84,
-    "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
     "taleo_rss": 1,
@@ -42,7 +41,6 @@
     "Birkbeck, University of London",
     "Bridgespan Group",
     "Brunswick Group",
-    "BSR",
     "Business & Human Rights Resource Centre",
     "Cambridge Human Movement Centre",
     "Campaign Against Arms Trade",
@@ -66,7 +64,6 @@
     "ERM",
     "Esmée Fairbairn Foundation",
     "Ethical Trading Initiative",
-    "Eurasia Group",
     "European Leadership Network",
     "Fabian Society",
     "Fitch Group",
@@ -190,6 +187,32 @@
       "paused_until": "2026-07-26T00:01:04.032246+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
+    },
+    {
+      "id": 7,
+      "name": "Eurasia Group",
+      "url": "https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
+      "method": "rippling_api",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-24T11:01:13.605074+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Rippling API: HTTPSConnectionPool(host='api.rippling.com', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "id": 67,
+      "name": "BSR",
+      "url": "https://www.bsr.org/en/careers",
+      "method": "rippling_api",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-24T11:01:13.605074+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Rippling API: HTTPSConnectionPool(host='api.rippling.com', port=443): Read timed out. (read timeout=30)"
     }
   ]
 }

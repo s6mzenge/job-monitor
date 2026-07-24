@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-07-24T10:30:51.783614+00:00",
+  "last_updated": "2026-07-24T11:01:13.605074+00:00",
   "site_summary": {
+    "Eurasia Group": {
+      "site_id": 7,
+      "url": "https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
+      "method": "rippling_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-07-24T11:01:13.605074+00:00",
+      "last_recent_failure": "2026-07-24T11:01:13.605074+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Rippling API: HTTPSConnectionPool(host='api.rippling.com', port=443): Read timed out. (read timeout=30)"
+    },
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
@@ -13,6 +26,19 @@
       "paused_until": "2026-07-24T12:01:05.186721+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "BSR": {
+      "site_id": 67,
+      "url": "https://www.bsr.org/en/careers",
+      "method": "rippling_api",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-07-24T11:01:13.605074+00:00",
+      "last_recent_failure": "2026-07-24T11:01:13.605074+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Rippling API: HTTPSConnectionPool(host='api.rippling.com', port=443): Read timed out. (read timeout=30)"
     },
     "Airwars": {
       "site_id": 133,
@@ -9376,6 +9402,26 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-24T11:01:13.605074+00:00",
+      "site": "Eurasia Group",
+      "site_id": 7,
+      "url": "https://ats.rippling.com/en-GB/eurasia-group/jobs?jobBoardSlug=eurasia-group&page=0&country=GB&state=ENG&city=London&pageSize=20",
+      "method": "rippling_api",
+      "type": "fetch_error",
+      "message": "Rippling API: HTTPSConnectionPool(host='api.rippling.com', port=443): Read timed out. (read timeout=30)",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-24T11:01:13.605074+00:00",
+      "site": "BSR",
+      "site_id": 67,
+      "url": "https://www.bsr.org/en/careers",
+      "method": "rippling_api",
+      "type": "fetch_error",
+      "message": "Rippling API: HTTPSConnectionPool(host='api.rippling.com', port=443): Read timed out. (read timeout=30)",
       "consecutive_count": 1
     }
   ]
