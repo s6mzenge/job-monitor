@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T15:30:50.305129+00:00",
+  "last_updated": "2026-07-24T16:01:00.616676+00:00",
   "site_summary": {
     "WZB Berlin Social Science Center": {
       "site_id": 165,
@@ -26,6 +26,19 @@
       "paused_until": "2026-07-25T04:30:47.215287+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uni Hamburg (Stellenangebote)": {
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 152,
+      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
+      "last_recent_failure": "2026-07-24T16:01:00.616676+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -6003,6 +6016,16 @@
     },
     {
       "timestamp": "2026-07-24T15:01:00.454038+00:00",
+      "site": "Uni Hamburg (Stellenangebote)",
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-24T16:01:00.616676+00:00",
       "site": "Uni Hamburg (Stellenangebote)",
       "site_id": 230,
       "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
