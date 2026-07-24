@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T10:30:57.117988+00:00",
-  "run_count": 22,
+  "generated_at": "2026-07-24T11:01:15.497497+00:00",
+  "run_count": 23,
   "jobs": [
     {
       "title": "Kustos/Kustodin (w/m/d) in der Mathematisch-Naturwissenschaftlichen Fakultät, Botanischer Garten",
@@ -134,6 +134,23 @@
       "location": "Hamburg, Germany",
       "type": "Full-time (fixed-term, 3 years)",
       "deadline": "2026-08-07",
+      "salary": "EGR. 13 TV-L",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Associate for the Project \"Drought Vulnerability of Mycorrhizal Functions in the Forest Floor\"",
+      "organisation": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote/ausschreibung.html?jobID=c254e677620066ddf313b9f53d6b893ebc317063",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The essential profile requires a university degree in Biology, Geosciences, or Environmental Sciences, which the candidate — an IR / politics graduate — does not hold. Although it is a funded PhD position (otherwise eligible), the hard-science field requirement is an unmet essential and the topic is entirely outside the candidate's areas.",
+      "location": "Hamburg, Germany",
+      "type": "Part-time (65%), fixed-term",
+      "deadline": "2026-08-15",
       "salary": "EGR. 13 TV-L",
       "field_score": "",
       "skills_score": "",
