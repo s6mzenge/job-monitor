@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-24T07:01:03.105811+00:00",
+  "generated_at": "2026-07-24T07:39:18.956562+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 90,
-  "erroring": 0,
+  "healthy": 89,
+  "erroring": 1,
   "paused": 2,
   "methods": {
     "personio_xml": 3,
     "html": 72,
     "json_api": 7,
-    "playwright": 6,
     "interamt": 1,
+    "playwright": 5,
     "recruitee_api": 1
   },
   "healthy_names": [
@@ -51,7 +51,6 @@
     "FU Berlin (wiss.)",
     "Germanwatch",
     "Gesellschaft für Freiheitsrechte",
-    "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
     "Global Public Policy Institute",
     "Haus der Wannsee-Konferenz",
     "Heinrich Böll Stiftung",
@@ -131,6 +130,19 @@
       "paused_until": "2026-07-25T04:30:47.215287+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
+    },
+    {
+      "id": 179,
+      "name": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 79,
+      "last_failure": "2026-07-24T07:39:18.956562+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
     }
   ]
 }
