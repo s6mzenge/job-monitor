@@ -1,6 +1,24 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T06:31:09.598418+00:00",
-  "run_count": 14,
-  "jobs": []
+  "generated_at": "2026-07-24T07:01:03.105811+00:00",
+  "run_count": 15,
+  "jobs": [
+    {
+      "title": "Kustos/Kustodin (w/m/d) in der Mathematisch-Naturwissenschaftlichen Fakultät, Botanischer Garten",
+      "organisation": "Uni Potsdam (akad. Personal, unbefristet)",
+      "url": "https://www.uni-potsdam.de/fileadmin/projects/verwaltung/docs/Dezernat3/Ausschreibungen/2_akadPersonal/341_2026_MNF_Kustos_bio16.pdf",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires a completed university degree in Biology plus a completed (or at minimum submitted) doctorate and an established research profile in botany/systematics — qualifications the candidate does not hold. The field (curatorial leadership of a botanical garden) is entirely outside the candidate's competence and interests.",
+      "location": "Potsdam, Germany",
+      "type": "Full-time",
+      "deadline": "2026-09-03",
+      "salary": "TV-L E13 (100%)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
