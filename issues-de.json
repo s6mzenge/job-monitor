@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T13:30:57.772420+00:00",
+  "last_updated": "2026-07-24T14:01:08.404533+00:00",
   "site_summary": {
     "WZB Berlin Social Science Center": {
       "site_id": 165,
@@ -26,6 +26,19 @@
       "paused_until": "2026-07-25T04:30:47.215287+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uni Hamburg (Stellenangebote)": {
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 150,
+      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
+      "last_recent_failure": "2026-07-24T14:01:08.404533+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -5989,6 +6002,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.dielinkebt.de%2Fservice%2Fausschreibungen%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-24T14:01:08.404533+00:00",
+      "site": "Uni Hamburg (Stellenangebote)",
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
     }
   ]
