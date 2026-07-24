@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T08:31:08.949506+00:00",
-  "run_count": 18,
+  "generated_at": "2026-07-24T09:01:07.966172+00:00",
+  "run_count": 19,
   "jobs": [
     {
       "title": "Kustos/Kustodin (w/m/d) in der Mathematisch-Naturwissenschaftlichen Fakultät, Botanischer Garten",
@@ -67,6 +67,40 @@
       "type": "Part-time (Werkstudium/Praktikum)",
       "deadline": "2026-08-24",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Volontariat (w/m/d) im Referat 45 Bücher",
+      "organisation": "bpb (Bundeszentrale f. pol. Bildung)",
+      "url": "https://www.bpb.de/die-bpb/karriere/580015/volontariat-w-m-d",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "A Volontariat is a structured post-graduate traineeship / apprenticeship-type qualification programme (explicitly a 24-month \"Ausbildungsjahr\" with trainee tariff pay), which falls under the excluded apprenticeship/traineeship category rather than a genuine paid professional role. The editorial/book-publishing focus is also outside the candidate's core interest zones, and it emphasises editorial experience the candidate largely lacks.",
+      "location": "Bonn, Germany",
+      "type": "Full-time (part-time possible ≥25h/week), fixed-term 24 months",
+      "deadline": "2026-08-14",
+      "salary": "€2,464/month (year 1), €2,792/month (year 2), rising per tariff",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Produktionsassistent*innen für die Hauptabteilung Programmressourcen",
+      "organisation": "rbb (Rundfunk Berlin-Brandenburg)",
+      "url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2101/Description/1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "The role requires a completed media-production training (Volontariat/Aufnahmeleiter*in) with many years of professional experience, plus technical production, business/controlling and rights knowledge the candidate does not have — an unmet essential and clearly not entry-level for this profile. It is also entirely outside the candidate's research/policy interest zones.",
+      "location": "Berlin/Potsdam, Germany",
+      "type": "Full-time (fixed-term, ~1 year parental-leave cover)",
+      "deadline": "9 August 2026",
+      "salary": "Tariflich geregelt, Gruppe D",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
