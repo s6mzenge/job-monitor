@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T10:01:00.855566+00:00",
-  "run_count": 21,
+  "generated_at": "2026-07-24T10:30:51.783614+00:00",
+  "run_count": 22,
   "jobs": [
     {
       "title": "Consultant Network Manager",
@@ -169,6 +169,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified (posted range appears to be a placeholder of £1)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Marketing Manager, AI Growth & Partnerships",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Dordrecht/Senior-Marketing-Manager_JR106666",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Not entry-level — a \"Senior Marketing Manager\" title requiring \"significant demonstrable experience\" in marketing and go-to-market execution, which the candidate does not have. It is also a marketing-specialist role well outside the candidate's research/policy profile and interest zones.",
+      "location": "London, Dordrecht or Berlin (Hybrid)",
+      "type": "Full-time",
+      "deadline": "2026-08-09",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T10:01:00.855566+00:00",
+  "last_updated": "2026-07-24T10:30:51.783614+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -26,19 +26,6 @@
       "paused_until": "2026-07-26T00:01:04.032246+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Ethical Trading Initiative": {
-      "site_id": 138,
-      "url": "https://www.ethicaltrade.org/jobs-eti",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 3,
-      "first_recent_failure": "2026-07-17T11:31:24.014075+00:00",
-      "last_recent_failure": "2026-07-24T10:01:00.855566+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
     }
   },
   "issues": [
