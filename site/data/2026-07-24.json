@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T07:39:18.956562+00:00",
-  "run_count": 16,
+  "generated_at": "2026-07-24T08:01:01.156165+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Kustos/Kustodin (w/m/d) in der Mathematisch-Naturwissenschaftlichen Fakultät, Botanischer Garten",
@@ -16,6 +16,23 @@
       "type": "Full-time",
       "deadline": "2026-09-03",
       "salary": "TV-L E13 (100%)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Spezialist*in Security Incident Management im ISMS",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78862",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a deep-technical information-security incident-management role requiring an IT/information-security degree, several years' experience in a security incident response team, ISO/IEC 27001 or BSI IT-Grundschutz certifications and hands-on IT-security expertise — essentials the candidate plainly lacks. It also requires multi-year experience (Manager/Spezialist level) and IT credentials, well outside the candidate's profile and interests.",
+      "location": "Eschborn, Germany",
+      "type": "Full-time / Part-time",
+      "deadline": "2026-08-16",
+      "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""

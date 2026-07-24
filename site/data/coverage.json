@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T07:39:18.956562+00:00",
+  "generated_at": "2026-07-24T08:01:01.156165+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 89,
@@ -9,8 +9,8 @@
     "personio_xml": 3,
     "html": 72,
     "json_api": 7,
-    "interamt": 1,
     "playwright": 5,
+    "interamt": 1,
     "recruitee_api": 1
   },
   "healthy_names": [
@@ -51,6 +51,7 @@
     "FU Berlin (wiss.)",
     "Germanwatch",
     "Gesellschaft für Freiheitsrechte",
+    "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
     "Global Public Policy Institute",
     "Haus der Wannsee-Konferenz",
     "Heinrich Böll Stiftung",
@@ -89,7 +90,6 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
-    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -132,17 +132,17 @@
       "message": "Site paused after 16 consecutive failures"
     },
     {
-      "id": 179,
-      "name": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
-      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "id": 230,
+      "name": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
       "method": "playwright",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 79,
-      "last_failure": "2026-07-24T07:39:18.956562+00:00",
+      "total_recent_failures": 149,
+      "last_failure": "2026-07-24T08:01:01.156165+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
     }
   ]
 }

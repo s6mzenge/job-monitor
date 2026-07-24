@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T07:39:18.956562+00:00",
+  "last_updated": "2026-07-24T08:01:01.156165+00:00",
   "site_summary": {
     "WZB Berlin Social Science Center": {
       "site_id": 165,
@@ -14,19 +14,6 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)": {
-      "site_id": 179,
-      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 79,
-      "first_recent_failure": "2026-06-29T07:43:04.985616+00:00",
-      "last_recent_failure": "2026-07-24T07:39:18.956562+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12\", waiting until \"domcontentloaded\""
-    },
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
@@ -39,6 +26,19 @@
       "paused_until": "2026-07-25T04:30:47.215287+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uni Hamburg (Stellenangebote)": {
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 149,
+      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
+      "last_recent_failure": "2026-07-24T08:01:01.156165+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -5982,6 +5982,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-24T08:01:01.156165+00:00",
+      "site": "Uni Hamburg (Stellenangebote)",
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
     }
   ]
