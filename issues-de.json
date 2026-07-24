@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-07-24T09:30:59.263201+00:00",
+  "last_updated": "2026-07-24T10:01:05.959294+00:00",
   "site_summary": {
+    "Die Linke Bundestagsfraktion": {
+      "site_id": 154,
+      "url": "https://www.dielinkebt.de/service/ausschreibungen/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 8,
+      "first_recent_failure": "2026-07-15T22:31:17.828020+00:00",
+      "last_recent_failure": "2026-07-24T10:01:05.959294+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.dielinkebt.de%2Fservice%2Fausschreibungen%2F"
+    },
     "WZB Berlin Social Science Center": {
       "site_id": 165,
       "url": "https://www.wzb.eu/de/das-wzb/arbeiten-am-wzb/stellenangebote",
@@ -5979,6 +5992,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-24T10:01:05.959294+00:00",
+      "site": "Die Linke Bundestagsfraktion",
+      "site_id": 154,
+      "url": "https://www.dielinkebt.de/service/ausschreibungen/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.dielinkebt.de%2Fservice%2Fausschreibungen%2F",
       "consecutive_count": 1
     }
   ]

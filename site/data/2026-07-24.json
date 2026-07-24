@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T09:30:59.263201+00:00",
-  "run_count": 20,
+  "generated_at": "2026-07-24T10:01:05.959294+00:00",
+  "run_count": 21,
   "jobs": [
     {
       "title": "Kustos/Kustodin (w/m/d) in der Mathematisch-Naturwissenschaftlichen Fakultät, Botanischer Garten",
@@ -118,6 +118,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified (performance-based bonus/incentive models)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Research Associate (Postdoc) Natural Language Processing § 28 Subsection 2 HmbHG",
+      "organisation": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote/ausschreibung.html?jobID=e2a10779a83fc67de3337bb4eda6535751515bac",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "The profile requires an already-completed doctorate plus a publication track record in NLP/computational linguistics — an unmet essential qualification, as this is a postdoc, not a PhD candidate post. It also demands deep NLP/AI method implementation well beyond analysis-level Python.",
+      "location": "Hamburg, Germany",
+      "type": "Full-time (fixed-term, 3 years)",
+      "deadline": "2026-08-07",
+      "salary": "EGR. 13 TV-L",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
