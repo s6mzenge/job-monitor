@@ -1,12 +1,11 @@
 {
-  "generated_at": "2026-07-24T12:30:51.876283+00:00",
+  "generated_at": "2026-07-24T13:01:03.997275+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 139,
-  "erroring": 1,
+  "healthy": 138,
+  "erroring": 2,
   "paused": 1,
   "methods": {
-    "palladium_api": 1,
     "workday_api": 7,
     "html": 84,
     "rippling_api": 2,
@@ -125,7 +124,6 @@
     "Open Rights Group",
     "Open Society Foundations",
     "Palestine Solidarity Campaign",
-    "Palladium Group",
     "Paul Hamlyn Foundation",
     "Peace Direct",
     "PEN International",
@@ -184,12 +182,25 @@
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 2,
-      "total_recent_failures": 93,
-      "last_failure": "2026-07-24T12:30:51.876283+00:00",
+      "consecutive_failures": 3,
+      "total_recent_failures": 94,
+      "last_failure": "2026-07-24T13:01:03.997275+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607"
+    },
+    {
+      "id": 1,
+      "name": "Palladium Group",
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 19,
+      "last_failure": "2026-07-24T13:01:03.997275+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f1a1e9dae70>, 'Connection to thepalladiumgroup.com timed out. (con"
     }
   ]
 }

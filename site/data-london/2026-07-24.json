@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T12:30:51.876283+00:00",
-  "run_count": 26,
+  "generated_at": "2026-07-24T13:01:03.997275+00:00",
+  "run_count": 27,
   "jobs": [
     {
       "title": "Consultant Network Manager",
@@ -252,6 +252,23 @@
       "reason": "Manager-level role requiring an established track record of planning and delivering complex programmes plus line-management experience — well beyond the candidate's student-assistant background and not entry-level. It is also a technical/agile delivery role outside the candidate's interest zones and skill set.",
       "location": "London (UK), Berlin or Heidelberg (Germany)",
       "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advocacy Officer (3 days a week)",
+      "organisation": "REDRESS",
+      "url": "https://redress.org/about-us/work-at-redress/current-vacancies/",
+      "priority": 60,
+      "eligible": true,
+      "interest_score": "5",
+      "match": "medium",
+      "reason": "This is an intermediate role asking for \"some previous experience in human rights advocacy,\" which the candidate only partly meets via RA and project work — a soft obstacle rather than a disqualifier, and the intermediate (not senior) framing keeps it eligible. The subject (human rights, survivor-focused justice, Magnitsky sanctions) sits squarely in the core interest zone, though the advocacy/campaign specialism is a partial skills gap that holds the score below the strong band.",
+      "location": "London (hybrid)",
+      "type": "Part-time, Fixed term (12 months, maternity cover)",
       "deadline": "Not specified",
       "salary": "Not specified",
       "field_score": "",
