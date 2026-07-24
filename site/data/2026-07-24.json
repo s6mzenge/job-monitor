@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T09:01:07.966172+00:00",
-  "run_count": 19,
+  "generated_at": "2026-07-24T09:30:59.263201+00:00",
+  "run_count": 20,
   "jobs": [
     {
       "title": "Kustos/Kustodin (w/m/d) in der Mathematisch-Naturwissenschaftlichen Fakultät, Botanischer Garten",
@@ -101,6 +101,23 @@
       "type": "Full-time (fixed-term, ~1 year parental-leave cover)",
       "deadline": "9 August 2026",
       "salary": "Tariflich geregelt, Gruppe D",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Sales Manager B2B (m/f/d) – Europe.Table (Standort Brüssel)",
+      "organisation": "Table.Briefings",
+      "url": "https://tablemedia.jobs.personio.de/job/2725613",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "Ineligible on two counts — the \"Manager\" role explicitly requires several years of B2B sales / business-development experience (Mehrjährige Erfahrung), well beyond the candidate's student-assistant background, and it is a sales/networking function that does not match the candidate's research profile. Although the European-policy media context is mildly adjacent, this is a commercial sales role the candidate cannot credibly hold.",
+      "location": "Brussels, Belgium (office also Berlin)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified (performance-based bonus/incentive models)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
