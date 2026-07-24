@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-24T17:30:55.240027+00:00",
+  "generated_at": "2026-07-24T18:01:08.540363+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 138,
-  "erroring": 2,
+  "healthy": 139,
+  "erroring": 1,
   "paused": 1,
   "methods": {
     "palladium_api": 1,
@@ -14,7 +14,7 @@
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 11,
+    "playwright": 12,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -76,6 +76,7 @@
     "FSG",
     "German Historical Institute London",
     "Global Justice Now (CharityJob)",
+    "Global Rights Compliance",
     "Global Witness",
     "Goethe-Institut UK",
     "Goldsmiths, University of London",
@@ -183,25 +184,12 @@
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 12,
-      "total_recent_failures": 103,
-      "last_failure": "2026-07-24T17:30:55.240027+00:00",
+      "consecutive_failures": 13,
+      "total_recent_failures": 104,
+      "last_failure": "2026-07-24T18:01:08.540363+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607"
-    },
-    {
-      "id": 37,
-      "name": "Global Rights Compliance",
-      "url": "https://globalrightscompliance.org/work-with-us/",
-      "method": "playwright",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 12,
-      "last_failure": "2026-07-24T17:30:55.240027+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
     }
   ]
 }
