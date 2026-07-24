@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T04:00:56.402898+00:00",
-  "run_count": 9,
+  "generated_at": "2026-07-24T04:30:51.161471+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Consultant Network Manager",
@@ -49,6 +49,23 @@
       "location": "Taipei, Taiwan",
       "type": "Full-time",
       "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for expert advisory-committee members, not a paid entry-level role — it seeks established experts to advise on the project, which the candidate is not, and it reads as a voluntary/speculative committee position rather than a genuine salaried vacancy. The human-rights subject is on-mission, but the level and nature of the posting are disqualifying.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
