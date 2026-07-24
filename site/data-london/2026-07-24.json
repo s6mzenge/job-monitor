@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T12:01:22.712810+00:00",
-  "run_count": 25,
+  "generated_at": "2026-07-24T12:30:51.876283+00:00",
+  "run_count": 26,
   "jobs": [
     {
       "title": "Consultant Network Manager",
@@ -234,6 +234,23 @@
       "match": "low",
       "reason": "This is an administrative / customer-service coordinator role centred on CRM management, membership renewals and enquiry handling — the candidate's project-admin and stakeholder experience make it accessible, but it involves no research, policy or analytical content. It sits entirely outside all three interest zones, so despite being eligible and in London, it is a poor fit worth surfacing only at the low end.",
       "location": "London (RSA House, three days a week)",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Programme Manager – Data Platform",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/London/Programme-Manager---Data-Platform_JR105627",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Manager-level role requiring an established track record of planning and delivering complex programmes plus line-management experience — well beyond the candidate's student-assistant background and not entry-level. It is also a technical/agile delivery role outside the candidate's interest zones and skill set.",
+      "location": "London (UK), Berlin or Heidelberg (Germany)",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
