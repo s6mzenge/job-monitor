@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-07-24T08:01:22.043825+00:00",
+  "last_updated": "2026-07-24T08:30:51.207371+00:00",
   "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 18,
-      "first_recent_failure": "2026-06-29T10:31:23.026711+00:00",
-      "last_recent_failure": "2026-07-24T08:01:22.043825+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7fa1286da060>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=8)'))"
-    },
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
