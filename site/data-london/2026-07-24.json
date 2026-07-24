@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T18:01:08.540363+00:00",
-  "run_count": 37,
+  "generated_at": "2026-07-24T18:30:56.859665+00:00",
+  "run_count": 38,
   "jobs": [
     {
       "title": "Consultant Network Manager",
@@ -492,6 +492,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Senior Communications Officer",
+      "organisation": "International Rescue Committee",
+      "url": "https://theirc.wd1.myworkdayjobs.com/job/London-UK/Senior-Communications-Officer_JR00004314",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "Not entry-level — it requires a minimum of 6–8 years of professional communications experience and includes line-management duties (a Senior title), well beyond the candidate's student-assistant background. This is a communications-specialist role, another gap area, so the level and function are both hard mismatches despite the humanitarian mission.",
+      "location": "London, UK / Kenya",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "£52,210–£61,999/yr",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
