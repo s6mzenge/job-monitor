@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T00:31:08.981253+00:00",
+  "last_updated": "2026-07-24T01:00:56.929332+00:00",
   "site_summary": {
     "WZB Berlin Social Science Center": {
       "site_id": 165,
@@ -13,6 +13,19 @@
       "paused_until": "2026-07-25T05:31:02.388101+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)": {
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 78,
+      "first_recent_failure": "2026-06-29T07:43:04.985616+00:00",
+      "last_recent_failure": "2026-07-24T01:00:56.929332+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12\", waiting until \"domcontentloaded\""
     },
     "Die Linke": {
       "site_id": 223,
@@ -5929,6 +5942,16 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.dielinkebt.de%2Fservice%2Fausschreibungen%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-24T01:00:56.929332+00:00",
+      "site": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "site_id": 179,
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
     }
   ]
