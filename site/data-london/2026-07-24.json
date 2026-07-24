@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T11:30:49.216659+00:00",
-  "run_count": 24,
+  "generated_at": "2026-07-24T12:01:22.712810+00:00",
+  "run_count": 25,
   "jobs": [
     {
       "title": "Consultant Network Manager",
@@ -217,6 +217,23 @@
       "match": "low",
       "reason": "Not entry-level — the title is Director-level and it requires 4–6 years of professional experience plus a track record of managing teams and client accounts, none of which the candidate has. Public affairs / communications also sits outside the core interest zones.",
       "location": "London",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Fellowship Services Coordinator",
+      "organisation": "RSA (Royal Society of Arts)",
+      "url": "https://careers.rsa.org.uk/vacancies",
+      "priority": 18,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is an administrative / customer-service coordinator role centred on CRM management, membership renewals and enquiry handling — the candidate's project-admin and stakeholder experience make it accessible, but it involves no research, policy or analytical content. It sits entirely outside all three interest zones, so despite being eligible and in London, it is a poor fit worth surfacing only at the low end.",
+      "location": "London (RSA House, three days a week)",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
