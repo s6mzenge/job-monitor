@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T02:31:15.365599+00:00",
-  "run_count": 6,
+  "generated_at": "2026-07-24T03:01:06.009159+00:00",
+  "run_count": 7,
   "jobs": [
     {
       "title": "Consultant Network Manager",
@@ -30,6 +30,23 @@
       "match": "low",
       "reason": "Requires IATF 16949 automotive auditor qualifications, substantial third-party auditing experience, and fluency in Japanese as essentials — none of which the candidate holds. It is also a senior/lead-level assessor role in automotive quality management, entirely outside the candidate's field.",
       "location": "Yokohama, Japan",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Lead Assessor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Taipei-Lead-Assessor-10491/1418499933",
+      "priority": 12,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Fresh graduates are welcomed as trainees, so despite the \"Lead\" title this is not gated by experience, and the essential technical requirements (degree in Law/Engineering/Textile preferred, English, Excel) are soft enough that the candidate is technically eligible. However, social-compliance ESG auditing in Taiwan is far outside all three interest zones and a poor paper fit for an IR/international-law researcher — the field, technical audit focus, and extensive-travel field-audit nature make this a weak match on nearly every axis.",
+      "location": "Taipei, Taiwan",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
