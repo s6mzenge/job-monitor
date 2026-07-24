@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T06:00:56.599225+00:00",
-  "run_count": 13,
+  "generated_at": "2026-07-24T06:31:12.178648+00:00",
+  "run_count": 14,
   "jobs": [
     {
       "title": "Consultant Network Manager",
@@ -63,6 +63,23 @@
       "interest_score": "",
       "match": "low",
       "reason": "This is a call for expert advisory-committee members, not a paid entry-level role — it seeks established experts to advise on the project, which the candidate is not, and it reads as a voluntary/speculative committee position rather than a genuine salaried vacancy. The human-rights subject is on-mission, but the level and nature of the posting are disqualifying.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Advisory Committee Member — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for expert Advisory Committee members — it seeks established experts and activists with a track record in climate justice / defender protection, not an entry-level paid role the candidate could take. It reads as a voluntary/advisory appointment with no salary and requires seniority the candidate lacks, so it fails the genuine-paid-entry-level gate.",
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
