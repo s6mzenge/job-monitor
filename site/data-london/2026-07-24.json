@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T13:01:03.997275+00:00",
-  "run_count": 27,
+  "generated_at": "2026-07-24T13:30:59.067706+00:00",
+  "run_count": 28,
   "jobs": [
     {
       "title": "Consultant Network Manager",
@@ -271,6 +271,23 @@
       "type": "Part-time, Fixed term (12 months, maternity cover)",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Graduate Programmes Administrator",
+      "organisation": "LSE (internal)",
+      "url": "https://jobs.lse.ac.uk/Vacancies/I/3591/0/471929/15539/graduate-programmes-administrator",
+      "priority": 42,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "Entry-to-junior administrative role the candidate can plausibly do — strong writing, MS Office and RA/project-administration experience transfer, though \"strong previous administrative experience\" and UK-HE familiarity are only partly met and the role is professional-services rather than research. The higher-education-administration context is topically adjacent to the candidate's HE-policy work but sits outside the core interest zones, holding the score in the \"worth a look\" band.",
+      "location": "London",
+      "type": "Full-time",
+      "deadline": "2026-08-03",
+      "salary": "£36,513–£41,565 pa (progression to £44,468) inclusive of London allowance",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
