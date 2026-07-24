@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T14:31:07.581583+00:00",
-  "run_count": 30,
+  "generated_at": "2026-07-24T15:01:00.454038+00:00",
+  "run_count": 31,
   "jobs": [
     {
       "title": "Kustos/Kustodin (w/m/d) in der Mathematisch-Naturwissenschaftlichen Fakultät, Botanischer Garten",
@@ -305,6 +305,23 @@
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Administrator*in Microsoft 365 für den Bereich Kommunikationssysteme",
+      "organisation": "rbb (Rundfunk Berlin-Brandenburg)",
+      "url": "https://recruitingapp-5154.de.umantis.com/Vacancies/2098/Description/1",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "This is a deep-technical IT-administration role requiring a completed computer-science degree or IT vocational training plus multiple years of hands-on Microsoft 365 / Entra ID / PowerShell administration in production environments — essentials the candidate's analysis-level Python and non-technical background cannot meet. It is also outside all interest zones and firmly not entry-level.",
+      "location": "Potsdam/Berlin, Germany",
+      "type": "Full-time (fixed-term until 31 December 2028)",
+      "deadline": "13 August 2026",
+      "salary": "Tariflich, Gruppe D (rbb salary table); not specified in figures",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
