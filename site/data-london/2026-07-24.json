@@ -1,6 +1,41 @@
 {
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T02:00:58.676494+00:00",
-  "run_count": 5,
-  "jobs": []
+  "generated_at": "2026-07-24T02:31:15.365599+00:00",
+  "run_count": 6,
+  "jobs": [
+    {
+      "title": "Consultant Network Manager",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Birmingham-Consultant-Network-Manager-B37-7ES/1373619133",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "A \"Manager\" title requiring established experience managing partners/consultants, plus lead generation, business development and account management — a relationship/sales-channel role that is neither entry-level nor a match for the candidate's research profile. It sits entirely outside the candidate's interest zones and requires skills they do not have.",
+      "location": "Birmingham, GB",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "IATF Assessor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Yokohama-IATF-Assessor-220-6010/1276216401",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires IATF 16949 automotive auditor qualifications, substantial third-party auditing experience, and fluency in Japanese as essentials — none of which the candidate holds. It is also a senior/lead-level assessor role in automotive quality management, entirely outside the candidate's field.",
+      "location": "Yokohama, Japan",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
