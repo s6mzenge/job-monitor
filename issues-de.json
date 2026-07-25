@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-25T18:00:54.540876+00:00",
+  "last_updated": "2026-07-25T18:31:07.423156+00:00",
   "site_summary": {
     "Forum New Economy": {
       "site_id": 214,
       "url": "https://newforum.org/en/jobs/",
       "method": "html",
-      "consecutive_failures": 15,
-      "total_recent_failures": 15,
+      "consecutive_failures": 16,
+      "total_recent_failures": 17,
       "first_recent_failure": "2026-07-25T10:31:07.341480+00:00",
-      "last_recent_failure": "2026-07-25T18:00:54.540876+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fnewforum.org%2Fen%2Fjobs%2F"
+      "last_recent_failure": "2026-07-25T18:31:07.423156+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-07-27T18:31:07.423156+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
     },
     "Die Linke": {
       "site_id": 223,
@@ -6411,6 +6411,27 @@
       "type": "fetch_error",
       "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fnewforum.org%2Fen%2Fjobs%2F",
       "consecutive_count": 15
+    },
+    {
+      "timestamp": "2026-07-25T18:31:07.423156+00:00",
+      "site": "Forum New Economy",
+      "site_id": 214,
+      "url": "https://newforum.org/en/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fnewforum.org%2Fen%2Fjobs%2F",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-07-25T18:31:07.423156+00:00",
+      "site": "Forum New Economy",
+      "site_id": 214,
+      "url": "https://newforum.org/en/jobs/",
+      "method": "html",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-07-27T18:31:07.423156+00:00"
     }
   ]
 }

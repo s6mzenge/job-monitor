@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-25T18:00:54.540876+00:00",
+  "generated_at": "2026-07-25T18:31:07.423156+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 90,
-  "erroring": 1,
-  "paused": 1,
+  "erroring": 0,
+  "paused": 2,
   "methods": {
     "personio_xml": 3,
     "html": 72,
@@ -107,6 +107,19 @@
   ],
   "sites": [
     {
+      "id": 214,
+      "name": "Forum New Economy",
+      "url": "https://newforum.org/en/jobs/",
+      "method": "html",
+      "status": "paused",
+      "consecutive_failures": 16,
+      "total_recent_failures": 17,
+      "last_failure": "2026-07-25T18:31:07.423156+00:00",
+      "paused_until": "2026-07-27T18:31:07.423156+00:00",
+      "last_type": "site_paused",
+      "message": "Site paused after 16 consecutive failures"
+    },
+    {
       "id": 223,
       "name": "Die Linke",
       "url": "https://www.die-linke.de/partei/jobs/",
@@ -118,19 +131,6 @@
       "paused_until": "2026-07-27T12:00:56.425628+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
-    },
-    {
-      "id": 214,
-      "name": "Forum New Economy",
-      "url": "https://newforum.org/en/jobs/",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 15,
-      "total_recent_failures": 15,
-      "last_failure": "2026-07-25T18:00:54.540876+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fnewforum.org%2Fen%2Fjobs%2F"
     }
   ]
 }
