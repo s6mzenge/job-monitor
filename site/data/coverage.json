@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-25T07:00:56.669813+00:00",
+  "generated_at": "2026-07-25T07:30:57.136203+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 91,
-  "erroring": 1,
+  "healthy": 90,
+  "erroring": 2,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
     "html": 73,
     "json_api": 7,
-    "playwright": 6,
     "interamt": 1,
+    "playwright": 5,
     "recruitee_api": 1
   },
   "healthy_names": [
@@ -51,7 +51,6 @@
     "FU Berlin (wiss.)",
     "Germanwatch",
     "Gesellschaft für Freiheitsrechte",
-    "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
     "Global Public Policy Institute",
     "Haus der Wannsee-Konferenz",
     "Heinrich Böll Stiftung",
@@ -113,12 +112,25 @@
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 6,
-      "total_recent_failures": 123,
-      "last_failure": "2026-07-25T07:00:56.669813+00:00",
+      "consecutive_failures": 7,
+      "total_recent_failures": 124,
+      "last_failure": "2026-07-25T07:30:57.136203+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F"
+    },
+    {
+      "id": 179,
+      "name": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 81,
+      "last_failure": "2026-07-25T07:30:57.136203+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
     }
   ]
 }
