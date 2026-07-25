@@ -1,27 +1,14 @@
 {
-  "last_updated": "2026-07-25T05:30:47.355733+00:00",
+  "last_updated": "2026-07-25T06:01:18.394709+00:00",
   "site_summary": {
-    "WZB Berlin Social Science Center": {
-      "site_id": 165,
-      "url": "https://www.wzb.eu/de/das-wzb/arbeiten-am-wzb/stellenangebote",
-      "method": "html",
-      "consecutive_failures": 16,
-      "total_recent_failures": 17,
-      "first_recent_failure": "2026-07-22T22:01:03.491126+00:00",
-      "last_recent_failure": "2026-07-23T05:31:02.388101+00:00",
-      "currently_paused": true,
-      "paused_until": "2026-07-25T05:31:02.388101+00:00",
-      "last_type": "site_paused",
-      "last_message": "Site paused after 16 consecutive failures"
-    },
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 120,
+      "consecutive_failures": 4,
+      "total_recent_failures": 121,
       "first_recent_failure": "2026-06-28T21:07:23.784674+00:00",
-      "last_recent_failure": "2026-07-25T05:30:47.355733+00:00",
+      "last_recent_failure": "2026-07-25T06:01:18.394709+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -6070,6 +6057,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
       "consecutive_count": 3
+    },
+    {
+      "timestamp": "2026-07-25T06:01:18.394709+00:00",
+      "site": "Die Linke",
+      "site_id": 223,
+      "url": "https://www.die-linke.de/partei/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
+      "consecutive_count": 4
     }
   ]
 }
