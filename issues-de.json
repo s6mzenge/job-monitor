@@ -1,18 +1,31 @@
 {
-  "last_updated": "2026-07-25T09:01:14.096777+00:00",
+  "last_updated": "2026-07-25T09:31:02.127340+00:00",
   "site_summary": {
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
-      "consecutive_failures": 10,
-      "total_recent_failures": 127,
+      "consecutive_failures": 11,
+      "total_recent_failures": 128,
       "first_recent_failure": "2026-06-28T21:07:23.784674+00:00",
-      "last_recent_failure": "2026-07-25T09:01:14.096777+00:00",
+      "last_recent_failure": "2026-07-25T09:31:02.127340+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
       "last_message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F"
+    },
+    "Uni Hamburg (Stellenangebote)": {
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 155,
+      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
+      "last_recent_failure": "2026-07-25T09:31:02.127340+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -6147,6 +6160,26 @@
       "type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
       "consecutive_count": 10
+    },
+    {
+      "timestamp": "2026-07-25T09:31:02.127340+00:00",
+      "site": "Die Linke",
+      "site_id": 223,
+      "url": "https://www.die-linke.de/partei/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
+      "consecutive_count": 11
+    },
+    {
+      "timestamp": "2026-07-25T09:31:02.127340+00:00",
+      "site": "Uni Hamburg (Stellenangebote)",
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
     }
   ]
 }
