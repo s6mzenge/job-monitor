@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-25T01:01:09.719037+00:00",
+  "last_updated": "2026-07-25T01:30:54.789732+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -18,10 +18,10 @@
       "site_id": 45,
       "url": "https://www.impunitywatch.org/join-us/join-our-team/",
       "method": "html",
-      "consecutive_failures": 2,
-      "total_recent_failures": 125,
+      "consecutive_failures": 3,
+      "total_recent_failures": 126,
       "first_recent_failure": "2026-07-02T10:31:03.695349+00:00",
-      "last_recent_failure": "2026-07-25T01:01:09.719037+00:00",
+      "last_recent_failure": "2026-07-25T01:30:54.789732+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -9691,6 +9691,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-07-25T01:30:54.789732+00:00",
+      "site": "Impunity Watch",
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F",
+      "consecutive_count": 3
     }
   ]
 }
