@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-07-25T11:30:57.627459+00:00",
+  "last_updated": "2026-07-25T12:00:56.425628+00:00",
   "site_summary": {
     "Forum New Economy": {
       "site_id": 214,
       "url": "https://newforum.org/en/jobs/",
       "method": "html",
-      "consecutive_failures": 3,
-      "total_recent_failures": 3,
+      "consecutive_failures": 4,
+      "total_recent_failures": 4,
       "first_recent_failure": "2026-07-25T10:31:07.341480+00:00",
-      "last_recent_failure": "2026-07-25T11:30:57.627459+00:00",
+      "last_recent_failure": "2026-07-25T12:00:56.425628+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -18,14 +18,27 @@
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
-      "consecutive_failures": 15,
-      "total_recent_failures": 132,
+      "consecutive_failures": 16,
+      "total_recent_failures": 134,
       "first_recent_failure": "2026-06-28T21:07:23.784674+00:00",
-      "last_recent_failure": "2026-07-25T11:30:57.627459+00:00",
+      "last_recent_failure": "2026-07-25T12:00:56.425628+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-07-27T12:00:56.425628+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uni Hamburg (Stellenangebote)": {
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 156,
+      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
+      "last_recent_failure": "2026-07-25T12:00:56.425628+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F"
+      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -6250,6 +6263,47 @@
       "type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
       "consecutive_count": 15
+    },
+    {
+      "timestamp": "2026-07-25T12:00:56.425628+00:00",
+      "site": "Forum New Economy",
+      "site_id": 214,
+      "url": "https://newforum.org/en/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fnewforum.org%2Fen%2Fjobs%2F",
+      "consecutive_count": 4
+    },
+    {
+      "timestamp": "2026-07-25T12:00:56.425628+00:00",
+      "site": "Die Linke",
+      "site_id": 223,
+      "url": "https://www.die-linke.de/partei/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-07-25T12:00:56.425628+00:00",
+      "site": "Die Linke",
+      "site_id": 223,
+      "url": "https://www.die-linke.de/partei/jobs/",
+      "method": "html",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-07-27T12:00:56.425628+00:00"
+    },
+    {
+      "timestamp": "2026-07-25T12:00:56.425628+00:00",
+      "site": "Uni Hamburg (Stellenangebote)",
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
     }
   ]
 }
