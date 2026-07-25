@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-25T09:31:02.127340+00:00",
+  "generated_at": "2026-07-25T10:01:05.901620+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 90,
-  "erroring": 2,
+  "healthy": 91,
+  "erroring": 1,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
     "html": 73,
     "json_api": 7,
-    "playwright": 5,
+    "playwright": 6,
     "interamt": 1,
     "recruitee_api": 1
   },
@@ -90,6 +90,7 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
+    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -112,25 +113,12 @@
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 11,
-      "total_recent_failures": 128,
-      "last_failure": "2026-07-25T09:31:02.127340+00:00",
+      "consecutive_failures": 12,
+      "total_recent_failures": 129,
+      "last_failure": "2026-07-25T10:01:05.901620+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F"
-    },
-    {
-      "id": 230,
-      "name": "Uni Hamburg (Stellenangebote)",
-      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
-      "method": "playwright",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 155,
-      "last_failure": "2026-07-25T09:31:02.127340+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
     }
   ]
 }
