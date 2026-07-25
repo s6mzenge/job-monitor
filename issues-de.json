@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-07-25T20:30:48.653219+00:00",
+  "last_updated": "2026-07-25T21:01:03.862678+00:00",
   "site_summary": {
-    "Deutsches Institut für Menschenrechte": {
-      "site_id": 159,
-      "url": "https://www.institut-fuer-menschenrechte.de/das-institut/jobs",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 4,
-      "first_recent_failure": "2026-07-18T22:01:03.584449+00:00",
-      "last_recent_failure": "2026-07-25T20:30:48.653219+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 520 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.institut-fuer-menschenrechte.de%2Fdas-institut%2Fjobs"
-    },
     "Forum New Economy": {
       "site_id": 214,
       "url": "https://newforum.org/en/jobs/",
