@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-25T04:00:54.760786+00:00",
+  "generated_at": "2026-07-25T04:30:52.299110+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 88,
-  "erroring": 2,
-  "paused": 2,
+  "healthy": 90,
+  "erroring": 1,
+  "paused": 1,
   "methods": {
     "personio_xml": 3,
     "html": 72,
     "json_api": 7,
+    "playwright": 6,
     "interamt": 1,
-    "playwright": 4,
     "recruitee_api": 1
   },
   "healthy_names": [
@@ -51,6 +51,7 @@
     "FU Berlin (wiss.)",
     "Germanwatch",
     "Gesellschaft für Freiheitsrechte",
+    "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
     "Global Public Policy Institute",
     "Haus der Wannsee-Konferenz",
     "Heinrich Böll Stiftung",
@@ -89,6 +90,7 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
+    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -122,39 +124,13 @@
       "name": "Die Linke",
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
-      "status": "paused",
-      "consecutive_failures": 16,
-      "total_recent_failures": 117,
-      "last_failure": "2026-07-23T04:30:47.215287+00:00",
-      "paused_until": "2026-07-25T04:30:47.215287+00:00",
-      "last_type": "site_paused",
-      "message": "Site paused after 16 consecutive failures"
-    },
-    {
-      "id": 179,
-      "name": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
-      "url": "https://jobs.giz.de/index.php?ac=search_result&search_criterion_channel%5B%5D=12",
-      "method": "playwright",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 80,
-      "last_failure": "2026-07-25T04:00:54.760786+00:00",
+      "total_recent_failures": 118,
+      "last_failure": "2026-07-25T04:30:52.299110+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
-    },
-    {
-      "id": 230,
-      "name": "Uni Hamburg (Stellenangebote)",
-      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
-      "method": "playwright",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 153,
-      "last_failure": "2026-07-25T04:00:54.760786+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
+      "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F"
     }
   ]
 }
