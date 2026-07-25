@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-07-25T15:01:04.324234+00:00",
+  "last_updated": "2026-07-25T15:30:58.506580+00:00",
   "site_summary": {
     "Forum New Economy": {
       "site_id": 214,
       "url": "https://newforum.org/en/jobs/",
       "method": "html",
-      "consecutive_failures": 9,
-      "total_recent_failures": 9,
+      "consecutive_failures": 10,
+      "total_recent_failures": 10,
       "first_recent_failure": "2026-07-25T10:31:07.341480+00:00",
-      "last_recent_failure": "2026-07-25T15:01:04.324234+00:00",
+      "last_recent_failure": "2026-07-25T15:30:58.506580+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -6351,6 +6351,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fnewforum.org%2Fen%2Fjobs%2F",
       "consecutive_count": 9
+    },
+    {
+      "timestamp": "2026-07-25T15:30:58.506580+00:00",
+      "site": "Forum New Economy",
+      "site_id": 214,
+      "url": "https://newforum.org/en/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fnewforum.org%2Fen%2Fjobs%2F",
+      "consecutive_count": 10
     }
   ]
 }
