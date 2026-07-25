@@ -1,7 +1,7 @@
 {
   "date": "2026-07-25",
-  "generated_at": "2026-07-25T06:31:07.482381+00:00",
-  "run_count": 14,
+  "generated_at": "2026-07-25T07:00:56.669813+00:00",
+  "run_count": 15,
   "jobs": [
     {
       "title": "Praktikant*in im Sektorvorhaben \"Digitalisierung für nachhaltige Entwicklung\"",
@@ -33,6 +33,40 @@
       "type": "Internship",
       "deadline": "2026-08-09",
       "salary": "€2,349/month (gross)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Bereich Globale Gesundheit: Klinikpartnerschaften – Recherche und Aufbereitung strategischer Themen",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78879",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is a Praktikum / internship (explicitly requiring current student enrolment), which is excluded by policy regardless of pay. It also sits in global-health development cooperation, outside the candidate's core interest zones.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-08-09",
+      "salary": "€2,349/month (gross)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in für Monitoring & Evaluierung, Wissensmanagement und allgemeine Projektunterstützung im Project i4Ag/SAFE",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78880",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is explicitly a Praktikum (internship), which is excluded by policy as not a genuine paid role for the candidate. It also requires current enrolment / recent graduation as an integral part of study. The development-cooperation topic is adjacent but the internship status is a hard disqualifier.",
+      "location": "Bonn / Eschborn, Germany",
+      "type": "Internship",
+      "deadline": "2026-08-09",
+      "salary": "€2,349/month (brutto)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
