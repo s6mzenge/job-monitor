@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-25T13:30:55.804920+00:00",
+  "generated_at": "2026-07-25T14:00:54.572601+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 90,
-  "erroring": 1,
+  "healthy": 89,
+  "erroring": 2,
   "paused": 1,
   "methods": {
     "personio_xml": 3,
     "html": 72,
     "json_api": 7,
-    "playwright": 6,
+    "playwright": 5,
     "interamt": 1,
     "recruitee_api": 1
   },
@@ -89,7 +89,6 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
-    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -125,12 +124,25 @@
       "url": "https://newforum.org/en/jobs/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 6,
-      "total_recent_failures": 6,
-      "last_failure": "2026-07-25T13:30:55.804920+00:00",
+      "consecutive_failures": 7,
+      "total_recent_failures": 7,
+      "last_failure": "2026-07-25T14:00:54.572601+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fnewforum.org%2Fen%2Fjobs%2F"
+    },
+    {
+      "id": 230,
+      "name": "Uni Hamburg (Stellenangebote)",
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 157,
+      "last_failure": "2026-07-25T14:00:54.572601+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
     }
   ]
 }
