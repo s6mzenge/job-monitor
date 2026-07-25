@@ -1,32 +1,6 @@
 {
-  "last_updated": "2026-07-25T07:01:07.164646+00:00",
+  "last_updated": "2026-07-25T07:31:03.441622+00:00",
   "site_summary": {
-    "Open Society Foundations": {
-      "site_id": 2,
-      "url": "https://osfglobal.wd5.myworkdayjobs.com/en-US/OSF",
-      "method": "workday_api",
-      "consecutive_failures": 2,
-      "total_recent_failures": 12,
-      "first_recent_failure": "2026-07-04T06:31:08.672069+00:00",
-      "last_recent_failure": "2026-07-25T07:01:07.164646+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
-    },
-    "Pew Trusts": {
-      "site_id": 3,
-      "url": "https://pewtrusts.wd5.myworkdayjobs.com/CenterExternal?timeType=2fc7bad2b85410c0e2f24883d51b26e8",
-      "method": "workday_api",
-      "consecutive_failures": 2,
-      "total_recent_failures": 12,
-      "first_recent_failure": "2026-07-04T06:31:08.672069+00:00",
-      "last_recent_failure": "2026-07-25T07:01:07.164646+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
-    },
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
@@ -40,57 +14,18 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "ERM": {
-      "site_id": 69,
-      "url": "https://erm.wd3.myworkdayjobs.com/en-US/ERM_Careers",
-      "method": "workday_api",
-      "consecutive_failures": 2,
-      "total_recent_failures": 9,
-      "first_recent_failure": "2026-07-04T06:31:08.672069+00:00",
-      "last_recent_failure": "2026-07-25T07:01:07.164646+00:00",
+    "Impunity Watch": {
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 129,
+      "first_recent_failure": "2026-07-02T10:31:03.695349+00:00",
+      "last_recent_failure": "2026-07-25T07:31:03.441622+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
-    },
-    "Edelman": {
-      "site_id": 78,
-      "url": "https://djeholdings.wd5.myworkdayjobs.com/edelman-careers-E200?locations=9aea86bf32a11001b495e8e5680f0000",
-      "method": "workday_api",
-      "consecutive_failures": 2,
-      "total_recent_failures": 12,
-      "first_recent_failure": "2026-07-04T06:31:08.672069+00:00",
-      "last_recent_failure": "2026-07-25T07:01:07.164646+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
-    },
-    "International Rescue Committee": {
-      "site_id": 111,
-      "url": "https://theirc.wd1.myworkdayjobs.com/en-US/External_Careers",
-      "method": "workday_api",
-      "consecutive_failures": 2,
-      "total_recent_failures": 15,
-      "first_recent_failure": "2026-07-04T06:31:08.672069+00:00",
-      "last_recent_failure": "2026-07-25T07:01:07.164646+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
-    },
-    "Wellcome Trust": {
-      "site_id": 112,
-      "url": "https://wellcome.wd3.myworkdayjobs.com/en-GB/Wellcome",
-      "method": "workday_api",
-      "consecutive_failures": 2,
-      "total_recent_failures": 8,
-      "first_recent_failure": "2026-07-04T06:31:08.672069+00:00",
-      "last_recent_failure": "2026-07-25T07:01:07.164646+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
     },
     "Airwars": {
       "site_id": 133,
@@ -104,19 +39,6 @@
       "paused_until": "2026-07-26T00:01:04.032246+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Springer Nature": {
-      "site_id": 204,
-      "url": "https://springernature.wd3.myworkdayjobs.com/en-US/SpringerNatureCareers",
-      "method": "workday_api",
-      "consecutive_failures": 2,
-      "total_recent_failures": 27,
-      "first_recent_failure": "2026-07-04T06:31:08.672069+00:00",
-      "last_recent_failure": "2026-07-25T07:01:07.164646+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Workday API: Expecting value: line 1 column 1 (char 0)"
     }
   },
   "issues": [
@@ -9939,6 +9861,16 @@
       "type": "fetch_error",
       "message": "Workday API: Expecting value: line 1 column 1 (char 0)",
       "consecutive_count": 2
+    },
+    {
+      "timestamp": "2026-07-25T07:31:03.441622+00:00",
+      "site": "Impunity Watch",
+      "site_id": 45,
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F",
+      "consecutive_count": 1
     }
   ]
 }
