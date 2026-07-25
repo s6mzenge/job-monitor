@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-25T10:01:05.901620+00:00",
+  "generated_at": "2026-07-25T10:31:07.341480+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 91,
-  "erroring": 1,
+  "healthy": 90,
+  "erroring": 2,
   "paused": 0,
   "methods": {
     "personio_xml": 3,
-    "html": 73,
+    "html": 72,
     "json_api": 7,
     "playwright": 6,
     "interamt": 1,
@@ -44,7 +44,6 @@
     "ECFR",
     "ESMT Berlin",
     "European Legal Support Center (ELSC)",
-    "Forum New Economy",
     "Forum Transregionale Studien",
     "FragDenStaat",
     "Friedrich-Ebert-Stiftung",
@@ -113,12 +112,25 @@
       "url": "https://www.die-linke.de/partei/jobs/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 12,
-      "total_recent_failures": 129,
-      "last_failure": "2026-07-25T10:01:05.901620+00:00",
+      "consecutive_failures": 13,
+      "total_recent_failures": 130,
+      "last_failure": "2026-07-25T10:31:07.341480+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 429 Client Error: Too Many Requests for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.die-linke.de%2Fpartei%2Fjobs%2F"
+    },
+    {
+      "id": 214,
+      "name": "Forum New Economy",
+      "url": "https://newforum.org/en/jobs/",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "last_failure": "2026-07-25T10:31:07.341480+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fnewforum.org%2Fen%2Fjobs%2F"
     }
   ]
 }
