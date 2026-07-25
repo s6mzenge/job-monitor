@@ -1,6 +1,41 @@
 {
   "date": "2026-07-25",
-  "generated_at": "2026-07-25T06:01:18.394709+00:00",
-  "run_count": 13,
-  "jobs": []
+  "generated_at": "2026-07-25T06:31:07.482381+00:00",
+  "run_count": 14,
+  "jobs": [
+    {
+      "title": "Praktikant*in im Sektorvorhaben \"Digitalisierung für nachhaltige Entwicklung\"",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78877",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "3",
+      "match": "low",
+      "reason": "This is a Praktikum (internship), which is excluded by policy regardless of pay, and it requires current enrolment or graduation within the last 6 months. The digitalisation-for-development topic is adjacent policy of plausible interest, but the internship classification is a hard disqualifier.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-08-09",
+      "salary": "€2,349/month (brutto)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Praktikant*in im Sektorvorhaben Resiliente Ländliche Räume / ELD-Sekretariat",
+      "organisation": "GIZ (Dt. Gesellschaft für Internationale Zusammenarbeit)",
+      "url": "https://jobs.giz.de/index.php?ac=jobad&id=78878",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "This is explicitly an internship (Praktikum) requiring current enrolment or graduation within the last 6 months, which is an excluded role type. It also asks for economics/environmental-science specialisation in sustainable land management the candidate lacks, and the topic sits outside the candidate's core interest zones.",
+      "location": "Bonn, Germany",
+      "type": "Internship",
+      "deadline": "2026-08-09",
+      "salary": "€2,349/month (gross)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
