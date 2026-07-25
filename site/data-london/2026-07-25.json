@@ -1,7 +1,7 @@
 {
   "date": "2026-07-25",
-  "generated_at": "2026-07-25T02:01:00.294447+00:00",
-  "run_count": 5,
+  "generated_at": "2026-07-25T02:31:10.629442+00:00",
+  "run_count": 6,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -81,6 +81,23 @@
       "match": "low",
       "reason": "Location policy is London only, and this role is tied to Washington DC with no London or remote-UK option, so it is a hard filter fail. It is also a senior fellowship beyond entry-level.",
       "location": "Washington DC, USA",
+      "type": "Full-time",
+      "deadline": "Not specified",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "IATF Lead Auditor",
+      "organisation": "LRQA",
+      "url": "https://jobs.lrqa.com/job/Rotterdam-IATF-Lead-Auditor-3068-AX/1202779201",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Ineligible on multiple hard grounds: it is a \"Lead\" role requiring at least four years of automotive-industry experience, essential fluency in Dutch (a language the candidate does not have), and technical automotive-quality knowledge (ISO 9001 / IATF 16949, APQP, PPAP, FMEA) the candidate wholly lacks. The subject is entirely outside the candidate's interest and skill areas.",
+      "location": "Rotterdam, Netherlands",
       "type": "Full-time",
       "deadline": "Not specified",
       "salary": "Not specified",
