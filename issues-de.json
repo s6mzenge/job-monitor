@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-07-25T12:00:56.425628+00:00",
+  "last_updated": "2026-07-25T13:01:06.058109+00:00",
   "site_summary": {
     "Forum New Economy": {
       "site_id": 214,
       "url": "https://newforum.org/en/jobs/",
       "method": "html",
-      "consecutive_failures": 4,
-      "total_recent_failures": 4,
+      "consecutive_failures": 5,
+      "total_recent_failures": 5,
       "first_recent_failure": "2026-07-25T10:31:07.341480+00:00",
-      "last_recent_failure": "2026-07-25T12:00:56.425628+00:00",
+      "last_recent_failure": "2026-07-25T13:01:06.058109+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -26,19 +26,6 @@
       "paused_until": "2026-07-27T12:00:56.425628+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Uni Hamburg (Stellenangebote)": {
-      "site_id": 230,
-      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 156,
-      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
-      "last_recent_failure": "2026-07-25T12:00:56.425628+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -6304,6 +6291,16 @@
       "type": "fetch_error",
       "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-25T13:01:06.058109+00:00",
+      "site": "Forum New Economy",
+      "site_id": 214,
+      "url": "https://newforum.org/en/jobs/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fnewforum.org%2Fen%2Fjobs%2F",
+      "consecutive_count": 5
     }
   ]
 }
