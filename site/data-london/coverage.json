@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-25T04:30:52.059480+00:00",
+  "generated_at": "2026-07-25T05:01:17.573537+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 139,
-  "erroring": 0,
+  "healthy": 138,
+  "erroring": 1,
   "paused": 2,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 84,
+    "html": 83,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -90,7 +90,6 @@
     "IIED",
     "IISS",
     "Impactt",
-    "Impunity Watch",
     "INQUEST",
     "Institute for Government",
     "Institute for Strategic Dialogue (ISD)",
@@ -190,6 +189,19 @@
       "paused_until": "2026-07-26T00:01:04.032246+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
+    },
+    {
+      "id": 45,
+      "name": "Impunity Watch",
+      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 127,
+      "last_failure": "2026-07-25T05:01:17.573537+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
     }
   ]
 }
