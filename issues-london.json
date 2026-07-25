@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-25T10:01:47.592335+00:00",
+  "last_updated": "2026-07-25T10:30:52.302365+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -13,19 +13,6 @@
       "paused_until": "2026-07-26T19:30:57.568819+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "JCWI": {
-      "site_id": 100,
-      "url": "https://jcwi.org.uk/careers",
-      "method": "html",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "first_recent_failure": "2026-07-25T10:01:47.592335+00:00",
-      "last_recent_failure": "2026-07-25T10:01:47.592335+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
     },
     "Airwars": {
       "site_id": 133,

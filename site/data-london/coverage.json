@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-25T10:01:47.592335+00:00",
+  "generated_at": "2026-07-25T10:30:52.302365+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 138,
-  "erroring": 1,
+  "healthy": 139,
+  "erroring": 0,
   "paused": 2,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 83,
+    "html": 84,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -101,6 +101,7 @@
     "International Crisis Group",
     "International Rescue Committee",
     "IPPR",
+    "JCWI",
     "jobs.ac.uk",
     "Joseph Rowntree Foundation",
     "JUSTICE",
@@ -189,19 +190,6 @@
       "paused_until": "2026-07-26T00:01:04.032246+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
-    },
-    {
-      "id": 100,
-      "name": "JCWI",
-      "url": "https://jcwi.org.uk/careers",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "last_failure": "2026-07-25T10:01:47.592335+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: HTTPSConnectionPool(host='fetch-proxy.jobproxy.workers.dev', port=443): Read timed out. (read timeout=30)"
     }
   ]
 }
