@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T17:01:06.056446+00:00",
+  "generated_at": "2026-07-25T17:30:48.280420+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
   "healthy": 90,
@@ -125,9 +125,9 @@
       "url": "https://newforum.org/en/jobs/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 13,
-      "total_recent_failures": 13,
-      "last_failure": "2026-07-25T17:01:06.056446+00:00",
+      "consecutive_failures": 14,
+      "total_recent_failures": 14,
+      "last_failure": "2026-07-25T17:30:48.280420+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 522 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fnewforum.org%2Fen%2Fjobs%2F"
