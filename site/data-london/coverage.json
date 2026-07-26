@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-26T22:30:59.423958+00:00",
+  "generated_at": "2026-07-26T23:01:00.372980+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 138,
-  "erroring": 2,
+  "healthy": 139,
+  "erroring": 1,
   "paused": 1,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 83,
+    "html": 84,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
@@ -90,6 +90,7 @@
     "IIED",
     "IISS",
     "Impactt",
+    "Impunity Watch",
     "INQUEST",
     "Institute for Government",
     "Institute for Strategic Dialogue (ISD)",
@@ -183,25 +184,12 @@
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 6,
-      "total_recent_failures": 114,
-      "last_failure": "2026-07-26T22:30:59.423958+00:00",
+      "consecutive_failures": 7,
+      "total_recent_failures": 115,
+      "last_failure": "2026-07-26T23:01:00.372980+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607"
-    },
-    {
-      "id": 45,
-      "name": "Impunity Watch",
-      "url": "https://www.impunitywatch.org/join-us/join-our-team/",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 145,
-      "last_failure": "2026-07-26T22:30:59.423958+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
     }
   ]
 }
