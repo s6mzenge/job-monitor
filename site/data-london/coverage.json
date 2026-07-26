@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-26T19:30:55.726819+00:00",
+  "generated_at": "2026-07-26T20:00:54.255621+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 139,
-  "erroring": 0,
-  "paused": 2,
+  "erroring": 1,
+  "paused": 1,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
@@ -166,19 +166,6 @@
   ],
   "sites": [
     {
-      "id": 11,
-      "name": "FTI Consulting",
-      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
-      "method": "html",
-      "status": "paused",
-      "consecutive_failures": 16,
-      "total_recent_failures": 108,
-      "last_failure": "2026-07-24T19:30:57.568819+00:00",
-      "paused_until": "2026-07-26T19:30:57.568819+00:00",
-      "last_type": "site_paused",
-      "message": "Site paused after 16 consecutive failures"
-    },
-    {
       "id": 133,
       "name": "Airwars",
       "url": "https://airwars.org/about/workwithus/",
@@ -190,6 +177,19 @@
       "paused_until": "2026-07-28T07:30:52.205690+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
+    },
+    {
+      "id": 11,
+      "name": "FTI Consulting",
+      "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
+      "method": "html",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 109,
+      "last_failure": "2026-07-26T20:00:54.255621+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607"
     }
   ]
 }

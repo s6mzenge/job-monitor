@@ -1,7 +1,7 @@
 {
   "date": "2026-07-26",
-  "generated_at": "2026-07-26T19:30:55.726819+00:00",
-  "run_count": 40,
+  "generated_at": "2026-07-26T20:00:54.255621+00:00",
+  "run_count": 41,
   "jobs": [
     {
       "title": "Advisory Committee Member – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -46,6 +46,23 @@
       "interest_score": "",
       "match": "low",
       "reason": "This is a call for established \"experts\" to join an advisory committee, not a paid entry-level role — it is effectively an unpaid advisory/volunteer position seeking senior subject-matter authority the candidate does not yet have. The human-rights subject is on-mission, but the level and non-vacancy nature are hard disqualifiers.",
+      "location": "Not specified",
+      "type": "Not specified",
+      "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
+      "organisation": "Rights & Security International",
+      "url": "https://www.rightsandsecurity.org/get-involved/opportunities/",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "",
+      "match": "low",
+      "reason": "This is a call for \"experts\" to join an unpaid Advisory Committee, not a genuine paid entry-level role — it requires established expertise the candidate does not have and reads as a voluntary advisory position. The human-rights and securitisation subject is of genuine interest, but the level and unpaid advisory nature are hard blockers.",
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
