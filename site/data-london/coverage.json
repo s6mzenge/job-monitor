@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-07-26T01:30:47.536981+00:00",
+  "generated_at": "2026-07-26T02:01:03.682330+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 138,
-  "erroring": 2,
+  "healthy": 139,
+  "erroring": 1,
   "paused": 1,
   "methods": {
+    "palladium_api": 1,
     "workday_api": 7,
     "html": 84,
     "rippling_api": 2,
@@ -124,6 +125,7 @@
     "Open Rights Group",
     "Open Society Foundations",
     "Palestine Solidarity Campaign",
+    "Palladium Group",
     "Paul Hamlyn Foundation",
     "Peace Direct",
     "PEN International",
@@ -182,25 +184,12 @@
       "url": "https://airwars.org/about/workwithus/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 4,
-      "total_recent_failures": 305,
-      "last_failure": "2026-07-26T01:30:47.536981+00:00",
+      "consecutive_failures": 5,
+      "total_recent_failures": 306,
+      "last_failure": "2026-07-26T02:01:03.682330+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
-    },
-    {
-      "id": 1,
-      "name": "Palladium Group",
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 21,
-      "last_failure": "2026-07-26T01:30:47.536981+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7faee0eebce0>, 'Connection to thepalladiumgroup.com timed out. (con"
     }
   ]
 }
