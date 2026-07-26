@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T02:01:03.682330+00:00",
+  "generated_at": "2026-07-26T02:31:01.497583+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 139,
@@ -184,9 +184,9 @@
       "url": "https://airwars.org/about/workwithus/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 5,
-      "total_recent_failures": 306,
-      "last_failure": "2026-07-26T02:01:03.682330+00:00",
+      "consecutive_failures": 6,
+      "total_recent_failures": 307,
+      "last_failure": "2026-07-26T02:31:01.497583+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
