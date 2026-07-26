@@ -1,7 +1,7 @@
 {
   "date": "2026-07-26",
-  "generated_at": "2026-07-26T13:30:58.337867+00:00",
-  "run_count": 28,
+  "generated_at": "2026-07-26T14:01:02.688514+00:00",
+  "run_count": 29,
   "jobs": [
     {
       "title": "Advisory Committee Member – Project on Criminalisation of Environmental Human Rights Defenders",
@@ -15,6 +15,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "LECTURER.2.01 (AC.08.4)",
+      "organisation": "Wits University",
+      "url": "https://irec.wits.ac.za/OA_HTML/OA.jsp?page=/oracle/apps/irc/candidateSelfService/webui/VisVacDispPG&IRC_EXT_SITE_VISITOR_APP=IRC_VIS_VAC_DISPLAY&p_svid=106682&p_spid=5167845",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires an MBChB / clinical medical qualification, HPCSA registration, and 4+ years post-community-service clinical experience — all essentials the candidate cannot meet, being neither a medical professional nor a clinician. This is a medical clinical-educator post entirely outside the candidate's field.",
+      "location": "Southern Gauteng / North West Province, South Africa",
+      "type": "Full-time",
+      "deadline": "31 July 2026",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
