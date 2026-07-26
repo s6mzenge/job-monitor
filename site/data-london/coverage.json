@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-26T07:01:12.712400+00:00",
+  "generated_at": "2026-07-26T07:30:52.205690+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 139,
-  "erroring": 1,
-  "paused": 1,
+  "erroring": 0,
+  "paused": 2,
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
@@ -183,13 +183,13 @@
       "name": "Airwars",
       "url": "https://airwars.org/about/workwithus/",
       "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 15,
-      "total_recent_failures": 316,
-      "last_failure": "2026-07-26T07:01:12.712400+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
+      "status": "paused",
+      "consecutive_failures": 16,
+      "total_recent_failures": 318,
+      "last_failure": "2026-07-26T07:30:52.205690+00:00",
+      "paused_until": "2026-07-28T07:30:52.205690+00:00",
+      "last_type": "site_paused",
+      "message": "Site paused after 16 consecutive failures"
     }
   ]
 }

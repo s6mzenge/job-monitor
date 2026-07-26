@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T07:01:12.712400+00:00",
+  "last_updated": "2026-07-26T07:30:52.205690+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -18,14 +18,14 @@
       "site_id": 133,
       "url": "https://airwars.org/about/workwithus/",
       "method": "html",
-      "consecutive_failures": 15,
-      "total_recent_failures": 316,
+      "consecutive_failures": 16,
+      "total_recent_failures": 318,
       "first_recent_failure": "2026-07-02T01:01:14.296954+00:00",
-      "last_recent_failure": "2026-07-26T07:01:12.712400+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F"
+      "last_recent_failure": "2026-07-26T07:30:52.205690+00:00",
+      "currently_paused": true,
+      "paused_until": "2026-07-28T07:30:52.205690+00:00",
+      "last_type": "site_paused",
+      "last_message": "Site paused after 16 consecutive failures"
     }
   },
   "issues": [
@@ -10178,6 +10178,27 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
       "consecutive_count": 15
+    },
+    {
+      "timestamp": "2026-07-26T07:30:52.205690+00:00",
+      "site": "Airwars",
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
+      "consecutive_count": 16
+    },
+    {
+      "timestamp": "2026-07-26T07:30:52.205690+00:00",
+      "site": "Airwars",
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "type": "site_paused",
+      "message": "Site paused after 16 consecutive failures",
+      "consecutive_count": 16,
+      "paused_until": "2026-07-28T07:30:52.205690+00:00"
     }
   ]
 }
