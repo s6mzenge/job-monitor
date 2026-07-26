@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-25T23:30:48.356875+00:00",
+  "last_updated": "2026-07-26T00:00:58.341002+00:00",
   "site_summary": {
     "Forum New Economy": {
       "site_id": 214,
@@ -14,6 +14,19 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
+    "Friedrich-Ebert-Stiftung": {
+      "site_id": 218,
+      "url": "https://jobs.fes.de/",
+      "method": "html",
+      "consecutive_failures": 1,
+      "total_recent_failures": 1,
+      "first_recent_failure": "2026-07-26T00:00:58.341002+00:00",
+      "last_recent_failure": "2026-07-26T00:00:58.341002+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fjobs.fes.de%2F"
+    },
     "Die Linke": {
       "site_id": 223,
       "url": "https://www.die-linke.de/partei/jobs/",
@@ -26,6 +39,19 @@
       "paused_until": "2026-07-27T12:00:56.425628+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uni Hamburg (Stellenangebote)": {
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 158,
+      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
+      "last_recent_failure": "2026-07-26T00:00:58.341002+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -6441,6 +6467,26 @@
       "method": "html",
       "type": "fetch_error",
       "message": "fetch_page: 520 Server Error: <none> for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.institut-fuer-menschenrechte.de%2Fdas-institut%2Fjobs",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-26T00:00:58.341002+00:00",
+      "site": "Friedrich-Ebert-Stiftung",
+      "site_id": 218,
+      "url": "https://jobs.fes.de/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fjobs.fes.de%2F",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-26T00:00:58.341002+00:00",
+      "site": "Uni Hamburg (Stellenangebote)",
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
     }
   ]
