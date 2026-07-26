@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T21:30:57.370962+00:00",
+  "generated_at": "2026-07-26T22:01:04.452439+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 139,
@@ -184,9 +184,9 @@
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 4,
-      "total_recent_failures": 112,
-      "last_failure": "2026-07-26T21:30:57.370962+00:00",
+      "consecutive_failures": 5,
+      "total_recent_failures": 113,
+      "last_failure": "2026-07-26T22:01:04.452439+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Ffticonsult.referrals.selectminds.com%2Fftistudentcareers%2Fjobs%2Fsearch%2F10301607"
