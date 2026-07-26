@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-07-26T04:30:55.328390+00:00",
+  "last_updated": "2026-07-26T05:01:00.029490+00:00",
   "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 23,
-      "first_recent_failure": "2026-06-29T10:31:23.026711+00:00",
-      "last_recent_failure": "2026-07-26T04:30:55.328390+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f03821efce0>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=8)'))"
-    },
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
@@ -31,10 +18,10 @@
       "site_id": 133,
       "url": "https://airwars.org/about/workwithus/",
       "method": "html",
-      "consecutive_failures": 10,
-      "total_recent_failures": 311,
+      "consecutive_failures": 11,
+      "total_recent_failures": 312,
       "first_recent_failure": "2026-07-02T01:01:14.296954+00:00",
-      "last_recent_failure": "2026-07-26T04:30:55.328390+00:00",
+      "last_recent_failure": "2026-07-26T05:01:00.029490+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -10141,6 +10128,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
       "consecutive_count": 10
+    },
+    {
+      "timestamp": "2026-07-26T05:01:00.029490+00:00",
+      "site": "Airwars",
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
+      "consecutive_count": 11
     }
   ]
 }
