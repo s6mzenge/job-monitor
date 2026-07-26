@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T21:30:51.154807+00:00",
+  "last_updated": "2026-07-26T22:00:54.297310+00:00",
   "site_summary": {
     "Forum New Economy": {
       "site_id": 214,
@@ -26,6 +26,19 @@
       "paused_until": "2026-07-27T12:00:56.425628+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "Uni Hamburg (Stellenangebote)": {
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 163,
+      "first_recent_failure": "2026-06-28T21:42:42.056523+00:00",
+      "last_recent_failure": "2026-07-26T22:00:54.297310+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\""
     }
   },
   "issues": [
@@ -6495,6 +6508,16 @@
     },
     {
       "timestamp": "2026-07-26T09:30:49.376554+00:00",
+      "site": "Uni Hamburg (Stellenangebote)",
+      "site_id": 230,
+      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html\nCall log:\n  - navigating to \"https://www.uni-hamburg.de/en/stellenangebote.html\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-26T22:00:54.297310+00:00",
       "site": "Uni Hamburg (Stellenangebote)",
       "site_id": 230,
       "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
