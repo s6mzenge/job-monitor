@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-26T15:01:06.997519+00:00",
+  "generated_at": "2026-07-26T15:30:55.041759+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 138,
-  "erroring": 1,
+  "healthy": 139,
+  "erroring": 0,
   "paused": 2,
   "methods": {
     "palladium_api": 1,
@@ -14,7 +14,7 @@
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 11,
+    "playwright": 12,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -137,6 +137,7 @@
     "Public Law Project",
     "RAND Europe",
     "REDRESS",
+    "Reprieve",
     "Resolution Foundation",
     "Rights & Security International",
     "Rights for Peace",
@@ -189,19 +190,6 @@
       "paused_until": "2026-07-28T07:30:52.205690+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
-    },
-    {
-      "id": 58,
-      "name": "Reprieve",
-      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
-      "method": "playwright",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 12,
-      "last_failure": "2026-07-26T15:01:06.997519+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
     }
   ]
 }

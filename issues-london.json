@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T15:01:06.997519+00:00",
+  "last_updated": "2026-07-26T15:30:55.041759+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -13,19 +13,6 @@
       "paused_until": "2026-07-26T19:30:57.568819+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
-    },
-    "Reprieve": {
-      "site_id": 58,
-      "url": "https://reprieve.org.uk/who-we-are/work-for-us/",
-      "method": "playwright",
-      "consecutive_failures": 1,
-      "total_recent_failures": 12,
-      "first_recent_failure": "2026-07-02T09:01:10.633271+00:00",
-      "last_recent_failure": "2026-07-26T15:01:06.997519+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Playwright: Page.content: Unable to retrieve content because the page is navigating and changing the content."
     },
     "Airwars": {
       "site_id": 133,
