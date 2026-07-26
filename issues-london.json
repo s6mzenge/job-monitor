@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T05:01:00.029490+00:00",
+  "last_updated": "2026-07-26T05:30:52.602903+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -18,10 +18,10 @@
       "site_id": 133,
       "url": "https://airwars.org/about/workwithus/",
       "method": "html",
-      "consecutive_failures": 11,
-      "total_recent_failures": 312,
+      "consecutive_failures": 12,
+      "total_recent_failures": 313,
       "first_recent_failure": "2026-07-02T01:01:14.296954+00:00",
-      "last_recent_failure": "2026-07-26T05:01:00.029490+00:00",
+      "last_recent_failure": "2026-07-26T05:30:52.602903+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
@@ -10138,6 +10138,16 @@
       "type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
       "consecutive_count": 11
+    },
+    {
+      "timestamp": "2026-07-26T05:30:52.602903+00:00",
+      "site": "Airwars",
+      "site_id": 133,
+      "url": "https://airwars.org/about/workwithus/",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fairwars.org%2Fabout%2Fworkwithus%2F",
+      "consecutive_count": 12
     }
   ]
 }
