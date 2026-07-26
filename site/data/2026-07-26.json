@@ -1,7 +1,7 @@
 {
   "date": "2026-07-26",
-  "generated_at": "2026-07-26T22:00:54.297310+00:00",
-  "run_count": 45,
+  "generated_at": "2026-07-26T22:30:56.123865+00:00",
+  "run_count": 46,
   "jobs": [
     {
       "title": "Wiss. Mitarbeiter*in (w/m/d) Arbeitsbereich Ökonomie",
@@ -118,6 +118,40 @@
       "type": "Part-time (50%), fixed-term up to 4 years",
       "deadline": "2026-09-07",
       "salary": "Entgeltgruppe 13 TV-L FU (50%)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wiss. Mitarbeiter*in (50% Elternzeitvertretung) – Klinische Kinder- und Jugendpsychologie",
+      "organisation": "FU Berlin (wiss.)",
+      "url": "https://jobs.fu-berlin.de/job-invite/814/?locale=de_DE",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires as an essential a completed Master's/Diplom in Psychology, which the candidate does not hold — this is a hard qualification mismatch. The role is squarely in clinical child/adolescent psychology and psychotherapy research, entirely outside the candidate's IR/law/policy profile and interests.",
+      "location": "Berlin, Germany",
+      "type": "Part-time (50%), fixed-term",
+      "deadline": "2026-08-17",
+      "salary": "TV-L FU E13 (50%)",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Wiss. Mitarbeiter*in (Postdoc) - Algorithmische Bioinformatik",
+      "organisation": "FU Berlin (wiss.)",
+      "url": "https://jobs.fu-berlin.de/job-invite/785/?locale=de_DE",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Requires an already-completed PhD (Promotion in Bioinformatik) plus 3+ years of professional experience — both hard disqualifiers. It is also a deep-technical C++ software-engineering role far beyond the candidate's analysis-level skills and entirely outside their field.",
+      "location": "Berlin, Germany",
+      "type": "Full-time",
+      "deadline": "2026-08-17",
+      "salary": "E 13 TV-L FU (100%)",
       "field_score": "",
       "skills_score": "",
       "seniority_score": ""
