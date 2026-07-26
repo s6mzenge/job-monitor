@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T18:30:51.855486+00:00",
+  "generated_at": "2026-07-26T19:00:59.437583+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 138,
@@ -196,9 +196,9 @@
       "url": "https://www.impunitywatch.org/join-us/join-our-team/",
       "method": "html",
       "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 142,
-      "last_failure": "2026-07-26T18:30:51.855486+00:00",
+      "consecutive_failures": 2,
+      "total_recent_failures": 143,
+      "last_failure": "2026-07-26T19:00:59.437583+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
       "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.impunitywatch.org%2Fjoin-us%2Fjoin-our-team%2F"
