@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-26T00:00:58.341002+00:00",
+  "generated_at": "2026-07-26T00:30:47.165984+00:00",
   "lane": "🇩🇪 DE",
   "total_sites": 92,
-  "healthy": 88,
-  "erroring": 2,
+  "healthy": 90,
+  "erroring": 0,
   "paused": 2,
   "methods": {
     "personio_xml": 3,
-    "html": 71,
+    "html": 72,
     "json_api": 7,
-    "playwright": 5,
+    "playwright": 6,
     "interamt": 1,
     "recruitee_api": 1
   },
@@ -46,6 +46,7 @@
     "European Legal Support Center (ELSC)",
     "Forum Transregionale Studien",
     "FragDenStaat",
+    "Friedrich-Ebert-Stiftung",
     "FU Berlin (wiss.)",
     "Germanwatch",
     "Gesellschaft für Freiheitsrechte",
@@ -88,6 +89,7 @@
     "Table.Briefings",
     "Transparency International DE",
     "TU Berlin (wiss. Personal)",
+    "Uni Hamburg (Stellenangebote)",
     "Uni Marburg (wiss. Stellen)",
     "Uni Potsdam (akad. Personal, befristet)",
     "Uni Potsdam (akad. Personal, unbefristet)",
@@ -129,32 +131,6 @@
       "paused_until": "2026-07-27T12:00:56.425628+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
-    },
-    {
-      "id": 218,
-      "name": "Friedrich-Ebert-Stiftung",
-      "url": "https://jobs.fes.de/",
-      "method": "html",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 1,
-      "last_failure": "2026-07-26T00:00:58.341002+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "fetch_page: 404 Client Error: Not Found for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fjobs.fes.de%2F"
-    },
-    {
-      "id": 230,
-      "name": "Uni Hamburg (Stellenangebote)",
-      "url": "https://www.uni-hamburg.de/en/stellenangebote.html",
-      "method": "playwright",
-      "status": "erroring",
-      "consecutive_failures": 1,
-      "total_recent_failures": 158,
-      "last_failure": "2026-07-26T00:00:58.341002+00:00",
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "message": "Playwright: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.uni-hamburg.de/en/stellenangebote.html"
     }
   ]
 }
