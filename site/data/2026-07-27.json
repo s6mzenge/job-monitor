@@ -1,6 +1,24 @@
 {
   "date": "2026-07-27",
-  "generated_at": "2026-07-27T07:01:06.771761+00:00",
-  "run_count": 15,
-  "jobs": []
+  "generated_at": "2026-07-27T07:30:51.023733+00:00",
+  "run_count": 16,
+  "jobs": [
+    {
+      "title": "Fachreferent*in für Kommunalpolitik, Ländliche Räume und Heimat (w/m/d) in Vollzeit",
+      "organisation": "Die Linke Bundestagsfraktion",
+      "url": "https://www.dielinkebt.de/service/ausschreibungen/detail/fachreferentin-fuer-kommunalpolitik-laendliche-raeume-und-heimat-w-m-d-in-vollzeit-39-wochenstunden",
+      "priority": 22,
+      "eligible": true,
+      "interest_score": "",
+      "match": "low",
+      "reason": "The role is open to a recent graduate with a research degree (Berufserfahrung only \"von Vorteil\"), and the analytical/writing/policy tasks match the candidate's strengths, so on paper it is broadly accessible. However, the subject matter — municipal politics, rural areas and \"Heimat\" — sits well outside all three interest zones, it demands strong German-domestic policy knowledge and campaign/comms work the candidate has limited exposure to, and external applicants are only considered if no internal candidate is found, all of which pull the priority down.",
+      "location": "Berlin, Germany",
+      "type": "Full-time (fixed-term to end of legislative period, 39h/week)",
+      "deadline": "2026-08-23",
+      "salary": "In line with TVöD/Bund, comparable to EG 13",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    }
+  ]
 }
