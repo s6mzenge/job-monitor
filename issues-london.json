@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T07:30:49.582591+00:00",
+  "last_updated": "2026-07-27T08:00:59.628456+00:00",
   "site_summary": {
     "FTI Consulting": {
       "site_id": 11,
@@ -14,18 +14,18 @@
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
     },
-    "SOAS University of London": {
-      "site_id": 34,
-      "url": "https://vacancies.soas.ac.uk/#vacancies",
-      "method": "playwright",
+    "Business & Human Rights Resource Centre": {
+      "site_id": 130,
+      "url": "https://www.business-humanrights.org/en/jobs/?location=United+Kingdom",
+      "method": "html",
       "consecutive_failures": 1,
-      "total_recent_failures": 21,
-      "first_recent_failure": "2026-06-29T07:01:15.912367+00:00",
-      "last_recent_failure": "2026-07-27T07:30:49.582591+00:00",
+      "total_recent_failures": 3,
+      "first_recent_failure": "2026-07-16T08:01:25.146720+00:00",
+      "last_recent_failure": "2026-07-27T08:00:59.628456+00:00",
       "currently_paused": false,
       "paused_until": "",
       "last_type": "fetch_error",
-      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://vacancies.soas.ac.uk/#vacancies\", waiting until \"domcontentloaded\""
+      "last_message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.business-humanrights.org%2Fen%2Fjobs%2F%3Flocation%3DUnited%2BKingdom"
     },
     "Airwars": {
       "site_id": 133,
@@ -10482,6 +10482,16 @@
       "method": "playwright",
       "type": "fetch_error",
       "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://vacancies.soas.ac.uk/#vacancies\", waiting until \"domcontentloaded\"",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-27T08:00:59.628456+00:00",
+      "site": "Business & Human Rights Resource Centre",
+      "site_id": 130,
+      "url": "https://www.business-humanrights.org/en/jobs/?location=United+Kingdom",
+      "method": "html",
+      "type": "fetch_error",
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.business-humanrights.org%2Fen%2Fjobs%2F%3Flocation%3DUnited%2BKingdom",
       "consecutive_count": 1
     }
   ]

@@ -1,7 +1,7 @@
 {
   "date": "2026-07-27",
-  "generated_at": "2026-07-27T07:30:49.582591+00:00",
-  "run_count": 16,
+  "generated_at": "2026-07-27T08:00:59.628456+00:00",
+  "run_count": 17,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -32,6 +32,23 @@
       "location": "Mumbai / New Delhi, India",
       "type": "Full-time",
       "deadline": "2026-09-05",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Team Manager",
+      "organisation": "Springer Nature",
+      "url": "https://springernature.wd3.myworkdayjobs.com/job/Pune/Team-Manager_JR106725",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "1",
+      "match": "low",
+      "reason": "Not entry-level — a \"Team Manager\" role requiring recruiting/developing a global team and \"considerable manuscript-handling editorial experience\" on peer-reviewed science publications, both of which the candidate lacks. It also sits well outside the candidate's core interest zones.",
+      "location": "Pune, India",
+      "type": "Full-time",
+      "deadline": "2026-08-08",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",

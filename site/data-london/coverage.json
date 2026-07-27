@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T07:30:49.582591+00:00",
+  "generated_at": "2026-07-27T08:00:59.628456+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 138,
@@ -8,13 +8,13 @@
   "methods": {
     "palladium_api": 1,
     "workday_api": 7,
-    "html": 84,
+    "html": 83,
     "rippling_api": 2,
     "workable_api": 6,
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 11,
+    "playwright": 12,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -43,7 +43,6 @@
     "Bridgespan Group",
     "Brunswick Group",
     "BSR",
-    "Business & Human Rights Resource Centre",
     "Cambridge Human Movement Centre",
     "Campaign Against Arms Trade",
     "CARE International UK",
@@ -150,6 +149,7 @@
     "ShareAction",
     "Sibylline",
     "Sigrid Rausing Trust",
+    "SOAS University of London",
     "Springer Nature",
     "Teneo",
     "The Economist Group",
@@ -191,17 +191,17 @@
       "message": "Site paused after 16 consecutive failures"
     },
     {
-      "id": 34,
-      "name": "SOAS University of London",
-      "url": "https://vacancies.soas.ac.uk/#vacancies",
-      "method": "playwright",
+      "id": 130,
+      "name": "Business & Human Rights Resource Centre",
+      "url": "https://www.business-humanrights.org/en/jobs/?location=United+Kingdom",
+      "method": "html",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 21,
-      "last_failure": "2026-07-27T07:30:49.582591+00:00",
+      "total_recent_failures": 3,
+      "last_failure": "2026-07-27T08:00:59.628456+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
+      "message": "fetch_page: 403 Client Error: Forbidden for url: https://fetch-proxy.jobproxy.workers.dev/?url=https%3A%2F%2Fwww.business-humanrights.org%2Fen%2Fjobs%2F%3Flocation%3DUnited%2BKingdom"
     }
   ]
 }
