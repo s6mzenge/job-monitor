@@ -1,12 +1,11 @@
 {
-  "generated_at": "2026-07-27T06:31:08.745551+00:00",
+  "generated_at": "2026-07-27T07:01:06.993034+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
-  "healthy": 139,
-  "erroring": 0,
+  "healthy": 138,
+  "erroring": 1,
   "paused": 2,
   "methods": {
-    "palladium_api": 1,
     "workday_api": 7,
     "html": 84,
     "rippling_api": 2,
@@ -125,7 +124,6 @@
     "Open Rights Group",
     "Open Society Foundations",
     "Palestine Solidarity Campaign",
-    "Palladium Group",
     "Paul Hamlyn Foundation",
     "Peace Direct",
     "PEN International",
@@ -190,6 +188,19 @@
       "paused_until": "2026-07-28T07:30:52.205690+00:00",
       "last_type": "site_paused",
       "message": "Site paused after 16 consecutive failures"
+    },
+    {
+      "id": 1,
+      "name": "Palladium Group",
+      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
+      "method": "palladium_api",
+      "status": "erroring",
+      "consecutive_failures": 1,
+      "total_recent_failures": 24,
+      "last_failure": "2026-07-27T07:01:06.993034+00:00",
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f0fb8230230>, 'Connection to thepalladiumgroup.com timed out. (con"
     }
   ]
 }
