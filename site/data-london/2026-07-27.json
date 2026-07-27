@@ -1,7 +1,7 @@
 {
   "date": "2026-07-27",
-  "generated_at": "2026-07-27T04:01:05.978230+00:00",
-  "run_count": 9,
+  "generated_at": "2026-07-27T04:31:04.289763+00:00",
+  "run_count": 10,
   "jobs": [
     {
       "title": "Call for Applicants: Advisory Committee — Project on Criminalisation of Environmental Human Rights Defenders",
@@ -15,6 +15,23 @@
       "location": "Not specified",
       "type": "Not specified",
       "deadline": "15 January 2026",
+      "salary": "Not specified",
+      "field_score": "",
+      "skills_score": "",
+      "seniority_score": ""
+    },
+    {
+      "title": "Analyst India",
+      "organisation": "Dalberg",
+      "url": "https://dalberg.hua.hrsmart.com/hr/ats/Posting/view/888",
+      "priority": 0,
+      "eligible": false,
+      "interest_score": "2",
+      "match": "low",
+      "reason": "The role requires authorization to live and work in India, which the candidate does not hold — an unmet essential that gates eligibility. It is also a development-consulting position outside the candidate's core interest zones, and the candidate holds a Master's rather than the expected 2026/2027 Bachelor's profile targeted here.",
+      "location": "Mumbai / New Delhi, India",
+      "type": "Full-time",
+      "deadline": "2026-09-05",
       "salary": "Not specified",
       "field_score": "",
       "skills_score": "",
