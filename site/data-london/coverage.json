@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-07-27T07:01:06.993034+00:00",
+  "generated_at": "2026-07-27T07:30:49.582591+00:00",
   "lane": "🇬🇧 London",
   "total_sites": 141,
   "healthy": 138,
   "erroring": 1,
   "paused": 2,
   "methods": {
+    "palladium_api": 1,
     "workday_api": 7,
     "html": 84,
     "rippling_api": 2,
@@ -13,7 +14,7 @@
     "greenhouse_api": 9,
     "taleo_rss": 1,
     "pinpoint_api": 3,
-    "playwright": 12,
+    "playwright": 11,
     "oracle_hcm_api": 2,
     "hireserve_api": 1,
     "plumm_api": 1,
@@ -124,6 +125,7 @@
     "Open Rights Group",
     "Open Society Foundations",
     "Palestine Solidarity Campaign",
+    "Palladium Group",
     "Paul Hamlyn Foundation",
     "Peace Direct",
     "PEN International",
@@ -148,7 +150,6 @@
     "ShareAction",
     "Sibylline",
     "Sigrid Rausing Trust",
-    "SOAS University of London",
     "Springer Nature",
     "Teneo",
     "The Economist Group",
@@ -190,17 +191,17 @@
       "message": "Site paused after 16 consecutive failures"
     },
     {
-      "id": 1,
-      "name": "Palladium Group",
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
+      "id": 34,
+      "name": "SOAS University of London",
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
       "status": "erroring",
       "consecutive_failures": 1,
-      "total_recent_failures": 24,
-      "last_failure": "2026-07-27T07:01:06.993034+00:00",
+      "total_recent_failures": 21,
+      "last_failure": "2026-07-27T07:30:49.582591+00:00",
       "paused_until": "",
       "last_type": "fetch_error",
-      "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f0fb8230230>, 'Connection to thepalladiumgroup.com timed out. (con"
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded."
     }
   ]
 }

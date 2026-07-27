@@ -1,19 +1,6 @@
 {
-  "last_updated": "2026-07-27T07:01:06.993034+00:00",
+  "last_updated": "2026-07-27T07:30:49.582591+00:00",
   "site_summary": {
-    "Palladium Group": {
-      "site_id": 1,
-      "url": "https://thepalladiumgroup.com/joblist?search=&country=GBR",
-      "method": "palladium_api",
-      "consecutive_failures": 1,
-      "total_recent_failures": 24,
-      "first_recent_failure": "2026-06-29T10:31:23.026711+00:00",
-      "last_recent_failure": "2026-07-27T07:01:06.993034+00:00",
-      "currently_paused": false,
-      "paused_until": "",
-      "last_type": "fetch_error",
-      "last_message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f0fb8230230>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=8)'))"
-    },
     "FTI Consulting": {
       "site_id": 11,
       "url": "https://fticonsult.referrals.selectminds.com/ftistudentcareers/jobs/search/10301607",
@@ -26,6 +13,19 @@
       "paused_until": "2026-07-29T03:31:00.433070+00:00",
       "last_type": "site_paused",
       "last_message": "Site paused after 16 consecutive failures"
+    },
+    "SOAS University of London": {
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "consecutive_failures": 1,
+      "total_recent_failures": 21,
+      "first_recent_failure": "2026-06-29T07:01:15.912367+00:00",
+      "last_recent_failure": "2026-07-27T07:30:49.582591+00:00",
+      "currently_paused": false,
+      "paused_until": "",
+      "last_type": "fetch_error",
+      "last_message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://vacancies.soas.ac.uk/#vacancies\", waiting until \"domcontentloaded\""
     },
     "Airwars": {
       "site_id": 133,
@@ -10472,6 +10472,16 @@
       "method": "palladium_api",
       "type": "fetch_error",
       "message": "Palladium API: HTTPSConnectionPool(host='thepalladiumgroup.com', port=443): Max retries exceeded with url: /ajaxjoblist (Caused by ConnectTimeoutError(<HTTPSConnection(host='thepalladiumgroup.com', port=443) at 0x7f0fb8230230>, 'Connection to thepalladiumgroup.com timed out. (connect timeout=8)'))",
+      "consecutive_count": 1
+    },
+    {
+      "timestamp": "2026-07-27T07:30:49.582591+00:00",
+      "site": "SOAS University of London",
+      "site_id": 34,
+      "url": "https://vacancies.soas.ac.uk/#vacancies",
+      "method": "playwright",
+      "type": "fetch_error",
+      "message": "Playwright: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://vacancies.soas.ac.uk/#vacancies\", waiting until \"domcontentloaded\"",
       "consecutive_count": 1
     }
   ]
